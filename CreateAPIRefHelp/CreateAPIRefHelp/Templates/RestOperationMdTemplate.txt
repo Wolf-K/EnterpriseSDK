@@ -1,0 +1,130 @@
+# RestOperation Class
+
+A class that represents a REST operation. 
+
+
+---
+## Constructors
+|Name | Description |
+|------|
+|[RestOperation(String, String[], String[], OperationHandler)](#restoperationstring-string-string-operationhandler-constructor)| Creates a new RestOperation instance.  |
+| [RestOperation(String, String[], String[], OperationHandler, Boolean)](#restoperationstring-string-string-operationhandler-boolean-constructor) | Creates a new RestOperation instance. | 
+| [RestOperation(String, String[], String[], OperationHandler, String)](#restoperationstring-string-string-operationhandler-string-constructor) | Creates a new RestOperation instance. | 
+| [RestOperation(String, String[], String[], OperationHandler, String, Boolean)](#restoperationstring-string-string-operationhandler-string-boolean-constructor) | Creates a new RestOperation instance. | 
+
+ 
+### RestOperation(String, String[], String[], OperationHandler) Constructor
+
+Creates a new RestOperation instance. 
+
+``` c#
+public RestOperation(string name, 
+    string[] parameters, 
+    string[] supportedFormats, 
+    OperationHandler handler)
+```
+
+|Parameter | Description |
+|-----|------|
+|name |The name of the operation.|
+|parameters |The parameters for the operation.|
+|supportedFormats |The output formats supported by the operation (e.g. "json").|
+|handler |The operation handler function that should be called when requests for this operation are received.|
+
+### RestOperation(String, String[], String[], OperationHandler, Boolean) Constructor
+
+Creates a new RestOperation instance. 
+
+``` c#
+public RestOperation(string name, 
+    string[] parameters, 
+    string[] supportedFormats, 
+    OperationHandler handler, 
+    bool postOnly)
+```
+
+|Parameter | Description |
+|-----|------|
+|name |The name of the operation.|
+|parameters |The parameters for the operation.|
+|supportedFormats |The output formats supported by the operation (e.g. "json").|
+|handler |The operation handler function that should be called when requests for this operation are received.|
+|postOnly |Indicates if the operation should be supported only for HTTP POST requests (not GET).|
+
+
+### RestOperation(String, String[], String[], OperationHandler, String) Constructor
+
+Creates a new RestOperation instance. 
+
+``` c#
+public RestOperation(string name, 
+    string[] parameters, 
+    string[] supportedFormats, 
+    OperationHandler handler, 
+    string requiredCapability)
+```
+
+|Parameter | Description |
+|-----|------|
+|name |The name of the operation.|
+|parameters |The parameters for the operation.|
+|supportedFormats |The output formats supported by the operation (e.g. "json").|
+|handler |The operation handler function that should be called when requests for this operation are received.|
+|requiredCapability |The capability required in a configuration for an operation to be executable.|
+
+
+### RestOperation(String, String[], String[], OperationHandler, String, Boolean) Constructor
+
+Creates a new RestOperation instance. 
+
+``` c#
+public RestOperation(string name, 
+    string[] parameters, 
+    string[] supportedFormats, 
+    OperationHandler handler, 
+    string requiredCapability, 
+    bool postOnly)
+```
+
+|Parameter | Description |
+|-----|------|
+|name |The name of the operation.|
+|parameters |The parameters for the operation.|
+|supportedFormats |The output formats supported by the operation (e.g. "json").|
+|handler |The operation handler function that should be called when requests for this operation are received.|
+|requiredCapability |The capability required in a configuration for an operation to be executable.|
+|postOnly |Indicates if the operation should be supported only for HTTP POST requests (not GET).|
+
+---
+## Fields
+
+|Field | Field value | Description |
+|------|------|------|
+|RestOperation.name | String | The name of the operation.  |
+| RestOperation.parameters | String[] | The parameters for the operation. |
+| RestOperation.supportedOutputFormats | String[] | The output formats supported by an operation (e.g. "json"). |
+| RestOperation.postOnly | Boolean | Indicates if the operation should be supported only for HTTP POST requests (not GET). |
+
+---
+## Properties
+
+|Property | Property value | Description |
+|------|------|------|
+|RestOperation.RequiredCapability | String | The capability required in a configuration for an operation to be executable.  |
+
+---
+## Methods
+
+|Name | Description |
+|------|------|
+| [RestOperation.ToJsonObject()](#restoperationtojsonobject-method) | Converts the RestOperation to a JsonObject instance. |
+
+### RestOperation.ToJsonObject() Method
+
+Converts the RestOperation to a JsonObject instance. 
+
+``` c#
+public JsonObject ToJsonObject()
+```
+
+
