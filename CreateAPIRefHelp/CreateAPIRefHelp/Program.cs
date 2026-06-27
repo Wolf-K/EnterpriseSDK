@@ -218,6 +218,8 @@ namespace CreateAPIRefHelp
               if (t.IsNotPublic) continue;
               if (t.IsNestedPrivate) continue;
               if (!t.IsPublic) continue;
+              var members = t.DeclaredMembers;
+              if (members.Count() == 0) continue;
               if (t.HasExcludeTag())
               {
                 continue;
@@ -250,11 +252,21 @@ namespace CreateAPIRefHelp
             {
               if (processedNamespace.Contains(theType.Namespace)) continue;
               processedNamespace.Add(theType.Namespace);
-              theType.WriteMdx(outputRoot, theType.Namespace);
+              if (xmlDocOutput)
+              {
+                theType.WriteXML(outputRoot, Path.GetFileNameWithoutExtension(inputFile));
+              }
+              else
+              {
+                theType.WriteMdx(outputRoot, theType.Namespace);
+              }
             }
           }
-          // write the TOC file into the outputRoot folder
-          TocStore.WriteTocAsXml(Path.Combine(outputRoot, TocStore.TocFilename));
+          if (!xmlDocOutput)
+          {
+            // write the TOC file into the outputRoot folder
+            TocStore.WriteTocAsXml(Path.Combine(outputRoot, TocStore.TocFilename));
+          }
         }
         iReturnCode = 0;
       }

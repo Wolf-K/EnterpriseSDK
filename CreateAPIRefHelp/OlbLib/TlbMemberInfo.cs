@@ -187,6 +187,8 @@ namespace OlbLib
 
       if (pTypeLib.TypesInAssembly.ContainsKey(sName))
         Namespace = pTypeLib.TypesInAssembly[sName].Namespace;
+      else
+        Console.WriteLine($@"{sName} No assembly match");
       HelpString = sDocString;
       HelpContext = dwHelpContext;
       Meth = meth;

@@ -137,6 +137,7 @@ namespace OlbLib
           new XAttribute("name", $"T:{interfaceInfo.Namespace}.{interfaceInfo.Name}"),
           new XElement("summary", interfaceInfo.HelpString)
       );
+      Console.WriteLine($@"CreateXML: {interfaceInfo.Name} Interface");
       members.Add(interfaceMember);
       // Add all members of the class to the XML document
       foreach (var member in interfaceInfo.Members)
@@ -164,6 +165,8 @@ namespace OlbLib
         MakeRemarkNode(classMember, docLibraries.Remarks);
       }
       members.Add(classMember);
+
+      Console.WriteLine($@"CreateXML: {classInfo.Name} Class");
       // Add all members of the class to the XML document
       foreach (var member in classInfo.Members)
       {
@@ -187,6 +190,8 @@ namespace OlbLib
                 ); 
       // no remarks:MakeRemarkNode(enumMember, constantInfo.Remarks);
       members.Add(enumMember);
+
+      Console.WriteLine($@"CreateXML: {constantInfo.Name} Enum");
       // add the enum values to the XML document
       foreach (var variable in constantInfo.Variables)
       {

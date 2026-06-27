@@ -448,7 +448,7 @@ namespace MyXmlDoc
         case string ns when ns.EndsWith("."):
           return $"N:{ns.TrimEnd('.')}";
         default:
-          return null;
+          return string.Empty;
       }
     }
 

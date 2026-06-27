@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace MyReflection
 {
@@ -215,6 +216,59 @@ namespace MyReflection
     public virtual void WriteMdx(string outputRoot, string namespaceName)
     {
       Console.WriteLine($@"WriteMdx: {outputRoot} {namespaceName} {FullName}");
+    }
+
+    public virtual void WriteXML(string outputRoot, string namespaceName)
+    {
+      Console.WriteLine($@"WriteXML: {outputRoot} {namespaceName} {FullName}");
+    }
+
+    public virtual List<XElement> CreateXML()
+    {
+      Console.WriteLine($@"CreateXML: {Name} base");
+      return [];
+    }
+
+
+    /// <summary>
+    /// The expected output should look like this under the member node:
+    /// &lt;example&gt;
+    /// codeTitle
+    /// ```csharp
+    /// code
+    /// ```
+    /// &lt;/example&gt;   
+    /// </summary>
+    /// <param name="sourceMember">the XML element representing the member</param>
+    /// <param name="codeTitle">the title of the code snippet</param>
+    /// <param name="code">the code snippet</param>
+    /// <param name="language">csharp</param>
+    internal static void MakeCodeNode(XElement sourceMember, string codeTitle, string code, string language = "csharp")
+    {
+      var exampleNode = new XElement("example");
+      var titleNode = new XElement("codeTitle", codeTitle);
+      exampleNode.Add(titleNode);
+      var codeNode = new XElement("code", code);
+      codeNode.SetAttributeValue("language", language);
+      exampleNode.Add(codeNode);
+      sourceMember.Add(exampleNode);
+    }
+
+    /// <summary>
+    /// The expected output should look like this under the member node:
+    /// &lt;remarks&gt;
+    /// remarks
+    /// &lt;/remarks&gt;   
+    /// </summary>
+    /// <param name="sourceMember">the XML element representing the member</param>
+    /// <param name="remark">the remark text</param>
+    internal static void MakeRemarkNode(XElement sourceMember, string remarks)
+    {
+      if (!string.IsNullOrEmpty(remarks))
+      {
+        var remarksNode = new XElement("remarks", remarks);
+        sourceMember.Add(remarksNode);
+      }
     }
   }
 }
