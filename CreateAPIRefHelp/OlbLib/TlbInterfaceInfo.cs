@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 
 namespace OlbLib
@@ -29,7 +30,8 @@ namespace OlbLib
     public int HelpContext { get; protected set; }
 
     public string LibraryName { get; protected set; }
-    public string Namespace { get; protected set; }
+
+    internal Type ManagedType { get; set; }
 
     public string Attributes { get; protected set; }
 
@@ -158,15 +160,28 @@ namespace OlbLib
 
       Name = sName;
 
-      Namespace = pTypeLib.TypesInAssembly[sName].Namespace;
       HelpString = sDocString;
       HelpContext = dwHelpContext;
 
-      TlbUtil.GetMethods(pTypeLib, idx, sName, Members);
-      TlbUtil.GetImplementedInterfaces(pTypeLib, idx, _directInheritedInterfaces);
-
       ITypeInfo currentTypeInfo;
       pTypeLib._iTypeLib.GetTypeInfo(idx, out currentTypeInfo);
+      try
+      {
+        if (pTypeLib.ManagedAssembly != null)
+          ManagedType = TlbUtil.GetManagedType(currentTypeInfo, pTypeLib.ManagedAssembly);
+        else
+          ManagedType = null;
+      }
+      catch
+      {
+        Console.Error.WriteLine($@"*** Can't get managed type for {Name}");
+        ManagedType = null;
+      }
+      if (ManagedType != null)
+      {
+        TlbUtil.GetMethods(pTypeLib, ManagedType, idx, sName, Members);
+        TlbUtil.GetImplementedInterfaces(pTypeLib, ManagedType, idx, _directInheritedInterfaces);
+      }
       Attributes = TlbUtil.GetAttrString(currentTypeInfo);
     }
 

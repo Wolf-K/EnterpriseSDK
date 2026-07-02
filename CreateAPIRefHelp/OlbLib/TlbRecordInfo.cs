@@ -17,7 +17,8 @@ namespace OlbLib
     public int Index { get; set; }
 
     public string LibraryName { get; protected set; }
-    public string Namespace { get; protected set; }
+
+    internal Type ManagedType { get; set; }
 
     public string ParentContainingFile
     {
@@ -40,11 +41,22 @@ namespace OlbLib
 
       Name = sName;
 
-      Namespace = pTypeLib.TypesInAssembly[sName].Namespace;
       HelpString = sDocString;
       TYPEATTR typeAttr;
       ITypeInfo typeInfo;
       pTypeLib._iTypeLib.GetTypeInfo(idx, out typeInfo);
+      try
+      {
+        if (pTypeLib.ManagedAssembly != null)
+          ManagedType = TlbUtil.GetManagedType(typeInfo, pTypeLib.ManagedAssembly);
+        else
+          ManagedType = null;
+      }
+      catch
+      {
+        Console.Error.WriteLine($@"*** Can't get managed type for {Name}");
+        ManagedType = null;
+      } 
       IntPtr typeAttrPtr = IntPtr.Zero;
       try
       {

@@ -24,7 +24,7 @@ namespace OlbLib
     public int HelpContext { get; protected set; }
 
     public string LibraryName { get; protected set; }
-    public string Namespace { get; protected set; }
+    internal Type ManagedType { get; set; }
 
     public string Attributes { get; protected set; }
 

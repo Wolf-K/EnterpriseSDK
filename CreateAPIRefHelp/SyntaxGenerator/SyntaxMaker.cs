@@ -81,7 +81,7 @@ namespace SyntaxGenerator
       }
       catch (Exception ex)
       {
-        throw new Exception($@"GetMethod: {typeName} {fullTypeName} {methodName}", ex);
+        Console.Error.WriteLine($@"GetMethod: {typeName} {fullTypeName} {methodName}", ex);
       }
       //			if (isForWebHelp){
       //				sSyntax += GetMethodSigCPP(m);}
@@ -109,7 +109,8 @@ namespace SyntaxGenerator
       }
       catch (Exception ex)
       {
-        throw new Exception($@"GetProperty: {typeName} {fullTypeName} {propertyName}", ex);
+        Console.Error.WriteLine($@"GetProperty: {typeName} {fullTypeName} {propertyName}", ex);
+        result = (string.Empty, string.Empty);
       }
       return result;
     }

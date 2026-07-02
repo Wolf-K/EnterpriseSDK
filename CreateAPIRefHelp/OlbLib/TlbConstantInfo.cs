@@ -14,7 +14,8 @@ namespace OlbLib
 
     public string HelpString { get; set; }
 
-    public string Namespace { get; protected set; }
+    internal Type ManagedType { get; set; }
+
     public int Index { get; set; }
 
     public List<TlbVarTypeInfo> Variables = [];
@@ -33,12 +34,23 @@ namespace OlbLib
       pTypeLib._iTypeLib.GetDocumentation(idx, out sName, out sDocString, out dwHelpContext, out sHelpFile);
 
       Name = sName;
-      Namespace = pTypeLib.TypesInAssembly[sName].Namespace;
       HelpString = sDocString;
 
       TYPEATTR typeAttr;
       ITypeInfo typeInfo;
       pTypeLib._iTypeLib.GetTypeInfo(idx, out typeInfo);
+      try
+      {
+        if (pTypeLib.ManagedAssembly != null)
+          ManagedType = TlbUtil.GetManagedType(typeInfo, pTypeLib.ManagedAssembly);
+        else
+          ManagedType = null;
+      }
+      catch {
+        Console.Error.WriteLine($@"*** Can't load Assembly for {sName}");
+        ManagedType = null;
+      }
+
       IntPtr typeAttrPtr = IntPtr.Zero;
       try
       {

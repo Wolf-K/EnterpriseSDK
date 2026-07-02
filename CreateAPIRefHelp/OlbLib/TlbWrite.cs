@@ -95,7 +95,8 @@ namespace OlbLib
     /// <param name="outputRoot">The root directory where the generated XML file will be created.</param>
     /// <param name="namespaceName">The namespace for which documentation files are generated. This is used to organize output and as a
     /// namespace in the documentation.</param>
-    public static void WriteXmlDocument(TlbLibCollection tlbLibCollection, string outputRoot, string namespaceName)
+    /// <returns>The Dll name of the type library.</returns>
+    public static string WriteXmlDocument(TlbLibCollection tlbLibCollection, string outputRoot, string namespaceName)
     {
       // make the first character of the namespace name uppercase
       var myNamespace = char.ToUpper(namespaceName[0]) + namespaceName.Substring(1);
@@ -128,13 +129,15 @@ namespace OlbLib
           members)
       );
       xmlDoc.Save(outputDocFile);
+      return dllFileName;
     }
 
 
     private static void WriteInterfaceXMLDocument(XElement members, TlbInterfaceInfo interfaceInfo)
     {
+      var ns = interfaceInfo.ManagedType?.Namespace ?? string.Empty;
       var interfaceMember = new XElement("member",
-          new XAttribute("name", $"T:{interfaceInfo.Namespace}.{interfaceInfo.Name}"),
+          new XAttribute("name", $"T:{ns}.{interfaceInfo.Name}"),
           new XElement("summary", interfaceInfo.HelpString)
       );
       Console.WriteLine($@"CreateXML: {interfaceInfo.Name} Interface");
@@ -156,8 +159,9 @@ namespace OlbLib
 
     private static void WriteClassXMLDocument(XElement members, TlbCoClassInfo classInfo)
     {
+      var ns = classInfo.ManagedType?.Namespace ?? string.Empty;
       var classMember = new XElement("member",
-                new XAttribute("name", $"T:{classInfo.Namespace}.{classInfo.Name}"),
+                new XAttribute("name", $"T:{ns}.{classInfo.Name}"),
                 new XElement("summary", classInfo.HelpString)
               );
       {
@@ -183,7 +187,8 @@ namespace OlbLib
 
     private static void WriteEnumXMLDocument(XElement members, TlbConstantInfo constantInfo)
     {
-      var enumMemberName = $"{constantInfo.Namespace}.{constantInfo.Name}";
+      var ns = constantInfo.ManagedType?.Namespace ?? string.Empty;
+      var enumMemberName = $"{ns}.{constantInfo.Name}";
       var enumMember = new XElement("member",
                   new XAttribute("name", $@"T:{enumMemberName}"),
                   new XElement("summary", constantInfo.HelpString)

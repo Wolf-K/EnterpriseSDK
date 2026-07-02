@@ -2,6 +2,8 @@
 using System.CodeDom;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
@@ -62,23 +64,87 @@ namespace OlbLib
       return string.Join(",", lstAttributes);
     }
 
+    public static Type GetManagedType(ITypeInfo typeInfo, string assemblyPath)
+    {
+      if (typeInfo == null) throw new ArgumentNullException(nameof(typeInfo));
+      if (string.IsNullOrWhiteSpace(assemblyPath)) throw new ArgumentException("Assembly path is required.", nameof(assemblyPath));
+
+      var assembly = Assembly.LoadFrom(assemblyPath);
+      return GetManagedType(typeInfo, assembly);
+    }
+
+    public static Type GetManagedType(ITypeInfo typeInfo, Assembly assembly)
+    {
+      if (typeInfo == null) throw new ArgumentNullException(nameof(typeInfo));
+      if (assembly == null) throw new ArgumentNullException(nameof(assembly));
+
+      Guid typeGuid = Guid.Empty;
+      IntPtr ptrTypeAttr = IntPtr.Zero;
+      try
+      {
+        typeInfo.GetTypeAttr(out ptrTypeAttr);
+        var typeAttr = (TYPEATTR)Marshal.PtrToStructure(ptrTypeAttr, typeof(TYPEATTR));
+        typeGuid = typeAttr.guid;
+      }
+      finally
+      {
+        if (ptrTypeAttr != IntPtr.Zero)
+        {
+          typeInfo.ReleaseTypeAttr(ptrTypeAttr);
+        }
+      }
+
+      if (typeGuid != Guid.Empty)
+      {
+        var typeByGuid = GetLoadableTypes(assembly).FirstOrDefault(t => t.GUID == typeGuid);
+        if (typeByGuid != null)
+        {
+          return typeByGuid;
+        }
+      }
+
+      typeInfo.GetDocumentation(-1, out string typeName, out string _, out int _, out string _);
+      if (string.IsNullOrWhiteSpace(typeName))
+      {
+        return null;
+      }
+
+      var typeByName = GetLoadableTypes(assembly)
+        .FirstOrDefault(t => string.Equals(t.Name, typeName, StringComparison.Ordinal) ||
+                             string.Equals(t.FullName, typeName, StringComparison.Ordinal));
+      return typeByName;
+    }
+
+    private static IEnumerable<Type> GetLoadableTypes(Assembly assembly)
+    {
+      try
+      {
+        return assembly.GetTypes();
+      }
+      catch (ReflectionTypeLoadException ex)
+      {
+        return ex.Types.Where(t => t != null);
+      }
+    }
+
     public static void GetMethods(TlbTypeLibInfo pTypeLib,
+        Type ManagedType,
         int idx,
         string parentName,
         List<TlbMemberInfo> members)
     {
-      ITypeInfo currentTypeInfo;
-      pTypeLib._iTypeLib.GetTypeInfo(idx, out currentTypeInfo);
+      ITypeInfo coclassOrInterfaceTypeInfo;
+      pTypeLib._iTypeLib.GetTypeInfo(idx, out coclassOrInterfaceTypeInfo);
 
       //Get the TypeAttributes
       IntPtr ptrTypeAttr;
       try
       {
-        currentTypeInfo.GetTypeAttr(out ptrTypeAttr);
+        coclassOrInterfaceTypeInfo.GetTypeAttr(out ptrTypeAttr);
       }
       catch (Exception ex)
       {
-        currentTypeInfo.GetDocumentation(-1, out string sName, out string sDocString, out int dwHelpContext, out string sHelpFile);
+        coclassOrInterfaceTypeInfo.GetDocumentation(-1, out string sName, out string sDocString, out int dwHelpContext, out string sHelpFile);
         Console.Error.WriteLine($@"Error type lib {pTypeLib.Name} {parentName} {sName} has an error getting attribute type: {ex}");
         return;
       }
@@ -93,7 +159,7 @@ namespace OlbLib
         {
           IntPtr ptrFuncDesc;
           //Get the function description
-          currentTypeInfo.GetFuncDesc(idxMethod, out ptrFuncDesc);
+          coclassOrInterfaceTypeInfo.GetFuncDesc(idxMethod, out ptrFuncDesc);
           var returnTypeName = string.Empty;
           try
           {
@@ -103,10 +169,10 @@ namespace OlbLib
             int dwNotUse2;
             string sNotUsed3;
             //Get the name of the method	
-            currentTypeInfo.GetDocumentation(funcDesc.memid, out memberName, out sNotUsed1, out dwNotUse2, out sNotUsed3);
+            coclassOrInterfaceTypeInfo.GetDocumentation(funcDesc.memid, out memberName, out sNotUsed1, out dwNotUse2, out sNotUsed3);
             int actLen;
             var memberNames = new string[100];
-            currentTypeInfo.GetNames(funcDesc.memid, memberNames, memberNames.Length, out actLen);
+            coclassOrInterfaceTypeInfo.GetNames(funcDesc.memid, memberNames, memberNames.Length, out actLen);
             CodeMemberMethod meth = null;
             var lstParameters = new List<TlbParameterInfo>();
             var lstVcppParameters = new List<TlbParameterInfo>();
@@ -124,7 +190,7 @@ namespace OlbLib
               //codeDom = meth;
               if (funcDesc.cParams > 0)
               {
-                var parameters = AddParams(pTypeLib, currentTypeInfo, funcDesc,
+                var parameters = AddParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc,
                     memberNames, funcDesc.cParams);
                 if (parameters.Count > 0)
                 {
@@ -155,16 +221,16 @@ namespace OlbLib
                   }
                   // Only add up to the limit
                   // (may omit the last parameter)
-                  AddDomParams(pTypeLib, currentTypeInfo, funcDesc, meth, parameters, limit, lstParameters);
+                  AddDomParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc, meth, parameters, limit, lstParameters);
                   // Vcpp needs all parameters
-                  AddDomParams(pTypeLib, currentTypeInfo, funcDesc, meth, parameters, parameters.Count, lstVcppParameters);
+                  AddDomParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc, meth, parameters, parameters.Count, lstVcppParameters);
                 }
               }
               // HRESULT becomes void because its handled by the exception
               // mechanism, we just leave the return type null
               if ((VarEnum)retType.vt != VarEnum.VT_HRESULT)
               {
-                var typeName = TlbUtil.TypedescToString(pTypeLib, currentTypeInfo, retType, !TlbUtil.COMTYPE);
+                var typeName = TlbUtil.TypedescToString(pTypeLib, coclassOrInterfaceTypeInfo, retType, !TlbUtil.COMTYPE);
                 // Get rid of the ref since this is now a return type
                 if (typeName.StartsWith("ref "))
                   typeName = typeName.Substring(4);
@@ -177,7 +243,7 @@ namespace OlbLib
             {
               if ((VarEnum)funcDesc.elemdescFunc.tdesc.vt == VarEnum.VT_HRESULT)
               {
-                var parameters = AddParams(pTypeLib, currentTypeInfo, funcDesc, memberNames, funcDesc.cParams);
+                var parameters = AddParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc, memberNames, funcDesc.cParams);
                 if (parameters.Count > 0)
                 {
                   var limit = parameters.Count;
@@ -205,15 +271,15 @@ namespace OlbLib
                       //limit--;
                     }
                   }
-                  AddDomParams(pTypeLib, currentTypeInfo, funcDesc, meth, parameters, limit, lstParameters);
-                  AddDomParams(pTypeLib, currentTypeInfo, funcDesc, meth, parameters, limit, lstVcppParameters);
+                  AddDomParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc, meth, parameters, limit, lstParameters);
+                  AddDomParams(pTypeLib, coclassOrInterfaceTypeInfo, funcDesc, meth, parameters, limit, lstVcppParameters);
                 }
               }
               // HRESULT becomes void because its handled by the exception
               // mechanism, we just leave the return type null
               if ((VarEnum)retType.vt != VarEnum.VT_HRESULT)
               {
-                var typeName = TlbUtil.TypedescToString(pTypeLib, currentTypeInfo, retType, !TlbUtil.COMTYPE);
+                var typeName = TlbUtil.TypedescToString(pTypeLib, coclassOrInterfaceTypeInfo, retType, !TlbUtil.COMTYPE);
                 // Get rid of the ref since this is now a return type
                 if (typeName.StartsWith("ref "))
                   typeName = typeName.Substring(4);
@@ -230,7 +296,7 @@ namespace OlbLib
             }
             else
             {
-              lastMember = new TlbMemberInfo(pTypeLib, funcDesc, currentTypeInfo, idxMethod, returnTypeName, meth, lstParameters, lstVcppParameters, parentName);
+              lastMember = new TlbMemberInfo(pTypeLib, ManagedType, funcDesc, coclassOrInterfaceTypeInfo, idxMethod, returnTypeName, meth, lstParameters, lstVcppParameters, parentName);
               members.Add(lastMember);
             }
             lastMemberName = memberName;
@@ -240,7 +306,7 @@ namespace OlbLib
             if (ptrFuncDesc != IntPtr.Zero)
             {
               //Release our function description stuff
-              currentTypeInfo.ReleaseFuncDesc(ptrFuncDesc);
+              coclassOrInterfaceTypeInfo.ReleaseFuncDesc(ptrFuncDesc);
             }
           }
 #if notused
@@ -310,13 +376,289 @@ namespace OlbLib
       {
         if (ptrTypeAttr != IntPtr.Zero)
         {
-          currentTypeInfo.ReleaseTypeAttr(ptrTypeAttr);
+          coclassOrInterfaceTypeInfo.ReleaseTypeAttr(ptrTypeAttr);
         }
       }
       members.Sort((x, y) => string.Compare($@"{x.Name} {x.Index}", $@"{y.Name} {y.Index}"));
     }
 
+    private static MemberInfo? GetManagedMember(
+    ITypeInfo typeInfo,
+    FUNCDESC funcDesc,
+    Assembly assembly)
+    {
+      // Step 1: COM type -> managed Type
+      Type? managedType = TlbUtil.GetManagedType(typeInfo, assembly);
+      if (managedType == null) return null;
+
+      int dispId = funcDesc.memid;
+
+      // Step 2: member match by DispId first
+      try
+      {
+        MethodInfo? method = managedType
+            .GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static)
+            .FirstOrDefault(m => m.GetCustomAttributes<DispIdAttribute>(true).Any(a => a.Value == dispId));
+
+        if (method != null) return method;
+      }
+      catch { }
+      try
+      {
+        PropertyInfo? prop = managedType
+            .GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static)
+            .FirstOrDefault(p => p.GetCustomAttributes<DispIdAttribute>(true).Any(a => a.Value == dispId));
+
+        if (prop != null) return prop;
+      }
+      catch { }
+
+      // Fallback by COM name if no DispId attribute found
+      typeInfo.GetDocumentation(dispId, out string name, out _, out _, out _);
+
+      var flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static;
+      var parameterTypes = GetManagedParameterTypes(typeInfo, funcDesc, assembly);
+
+      MethodInfo? methodBySignature = managedType.GetMethod(name,
+                 flags,
+                 binder: null,
+                 types: parameterTypes,
+                 modifiers: null);
+
+      if (methodBySignature == null && TryGetManagedParameterTypesWithoutRetval(typeInfo, funcDesc, assembly, out Type[] nonRetvalTypes))
+      {
+        methodBySignature = managedType.GetMethod(name,
+                   flags,
+                   binder: null,
+                   types: nonRetvalTypes,
+                   modifiers: null);
+      }
+
+      return (MemberInfo?)methodBySignature
+          ?? managedType.GetProperty(name, flags);
+    }
+
+    private static Type[] GetManagedParameterTypes(ITypeInfo typeInfo, FUNCDESC funcDesc, Assembly assembly)
+    {
+      if (funcDesc.cParams <= 0)
+      {
+        return Type.EmptyTypes;
+      }
+
+      var parameterTypes = new List<Type>(funcDesc.cParams);
+      var elemSize = Marshal.SizeOf(typeof(ELEMDESC));
+      for (int i = 0; i < funcDesc.cParams; i++)
+      {
+        var elemPtr = new IntPtr(funcDesc.lprgelemdescParam.ToInt64() + (i * elemSize));
+        var elemDesc = (ELEMDESC)Marshal.PtrToStructure(elemPtr, typeof(ELEMDESC));
+        parameterTypes.Add(GetManagedTypeFromTypeDesc(typeInfo, elemDesc.tdesc, assembly));
+      }
+      return parameterTypes.ToArray();
+    }
+
+    private static bool TryGetManagedParameterTypesWithoutRetval(ITypeInfo typeInfo, FUNCDESC funcDesc, Assembly assembly, out Type[] parameterTypes)
+    {
+      parameterTypes = Type.EmptyTypes;
+      if (funcDesc.cParams <= 0 || (VarEnum)funcDesc.elemdescFunc.tdesc.vt != VarEnum.VT_HRESULT)
+      {
+        return false;
+      }
+
+      var elemSize = Marshal.SizeOf(typeof(ELEMDESC));
+      var lastElemPtr = new IntPtr(funcDesc.lprgelemdescParam.ToInt64() + ((funcDesc.cParams - 1) * elemSize));
+      var lastElemDesc = (ELEMDESC)Marshal.PtrToStructure(lastElemPtr, typeof(ELEMDESC));
+      if ((lastElemDesc.desc.paramdesc.wParamFlags & PARAMFLAG.PARAMFLAG_FRETVAL) == 0)
+      {
+        return false;
+      }
+
+      var types = new List<Type>(funcDesc.cParams - 1);
+      for (int i = 0; i < funcDesc.cParams - 1; i++)
+      {
+        var elemPtr = new IntPtr(funcDesc.lprgelemdescParam.ToInt64() + (i * elemSize));
+        var elemDesc = (ELEMDESC)Marshal.PtrToStructure(elemPtr, typeof(ELEMDESC));
+        types.Add(GetManagedTypeFromTypeDesc(typeInfo, elemDesc.tdesc, assembly));
+      }
+
+      parameterTypes = types.ToArray();
+      return true;
+    }
+
+    private static Type GetManagedTypeFromTypeDesc(ITypeInfo typeInfo, TYPEDESC typeDesc, Assembly assembly)
+    {
+      VarEnum vt = (VarEnum)typeDesc.vt;
+
+      if (vt == VarEnum.VT_PTR || (typeDesc.vt & (short)VarEnum.VT_BYREF) != 0)
+      {
+        var innerDesc = (TYPEDESC)Marshal.PtrToStructure(typeDesc.lpValue, typeof(TYPEDESC));
+        var innerType = GetManagedTypeFromTypeDesc(typeInfo, innerDesc, assembly);
+        return innerType.IsByRef ? innerType : innerType.MakeByRefType();
+      }
+
+      if ((typeDesc.vt & (short)VarEnum.VT_ARRAY) != 0 ||
+          (VarEnum)(typeDesc.vt & VT_TYPEMASK) == VarEnum.VT_SAFEARRAY ||
+          (VarEnum)(typeDesc.vt & VT_TYPEMASK) == VarEnum.VT_CARRAY)
+      {
+        var innerDesc = (TYPEDESC)Marshal.PtrToStructure(typeDesc.lpValue, typeof(TYPEDESC));
+        var innerType = GetManagedTypeFromTypeDesc(typeInfo, innerDesc, assembly);
+        if (innerType.IsByRef)
+        {
+          innerType = innerType.GetElementType() ?? typeof(object);
+        }
+        return innerType.MakeArrayType();
+      }
+
+      if ((VarEnum)(typeDesc.vt & VT_TYPEMASK) == VarEnum.VT_USERDEFINED)
+      {
+        typeInfo.GetRefTypeInfo((int)typeDesc.lpValue, out ITypeInfo refTypeInfo);
+        var userType = GetManagedType(refTypeInfo, assembly);
+        if (userType != null)
+        {
+          return userType;
+        }
+
+        refTypeInfo.GetDocumentation(-1, out string refTypeName, out _, out _, out _);
+        return assembly.GetType(refTypeName) ?? assembly.GetTypes().FirstOrDefault(t => t.Name == refTypeName) ?? typeof(object);
+      }
+
+      return (VarEnum)(typeDesc.vt & VT_TYPEMASK) switch
+      {
+        VarEnum.VT_EMPTY => typeof(IntPtr),
+        VarEnum.VT_NULL => typeof(object),
+        VarEnum.VT_I1 => typeof(sbyte),
+        VarEnum.VT_UI1 => typeof(byte),
+        VarEnum.VT_I2 => typeof(short),
+        VarEnum.VT_UI2 => typeof(ushort),
+        VarEnum.VT_I4 => typeof(int),
+        VarEnum.VT_UI4 => typeof(uint),
+        VarEnum.VT_I8 => typeof(long),
+        VarEnum.VT_UI8 => typeof(ulong),
+        VarEnum.VT_INT => typeof(int),
+        VarEnum.VT_UINT => typeof(uint),
+        VarEnum.VT_R4 => typeof(float),
+        VarEnum.VT_R8 => typeof(double),
+        VarEnum.VT_DECIMAL => typeof(decimal),
+        VarEnum.VT_CY => typeof(decimal),
+        VarEnum.VT_DATE => typeof(DateTime),
+        VarEnum.VT_BOOL => typeof(bool),
+        VarEnum.VT_BSTR => typeof(string),
+        VarEnum.VT_LPSTR => typeof(string),
+        VarEnum.VT_LPWSTR => typeof(string),
+        VarEnum.VT_ERROR => typeof(int),
+        VarEnum.VT_HRESULT => typeof(int),
+        VarEnum.VT_DISPATCH => typeof(object),
+        VarEnum.VT_UNKNOWN => typeof(object),
+        VarEnum.VT_VARIANT => typeof(object),
+        VarEnum.VT_VOID => typeof(void),
+        VarEnum.VT_CLSID => typeof(Guid),
+        _ => typeof(object)
+      };
+    }
+
+    public static MemberInfo? FindManagedMemberInfo(ITypeInfo typeClassOrInterfaceInfo, Type managedClassOrInterfaceType, int memberId)
+    {
+      typeClassOrInterfaceInfo.GetTypeAttr(out var pAttr);
+      try
+      {
+        var attr = (TYPEATTR)Marshal.PtrToStructure(pAttr, typeof(TYPEATTR));
+        for (int i = 0; i < attr.cFuncs; i++)
+        {
+          typeClassOrInterfaceInfo.GetFuncDesc(i, out var pFunc);
+          try
+          {
+            var funcDesc = (FUNCDESC)Marshal.PtrToStructure(pFunc, typeof(FUNCDESC));
+            if (funcDesc.memid == memberId)
+            {
+              return GetManagedMember(typeClassOrInterfaceInfo, funcDesc, managedClassOrInterfaceType.Assembly);
+            }
+            //int dispId = funcDesc.memid;
+            //if (dispId != memberId)
+            //  continue;
+            //List<Type> types = [];
+            //// Loop through parameters
+            //for (int p = 0; p < funcDesc.cParams; p++)
+            //{
+            //  ELEMDESC elemDesc = Marshal.PtrToStructure<ELEMDESC>(
+            //      funcDesc.lprgelemdescParam + p * Marshal.SizeOf<ELEMDESC>()
+            //  );
+            //  // Get parameter type info
+            //  types.Add(GetVarTypeName(elemDesc.tdesc));
+            //}
+            //typeClassOrInterfaceInfo.GetDocumentation(dispId, out var comName, out _, out _, out _);
+            //var method = managedClassOrInterfaceType
+            //    .GetMethods()
+            //    .FirstOrDefault(m => m.GetCustomAttributes(typeof(DispIdAttribute), false)
+            //        .Cast<DispIdAttribute>().Any(a => a.Value == dispId))
+            //    ?? managedClassOrInterfaceType.GetMethod(comName, types.Count, BindingFlags.Instance | BindingFlags.Public, types.ToArray());
+            //    if (method != null)
+            //  return method.ReturnType;
+            //var prop = managedClassOrInterfaceType
+            //    .GetProperties()
+            //    .FirstOrDefault(p => p.GetCustomAttributes(typeof(DispIdAttribute), false)
+            //        .Cast<DispIdAttribute>().Any(a => a.Value == dispId))
+            //    ?? managedClassOrInterfaceType.GetProperty(comName);
+            //    if (prop != null)
+            //  return prop.PropertyType;
+            //// method/prop now points to the managed member match (if found)
+          }
+          finally { typeClassOrInterfaceInfo.ReleaseFuncDesc(pFunc); }
+        }
+      }
+      finally { typeClassOrInterfaceInfo.ReleaseTypeAttr(pAttr); }
+      return null;
+    }
+
+    // Helper: Convert TYPEDESC to readable type name
+    //static Type GetVarTypeName(TYPEDESC tdesc)
+    //{
+    //  // Basic mapping for common VARTYPEs
+    //  VarEnum vt = (VarEnum)tdesc.vt;
+    //  switch (vt)
+    //  {
+    //    case VarEnum.VT_I4: return typeof(int);
+    //    case VarEnum.VT_I2: return typeof(short);
+    //    case VarEnum.VT_UI4: return typeof(uint);
+    //    case VarEnum.VT_UI2: return typeof(ushort);
+    //    case VarEnum.VT_R4: return typeof(float);
+    //    case VarEnum.VT_R8: return typeof(double);
+    //    case VarEnum.VT_BSTR: return typeof(string);
+    //    case VarEnum.VT_BOOL: return typeof(bool);
+    //    case VarEnum.VT_DATE: return typeof(DateTime);
+    //    case VarEnum.VT_DECIMAL: return typeof(decimal);
+    //    case VarEnum.VT_VARIANT: return typeof(object);
+
+    //    case VarEnum.VT_PTR:
+    //      // Pointer to another type
+    //      var ptrDesc = Marshal.PtrToStructure<TYPEDESC>(typeDesc.lpValue);
+    //      return ConvertTypeDesc(ptrDesc, typeInfo);
+
+    //    case VarEnum.VT_SAFEARRAY:
+    //      // SAFEARRAY of another type
+    //      var saDesc = Marshal.PtrToStructure<TYPEDESC>(typeDesc.lpValue);
+    //      return ConvertTypeDesc(saDesc, typeInfo).MakeArrayType();
+
+    //    case VarEnum.VT_USERDEFINED:
+    //      // User-defined type: get referenced type info
+    //      int href = typeDesc.lpValue.ToInt32();
+    //      typeInfo.GetRefTypeInfo(href, out ITypeInfo refTypeInfo);
+    //      refTypeInfo.GetTypeAttr(out IntPtr pTypeAttr);
+    //      try
+    //      {
+    //        var typeAttr = Marshal.PtrToStructure<TYPEATTR>(pTypeAttr);
+    //        return Type.GetTypeFromCLSID(typeAttr.guid);
+    //      }
+    //      finally
+    //      {
+    //        refTypeInfo.ReleaseTypeAttr(pTypeAttr);
+    //      }
+
+    //    default:
+    //      throw new NotSupportedException($"VarEnum {vt} not supported.");
+    //  }
+    //}
+
     public static void GetImplementedInterfaces(TlbTypeLibInfo pTypeLib,
+        Type managedType,
         int idx,
         List<TlbImplementedInterface> implementedInterfaces)
     {
@@ -341,18 +683,24 @@ namespace OlbLib
         //Lets get all the interfaces for this Type Info
         for (var idxInterface = 0; idxInterface < typeAttributes.cImplTypes; idxInterface++)
         {
-          //Get the function description
-          currentTypeInfo.GetImplTypeFlags(idxInterface, out IMPLTYPEFLAGS impltypeflags);
-          currentTypeInfo.GetRefTypeOfImplType(idxInterface, out int hrefImplType);
-          currentTypeInfo.GetRefTypeInfo(hrefImplType, out ITypeInfo implTypeInfo);
-
-          //Get the name of the method	
-          implTypeInfo.GetDocumentation(-1, out string interfaceName,
-              out string sNotUsed1, out int dwNotUse2, out string sNotUsed3);
-          if (interfaceName.Equals("IUnknown") || interfaceName.Equals("IDispatch")) continue;
-          if (interfaceName.StartsWith("_")) continue;
-          implTypeInfo.GetContainingTypeLib(out ITypeLib pContainTypeLib, out int containTypeLibIndex);
-          implementedInterfaces.Add(new TlbImplementedInterface(pContainTypeLib, containTypeLibIndex, impltypeflags));
+          try
+          {
+            //Get the function description
+            currentTypeInfo.GetImplTypeFlags(idxInterface, out IMPLTYPEFLAGS impltypeflags);
+            currentTypeInfo.GetRefTypeOfImplType(idxInterface, out int hrefImplType);
+            currentTypeInfo.GetRefTypeInfo(hrefImplType, out ITypeInfo implTypeInfo);
+            //Get the name of the method	
+            implTypeInfo.GetDocumentation(-1, out string interfaceName,
+                out string sNotUsed1, out int dwNotUse2, out string sNotUsed3);
+            if (interfaceName.Equals("IUnknown") || interfaceName.Equals("IDispatch")) continue;
+            if (interfaceName.StartsWith("_")) continue;
+            implTypeInfo.GetContainingTypeLib(out ITypeLib pContainTypeLib, out int containTypeLibIndex);
+            implementedInterfaces.Add(new TlbImplementedInterface(pContainTypeLib, containTypeLibIndex, impltypeflags));
+          }
+          catch (Exception ex)
+          {
+            Console.Error.WriteLine($@"*** Ignore Exception: {ex}");
+          }
         }
       }
       finally

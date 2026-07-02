@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,7 +41,8 @@ namespace OlbLib
     public string ParentName { get; protected set; }
 
     public string LibraryName { get; protected set; }
-    public string Namespace { get; protected set; }
+
+    internal MemberInfo ManagedMemberInfo { get; set; }
 
     public string InterfaceParentName { get; protected set; }
 
@@ -127,9 +129,17 @@ namespace OlbLib
           VbSyntax = theSyntax.VbSyntax;
           break;
         default:
-          var defaultSyntax = ParentTypeLibInfo.SyntaxMaker.GetMemberSyntax(ParentTypeLibInfo.AssemblyName, ParentName, Name, Index.ToString());
-          CSharpSyntax = defaultSyntax.CSharpSyntax;
-          VbSyntax = defaultSyntax.VbSyntax;
+          try
+          {
+            var defaultSyntax = ParentTypeLibInfo.SyntaxMaker.GetMemberSyntax(ParentTypeLibInfo.AssemblyName, ParentName, Name, Index.ToString());
+            CSharpSyntax = defaultSyntax.CSharpSyntax;
+            VbSyntax = defaultSyntax.VbSyntax;
+          }
+          catch
+          {
+            CSharpSyntax = $@"No syntax for: {ParentName}.{Name}";
+            VbSyntax = $@"No syntax for: {ParentName}.{Name}";
+          }
           break;
       }
     }
@@ -166,7 +176,19 @@ namespace OlbLib
       GetSyntax();
     }
 
-    public TlbMemberInfo(TlbTypeLibInfo pTypeLib, FUNCDESC funcdesc, ITypeInfo pTypeInfo, int idx,
+    /// <summary>
+    /// ctor for a new member info
+    /// </summary>
+    /// <param name="pTypeLib"></param>
+    /// <param name="funcdesc"></param>
+    /// <param name="pTypeInfo"></param>
+    /// <param name="idx"></param>
+    /// <param name="returnTypeStr"></param>
+    /// <param name="meth"></param>
+    /// <param name="parameters"></param>
+    /// <param name="vcppParameters"></param>
+    /// <param name="parentName"></param>
+    public TlbMemberInfo(TlbTypeLibInfo pTypeLib, Type classOrInterfaceManagedType, FUNCDESC funcdesc, ITypeInfo pTypeInfo, int idx,
                             string returnTypeStr, CodeMemberMethod meth,
                             List<TlbParameterInfo> parameters, List<TlbParameterInfo> vcppParameters, string parentName)
     {
@@ -185,10 +207,15 @@ namespace OlbLib
 
       Name = sName;
 
-      if (pTypeLib.TypesInAssembly.ContainsKey(sName))
-        Namespace = pTypeLib.TypesInAssembly[sName].Namespace;
-      else
-        Console.WriteLine($@"{sName} No assembly match");
+      try
+      {
+        ManagedMemberInfo = TlbUtil.FindManagedMemberInfo(pTypeInfo, classOrInterfaceManagedType, funcdesc.memid);
+      }
+      catch (Exception ex)
+      {
+        ManagedMemberInfo = null;
+        Console.Error.WriteLine($"Error finding managed member info for {FullName}: {ex.Message}");
+      }
       HelpString = sDocString;
       HelpContext = dwHelpContext;
       Meth = meth;

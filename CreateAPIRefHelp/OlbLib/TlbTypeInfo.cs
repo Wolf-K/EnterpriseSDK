@@ -14,7 +14,8 @@ namespace OlbLib
     public System.Runtime.InteropServices.ComTypes.TYPEKIND TypeKind { get; protected set; }
 
     public string LibraryName { get; set; }
-    public string Namespace { get; protected set; }
+
+    internal Type ManagedType { get; set; }
 
     public List<TlbMemberInfo> Members { get; protected set; }
 

@@ -1183,7 +1183,7 @@ namespace MdxUtil
     /// list of integers.</returns>
     private static string GetFriendlyTypeName(Type type)
     {
-      if (type.IsGenericType)
+      if (type.IsGenericType && type.Name.IndexOf('`') >= 0)
       {
         var genericTypeName = type.Name.Substring(0, type.Name.IndexOf('`'));
         var genericArgs = string.Join(", ", type.GetGenericArguments().Select(GetFriendlyTypeName));

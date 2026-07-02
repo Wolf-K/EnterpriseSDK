@@ -56,7 +56,9 @@ namespace OlbLib
 
     internal ITypeLib _iTypeLib { get; set; }
 
-    internal Dictionary<string, Type> TypesInAssembly { get; set; }
+    internal Type ManagedType { get; set; }
+
+    internal Assembly ManagedAssembly { get; set; } = null;
 
     public TlbTypeLibInfo(ITypeLib pTypeLib, string libraryPath, string assemblyPrefix)
     {
@@ -65,13 +67,33 @@ namespace OlbLib
       pTypeLib.GetDocumentation(-1, out string sName, out string sDocString, out int dwHelpContext, out string sHelpFile);
       Name = sName;
       HelpString = sDocString;
-
+      // get the corresponding managed assembly
+      var fileInfo = new System.IO.FileInfo(libraryPath);
+      string parent_directory_path = fileInfo.DirectoryName;
+      AssemblyName = GetAssemblyName(fileInfo.DirectoryName, sName, assemblyPrefix);
+      try
+      {
+        if (System.IO.File.Exists(AssemblyName))
+        {
+          ManagedAssembly = Assembly.LoadFile(AssemblyName);
+        }
+        else
+        {
+          ManagedAssembly = null;
+        }
+      }
+      catch
+      {
+        Console.Error.WriteLine($@"*** Can't get assembly: {AssemblyName}");
+        ManagedAssembly = null;
+      }
+      // no managed type for the typelib itself, but we can get the managed type for each of the types in the typelib
+      ManagedType = null;
       pTypeLib.GetLibAttr(out IntPtr ptr);
       try
       {
         var typeAttr =
-            (System.Runtime.InteropServices.ComTypes.TYPELIBATTR)
-                Marshal.PtrToStructure(ptr, typeof(System.Runtime.InteropServices.ComTypes.TYPELIBATTR));
+            (TYPELIBATTR)Marshal.PtrToStructure(ptr, typeof(TYPELIBATTR));
         Id = typeAttr.guid;
         Version = $@"{typeAttr.wMajorVerNum}.{typeAttr.wMinorVerNum}";
         //Console.WriteLine($@"{typeAttr.wMajorVerNum}.{typeAttr.wMinorVerNum} {typeAttr.guid}");
@@ -84,12 +106,6 @@ namespace OlbLib
         }
       }
 
-      // get the assembly because only typelibs in the assembly should be listed.
-      var fileInfo = new System.IO.FileInfo(libraryPath);
-      string parent_directory_path = fileInfo.DirectoryName;
-      AssemblyName = GetAssemblyName(fileInfo.DirectoryName, sName, assemblyPrefix);
-      TypesInAssembly = GetTypesFromAssembly(AssemblyName);
-
       SyntaxMaker = new SyntaxGenerator.SyntaxMaker(libraryPath);
 
       var typeInfoCount = pTypeLib.GetTypeInfoCount();
@@ -97,11 +113,6 @@ namespace OlbLib
       {
         pTypeLib.GetDocumentation(idx, out sName, out sDocString, out dwHelpContext, out sHelpFile);
         if (sName.StartsWith("_")) continue;
-        if (TypesInAssembly != null && !TypesInAssembly.Keys.Contains (sName))
-        {
-          Debug.WriteLine($@"Type not found: {sName} in {Name}");
-          continue;
-        }
         pTypeLib.GetTypeInfoType(idx, out TYPEKIND pTypeKind);
         bool bProcessError = true;
         switch (pTypeKind)
