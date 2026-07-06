@@ -115,15 +115,28 @@ namespace OlbLib
       return typeByName;
     }
 
+    // cache of loadable types to avoid repeated reflection calls
+    private static readonly Dictionary<Assembly, Type[]> LoadableTypesCache = new Dictionary<Assembly, Type[]>();
+
+
     private static IEnumerable<Type> GetLoadableTypes(Assembly assembly)
     {
+      // Check if the types for this assembly are already cached in the LoadableTypesCache
+      if (LoadableTypesCache.TryGetValue(assembly, out Type[] cachedTypes))
+      {
+        return cachedTypes;
+      }
       try
       {
-        return assembly.GetTypes();
+        var types = assembly.GetTypes();
+        LoadableTypesCache[assembly] = types;
+        return types;
       }
       catch (ReflectionTypeLoadException ex)
       {
-        return ex.Types.Where(t => t != null);
+        var types = ex.Types.Where(t => t != null).ToArray();
+        LoadableTypesCache[assembly] = types;
+        return types;
       }
     }
 

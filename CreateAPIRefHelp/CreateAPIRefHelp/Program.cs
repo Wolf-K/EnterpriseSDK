@@ -14,6 +14,8 @@ namespace CreateAPIRefHelp
 {
   internal class Program
   {
+    static string tlbDllDefaultPath = string.Empty;
+
     static int Main(string[] args)
     {
       int iReturnCode = 2;
@@ -22,7 +24,16 @@ namespace CreateAPIRefHelp
         Console.WriteLine("Usage: CreateAPIRefHelp <path-to-tlb-or-dll> <output-html-root-folder> <namespace-prefix> <release-version-label> <include-list.json> [/xml] [/clean]");
         return 1;
       }
+
+      
       string pathToTlbOrDll = Path.GetFullPath(args[0]);
+      tlbDllDefaultPath = pathToTlbOrDll;
+      AppDomain.CurrentDomain.AssemblyResolve += (s, e) =>
+      {
+        var name = new AssemblyName(e.Name).Name + ".dll";
+        var candidate = Path.Combine(tlbDllDefaultPath, name);
+        return File.Exists(candidate) ? Assembly.LoadFrom(candidate) : null;
+      };
       string outputRoot = Path.GetFullPath(args[1]);
       string namespacePrefix = args[2] ?? string.Empty;
       string releaseVersion = args[3] ?? string.Empty;
