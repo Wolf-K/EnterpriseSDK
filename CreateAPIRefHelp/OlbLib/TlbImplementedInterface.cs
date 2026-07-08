@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MdxUtil;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -41,9 +42,9 @@ namespace OlbLib
       string sHelpFile;
       pTypeLib.GetDocumentation(IndexInTypeLib, out sName, out sDocString, out dwHelpContext, out sHelpFile);
       Name = sName;
+      HelpString = sDocString.ToAsciiOnly();
 
       pTypeLib.GetDocumentation(-1, out sName, out sDocString, out dwHelpContext, out sHelpFile);
-      HelpString = sDocString;
       TypeLibName = sName;
       IsEvent = (impltypeflags & IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE) != 0;
     }

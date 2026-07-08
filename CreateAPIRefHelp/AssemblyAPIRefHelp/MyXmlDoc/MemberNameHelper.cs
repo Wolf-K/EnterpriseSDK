@@ -426,30 +426,17 @@ namespace MyXmlDoc
     /// <returns>The XML documentation member name string, or null if not supported.</returns>
     public static string? ToXmlDocMemberName(object member)
     {
-      switch (member)
+      return member switch
       {
-        case Type type:
-          return $"T:{type.FullName?.Replace('+', '.')}";
-        case MethodInfo method:
-          //return $"M:{method.DeclaringType?.FullName?.Replace('+', '.')}.{GetMethodSignature(method)}";
-          return XmlDocMemberNameBuilder.GetXmlDocMemberName(method);
-        case ConstructorInfo ctor:
-          //return $"M:{ctor.DeclaringType?.FullName?.Replace('+', '.')}.#ctor{GetParametersSignature(ctor.GetParameters())}";
-          return XmlDocMemberNameBuilder.GetXmlDocMemberName(ctor);
-        case PropertyInfo prop:
-          // return $"P:{prop.DeclaringType?.FullName?.Replace('+', '.')}.{prop.Name}";
-          return XmlDocMemberNameBuilder.GetXmlDocMemberName(prop);
-        case FieldInfo field:
-          // return $"F:{field.DeclaringType?.FullName?.Replace('+', '.')}.{field.Name}";
-          return XmlDocMemberNameBuilder.GetXmlDocMemberName(field);
-        case EventInfo evt:
-          // return $"E:{evt.DeclaringType?.FullName?.Replace('+', '.')}.{evt.Name}";
-          return XmlDocMemberNameBuilder.GetXmlDocMemberName(evt);
-        case string ns when ns.EndsWith("."):
-          return $"N:{ns.TrimEnd('.')}";
-        default:
-          return string.Empty;
-      }
+        Type type => $"T:{type.FullName?.Replace('+', '.')}",
+        MethodInfo method => XmlDocMemberNameBuilder.GetXmlDocMemberName(method),//return $"M:{method.DeclaringType?.FullName?.Replace('+', '.')}.{GetMethodSignature(method)}";
+        ConstructorInfo ctor => XmlDocMemberNameBuilder.GetXmlDocMemberName(ctor),//return $"M:{ctor.DeclaringType?.FullName?.Replace('+', '.')}.#ctor{GetParametersSignature(ctor.GetParameters())}";
+        PropertyInfo prop => XmlDocMemberNameBuilder.GetXmlDocMemberName(prop),// return $"P:{prop.DeclaringType?.FullName?.Replace('+', '.')}.{prop.Name}";
+        FieldInfo field => XmlDocMemberNameBuilder.GetXmlDocMemberName(field),// return $"F:{field.DeclaringType?.FullName?.Replace('+', '.')}.{field.Name}";
+        EventInfo evt => XmlDocMemberNameBuilder.GetXmlDocMemberName(evt),// return $"E:{evt.DeclaringType?.FullName?.Replace('+', '.')}.{evt.Name}";
+        string ns when ns.EndsWith(".") => $"N:{ns.TrimEnd('.')}",
+        _ => string.Empty,
+      };
     }
 
     private static string GetMethodSignature(MethodInfo method)

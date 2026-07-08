@@ -42,7 +42,7 @@ namespace OlbLib
 
     public string LibraryName { get; protected set; }
 
-    internal MemberInfo ManagedMemberInfo { get; set; }
+    public MemberInfo ManagedMemberInfo { get; set; }
 
     public string InterfaceParentName { get; protected set; }
 

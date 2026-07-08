@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MdxUtil;
+using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 
@@ -41,7 +42,7 @@ namespace OlbLib
 
       Name = sName;
 
-      HelpString = sDocString;
+      HelpString = sDocString.ToAsciiOnly();
       TYPEATTR typeAttr;
       ITypeInfo typeInfo;
       pTypeLib._iTypeLib.GetTypeInfo(idx, out typeInfo);

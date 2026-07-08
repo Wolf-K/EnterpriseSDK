@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MdxUtil;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -66,7 +67,7 @@ namespace OlbLib
 
       pTypeLib.GetDocumentation(-1, out string sName, out string sDocString, out int dwHelpContext, out string sHelpFile);
       Name = sName;
-      HelpString = sDocString;
+      HelpString = sDocString.ToAsciiOnly();
       // get the corresponding managed assembly
       var fileInfo = new System.IO.FileInfo(libraryPath);
       string parent_directory_path = fileInfo.DirectoryName;

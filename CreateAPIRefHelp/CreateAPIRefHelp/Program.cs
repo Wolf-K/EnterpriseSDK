@@ -115,11 +115,10 @@ namespace CreateAPIRefHelp
           DirectoryInfo di = new(outputRoot);
           foreach (FileInfo file in di.GetFiles())
           {
-            file.Delete();
-          }
-          foreach (DirectoryInfo dir in di.GetDirectories())
-          {
-            dir.Delete(true);
+            string fileName = Path.GetFileNameWithoutExtension(file.Name);
+            if (includedFiles != null &&
+             (IsIncludedForOutput(fileName+".dll", includedFiles) || IsIncludedForOutput(fileName + ".tlb", includedFiles)))
+              file.Delete();
           }
           Console.WriteLine("Output folder cleaned.");
         }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MdxUtil;
+using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 
@@ -160,7 +161,7 @@ namespace OlbLib
 
       Name = sName;
 
-      HelpString = sDocString;
+      HelpString = sDocString.ToAsciiOnly();
       HelpContext = dwHelpContext;
 
       ITypeInfo currentTypeInfo;

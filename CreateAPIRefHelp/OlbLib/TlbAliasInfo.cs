@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MdxUtil;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
@@ -48,7 +49,7 @@ namespace OlbLib
       pTypeLib._iTypeLib.GetDocumentation(idx, out sName, out sDocString, out dwHelpContext, out sHelpFile);
 
       Name = sName;
-      HelpString = sDocString;
+      HelpString = sDocString.ToAsciiOnly();
       HelpContext = dwHelpContext;
 
       ITypeInfo currentTypeInfo;
