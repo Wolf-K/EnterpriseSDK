@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IJSONReader | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IJSONReader | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to Sequential JSON Reader.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.esriSystem.IJSONReader">
+
+
+
+  <h1 id="ESRI_ArcGIS_esriSystem_IJSONReader" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader" class="text-break">
+Interface IJSONReader  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.esriSystem.html">esriSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.System.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to Sequential JSON Reader.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;48105A80-E0DC-4D69-BB61-3DF74CAFA52C&quot;)]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+public interface IJSONReader</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_CurrentTokenType_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_CurrentTokenType" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType">
+  CurrentTokenType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains type of current token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">JSONTokenType CurrentTokenType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.JSONTokenType.html">JSONTokenType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_CurrentTokenType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_Stream_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.Stream*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_Stream" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.Stream">
+  Stream
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains underlying stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IStream Stream { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IStream.html">IStream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_Stream_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_FindProperties_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_FindProperties_ESRI_ArcGIS_esriSystem_IStringArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)">
+  FindProperties(IStringArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int FindProperties(IStringArray propnames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propnames</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IStringArray.html">IStringArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_FindProperty_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_FindProperty_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(System.String)">
+  FindProperty(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads current object until property name matches or object ends. Case is ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FindProperty(string propname)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propname</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_FindProperty_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsBoolean_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsBoolean" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean">
+  IsBoolean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is a property value or array value of boolean type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsBoolean()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsBoolean_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfArray" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray">
+  IsEndOfArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is ']'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEndOfArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfArray_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfObject" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject">
+  IsEndOfObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is '}'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEndOfObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfObject_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNull_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsNull*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNull" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsNull">
+  IsNull()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is a property value or array value and equals to null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsNull()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNull_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNumber_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNumber" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber">
+  IsNumber()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is a property value or array value of numeric type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsNumber()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsNumber_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfArray" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray">
+  IsStartOfArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is '['.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsStartOfArray()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfArray_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfObject" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject">
+  IsStartOfObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is '{'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsStartOfObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfObject_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_IsString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_IsString" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.IsString">
+  IsString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates true if current token is a property value or array value of type string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_IsString_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_Read_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.Read*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_Read" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.Read">
+  Read()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reads next JSON token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Read()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_Read_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadFrom_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadFrom_ESRI_ArcGIS_esriSystem_IStream_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom(ESRI.ArcGIS.esriSystem.IStream)">
+  ReadFrom(IStream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReadFrom(IStream inputStream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inputStream</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IStream.html">IStream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadFromString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadFromString_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(System.String)">
+  ReadFromString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies input as string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReadFromString(string Text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadFromString_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadPropertyName_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadPropertyName" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName">
+  ReadPropertyName()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains property name. Advances to the next token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ReadPropertyName()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadPropertyName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValue_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValue" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue">
+  ReadValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains array or property value as Variant. Advances to the next token.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">object ReadValue()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValue_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsBoolean_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsBoolean" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean">
+  ReadValueAsBoolean()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains array or property value as boolean. Advances to the next token. If property value cannot be coerced to boolean, returns E_FAIL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ReadValueAsBoolean()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsBoolean_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDate_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDate" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate">
+  ReadValueAsDate()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains property or array value as date. Advances to the next token. If property value cannot be coerced to datetime, returns E_FAIL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime ReadValueAsDate()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDate_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDouble_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDouble" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble">
+  ReadValueAsDouble()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains property or array value as number. Advances to the next token. If property value cannot be coerced to double, returns E_FAIL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double ReadValueAsDouble()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDouble_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsLong_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsLong" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong">
+  ReadValueAsLong()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains property or array value as number. Advances to the next token. If property value cannot be coerced to long, returns E_FAIL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReadValueAsLong()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsLong_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsString" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString">
+  ReadValueAsString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Obtains property or array value as string. Advances to the next token. If property value cannot be coerced to string, returns E_FAIL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ReadValueAsString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsString_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilArrayEnds_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilArrayEnds" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds">
+  SkipUntilArrayEnds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Skips the rest of the current object, including closing bracket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipUntilArrayEnds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilArrayEnds_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilObjectEnds_" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilObjectEnds" data-uid="ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds">
+  SkipUntilObjectEnds()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Skips the rest of the current object, including closing bracket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipUntilObjectEnds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilObjectEnds_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IVector | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IVector | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to vector properties and operations.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.IVector">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_IVector" data-uid="ESRI.ArcGIS.Geometry.IVector" class="text-break">
+Interface IVector  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to vector properties and operations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;40D717C9-10C2-11D4-9F59-00C04F6BDF0D&quot;)]
+public interface IVector</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_ComponentByIndex_" data-uid="ESRI.ArcGIS.Geometry.IVector.ComponentByIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_ComponentByIndex_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IVector.ComponentByIndex(System.Int32)">
+  ComponentByIndex[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The component corresponding to a given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double ComponentByIndex[int componentIndex] { get; set; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>componentIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_ComponentByIndex_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_Dimension_" data-uid="ESRI.ArcGIS.Geometry.IVector.Dimension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_Dimension" data-uid="ESRI.ArcGIS.Geometry.IVector.Dimension">
+  Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dimension of this vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Dimension { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_Dimension_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_IsEmpty_" data-uid="ESRI.ArcGIS.Geometry.IVector.IsEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_IsEmpty" data-uid="ESRI.ArcGIS.Geometry.IVector.IsEmpty">
+  IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the vector is empty (unset).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsEmpty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_IsEmpty_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_Magnitude_" data-uid="ESRI.ArcGIS.Geometry.IVector.Magnitude*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_Magnitude" data-uid="ESRI.ArcGIS.Geometry.IVector.Magnitude">
+  Magnitude
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The length of the vector.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double Magnitude { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_Magnitude_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_AddVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.AddVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_AddVector_ESRI_ArcGIS_Geometry_IVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.AddVector(ESRI.ArcGIS.Geometry.IVector)">
+  AddVector(IVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVector AddVector(IVector otherVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_ConstructAddVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.ConstructAddVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_ConstructAddVector_ESRI_ArcGIS_Geometry_IVector_ESRI_ArcGIS_Geometry_IVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.ConstructAddVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)">
+  ConstructAddVector(IVector, IVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ConstructAddVector(IVector vector1, IVector vector2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector1</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+    <dt><code>vector2</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_ConstructSubtractVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_ConstructSubtractVector_ESRI_ArcGIS_Geometry_IVector_ESRI_ArcGIS_Geometry_IVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)">
+  ConstructSubtractVector(IVector, IVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ConstructSubtractVector(IVector vector1, IVector vector2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vector1</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+    <dt><code>vector2</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_DotProduct_" data-uid="ESRI.ArcGIS.Geometry.IVector.DotProduct*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_DotProduct_ESRI_ArcGIS_Geometry_IVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.DotProduct(ESRI.ArcGIS.Geometry.IVector)">
+  DotProduct(IVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double DotProduct(IVector otherVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_Normalize_" data-uid="ESRI.ArcGIS.Geometry.IVector.Normalize*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_Normalize" data-uid="ESRI.ArcGIS.Geometry.IVector.Normalize">
+  Normalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalize the vector (scale it to magnitude = 1).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Normalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_Normalize_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_Scale_" data-uid="ESRI.ArcGIS.Geometry.IVector.Scale*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_Scale_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IVector.Scale(System.Double)">
+  Scale(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Scale the vector by the given factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Scale(double ScaleFactor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ScaleFactor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_Scale_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_SetEmpty_" data-uid="ESRI.ArcGIS.Geometry.IVector.SetEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_SetEmpty" data-uid="ESRI.ArcGIS.Geometry.IVector.SetEmpty">
+  SetEmpty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Makes the vector empty (unset).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetEmpty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IVector_SetEmpty_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IVector_SubtractVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.SubtractVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IVector_SubtractVector_ESRI_ArcGIS_Geometry_IVector_" data-uid="ESRI.ArcGIS.Geometry.IVector.SubtractVector(ESRI.ArcGIS.Geometry.IVector)">
+  SubtractVector(IVector)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IVector SubtractVector(IVector otherVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>otherVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IVector.html">IVector</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

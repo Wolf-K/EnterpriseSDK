@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ITerrain | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ITerrain | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members used to acquire information about a Terrain and to retrieve DynamicSurface objects from which raster and TIN surfaces are made.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain">
+
+
+
+  <h1 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain" class="text-break">
+Interface ITerrain  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.html">GeoDatabaseExtensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.GeoDatabaseExtensions.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members used to acquire information about a Terrain and to retrieve DynamicSurface objects from which raster and TIN surfaces are made.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;F657C7ED-FE73-493E-8CF7-845E20CB7D9B&quot;)]
+public interface ITerrain</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSource_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.DataSource*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSource_System_Int32_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.DataSource(System.Int32)">
+  DataSource[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the data source specified by the index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITerrainDataSource DataSource[int Index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html">ITerrainDataSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSource_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSourceCount_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.DataSourceCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSourceCount" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.DataSourceCount">
+  DataSourceCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of data sources participating in the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int DataSourceCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_DataSourceCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Extent_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Extent*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Extent" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Extent">
+  Extent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The approximate xyz extent of the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnvelope Extent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Extent_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_FeatureDataset_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.FeatureDataset*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_FeatureDataset" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.FeatureDataset">
+  FeatureDataset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The feature dataset which contains the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IFeatureDataset FeatureDataset { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureDataset.html">IFeatureDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_FeatureDataset_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_ID_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.ID*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_ID" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.ID">
+  ID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The database identifier of the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_ID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsDirty_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.IsDirty*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsDirty" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.IsDirty">
+  IsDirty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether or not a partial rebuild is needed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDirty { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsDirty_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsValid_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.IsValid*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsValid" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.IsValid">
+  IsValid
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether or not a full build is required.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValid { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_IsValid_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxOverviewTerrainPoints_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.MaxOverviewTerrainPoints*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxOverviewTerrainPoints" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.MaxOverviewTerrainPoints">
+  MaxOverviewTerrainPoints
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum number of points in the most generalized representation of a Terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int MaxOverviewTerrainPoints { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxOverviewTerrainPoints_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxPointsPerShape_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.MaxPointsPerShape*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxPointsPerShape" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.MaxPointsPerShape">
+  MaxPointsPerShape
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum number of vertices per multipoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int MaxPointsPerShape { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_MaxPointsPerShape_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Name_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Name*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Name" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Name_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevel_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidLevel*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevel_System_Int32_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidLevel(System.Int32)">
+  PyramidLevel[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the pyramid level specified by the index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITerrainPyramidLevel PyramidLevel[int Index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel.html">ITerrainPyramidLevel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevel_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevelCount_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidLevelCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevelCount" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidLevelCount">
+  PyramidLevelCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of pyramid levels in the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PyramidLevelCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidLevelCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidType_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidType*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidType" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.PyramidType">
+  PyramidType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The pyramid type of this Terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">esriTerrainPyramidType PyramidType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType.html">esriTerrainPyramidType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_PyramidType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Size_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Size*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Size" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.Size">
+  Size
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The total number of points in the Terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double Size { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_Size_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_SpatialReference_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_SpatialReference" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.SpatialReference">
+  SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spatial reference of the terrain.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISpatialReference SpatialReference { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_TileSize_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.TileSize*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_TileSize" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.TileSize">
+  TileSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The horizontal distance used to spatially index and partition terrain data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double TileSize { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_TileSize_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_CreateDynamicSurface_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.CreateDynamicSurface*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_CreateDynamicSurface" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.CreateDynamicSurface">
+  CreateDynamicSurface()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns an implicit surface from which TINs and rasters are derived.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDynamicSurface CreateDynamicSurface()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface.html">IDynamicSurface</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_CreateDynamicSurface_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_ExtractFromEmbeddedDataSource_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.ExtractFromEmbeddedDataSource*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_ExtractFromEmbeddedDataSource_System_Int32_ESRI_ArcGIS_Geodatabase_IFeatureClass_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_ESRI_ArcGIS_esriSystem_ITrackCancel_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.ExtractFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)">
+  ExtractFromEmbeddedDataSource(int, IFeatureClass, IEnvelope, double, ITrackCancel)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ExtractFromEmbeddedDataSource(int Index, IFeatureClass pFeatureClass, IEnvelope pAOI, double Resolution, ITrackCancel pTrackCancel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pFeatureClass</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureClass.html">IFeatureClass</a></dt>
+    <dd></dd>
+    <dt><code>pAOI</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>Resolution</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>pTrackCancel</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.ITrackCancel.html">ITrackCancel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_GetDirtyTiles_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.GetDirtyTiles*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_GetDirtyTiles" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.GetDirtyTiles">
+  GetDirtyTiles()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns all dirty tiles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumEnvelope GetDirtyTiles()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope.html">IEnumEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_GetDirtyTiles_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_GetPointCount_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.GetPointCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_GetPointCount_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)">
+  GetPointCount(IEnvelope, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double GetPointCount(IEnvelope pAOI, double Resolution)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pAOI</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>Resolution</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_QueryTileInfo_" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.QueryTileInfo*"></a>
+
+  <h3 id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_QueryTileInfo_System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double__System_Double__System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain.QueryTileInfo(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)">
+  QueryTileInfo(out int, out int, out int, out int, out double, out double, out double, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns horizontal partitioning information about the terrain data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryTileInfo(out int pRowBegin, out int pRowEnd, out int pColBegin, out int pColEnd, out double pXMin, out double pYMin, out double pTileSize, out int pRowCountDomain, out int pColCountDomain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pRowBegin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pRowEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pColBegin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pColEnd</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pXMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>pYMin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>pTileSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>pRowCountDomain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pColCountDomain</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain_QueryTileInfo_System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double__System_Double__System_Int32__System_Int32___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

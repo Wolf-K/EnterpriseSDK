@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IJSONObject | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IJSONObject | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides simplified DOM-like JSON serialization and de-serialization API.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.esriSystem.IJSONObject">
+
+
+
+  <h1 id="ESRI_ArcGIS_esriSystem_IJSONObject" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject" class="text-break">
+Interface IJSONObject  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.esriSystem.html">esriSystem</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.System.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides simplified DOM-like JSON serialization and de-serialization API.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;EEA70515-FA6B-4DEE-AB79-D7935BF3A838&quot;)]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+public interface IJSONObject</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_CaseSensitiveNames_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CaseSensitiveNames*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_CaseSensitiveNames" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CaseSensitiveNames">
+  CaseSensitiveNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if member name lookups are case-sensitive. Default value is true. Methods affected by this state change: MemberExists, IsValueNull and all TryGet... methods.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CaseSensitiveNames { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_CaseSensitiveNames_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberCount_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MemberCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberCount" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MemberCount">
+  MemberCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns size of member collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int MemberCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_Add_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.Add*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_Add_System_String_System_Object_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.Add(System.String,System.Object)">
+  Add(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Add(string Name, object Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_Add_System_String_System_Object__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddBoolean_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddBoolean*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddBoolean_System_String_System_Boolean_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddBoolean(System.String,System.Boolean)">
+  AddBoolean(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddBoolean(string Name, bool Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddBoolean_System_String_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDate_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDate*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDate_System_String_System_DateTime_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDate(System.String,System.DateTime)">
+  AddDate(string, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddDate(string Name, DateTime Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDate_System_String_System_DateTime__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDouble_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDouble*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDouble_System_String_System_Double_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDouble(System.String,System.Double)">
+  AddDouble(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddDouble(string Name, double Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDouble_System_String_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDoubleEx_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDoubleEx*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDoubleEx_System_String_System_Double_System_Int32_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddDoubleEx(System.String,System.Double,System.Int32)">
+  AddDoubleEx(string, double, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Stores precision for use in ToJSON and ToJSONString. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddDoubleEx(string Name, double Value, int precision)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>precision</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddDoubleEx_System_String_System_Double_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddJSONArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddJSONArray*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddJSONArray_System_String_ESRI_ArcGIS_esriSystem_IJSONArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddJSONArray(System.String,ESRI.ArcGIS.esriSystem.IJSONArray)">
+  AddJSONArray(string, IJSONArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddJSONArray(string Name, IJSONArray Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONArray.html">IJSONArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddJSONObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddJSONObject*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddJSONObject_System_String_ESRI_ArcGIS_esriSystem_IJSONObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddJSONObject(System.String,ESRI.ArcGIS.esriSystem.IJSONObject)">
+  AddJSONObject(string, IJSONObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddJSONObject(string Name, IJSONObject Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONObject.html">IJSONObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddLong_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddLong*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddLong_System_String_System_Int32_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddLong(System.String,System.Int32)">
+  AddLong(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddLong(string Name, int Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddLong_System_String_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddNull_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddNull*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddNull_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddNull(System.String)">
+  AddNull(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member with the value of null to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddNull(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddNull_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_AddString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_AddString_System_String_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.AddString(System.String,System.String)">
+  AddString(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddString(string Name, string Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_AddString_System_String_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_ClearAll_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ClearAll*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_ClearAll" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ClearAll">
+  ClearAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all members.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ClearAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_ClearAll_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CreateMemberArray*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberArray_System_String_ESRI_ArcGIS_esriSystem_IJSONArray__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CreateMemberArray(System.String,ESRI.ArcGIS.esriSystem.IJSONArray@)">
+  CreateMemberArray(string, out IJSONArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateMemberArray(string Name, out IJSONArray Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONArray.html">IJSONArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberArray_System_String_ESRI_ArcGIS_esriSystem_IJSONArray___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CreateMemberObject*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberObject_System_String_ESRI_ArcGIS_esriSystem_IJSONObject__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.CreateMemberObject(System.String,ESRI.ArcGIS.esriSystem.IJSONObject@)">
+  CreateMemberObject(string, out IJSONObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates and adds new member name-value pair to the member collection. Returns E_FAIL if duplicate member is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateMemberObject(string Name, out IJSONObject Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONObject.html">IJSONObject</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_CreateMemberObject_System_String_ESRI_ArcGIS_esriSystem_IJSONObject___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_GetMemberAt_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.GetMemberAt*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_GetMemberAt_System_Int32_System_String__System_Object__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.GetMemberAt(System.Int32,System.String@,System.Object@)">
+  GetMemberAt(int, out string, out object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member name and value at a given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetMemberAt(int Index, out string Name, out object Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_GetMemberAt_System_Int32_System_String__System_Object___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_IsValueNull_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.IsValueNull*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_IsValueNull_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.IsValueNull(System.String)">
+  IsValueNull(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns VARIANT_TRUE if member is undefined or member's value is null. Returns VARIANT_FALSE if member exists and its value is not null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsValueNull(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_IsValueNull_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_MakeValueNull_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MakeValueNull*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_MakeValueNull_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MakeValueNull(System.String)">
+  MakeValueNull(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Make a designated member NULL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MakeValueNull(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_MakeValueNull_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberExists_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MemberExists*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberExists_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.MemberExists(System.String)">
+  MemberExists(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a member with the given name exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool MemberExists(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_MemberExists_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_ParseJSON_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ParseJSON*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_ParseJSON_ESRI_ArcGIS_esriSystem_IJSONReader_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ParseJSON(ESRI.ArcGIS.esriSystem.IJSONReader)">
+  ParseJSON(IJSONReader)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ParseJSON(IJSONReader pReader)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pReader</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONReader.html">IJSONReader</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_ParseString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ParseString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_ParseString_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ParseString(System.String)">
+  ParseString(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Parses JSON object from string into memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ParseString(string json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_ParseString_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_RemoveMember_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.RemoveMember*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_RemoveMember_System_String_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.RemoveMember(System.String)">
+  RemoveMember(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Remove a member from the member collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveMember(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_RemoveMember_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_ToJSON_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ToJSON*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_ToJSON_System_String_ESRI_ArcGIS_esriSystem_IJSONWriter_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ToJSON(System.String,ESRI.ArcGIS.esriSystem.IJSONWriter)">
+  ToJSON(string, IJSONWriter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ToJSON(string objectName, IJSONWriter pWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>objectName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>pWriter</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONWriter.html">IJSONWriter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_ToJSONString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ToJSONString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_ToJSONString_ESRI_ArcGIS_esriSystem_IPropertySet_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.ToJSONString(ESRI.ArcGIS.esriSystem.IPropertySet)">
+  ToJSONString(IPropertySet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ToJSONString(IPropertySet props)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>props</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValue_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValue*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValue_System_String_System_Object__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValue(System.String,System.Object@)">
+  TryGetValue(string, out object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name. If member does not exist, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValue(string Name, out object Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValue_System_String_System_Object___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsArray_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsArray*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsArray_System_String_ESRI_ArcGIS_esriSystem_IJSONArray__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsArray(System.String,ESRI.ArcGIS.esriSystem.IJSONArray@)">
+  TryGetValueAsArray(string, out IJSONArray)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as IJSONArray. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsArray(string Name, out IJSONArray Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONArray.html">IJSONArray</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsArray_System_String_ESRI_ArcGIS_esriSystem_IJSONArray___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsBoolean_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsBoolean*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsBoolean_System_String_System_Boolean__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsBoolean(System.String,System.Boolean@)">
+  TryGetValueAsBoolean(string, out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as boolean. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsBoolean(string Name, out bool Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsBoolean_System_String_System_Boolean___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDate_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsDate*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDate_System_String_System_DateTime__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsDate(System.String,System.DateTime@)">
+  TryGetValueAsDate(string, out DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as DATE. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsDate(string Name, out DateTime Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDate_System_String_System_DateTime___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDouble_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsDouble*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDouble_System_String_System_Double__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsDouble(System.String,System.Double@)">
+  TryGetValueAsDouble(string, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as double. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsDouble(string Name, out double Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsDouble_System_String_System_Double___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsLong_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsLong*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsLong_System_String_System_Int32__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsLong(System.String,System.Int32@)">
+  TryGetValueAsLong(string, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as long. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsLong(string Name, out int Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsLong_System_String_System_Int32___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsObject_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsObject*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsObject_System_String_ESRI_ArcGIS_esriSystem_IJSONObject__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsObject(System.String,ESRI.ArcGIS.esriSystem.IJSONObject@)">
+  TryGetValueAsObject(string, out IJSONObject)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as IJSONObject. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsObject(string Name, out IJSONObject Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IJSONObject.html">IJSONObject</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsObject_System_String_ESRI_ArcGIS_esriSystem_IJSONObject___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsString_" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsString*"></a>
+
+  <h3 id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsString_System_String_System_String__" data-uid="ESRI.ArcGIS.esriSystem.IJSONObject.TryGetValueAsString(System.String,System.String@)">
+  TryGetValueAsString(string, out string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns member value for a given name as string. If member does not exist or type coercion fails, returns VARIANT_FALSE in 'success' parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool TryGetValueAsString(string Name, out string Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_esriSystem_IJSONObject_TryGetValueAsString_System_String_System_String___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

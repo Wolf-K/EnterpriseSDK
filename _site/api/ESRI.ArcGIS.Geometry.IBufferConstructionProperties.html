@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IBufferConstructionProperties | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IBufferConstructionProperties | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members that control how sets of geometries are buffered.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties" class="text-break">
+Interface IBufferConstructionProperties  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members that control how sets of geometries are buffered.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;EA859CCE-60B2-4621-8B54-154CDDD81947&quot;)]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+public interface IBufferConstructionProperties</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_BufferProgress_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.BufferProgress*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_BufferProgress" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.BufferProgress">
+  BufferProgress
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Report the progress of a buffer operation via this callback interface.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IBufferProgress BufferProgress { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IBufferProgress.html">IBufferProgress</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_BufferProgress_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DensifyDeviation_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.DensifyDeviation*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DensifyDeviation" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.DensifyDeviation">
+  DensifyDeviation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>For planar buffering, the max dist. between a line connecting two buffer curve points and the true curve (defaults to -1, indicating 1000 * xy tol of sr of input geoms ). For geodesic buffering default to 10 meters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double DensifyDeviation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DensifyDeviation_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DistanceOffsets_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.DistanceOffsets*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DistanceOffsets" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.DistanceOffsets">
+  DistanceOffsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs concentric buffers at the base distance plus each distance offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDoubleArray DistanceOffsets { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IDoubleArray.html">IDoubleArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_DistanceOffsets_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_EndOption_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.EndOption*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_EndOption" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.EndOption">
+  EndOption
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the shape of the end caps of polyline buffers; defaults to 'esriBufferRound'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">esriBufferConstructionEndEnum EndOption { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriBufferConstructionEndEnum.html">esriBufferConstructionEndEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_EndOption_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_ExplodeBuffers_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.ExplodeBuffers*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_ExplodeBuffers" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.ExplodeBuffers">
+  ExplodeBuffers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether or not output buffers can have multiple outer rings (defaut is false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ExplodeBuffers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_ExplodeBuffers_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_GenerateCurves_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.GenerateCurves*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_GenerateCurves" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.GenerateCurves">
+  GenerateCurves
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether sequences of curve points are replaced with true curves in the output buffers (default is true).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GenerateCurves { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_GenerateCurves_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_OutsideOnly_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.OutsideOnly*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_OutsideOnly" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.OutsideOnly">
+  OutsideOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Excludes the inside of the input polygon from the output buffer (default = false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool OutsideOnly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_OutsideOnly_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_SideOption_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.SideOption*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_SideOption" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.SideOption">
+  SideOption
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies on which side of a polyline its buffer is constructed; defaults to 'esriBufferFull' (both sides).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">esriBufferConstructionSideEnum SideOption { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriBufferConstructionSideEnum.html">esriBufferConstructionSideEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_SideOption_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_UnionOverlappingBuffers_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.UnionOverlappingBuffers*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_UnionOverlappingBuffers" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.UnionOverlappingBuffers">
+  UnionOverlappingBuffers
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies whether or not overlaps are preserved in the set of output buffers (default is false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UnionOverlappingBuffers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_UnionOverlappingBuffers_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_Unit_" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.Unit*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_Unit" data-uid="ESRI.ArcGIS.Geometry.IBufferConstructionProperties.Unit">
+  Unit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unit of measure used for the buffering distance and densification deviation distance (optional, default units are obtained from spatial reference of input geometries).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IUnit Unit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IUnit.html">IUnit</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IBufferConstructionProperties_Unit_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface INetworkDataset | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface INetworkDataset | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members that query the schema of the network dataset.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geodatabase_INetworkDataset" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset" class="text-break">
+Interface INetworkDataset  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geodatabase.html">Geodatabase</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geodatabase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members that query the schema of the network dataset.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;5299F003-FCA2-453D-AB8E-28B9AC6648B5&quot;)]
+public interface INetworkDataset</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Attribute_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Attribute_System_Int32_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute(System.Int32)">
+  Attribute[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset attribute by index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkAttribute Attribute[int Index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkAttribute.html">INetworkAttribute</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Attribute_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByID_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByID_System_Int32_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID(System.Int32)">
+  AttributeByID[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset attribute corresponding to the specified ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkAttribute AttributeByID[int ID] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkAttribute.html">INetworkAttribute</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByID_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByName_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName(System.String)">
+  AttributeByName[string]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset attribute corresponding to the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkAttribute AttributeByName[string Name] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkAttribute.html">INetworkAttribute</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByName_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeCount_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeCount" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount">
+  AttributeCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of attributes in the network dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int AttributeCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Buildable_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Buildable" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable">
+  Buildable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this network dataset is buildable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Buildable { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Buildable_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_DirtyArea_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_DirtyArea_ESRI_ArcGIS_Geometry_IPolygon_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)">
+  DirtyArea[IPolygon]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The dirty area polygon of the network dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPolygon DirtyArea[IPolygon Location] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Location</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPolygon.html">IPolygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPolygon.html">IPolygon</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_DirtyArea_ESRI_ArcGIS_Geometry_IPolygon__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_NetworkType_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_NetworkType" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType">
+  NetworkType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the network dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">esriNetworkDatasetType NetworkType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType.html">esriNetworkDatasetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_NetworkType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Source_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Source*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Source_System_Int32_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.Source(System.Int32)">
+  Source[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset source by index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkSource Source[int Index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkSource.html">INetworkSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_Source_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByID_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByID_System_Int32_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID(System.Int32)">
+  SourceByID[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset source corresponding to the specified ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkSource SourceByID[int ID] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkSource.html">INetworkSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByID_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByName_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName(System.String)">
+  SourceByName[string]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Network dataset source corresponding to the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">INetworkSource SourceByName[string Name] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INetworkSource.html">INetworkSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByName_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceCount_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceCount" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount">
+  SourceCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of sources in the network dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int SourceCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_State_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.State*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_State" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.State">
+  State
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the network dataset is built or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">esriNetworkDatasetState State { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState.html">esriNetworkDatasetState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_State_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SupportsTurns_" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SupportsTurns" data-uid="ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns">
+  SupportsTurns
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this network dataset supports network turn elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SupportsTurns { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_INetworkDataset_SupportsTurns_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,5255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RasterCatalogClass | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RasterCatalogClass | EnterpriseSDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass" class="text-break">
+Class RasterCatalogClass  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geodatabase.html">Geodatabase</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geodatabase.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;55E13E7E-52BD-4145-9ADF-9CF8B776C346&quot;)]
+[ClassInterface(ClassInterfaceType.None)]
+public class RasterCatalogClass : RasterCatalog, IDataset, IDatasetEdit, IDatasetEditInfo, IDatasetAnalyze, ISchemaLock, ITable, IClassSchemaEdit2, IClassSchemaEdit, IModelInfo, IObjectClassInfo, IObjectClassInfo2, IFeatureClass, IObjectClass, IClass, IGeoDataset, IFeatureClassWrite, IFeatureClassLoad, ITableCapabilities, IFeatureClassManage, IRasterCatalog</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RasterCatalogClass</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.RasterCatalog.html">RasterCatalog</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDatasetEdit.html">IDatasetEdit</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDatasetEditInfo.html">IDatasetEditInfo</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDatasetAnalyze.html">IDatasetAnalyze</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.ISchemaLock.html">ISchemaLock</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.ITable.html">ITable</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IClassSchemaEdit2.html">IClassSchemaEdit2</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html">IClassSchemaEdit</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IModelInfo.html">IModelInfo</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IObjectClassInfo.html">IObjectClassInfo</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IObjectClassInfo2.html">IObjectClassInfo2</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureClass.html">IFeatureClass</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IObjectClass.html">IObjectClass</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IClass.html">IClass</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IGeoDataset.html">IGeoDataset</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureClassWrite.html">IFeatureClassWrite</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureClassLoad.html">IFeatureClassLoad</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.ITableCapabilities.html">ITableCapabilities</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureClassManage.html">IFeatureClassManage</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRasterCatalog.html">IRasterCatalog</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AddField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AddIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AliasName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AliasName">
+  AliasName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The alias name of the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string AliasName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AliasName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AllowableComponents_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AllowableComponents*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AllowableComponents" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AllowableComponents">
+  AllowableComponents
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The allowable components to be analyzed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int AllowableComponents { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AllowableComponents_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterAliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterAliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterAliasName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterAliasName(System.String)">
+  AlterAliasName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The alias name of the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterAliasName(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterAliasName_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterClassExtensionCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterClassExtensionCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterClassExtensionCLSID_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_IPropertySet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)">
+  AlterClassExtensionCLSID(UID, IPropertySet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterClassExtensionCLSID(UID ClassExtensionCLSID, IPropertySet classExtensionProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ClassExtensionCLSID</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+    <dt><code>classExtensionProperties</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterClassExtensionProperties_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterClassExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterClassExtensionProperties_ESRI_ArcGIS_esriSystem_IPropertySet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterClassExtensionProperties(ESRI.ArcGIS.esriSystem.IPropertySet)">
+  AlterClassExtensionProperties(IPropertySet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterClassExtensionProperties(IPropertySet classExtensionProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>classExtensionProperties</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterDefaultValue_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterDefaultValue*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterDefaultValue_System_String_System_Object_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterDefaultValue(System.String,System.Object)">
+  AlterDefaultValue(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default value of the object class field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterDefaultValue(string FieldName, object Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterDefaultValue_System_String_System_Object__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterDomain_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterDomain*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterDomain_System_String_ESRI_ArcGIS_Geodatabase_IDomain_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)">
+  AlterDomain(string, IDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterDomain(string FieldName, IDomain Domain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Domain</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IDomain.html">IDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldAliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterFieldAliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldAliasName_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterFieldAliasName(System.String,System.String)">
+  AlterFieldAliasName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The alias name of the object class field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterFieldAliasName(string FieldName, string AliasName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>AliasName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldAliasName_System_String_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldModelName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterFieldModelName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldModelName_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterFieldModelName(System.String,System.String)">
+  AlterFieldModelName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The model name of the object class field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterFieldModelName(string FieldName, string ModelName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterFieldModelName_System_String_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterInstanceCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterInstanceCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterInstanceCLSID_ESRI_ArcGIS_esriSystem_UID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)">
+  AlterInstanceCLSID(UID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterInstanceCLSID(UID InstanceCLSID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>InstanceCLSID</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterModelName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterModelName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterModelName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterModelName(System.String)">
+  AlterModelName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The model name of the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterModelName(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterModelName_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterRasterSpatialReference_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterRasterSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AlterRasterSpatialReference_ESRI_ArcGIS_Geometry_ISpatialReference_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AlterRasterSpatialReference(ESRI.ArcGIS.Geometry.ISpatialReference)">
+  AlterRasterSpatialReference(ISpatialReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterRasterSpatialReference(ISpatialReference SpatialReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>SpatialReference</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Analyze_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Analyze*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Analyze_System_Int32_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Analyze(System.Int32)">
+  Analyze(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Analyze the data to update/generate DBMS statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Analyze(int tableComponents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tableComponents</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Analyze_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AreaField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AreaField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AreaField" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.AreaField">
+  AreaField
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The geometry area field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IField AreaField { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_AreaField_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_BrowseName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.BrowseName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_BrowseName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.BrowseName">
+  BrowseName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The browse name of the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string BrowseName { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_BrowseName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CLSID">
+  CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The GUID for the COM Class (CoClass) corresponding to instances of this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CLSID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanAlterRasterSpatialReference_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanAlterRasterSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanAlterRasterSpatialReference" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanAlterRasterSpatialReference">
+  CanAlterRasterSpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the default Raster field spatial reference can be altered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanAlterRasterSpatialReference { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanAlterRasterSpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassEditSession_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanBypassEditSession*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassEditSession" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanBypassEditSession">
+  CanBypassEditSession()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if updates to objects can be safely made outside of an edit session.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanBypassEditSession()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassEditSession_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassStoreMethod_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanBypassStoreMethod*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassStoreMethod" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanBypassStoreMethod">
+  CanBypassStoreMethod()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if updates to objects can bypass the Store method and OnChange notifications for efficiency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanBypassStoreMethod()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanBypassStoreMethod_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanCopy_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanCopy*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanCopy" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanCopy">
+  CanCopy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanCopy_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanDelete_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanDelete*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanDelete" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanDelete">
+  CanDelete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanDelete()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanDelete_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanEdit_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanEdit*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanEdit" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanEdit">
+  CanEdit
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the dataset supports edit sessions with the ability to discard edits on save.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanEdit { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanEdit_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRedo_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanRedo*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRedo" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanRedo">
+  CanRedo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the dataset supports edit sessions with the ability to redo undone operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanRedo { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRedo_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRename_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanRename*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRename" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanRename">
+  CanRename()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be renamed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanRename()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanRename_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanSelect_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanSelect*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanSelect" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanSelect">
+  CanSelect
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the table supports selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanSelect { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanSelect_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanUndo_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanUndo*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanUndo" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CanUndo">
+  CanUndo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the dataset supports edit sessions with the ability to undo individual edit operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanUndo { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CanUndo_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Category_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Category*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Category" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Category">
+  Category
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The category of the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Category { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Category_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ChangeSchemaLock_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ChangeSchemaLock*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ChangeSchemaLock_ESRI_ArcGIS_Geodatabase_esriSchemaLock_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ChangeSchemaLock(ESRI.ArcGIS.Geodatabase.esriSchemaLock)">
+  ChangeSchemaLock(esriSchemaLock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Changes a schema lock.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ChangeSchemaLock(esriSchemaLock schemaLock)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>schemaLock</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSchemaLock.html">esriSchemaLock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ChangeSchemaLock_ESRI_ArcGIS_Geodatabase_esriSchemaLock__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Copy_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Copy*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Copy_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  Copy(string, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IDataset Copy(string copyName, IWorkspace copyWorkspace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>copyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>copyWorkspace</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateFeature*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeature" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateFeature">
+  CreateFeature()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a new feature, with a system assigned object ID and null property values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeature CreateFeature()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeature.html">IFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeature_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeatureBuffer_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateFeatureBuffer*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeatureBuffer" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateFeatureBuffer">
+  CreateFeatureBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a feature buffer that can be used with an insert cursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureBuffer CreateFeatureBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html">IFeatureBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateFeatureBuffer_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRow_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateRow*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRow" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateRow">
+  CreateRow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a row in the database with a system assigned object ID and null property values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRow CreateRow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRow.html">IRow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRow_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRowBuffer_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateRowBuffer*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRowBuffer" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.CreateRowBuffer">
+  CreateRowBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a row buffer that can be used with an insert cursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRowBuffer CreateRowBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRowBuffer.html">IRowBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_CreateRowBuffer_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Delete_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Delete*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Delete" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Delete">
+  Delete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Delete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Delete_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteSearchedRows_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteSearchedRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_DeleteSearchedRows_ESRI_ArcGIS_Geodatabase_IQueryFilter_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.DeleteSearchedRows(ESRI.ArcGIS.Geodatabase.IQueryFilter)">
+  DeleteSearchedRows(IQueryFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteSearchedRows(IQueryFilter QueryFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_EXTCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_EXTCLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.EXTCLSID">
+  EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The GUID for the COM Class (CoClass) corresponding to the class extension for this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_EXTCLSID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extension_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extension" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Extension">
+  Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extension for this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extension_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ExtensionProperties_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ExtensionProperties" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ExtensionProperties">
+  ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extension properties for this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ExtensionProperties_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extent_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Extent*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extent" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Extent">
+  Extent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extent of the GeoDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope Extent { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Extent_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureClassID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureClassID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureClassID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureClassID">
+  FeatureClassID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique ID for the Feature Class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int FeatureClassID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureClassID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureCount_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureCount_ESRI_ArcGIS_Geodatabase_IQueryFilter_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureCount(ESRI.ArcGIS.Geodatabase.IQueryFilter)">
+  FeatureCount(IQueryFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual long FeatureCount(IQueryFilter QueryFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureDataset_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureDataset*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureDataset" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureDataset">
+  FeatureDataset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The feature dataset that contains the feature class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureDataset FeatureDataset { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureDataset.html">IFeatureDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureDataset_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureType_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureType" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FeatureType">
+  FeatureType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of features in this feature class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriFeatureType FeatureType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriFeatureType.html">esriFeatureType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FeatureType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Fields_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Fields" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Fields">
+  Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The fields collection for this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Fields_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Fields_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>&lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+&lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;</p>
+</div>
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FindField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FindField_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FindField(System.String)">
+  FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of the field with the specified name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FindField_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FullName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FullName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FullName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.FullName">
+  FullName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The associated name object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IName FullName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IName.html">IName</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_FullName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetCurrentSchemaLocks_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetCurrentSchemaLocks*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetCurrentSchemaLocks_ESRI_ArcGIS_Geodatabase_IEnumSchemaLockInfo__" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetCurrentSchemaLocks(ESRI.ArcGIS.Geodatabase.IEnumSchemaLockInfo@)">
+  GetCurrentSchemaLocks(out IEnumSchemaLockInfo)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of current locks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void GetCurrentSchemaLocks(out IEnumSchemaLockInfo schemaLockInfo)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>schemaLockInfo</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumSchemaLockInfo.html">IEnumSchemaLockInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetCurrentSchemaLocks_ESRI_ArcGIS_Geodatabase_IEnumSchemaLockInfo___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetFeature*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeature_System_Int64_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetFeature(System.Int64)">
+  GetFeature(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the feature with the specified object ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeature GetFeature(long OID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>OID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeature.html">IFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeature_System_Int64__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeatures_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetFeatures*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeatures_System_Object_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetFeatures(System.Object,System.Boolean)">
+  GetFeatures(object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get a cursor of Rows given a set of object ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureCursor GetFeatures(object fids, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureCursor.html">IFeatureCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetFeatures_System_Object_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRow_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetRow*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRow_System_Int64_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetRow(System.Int64)">
+  GetRow(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The row from the database with the specified object ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRow GetRow(long OID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>OID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRow.html">IRow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRow_System_Int64__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRows_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRows_System_Object_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.GetRows(System.Object,System.Boolean)">
+  GetRows(object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The cursor of rows based on a set of object ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor GetRows(object oids, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_GetRows_System_Object_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_HasOID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_HasOID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.HasOID">
+  HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the class has an object identity (OID) field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_HasOID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterAliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterAliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterAliasName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterAliasName(System.String)">
+  IClassSchemaEdit2_AlterAliasName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterAliasName(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterClassExtensionCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterClassExtensionCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterClassExtensionCLSID_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_IPropertySet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)">
+  IClassSchemaEdit2_AlterClassExtensionCLSID(UID, IPropertySet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterClassExtensionCLSID(UID ClassExtensionCLSID, IPropertySet classExtensionProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ClassExtensionCLSID</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+    <dt><code>classExtensionProperties</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterDefaultValue_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterDefaultValue*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterDefaultValue_System_String_System_Object_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterDefaultValue(System.String,System.Object)">
+  IClassSchemaEdit2_AlterDefaultValue(string, object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterDefaultValue(string FieldName, object Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterDomain_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterDomain*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterDomain_System_String_ESRI_ArcGIS_Geodatabase_IDomain_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)">
+  IClassSchemaEdit2_AlterDomain(string, IDomain)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterDomain(string FieldName, IDomain Domain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>Domain</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IDomain.html">IDomain</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterFieldAliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterFieldAliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterFieldAliasName_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterFieldAliasName(System.String,System.String)">
+  IClassSchemaEdit2_AlterFieldAliasName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterFieldAliasName(string FieldName, string AliasName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>AliasName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterFieldModelName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterFieldModelName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterFieldModelName_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterFieldModelName(System.String,System.String)">
+  IClassSchemaEdit2_AlterFieldModelName(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterFieldModelName(string FieldName, string ModelName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>FieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ModelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterInstanceCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterInstanceCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterInstanceCLSID_ESRI_ArcGIS_esriSystem_UID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)">
+  IClassSchemaEdit2_AlterInstanceCLSID(UID)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterInstanceCLSID(UID InstanceCLSID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>InstanceCLSID</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterModelName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterModelName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_AlterModelName_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_AlterModelName(System.String)">
+  IClassSchemaEdit2_AlterModelName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IClassSchemaEdit2_AlterModelName(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_RegisterAsObjectClass_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_RegisterAsObjectClass*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IClassSchemaEdit2_RegisterAsObjectClass_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IClassSchemaEdit2_RegisterAsObjectClass(System.String,System.String)">
+  IClassSchemaEdit2_RegisterAsObjectClass(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int IClassSchemaEdit2_RegisterAsObjectClass(string suggestedOIDFieldName, string ConfigKeyword)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>suggestedOIDFieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ConfigKeyword</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AddField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  IFeatureClass_AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IFeatureClass_AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AddIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IFeatureClass_AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IFeatureClass_AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AliasName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_AliasName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_AliasName">
+  IFeatureClass_AliasName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string IFeatureClass_AliasName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_CLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_CLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_CLSID">
+  IFeatureClass_CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IFeatureClass_CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_DeleteField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  IFeatureClass_DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IFeatureClass_DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_DeleteIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IFeatureClass_DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IFeatureClass_DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_EXTCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_EXTCLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_EXTCLSID">
+  IFeatureClass_EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IFeatureClass_EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Extension_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Extension" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Extension">
+  IFeatureClass_Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object IFeatureClass_Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_ExtensionProperties_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_ExtensionProperties" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_ExtensionProperties">
+  IFeatureClass_ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet IFeatureClass_ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Fields_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Fields" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Fields">
+  IFeatureClass_Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields IFeatureClass_Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_FindField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_FindField_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_FindField(System.String)">
+  IFeatureClass_FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int IFeatureClass_FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_HasOID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_HasOID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_HasOID">
+  IFeatureClass_HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IFeatureClass_HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Indexes_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Indexes" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Indexes">
+  IFeatureClass_Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes IFeatureClass_Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Insert_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Insert*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Insert_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Insert(System.Boolean)">
+  IFeatureClass_Insert(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a cursor that can be used to insert new features.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureCursor IFeatureClass_Insert(bool useBuffering)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useBuffering</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureCursor.html">IFeatureCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Insert_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_OIDFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_OIDFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_OIDFieldName">
+  IFeatureClass_OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string IFeatureClass_OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_ObjectClassID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_ObjectClassID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_ObjectClassID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_ObjectClassID">
+  IFeatureClass_ObjectClassID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int IFeatureClass_ObjectClassID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_RelationshipClasses_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_RelationshipClasses*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_RelationshipClasses_ESRI_ArcGIS_Geodatabase_esriRelRole_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_RelationshipClasses(ESRI.ArcGIS.Geodatabase.esriRelRole)">
+  IFeatureClass_RelationshipClasses[esriRelRole]
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumRelationshipClass IFeatureClass_RelationshipClasses[esriRelRole Role] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Role</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriRelRole.html">esriRelRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumRelationshipClass.html">IEnumRelationshipClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Search_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Search*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Search_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  IFeatureClass_Search(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureCursor IFeatureClass_Search(IQueryFilter filter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureCursor.html">IFeatureCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Select_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Select*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Select_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_esriSelectionType_ESRI_ArcGIS_Geodatabase_esriSelectionOption_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  IFeatureClass_Select(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISelectionSet IFeatureClass_Select(IQueryFilter QueryFilter, esriSelectionType selType, esriSelectionOption selOption, IWorkspace selectionContainer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>selType</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionType.html">esriSelectionType</a></dt>
+    <dd></dd>
+    <dt><code>selOption</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionOption.html">esriSelectionOption</a></dt>
+    <dd></dd>
+    <dt><code>selectionContainer</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ISelectionSet.html">ISelectionSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Update_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Update*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IFeatureClass_Update_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IFeatureClass_Update(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  IFeatureClass_Update(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFeatureCursor IFeatureClass_Update(IQueryFilter filter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>filter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeatureCursor.html">IFeatureCursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClassInfo2_CanBypassStoreMethod_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClassInfo2_CanBypassStoreMethod*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClassInfo2_CanBypassStoreMethod" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClassInfo2_CanBypassStoreMethod">
+  IObjectClassInfo2_CanBypassStoreMethod()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if updates to objects can bypass the Store method and OnChange notifications for efficiency.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IObjectClassInfo2_CanBypassStoreMethod()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClassInfo2_CanBypassStoreMethod_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_AddField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  IObjectClass_AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_AddIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IObjectClass_AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_CLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_CLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_CLSID">
+  IObjectClass_CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IObjectClass_CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_DeleteField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  IObjectClass_DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_DeleteIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IObjectClass_DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_EXTCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_EXTCLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_EXTCLSID">
+  IObjectClass_EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IObjectClass_EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Extension_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Extension" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Extension">
+  IObjectClass_Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object IObjectClass_Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_ExtensionProperties_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_ExtensionProperties" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_ExtensionProperties">
+  IObjectClass_ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet IObjectClass_ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Fields_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Fields" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Fields">
+  IObjectClass_Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields IObjectClass_Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_FindField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_FindField_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_FindField(System.String)">
+  IObjectClass_FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int IObjectClass_FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_HasOID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_HasOID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_HasOID">
+  IObjectClass_HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IObjectClass_HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Indexes_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_Indexes" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_Indexes">
+  IObjectClass_Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes IObjectClass_Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_OIDFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IObjectClass_OIDFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IObjectClass_OIDFieldName">
+  IObjectClass_OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string IObjectClass_OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_AddField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  ITable_AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ITable_AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_AddIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  ITable_AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ITable_AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_CLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_CLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_CLSID">
+  ITable_CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID ITable_CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_DeleteField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  ITable_DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ITable_DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_DeleteIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  ITable_DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ITable_DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_EXTCLSID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_EXTCLSID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_EXTCLSID">
+  ITable_EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID ITable_EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Extension_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Extension" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Extension">
+  ITable_Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object ITable_Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_ExtensionProperties_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_ExtensionProperties" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_ExtensionProperties">
+  ITable_ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet ITable_ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Fields_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Fields" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Fields">
+  ITable_Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields ITable_Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_FindField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_FindField_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_FindField(System.String)">
+  ITable_FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int ITable_FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_HasOID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_HasOID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_HasOID">
+  ITable_HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool ITable_HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Indexes_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_Indexes" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_Indexes">
+  ITable_Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes ITable_Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_OIDFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ITable_OIDFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ITable_OIDFieldName">
+  ITable_OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string ITable_OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Indexes_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Indexes" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Indexes">
+  Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The indexes collection for this object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Indexes_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Indexes_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>&lt;P&gt;The &lt;STRONG&gt;Indexes &lt;/STRONG&gt;object represents a collection of indexes on a table. Indexes are designed to improve access times to data. The &lt;STRONG&gt;Indexes &lt;/STRONG&gt;collection object operates in a very similar way to the Fields collection object.&lt;/P&gt;</p>
+</div>
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Insert_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Insert*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Insert_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Insert(System.Boolean)">
+  Insert(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a  cursor that can be used to insert new Rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Insert(bool useBuffering)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useBuffering</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Insert_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsBeingEdited_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IsBeingEdited*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsBeingEdited" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IsBeingEdited">
+  IsBeingEdited()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if the dataset is being edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsBeingEdited()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsBeingEdited_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsRasterDataset_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IsRasterDataset*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsRasterDataset" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.IsRasterDataset">
+  IsRasterDataset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this is a RasterDataset (a special one-row RasterCatalog).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsRasterDataset { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_IsRasterDataset_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LengthField_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.LengthField*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LengthField" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.LengthField">
+  LengthField
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The geometry length field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IField LengthField { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LengthField_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LoadOnlyMode_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.LoadOnlyMode*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LoadOnlyMode" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.LoadOnlyMode">
+  LoadOnlyMode
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the featureclass is in load only mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool LoadOnlyMode { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_LoadOnlyMode_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ModelName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ModelName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ModelName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ModelName">
+  ModelName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The model name of the field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string ModelName { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ModelName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Name_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Name*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Name" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Name { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Name_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_NameFieldIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.NameFieldIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_NameFieldIndex" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.NameFieldIndex">
+  NameFieldIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of Name field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int NameFieldIndex { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_NameFieldIndex_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_OIDFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_OIDFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.OIDFieldName">
+  OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the field corresponding to the OID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_OIDFieldName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ObjectClassID_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ObjectClassID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ObjectClassID" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ObjectClassID">
+  ObjectClassID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique ID for the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int ObjectClassID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ObjectClassID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_PropertySet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.PropertySet*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_PropertySet" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.PropertySet">
+  PropertySet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The set of properties for the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet PropertySet { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_PropertySet_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldIndex_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterFieldIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldIndex" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterFieldIndex">
+  RasterFieldIndex
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The index of the default Raster field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int RasterFieldIndex { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldIndex_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterFieldName">
+  RasterFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the default Raster field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string RasterFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterFieldName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterSpatialReference_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterSpatialReference" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RasterSpatialReference">
+  RasterSpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The default Raster field spatial reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference RasterSpatialReference { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RasterSpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RegisterAsObjectClass_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RegisterAsObjectClass*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RegisterAsObjectClass_System_String_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RegisterAsObjectClass(System.String,System.String)">
+  RegisterAsObjectClass(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Registers this class with the database, assigning it a class id and creating an object id column.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int RegisterAsObjectClass(string suggestedOIDFieldName, string ConfigKeyword)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>suggestedOIDFieldName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ConfigKeyword</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RegisterAsObjectClass_System_String_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RelationshipClasses_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RelationshipClasses*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RelationshipClasses_ESRI_ArcGIS_Geodatabase_esriRelRole_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RelationshipClasses(ESRI.ArcGIS.Geodatabase.esriRelRole)">
+  RelationshipClasses[esriRelRole]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The relationship classes in which this object class participates in for the specified role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumRelationshipClass RelationshipClasses[esriRelRole Role] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Role</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriRelRole.html">esriRelRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumRelationshipClass.html">IEnumRelationshipClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RelationshipClasses_ESRI_ArcGIS_Geodatabase_esriRelRole__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RemoveFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RemoveFeature*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RemoveFeature_ESRI_ArcGIS_Geodatabase_IFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RemoveFeature(ESRI.ArcGIS.Geodatabase.IFeature)">
+  RemoveFeature(IFeature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void RemoveFeature(IFeature Feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Feature</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeature.html">IFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RemoveFeatures_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RemoveFeatures*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RemoveFeatures_ESRI_ArcGIS_esriSystem_ISet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RemoveFeatures(ESRI.ArcGIS.esriSystem.ISet)">
+  RemoveFeatures(ISet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void RemoveFeatures(ISet features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.ISet.html">ISet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Rename_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Rename*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Rename_System_String_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Rename(System.String)">
+  Rename(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames this Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Rename(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Rename_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RowCount_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RowCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_RowCount_ESRI_ArcGIS_Geodatabase_IQueryFilter_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.RowCount(ESRI.ArcGIS.Geodatabase.IQueryFilter)">
+  RowCount(IQueryFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual long RowCount(IQueryFilter QueryFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Search_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Search*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Search_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  Search(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Search(IQueryFilter QueryFilter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Select_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Select*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Select_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_esriSelectionType_ESRI_ArcGIS_Geodatabase_esriSelectionOption_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  Select(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISelectionSet Select(IQueryFilter QueryFilter, esriSelectionType selType, esriSelectionOption selOption, IWorkspace selectionContainer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>selType</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionType.html">esriSelectionType</a></dt>
+    <dd></dd>
+    <dt><code>selOption</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionOption.html">esriSelectionOption</a></dt>
+    <dd></dd>
+    <dt><code>selectionContainer</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ISelectionSet.html">ISelectionSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeFieldName_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ShapeFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeFieldName" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ShapeFieldName">
+  ShapeFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the default sShape field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string ShapeFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeFieldName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeType_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ShapeType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeType" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.ShapeType">
+  ShapeType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the default Shape for the features in this feature class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryType ShapeType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryType.html">esriGeometryType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_ShapeType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_SpatialReference_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_SpatialReference" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.SpatialReference">
+  SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spatial reference of the GeoDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference SpatialReference { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Subsets_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Subsets*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Subsets" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Subsets">
+  Subsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Datasets contained within this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumDataset Subsets { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumDataset.html">IEnumDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Subsets_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Type_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Type*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Type" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriDatasetType Type { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriDatasetType.html">esriDatasetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Type_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Update_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Update*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Update_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Update(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  Update(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Update(IQueryFilter QueryFilter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_UpdateExtent_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.UpdateExtent*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_UpdateExtent" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.UpdateExtent">
+  UpdateExtent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates the XY, M, Z extent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void UpdateExtent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_UpdateExtent_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_UpdateSearchedRows_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.UpdateSearchedRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_UpdateSearchedRows_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_IRowBuffer_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.UpdateSearchedRows(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.IRowBuffer)">
+  UpdateSearchedRows(IQueryFilter, IRowBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void UpdateSearchedRows(IQueryFilter QueryFilter, IRowBuffer buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IRowBuffer.html">IRowBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Workspace_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Workspace*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Workspace" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.Workspace">
+  Workspace
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The workspace containing this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IWorkspace Workspace { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Workspace_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_Workspace_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>&lt;p&gt;A Workspace is a container of spatial and non-spatial datasets such as feature classes, raster datasets, and tables. It provides methods to instantiate existing datasets and to create new datasets. Workspaces are classified into types specified by the &lt;b&gt;&lt;a href=&quot;esriWorkspaceType.htm&quot;&gt;esriWorkspaceType&lt;/a&gt;&lt;/b&gt; enumerator: FileSystemWorkspace, LocalDatabaseWorkspace, and RemoteDatabaseWorkspace. Shapefiles and ArcGIS for Desktop Advanced workspaces are examples of FileSystemWorkspace. A personal geodatabase stored in an Access or a File Geodatabase is an example of a LocalDatabaseWorkspace. A geodatabase stored in an RDBMS such as Oracle, DB2, SQL Server, or Informix and accessed via ArcSDE is an example of a RemoteDatabaseWorkspace.&lt;/p&gt;&amp;nbsp;&lt;p&gt;A Workspace hands out a &lt;b&gt;&lt;a href=&quot;WorkspaceName.htm&quot;&gt;WorkspaceName&lt;/a&gt;&amp;nbsp;&lt;/b&gt;object as the value of its FullName property. For example, the WorkspaceName for a workspace can be persisted in a map document. An application can call the &lt;b&gt;Open()&lt;/b&gt; method on the workspace name after loading it from persistent storage to connect to and get an object reference to the workspace.&lt;/p&gt;</p>
+</div>
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_WriteFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.WriteFeature*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_WriteFeature_ESRI_ArcGIS_Geodatabase_IFeature_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.WriteFeature(ESRI.ArcGIS.Geodatabase.IFeature)">
+  WriteFeature(IFeature)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void WriteFeature(IFeature Feature)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Feature</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IFeature.html">IFeature</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_WriteFeatures_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.WriteFeatures*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geodatabase_RasterCatalogClass_WriteFeatures_ESRI_ArcGIS_esriSystem_ISet_" data-uid="ESRI.ArcGIS.Geodatabase.RasterCatalogClass.WriteFeatures(ESRI.ArcGIS.esriSystem.ISet)">
+  WriteFeatures(ISet)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void WriteFeatures(ISet features)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>features</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.ISet.html">ISet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

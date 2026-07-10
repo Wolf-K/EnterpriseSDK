@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IGeometryCollection | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IGeometryCollection | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members that can be used for accessing, adding and removing individual geometries of a multi-part geometry (Multipoint, Polyline, Polygon, MultiPatch, and GeometryBag).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_IGeometryCollection" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection" class="text-break">
+Interface IGeometryCollection  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members that can be used for accessing, adding and removing individual geometries of a multi-part geometry (Multipoint, Polyline, Polygon, MultiPatch, and GeometryBag).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;C801565E-99CA-11D0-82F7-0000F8034032&quot;)]
+[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+public interface IGeometryCollection</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_Geometry_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.Geometry*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_Geometry_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.Geometry(System.Int32)">
+  Geometry[int]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>A  reference to the ith geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IGeometry Geometry[int Index] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_Geometry_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometryCount_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.GeometryCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometryCount" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.GeometryCount">
+  GeometryCount
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The number of geometries in this collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GeometryCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometryCount_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometries_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometries*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometries_System_Int32_ESRI_ArcGIS_Geometry_IGeometry__" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometries(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@)">
+  AddGeometries(int, ref IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds references to the specified geometries. This method is intended for internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddGeometries(int Count, ref IGeometry newGeometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>newGeometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometries_System_Int32_ESRI_ArcGIS_Geometry_IGeometry___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometry_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometry*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometry_ESRI_ArcGIS_Geometry_IGeometry_System_Object__System_Object__" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometry(ESRI.ArcGIS.Geometry.IGeometry,System.Object@,System.Object@)">
+  AddGeometry(IGeometry, ref object, ref object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddGeometry(IGeometry inGeometry, ref object before, ref object after)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>inGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+    <dt><code>before</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>after</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometryCollection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_AddGeometryCollection_ESRI_ArcGIS_Geometry_IGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.AddGeometryCollection(ESRI.ArcGIS.Geometry.IGeometryCollection)">
+  AddGeometryCollection(IGeometryCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddGeometryCollection(IGeometryCollection newGeometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newGeometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometryCollection.html">IGeometryCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometriesChanged_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.GeometriesChanged*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometriesChanged" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.GeometriesChanged">
+  GeometriesChanged()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tells this geometry collection that some of its geometries have been altered. Use this method on polylines, polygons and multipatches after directly editing one of its parts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GeometriesChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_GeometriesChanged_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_InsertGeometries_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.InsertGeometries*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_InsertGeometries_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_IGeometry__" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.InsertGeometries(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IGeometry@)">
+  InsertGeometries(int, int, ref IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Inserts at the specified index references to some number of geometries in the input array. This method is intended for internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InsertGeometries(int Index, int Count, ref IGeometry newGeometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>newGeometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_InsertGeometries_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_IGeometry___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_InsertGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.InsertGeometryCollection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_InsertGeometryCollection_System_Int32_ESRI_ArcGIS_Geometry_IGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.InsertGeometryCollection(System.Int32,ESRI.ArcGIS.Geometry.IGeometryCollection)">
+  InsertGeometryCollection(int, IGeometryCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InsertGeometryCollection(int Index, IGeometryCollection newGeometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>newGeometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometryCollection.html">IGeometryCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_QueryGeometries_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.QueryGeometries*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_QueryGeometries_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_IGeometry__" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.QueryGeometries(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IGeometry@)">
+  QueryGeometries(int, int, out IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Populates the array with references to a sub-sequence of geometries. This method is intended for internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryGeometries(int Index, int Count, out IGeometry geometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>geometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_QueryGeometries_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_IGeometry___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_RemoveGeometries_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.RemoveGeometries*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_RemoveGeometries_System_Int32_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.RemoveGeometries(System.Int32,System.Int32)">
+  RemoveGeometries(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes references to some geometries from this collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveGeometries(int Index, int Count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_RemoveGeometries_System_Int32_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_SetGeometries_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.SetGeometries*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_SetGeometries_System_Int32_ESRI_ArcGIS_Geometry_IGeometry__" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.SetGeometries(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@)">
+  SetGeometries(int, ref IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces all geometries in the collection with the specified number of references to those in the input array. This method is intended for internal use only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetGeometries(int Count, ref IGeometry newGeometries)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>newGeometries</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IGeometryCollection_SetGeometries_System_Int32_ESRI_ArcGIS_Geometry_IGeometry___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IGeometryCollection_SetGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.SetGeometryCollection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IGeometryCollection_SetGeometryCollection_ESRI_ArcGIS_Geometry_IGeometryCollection_" data-uid="ESRI.ArcGIS.Geometry.IGeometryCollection.SetGeometryCollection(ESRI.ArcGIS.Geometry.IGeometryCollection)">
+  SetGeometryCollection(IGeometryCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetGeometryCollection(IGeometryCollection newParts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newParts</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometryCollection.html">IGeometryCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

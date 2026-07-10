@@ -1,0 +1,2513 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RayClass | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RayClass | EnterpriseSDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.RayClass">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_RayClass" data-uid="ESRI.ArcGIS.Geometry.RayClass" class="text-break">
+Class RayClass  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ClassInterface(ClassInterfaceType.None)]
+[Guid(&quot;83A20D9D-1C70-11D4-9F5C-00C04F6BDF0D&quot;)]
+public class RayClass : Ray, IRay2, IRay, IGeometry, IClone, ISupportErrorInfo</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RayClass</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ESRI.ArcGIS.Geometry.Ray.html">Ray</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geometry.IRay2.html">IRay2</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geometry.IRay.html">IRay</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.esriSystem.IClone.html">IClone</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html">ISupportErrorInfo</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass__ctor_" data-uid="ESRI.ArcGIS.Geometry.RayClass.#ctor*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass__ctor" data-uid="ESRI.ArcGIS.Geometry.RayClass.#ctor">
+  RayClass()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RayClass()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Assign_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Assign*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Assign_ESRI_ArcGIS_esriSystem_IClone_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Assign(ESRI.ArcGIS.esriSystem.IClone)">
+  Assign(IClone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Assign(IClone src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>src</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IClone.html">IClone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Clone_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Clone*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Clone" data-uid="ESRI.ArcGIS.Geometry.RayClass.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clones the receiver and assigns the result to *clone.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IClone Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IClone.html">IClone</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_Clone_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Dimension_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Dimension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Dimension" data-uid="ESRI.ArcGIS.Geometry.RayClass.Dimension">
+  Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryDimension Dimension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryDimension.html">esriGeometryDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Envelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Envelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Envelope" data-uid="ESRI.ArcGIS.Geometry.RayClass.Envelope">
+  Envelope
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope Envelope { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_GeoNormalize_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeoNormalize*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_GeoNormalize" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeoNormalize">
+  GeoNormalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void GeoNormalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_GeoNormalizeFromLongitude_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeoNormalizeFromLongitude*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_GeoNormalizeFromLongitude_System_Double_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeoNormalizeFromLongitude(System.Double)">
+  GeoNormalizeFromLongitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void GeoNormalizeFromLongitude(double Longitude)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_GeometryType_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeometryType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_GeometryType" data-uid="ESRI.ArcGIS.Geometry.RayClass.GeometryType">
+  GeometryType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryType GeometryType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryType.html">esriGeometryType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_GetEnumIntersect_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GetEnumIntersect*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_GetEnumIntersect_ESRI_ArcGIS_Geometry_IGeometry_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GetEnumIntersect(ESRI.ArcGIS.Geometry.IGeometry)">
+  GetEnumIntersect(IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumIntersection GetEnumIntersect(IGeometry targetGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnumIntersection.html">IEnumIntersection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_GetPointAtDistance_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GetPointAtDistance*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_GetPointAtDistance_System_Double_" data-uid="ESRI.ArcGIS.Geometry.RayClass.GetPointAtDistance(System.Double)">
+  GetPointAtDistance(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs a point at a distance along the ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPoint GetPointAtDistance(double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_GetPointAtDistance_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Dimension_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Dimension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Dimension" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Dimension">
+  IGeometry_Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The topological dimension of this geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryDimension IGeometry_Dimension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryDimension.html">esriGeometryDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Dimension_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Envelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Envelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Envelope" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Envelope">
+  IGeometry_Envelope
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a copy of this geometry's envelope and returns it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope IGeometry_Envelope { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Envelope_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp">&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&lt;img src="./bitmaps/envelope.gif" align=
+"baseline"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&amp;nbsp;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;public&lt;/span&gt; &lt;span style="COLOR: blue"&gt;static&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;IGeometry&lt;/span&gt;
+GetEnvelopeGeometry()&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; {&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;const&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;double&lt;/span&gt; DeltaX = 2.5;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;const&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;double&lt;/span&gt; DeltaY = 2.5;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;const&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;double&lt;/span&gt; DeltaZ = 2.5;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;IPoint&lt;/span&gt; centerPoint =
+GetPoint();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;IEnvelope&lt;/span&gt; envelope = &lt;span style=
+"COLOR: blue"&gt;new&lt;/span&gt; &lt;span style=
+"COLOR: teal"&gt;EnvelopeClass&lt;/span&gt;();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.XMin = centerPoint.X - DeltaX;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.XMax = centerPoint.X + DeltaX;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.YMin = centerPoint.Y - DeltaY;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.YMax = centerPoint.Y + DeltaY;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.ZMin = centerPoint.Z - DeltaZ;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+envelope.ZMax = centerPoint.Z + DeltaZ;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+MakeZAware(envelope &lt;span style="COLOR: blue"&gt;as&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;IGeometry&lt;/span&gt;);&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;return&lt;/span&gt; envelope &lt;span style=
+"COLOR: blue"&gt;as&lt;/span&gt; &lt;span style=
+"COLOR: teal"&gt;IGeometry&lt;/span&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style="MARGIN: 0in 0in 10pt"&gt;&lt;span style=
+"FONT-SIZE: 10pt; LINE-HEIGHT: 115%; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+}&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;private&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;static&lt;/span&gt; &lt;span style="COLOR: teal"&gt;IPoint&lt;/span&gt;
+GetPoint()&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; {&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;const&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;double&lt;/span&gt; Min = -10;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;const&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;double&lt;/span&gt; Max = 10;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;Random&lt;/span&gt; random = &lt;span style=
+"COLOR: blue"&gt;new&lt;/span&gt; &lt;span style=
+"COLOR: teal"&gt;Random&lt;/span&gt;();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;double&lt;/span&gt; x = Min + (Max - Min) *
+random.NextDouble();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;double&lt;/span&gt; y = Min + (Max - Min) *
+random.NextDouble();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;double&lt;/span&gt; z = Min + (Max - Min) *
+random.NextDouble();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: blue"&gt;return&lt;/span&gt; ConstructPoint3D(x, y,
+z);&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; }&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+private&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+static&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+IPoint&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+ConstructPoint3D(&lt;/span&gt;&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;double&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+x,&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+double&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+y,&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+double&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+z)&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+{&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+IPoint&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+point = ConstructPoint2D(x, y);&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+point.Z = z;&lt;br&gt;
+&lt;br&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+return&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+point;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+}&lt;br&gt;
+&lt;br style="mso-special-character: line-break"&gt;
+&lt;br style="mso-special-character: line-break"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+private&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+static&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+IPoint&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+ConstructPoint2D(&lt;/span&gt;&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;double&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+x,&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+double&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+y)&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+{&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+IPoint&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+point =&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+new&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: teal; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+PointClass&lt;/span&gt;&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;();&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+point.PutCoords(x, y);&lt;br&gt;
+&lt;span style="mso-spacerun: yes"&gt;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; COLOR: blue; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+return&lt;/span&gt; &lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+point;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 10pt; LINE-HEIGHT: normal"&gt;&lt;span style=
+"FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: 'Courier New'; mso-no-proof: yes; mso-fareast-font-family: 'Times New Roman'"&gt;
+&lt;span style=
+"mso-spacerun: yes"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+}&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;private&lt;/span&gt; &lt;span style=
+"COLOR: blue"&gt;static&lt;/span&gt; &lt;span style="COLOR: blue"&gt;void&lt;/span&gt;
+MakeZAware(&lt;span style="COLOR: teal"&gt;IGeometry&lt;/span&gt;
+geometry)&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; {&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+&lt;span style="COLOR: teal"&gt;IZAware&lt;/span&gt; zAware = geometry
+&lt;span style="COLOR: blue"&gt;as&lt;/span&gt; &lt;span style=
+"COLOR: teal"&gt;IZAware&lt;/span&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+zAware.ZAware = &lt;span style="COLOR: blue"&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;/p&gt;
+&lt;p class="MsoNormal" style=
+"MARGIN: 0in 0in 0pt; LINE-HEIGHT: normal; mso-layout-grid-align: none"&gt;
+&lt;span style=
+"FONT-SIZE: 10pt; FONT-FAMILY: 'Courier New'; mso-no-proof: yes"&gt;&lt;span style="mso-spacerun: yes"&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt; }&lt;/span&gt;&lt;/p&gt;</code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalize_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeoNormalize*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalize" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeoNormalize">
+  IGeometry_GeoNormalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shifts longitudes, if need be, into a continuous range of 360 degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_GeoNormalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalize_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalizeFromLongitude_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeoNormalizeFromLongitude*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalizeFromLongitude_System_Double_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeoNormalizeFromLongitude(System.Double)">
+  IGeometry_GeoNormalizeFromLongitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Normalizes longitudes into a continuous range containing the longitude. This method is obsolete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_GeoNormalizeFromLongitude(double Longitude)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeoNormalizeFromLongitude_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeometryType_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeometryType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeometryType" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_GeometryType">
+  IGeometry_GeometryType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of this geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryType IGeometry_GeometryType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryType.html">esriGeometryType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_GeometryType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_IsEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_IsEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_IsEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_IsEmpty">
+  IGeometry_IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this geometry contains any points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IGeometry_IsEmpty { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_IsEmpty_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Project_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Project*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_Project_ESRI_ArcGIS_Geometry_ISpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_Project(ESRI.ArcGIS.Geometry.ISpatialReference)">
+  IGeometry_Project(ISpatialReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_Project(ISpatialReference newReferenceSystem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newReferenceSystem</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_QueryEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_QueryEnvelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_QueryEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)">
+  IGeometry_QueryEnvelope(IEnvelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_QueryEnvelope(IEnvelope outEnvelope)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outEnvelope</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SetEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SetEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SetEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SetEmpty">
+  IGeometry_SetEmpty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes all points from this geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_SetEmpty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SetEmpty_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SnapToSpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SnapToSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SnapToSpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SnapToSpatialReference">
+  IGeometry_SnapToSpatialReference()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Moves points of this geometry so that they can be represented in the precision of the geometry's associated spatial reference system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IGeometry_SnapToSpatialReference()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SnapToSpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.IGeometry_SpatialReference">
+  IGeometry_SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spatial reference associated with this geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference IGeometry_SpatialReference { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_IGeometry_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Dimension_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Dimension*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Dimension" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Dimension">
+  IRay2_Dimension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryDimension IRay2_Dimension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryDimension.html">esriGeometryDimension</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Envelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Envelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Envelope" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Envelope">
+  IRay2_Envelope
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope IRay2_Envelope { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeoNormalize_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeoNormalize*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeoNormalize" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeoNormalize">
+  IRay2_GeoNormalize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_GeoNormalize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeoNormalizeFromLongitude_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeoNormalizeFromLongitude*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeoNormalizeFromLongitude_System_Double_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeoNormalizeFromLongitude(System.Double)">
+  IRay2_GeoNormalizeFromLongitude(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_GeoNormalizeFromLongitude(double Longitude)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Longitude</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeometryType_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeometryType*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GeometryType" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GeometryType">
+  IRay2_GeometryType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriGeometryType IRay2_GeometryType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryType.html">esriGeometryType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GetEnumIntersect_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GetEnumIntersect*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GetEnumIntersect_ESRI_ArcGIS_Geometry_IGeometry_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GetEnumIntersect(ESRI.ArcGIS.Geometry.IGeometry)">
+  IRay2_GetEnumIntersect(IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumIntersection IRay2_GetEnumIntersect(IGeometry targetGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnumIntersection.html">IEnumIntersection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GetPointAtDistance_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GetPointAtDistance*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_GetPointAtDistance_System_Double_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_GetPointAtDistance(System.Double)">
+  IRay2_GetPointAtDistance(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPoint IRay2_GetPointAtDistance(double distance)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Intersect_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Intersect*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Intersect_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_Geometry_IPointCollection_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Intersect(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geometry.IPointCollection)">
+  IRay2_Intersect(IGeometry, IPointCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_Intersect(IGeometry targetGeometry, IPointCollection intersectionPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+    <dt><code>intersectionPoints</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPointCollection.html">IPointCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Intersects_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Intersects*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Intersects_ESRI_ArcGIS_Geometry_IGeometry_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Intersects(ESRI.ArcGIS.Geometry.IGeometry)">
+  IRay2_Intersects(IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IRay2_Intersects(IGeometry targetGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_IsEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_IsEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_IsEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_IsEmpty">
+  IRay2_IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IRay2_IsEmpty { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Origin_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Origin*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Origin" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Origin">
+  IRay2_Origin
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPoint IRay2_Origin { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Project_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Project*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Project_ESRI_ArcGIS_Geometry_ISpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Project(ESRI.ArcGIS.Geometry.ISpatialReference)">
+  IRay2_Project(ISpatialReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_Project(ISpatialReference newReferenceSystem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newReferenceSystem</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryEnvelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)">
+  IRay2_QueryEnvelope(IEnvelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_QueryEnvelope(IEnvelope outEnvelope)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outEnvelope</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryFirstIntersection_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryFirstIntersection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryFirstIntersection_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryFirstIntersection(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geometry.IPoint)">
+  IRay2_QueryFirstIntersection(IGeometry, IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_QueryFirstIntersection(IGeometry targetGeometry, IPoint intersectionPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+    <dt><code>intersectionPoint</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryOrigin_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryOrigin*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryOrigin_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryOrigin(ESRI.ArcGIS.Geometry.IPoint)">
+  IRay2_QueryOrigin(IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_QueryOrigin(IPoint vectorOrigin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vectorOrigin</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryPointAtDistance_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryPointAtDistance*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryPointAtDistance_System_Double_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryPointAtDistance(System.Double,ESRI.ArcGIS.Geometry.IPoint)">
+  IRay2_QueryPointAtDistance(double, IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_QueryPointAtDistance(double distance, IPoint Point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>Point</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryVector_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_QueryVector_ESRI_ArcGIS_Geometry_IVector3D_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_QueryVector(ESRI.ArcGIS.Geometry.IVector3D)">
+  IRay2_QueryVector(IVector3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_QueryVector(IVector3D directionVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>directionVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector3D.html">IVector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SetEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SetEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SetEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SetEmpty">
+  IRay2_SetEmpty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_SetEmpty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SnapToSpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SnapToSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SnapToSpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SnapToSpatialReference">
+  IRay2_SnapToSpatialReference()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRay2_SnapToSpatialReference()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_SpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_SpatialReference">
+  IRay2_SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference IRay2_SpatialReference { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Vector_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Vector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IRay2_Vector" data-uid="ESRI.ArcGIS.Geometry.RayClass.IRay2_Vector">
+  IRay2_Vector
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IVector3D IRay2_Vector { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IVector3D.html">IVector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_InterfaceSupportsErrorInfo_" data-uid="ESRI.ArcGIS.Geometry.RayClass.InterfaceSupportsErrorInfo*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_InterfaceSupportsErrorInfo_System_Guid__" data-uid="ESRI.ArcGIS.Geometry.RayClass.InterfaceSupportsErrorInfo(System.Guid@)">
+  InterfaceSupportsErrorInfo(ref Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void InterfaceSupportsErrorInfo(ref Guid riid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Intersect_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Intersect*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Intersect_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_Geometry_IPointCollection_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Intersect(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geometry.IPointCollection)">
+  Intersect(IGeometry, IPointCollection)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Intersect(IGeometry targetGeometry, IPointCollection intersectionPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+    <dt><code>intersectionPoints</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPointCollection.html">IPointCollection</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Intersects_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Intersects*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Intersects_ESRI_ArcGIS_Geometry_IGeometry_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Intersects(ESRI.ArcGIS.Geometry.IGeometry)">
+  Intersects(IGeometry)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool Intersects(IGeometry targetGeometry)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IsEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IsEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsEmpty">
+  IsEmpty
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsEmpty { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IsEqual_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsEqual*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IsEqual_ESRI_ArcGIS_esriSystem_IClone_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsEqual(ESRI.ArcGIS.esriSystem.IClone)">
+  IsEqual(IClone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsEqual(IClone other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IClone.html">IClone</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_IsIdentical_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsIdentical*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_IsIdentical_ESRI_ArcGIS_esriSystem_IClone_" data-uid="ESRI.ArcGIS.Geometry.RayClass.IsIdentical(ESRI.ArcGIS.esriSystem.IClone)">
+  IsIdentical(IClone)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsIdentical(IClone other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.IClone.html">IClone</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Origin_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Origin*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Origin" data-uid="ESRI.ArcGIS.Geometry.RayClass.Origin">
+  Origin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The origin point of the ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPoint Origin { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_Origin_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Project_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Project*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Project_ESRI_ArcGIS_Geometry_ISpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Project(ESRI.ArcGIS.Geometry.ISpatialReference)">
+  Project(ISpatialReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Project(ISpatialReference newReferenceSystem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newReferenceSystem</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryEnvelope*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)">
+  QueryEnvelope(IEnvelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryEnvelope(IEnvelope outEnvelope)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outEnvelope</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryFirstIntersection_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryFirstIntersection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryFirstIntersection_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryFirstIntersection(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geometry.IPoint)">
+  QueryFirstIntersection(IGeometry, IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryFirstIntersection(IGeometry targetGeometry, IPoint intersectionPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>targetGeometry</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IGeometry.html">IGeometry</a></dt>
+    <dd></dd>
+    <dt><code>intersectionPoint</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryOrigin_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryOrigin*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryOrigin_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryOrigin(ESRI.ArcGIS.Geometry.IPoint)">
+  QueryOrigin(IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryOrigin(IPoint vectorOrigin)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vectorOrigin</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryPlaneIntersection_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryPlaneIntersection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryPlaneIntersection_ESRI_ArcGIS_esriSystem_WKSPointZ__System_Double_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryPlaneIntersection(ESRI.ArcGIS.esriSystem.WKSPointZ@,System.Double,ESRI.ArcGIS.Geometry.IPoint)">
+  QueryPlaneIntersection(ref WKSPointZ, double, IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryPlaneIntersection(ref WKSPointZ pPlaneNormal, double D, IPoint pPoint)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pPlaneNormal</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.WKSPointZ.html">WKSPointZ</a></dt>
+    <dd></dd>
+    <dt><code>D</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>pPoint</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryPointAtDistance_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryPointAtDistance*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryPointAtDistance_System_Double_ESRI_ArcGIS_Geometry_IPoint_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryPointAtDistance(System.Double,ESRI.ArcGIS.Geometry.IPoint)">
+  QueryPointAtDistance(double, IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryPointAtDistance(double distance, IPoint Point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>distance</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>Point</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_QueryVector_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_QueryVector_ESRI_ArcGIS_Geometry_IVector3D_" data-uid="ESRI.ArcGIS.Geometry.RayClass.QueryVector(ESRI.ArcGIS.Geometry.IVector3D)">
+  QueryVector(IVector3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void QueryVector(IVector3D directionVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>directionVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IVector3D.html">IVector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_SetEmpty_" data-uid="ESRI.ArcGIS.Geometry.RayClass.SetEmpty*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_SetEmpty" data-uid="ESRI.ArcGIS.Geometry.RayClass.SetEmpty">
+  SetEmpty()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void SetEmpty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_SnapToSpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.SnapToSpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_SnapToSpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.SnapToSpatialReference">
+  SnapToSpatialReference()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void SnapToSpatialReference()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_SpatialReference_" data-uid="ESRI.ArcGIS.Geometry.RayClass.SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_SpatialReference" data-uid="ESRI.ArcGIS.Geometry.RayClass.SpatialReference">
+  SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference SpatialReference { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_RayClass_Vector_" data-uid="ESRI.ArcGIS.Geometry.RayClass.Vector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_RayClass_Vector" data-uid="ESRI.ArcGIS.Geometry.RayClass.Vector">
+  Vector
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The direction vector of the ray.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IVector3D Vector { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IVector3D.html">IVector3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_RayClass_Vector_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

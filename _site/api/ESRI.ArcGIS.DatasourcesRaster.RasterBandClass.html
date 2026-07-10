@@ -1,0 +1,4646 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RasterBandClass | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RasterBandClass | EnterpriseSDK ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass">
+
+
+
+  <h1 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass" class="text-break">
+Class RasterBandClass  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.html">DatasourcesRaster</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.DatasourcesRaster.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Guid(&quot;7ACA3D08-0629-11D2-8D24-0000F8780535&quot;)]
+[ClassInterface(ClassInterfaceType.None)]
+public class RasterBandClass : RasterBand, IRasterBand, IRasterBandEdit2, IRasterBandEdit, INativeTypeInfo, IRasterProps, IDataset, ITable, IObjectClass, IClass, IGeoDataset, IRasterDataset, IRasterTable, IRasterPyramid, IRawPixels, IMetadata, IMetadataEdit, IRasterTransaction, ISupportErrorInfo, IRawBlocks, IRasterBandColormap</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RasterBandClass</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.RasterBand.html">RasterBand</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterBand.html">IRasterBand</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterBandEdit2.html">IRasterBandEdit2</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterBandEdit.html">IRasterBandEdit</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.INativeTypeInfo.html">INativeTypeInfo</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterProps.html">IRasterProps</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.ITable.html">ITable</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IObjectClass.html">IObjectClass</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IClass.html">IClass</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IGeoDataset.html">IGeoDataset</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRasterDataset.html">IRasterDataset</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterTable.html">IRasterTable</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterPyramid.html">IRasterPyramid</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRawPixels.html">IRawPixels</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IMetadata.html">IMetadata</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.Geodatabase.IMetadataEdit.html">IMetadataEdit</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html">IRasterTransaction</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html">ISupportErrorInfo</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html">IRawBlocks</a></div>
+      <div><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterBandColormap.html">IRasterBandColormap</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="eii">Explicit Interface Implementations
+</h2>
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AcquireCache_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AcquireCache*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AcquireCache" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AcquireCache">
+  AcquireCache()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets reference to edit cache.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object AcquireCache()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AcquireCache_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AddField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AddIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AliasName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AliasName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AliasName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AliasName">
+  AliasName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The alias name of the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string AliasName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AliasName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AlterHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AlterHistogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AlterHistogram_ESRI_ArcGIS_DatasourcesRaster_IRasterHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AlterHistogram(ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram)">
+  AlterHistogram(IRasterHistogram)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterHistogram(IRasterHistogram pHistogram)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pHistogram</code> <a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html">IRasterHistogram</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AlterStatistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AlterStatistics*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AlterStatistics_ESRI_ArcGIS_DatasourcesRaster_IRasterStatistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AlterStatistics(ESRI.ArcGIS.DatasourcesRaster.IRasterStatistics)">
+  AlterStatistics(IRasterStatistics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void AlterStatistics(IRasterStatistics pStats)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pStats</code> <a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterStatistics.html">IRasterStatistics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AttributeTable_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AttributeTable*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AttributeTable" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.AttributeTable">
+  AttributeTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The attribute table of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ITable AttributeTable { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ITable.html">ITable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_AttributeTable_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Bandname_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Bandname*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Bandname" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Bandname">
+  Bandname
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Bandname { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Bandname_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BasicOpenFromFile_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.BasicOpenFromFile*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BasicOpenFromFile_System_String_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.BasicOpenFromFile(System.String)">
+  BasicOpenFromFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the dataset from file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void BasicOpenFromFile(string Path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BasicOpenFromFile_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BrowseName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.BrowseName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BrowseName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.BrowseName">
+  BrowseName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The browse name of the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string BrowseName { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_BrowseName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CLSID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CLSID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CLSID">
+  CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanCopy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanCopy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanCopy" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanCopy">
+  CanCopy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this dataset can be copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanCopy_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanDelete_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanDelete*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanDelete" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanDelete">
+  CanDelete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be deleted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanDelete()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanDelete_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanEditMetadata_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanEditMetadata*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanEditMetadata" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanEditMetadata">
+  CanEditMetadata
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if metadata can be edited.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanEditMetadata { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanEditMetadata_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanRename_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanRename*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanRename" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CanRename">
+  CanRename()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be renamed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool CanRename()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CanRename_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Category_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Category*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Category" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Category">
+  Category
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The category of the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Category { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Category_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ClassNames_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ClassNames*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ClassNames" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ClassNames">
+  ClassNames
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The class names (titles).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterClassNames ClassNames { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterClassNames.html">IRasterClassNames</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ClassNames_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Colormap_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Colormap*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Colormap" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Colormap">
+  Colormap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The colormap of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterColormap Colormap { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRasterColormap.html">IRasterColormap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Colormap_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Commit_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Commit*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Commit" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Commit">
+  Commit()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sends all pending changes to persistent storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Commit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Commit_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompleteName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CompleteName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompleteName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CompleteName">
+  CompleteName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The full path of the RasterDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string CompleteName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompleteName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompressionType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CompressionType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompressionType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CompressionType">
+  CompressionType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The compression technique applied to this RasterDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string CompressionType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CompressionType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatisticsHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatisticsHistogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatisticsHistogram_System_Int32_System_Int32_System_Object_System_Boolean_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatisticsHistogram(System.Int32,System.Int32,System.Object,System.Boolean)">
+  ComputeStatisticsHistogram(int, int, object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates statistics and histogram for a given skip factor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ComputeStatisticsHistogram(int skipx, int skipy, object IgnoreValues, bool requireHistogram)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>skipx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>skipy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>IgnoreValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>requireHistogram</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatisticsHistogram_System_Int32_System_Int32_System_Object_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsAndHist_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatsAndHist*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsAndHist" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatsAndHist">
+  ComputeStatsAndHist()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates statistics and histogram if not previously stored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ComputeStatsAndHist()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsAndHist_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatsHistogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsHistogram_System_Int32_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ComputeStatsHistogram(System.Int32)">
+  ComputeStatsHistogram(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates statistics and histogram from a given pyramid level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ComputeStatsHistogram(int PyramidLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PyramidLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ComputeStatsHistogram_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ContrastTable_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ContrastTable*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ContrastTable" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ContrastTable">
+  ContrastTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The contrast look-up table of this band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IContrastTable ContrastTable { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IContrastTable.html">IContrastTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ContrastTable_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Copy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Copy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Copy_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  Copy(string, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IDataset Copy(string copyName, IWorkspace copyWorkspace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>copyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>copyWorkspace</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Create_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Create*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Create" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Create">
+  Create()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Build raster pyramids for this raster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Create()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Create_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateDefaultRaster_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateDefaultRaster*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateDefaultRaster" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateDefaultRaster">
+  CreateDefaultRaster()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a raster object with the default properties for this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRaster CreateDefaultRaster()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRaster.html">IRaster</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateDefaultRaster_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreatePixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreatePixelBlock*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreatePixelBlock" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreatePixelBlock">
+  CreatePixelBlock()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a compatible pixel block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPixelBlock CreatePixelBlock()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreatePixelBlock_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreatePixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreatePixelBlock*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreatePixelBlock_ESRI_ArcGIS_Geodatabase_IPnt_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)">
+  CreatePixelBlock(IPnt)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPixelBlock CreatePixelBlock(IPnt Size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Size</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPnt.html">IPnt</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRow_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateRow*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRow" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateRow">
+  CreateRow()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a row in the database with a system assigned object ID and null property values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRow CreateRow()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRow.html">IRow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRow_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRowBuffer_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateRowBuffer*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRowBuffer" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.CreateRowBuffer">
+  CreateRowBuffer()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a row buffer that can be used with an insert cursor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRowBuffer CreateRowBuffer()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRowBuffer.html">IRowBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_CreateRowBuffer_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Delete_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Delete*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Delete" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Delete">
+  Delete()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Delete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Delete_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteSearchedRows_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteSearchedRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DeleteSearchedRows_ESRI_ArcGIS_Geodatabase_IQueryFilter_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DeleteSearchedRows(ESRI.ArcGIS.Geodatabase.IQueryFilter)">
+  DeleteSearchedRows(IQueryFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void DeleteSearchedRows(IQueryFilter QueryFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DescriptorTable_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DescriptorTable*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DescriptorTable" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DescriptorTable">
+  DescriptorTable
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The descriptor table of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IDescTable DescriptorTable { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IDescTable.html">IDescTable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DescriptorTable_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DirectlyOpened_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DirectlyOpened*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DirectlyOpened" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.DirectlyOpened">
+  DirectlyOpened
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the band was opened directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool DirectlyOpened { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_DirectlyOpened_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_EXTCLSID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_EXTCLSID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.EXTCLSID">
+  EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_End_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.End*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_End" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.End">
+  End()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Commits changes and stops double buffering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void End()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_End_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Extension_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Extension" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Extension">
+  Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ExtensionProperties_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ExtensionProperties" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ExtensionProperties">
+  ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Extent_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Extent*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Extent" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Extent">
+  Extent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extent of the Raster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope Extent { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Extent_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Fields_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Fields" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Fields">
+  Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_FindField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_FindField_System_String_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.FindField(System.String)">
+  FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Flush_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Flush*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Flush" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Flush">
+  Flush()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flushes buffered data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Flush()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Flush_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Format_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Format*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Format" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Format">
+  Format
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The format of this RasterRataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Format { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Format_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_FullName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.FullName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_FullName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.FullName">
+  FullName
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The associated name object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IName FullName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IName.html">IName</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_FullName_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRow_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.GetRow*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRow_System_Int64_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.GetRow(System.Int64)">
+  GetRow(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The row from the database with the specified object ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRow GetRow(long OID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>OID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRow.html">IRow</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRow_System_Int64__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRows_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.GetRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRows_System_Object_System_Boolean_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.GetRows(System.Object,System.Boolean)">
+  GetRows(object, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The cursor of rows based on a set of object ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor GetRows(object oids, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oids</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_GetRows_System_Object_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasColormap*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasColormap">
+  HasColormap()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this band has a colormap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool HasColormap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasColormap*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap_System_Boolean__" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasColormap(System.Boolean@)">
+  HasColormap(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this band has a colormap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void HasColormap(out bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasColormap_System_Boolean___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasOID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasOID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasOID">
+  HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasStatistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasStatistics*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasStatistics_System_Boolean__" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasStatistics(System.Boolean@)">
+  HasStatistics(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this band has statistics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void HasStatistics(out bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasStatistics_System_Boolean___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasTable_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasTable*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasTable_System_Boolean__" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.HasTable(System.Boolean@)">
+  HasTable(out bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if this band has an attribute table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void HasTable(out bool b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>b</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_HasTable_System_Boolean___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Height_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Height*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Height" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Height">
+  Height
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Height in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int Height { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Height_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Histogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Histogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Histogram" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Histogram">
+  Histogram
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The histogram of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterHistogram Histogram { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html">IRasterHistogram</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Histogram_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IDataset_CanCopy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IDataset_CanCopy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IDataset_CanCopy" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IDataset_CanCopy">
+  IDataset_CanCopy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>True if this dataset can be copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IDataset_CanCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IDataset_CanCopy_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IDataset_Copy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IDataset_Copy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IDataset_Copy_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IDataset_Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  IDataset_Copy(string, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IDataset IDataset_Copy(string copyName, IWorkspace copyWorkspace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>copyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>copyWorkspace</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_Extent_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IGeoDataset_Extent*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_Extent" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IGeoDataset_Extent">
+  IGeoDataset_Extent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extent of the GeoDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnvelope IGeoDataset_Extent { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_Extent_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_SpatialReference_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IGeoDataset_SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_SpatialReference" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IGeoDataset_SpatialReference">
+  IGeoDataset_SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spatial reference of the GeoDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference IGeoDataset_SpatialReference { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IGeoDataset_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_AddField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_AddField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_AddField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_AddField(ESRI.ArcGIS.Geodatabase.IField)">
+  IObjectClass_AddField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_AddField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_AddIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_AddIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_AddIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_AddIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IObjectClass_AddIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_AddIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_CLSID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_CLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_CLSID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_CLSID">
+  IObjectClass_CLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IObjectClass_CLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_DeleteField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_DeleteField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_DeleteField_ESRI_ArcGIS_Geodatabase_IField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_DeleteField(ESRI.ArcGIS.Geodatabase.IField)">
+  IObjectClass_DeleteField(IField)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_DeleteField(IField Field)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Field</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IField.html">IField</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_DeleteIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_DeleteIndex*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_DeleteIndex_ESRI_ArcGIS_Geodatabase_IIndex_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_DeleteIndex(ESRI.ArcGIS.Geodatabase.IIndex)">
+  IObjectClass_DeleteIndex(IIndex)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IObjectClass_DeleteIndex(IIndex Index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Index</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndex.html">IIndex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_EXTCLSID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_EXTCLSID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_EXTCLSID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_EXTCLSID">
+  IObjectClass_EXTCLSID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual UID IObjectClass_EXTCLSID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.UID.html">UID</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Extension_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Extension*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Extension" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Extension">
+  IObjectClass_Extension
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object IObjectClass_Extension { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_ExtensionProperties_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_ExtensionProperties*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_ExtensionProperties" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_ExtensionProperties">
+  IObjectClass_ExtensionProperties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet IObjectClass_ExtensionProperties { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Fields_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Fields*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Fields" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Fields">
+  IObjectClass_Fields
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IFields IObjectClass_Fields { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IFields.html">IFields</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_FindField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_FindField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_FindField_System_String_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_FindField(System.String)">
+  IObjectClass_FindField(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int IObjectClass_FindField(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_HasOID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_HasOID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_HasOID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_HasOID">
+  IObjectClass_HasOID
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IObjectClass_HasOID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Indexes_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_Indexes" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_Indexes">
+  IObjectClass_Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes IObjectClass_Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_OIDFieldName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IObjectClass_OIDFieldName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IObjectClass_OIDFieldName">
+  IObjectClass_OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string IObjectClass_OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandColormap_Colormap_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandColormap_Colormap*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandColormap_Colormap" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandColormap_Colormap">
+  IRasterBandColormap_Colormap
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The colormap of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterColormap IRasterBandColormap_Colormap { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRasterColormap.html">IRasterColormap</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandColormap_Colormap_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_AlterHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_AlterHistogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_AlterHistogram_ESRI_ArcGIS_DatasourcesRaster_IRasterHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_AlterHistogram(ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram)">
+  IRasterBandEdit2_AlterHistogram(IRasterHistogram)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRasterBandEdit2_AlterHistogram(IRasterHistogram pHistogram)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pHistogram</code> <a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html">IRasterHistogram</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_AlterStatistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_AlterStatistics*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_AlterStatistics_ESRI_ArcGIS_DatasourcesRaster_IRasterStatistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_AlterStatistics(ESRI.ArcGIS.DatasourcesRaster.IRasterStatistics)">
+  IRasterBandEdit2_AlterStatistics(IRasterStatistics)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRasterBandEdit2_AlterStatistics(IRasterStatistics pStats)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pStats</code> <a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterStatistics.html">IRasterStatistics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_ComputeStatsHistogram_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_ComputeStatsHistogram*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterBandEdit2_ComputeStatsHistogram_System_Int32_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterBandEdit2_ComputeStatsHistogram(System.Int32)">
+  IRasterBandEdit2_ComputeStatsHistogram(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void IRasterBandEdit2_ComputeStatsHistogram(int PyramidLevel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>PyramidLevel</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterDataset_CanCopy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterDataset_CanCopy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterDataset_CanCopy" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterDataset_CanCopy">
+  IRasterDataset_CanCopy()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this dataset can be copied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IRasterDataset_CanCopy()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterDataset_CanCopy_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterDataset_Copy_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterDataset_Copy*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IRasterDataset_Copy_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IRasterDataset_Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  IRasterDataset_Copy(string, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IDataset IRasterDataset_Copy(string copyName, IWorkspace copyWorkspace)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>copyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>copyWorkspace</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IDataset.html">IDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Indexes_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Indexes*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Indexes" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Indexes">
+  Indexes
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IIndexes Indexes { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IIndexes.html">IIndexes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Insert_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Insert*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Insert_System_Boolean_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Insert(System.Boolean)">
+  Insert(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a  cursor that can be used to insert new Rows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Insert(bool useBuffering)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>useBuffering</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Insert_System_Boolean__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_InterfaceSupportsErrorInfo_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.InterfaceSupportsErrorInfo*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_InterfaceSupportsErrorInfo_System_Guid__" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.InterfaceSupportsErrorInfo(System.Guid@)">
+  InterfaceSupportsErrorInfo(ref Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void InterfaceSupportsErrorInfo(ref Guid riid)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>riid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IsInteger_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IsInteger*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IsInteger" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.IsInteger">
+  IsInteger
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the data is integer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool IsInteger { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_IsInteger_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MapModel_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MapModel*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MapModel" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MapModel">
+  MapModel
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Map to raster transformation information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterMapModel MapModel { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterMapModel.html">IRasterMapModel</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MapModel_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MeanCellSize_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MeanCellSize*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MeanCellSize" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MeanCellSize">
+  MeanCellSize()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the approximate cell size of the raster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPnt MeanCellSize()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IPnt.html">IPnt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MeanCellSize_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Metadata_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Metadata*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Metadata" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Metadata">
+  Metadata
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The PropertySet containing metadata.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet Metadata { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Metadata_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MinimumSize_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MinimumSize*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MinimumSize" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.MinimumSize">
+  MinimumSize
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minimum raster pyramid size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPnt MinimumSize { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IPnt.html">IPnt</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_MinimumSize_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Name_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Name*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Name" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The name of the Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string Name { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Name_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NativeType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NativeType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NativeType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NativeType">
+  NativeType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The native type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual INativeType NativeType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.INativeType.html">INativeType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NativeType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NoDataValue_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NoDataValue*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NoDataValue" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NoDataValue">
+  NoDataValue
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Data value used to indicate invalid or excluded data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual object NoDataValue { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NoDataValue_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NumCacheRefs_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NumCacheRefs*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NumCacheRefs" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.NumCacheRefs">
+  NumCacheRefs
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of outstanding cache references</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int NumCacheRefs { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_NumCacheRefs_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_OIDFieldName_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.OIDFieldName*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_OIDFieldName" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.OIDFieldName">
+  OIDFieldName
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string OIDFieldName { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ObjectClassID_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ObjectClassID*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ObjectClassID" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ObjectClassID">
+  ObjectClassID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The unique ID for the object class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int ObjectClassID { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ObjectClassID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_OpenFromFile_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.OpenFromFile*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_OpenFromFile_System_String_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.OpenFromFile(System.String)">
+  OpenFromFile(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Attaches dataset to a particular file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void OpenFromFile(string Path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_OpenFromFile_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PixelType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PixelType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PixelType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PixelType">
+  PixelType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Data type of the pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual rstPixelType PixelType { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.rstPixelType.html">rstPixelType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PixelType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrecalculateStats_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PrecalculateStats*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrecalculateStats_System_Object_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PrecalculateStats(System.Object)">
+  PrecalculateStats(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculates statistics and histograms for specified bands.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void PrecalculateStats(object index_list)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index_list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrecalculateStats_System_Object__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Present_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Present*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Present" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Present">
+  Present
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether pyramid layers exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual bool Present { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Present_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrimaryField_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PrimaryField*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrimaryField" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PrimaryField">
+  PrimaryField
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The primary field of the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int PrimaryField { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PrimaryField_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PropertySet_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PropertySet*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PropertySet" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.PropertySet">
+  PropertySet
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The set of properties for the dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IPropertySet PropertySet { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.esriSystem.IPropertySet.html">IPropertySet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_PropertySet_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterDataset_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RasterDataset*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterDataset" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RasterDataset">
+  RasterDataset
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The RasterDataset associated with this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterDataset RasterDataset { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IRasterDataset.html">IRasterDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterDataset_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterDataset_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>&lt;P&gt;The &lt;STRONG&gt;RasterDataset&lt;/STRONG&gt; object represents a dataset on disk or in a database. It is composed of one or more persistent raster bands. The dataset provides access only to operations that apply to the entire dataset, with the &lt;STRONG&gt;RasterBand&lt;/STRONG&gt; providing access to operations that occur on individual bands.&lt;/P&gt;
+&lt;P&gt;The RasterDataset object performs basic dataset management functions, such as copy, rename, and delete. It can also instantiat RasterBand and &lt;STRONG&gt;Raster&lt;/STRONG&gt; objects representing other aspects of the data. It can be used to examine dataset properties including different format, extent, spatial reference, and number of bands.&lt;/P&gt;
+&lt;P&gt;The spatial reference of the raster raster dataset can be changed through interface &lt;STRONG&gt;IGeoDatasetSchemaEdit&lt;/STRONG&gt;, but it does not project the dataset, only changes the coordinate system associated with the dataset.&lt;BR&gt;The pyramid of the raster dataset can be built or rebuilt to improve display performance for large raster datasets.&lt;/P&gt;</p>
+</div>
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterInfo_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RasterInfo*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterInfo" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RasterInfo">
+  RasterInfo
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The raster information.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterInfo RasterInfo { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterInfo.html">IRasterInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RasterInfo_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Read_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Read*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Read_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)">
+  Read(IPnt, IPixelBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Read(IPnt tlc, IPixelBlock pxls)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tlc</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPnt.html">IPnt</a></dt>
+    <dd></dd>
+    <dt><code>pxls</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ReadBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ReadBlock*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ReadBlock_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geodatabase_IPixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ReadBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)">
+  ReadBlock(int, int, int, IPixelBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void ReadBlock(int tx, int ty, int Level, IPixelBlock pPixelBlock)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pPixelBlock</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RelationshipClasses_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RelationshipClasses*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RelationshipClasses_ESRI_ArcGIS_Geodatabase_esriRelRole_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RelationshipClasses(ESRI.ArcGIS.Geodatabase.esriRelRole)">
+  RelationshipClasses[esriRelRole]
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The relationship classes in which this object class participates in for the specified role.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumRelationshipClass RelationshipClasses[esriRelRole Role] { get; }</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Role</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriRelRole.html">esriRelRole</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumRelationshipClass.html">IEnumRelationshipClass</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RelationshipClasses_ESRI_ArcGIS_Geodatabase_esriRelRole__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Rename_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Rename*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Rename_System_String_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Rename(System.String)">
+  Rename(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renames this Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Rename(string Name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Rename_System_String__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RepresentationType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RepresentationType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RepresentationType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RepresentationType">
+  RepresentationType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The suggested representation type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual rstRepresentationType RepresentationType { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.rstRepresentationType.html">rstRepresentationType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RepresentationType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ReturnCache_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ReturnCache*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ReturnCache_System_Object_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.ReturnCache(System.Object)">
+  ReturnCache(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Restores edit cache to previous state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int ReturnCache(object cache)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cache</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_ReturnCache_System_Object__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RowCount_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RowCount*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_RowCount_ESRI_ArcGIS_Geodatabase_IQueryFilter_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.RowCount(ESRI.ArcGIS.Geodatabase.IQueryFilter)">
+  RowCount(IQueryFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual long RowCount(IQueryFilter QueryFilter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Search_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Search*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Search_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  Search(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Search(IQueryFilter QueryFilter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Select_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Select*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Select_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_esriSelectionType_ESRI_ArcGIS_Geodatabase_esriSelectionOption_ESRI_ArcGIS_Geodatabase_IWorkspace_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)">
+  Select(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISelectionSet Select(IQueryFilter QueryFilter, esriSelectionType selType, esriSelectionOption selOption, IWorkspace selectionContainer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>selType</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionType.html">esriSelectionType</a></dt>
+    <dd></dd>
+    <dt><code>selOption</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriSelectionOption.html">esriSelectionOption</a></dt>
+    <dd></dd>
+    <dt><code>selectionContainer</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ISelectionSet.html">ISelectionSet</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SensorType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.SensorType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SensorType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.SensorType">
+  SensorType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sensor type used for this RasterDataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual string SensorType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SensorType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SpatialReference_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SpatialReference" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.SpatialReference">
+  SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>SpatialReference of the Raster.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ISpatialReference SpatialReference { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Start_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Start*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Start" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Start">
+  Start()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts double buffering edits for undo support.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Start_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Statistics_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Statistics*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Statistics" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Statistics">
+  Statistics
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The statistics of this raster band.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IRasterStatistics Statistics { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.DatasourcesRaster.IRasterStatistics.html">IRasterStatistics</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Statistics_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Subsets_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Subsets*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Subsets" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Subsets">
+  Subsets
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Datasets contained within this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IEnumDataset Subsets { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IEnumDataset.html">IEnumDataset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Subsets_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Synchronize_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Synchronize*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Synchronize_ESRI_ArcGIS_Geodatabase_esriMetadataSyncAction_System_Int32_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Synchronize(ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32)">
+  Synchronize(esriMetadataSyncAction, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Updates metadata with the current properties; may create metadata if it doesn't already exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Synchronize(esriMetadataSyncAction action, int interval)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction.html">esriMetadataSyncAction</a></dt>
+    <dd></dd>
+    <dt><code>interval</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Synchronize_ESRI_ArcGIS_Geodatabase_esriMetadataSyncAction_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_TableType_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.TableType*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_TableType" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.TableType">
+  TableType
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The class names of the table.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriRasterTableTypeEnum TableType { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriRasterTableTypeEnum.html">esriRasterTableTypeEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_TableType_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Type_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Type*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Type" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of the Dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual esriDatasetType Type { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.esriDatasetType.html">esriDatasetType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Type_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Undo_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Undo*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Undo_System_Int32_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Undo(System.Int32)">
+  Undo(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reverses last N changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int Undo(int N)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>N</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Undo_System_Int32__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_UndoLevels_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.UndoLevels*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_UndoLevels" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.UndoLevels">
+  UndoLevels
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of reversible operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int UndoLevels { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_UndoLevels_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Update_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Update*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Update_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Update(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)">
+  Update(IQueryFilter, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual ICursor Update(IQueryFilter QueryFilter, bool Recycling)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>Recycling</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.ICursor.html">ICursor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_UpdateSearchedRows_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.UpdateSearchedRows*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_UpdateSearchedRows_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_IRowBuffer_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.UpdateSearchedRows(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.IRowBuffer)">
+  UpdateSearchedRows(IQueryFilter, IRowBuffer)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void UpdateSearchedRows(IQueryFilter QueryFilter, IRowBuffer buffer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>QueryFilter</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IQueryFilter.html">IQueryFilter</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IRowBuffer.html">IRowBuffer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Width_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Width*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Width" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Width">
+  Width
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Width in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual int Width { get; set; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Width_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Workspace_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Workspace*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Workspace" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Workspace">
+  Workspace
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The workspace containing this dataset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual IWorkspace Workspace { get; }</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geodatabase.IWorkspace.html">IWorkspace</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Workspace_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+  <h4 class="section" id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Workspace_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>&lt;p&gt;A Workspace is a container of spatial and non-spatial datasets such as feature classes, raster datasets, and tables. It provides methods to instantiate existing datasets and to create new datasets. Workspaces are classified into types specified by the &lt;b&gt;&lt;a href=&quot;esriWorkspaceType.htm&quot;&gt;esriWorkspaceType&lt;/a&gt;&lt;/b&gt; enumerator: FileSystemWorkspace, LocalDatabaseWorkspace, and RemoteDatabaseWorkspace. Shapefiles and ArcGIS for Desktop Advanced workspaces are examples of FileSystemWorkspace. A personal geodatabase stored in an Access or a File Geodatabase is an example of a LocalDatabaseWorkspace. A geodatabase stored in an RDBMS such as Oracle, DB2, SQL Server, or Informix and accessed via ArcSDE is an example of a RemoteDatabaseWorkspace.&lt;/p&gt;&amp;nbsp;&lt;p&gt;A Workspace hands out a &lt;b&gt;&lt;a href=&quot;WorkspaceName.htm&quot;&gt;WorkspaceName&lt;/a&gt;&amp;nbsp;&lt;/b&gt;object as the value of its FullName property. For example, the WorkspaceName for a workspace can be persisted in a map document. An application can call the &lt;b&gt;Open()&lt;/b&gt; method on the workspace name after loading it from persistent storage to connect to and get an object reference to the workspace.&lt;/p&gt;</p>
+</div>
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Write_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Write*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_Write_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.Write(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)">
+  Write(IPnt, IPixelBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void Write(IPnt tlc, IPixelBlock pxls)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tlc</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPnt.html">IPnt</a></dt>
+    <dd></dd>
+    <dt><code>pxls</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_WriteBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.WriteBlock*"></a>
+
+  <h3 id="ESRI_ArcGIS_DatasourcesRaster_RasterBandClass_WriteBlock_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geodatabase_IPixelBlock_" data-uid="ESRI.ArcGIS.DatasourcesRaster.RasterBandClass.WriteBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)">
+  WriteBlock(int, int, int, IPixelBlock)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">virtual void WriteBlock(int tx, int ty, int Level, IPixelBlock pPixelBlock)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>ty</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>Level</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>pPixelBlock</code> <a class="xref" href="ESRI.ArcGIS.Geodatabase.IPixelBlock.html">IPixelBlock</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

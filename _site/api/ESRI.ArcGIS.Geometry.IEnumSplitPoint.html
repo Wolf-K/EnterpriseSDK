@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IEnumSplitPoint | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IEnumSplitPoint | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members that iterate over the new vertices in a geometry introduced as a result of using SplitAtPoints/SplitAtDistances.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint" class="text-break">
+Interface IEnumSplitPoint  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members that iterate over the new vertices in a geometry introduced as a result of using SplitAtPoints/SplitAtDistances.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;6B640160-FA9A-11D3-9F6A-00C04F6BDD7F&quot;)]
+public interface IEnumSplitPoint : IEnumVertex</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldID_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldID" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldID">
+  OldID
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The original PointID value at the split location before the split happened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int OldID { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldID_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldM_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldM*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldM" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldM">
+  OldM
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The original M value at the current split location before the split happened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double OldM { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldM_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldZ_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldZ*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldZ" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.OldZ">
+  OldZ
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The original Z value at the current split location before the split happened.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double OldZ { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_OldZ_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitDistance_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SplitDistance*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitDistance" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SplitDistance">
+  SplitDistance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The distance of the current split vertex from the beginning of the polycurve.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double SplitDistance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitDistance_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitHappened_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SplitHappened*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitHappened" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SplitHappened">
+  SplitHappened
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether or not a split was performed at the current vertex (a split point could be the same as a vertex existing before SplitAtPoints/Distances was used).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool SplitHappened { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SplitHappened_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Clone_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Clone*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Clone" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumVertex Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IEnumVertex.html">IEnumVertex</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_IsLastInPart_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.IsLastInPart*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_IsLastInPart" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.IsLastInPart">
+  IsLastInPart()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsLastInPart()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Next_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Next*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Next_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Next(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)">
+  Next(out IPoint, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Next(out IPoint outVertex, out int outPartIndex, out int vertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outVertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>outPartIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_NextInPart_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.NextInPart*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_NextInPart_ESRI_ArcGIS_Geometry_IPoint__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.NextInPart(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@)">
+  NextInPart(out IPoint, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NextInPart(out IPoint outVertex, out int OutVertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outVertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>OutVertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_NextInSequence_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.NextInSequence*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_NextInSequence_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.NextInSequence(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)">
+  NextInSequence(out IPoint, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the next split point along with its location in the geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void NextInSequence(out IPoint splitPoint, ref int part, ref int vertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>splitPoint</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_NextInSequence_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Previous_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Previous*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Previous_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Previous(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)">
+  Previous(out IPoint, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Previous(out IPoint outVertex, out int outPartIndex, out int vertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>outVertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>outPartIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_PreviousInSequence_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.PreviousInSequence*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_PreviousInSequence_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.PreviousInSequence(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)">
+  PreviousInSequence(out IPoint, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the previous split point along with its location in the geometry.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PreviousInSequence(out IPoint splitPoint, ref int part, ref int vertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>splitPoint</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>part</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_PreviousInSequence_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryNext_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryNext*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryNext_ESRI_ArcGIS_Geometry_IPoint_System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryNext(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)">
+  QueryNext(IPoint, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryNext(IPoint vertex, out int outPartIndex, out int vertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>outPartIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryNextInPart_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryNextInPart*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryNextInPart_ESRI_ArcGIS_Geometry_IPoint_System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint,System.Int32@)">
+  QueryNextInPart(IPoint, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryNextInPart(IPoint vertex, out int OutVertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>OutVertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryOldAttributes_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryOldAttributes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryOldAttributes_ESRI_ArcGIS_esriSystem_esriPointAttributes__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryOldAttributes(ESRI.ArcGIS.esriSystem.esriPointAttributes@)">
+  QueryOldAttributes(ref esriPointAttributes)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryOldAttributes(ref esriPointAttributes oldAttributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldAttributes</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.esriPointAttributes.html">esriPointAttributes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryPrevious_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryPrevious*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_QueryPrevious_ESRI_ArcGIS_Geometry_IPoint_System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)">
+  QueryPrevious(IPoint, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void QueryPrevious(IPoint vertex, out int outPartIndex, out int vertexIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>outPartIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>vertexIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Reset_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Reset*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Reset" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_ResetToEnd_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.ResetToEnd*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_ResetToEnd" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.ResetToEnd">
+  ResetToEnd()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ResetToEnd()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SetAt_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SetAt*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_SetAt_System_Int32_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.SetAt(System.Int32,System.Int32)">
+  SetAt(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetAt(int iPart, int iVertex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>iPart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>iVertex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Skip_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Skip*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_Skip_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.Skip(System.Int32)">
+  Skip(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Skip(int numVertices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numVertices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Attribute_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Attribute*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Attribute_ESRI_ArcGIS_Geometry_esriGeometryAttributes_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)">
+  put_Attribute(esriGeometryAttributes, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_Attribute(esriGeometryAttributes attributeType, double Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>attributeType</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriGeometryAttributes.html">esriGeometryAttributes</a></dt>
+    <dd></dd>
+    <dt><code>Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_ID_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_ID*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_ID_System_Int32_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_ID(System.Int32)">
+  put_ID(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_ID(int pointID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_M_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_M*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_M_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_M(System.Double)">
+  put_M(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_M(double M)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>M</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_X_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_X*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_X_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_X(System.Double)">
+  put_X(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_X(double X)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>X</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Y_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Y*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Y_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Y(System.Double)">
+  put_Y(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_Y(double Y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Z_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Z*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IEnumSplitPoint_put_Z_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IEnumSplitPoint.put_Z(System.Double)">
+  put_Z(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void put_Z(double Z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

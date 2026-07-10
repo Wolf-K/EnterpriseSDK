@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAffineTransformation2D | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAffineTransformation2D | EnterpriseSDK ">
+      
+      <meta name="description" content="Provides access to members that define and manipulate affine transformations.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D">
+
+
+
+  <h1 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D" class="text-break">
+Interface IAffineTransformation2D  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="ESRI.html">ESRI</a>.<a class="xref" href="ESRI.ArcGIS.html">ArcGIS</a>.<a class="xref" href="ESRI.ArcGIS.Geometry.html">Geometry</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>ESRI.Server.Geometry.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Provides access to members that define and manipulate affine transformations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+[Guid(&quot;D12F81B4-D263-11D2-9F29-00C04F6BDD7F&quot;)]
+public interface IAffineTransformation2D : ITransformation</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_IsReflective_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.IsReflective*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_IsReflective" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.IsReflective">
+  IsReflective
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates if the transformation contains a reflection (determinant is negative).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsReflective { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_IsReflective_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_MoveOrigin_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.MoveOrigin*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_MoveOrigin" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.MoveOrigin">
+  MoveOrigin
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The origin of accumulated transformations used when projecting an affine transformation to a different spatial reference system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPoint MoveOrigin { set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_MoveOrigin_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotation_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Rotation*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotation" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Rotation">
+  Rotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The rotation angle. Will not be able if different x/y scale factors have been incorporated into the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double Rotation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotation_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_SpatialReference_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.SpatialReference*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_SpatialReference" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.SpatialReference">
+  SpatialReference
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The spatial reference in which this transformation is meaningful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISpatialReference SpatialReference { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_SpatialReference_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XScale_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.XScale*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XScale" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.XScale">
+  XScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The scale along the X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double XScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XScale_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XTranslation_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.XTranslation*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XTranslation" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.XTranslation">
+  XTranslation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The translation along the X axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double XTranslation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_XTranslation_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YScale_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.YScale*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YScale" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.YScale">
+  YScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The scale along the Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double YScale { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YScale_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YTranslation_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.YTranslation*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YTranslation" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.YTranslation">
+  YTranslation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>The translation along the Y axis.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double YTranslation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_YTranslation_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromControlPoints_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromControlPoints*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromControlPoints_System_Int32_ESRI_ArcGIS_Geometry_IPoint__ESRI_ArcGIS_Geometry_IPoint__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromControlPoints(System.Int32,ESRI.ArcGIS.Geometry.IPoint@,ESRI.ArcGIS.Geometry.IPoint@)">
+  DefineFromControlPoints(int, ref IPoint, ref IPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Defines the best affine transformation between two sets of points. Can be used to register paper maps on a digitizer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineFromControlPoints(int numPoints, ref IPoint fromPoints, ref IPoint toPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fromPoints</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+    <dt><code>toPoints</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IPoint.html">IPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromControlPoints_System_Int32_ESRI_ArcGIS_Geometry_IPoint__ESRI_ArcGIS_Geometry_IPoint___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromControlPointsEx_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromControlPointsEx*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromControlPointsEx_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__ESRI_ArcGIS_esriSystem_WKSPoint__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromControlPointsEx(System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@,ESRI.ArcGIS.esriSystem.WKSPoint@)">
+  DefineFromControlPointsEx(int, ref WKSPoint, ref WKSPoint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineFromControlPointsEx(int numPoints, ref WKSPoint fromPoints, ref WKSPoint toPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>numPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fromPoints</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.WKSPoint.html">WKSPoint</a></dt>
+    <dd></dd>
+    <dt><code>toPoints</code> <a class="xref" href="ESRI.ArcGIS.esriSystem.WKSPoint.html">WKSPoint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromEnvelopes_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromEnvelopes*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromEnvelopes_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromEnvelopes(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geometry.IEnvelope)">
+  DefineFromEnvelopes(IEnvelope, IEnvelope)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineFromEnvelopes(IEnvelope from, IEnvelope to)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromEnvelopesEx_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromEnvelopesEx*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineFromEnvelopesEx_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Boolean_System_Boolean_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineFromEnvelopesEx(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean)">
+  DefineFromEnvelopesEx(IEnvelope, IEnvelope, IEnvelope, bool, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineFromEnvelopesEx(IEnvelope from, IEnvelope to, IEnvelope outFrom, bool assumeFalseOrigin, bool keepAspect, bool flipIt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>from</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>to</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>outFrom</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IEnvelope.html">IEnvelope</a></dt>
+    <dd></dd>
+    <dt><code>assumeFalseOrigin</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>keepAspect</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>flipIt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineReflection_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineReflection*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_DefineReflection_ESRI_ArcGIS_Geometry_ILine_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.DefineReflection(ESRI.ArcGIS.Geometry.ILine)">
+  DefineReflection(ILine)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void DefineReflection(ILine l)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>l</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ILine.html">ILine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetControlPointError_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.GetControlPointError*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetControlPointError_System_Int32_System_Double__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.GetControlPointError(System.Int32,System.Double@,System.Double@)">
+  GetControlPointError(int, out double, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the errors involved in moving control point i from the 'from' to 'to' system. These error terms are valid after using DefineFromControlPoints/Ex to define the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetControlPointError(int i, out double fromError, out double toError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>fromError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetControlPointError_System_Int32_System_Double__System_Double___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetRMSError_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.GetRMSError*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetRMSError_System_Double__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.GetRMSError(System.Double@,System.Double@)">
+  GetRMSError(out double, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>RMS (Root Mean Square) error expressed relative to the 'from' and 'to' points defining the transformation. These error terms are valid after using DefineFromControlPoints/Ex to define the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void GetRMSError(out double fromError, out double toError)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toError</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_GetRMSError_System_Double__System_Double___examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Move_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Move*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Move_System_Double_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Move(System.Double,System.Double)">
+  Move(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Incorporates a translation factor into the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Move(double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Move_System_Double_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_MoveVector_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.MoveVector*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_MoveVector_ESRI_ArcGIS_Geometry_ILine_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.MoveVector(ESRI.ArcGIS.Geometry.ILine)">
+  MoveVector(ILine)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void MoveVector(ILine movementVector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>movementVector</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ILine.html">ILine</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_PostMultiply_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.PostMultiply*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_PostMultiply_ESRI_ArcGIS_Geometry_IAffineTransformation2D_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.PostMultiply(ESRI.ArcGIS.Geometry.IAffineTransformation2D)">
+  PostMultiply(IAffineTransformation2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PostMultiply(IAffineTransformation2D postTransform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>postTransform</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IAffineTransformation2D.html">IAffineTransformation2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_PreMultiply_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.PreMultiply*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_PreMultiply_ESRI_ArcGIS_Geometry_IAffineTransformation2D_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.PreMultiply(ESRI.ArcGIS.Geometry.IAffineTransformation2D)">
+  PreMultiply(IAffineTransformation2D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void PreMultiply(IAffineTransformation2D preTransform)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>preTransform</code> <a class="xref" href="ESRI.ArcGIS.Geometry.IAffineTransformation2D.html">IAffineTransformation2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Project_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Project*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Project_ESRI_ArcGIS_Geometry_ISpatialReference_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Project(ESRI.ArcGIS.Geometry.ISpatialReference)">
+  Project(ISpatialReference)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Project(ISpatialReference newSpatialReference)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newSpatialReference</code> <a class="xref" href="ESRI.ArcGIS.Geometry.ISpatialReference.html">ISpatialReference</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Reset_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Reset*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Reset" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Resets the tranformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Reset_examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotate_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Rotate*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotate_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Rotate(System.Double)">
+  Rotate(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Incorporates a rotation (in radians) into the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Rotate(double da)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>da</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Rotate_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Scale_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Scale*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Scale_System_Double_System_Double_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.Scale(System.Double,System.Double)">
+  Scale(double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Incorporates scale factors into the transformation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Scale(double dx, double dy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dx</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>dy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_Scale_System_Double_System_Double__examples">Examples</h4>
+  <p><codetitle>Sample Snippet</codetitle></p>
+<pre><code class="lang-csharp"></code></pre>
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresFF_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresFF*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)">
+  TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformMeasuresFF(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref double outMeasures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>outMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresFI_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresFI*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)">
+  TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformMeasuresFI(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref int outMeasures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>outMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresIF_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresIF*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)">
+  TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformMeasuresIF(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref double outMeasures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>outMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresII_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresII*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)">
+  TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformMeasuresII(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref int outMeasures)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>outMeasures</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsFF_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsFF*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)">
+  TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformPointsFF(esriTransformDirection Direction, int cPoints, ref double inPoints, ref double outPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>outPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsFI_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsFI*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)">
+  TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformPointsFI(esriTransformDirection Direction, int cPoints, ref double inPoints, ref int outPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>outPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsIF_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsIF*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)">
+  TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformPointsIF(esriTransformDirection Direction, int cPoints, ref int inPoints, ref double outPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>outPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsII_" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsII*"></a>
+
+  <h3 id="ESRI_ArcGIS_Geometry_IAffineTransformation2D_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__" data-uid="ESRI.ArcGIS.Geometry.IAffineTransformation2D.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)">
+  TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void TransformPointsII(esriTransformDirection Direction, int cPoints, ref int inPoints, ref int outPoints)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>Direction</code> <a class="xref" href="ESRI.ArcGIS.Geometry.esriTransformDirection.html">esriTransformDirection</a></dt>
+    <dd></dd>
+    <dt><code>cPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>inPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>outPoints</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
