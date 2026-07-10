@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>EsriGeoDatabaseDistributed</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.GeoDatabaseDistributed.IWFSServer">
+      <summary>Provides access to the available WFS Server properties and methods.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.GeoDatabaseDistributed.IWFSServer.GetData(ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSHttpVerb,System.String)">
+      <summary>Handle a WFS request.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="M:ESRI.ArcGIS.GeoDatabaseDistributed.IWFSServer.SetParameter(System.String,System.String)">
+      <summary>Handle setting WFS Server parameter.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoDatabaseDistributed.WFSServer">
+      <summary>The WFS Server Object Extension.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError">
+      <summary>Disconnected editing error codes.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.S_DE_OK">
+      <summary>0: Successful Disconnected Editing operation.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_OUT_NON_VERSIONED_DATA">
+      <summary>-2147219455: Cannot check out non versioned data.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_IN_INVALID_GEODATABASE">
+      <summary>-2147219454: Invalid CheckOut Geodatabase.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_GEODATABASE_HAS_CHECK_OUT">
+      <summary>-2147219453: Geodatabase has already a checkout data.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_INVALID_REPLICA_DESCRIPTION">
+      <summary>-2147219452: Replica description object is not properly initialized.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_OUT_NOT_SUPPORTED_IN_RELEASE">
+      <summary>-2147219451: Creating check-outs is not supported on this geodatabase release.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_IN_NOT_SUPPORTED_IN_RELEASE">
+      <summary>-2147219450: Checking in data is not supported on this geodatabase release.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CAN_NOT_REUSE_SCHEMA_OF_VERSIONED_DATA">
+      <summary>-2147219449: Cannot reuse schema of versioned data during extracting or checking out data.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_OUT_INVALID_DATA">
+      <summary>-2147219448: Cannot checkout readonly or non versioned data.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CAN_NOT_REUSE_SCHEMA_WITH_OUTPUT_SPATIAL_REFERENCE">
+      <summary>-2147219447: Cannot reuse schema with an output spatial reference.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_OUT_UNREGISTER_FAILED">
+      <summary>-2147219446: Failed to unregisted check-out.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_CHECK_OUT_INVALID_SOURCE_WORKSPACE">
+      <summary>-2147219445: Cannot checkout personal or ArcSDE release prior to (1, 3, 0).</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_SYNCHRONIZE_INVALID_RELEASES">
+      <summary>-2147219444: Geodatabase releases of the master geodatabase and the checkout geodatabase should match.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_UPDATEGRAM_TOPOLOGY_DEFINITION_ACCESSING">
+      <summary>-2147219443: Error in accessing UpdateGram's Topology Definition element.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_TRANSFER_DELETE_TO_DATASET">
+      <summary>-2147219442: Error in transferring delete to dataset.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_TRANSFER_INSERT_TO_DATASET">
+      <summary>-2147219441: Error in transferring insert to dataset.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriDisconnectedEditingError.E_TRANSFER_UPDATE_TO_DATASET">
+      <summary>-2147219440: Error in transferring update to dataset.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSHttpVerb">
+      <summary>HTTP modes of WFSServer.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSHttpVerb.esriWFSGet">
+      <summary>0: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSHttpVerb.esriWFSPost">
+      <summary>1: </summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum">
+      <summary>WFSServer return message codes.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_SkippedDataset">
+      <summary>92000: A dataset will not be exposed by the WFS.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToGenerateTransactionResponse">
+      <summary>92001: Failed to generate the transaction response for a transaction that succeeded.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToDeleteLock">
+      <summary>92002: Failed to delete lock after processing a transaction.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToDeleteOutstandingTransactionVersions">
+      <summary>92003: Failed to delete temporary versions created to process a transaction.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_NotLicensed">
+      <summary>92004: WFS server is not licensed.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_GetRequest">
+      <summary>92005: The http GET request about to be processed.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_PostRequest">
+      <summary>92006: The http POST request about to be processed.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_WFSExceptionReport">
+      <summary>92007: The WFS exception report.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_Debug">
+      <summary>92008: A generic code for WFS debug messages.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToReleaseLocks">
+      <summary>92009: Feature locks failed to be released (they will eventually timeout).</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ConstructStart">
+      <summary>92010: The construction of the WFS started.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalidAppSchemaNamespace">
+      <summary>92011: Invalid application schema namespace in the WFS configuration.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalidAppSchemaPrefix">
+      <summary>92012: Invalid application schema prefix in the WFS configuration.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalidDefaultLockExpiration">
+      <summary>92013: Invalid default lock expiration value in the WFS configuratioln</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorPublishedWorkspaceIsntVersioned">
+      <summary>92014: Transactions are enabled but the published workspace isn't versioned.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ConstructEnded">
+      <summary>92015: The construction of the WFS ended.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalid10AxisOrder">
+      <summary>92016: Invalid AxisOrderWFS10 value in configuration.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalid11AxisOrder">
+      <summary>92017: Invalid AxisOrderWFS11 value in configuration.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ErrorInvalidUseSRSNameFormat">
+      <summary>92018: Invalid DetermineAxisOrderFromSRSNameFormat value in configuration.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToReconcileAgainstSelf">
+      <summary>92019: The server failed to process the transaction due to a failure reconciling the published version against itself.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToStopEditing">
+      <summary>92020: The server failed to process the transaction due to a failure when it stopped editing.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ServerTooBusyToProcessTransaction">
+      <summary>92021: The server failed to process the transaction because it is too busy processing other transactions.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToImportTransactionChanges">
+      <summary>92022: The server failed to import the changes in the WFS transaction.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedCreatingTransactionResponse">
+      <summary>92023: The server succeeded processing the transaction, but failed to generate the transaction response.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_TransactionFailedStoppingEditOperation">
+      <summary>92024: The server failed to process the transaction because it was unable to stop the enclosing edit operation.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_FailedToStartEditing">
+      <summary>92025: The server failed to process the transaction because it was unable to start editing or start an edit operation.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.GeoDatabaseDistributed.esriWFSServerMessageCodeEnum.esriWFSServerMessageCode_ConflictDetected">
+      <summary>92026: The server failed to process the transaction because it unexpectedly found a conflict.</summary>
+    </member>
+  </members>
+</doc>

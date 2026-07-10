@@ -381,7 +381,7 @@ namespace XMLSnippetsInjector
           // First try exact name match (or trimming the first 2 characters like 'M:' from member names)
           foreach (var doc in xmlDocs)
           {
-            var r = doc.Members.Where(s => (s.RawName[2..].Equals(snippet.Cref, StringComparison.Ordinal) ||
+            var r = doc.Members.Where(s => !string.IsNullOrEmpty(s.RawName) && (s.RawName[2..].Equals(snippet.Cref, StringComparison.Ordinal) ||
                                             s.RawName.Equals(snippet.Cref, StringComparison.Ordinal))
                                      );
             if (!r.Any())

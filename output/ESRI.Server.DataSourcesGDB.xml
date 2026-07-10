@@ -1,0 +1,1647 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>EsriDataSourcesGDB</name>
+  </assembly>
+  <members>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.IBranchEditingSOI">
+      <summary>Methods querying edited rows in an SOI before applyEdits.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DatasourcesGDB.IBranchEditingSOI.UseLastEditMomentForNextQuery">
+      <summary>Set the next query to use the edit moment of the branch.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo">
+      <summary>Infomation about database locks.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType">
+      <summary>The type of the locked dataset, if it is a dataset.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock">
+      <summary>Is the lock from the current connection.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode">
+      <summary>The mode of the lock.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner">
+      <summary>The user that owns the lock.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime">
+      <summary>The time when the lock was acquired.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType">
+      <summary>The type of lock.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID">
+      <summary>The ID of the locked object.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName">
+      <summary>The name of the locked object.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID">
+      <summary>The session that owns the lock.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLocksInfo">
+      <summary>Methods for getting information about locks in a database.</summary>
+    </member>
+    <member name="P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLocksInfo.AllLocks">
+      <summary>All the locks in the database.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.IEnumDatabaseLockInfo">
+      <summary>An enumeration of locks in a database.</summary>
+    </member>
+    <member name="M:ESRI.ArcGIS.DatasourcesGDB.IEnumDatabaseLockInfo.Next">
+      <summary>A lock in the database.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="M:ESRI.ArcGIS.DatasourcesGDB.IEnumDatabaseLockInfo.Reset">
+      <summary>Resets the enumeration.</summary>
+      <example>
+        <codeTitle>Sample Snippet</codeTitle>
+        <code language="csharp"></code>
+      </example>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.FgdbTableName">
+      <summary>File GeoDatabase Table Name object.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.FileGDBScratchWorkspaceFactory">
+      <summary>File GeoDatabase Scratch Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.FileGDBWorkspaceFactory">
+      <summary>File GeoDatabase Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.InMemoryWorkspaceFactory">
+      <summary />
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.MemoryWorkspaceFactory">
+      <summary>The Pro Memory Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.RealtimePluginWorkspaceFactory">
+      <summary>The Realtime Plugin Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.SdeWorkspaceFactory">
+      <summary>Esri SDE Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.SqliteWorkspaceFactory">
+      <summary>Esri SQLite SDE Workspace Factory.</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.SqlWorkspace">
+      <summary>Sql workspace</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.SqlWorkspaceFactory">
+      <summary>Sql workspace factory</summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode">
+      <summary />
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode.esriLockModeShared">
+      <summary>0: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode.esriLockModeExclusive">
+      <summary>1: </summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType">
+      <summary />
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType.esriLockTypeSchema">
+      <summary>0: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType.esriLockTypeState">
+      <summary>1: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType.esriLockTypeVersion">
+      <summary>2: </summary>
+    </member>
+    <member name="T:ESRI.ArcGIS.DatasourcesGDB.sdeError">
+      <summary>ArcSDE error codes mapped to HRESULTs.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILURE">
+      <summary>-2147196927: ArcSDE Error.</summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LAYERINFO_OBJECT">
+      <summary>-2147196926: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ANNOTATION">
+      <summary>-2147196925: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FINISHED">
+      <summary>-2147196924: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDE_NOT_STARTED">
+      <summary>-2147196923: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNCHANGED">
+      <summary>-2147196922: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TASKS_EXCEEDED">
+      <summary>-2147196921: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CONNECTIONS_EXCEEDED">
+      <summary>-2147196921: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOGIN_NOT_ALLOWED">
+      <summary>-2147196920: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_USER">
+      <summary>-2147196919: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NET_FAILURE">
+      <summary>-2147196918: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NET_TIMEOUT">
+      <summary>-2147196917: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_SVMEM">
+      <summary>-2147196916: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_CLMEM">
+      <summary>-2147196915: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_CONTEXT">
+      <summary>-2147196914: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ACCESS">
+      <summary>-2147196913: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_LAYERS">
+      <summary>-2147196912: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_LAYER_SPECIFIED">
+      <summary>-2147196911: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_LOCKED">
+      <summary>-2147196910: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_EXISTS">
+      <summary>-2147196909: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_NOEXIST">
+      <summary>-2147196908: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_INUSE">
+      <summary>-2147196907: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FID_NOEXIST">
+      <summary>-2147196906: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROW_NOEXIST">
+      <summary>-2147196906: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FID_EXISTS">
+      <summary>-2147196905: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROW_EXISTS">
+      <summary>-2147196905: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_MISMATCH">
+      <summary>-2147196904: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_PERMISSIONS">
+      <summary>-2147196903: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_NOT_NULL">
+      <summary>-2147196901: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SHAPE">
+      <summary>-2147196900: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LAYER_NUMBER">
+      <summary>-2147196900: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ENTITY_TYPE">
+      <summary>-2147196899: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SEARCH_METHOD">
+      <summary>-2147196898: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ETYPE_MASK">
+      <summary>-2147196897: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_BIND_CONFLICT">
+      <summary>-2147196896: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GRIDSIZE">
+      <summary>-2147196895: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCK_MODE">
+      <summary>-2147196894: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ETYPE_NOT_ALLOWED">
+      <summary>-2147196893: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_POINTS">
+      <summary>-2147196892: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_NUM_OF_PTS">
+      <summary>-2147196892: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_NOEXIST">
+      <summary>-2147196891: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ATTR_NOEXIST">
+      <summary>-2147196890: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LICENSE_FAILURE">
+      <summary>-2147196889: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_LICENSES">
+      <summary>-2147196888: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COLUMN_VALUE">
+      <summary>-2147196887: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_WHERE">
+      <summary>-2147196886: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SQL">
+      <summary>-2147196886: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_NOEXIST">
+      <summary>-2147196885: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_NOACCESS">
+      <summary>-2147196884: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_NOTOPEN">
+      <summary>-2147196883: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_IO_ERROR">
+      <summary>-2147196882: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_SHAPES">
+      <summary>-2147196881: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_LOCKS">
+      <summary>-2147196880: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOCK_CONFLICT">
+      <summary>-2147196879: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_LOCKS">
+      <summary>-2147196878: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DB_IO_ERROR">
+      <summary>-2147196877: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STREAM_IN_PROGRESS">
+      <summary>-2147196876: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COLUMN_TYPE">
+      <summary>-2147196875: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOPO_ERROR">
+      <summary>-2147196874: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ATTR_CONV_ERROR">
+      <summary>-2147196873: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COLUMN_DEF">
+      <summary>-2147196872: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SHAPE_BUF_SIZE">
+      <summary>-2147196871: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ENVELOPE">
+      <summary>-2147196870: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TEMP_IO_ERROR">
+      <summary>-2147196869: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GSIZE_TOO_SMALL">
+      <summary>-2147196868: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LICENSE_EXPIRED">
+      <summary>-2147196867: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_EXISTS">
+      <summary>-2147196866: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INDEX_EXISTS">
+      <summary>-2147196865: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INDEX_NOEXIST">
+      <summary>-2147196864: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_POINTER">
+      <summary>-2147196863: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_PARAM_VALUE">
+      <summary>-2147196862: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ALL_SLIVERS">
+      <summary>-2147196861: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TRANS_IN_PROGRESS">
+      <summary>-2147196860: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_IOMGR_NO_DBMS_CONNECT">
+      <summary>-2147196859: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DUPLICATE_ARC">
+      <summary>-2147196858: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ANNO_OBJECT">
+      <summary>-2147196857: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PT_NO_EXIST">
+      <summary>-2147196856: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PTS_NOT_ADJACENT">
+      <summary>-2147196855: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_MID_PT">
+      <summary>-2147196854: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_END_PT">
+      <summary>-2147196853: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RADIUS">
+      <summary>-2147196852: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOAD_ONLY_LAYER">
+      <summary>-2147196851: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYERS_NOT_FOUND">
+      <summary>-2147196850: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FILE_IO_ERROR">
+      <summary>-2147196849: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_BLOB_SIZE_TOO_LARGE">
+      <summary>-2147196848: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CORRIDOR_OUT_OF_BOUNDS">
+      <summary>-2147196847: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SHAPE_INTEGRITY_ERROR">
+      <summary>-2147196846: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_IMPLEMENTED_YET">
+      <summary>-2147196845: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CAD_EXISTS">
+      <summary>-2147196844: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_TRANSID">
+      <summary>-2147196843: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LAYER_NAME">
+      <summary>-2147196842: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LAYER_KEYWORD">
+      <summary>-2147196841: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RELEASE">
+      <summary>-2147196840: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VERSION_TBL_EXISTS">
+      <summary>-2147196839: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_COLUMN_NOT_BOUND">
+      <summary>-2147196838: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_INDICATOR_VALUE">
+      <summary>-2147196837: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_CONNECTION">
+      <summary>-2147196836: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DBA_PASSWORD">
+      <summary>-2147196835: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PATH_NOT_FOUND">
+      <summary>-2147196834: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDEHOME_NOT_SET">
+      <summary>-2147196833: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_TABLE_OWNER">
+      <summary>-2147196832: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PROCESS_NOT_FOUND">
+      <summary>-2147196831: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DBMS_LOGIN">
+      <summary>-2147196830: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PASSWORD_TIMEOUT">
+      <summary>-2147196829: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SERVER">
+      <summary>-2147196828: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_IOMGR_NOT_AVAILABLE">
+      <summary>-2147196827: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SERVICE_NOT_FOUND">
+      <summary>-2147196826: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STATS_TYPE">
+      <summary>-2147196825: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DISTINCT_TYPE">
+      <summary>-2147196824: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GRANT_REVOKE">
+      <summary>-2147196823: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SDEHOME">
+      <summary>-2147196822: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STREAM">
+      <summary>-2147196821: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_STREAMS">
+      <summary>-2147196820: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUT_OF_MUTEXES">
+      <summary>-2147196819: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CONNECTION_LOCKED">
+      <summary>-2147196818: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CONNECTION_IN_USE">
+      <summary>-2147196817: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_A_SELECT_STATEMENT">
+      <summary>-2147196816: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FUNCTION_SEQUENCE_ERROR">
+      <summary>-2147196815: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_WRONG_COLUMN_TYPE">
+      <summary>-2147196814: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PTABLE_LOCKED">
+      <summary>-2147196813: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PTABLE_IN_USE">
+      <summary>-2147196812: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STABLE_LOCKED">
+      <summary>-2147196811: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STABLE_IN_USE">
+      <summary>-2147196810: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_FILTER_TYPE">
+      <summary>-2147196809: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_CAD">
+      <summary>-2147196808: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_NOT_AVAILABLE">
+      <summary>-2147196807: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_TOO_EARLY">
+      <summary>-2147196806: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SYSTEM_UNITS">
+      <summary>-2147196805: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_UNITS">
+      <summary>-2147196804: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_CAD_OBJECT">
+      <summary>-2147196803: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VERSION_NOEXIST">
+      <summary>-2147196802: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SPATIAL_CONSTRAINT">
+      <summary>-2147196801: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STREAM_TYPE">
+      <summary>-2147196800: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SPATIAL_COLUMN">
+      <summary>-2147196799: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_SPATIAL_MASKS">
+      <summary>-2147196798: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_IOMGR_NOT_FOUND">
+      <summary>-2147196797: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SYSTEM_IS_CLIENT_ONLY">
+      <summary>-2147196796: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MULTIPLE_SPATIAL_COLS">
+      <summary>-2147196795: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SHAPE_OBJECT">
+      <summary>-2147196794: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_PARTNUM">
+      <summary>-2147196793: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INCOMPATIBLE_SHAPES">
+      <summary>-2147196792: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_PART_OFFSET">
+      <summary>-2147196791: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INCOMPATIBLE_COORDREFS">
+      <summary>-2147196790: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_COORD_OUT_OF_BOUNDS">
+      <summary>-2147196789: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_CACHE_FULL">
+      <summary>-2147196788: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COORDREF_OBJECT">
+      <summary>-2147196787: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COORDSYS_ID">
+      <summary>-2147196786: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COORDSYS_DESC">
+      <summary>-2147196785: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ROW_ID_LAYER">
+      <summary>-2147196784: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PROJECTION_ERROR">
+      <summary>-2147196783: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ARRAY_BYTES_EXCEEDED">
+      <summary>-2147196782: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_POLY_SHELLS_OVERLAP">
+      <summary>-2147196781: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_FEW_POINTS">
+      <summary>-2147196780: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_PART_SEPARATOR">
+      <summary>-2147196779: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_POLYGON_CLOSURE">
+      <summary>-2147196778: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_OUTER_SHELL">
+      <summary>-2147196777: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ZERO_AREA_POLYGON">
+      <summary>-2147196776: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_POLYGON_HAS_VERTICAL_LINE">
+      <summary>-2147196775: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OUTER_SHELLS_OVERLAP">
+      <summary>-2147196774: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SELF_INTERSECTING">
+      <summary>-2147196773: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_EXPORT_FILE">
+      <summary>-2147196772: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_READ_ONLY_SHAPE">
+      <summary>-2147196771: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DATA_SOURCE">
+      <summary>-2147196770: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STREAM_SPEC">
+      <summary>-2147196769: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ALTER_OPERATION">
+      <summary>-2147196768: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SPATIAL_COL_NAME">
+      <summary>-2147196767: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DATABASE">
+      <summary>-2147196766: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIAL_SQL_NOT_INSTALLED">
+      <summary>-2147196765: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NORM_DIM_INFO_NOT_FOUND">
+      <summary>-2147196764: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NORM_DIM_TAB_VALUE_NOT_FOUND">
+      <summary>-2147196763: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_NORMALIZED_OPERATION">
+      <summary>-2147196762: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_REGISTERED_LAYER_OPTION">
+      <summary>-2147196761: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_READ_ONLY">
+      <summary>-2147196760: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_SDE_ROWID_COLUMN">
+      <summary>-2147196759: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_READ_ONLY_COLUMN">
+      <summary>-2147196758: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_VERSION_NAME">
+      <summary>-2147196757: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_NOEXIST">
+      <summary>-2147196756: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STATEINFO_OBJECT">
+      <summary>-2147196755: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VERSION_HAS_MOVED">
+      <summary>-2147196754: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_HAS_CHILDREN">
+      <summary>-2147196753: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PARENT_NOT_CLOSED">
+      <summary>-2147196752: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VERSION_EXISTS">
+      <summary>-2147196751: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_NOT_MULTIVERSION">
+      <summary>-2147196750: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_USED_BY_VERSION">
+      <summary>-2147196749: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_VERSIONINFO_OBJECT">
+      <summary>-2147196748: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STATE_ID">
+      <summary>-2147196747: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDETRACELOC_NOT_SET">
+      <summary>-2147196746: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ERROR_LOADING_SSA">
+      <summary>-2147196745: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_STATES">
+      <summary>-2147196744: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATES_ARE_SAME">
+      <summary>-2147196743: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ROWID_COLUMN">
+      <summary>-2147196742: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_STATE_SET">
+      <summary>-2147196741: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SSA_FUNCTION_ERROR">
+      <summary>-2147196740: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_REGINFO_OBJECT">
+      <summary>-2147196739: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_COMMON_LINEAGE">
+      <summary>-2147196738: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_INUSE">
+      <summary>-2147196737: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_TREE_INUSE">
+      <summary>-2147196736: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_COLUMN">
+      <summary>-2147196735: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERCOLUMN_EXISTS">
+      <summary>-2147196734: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_MVTABLE_INDEX">
+      <summary>-2147196733: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_STORAGE_TYPE">
+      <summary>-2147196732: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_AMBIGUOUS_NIL_SHAPE">
+      <summary>-2147196731: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_BYTE_ORDER">
+      <summary>-2147196730: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GEOMETRY_TYPE">
+      <summary>-2147196729: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_NUM_MEASURES">
+      <summary>-2147196728: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_NUM_PARTS">
+      <summary>-2147196727: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_BINARY_TOO_SMALL">
+      <summary>-2147196726: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SHAPE_TEXT_TOO_LONG">
+      <summary>-2147196725: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SHAPE_TEXT_ERROR">
+      <summary>-2147196724: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_PARTS">
+      <summary>-2147196723: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TYPE_MISMATCH">
+      <summary>-2147196722: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQL_PARENTHESIS_MISMATCH">
+      <summary>-2147196721: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NIL_SHAPE_NOT_ALLOWED">
+      <summary>-2147196720: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_ALREADY_RUNNING">
+      <summary>-2147196719: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_OPERATION">
+      <summary>-2147196718: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_EXTERNAL_LAYER_OPTION">
+      <summary>-2147196717: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NORMALIZE_VALUE_NOT_FOUND">
+      <summary>-2147196716: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERY_TYPE">
+      <summary>-2147196715: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_TRACE_LIBRARY">
+      <summary>-2147196714: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TRACE_ON">
+      <summary>-2147196713: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TRACE_OFF">
+      <summary>-2147196712: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SCL_SYNTAX_ERROR">
+      <summary>-2147196711: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_REGISTERED">
+      <summary>-2147196710: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_REGISTRATION_ID">
+      <summary>-2147196709: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_NOREGISTERED">
+      <summary>-2147196708: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_REGISTRATIONS">
+      <summary>-2147196707: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DELETE_NOT_ALLOWED">
+      <summary>-2147196706: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROWLOCKING_ENABLED">
+      <summary>-2147196705: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROWLOCKING_NOT_ENABLED">
+      <summary>-2147196704: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERCOLUMN_INUSE">
+      <summary>-2147196703: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERCOLUMN_NOEXIST">
+      <summary>-2147196702: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERCOLUMN_NUMBER">
+      <summary>-2147196701: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_RASTERCOLUMNS">
+      <summary>-2147196700: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_NUMBER">
+      <summary>-2147196699: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_REQUEST_STATUS">
+      <summary>-2147196698: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_REQUEST_RESULTS">
+      <summary>-2147196697: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_EXISTS">
+      <summary>-2147196696: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_NOEXIST">
+      <summary>-2147196695: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTER_EXISTS">
+      <summary>-2147196694: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTER_NOEXIST">
+      <summary>-2147196693: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_RASTERBANDS">
+      <summary>-2147196692: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_RASTERS">
+      <summary>-2147196691: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VIEW_EXISTS">
+      <summary>-2147196690: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VIEW_NOEXIST">
+      <summary>-2147196689: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOCK_EXISTS">
+      <summary>-2147196688: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROWLOCK_MASK_CONFLICT">
+      <summary>-2147196687: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_IN_RASTER">
+      <summary>-2147196686: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASBANDINFO_OBJECT">
+      <summary>-2147196685: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASCOLINFO_OBJECT">
+      <summary>-2147196684: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERINFO_OBJECT">
+      <summary>-2147196683: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERBAND_NUMBER">
+      <summary>-2147196682: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MULTIPLE_RASTER_COLS">
+      <summary>-2147196681: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_SCHEMA_IS_LOCKED">
+      <summary>-2147196680: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOGINFO_OBJECT">
+      <summary>-2147196679: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQL_TOO_LONG">
+      <summary>-2147196678: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_ON_VIEW">
+      <summary>-2147196677: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_EXISTS">
+      <summary>-2147196676: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_IS_OPEN">
+      <summary>-2147196675: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIALREF_EXISTS">
+      <summary>-2147196674: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIALREF_NOEXIST">
+      <summary>-2147196673: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIALREF_IN_USE">
+      <summary>-2147196672: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SPATIALREFINFO_OBJECT">
+      <summary>-2147196671: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SEQUENCENBR_EXISTS">
+      <summary>-2147196670: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYINFO_OBJECT">
+      <summary>-2147196669: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_QUERYINFO_NOT_PREPARED">
+      <summary>-2147196668: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTILEINFO_OBJECT">
+      <summary>-2147196667: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASCONSTRAINT_OBJECT">
+      <summary>-2147196666: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_METADATA_RECORD_ID">
+      <summary>-2147196665: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_METADATA_OBJECT">
+      <summary>-2147196664: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_METADATA_OBJECT_TYPE">
+      <summary>-2147196663: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDEMETADATA_NOT_FOUND">
+      <summary>-2147196662: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_METADATA_RECORD_NOEXIST">
+      <summary>-2147196661: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GEOMETRYCOL_NOEXIST">
+      <summary>-2147196660: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_FILE_PATH">
+      <summary>-2147196659: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR_OBJECT_TYPE">
+      <summary>-2147196658: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR">
+      <summary>-2147196657: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_HAS_NO_LOCATOR">
+      <summary>-2147196656: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR_CATEGORY">
+      <summary>-2147196655: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR_NAME">
+      <summary>-2147196654: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOCATOR_NOEXIST">
+      <summary>-2147196653: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOCATOR_EXISTS">
+      <summary>-2147196652: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR_TYPE">
+      <summary>-2147196651: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_COORDREF">
+      <summary>-2147196650: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CANT_TRIM_RECONCILED_STATE">
+      <summary>-2147196649: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FILE_OBJECT_NOEXIST">
+      <summary>-2147196648: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FILE_OBJECT_EXISTS">
+      <summary>-2147196647: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_FILEINFO_OBJECT">
+      <summary>-2147196646: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_FILEINFO_OBJECT_TYPE">
+      <summary>-2147196645: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_NO_STATS">
+      <summary>-2147196644: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_VERSION_HAS_CHILDREN">
+      <summary>-2147196643: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQLTYPE_UNSUPPORTED_ETYPE">
+      <summary>-2147196642: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_DBTUNE_FILE">
+      <summary>-2147196641: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOG_SYSTABLES_CREATE_FAILED">
+      <summary>-2147196640: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OBJECT_RESTRICTED">
+      <summary>-2147196639: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GEOGTRAN_OBJECT">
+      <summary>-2147196638: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_COLUMN_EXISTS">
+      <summary>-2147196637: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQL_KEYWORD">
+      <summary>-2147196636: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_OBJECTLOCKINFO_OBJECT">
+      <summary>-2147196635: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBUFFER_TOO_SMALL">
+      <summary>-2147196634: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_DATA">
+      <summary>-2147196633: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OPERATION_NOT_ALLOWED">
+      <summary>-2147196632: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERATTR_OBJECT">
+      <summary>-2147196631: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_VERSION_ID">
+      <summary>-2147196630: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MVTABLE_CANT_BE_LOAD_ONLY">
+      <summary>-2147196629: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SDO_GEOM_METADATA_OBJ">
+      <summary>-2147196628: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ROW_OUT_OF_SEQUENCE">
+      <summary>-2147196627: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_IS_READ_ONLY">
+      <summary>-2147196626: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MOSAIC_NOT_ALLOWED">
+      <summary>-2147196625: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_BITMAP">
+      <summary>-2147196624: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SEQUENCENBR_NOEXIST">
+      <summary>-2147196623: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQLTYPE_INVALID_FEATURE_TYPE">
+      <summary>-2147196622: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DBMS_OBJECTS_NOT_SUPPORTED">
+      <summary>-2147196621: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_BINARY_CONV_NO_COLUMNS_FOUND">
+      <summary>-2147196620: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_NO_COLORMAP">
+      <summary>-2147196619: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_BIN_FUNCTION">
+      <summary>-2147196618: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERBAND_STATS">
+      <summary>-2147196617: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERBAND_COLORMAP">
+      <summary>-2147196616: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_KEYWORD">
+      <summary>-2147196615: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INCOMPATIBLE_INSTANCE">
+      <summary>-2147196614: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_VOLUME_INFO">
+      <summary>-2147196613: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COMPRESSION_TYPE">
+      <summary>-2147196612: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_INDEX_PARAM">
+      <summary>-2147196611: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_INDEX_TYPE">
+      <summary>-2147196610: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SET_VALUE_CONFLICT">
+      <summary>-2147196609: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ADT_DATATYPE_NOT_SUPPORTED">
+      <summary>-2147196608: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_SPATIAL_INDEX">
+      <summary>-2147196607: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_IDENTIFIER">
+      <summary>-2147196606: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_REGISTERED_TABLE_ROWID_EXIST">
+      <summary>-2147196605: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SERVER_LIB_LOAD_ERROR">
+      <summary>-2147196604: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_REGISTRATION_NOT_ALLOWED">
+      <summary>-2147196603: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_ON_MVTABLE">
+      <summary>-2147196602: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ARCSDE_LICENSE">
+      <summary>-2147196601: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_EXPORT_FILE">
+      <summary>-2147196600: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_INUSE">
+      <summary>-2147196599: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLINDEX_OBJECT">
+      <summary>-2147196598: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_EXISTS">
+      <summary>-2147196597: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_TAG_CONFLICT">
+      <summary>-2147196596: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_INDEX_EXISTS">
+      <summary>-2147196595: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_INDEX_NOEXIST">
+      <summary>-2147196594: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XML_INDEX_ALTER">
+      <summary>-2147196593: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_TEMPLATE_IN_USE">
+      <summary>-2147196592: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_XML_INDEX_OWNER">
+      <summary>-2147196591: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLDOC_OBJECT">
+      <summary>-2147196590: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_TAG_NOEXIST">
+      <summary>-2147196589: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_PARSE_ERROR">
+      <summary>-2147196588: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYERS_COLUMN_NOEXISTS">
+      <summary>-2147196587: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DATE">
+      <summary>-2147196586: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_NOEXIST">
+      <summary>-2147196585: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_MISMATCH">
+      <summary>-2147196584: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XPATH">
+      <summary>-2147196583: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_NOT_SUPPORTED">
+      <summary>-2147196582: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_COLUMNINFO_OBJECT">
+      <summary>-2147196581: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLTAG_OBJECT">
+      <summary>-2147196580: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLINDEX_TYPE">
+      <summary>-2147196579: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCEDB_UNSUPPORTED_OPERATION">
+      <summary>-2147196578: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_INVALID_LOCATION_ALIAS">
+      <summary>-2147196577: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_PREDICATE_INVALID_TOKEN">
+      <summary>-2147196576: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_PREDICATE_INVALID_OPERATOR">
+      <summary>-2147196575: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_PREDICATE_INVALID_CONTAIN_SYNTAX">
+      <summary>-2147196574: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_EMPTY_ELEMENT">
+      <summary>-2147196573: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XPATH_INVALID_TOKEN">
+      <summary>-2147196572: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDETMP_NOT_SET">
+      <summary>-2147196571: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SERVERINFO_OBJECT">
+      <summary>-2147196570: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_USER_GROUP_CONFLICT">
+      <summary>-2147196569: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GCDRULE_FILE_EXISTS">
+      <summary>-2147196568: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GCDRULE_FILE_NOT_FOUND">
+      <summary>-2147196567: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GCDRULE_NOT_FOUND">
+      <summary>-2147196566: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_GCDRULE_EXISTS">
+      <summary>-2147196565: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLCOLUMN_OBJECT">
+      <summary>-2147196564: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GROUP">
+      <summary>-2147196563: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XML_COLUMN">
+      <summary>-2147196562: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LOCATOR_PROPERTY">
+      <summary>-2147196561: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOCATOR_PROPERTY_MULTIPLE">
+      <summary>-2147196560: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DB_SRCH_OUTGEOD_EXTENT">
+      <summary>-2147196559: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_NOT_INDEXED">
+      <summary>-2147196558: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_SDE_UUID_COLUMN">
+      <summary>-2147196557: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_UUID_COLUMN">
+      <summary>-2147196556: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_64BIT_LAYER_NOT_SUPPORTED">
+      <summary>-2147196555: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_INDEX_MASK">
+      <summary>-2147196554: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_PRECISION">
+      <summary>-2147196553: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_TRANSFORMINFO_OBJECT">
+      <summary>-2147196552: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERBAND_XFORM_LIST">
+      <summary>-2147196551: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_NO_XFORM_LIST">
+      <summary>-2147196550: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYCOLUMN_OBJECT">
+      <summary>-2147196549: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MULTIPLE_SHAPESOURCE_SHAPES">
+      <summary>-2147196548: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYSELECT_OBJECT">
+      <summary>-2147196547: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SHAPESOURCE_OBJECT">
+      <summary>-2147196546: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_SPATIALCONSTRAINT_OBJECT">
+      <summary>-2147196545: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MISSING_JOIN_CONSTRAINT">
+      <summary>-2147196544: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ANSI_JOIN_CONFLICT">
+      <summary>-2147196543: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MISSING_JOIN_TABLE">
+      <summary>-2147196542: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYTABLE_OBJECT">
+      <summary>-2147196541: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYFROM_OBJECT">
+      <summary>-2147196540: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLCONSTRAINT_OBJECT">
+      <summary>-2147196539: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ATTRIBUTECONSTRAINT_OBJECT">
+      <summary>-2147196538: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_QUERYWHERE_OBJECT">
+      <summary>-2147196537: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CPG_OPEN_ERROR">
+      <summary>-2147196536: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CPG_CONVERSION_OVERFLOW">
+      <summary>-2147196535: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_CPG_CONVERSION_ERROR">
+      <summary>-2147196534: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATE_CLOSED">
+      <summary>-2147196533: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ON_BASE_STATE">
+      <summary>-2147196532: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DC_LICENSE_SERVER_NOT_REGISTERED">
+      <summary>-2147196531: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ID_RANGE">
+      <summary>-2147196530: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_STATEOBJECT_HAS_NO_LINEAGE">
+      <summary>-2147196529: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OGCWKB_UNSUPPORTED_EYTPE">
+      <summary>-2147196528: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SET_ORIGIN_NOT_ALLOWED">
+      <summary>-2147196527: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_IMAGE_ORIGIN">
+      <summary>-2147196526: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTERBAND_NO_GDB_METADATA">
+      <summary>-2147196525: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTERBAND_GDB_METADATA">
+      <summary>-2147196524: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_COMPLEX_COL_INDX_NOT_ALLOWED">
+      <summary>-2147196523: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_COMPRESS_ALREADY_RUNNING">
+      <summary>-2147196522: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SCHEMA_OUT_OF_DATE">
+      <summary>-2147196521: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_MVTABLE_HAS_DELTA_ROWS">
+      <summary>-2147196520: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOST_DBMS_CONNECTION">
+      <summary>-2147196519: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INT32_OVERFLOW">
+      <summary>-2147196518: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DBTUNEPARAM_OBJECT">
+      <summary>-2147196517: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DBTUNEKEYWORD_OBJECT">
+      <summary>-2147196516: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_ARCHIVING">
+      <summary>-2147196515: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_NOT_ARCHIVING">
+      <summary>-2147196514: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_XMLCOLUMN_ALTER">
+      <summary>-2147196513: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_INSTANCEINFO_OBJECT">
+      <summary>-2147196512: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SCHEMA_EXISTS">
+      <summary>-2147196511: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SCHEMA_NO_CREATE_PERMISSIONS">
+      <summary>-2147196510: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYER_REGISTERED_OUTSIDE_SCHEMA">
+      <summary>-2147196509: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_REGISTERED_OUTSIDE_SCHEMA">
+      <summary>-2147196508: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOT_IN_USER_TRANS">
+      <summary>-2147196507: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DATASOURCE">
+      <summary>-2147196506: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SCHEMA_NOT_MASTER_INSTANCE">
+      <summary>-2147196505: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_ALTERINDEX_MODE">
+      <summary>-2147196504: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_LOAD_MODE">
+      <summary>-2147196503: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_XML_COLUMN_NORMAL_MODE">
+      <summary>-2147196502: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LOAD_ONLY_TABLE">
+      <summary>-2147196501: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ARCHIVING_REGISTRATION">
+      <summary>-2147196500: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_DBTUNE_DATA">
+      <summary>-2147196499: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_KEYSET_TABLE_CREATE_FAILED">
+      <summary>-2147196498: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_KEYSET_TABLE_REMOVE_FAILED">
+      <summary>-2147196497: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_HISTORY_OPERATION">
+      <summary>-2147196496: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ST_GEOMETRY_TYPE_NOT_INSTALLED">
+      <summary>-2147196495: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_CONNECTION_PROPERTY">
+      <summary>-2147196494: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_OBJECT">
+      <summary>-2147196493: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_RASTER_CODEC_ERROR">
+      <summary>-2147196492: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_ARCHIVE_OBJECT">
+      <summary>-2147196491: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DBMS_CONSTRAINT_NOEXIST">
+      <summary>-2147196490: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DBMS_CONSTRAINT_EXIST">
+      <summary>-2147196489: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDE_WARNING">
+      <summary>-2147195928: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_ETYPE_CHANGED">
+      <summary>-2147195927: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ROWS_DELETED">
+      <summary>-2147195926: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TOO_MANY_DISTINCTS">
+      <summary>-2147195925: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NULL_VALUE">
+      <summary>-2147195924: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_ROWS_UPDATED">
+      <summary>-2147195923: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_CPGCVT">
+      <summary>-2147195922: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_CPGHOME">
+      <summary>-2147195921: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DBMS_DOES_NOT_SUPPORT">
+      <summary>-2147195920: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_FUNCTION_ID">
+      <summary>-2147195919: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_LAYERS_UPDATE_FAILED">
+      <summary>-2147195918: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_LOCALIZED_MESSAGE">
+      <summary>-2147195917: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIAL_INDEX_NOT_CREATED">
+      <summary>-2147195916: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FUNC_UNSUPPORTED_ON_DBMS">
+      <summary>-2147195915: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SQL_NOT_CACHED">
+      <summary>-2147195914: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_OBJECT_NOEXIST">
+      <summary>-2147195913: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SDO_VARRAY_LIMIT">
+      <summary>-2147195912: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SPATIALREF_NO_CLUSTER_TOL">
+      <summary>-2147195911: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NO_COMPRESS_STATUS">
+      <summary>-2147195910: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_LAYERGRID_OBJECT">
+      <summary>-2147196488: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_QUERY_KEYSET_NOT_SET">
+      <summary>-2147196486: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_RASTER_COL_NAME">
+      <summary>-2147196485: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_KEYSET_OPERATION">
+      <summary>-2147196484: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GEOM_TYPE">
+      <summary>-2147196483: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_GEOR_METADATA">
+      <summary>-2147196482: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PDQ_BIND_MISMATCH">
+      <summary>-2147196481: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_NOT_HISTORY">
+      <summary>-2147196480: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DEPENDENT_OBJECTS_EXIST">
+      <summary>-2147196479: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_RELEASE_INCOMPATIBLE">
+      <summary>-2147196478: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_REVOKE_SELECT">
+      <summary>-2147196487: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_OLD_DCDRIVER">
+      <summary>-2147196462: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INSTANCE_OLD_DBRELEASE">
+      <summary>-2147196463: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SEQUENCE_EXISTS">
+      <summary>-2147196320: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SEQUENCE_NOEXIST">
+      <summary>-2147196319: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_INVALID_BRANCH_MOMENT">
+      <summary>-2147196340: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_NOSERVER_DOES_NOT_SUPPORT">
+      <summary>-2147196282: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SERIALIZATION_LOCK_IN_PROGRESS">
+      <summary>-2147196278: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DBINSTANCE_RELEASE_DOES_NOT_SUPPORT">
+      <summary>-2147196356: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_SUCCESS_WITH_WARNINGS">
+      <summary>-2147195909: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_PASSWORD_EXPIRING">
+      <summary>-2147195908: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_DEADLOCK_VICTIM">
+      <summary>-2147195907: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_APPDOMAIN_UNLOAD">
+      <summary>-2147195906: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_TABLE_SCHEMA_CHANGED">
+      <summary>-2147195905: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILED_SETUP_CHECK_UNABLE_TO_ACCESS_ST_LIB">
+      <summary>-2147195904: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILED_SETUP_CHECK_UNABLE_TO_LOAD_ST_DEP_LIB">
+      <summary>-2147195903: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILED_SETUP_CHECK_ST_LIB_MISMATCH_DB">
+      <summary>-2147195902: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILED_SETUP_CHECK_ST_LIB_MISMATCH_ARCGIS">
+      <summary>-2147195901: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_FAILED_SETUP_CHECK_ST_LIB_UNKNOWN">
+      <summary>-2147195900: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_UNSUPPORTED_DATABASE_VERSION">
+      <summary>-2147196434: </summary>
+    </member>
+    <member name="F:ESRI.ArcGIS.DatasourcesGDB.sdeError.SDE_E_SE_HARD_DEPENDENCY_OBJECT_EXISTS">
+      <summary>-2147195899: </summary>
+    </member>
+  </members>
+</doc>
