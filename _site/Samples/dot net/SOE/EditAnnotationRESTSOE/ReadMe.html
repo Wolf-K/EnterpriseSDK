@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>.NET Edit Annotation REST SOE | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=".NET Edit Annotation REST SOE | EnterpriseSDK ">
+      
+      
+      <link rel="icon" href="../../../../favicon.ico">
+      <link rel="stylesheet" href="../../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../../toc.html">
+      <meta name="docfx:tocrel" content="../../../../toc.html">
+      
+      <meta name="docfx:rel" content="../../../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Wolf-K/EnterpriseSDK/blob/main/Samples/dot net/SOE/EditAnnotationRESTSOE/ReadMe.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../../index.html">
+            <img id="logo" class="svg" src="../../../../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="net-edit-annotation-rest-soe">.NET Edit Annotation REST SOE</h1>
+
+<p>This sample demonstrate how to edit annotation in the layer exposed by a map service via an SOE. The Edit Annotation Rest SOE has one property called <em><strong>layerId</strong></em>, which indicates the layer chosen for editing. This sample SOE also has one subresource called <em><strong>layers</strong></em> and two operations called <em><strong>addNewFeatures</strong></em> and <em><strong>editFeature</strong></em>. The administrator that deploys this SOE and enables it on a map service can choose which layer to open for editing using the layerId property. Editing will be restricted to this specific layer only.</p>
+<blockquote>
+<p><em>Note:</em> Even though the editing function is exposed via the SOE which is enabled with a map service, the editing function still requires the data source to be editable. In other words, the data used to publish the map service must be from an Enterprise Geodatabase that is registered with ArcGIS Enterprise. The map service need to have Feature Access capability enabled, and its data source must be editable and registered with ArcGIS Enterprise.</p>
+</blockquote>
+<p>Deploying the SOE from the .soe file (<code>..\EditAnnotationRESTSOE\bin\Debug\EditAnnotationRESTSOE_ent.soe</code>) does not require you to open Visual Studio. However, you can load the project (<code>..\EditAnnotationRESTSOE\EditAnnotationRESTSOE.csproj</code>) in Visual Studio to debug, modify, and recompile the SOE code.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>IMEAnnotationFeatureClassExtensionBridge</li>
+<li>CIMTextGraphic</li>
+<li>CIMSymbolReference</li>
+<li>IMEAnnotationFeatureBridge</li>
+<li>CIMSymbolIdentifier</li>
+</ul>
+<h2 id="sample-data">Sample data</h2>
+<p>This instruction uses the <a href="../../../../../ReadMe.md">Annotation Map Service</a> as the sample service to test with the SOE. Make sure its data source is from an Enterprise GeoDatabase and registered with ArcGIS Enterprise.</p>
+<h2 id="instructions">Instructions</h2>
+<h3 id="deploy-the-soe">Deploy the SOE</h3>
+<ol>
+<li>Log in to ArcGIS Server Manager and click the <em><strong>Site</strong></em> tab.</li>
+<li>Click <em><strong>Extensions</strong></em>.</li>
+<li>Click <em><strong>Add Extension</strong></em>.</li>
+<li>Click <em><strong>Choose File</strong></em> and choose the <em><strong>EditAnnotationRESTSOE_ent.soe</strong></em> file (<code>..\EditAnnotationRESTSOE\bin\Debug\EditAnnotationRESTSOE_ent.soe</code>).</li>
+<li>Click <em><strong>Add</strong></em>.</li>
+</ol>
+<h3 id="enable-the-soe-on-a-map-service">Enable the SOE on a map service</h3>
+<ol>
+<li>Make sure you have published the Annotation map service whose data source is from an editable workspace using ArcGIS Pro. If not, refer to <a href="../../../../../ReadMe.md">Annotation Map Service</a>.</li>
+<li>Log in to ArcGIS Server Manager and click the <em><strong>Services</strong></em> tab. Select Annotation map service and select <em><strong>Capabilities</strong></em>.</li>
+<li>In the list of available capabilities, find <em><strong>.Net Edit Annotation REST SOE</strong></em> and check the box to enable it.</li>
+<li>Under <em><strong>Properties</strong></em> section, make sure that <em><strong>layerId</strong></em> is set to the layer you would like to edit. In this sample, we can set it to <code>0</code>, which is the citiesAnno layer.</li>
+</ol>
+<p><img src="../../../../../images/netsp/NetAnnotationEdit.png" alt="" title="Edit features SOE sample"></p>
+<ol start="5">
+<li>Click the <em><strong>Save and Restart</strong></em> button to restart the service.</li>
+</ol>
+<h3 id="test-the-soe-in-the-arcgis-server-services-directory">Test the SOE in the ArcGIS Server Services Directory</h3>
+<ol>
+<li><p>Open a browser and navigate to the REST services endpoint of the Veg map service (URL: <code>http://&lt;serverdomain&gt;/&lt;webadaptorname&gt;/rest/services/&lt;editable Annotation&gt;/MapServer</code>).</p>
+</li>
+<li><p>Scroll to the bottom of the above page and click <em><strong>EditAnnotationRESTSOE</strong></em> in <em><strong>Supported Extensions</strong></em>.</p>
+<p>This leads to the SOE's root page, at the following URL:</p>
+<pre><code>http://&lt;serverdomain&gt;/&lt;webadaptorname&gt;/rest/services/annotation/MapServer/exts/EditAnnotationRESTSOE
+</code></pre>
+<p><img src="../../../../../images/netsp/NetEdit2.png" alt="" title="Edit annotation features SOE sample"></p>
+</li>
+<li><p>Click <em><strong>addNewFeature</strong></em> in <em><strong>Supported Operations</strong></em>.</p>
+<p>Type the following JSON in the <em><strong>featureJSON</strong></em> input box:</p>
+<pre><code class="lang-JSON">{
+   &quot;attributes&quot;: {
+      &quot;text&quot;: &quot;Mentone&quot;,
+      &quot;fontFamilyName&quot;: &quot;AvenirNext LT Pro Medium&quot;,
+      &quot;fontStyle&quot;: &quot;Regular&quot;
+   },
+   &quot;geometry&quot;: {
+      &quot;paths&quot;: [
+         [
+         [
+            -117.14494878000001,
+            34.0765288
+         ],
+         [
+            -117.0732439,
+            34.0765288
+         ]
+         ]
+      ],
+      &quot;spatialReference&quot;: {
+         &quot;wkid&quot;: 4326
+      }
+   }
+}
+</code></pre>
+<p>Click the <em><strong>addNewFeature</strong></em> button. You will receive a response indicating this request succeeded and returning the ID of the newly-added annotation feature returned.</p>
+<p><img src="../../../../../images/netsp/NetAnnotationAddNewFeature.png" alt="" title="Edit features SOE sample"></p>
+</li>
+<li><p>Perform the following <em><strong>Query</strong></em> operation to confirm the feature is added:</p>
+<pre><code>https://&lt;serverdomain&gt;/&lt;webadaptorname&gt;/rest/services/USA_Edit/MapServer/0/query?where=&amp;text=&amp;objectIds=3961&amp;time=&amp;geometry=&amp;geometryType=esriGeometryEnvelope&amp;inSR=&amp;spatialRel=esriSpatialRelIntersects&amp;distance=&amp;units=esriSRUnit_Foot&amp;relationParam=&amp;outFields=*&amp;returnGeometry=true&amp;returnTrueCurves=false&amp;maxAllowableOffset=&amp;geometryPrecision=&amp;outSR=&amp;having=&amp;returnIdsOnly=false&amp;returnCountOnly=false&amp;orderByFields=&amp;groupByFieldsForStatistics=&amp;outStatistics=&amp;returnZ=false&amp;returnM=false&amp;gdbVersion=&amp;historicMoment=&amp;returnDistinctValues=false&amp;resultOffset=&amp;resultRecordCount=&amp;returnExtentOnly=false&amp;datumTransformation=&amp;parameterValues=&amp;rangeValues=&amp;quantizationParameters=&amp;featureEncoding=esriDefault&amp;f=html
+</code></pre>
+<p>The <code>objectIds</code> input parameter is set to the new feature ID returned in the previous step. The <em><strong>Query</strong></em> operation should return the newly-added feature successfully.</p>
+</li>
+<li><p>Click <em><strong>editFeature</strong></em> in <em><strong>Supported Operations</strong></em> on the SOE's root page.</p>
+<p>Type the same feature ID in the <em><strong>featureId</strong></em> input box and the following updated feature JSON in the <em><strong>featureJSON</strong></em> input box.
+<img src="../../../../../images/netsp/NetAnnotationEditOperation.png" alt="" title="Edit features SOE sample"></p>
+<pre><code class="lang-JSON">{
+   &quot;attributes&quot;: {
+      &quot;TextString&quot;: &quot;Mentone Beach&quot;
+   },
+   &quot;geometry&quot;: {
+      &quot;paths&quot;: [
+         [
+         [
+            -117.15,
+            34.08
+         ],
+         [
+            -117.145,
+            34.08
+         ]
+         ]
+      ],
+      &quot;spatialReference&quot;: {
+         &quot;wkid&quot;: 4326
+      }
+   }
+}
+</code></pre>
+<p>Click the <em><strong>editFeature</strong></em> button. You will receive a response indicating this request succeeded and returning the ID of the annotation feature that has been updated. You can also repeat the last step to confirm this updated result by performing a <em><strong>Query</strong></em> operation.</p>
+<p><img src="../../../../../images/netsp/NetAnnotationEditOperation.png" alt="" title="Edit features SOE sample"></p>
+</li>
+<li><p>Perform the following <em><strong>Query</strong></em> operation to confirm the feature is added:
+<img src="../../../../../images/netsp/queryAnnotation.png" alt="" title="query result"></p>
+</li>
+</ol>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Wolf-K/EnterpriseSDK/blob/main/Samples/dot net/SOE/EditAnnotationRESTSOE/ReadMe.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

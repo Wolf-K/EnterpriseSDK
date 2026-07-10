@@ -441,7 +441,7 @@ namespace EditAnnotationRESTSOE
 
         IGeometry geometry = iConverter.ToGeometry(obj, esriGeometryType.esriGeometryAny, false, false);
         // cref: ESRI.ArcGIS.CIM.CIMTextGraphic
-        // cref: ESRI.ArcGIS.CIM.IMEAnnotationFeatureBridge
+        // cref: ESRI.ArcGIS.CartoX.IMEAnnotationFeatureBridge
         #region CIMTextGraphic simple definition of a text graphic
         {
           // set geometry

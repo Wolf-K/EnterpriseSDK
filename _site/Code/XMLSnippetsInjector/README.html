@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>XMLSnippetsInjector | EnterpriseSDK </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="XMLSnippetsInjector | EnterpriseSDK ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Wolf-K/EnterpriseSDK/blob/main/Code/XMLSnippetsInjector/README.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="EnterpriseSDK">
+            EnterpriseSDK
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="xmlsnippetsinjector">XMLSnippetsInjector</h1>
+
+<p>A .NET 10 console application that automatically injects code examples from C# source files into XML documentation files by matching code snippets with XML documentation members.</p>
+<h2 id="purpose">Purpose</h2>
+<p>XMLSnippetsInjector automates the process of enhancing XML documentation files with code examples extracted from C# source files. It scans C# files for specially marked code regions, matches them to corresponding XML documentation members, and injects them as <code>&lt;example&gt;</code> elements. This helps maintain synchronized code examples in documentation without manual copy-paste.</p>
+<h2 id="how-it-works">How It Works</h2>
+<ol>
+<li><strong>Snippet Extraction</strong>: Scans C# source files for code snippets marked with <code>//cref:</code> comments followed by <code>#region</code> blocks</li>
+<li><strong>XML Loading</strong>: Loads XML documentation files and parses member elements</li>
+<li><strong>Matching</strong>: Matches snippet references (crefs) to XML member names using various strategies (exact match, normalized match)</li>
+<li><strong>Injection</strong>: Injects matched snippets as <code>&lt;example&gt;</code> elements with <code>&lt;code&gt;</code> children into the corresponding XML members</li>
+<li><strong>Reporting</strong>: Generates detailed reports about injections, unused snippets, and processing statistics</li>
+</ol>
+<h2 id="usage">Usage</h2>
+<pre><code>XMLSnippetsInjector [options] &lt;xmlInputDir&gt; &lt;csInputDir&gt; &lt;outputDir&gt;
+</code></pre>
+<h3 id="arguments">Arguments</h3>
+<ul>
+<li><code>&lt;xmlInputDir&gt;</code> - Directory containing XML documentation files to process</li>
+<li><code>&lt;csInputDir&gt;</code> - Directory containing C# source files with code snippets</li>
+<li><code>&lt;outputDir&gt;</code> - Directory where processed XML files and reports will be written</li>
+</ul>
+<h3 id="options">Options</h3>
+<ul>
+<li><code>-c, --clear</code> - Clear the output directory before processing</li>
+<li><code>-r, --remove-examples</code> - Remove existing <code>&lt;example&gt;</code> nodes that reference shared path snippets (configurable in appsettings.json)</li>
+<li><code>-a, --remove-all-examples</code> - Remove all existing <code>&lt;example&gt;</code> nodes regardless of source</li>
+<li><code>-p, --process-all-examples</code> - Process and transform all existing <code>&lt;example&gt;</code> nodes by wrapping content in <code>&lt;code&gt;</code> tags with descriptions from parent <code>&lt;summary&gt;</code> elements</li>
+</ul>
+<h3 id="examples">Examples</h3>
+<p>Basic usage:</p>
+<pre><code class="lang-powershell">XMLSnippetsInjector C:\Docs\XML C:\Source\CS C:\Output
+</code></pre>
+<p>Clear output directory before processing:</p>
+<pre><code class="lang-powershell">XMLSnippetsInjector --clear C:\Docs\XML C:\Source\CS C:\Output
+</code></pre>
+<p>Remove shared examples and inject new ones:</p>
+<pre><code class="lang-powershell">XMLSnippetsInjector -r C:\Docs\XML C:\Source\CS C:\Output
+</code></pre>
+<p>Process all existing examples and add new ones:</p>
+<pre><code class="lang-powershell">XMLSnippetsInjector -p C:\Docs\XML C:\Source\CS C:\Output
+</code></pre>
+<h2 id="snippet-format">Snippet Format</h2>
+<p>Code snippets in C# files must follow this format:</p>
+<pre><code class="lang-csharp">//cref: Namespace.ClassName.MethodName
+#region Region Name
+// Your code example here
+var example = new Example();
+example.DoSomething();
+#endregion
+</code></pre>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li>The <code>//cref:</code> comment must appear before the <code>#region</code></li>
+<li>The text after <code>//cref:</code> should match the XML member name (without the prefix like <code>M:</code>, <code>T:</code>, etc.)</li>
+<li>Multiple <code>//cref:</code> comments can reference the same region</li>
+<li>The region name becomes the <code>description</code> attribute in the generated <code>&lt;code&gt;</code> element</li>
+<li>Blank lines or additional comments are allowed between <code>//cref:</code> and <code>#region</code></li>
+</ul>
+<h2 id="output">Output</h2>
+<h3 id="modified-xml-files">Modified XML Files</h3>
+<p>Processed XML files are written to the output directory maintaining the original directory structure. Files are only written if changes were made (injections or removals).</p>
+<p>Example of injected content:</p>
+<pre><code class="lang-xml">&lt;member name=&quot;M:Namespace.ClassName.MethodName&quot;&gt;
+	&lt;summary&gt;Method description&lt;/summary&gt;
+	&lt;example&gt;
+		&lt;code description=&quot;Region Name&quot; cref=&quot;Namespace.ClassName.MethodName&quot;&gt;
+// Your code example here
+var example = new Example();
+example.DoSomething();
+		&lt;/code&gt;
+	&lt;/example&gt;
+&lt;/member&gt;
+</code></pre>
+<h3 id="reports">Reports</h3>
+<p>Reports are generated in <code>&lt;outputDir&gt;/reports/</code>:</p>
+<ol>
+<li><p><strong>summary.txt</strong> - Overview of processing results:</p>
+<ul>
+<li>Total XML files processed</li>
+<li>Files with/without injections</li>
+<li>Total snippets found, used, and unused</li>
+<li>Injections per XML file</li>
+</ul>
+</li>
+<li><p><strong>injection-report.txt</strong> - Detailed list of all successful injections showing:</p>
+<ul>
+<li>Snippet ID and cref</li>
+<li>Source file location</li>
+<li>Target XML file and member</li>
+</ul>
+</li>
+<li><p><strong>unused-snippets.txt</strong> - Snippets that couldn't be matched to any XML member:</p>
+<ul>
+<li>Snippet details and code</li>
+<li>Sample of attempted matches</li>
+</ul>
+</li>
+<li><p><strong>xml-members-without-snippets.txt</strong> - XML members that received no injections</p>
+</li>
+<li><p><strong>xml-files-with-no-injections.txt</strong> - XML files that had no changes</p>
+</li>
+<li><p><strong>cref-usage.txt</strong> - Statistics by cref showing:</p>
+<ul>
+<li>Which crefs had snippets used/unused</li>
+<li>Source files for each cref</li>
+<li>Overall usage statistics</li>
+</ul>
+</li>
+<li><p><strong>xmlsnippetsinjector-{timestamp}.log</strong> - Detailed execution log with timestamps</p>
+</li>
+</ol>
+<h2 id="configuration">Configuration</h2>
+<p>The application can be configured via <code>appsettings.json</code>:</p>
+<pre><code class="lang-json">{
+	&quot;SharedPath&quot;: &quot;ArcGIS\\SharedArcGIS&quot;,
+	&quot;InternalNamespace&quot;: &quot;.Internal.&quot;
+}
+</code></pre>
+<p><strong>Settings:</strong></p>
+<ul>
+<li><code>SharedPath</code> - Path pattern used by the <code>--remove-examples</code> flag to identify snippets to remove</li>
+<li><code>InternalNamespace</code> - Namespace marker to skip internal members during processing (members containing this string are ignored)</li>
+</ul>
+<h2 id="matching-strategy">Matching Strategy</h2>
+<p>The tool uses multiple matching strategies in order of preference:</p>
+<ol>
+<li><strong>Exact Match</strong>: Direct match between snippet cref and XML member name (with or without prefix like <code>M:</code>)</li>
+<li><strong>Normalized Match</strong>: Removes parameter lists and normalizes whitespace before comparing</li>
+</ol>
+<p>Members in namespaces containing the configured <code>InternalNamespace</code> marker are automatically skipped.</p>
+<h2 id="use-cases">Use Cases</h2>
+<ul>
+<li><strong>Documentation Generation</strong>: Automatically populate API documentation with working code examples</li>
+<li><strong>Example Synchronization</strong>: Keep code examples in sync with actual source code</li>
+<li><strong>Bulk Documentation</strong>: Process large codebases to add examples to XML documentation</li>
+<li><strong>Example Cleanup</strong>: Remove outdated or unwanted examples before re-injecting current ones</li>
+<li><strong>Example Transformation</strong>: Convert simple example text to structured code elements with descriptions</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>.NET 8.0 or higher</li>
+<li>Write access to output directory</li>
+<li>Valid XML documentation files</li>
+<li>C# source files with properly formatted snippet markers</li>
+</ul>
+<h2 id="exit-codes">Exit Codes</h2>
+<ul>
+<li><code>0</code> - Success</li>
+<li><code>1</code> - Error (invalid arguments, missing directories, or processing failure)</li>
+</ul>
+<h2 id="logging">Logging</h2>
+<p>All operations are logged with timestamps. The log file is initially created in the current directory, then moved to <code>&lt;outputDir&gt;/reports/</code> once the output directory is established. This ensures all processing details are captured even if early initialization fails.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The tool preserves existing XML files that don't need changes by copying them to the output directory</li>
+<li>Snippets are uniquely identified by their source file name and index within that file</li>
+<li>Duplicate injections are prevented - the same snippet won't be injected twice into the same member</li>
+<li>XML documents are loaded entirely into memory for processing</li>
+<li>The tool is case-insensitive for path comparisons but preserves original casing in output</li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Wolf-K/EnterpriseSDK/blob/main/Code/XMLSnippetsInjector/README.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
