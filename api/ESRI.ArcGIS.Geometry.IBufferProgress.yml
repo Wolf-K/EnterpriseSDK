@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress
+  commentId: T:ESRI.ArcGIS.Geometry.IBufferProgress
+  id: IBufferProgress
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted(System.Int64,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: IBufferProgress
+  nameWithType: IBufferProgress
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Implemented by clients to receive reports of buffer operation progress.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("073823CE-6E7F-475C-947E-99C207F82100")]
+
+      public interface IBufferProgress
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("073823CE-6E7F-475C-947E-99C207F82100")>
+
+      Public Interface IBufferProgress
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 073823CE-6E7F-475C-947E-99C207F82100
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin(System.Int32,System.Int32)
+  id: OnOperationBegin(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IBufferProgress
+  langs:
+  - csharp
+  - vb
+  name: OnOperationBegin(int, int)
+  nameWithType: IBufferProgress.OnOperationBegin(int, int)
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Called at the beginning of each buffer operation. For example, buffering a set of polygons and polylines, without dissolve, has two operations.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool OnOperationBegin(int currentOperation, int numOperations)
+    parameters:
+    - id: currentOperation
+      type: System.Int32
+    - id: numOperations
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function OnOperationBegin(currentOperation As Integer, numOperations As Integer) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin*
+  nameWithType.vb: IBufferProgress.OnOperationBegin(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin(Integer, Integer)
+  name.vb: OnOperationBegin(Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin(System.Int32,System.Int32)
+  id: OnStageBegin(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IBufferProgress
+  langs:
+  - csharp
+  - vb
+  name: OnStageBegin(int, int)
+  nameWithType: IBufferProgress.OnStageBegin(int, int)
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Called at the beginning of the next buffering stage within an operation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool OnStageBegin(int currentStage, int currentNumStages)
+    parameters:
+    - id: currentStage
+      type: System.Int32
+    - id: currentNumStages
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function OnStageBegin(currentStage As Integer, currentNumStages As Integer) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin*
+  nameWithType.vb: IBufferProgress.OnStageBegin(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin(Integer, Integer)
+  name.vb: OnStageBegin(Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted(System.Int64,System.Int64)
+  commentId: M:ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted(System.Int64,System.Int64)
+  id: OnStepCompleted(System.Int64,System.Int64)
+  parent: ESRI.ArcGIS.Geometry.IBufferProgress
+  langs:
+  - csharp
+  - vb
+  name: OnStepCompleted(long, long)
+  nameWithType: IBufferProgress.OnStepCompleted(long, long)
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted(long, long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Called periodically to report number of steps completed in current stage.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool OnStepCompleted(long stepsCompleted, long numSteps)
+    parameters:
+    - id: stepsCompleted
+      type: System.Int64
+    - id: numSteps
+      type: System.Int64
+    return:
+      type: System.Boolean
+    content.vb: Function OnStepCompleted(stepsCompleted As Long, numSteps As Long) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted*
+  nameWithType.vb: IBufferProgress.OnStepCompleted(Long, Long)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted(Long, Long)
+  name.vb: OnStepCompleted(Long, Long)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBufferProgress.html#ESRI_ArcGIS_Geometry_IBufferProgress_OnOperationBegin_System_Int32_System_Int32_
+  name: OnOperationBegin
+  nameWithType: IBufferProgress.OnOperationBegin
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnOperationBegin
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBufferProgress.html#ESRI_ArcGIS_Geometry_IBufferProgress_OnStageBegin_System_Int32_System_Int32_
+  name: OnStageBegin
+  nameWithType: IBufferProgress.OnStageBegin
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnStageBegin
+- uid: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBufferProgress.html#ESRI_ArcGIS_Geometry_IBufferProgress_OnStepCompleted_System_Int64_System_Int64_
+  name: OnStepCompleted
+  nameWithType: IBufferProgress.OnStepCompleted
+  fullName: ESRI.ArcGIS.Geometry.IBufferProgress.OnStepCompleted
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

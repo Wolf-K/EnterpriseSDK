@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2
+  commentId: T:ESRI.ArcGIS.Server.IGISServerConnection2
+  id: IGISServerConnection2
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IGISServerConnection2.Connect(System.String)
+  - ESRI.ArcGIS.Server.IGISServerConnection2.Connect2(System.String,System.String)
+  - ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+  - ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: IGISServerConnection2
+  nameWithType: IGISServerConnection2
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to methods that connect a specified user to an ArcGIS server.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F6616298-396A-41F2-9A5B-0EED59AF2E40")]
+
+      public interface IGISServerConnection2 : IGISServerConnection
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F6616298-396A-41F2-9A5B-0EED59AF2E40")>
+
+      Public Interface IGISServerConnection2 Inherits IGISServerConnection
+  derivedClasses:
+  - ESRI.ArcGIS.Server.GISServerConnectionClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F6616298-396A-41F2-9A5B-0EED59AF2E40
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.Connect(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IGISServerConnection2.Connect(System.String)
+  id: Connect(System.String)
+  parent: ESRI.ArcGIS.Server.IGISServerConnection2
+  langs:
+  - csharp
+  - vb
+  name: Connect(string)
+  nameWithType: IGISServerConnection2.Connect(string)
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.Connect(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: void Connect(string MachineName)
+    parameters:
+    - id: MachineName
+      type: System.String
+    content.vb: Sub Connect(MachineName As String)
+  overload: ESRI.ArcGIS.Server.IGISServerConnection2.Connect*
+  nameWithType.vb: IGISServerConnection2.Connect(String)
+  fullName.vb: ESRI.ArcGIS.Server.IGISServerConnection2.Connect(String)
+  name.vb: Connect(String)
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Server.IGISServerConnection2.Connect2(System.String,System.String)
+  id: Connect2(System.String,System.String)
+  parent: ESRI.ArcGIS.Server.IGISServerConnection2
+  langs:
+  - csharp
+  - vb
+  name: Connect2(string, string)
+  nameWithType: IGISServerConnection2.Connect2(string, string)
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Connects the user specified by userInfo to the GIS server given by machineName.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Connect2(string UserInfo, string MachineName)
+    parameters:
+    - id: UserInfo
+      type: System.String
+    - id: MachineName
+      type: System.String
+    content.vb: Sub Connect2(UserInfo As String, MachineName As String)
+  overload: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2*
+  nameWithType.vb: IGISServerConnection2.Connect2(String, String)
+  fullName.vb: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2(String, String)
+  name.vb: Connect2(String, String)
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+  commentId: P:ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+  id: ServerObjectManager
+  parent: ESRI.ArcGIS.Server.IGISServerConnection2
+  langs:
+  - csharp
+  - vb
+  name: ServerObjectManager
+  nameWithType: IGISServerConnection2.ServerObjectManager
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IServerObjectManager ServerObjectManager { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectManager
+    content.vb: ReadOnly Property ServerObjectManager As IServerObjectManager
+  overload: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager*
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+  commentId: P:ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+  id: ServerObjectAdmin
+  parent: ESRI.ArcGIS.Server.IGISServerConnection2
+  langs:
+  - csharp
+  - vb
+  name: ServerObjectAdmin
+  nameWithType: IGISServerConnection2.ServerObjectAdmin
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IServerObjectAdmin ServerObjectAdmin { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectAdmin
+    content.vb: ReadOnly Property ServerObjectAdmin As IServerObjectAdmin
+  overload: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin*
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.Connect*
+  commentId: Overload:ESRI.ArcGIS.Server.IGISServerConnection2.Connect
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IGISServerConnection2.html#ESRI_ArcGIS_Server_IGISServerConnection2_Connect_System_String_
+  name: Connect
+  nameWithType: IGISServerConnection2.Connect
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.Connect
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2*
+  commentId: Overload:ESRI.ArcGIS.Server.IGISServerConnection2.Connect2
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IGISServerConnection2.html#ESRI_ArcGIS_Server_IGISServerConnection2_Connect2_System_String_System_String_
+  name: Connect2
+  nameWithType: IGISServerConnection2.Connect2
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.Connect2
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager*
+  commentId: Overload:ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IGISServerConnection2.html#ESRI_ArcGIS_Server_IGISServerConnection2_ServerObjectManager
+  name: ServerObjectManager
+  nameWithType: IGISServerConnection2.ServerObjectManager
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectManager
+- uid: ESRI.ArcGIS.Server.IServerObjectManager
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectManager
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html
+  name: IServerObjectManager
+  nameWithType: IServerObjectManager
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager
+- uid: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin*
+  commentId: Overload:ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IGISServerConnection2.html#ESRI_ArcGIS_Server_IGISServerConnection2_ServerObjectAdmin
+  name: ServerObjectAdmin
+  nameWithType: IGISServerConnection2.ServerObjectAdmin
+  fullName: ESRI.ArcGIS.Server.IGISServerConnection2.ServerObjectAdmin
+- uid: ESRI.ArcGIS.Server.IServerObjectAdmin
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectAdmin
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectAdmin.html
+  name: IServerObjectAdmin
+  nameWithType: IServerObjectAdmin
+  fullName: ESRI.ArcGIS.Server.IServerObjectAdmin

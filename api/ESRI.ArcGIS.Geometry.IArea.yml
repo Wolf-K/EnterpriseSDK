@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IArea
+  commentId: T:ESRI.ArcGIS.Geometry.IArea
+  id: IArea
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IArea.Area
+  - ESRI.ArcGIS.Geometry.IArea.Centroid
+  - ESRI.ArcGIS.Geometry.IArea.LabelPoint
+  - ESRI.ArcGIS.Geometry.IArea.QueryCentroid(ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint(ESRI.ArcGIS.Geometry.IPoint)
+  langs:
+  - csharp
+  - vb
+  name: IArea
+  nameWithType: IArea
+  fullName: ESRI.ArcGIS.Geometry.IArea
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that return properties common to rings and polygons.
+  example: []
+  syntax:
+    content: >-
+      [Guid("6039E192-4CC8-11D1-834E-0000F8775BE9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IArea
+    content.vb: >-
+      <Guid("6039E192-4CC8-11D1-834E-0000F8775BE9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IArea
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.RingClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6039E192-4CC8-11D1-834E-0000F8775BE9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IArea.QueryCentroid(ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geometry.IArea.QueryCentroid(ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryCentroid(ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geometry.IArea
+  langs:
+  - csharp
+  - vb
+  name: QueryCentroid(IPoint)
+  nameWithType: IArea.QueryCentroid(IPoint)
+  fullName: ESRI.ArcGIS.Geometry.IArea.QueryCentroid(ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryCentroid(IPoint Center)
+    parameters:
+    - id: Center
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryCentroid(Center As IPoint)
+  overload: ESRI.ArcGIS.Geometry.IArea.QueryCentroid*
+- uid: ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint(ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint(ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryLabelPoint(ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geometry.IArea
+  langs:
+  - csharp
+  - vb
+  name: QueryLabelPoint(IPoint)
+  nameWithType: IArea.QueryLabelPoint(IPoint)
+  fullName: ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint(ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryLabelPoint(IPoint LabelPoint)
+    parameters:
+    - id: LabelPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryLabelPoint(LabelPoint As IPoint)
+  overload: ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint*
+- uid: ESRI.ArcGIS.Geometry.IArea.Area
+  commentId: P:ESRI.ArcGIS.Geometry.IArea.Area
+  id: Area
+  parent: ESRI.ArcGIS.Geometry.IArea
+  langs:
+  - csharp
+  - vb
+  name: Area
+  nameWithType: IArea.Area
+  fullName: ESRI.ArcGIS.Geometry.IArea.Area
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The area.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double Area { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Area As Double
+  overload: ESRI.ArcGIS.Geometry.IArea.Area*
+- uid: ESRI.ArcGIS.Geometry.IArea.Centroid
+  commentId: P:ESRI.ArcGIS.Geometry.IArea.Centroid
+  id: Centroid
+  parent: ESRI.ArcGIS.Geometry.IArea
+  langs:
+  - csharp
+  - vb
+  name: Centroid
+  nameWithType: IArea.Centroid
+  fullName: ESRI.ArcGIS.Geometry.IArea.Centroid
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The center of gravity (centroid).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint Centroid { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: ReadOnly Property Centroid As IPoint
+  overload: ESRI.ArcGIS.Geometry.IArea.Centroid*
+- uid: ESRI.ArcGIS.Geometry.IArea.LabelPoint
+  commentId: P:ESRI.ArcGIS.Geometry.IArea.LabelPoint
+  id: LabelPoint
+  parent: ESRI.ArcGIS.Geometry.IArea
+  langs:
+  - csharp
+  - vb
+  name: LabelPoint
+  nameWithType: IArea.LabelPoint
+  fullName: ESRI.ArcGIS.Geometry.IArea.LabelPoint
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A point guaranteed to be inside this area.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint LabelPoint { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: ReadOnly Property LabelPoint As IPoint
+  overload: ESRI.ArcGIS.Geometry.IArea.LabelPoint*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IArea.QueryCentroid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IArea.QueryCentroid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IArea.html#ESRI_ArcGIS_Geometry_IArea_QueryCentroid_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryCentroid
+  nameWithType: IArea.QueryCentroid
+  fullName: ESRI.ArcGIS.Geometry.IArea.QueryCentroid
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IArea.html#ESRI_ArcGIS_Geometry_IArea_QueryLabelPoint_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryLabelPoint
+  nameWithType: IArea.QueryLabelPoint
+  fullName: ESRI.ArcGIS.Geometry.IArea.QueryLabelPoint
+- uid: ESRI.ArcGIS.Geometry.IArea.Area*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IArea.Area
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IArea.html#ESRI_ArcGIS_Geometry_IArea_Area
+  name: Area
+  nameWithType: IArea.Area
+  fullName: ESRI.ArcGIS.Geometry.IArea.Area
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IArea.Centroid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IArea.Centroid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IArea.html#ESRI_ArcGIS_Geometry_IArea_Centroid
+  name: Centroid
+  nameWithType: IArea.Centroid
+  fullName: ESRI.ArcGIS.Geometry.IArea.Centroid
+- uid: ESRI.ArcGIS.Geometry.IArea.LabelPoint*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IArea.LabelPoint
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IArea.html#ESRI_ArcGIS_Geometry_IArea_LabelPoint
+  name: LabelPoint
+  nameWithType: IArea.LabelPoint
+  fullName: ESRI.ArcGIS.Geometry.IArea.LabelPoint

@@ -1,0 +1,727 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream
+  commentId: T:ESRI.ArcGIS.esriSystem.IObjectStream
+  id: IObjectStream
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Commit(System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject(System.Guid@,System.Object)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject(System.Object)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Revert
+  - ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject(System.Object)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+  - ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IObjectStream.Version
+  langs:
+  - csharp
+  - vb
+  name: IObjectStream
+  nameWithType: IObjectStream
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members used to make objects and object references persistant.  Use of this interface allows multiple references to the same object to be stored properly.
+  example: []
+  syntax:
+    content: >-
+      [Guid("18A45BA7-1266-11D1-86AD-0000F8751720")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IObjectStream : IStream, ISequentialStream
+    content.vb: >-
+      <Guid("18A45BA7-1266-11D1-86AD-0000F8751720")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IObjectStream Inherits IStream, ISequentialStream
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.ObjectStreamClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 18A45BA7-1266-11D1-86AD-0000F8751720
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  id: RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteRead(out byte, uint, out uint)
+  nameWithType: IObjectStream.RemoteRead(out byte, uint, out uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead(out byte, uint, out uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteRead(out byte pv, uint cb, out uint pcbRead)
+    parameters:
+    - id: pv
+      type: System.Byte
+    - id: cb
+      type: System.UInt32
+    - id: pcbRead
+      type: System.UInt32
+    content.vb: Sub RemoteRead(pv As Byte, cb As UInteger, pcbRead As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead*
+  nameWithType.vb: IObjectStream.RemoteRead(Byte, UInteger, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead(Byte, UInteger, UInteger)
+  name.vb: RemoteRead(Byte, UInteger, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  id: RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteWrite(ref byte, uint, out uint)
+  nameWithType: IObjectStream.RemoteWrite(ref byte, uint, out uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite(ref byte, uint, out uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteWrite(ref byte pv, uint cb, out uint pcbWritten)
+    parameters:
+    - id: pv
+      type: System.Byte
+    - id: cb
+      type: System.UInt32
+    - id: pcbWritten
+      type: System.UInt32
+    content.vb: Sub RemoteWrite(pv As Byte, cb As UInteger, pcbWritten As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite*
+  nameWithType.vb: IObjectStream.RemoteWrite(Byte, UInteger, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite(Byte, UInteger, UInteger)
+  name.vb: RemoteWrite(Byte, UInteger, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  id: RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteSeek(_LARGE_INTEGER, uint, out _ULARGE_INTEGER)
+  nameWithType: IObjectStream.RemoteSeek(_LARGE_INTEGER, uint, out _ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER, uint, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteSeek(_LARGE_INTEGER dlibMove, uint dwOrigin, out _ULARGE_INTEGER plibNewPosition)
+    parameters:
+    - id: dlibMove
+      type: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+    - id: dwOrigin
+      type: System.UInt32
+    - id: plibNewPosition
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub RemoteSeek(dlibMove As _LARGE_INTEGER, dwOrigin As UInteger, plibNewPosition As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek*
+  nameWithType.vb: IObjectStream.RemoteSeek(_LARGE_INTEGER, UInteger, _ULARGE_INTEGER)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER, UInteger, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  name.vb: RemoteSeek(_LARGE_INTEGER, UInteger, _ULARGE_INTEGER)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  id: SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: SetSize(_ULARGE_INTEGER)
+  nameWithType: IObjectStream.SetSize(_ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void SetSize(_ULARGE_INTEGER libNewSize)
+    parameters:
+    - id: libNewSize
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub SetSize(libNewSize As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.SetSize*
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  id: RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteCopyTo(IStream, _ULARGE_INTEGER, out _ULARGE_INTEGER, out _ULARGE_INTEGER)
+  nameWithType: IObjectStream.RemoteCopyTo(IStream, _ULARGE_INTEGER, out _ULARGE_INTEGER, out _ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteCopyTo(IStream pstm, _ULARGE_INTEGER cb, out _ULARGE_INTEGER pcbRead, out _ULARGE_INTEGER pcbWritten)
+    parameters:
+    - id: pstm
+      type: ESRI.ArcGIS.esriSystem.IStream
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: pcbRead
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: pcbWritten
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub RemoteCopyTo(pstm As IStream, cb As _ULARGE_INTEGER, pcbRead As _ULARGE_INTEGER, pcbWritten As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo*
+  nameWithType.vb: IObjectStream.RemoteCopyTo(IStream, _ULARGE_INTEGER, _ULARGE_INTEGER, _ULARGE_INTEGER)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  name.vb: RemoteCopyTo(IStream, _ULARGE_INTEGER, _ULARGE_INTEGER, _ULARGE_INTEGER)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Commit(System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.Commit(System.UInt32)
+  id: Commit(System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Commit(uint)
+  nameWithType: IObjectStream.Commit(uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Commit(uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Commit(uint grfCommitFlags)
+    parameters:
+    - id: grfCommitFlags
+      type: System.UInt32
+    content.vb: Sub Commit(grfCommitFlags As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Commit*
+  nameWithType.vb: IObjectStream.Commit(UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.Commit(UInteger)
+  name.vb: Commit(UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Revert
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.Revert
+  id: Revert
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Revert()
+  nameWithType: IObjectStream.Revert()
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Revert()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Revert()
+    content.vb: Sub Revert()
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Revert*
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  id: LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  nameWithType: IObjectStream.LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void LockRegion(_ULARGE_INTEGER libOffset, _ULARGE_INTEGER cb, uint dwLockType)
+    parameters:
+    - id: libOffset
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: dwLockType
+      type: System.UInt32
+    content.vb: Sub LockRegion(libOffset As _ULARGE_INTEGER, cb As _ULARGE_INTEGER, dwLockType As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion*
+  nameWithType.vb: IObjectStream.LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, UInteger)
+  name.vb: LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  id: UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  nameWithType: IObjectStream.UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void UnlockRegion(_ULARGE_INTEGER libOffset, _ULARGE_INTEGER cb, uint dwLockType)
+    parameters:
+    - id: libOffset
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: dwLockType
+      type: System.UInt32
+    content.vb: Sub UnlockRegion(libOffset As _ULARGE_INTEGER, cb As _ULARGE_INTEGER, dwLockType As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion*
+  nameWithType.vb: IObjectStream.UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, UInteger)
+  name.vb: UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  id: Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Stat(out tagSTATSTG, uint)
+  nameWithType: IObjectStream.Stat(out tagSTATSTG, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Stat(out ESRI.ArcGIS.esriSystem.tagSTATSTG, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Stat(out tagSTATSTG pstatstg, uint grfStatFlag)
+    parameters:
+    - id: pstatstg
+      type: ESRI.ArcGIS.esriSystem.tagSTATSTG
+    - id: grfStatFlag
+      type: System.UInt32
+    content.vb: Sub Stat(pstatstg As tagSTATSTG, grfStatFlag As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Stat*
+  nameWithType.vb: IObjectStream.Stat(tagSTATSTG, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG, UInteger)
+  name.vb: Stat(tagSTATSTG, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  id: Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Clone(out IStream)
+  nameWithType: IObjectStream.Clone(out IStream)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Clone(out ESRI.ArcGIS.esriSystem.IStream)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Clone(out IStream ppstm)
+    parameters:
+    - id: ppstm
+      type: ESRI.ArcGIS.esriSystem.IStream
+    content.vb: Sub Clone(ppstm As IStream)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Clone*
+  nameWithType.vb: IObjectStream.Clone(IStream)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.Clone(ESRI.ArcGIS.esriSystem.IStream)
+  name.vb: Clone(IStream)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject(System.Object)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject(System.Object)
+  id: SaveObject(System.Object)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: SaveObject(object)
+  nameWithType: IObjectStream.SaveObject(object)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Store an object to the specified stream.  The first time the object is stored, the full object is written to the stream.  When the object is subsequently stored, a reference is stored.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SaveObject(object pUnk)
+    parameters:
+    - id: pUnk
+      type: System.Object
+    content.vb: Sub SaveObject(pUnk As Object)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject*
+  nameWithType.vb: IObjectStream.SaveObject(Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject(Object)
+  name.vb: SaveObject(Object)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject(System.Guid@,System.Object)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject(System.Guid@,System.Object)
+  id: LoadObject(System.Guid@,System.Object)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: LoadObject(ref Guid, object)
+  nameWithType: IObjectStream.LoadObject(ref Guid, object)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject(ref System.Guid, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: object LoadObject(ref Guid riid, object pUnkOuter)
+    parameters:
+    - id: riid
+      type: System.Guid
+    - id: pUnkOuter
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function LoadObject(riid As Guid, pUnkOuter As Object) As Object
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject*
+  nameWithType.vb: IObjectStream.LoadObject(Guid, Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject(System.Guid, Object)
+  name.vb: LoadObject(Guid, Object)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject(System.Object)
+  commentId: M:ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject(System.Object)
+  id: ReplaceObject(System.Object)
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: ReplaceObject(object)
+  nameWithType: IObjectStream.ReplaceObject(object)
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Replaces the current object with the object in the the specified stream.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ReplaceObject(object unknown)
+    parameters:
+    - id: unknown
+      type: System.Object
+    content.vb: Sub ReplaceObject(unknown As Object)
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject*
+  nameWithType.vb: IObjectStream.ReplaceObject(Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject(Object)
+  name.vb: ReplaceObject(Object)
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+  commentId: P:ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+  id: Stream
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: IObjectStream.Stream
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The aggregated stream object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStream Stream { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStream
+    content.vb: Property Stream As IStream
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Stream*
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Version
+  commentId: P:ESRI.ArcGIS.esriSystem.IObjectStream.Version
+  id: Version
+  parent: ESRI.ArcGIS.esriSystem.IObjectStream
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: IObjectStream.Version
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Version
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The software version for the stream.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Version { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Version As String
+  overload: ESRI.ArcGIS.esriSystem.IObjectStream.Version*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_RemoteRead_System_Byte__System_UInt32_System_UInt32__
+  name: RemoteRead
+  nameWithType: IObjectStream.RemoteRead
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteRead
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_RemoteWrite_System_Byte__System_UInt32_System_UInt32__
+  name: RemoteWrite
+  nameWithType: IObjectStream.RemoteWrite
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteWrite
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_RemoteSeek_ESRI_ArcGIS_esriSystem__LARGE_INTEGER_System_UInt32_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__
+  name: RemoteSeek
+  nameWithType: IObjectStream.RemoteSeek
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteSeek
+- uid: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+  commentId: T:ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem._LARGE_INTEGER.html
+  name: _LARGE_INTEGER
+  nameWithType: _LARGE_INTEGER
+  fullName: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+- uid: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+  commentId: T:ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER.html
+  name: _ULARGE_INTEGER
+  nameWithType: _ULARGE_INTEGER
+  fullName: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.SetSize*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.SetSize
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_SetSize_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_
+  name: SetSize
+  nameWithType: IObjectStream.SetSize
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.SetSize
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_RemoteCopyTo_ESRI_ArcGIS_esriSystem_IStream_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__
+  name: RemoteCopyTo
+  nameWithType: IObjectStream.RemoteCopyTo
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.RemoteCopyTo
+- uid: ESRI.ArcGIS.esriSystem.IStream
+  commentId: T:ESRI.ArcGIS.esriSystem.IStream
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStream.html
+  name: IStream
+  nameWithType: IStream
+  fullName: ESRI.ArcGIS.esriSystem.IStream
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Commit*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Commit
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Commit_System_UInt32_
+  name: Commit
+  nameWithType: IObjectStream.Commit
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Commit
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Revert*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Revert
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Revert
+  name: Revert
+  nameWithType: IObjectStream.Revert
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Revert
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_LockRegion_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_System_UInt32_
+  name: LockRegion
+  nameWithType: IObjectStream.LockRegion
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.LockRegion
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_UnlockRegion_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_System_UInt32_
+  name: UnlockRegion
+  nameWithType: IObjectStream.UnlockRegion
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.UnlockRegion
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Stat*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Stat
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Stat_ESRI_ArcGIS_esriSystem_tagSTATSTG__System_UInt32_
+  name: Stat
+  nameWithType: IObjectStream.Stat
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Stat
+- uid: ESRI.ArcGIS.esriSystem.tagSTATSTG
+  commentId: T:ESRI.ArcGIS.esriSystem.tagSTATSTG
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.tagSTATSTG.html
+  name: tagSTATSTG
+  nameWithType: tagSTATSTG
+  fullName: ESRI.ArcGIS.esriSystem.tagSTATSTG
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Clone*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Clone
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Clone_ESRI_ArcGIS_esriSystem_IStream__
+  name: Clone
+  nameWithType: IObjectStream.Clone
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Clone
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_SaveObject_System_Object_
+  name: SaveObject
+  nameWithType: IObjectStream.SaveObject
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.SaveObject
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_LoadObject_System_Guid__System_Object_
+  name: LoadObject
+  nameWithType: IObjectStream.LoadObject
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.LoadObject
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_ReplaceObject_System_Object_
+  name: ReplaceObject
+  nameWithType: IObjectStream.ReplaceObject
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.ReplaceObject
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Stream*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Stream
+  name: Stream
+  nameWithType: IObjectStream.Stream
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Stream
+- uid: ESRI.ArcGIS.esriSystem.IObjectStream.Version*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IObjectStream.Version
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IObjectStream.html#ESRI_ArcGIS_esriSystem_IObjectStream_Version
+  name: Version
+  nameWithType: IObjectStream.Version
+  fullName: ESRI.ArcGIS.esriSystem.IObjectStream.Version
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

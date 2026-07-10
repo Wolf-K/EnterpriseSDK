@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  id: ICoordinateFrameTransformation
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: ICoordinateFrameTransformation
+  nameWithType: ICoordinateFrameTransformation
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control the 3D frame transformation with rotation, translation and scaling.
+  example: []
+  syntax:
+    content: >-
+      [Guid("0CDF92B2-C2A0-11D2-BD08-0000F875BCCE")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ICoordinateFrameTransformation : IGeoTransformation, ITransformation
+    content.vb: >-
+      <Guid("0CDF92B2-C2A0-11D2-BD08-0000F875BCCE")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ICoordinateFrameTransformation Inherits IGeoTransformation, ITransformation
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.CoordinateFrameTransformationClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0CDF92B2-C2A0-11D2-BD08-0000F875BCCE
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFF(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresFF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFI(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresFI(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresIF(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresIF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresII(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresII(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ICoordinateFrameTransformation.TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFF(esriTransformDirection Direction, int cPoints, ref double inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsFF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ICoordinateFrameTransformation.TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFI(esriTransformDirection Direction, int cPoints, ref double inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsFI(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ICoordinateFrameTransformation.TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsIF(esriTransformDirection Direction, int cPoints, ref int inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsIF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ICoordinateFrameTransformation.TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsII(esriTransformDirection Direction, int cPoints, ref int inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsII(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII*
+  nameWithType.vb: ICoordinateFrameTransformation.TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  id: GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  nameWithType: ICoordinateFrameTransformation.GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences(out ESRI.ArcGIS.Geometry.ISpatialReference, out ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GetSpatialReferences(out ISpatialReference from, out ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub GetSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences*
+  nameWithType.vb: ICoordinateFrameTransformation.GetSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: GetSpatialReferences(ISpatialReference, ISpatialReference)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutSpatialReferences(ISpatialReference, ISpatialReference)
+  nameWithType: ICoordinateFrameTransformation.PutSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutSpatialReferences(ISpatialReference from, ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub PutSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences*
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  id: PutParameters(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutParameters(double, double, double, double, double, double, double)
+  nameWithType: ICoordinateFrameTransformation.PutParameters(double, double, double, double, double, double, double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters(double, double, double, double, double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets translation, rotation and scale values for the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutParameters(double dx, double dy, double dz, double rx, double ry, double rz, double s)
+    parameters:
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: dz
+      type: System.Double
+    - id: rx
+      type: System.Double
+    - id: ry
+      type: System.Double
+    - id: rz
+      type: System.Double
+    - id: s
+      type: System.Double
+    content.vb: Sub PutParameters(dx As Double, dy As Double, dz As Double, rx As Double, ry As Double, rz As Double, s As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters*
+  nameWithType.vb: ICoordinateFrameTransformation.PutParameters(Double, Double, Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters(Double, Double, Double, Double, Double, Double, Double)
+  name.vb: PutParameters(Double, Double, Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)
+  id: GetParameters(System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetParameters(out double, out double, out double, out double, out double, out double, out double)
+  nameWithType: ICoordinateFrameTransformation.GetParameters(out double, out double, out double, out double, out double, out double, out double)
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters(out double, out double, out double, out double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns translation, rotation and scale values of the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetParameters(out double dx, out double dy, out double dz, out double rx, out double ry, out double rz, out double s)
+    parameters:
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: dz
+      type: System.Double
+    - id: rx
+      type: System.Double
+    - id: ry
+      type: System.Double
+    - id: rz
+      type: System.Double
+    - id: s
+      type: System.Double
+    content.vb: Sub GetParameters(dx As Double, dy As Double, dz As Double, rx As Double, ry As Double, rz As Double, s As Double)
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters*
+  nameWithType.vb: ICoordinateFrameTransformation.GetParameters(Double, Double, Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters(Double, Double, Double, Double, Double, Double, Double)
+  name.vb: GetParameters(Double, Double, Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+  commentId: P:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ICoordinateFrameTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformMeasuresFF
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresFF
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFF
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformMeasuresFI
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresFI
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresFI
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformMeasuresIF
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresIF
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresIF
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformMeasuresII
+  nameWithType: ICoordinateFrameTransformation.TransformMeasuresII
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformMeasuresII
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformPointsFF
+  nameWithType: ICoordinateFrameTransformation.TransformPointsFF
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFF
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformPointsFI
+  nameWithType: ICoordinateFrameTransformation.TransformPointsFI
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsFI
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformPointsIF
+  nameWithType: ICoordinateFrameTransformation.TransformPointsIF
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsIF
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformPointsII
+  nameWithType: ICoordinateFrameTransformation.TransformPointsII
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.TransformPointsII
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_GetSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference__ESRI_ArcGIS_Geometry_ISpatialReference__
+  name: GetSpatialReferences
+  nameWithType: ICoordinateFrameTransformation.GetSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_PutSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: PutSpatialReferences
+  nameWithType: ICoordinateFrameTransformation.PutSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_PutParameters_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
+  name: PutParameters
+  nameWithType: ICoordinateFrameTransformation.PutParameters
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.PutParameters
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_GetParameters_System_Double__System_Double__System_Double__System_Double__System_Double__System_Double__System_Double__
+  name: GetParameters
+  nameWithType: ICoordinateFrameTransformation.GetParameters
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.GetParameters
+- uid: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.html#ESRI_ArcGIS_Geometry_ICoordinateFrameTransformation_Name
+  name: Name
+  nameWithType: ICoordinateFrameTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ICoordinateFrameTransformation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

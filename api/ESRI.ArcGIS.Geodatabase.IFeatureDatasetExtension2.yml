@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  id: IFeatureDatasetExtension2
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init(ESRI.ArcGIS.Geodatabase.IFeatureDataset)
+  langs:
+  - csharp
+  - vb
+  name: IFeatureDatasetExtension2
+  nameWithType: IFeatureDatasetExtension2
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to standard functionality found in all feature dataset extensions.
+  example: []
+  syntax:
+    content: >-
+      [Guid("F0A333BF-B864-4B71-8FF5-086DA66851D9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFeatureDatasetExtension2 : IFeatureDatasetExtension
+    content.vb: >-
+      <Guid("F0A333BF-B864-4B71-8FF5-086DA66851D9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFeatureDatasetExtension2 Inherits IFeatureDatasetExtension
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F0A333BF-B864-4B71-8FF5-086DA66851D9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init(ESRI.ArcGIS.Geodatabase.IFeatureDataset)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init(ESRI.ArcGIS.Geodatabase.IFeatureDataset)
+  id: Init(ESRI.ArcGIS.Geodatabase.IFeatureDataset)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  langs:
+  - csharp
+  - vb
+  name: Init(IFeatureDataset)
+  nameWithType: IFeatureDatasetExtension2.Init(IFeatureDataset)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init(ESRI.ArcGIS.Geodatabase.IFeatureDataset)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Init(IFeatureDataset Dataset)
+    parameters:
+    - id: Dataset
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: Sub Init(Dataset As IFeatureDataset)
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+  id: FeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  langs:
+  - csharp
+  - vb
+  name: FeatureDataset
+  nameWithType: IFeatureDatasetExtension2.FeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureDataset FeatureDataset { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: ReadOnly Property FeatureDataset As IFeatureDataset
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  id: CanParticipateInDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2
+  langs:
+  - csharp
+  - vb
+  name: CanParticipateInDataset[esriDatasetType]
+  nameWithType: IFeatureDatasetExtension2.CanParticipateInDataset[esriDatasetType]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset[ESRI.ArcGIS.Geodatabase.esriDatasetType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the contained feature classes in the dataset extension can participate in another dataset of the specified type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanParticipateInDataset[esriDatasetType Type] { get; }
+    parameters:
+    - id: Type
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanParticipateInDataset(Type As esriDatasetType) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset*
+  nameWithType.vb: IFeatureDatasetExtension2.CanParticipateInDataset(esriDatasetType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  name.vb: CanParticipateInDataset(esriDatasetType)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtension2_Init_ESRI_ArcGIS_Geodatabase_IFeatureDataset_
+  name: Init
+  nameWithType: IFeatureDatasetExtension2.Init
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.Init
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDataset.html
+  name: IFeatureDataset
+  nameWithType: IFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtension2_FeatureDataset
+  name: FeatureDataset
+  nameWithType: IFeatureDatasetExtension2.FeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.FeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtension2_CanParticipateInDataset_ESRI_ArcGIS_Geodatabase_esriDatasetType_
+  name: CanParticipateInDataset
+  nameWithType: IFeatureDatasetExtension2.CanParticipateInDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension2.CanParticipateInDataset
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetType.html
+  name: esriDatasetType
+  nameWithType: esriDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

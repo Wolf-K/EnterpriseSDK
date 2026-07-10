@@ -1,0 +1,572 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  id: ILongitudeRotationTransformation
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: ILongitudeRotationTransformation
+  nameWithType: ILongitudeRotationTransformation
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control the parameters of a longitude-rotation transformation.
+  example: []
+  syntax:
+    content: >-
+      [Guid("64C7C780-DA8B-11D3-9F60-00C04F6BDD7F")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ILongitudeRotationTransformation : IGeoTransformation, ITransformation
+    content.vb: >-
+      <Guid("64C7C780-DA8B-11D3-9F60-00C04F6BDD7F")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ILongitudeRotationTransformation Inherits IGeoTransformation, ITransformation
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.LongitudeRotationTransformationClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 64C7C780-DA8B-11D3-9F60-00C04F6BDD7F
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFF(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresFF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFI(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresFI(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresIF(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresIF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresII(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresII(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ILongitudeRotationTransformation.TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFF(esriTransformDirection Direction, int cPoints, ref double inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsFF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ILongitudeRotationTransformation.TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFI(esriTransformDirection Direction, int cPoints, ref double inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsFI(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ILongitudeRotationTransformation.TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsIF(esriTransformDirection Direction, int cPoints, ref int inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsIF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ILongitudeRotationTransformation.TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsII(esriTransformDirection Direction, int cPoints, ref int inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsII(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII*
+  nameWithType.vb: ILongitudeRotationTransformation.TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  id: GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  nameWithType: ILongitudeRotationTransformation.GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences(out ESRI.ArcGIS.Geometry.ISpatialReference, out ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GetSpatialReferences(out ISpatialReference from, out ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub GetSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences*
+  nameWithType.vb: ILongitudeRotationTransformation.GetSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: GetSpatialReferences(ISpatialReference, ISpatialReference)
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutSpatialReferences(ISpatialReference, ISpatialReference)
+  nameWithType: ILongitudeRotationTransformation.PutSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutSpatialReferences(ISpatialReference from, ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub PutSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences*
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+  commentId: P:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ILongitudeRotationTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name*
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation
+  commentId: P:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation
+  id: Rotation
+  parent: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation
+  langs:
+  - csharp
+  - vb
+  name: Rotation
+  nameWithType: ILongitudeRotationTransformation.Rotation
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Counterclockwise (looking down on North Pole) positive rotation about Earth's rotational axis.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double Rotation { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Rotation As Double
+  overload: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformMeasuresFF
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresFF
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFF
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformMeasuresFI
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresFI
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresFI
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformMeasuresIF
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresIF
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresIF
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformMeasuresII
+  nameWithType: ILongitudeRotationTransformation.TransformMeasuresII
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformMeasuresII
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformPointsFF
+  nameWithType: ILongitudeRotationTransformation.TransformPointsFF
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFF
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformPointsFI
+  nameWithType: ILongitudeRotationTransformation.TransformPointsFI
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsFI
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformPointsIF
+  nameWithType: ILongitudeRotationTransformation.TransformPointsIF
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsIF
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformPointsII
+  nameWithType: ILongitudeRotationTransformation.TransformPointsII
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.TransformPointsII
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_GetSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference__ESRI_ArcGIS_Geometry_ISpatialReference__
+  name: GetSpatialReferences
+  nameWithType: ILongitudeRotationTransformation.GetSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.GetSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_PutSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: PutSpatialReferences
+  nameWithType: ILongitudeRotationTransformation.PutSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.PutSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_Name
+  name: Name
+  nameWithType: ILongitudeRotationTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.html#ESRI_ArcGIS_Geometry_ILongitudeRotationTransformation_Rotation
+  name: Rotation
+  nameWithType: ILongitudeRotationTransformation.Rotation
+  fullName: ESRI.ArcGIS.Geometry.ILongitudeRotationTransformation.Rotation

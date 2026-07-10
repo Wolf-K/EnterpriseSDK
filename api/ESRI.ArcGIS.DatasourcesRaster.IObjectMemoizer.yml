@@ -1,0 +1,383 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  id: IObjectMemoizer
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add(System.Object,System.Object)
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists(System.Object)
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get(System.Object)
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize
+  - ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IObjectMemoizer
+  nameWithType: IObjectMemoizer
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control an object memoizer.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("70E17160-11C3-40F5-87FD-3E58826B3B3A")]
+
+      public interface IObjectMemoizer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("70E17160-11C3-40F5-87FD-3E58826B3B3A")>
+
+      Public Interface IObjectMemoizer
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ObjectMemoizerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 70E17160-11C3-40F5-87FD-3E58826B3B3A
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add(System.Object,System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add(System.Object,System.Object)
+  id: Add(System.Object,System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Add(object, object)
+  nameWithType: IObjectMemoizer.Add(object, object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add(object, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Memoizes an object uniquely associated with the specified key. Adding more objects than allowed (as indicated by the .MaximumSize property) would cause one or more previously memoized items to be removed based on an implementation-specific eviction strategy.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Add(object vtKey, object ppObject)
+    parameters:
+    - id: vtKey
+      type: System.Object
+    - id: ppObject
+      type: System.Object
+    content.vb: Sub Add(vtKey As Object, ppObject As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add*
+  nameWithType.vb: IObjectMemoizer.Add(Object, Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add(Object, Object)
+  name.vb: Add(Object, Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get(System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get(System.Object)
+  id: Get(System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Get(object)
+  nameWithType: IObjectMemoizer.Get(object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Retrieves the previously memoized object associated with the specified key and increments its usage count.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object Get(object vtKey)
+    parameters:
+    - id: vtKey
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: Function [Get](vtKey As Object) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get*
+  nameWithType.vb: IObjectMemoizer.Get(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get(Object)
+  name.vb: Get(Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists(System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists(System.Object)
+  id: Exists(System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Exists(object)
+  nameWithType: IObjectMemoizer.Exists(object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns TRUE if a previously memoized object associated with the specified key is found.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Exists(object vtKey)
+    parameters:
+    - id: vtKey
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Function Exists(vtKey As Object) As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists*
+  nameWithType.vb: IObjectMemoizer.Exists(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists(Object)
+  name.vb: Exists(Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear
+  id: Clear
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IObjectMemoizer.Clear()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Clears the object cache associated with the memoizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove(System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove(System.Object)
+  id: Remove(System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Remove(object)
+  nameWithType: IObjectMemoizer.Remove(object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Removes the previously memoized object associated with the specified key.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Remove(object vtKey)
+    parameters:
+    - id: vtKey
+      type: System.Object
+    content.vb: Sub Remove(vtKey As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove*
+  nameWithType.vb: IObjectMemoizer.Remove(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove(Object)
+  name.vb: Remove(Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+  id: Count
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IObjectMemoizer.Count
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The number of object currently held by the memoizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize
+  id: MaximumSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer
+  langs:
+  - csharp
+  - vb
+  name: MaximumSize
+  nameWithType: IObjectMemoizer.MaximumSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The maximum allowed number of objects held by the memoizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaximumSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaximumSize As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Add_System_Object_System_Object_
+  name: Add
+  nameWithType: IObjectMemoizer.Add
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Add
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Get_System_Object_
+  name: Get
+  nameWithType: IObjectMemoizer.Get
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Get
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Exists_System_Object_
+  name: Exists
+  nameWithType: IObjectMemoizer.Exists
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Clear
+  name: Clear
+  nameWithType: IObjectMemoizer.Clear
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Clear
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Remove_System_Object_
+  name: Remove
+  nameWithType: IObjectMemoizer.Remove
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Remove
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_Count
+  name: Count
+  nameWithType: IObjectMemoizer.Count
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.html#ESRI_ArcGIS_DatasourcesRaster_IObjectMemoizer_MaximumSize
+  name: MaximumSize
+  nameWithType: IObjectMemoizer.MaximumSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IObjectMemoizer.MaximumSize

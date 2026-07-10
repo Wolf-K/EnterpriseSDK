@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue
+  commentId: T:ESRI.ArcGIS.esriSystem.ITimeValue
+  id: ITimeValue
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.ITimeValue.Project(ESRI.ArcGIS.esriSystem.ITimeReference)
+  - ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC
+  - ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC
+  - ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference
+  langs:
+  - csharp
+  - vb
+  name: ITimeValue
+  nameWithType: ITimeValue
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that control the Time Value.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("4CE86E17-E819-4C72-BD98-E55AE59B0317")]
+
+      public interface ITimeValue
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("4CE86E17-E819-4C72-BD98-E55AE59B0317")>
+
+      Public Interface ITimeValue
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.TimeExtentClass
+  - ESRI.ArcGIS.esriSystem.TimeInstantClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4CE86E17-E819-4C72-BD98-E55AE59B0317
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.Project(ESRI.ArcGIS.esriSystem.ITimeReference)
+  commentId: M:ESRI.ArcGIS.esriSystem.ITimeValue.Project(ESRI.ArcGIS.esriSystem.ITimeReference)
+  id: Project(ESRI.ArcGIS.esriSystem.ITimeReference)
+  parent: ESRI.ArcGIS.esriSystem.ITimeValue
+  langs:
+  - csharp
+  - vb
+  name: Project(ITimeReference)
+  nameWithType: ITimeValue.Project(ITimeReference)
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.Project(ESRI.ArcGIS.esriSystem.ITimeReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Project(ITimeReference TimeReference)
+    parameters:
+    - id: TimeReference
+      type: ESRI.ArcGIS.esriSystem.ITimeReference
+    content.vb: Sub Project(TimeReference As ITimeReference)
+  overload: ESRI.ArcGIS.esriSystem.ITimeValue.Project*
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC
+  commentId: M:ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC
+  id: ProjectToUTC
+  parent: ESRI.ArcGIS.esriSystem.ITimeValue
+  langs:
+  - csharp
+  - vb
+  name: ProjectToUTC()
+  nameWithType: ITimeValue.ProjectToUTC()
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Projects this time value from its time reference, to UTC.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ProjectToUTC()
+    content.vb: Sub ProjectToUTC()
+  overload: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC*
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC
+  commentId: M:ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC
+  id: ProjectFromUTC
+  parent: ESRI.ArcGIS.esriSystem.ITimeValue
+  langs:
+  - csharp
+  - vb
+  name: ProjectFromUTC()
+  nameWithType: ITimeValue.ProjectFromUTC()
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Projects this time value from UTC, to its time reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ProjectFromUTC()
+    content.vb: Sub ProjectFromUTC()
+  overload: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC*
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference
+  commentId: P:ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference
+  id: TimeReference
+  parent: ESRI.ArcGIS.esriSystem.ITimeValue
+  langs:
+  - csharp
+  - vb
+  name: TimeReference
+  nameWithType: ITimeValue.TimeReference
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The time reference associated with the time value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITimeReference TimeReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.ITimeReference
+    content.vb: Property TimeReference As ITimeReference
+  overload: ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.Project*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITimeValue.Project
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeValue.html#ESRI_ArcGIS_esriSystem_ITimeValue_Project_ESRI_ArcGIS_esriSystem_ITimeReference_
+  name: Project
+  nameWithType: ITimeValue.Project
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.Project
+- uid: ESRI.ArcGIS.esriSystem.ITimeReference
+  commentId: T:ESRI.ArcGIS.esriSystem.ITimeReference
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeReference.html
+  name: ITimeReference
+  nameWithType: ITimeReference
+  fullName: ESRI.ArcGIS.esriSystem.ITimeReference
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeValue.html#ESRI_ArcGIS_esriSystem_ITimeValue_ProjectToUTC
+  name: ProjectToUTC
+  nameWithType: ITimeValue.ProjectToUTC
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectToUTC
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeValue.html#ESRI_ArcGIS_esriSystem_ITimeValue_ProjectFromUTC
+  name: ProjectFromUTC
+  nameWithType: ITimeValue.ProjectFromUTC
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.ProjectFromUTC
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeValue.html#ESRI_ArcGIS_esriSystem_ITimeValue_TimeReference
+  name: TimeReference
+  nameWithType: ITimeValue.TimeReference
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue.TimeReference

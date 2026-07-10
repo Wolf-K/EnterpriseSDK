@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  id: ITableCrawler3
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+  - ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+  langs:
+  - csharp
+  - vb
+  name: ITableCrawler3
+  nameWithType: ITableCrawler3
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a crawler capable of traversing tables.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("557A0CE7-5525-4EBF-87E4-CEA03954BBAE")]
+
+      public interface ITableCrawler3 : ITableCrawler2, ITableCrawler
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("557A0CE7-5525-4EBF-87E4-CEA03954BBAE")>
+
+      Public Interface ITableCrawler3 Inherits ITableCrawler2, ITableCrawler
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.TableCrawlerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 557A0CE7-5525-4EBF-87E4-CEA03954BBAE
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow(System.Int32)
+  id: GetRow(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: GetRow(int)
+  nameWithType: ITableCrawler3.GetRow(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the requested row in the table being crawled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRow GetRow(int OID)
+    parameters:
+    - id: OID
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Function GetRow(OID As Integer) As IRow
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow*
+  nameWithType.vb: ITableCrawler3.GetRow(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow(Integer)
+  name.vb: GetRow(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+  id: CrawlerItemType
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: CrawlerItemType
+  nameWithType: ITableCrawler3.CrawlerItemType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: esriCrawlerDataSourceType CrawlerItemType { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+    content.vb: WriteOnly Property CrawlerItemType As esriCrawlerDataSourceType
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+  id: QueryFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: QueryFilter
+  nameWithType: ITableCrawler3.QueryFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IQueryFilter QueryFilter { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    content.vb: Property QueryFilter As IQueryFilter
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+  id: SelectionSet
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: SelectionSet
+  nameWithType: ITableCrawler3.SelectionSet
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ISelectionSet SelectionSet { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Property SelectionSet As ISelectionSet
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+  id: Table
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: ITableCrawler3.Table
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ITable Table { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Property Table As ITable
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+  id: SourceField
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: SourceField
+  nameWithType: ITableCrawler3.SourceField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string SourceField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SourceField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+  id: GroupField
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: GroupField
+  nameWithType: ITableCrawler3.GroupField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string GroupField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property GroupField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+  id: TimeStampField
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: TimeStampField
+  nameWithType: ITableCrawler3.TimeStampField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string TimeStampField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TimeStampField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+  id: OrderByGroup
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: OrderByGroup
+  nameWithType: ITableCrawler3.OrderByGroup
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool OrderByGroup { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property OrderByGroup As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+  id: BlockField
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: BlockField
+  nameWithType: ITableCrawler3.BlockField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string BlockField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property BlockField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+  id: MaximumMergeItemsCount
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: MaximumMergeItemsCount
+  nameWithType: ITableCrawler3.MaximumMergeItemsCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int MaximumMergeItemsCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaximumMergeItemsCount As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+  id: MosaicDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: MosaicDataset
+  nameWithType: ITableCrawler3.MosaicDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IMosaicDataset MosaicDataset { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IMosaicDataset
+    content.vb: Property MosaicDataset As IMosaicDataset
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail
+  id: HasThumbnail
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3
+  langs:
+  - csharp
+  - vb
+  name: HasThumbnail
+  nameWithType: ITableCrawler3.HasThumbnail
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool HasThumbnail { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasThumbnail As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_GetRow_System_Int32_
+  name: GetRow
+  nameWithType: ITableCrawler3.GetRow
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GetRow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_CrawlerItemType
+  name: CrawlerItemType
+  nameWithType: ITableCrawler3.CrawlerItemType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.CrawlerItemType
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType.html
+  name: esriCrawlerDataSourceType
+  nameWithType: esriCrawlerDataSourceType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_QueryFilter
+  name: QueryFilter
+  nameWithType: ITableCrawler3.QueryFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.QueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_SelectionSet
+  name: SelectionSet
+  nameWithType: ITableCrawler3.SelectionSet
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_Table
+  name: Table
+  nameWithType: ITableCrawler3.Table
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.Table
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_SourceField
+  name: SourceField
+  nameWithType: ITableCrawler3.SourceField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.SourceField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_GroupField
+  name: GroupField
+  nameWithType: ITableCrawler3.GroupField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.GroupField
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_TimeStampField
+  name: TimeStampField
+  nameWithType: ITableCrawler3.TimeStampField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.TimeStampField
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_OrderByGroup
+  name: OrderByGroup
+  nameWithType: ITableCrawler3.OrderByGroup
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.OrderByGroup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_BlockField
+  name: BlockField
+  nameWithType: ITableCrawler3.BlockField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.BlockField
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_MaximumMergeItemsCount
+  name: MaximumMergeItemsCount
+  nameWithType: ITableCrawler3.MaximumMergeItemsCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MaximumMergeItemsCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_MosaicDataset
+  name: MosaicDataset
+  nameWithType: ITableCrawler3.MosaicDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.MosaicDataset
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicDataset
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IMosaicDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicDataset.html
+  name: IMosaicDataset
+  nameWithType: IMosaicDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicDataset
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.html#ESRI_ArcGIS_DatasourcesRaster_ITableCrawler3_HasThumbnail
+  name: HasThumbnail
+  nameWithType: ITableCrawler3.HasThumbnail
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITableCrawler3.HasThumbnail

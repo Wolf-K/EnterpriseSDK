@@ -1,0 +1,400 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersionedObject
+  id: IVersionedObject
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo(System.Boolean@,System.Boolean@)
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+  langs:
+  - csharp
+  - vb
+  name: IVersionedObject
+  nameWithType: IVersionedObject
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that manage a versioned object.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("4A1FB361-B863-11D1-9CE7-0000F8780619")]
+
+      public interface IVersionedObject
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("4A1FB361-B863-11D1-9CE7-0000F8780619")>
+
+      Public Interface IVersionedObject
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4A1FB361-B863-11D1-9CE7-0000F8780619
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned(System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned(System.Boolean)
+  id: RegisterAsVersioned(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsVersioned(bool)
+  nameWithType: IVersionedObject.RegisterAsVersioned(bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Register/UnRegister the object as being versioned.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RegisterAsVersioned(bool isVersioned)
+    parameters:
+    - id: isVersioned
+      type: System.Boolean
+    content.vb: Sub RegisterAsVersioned(isVersioned As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned*
+  nameWithType.vb: IVersionedObject.RegisterAsVersioned(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned(Boolean)
+  name.vb: RegisterAsVersioned(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase
+  id: SupportsMovingEditsToBase
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: SupportsMovingEditsToBase()
+  nameWithType: IVersionedObject.SupportsMovingEditsToBase()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this object supports moving edits to base as a RegisterAsVersioned3 option.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsMovingEditsToBase()
+    return:
+      type: System.Boolean
+    content.vb: Function SupportsMovingEditsToBase() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3(System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3(System.Boolean)
+  id: RegisterAsVersioned3(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsVersioned3(bool)
+  nameWithType: IVersionedObject.RegisterAsVersioned3(bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Register this object as versioned with the option to move edits to base.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RegisterAsVersioned3(bool moveEditsToBase)
+    parameters:
+    - id: moveEditsToBase
+      type: System.Boolean
+    content.vb: Sub RegisterAsVersioned3(moveEditsToBase As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3*
+  nameWithType.vb: IVersionedObject.RegisterAsVersioned3(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3(Boolean)
+  name.vb: RegisterAsVersioned3(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3(System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3(System.Boolean)
+  id: UnRegisterAsVersioned3(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: UnRegisterAsVersioned3(bool)
+  nameWithType: IVersionedObject.UnRegisterAsVersioned3(bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: UnRegister this object as versioned with the option to compress the Default edits to base.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UnRegisterAsVersioned3(bool compressDefault)
+    parameters:
+    - id: compressDefault
+      type: System.Boolean
+    content.vb: Sub UnRegisterAsVersioned3(compressDefault As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3*
+  nameWithType.vb: IVersionedObject.UnRegisterAsVersioned3(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3(Boolean)
+  name.vb: UnRegisterAsVersioned3(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo(System.Boolean@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo(System.Boolean@,System.Boolean@)
+  id: GetVersionRegistrationInfo(System.Boolean@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: GetVersionRegistrationInfo(out bool, out bool)
+  nameWithType: IVersionedObject.GetVersionRegistrationInfo(out bool, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo(out bool, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this object is registered as versioned and is moving edits to base.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetVersionRegistrationInfo(out bool isRegistered, out bool isMovingEditsToBase)
+    parameters:
+    - id: isRegistered
+      type: System.Boolean
+    - id: isMovingEditsToBase
+      type: System.Boolean
+    content.vb: Sub GetVersionRegistrationInfo(isRegistered As Boolean, isMovingEditsToBase As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo*
+  nameWithType.vb: IVersionedObject.GetVersionRegistrationInfo(Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo(Boolean, Boolean)
+  name.vb: GetVersionRegistrationInfo(Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+  id: Version
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: IVersionedObject.Version
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The object's current version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion Version { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property Version As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.Version*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+  id: IsRegisteredAsVersioned
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: IsRegisteredAsVersioned
+  nameWithType: IVersionedObject.IsRegisteredAsVersioned
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the object is registered as versioned.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsRegisteredAsVersioned { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsRegisteredAsVersioned As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits
+  id: HasUncompressedEdits
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedObject
+  langs:
+  - csharp
+  - vb
+  name: HasUncompressedEdits
+  nameWithType: IVersionedObject.HasUncompressedEdits
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the object has edits that haven't been compressed yet.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasUncompressedEdits { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasUncompressedEdits As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_RegisterAsVersioned_System_Boolean_
+  name: RegisterAsVersioned
+  nameWithType: IVersionedObject.RegisterAsVersioned
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_SupportsMovingEditsToBase
+  name: SupportsMovingEditsToBase
+  nameWithType: IVersionedObject.SupportsMovingEditsToBase
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.SupportsMovingEditsToBase
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_RegisterAsVersioned3_System_Boolean_
+  name: RegisterAsVersioned3
+  nameWithType: IVersionedObject.RegisterAsVersioned3
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.RegisterAsVersioned3
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_UnRegisterAsVersioned3_System_Boolean_
+  name: UnRegisterAsVersioned3
+  nameWithType: IVersionedObject.UnRegisterAsVersioned3
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.UnRegisterAsVersioned3
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_GetVersionRegistrationInfo_System_Boolean__System_Boolean__
+  name: GetVersionRegistrationInfo
+  nameWithType: IVersionedObject.GetVersionRegistrationInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.GetVersionRegistrationInfo
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.Version*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_Version
+  name: Version
+  nameWithType: IVersionedObject.Version
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.Version
+- uid: ESRI.ArcGIS.Geodatabase.IVersion
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersion
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html
+  name: IVersion
+  nameWithType: IVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_IsRegisteredAsVersioned
+  name: IsRegisteredAsVersioned
+  nameWithType: IVersionedObject.IsRegisteredAsVersioned
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.IsRegisteredAsVersioned
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedObject.html#ESRI_ArcGIS_Geodatabase_IVersionedObject_HasUncompressedEdits
+  name: HasUncompressedEdits
+  nameWithType: IVersionedObject.HasUncompressedEdits
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedObject.HasUncompressedEdits

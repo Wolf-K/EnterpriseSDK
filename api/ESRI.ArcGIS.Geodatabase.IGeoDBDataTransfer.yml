@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  id: IGeoDBDataTransfer
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName,ESRI.ArcGIS.esriSystem.IName,ESRI.ArcGIS.Geodatabase.IEnumNameMapping@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  - ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping,ESRI.ArcGIS.esriSystem.IName)
+  langs:
+  - csharp
+  - vb
+  name: IGeoDBDataTransfer
+  nameWithType: IGeoDBDataTransfer
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that transfer data to/from GeoDatabases.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("9B6B1AD3-E0E7-11D3-8118-00C04F686238")]
+
+      public interface IGeoDBDataTransfer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("9B6B1AD3-E0E7-11D3-8118-00C04F686238")>
+
+      Public Interface IGeoDBDataTransfer
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.GeoDBDataTransferClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9B6B1AD3-E0E7-11D3-8118-00C04F686238
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName,ESRI.ArcGIS.esriSystem.IName,ESRI.ArcGIS.Geodatabase.IEnumNameMapping@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName,ESRI.ArcGIS.esriSystem.IName,ESRI.ArcGIS.Geodatabase.IEnumNameMapping@)
+  id: GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName,ESRI.ArcGIS.esriSystem.IName,ESRI.ArcGIS.Geodatabase.IEnumNameMapping@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  langs:
+  - csharp
+  - vb
+  name: GenerateNameMapping(IEnumName, IName, out IEnumNameMapping)
+  nameWithType: IGeoDBDataTransfer.GenerateNameMapping(IEnumName, IName, out IEnumNameMapping)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName, ESRI.ArcGIS.esriSystem.IName, out ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool GenerateNameMapping(IEnumName from, IName toName, out IEnumNameMapping to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.esriSystem.IEnumName
+    - id: toName
+      type: ESRI.ArcGIS.esriSystem.IName
+    - id: to
+      type: ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+    return:
+      type: System.Boolean
+    content.vb: Function GenerateNameMapping(from As IEnumName, toName As IName, [to] As IEnumNameMapping) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping*
+  nameWithType.vb: IGeoDBDataTransfer.GenerateNameMapping(IEnumName, IName, IEnumNameMapping)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping(ESRI.ArcGIS.esriSystem.IEnumName, ESRI.ArcGIS.esriSystem.IName, ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  name.vb: GenerateNameMapping(IEnumName, IName, IEnumNameMapping)
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping,ESRI.ArcGIS.esriSystem.IName)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping,ESRI.ArcGIS.esriSystem.IName)
+  id: Transfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping,ESRI.ArcGIS.esriSystem.IName)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  langs:
+  - csharp
+  - vb
+  name: Transfer(IEnumNameMapping, IName)
+  nameWithType: IGeoDBDataTransfer.Transfer(IEnumNameMapping, IName)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping, ESRI.ArcGIS.esriSystem.IName)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Transfer(IEnumNameMapping from, IName toName)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+    - id: toName
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: Sub Transfer(from As IEnumNameMapping, toName As IName)
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  id: NumberObjectsToTransfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer
+  langs:
+  - csharp
+  - vb
+  name: NumberObjectsToTransfer(IEnumNameMapping)
+  nameWithType: IGeoDBDataTransfer.NumberObjectsToTransfer(IEnumNameMapping)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer(ESRI.ArcGIS.Geodatabase.IEnumNameMapping)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int NumberObjectsToTransfer(IEnumNameMapping from)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+    return:
+      type: System.Int32
+    content.vb: Function NumberObjectsToTransfer(from As IEnumNameMapping) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.html#ESRI_ArcGIS_Geodatabase_IGeoDBDataTransfer_GenerateNameMapping_ESRI_ArcGIS_esriSystem_IEnumName_ESRI_ArcGIS_esriSystem_IName_ESRI_ArcGIS_Geodatabase_IEnumNameMapping__
+  name: GenerateNameMapping
+  nameWithType: IGeoDBDataTransfer.GenerateNameMapping
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.GenerateNameMapping
+- uid: ESRI.ArcGIS.esriSystem.IEnumName
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumName.html
+  name: IEnumName
+  nameWithType: IEnumName
+  fullName: ESRI.ArcGIS.esriSystem.IEnumName
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNameMapping.html
+  name: IEnumNameMapping
+  nameWithType: IEnumNameMapping
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNameMapping
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.html#ESRI_ArcGIS_Geodatabase_IGeoDBDataTransfer_Transfer_ESRI_ArcGIS_Geodatabase_IEnumNameMapping_ESRI_ArcGIS_esriSystem_IName_
+  name: Transfer
+  nameWithType: IGeoDBDataTransfer.Transfer
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.Transfer
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.html#ESRI_ArcGIS_Geodatabase_IGeoDBDataTransfer_NumberObjectsToTransfer_ESRI_ArcGIS_Geodatabase_IEnumNameMapping_
+  name: NumberObjectsToTransfer
+  nameWithType: IGeoDBDataTransfer.NumberObjectsToTransfer
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDBDataTransfer.NumberObjectsToTransfer
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

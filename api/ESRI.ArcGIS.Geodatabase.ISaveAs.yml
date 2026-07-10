@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ISaveAs
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISaveAs
+  id: ISaveAs
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs(System.String)
+  - ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISaveAs
+  nameWithType: ISaveAs
+  fullName: ESRI.ArcGIS.Geodatabase.ISaveAs
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to methods for saving as a new Dataset.
+  example: []
+  syntax:
+    content: >-
+      [Guid("C7A92E97-597E-4A69-A872-29CB60B5E0DB")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISaveAs
+    content.vb: >-
+      <Guid("C7A92E97-597E-4A69-A872-29CB60B5E0DB")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISaveAs
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.MosaicRasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C7A92E97-597E-4A69-A872-29CB60B5E0DB
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  id: SaveAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ISaveAs
+  langs:
+  - csharp
+  - vb
+  name: SaveAs(string, IWorkspace, string)
+  nameWithType: ISaveAs.SaveAs(string, IWorkspace, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs(string, ESRI.ArcGIS.Geodatabase.IWorkspace, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IDataset SaveAs(string Name, IWorkspace Workspace, string Format)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Workspace
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    - id: Format
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    content.vb: Function SaveAs(Name As String, Workspace As IWorkspace, Format As String) As IDataset
+  overload: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs*
+  nameWithType.vb: ISaveAs.SaveAs(String, IWorkspace, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs(String, ESRI.ArcGIS.Geodatabase.IWorkspace, String)
+  name.vb: SaveAs(String, IWorkspace, String)
+- uid: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs(System.String)
+  id: CanSaveAs(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ISaveAs
+  langs:
+  - csharp
+  - vb
+  name: CanSaveAs(string)
+  nameWithType: ISaveAs.CanSaveAs(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Checks if it's can be saved as a new persistent Dataset of a given format.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanSaveAs(string Format)
+    parameters:
+    - id: Format
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function CanSaveAs(Format As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs*
+  nameWithType.vb: ISaveAs.CanSaveAs(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs(String)
+  name.vb: CanSaveAs(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISaveAs.html#ESRI_ArcGIS_Geodatabase_ISaveAs_SaveAs_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_System_String_
+  name: SaveAs
+  nameWithType: ISaveAs.SaveAs
+  fullName: ESRI.ArcGIS.Geodatabase.ISaveAs.SaveAs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISaveAs.html#ESRI_ArcGIS_Geodatabase_ISaveAs_CanSaveAs_System_String_
+  name: CanSaveAs
+  nameWithType: ISaveAs.CanSaveAs
+  fullName: ESRI.ArcGIS.Geodatabase.ISaveAs.CanSaveAs
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

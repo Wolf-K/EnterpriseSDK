@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  commentId: T:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  id: IAGSServerConnectionAdmin
+  parent: ESRI.ArcGIS.GISClient
+  children:
+  - ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+  - ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration(System.String,System.String)
+  - ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: IAGSServerConnectionAdmin
+  nameWithType: IAGSServerConnectionAdmin
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  type: Interface
+  assemblies:
+  - ESRI.Server.GISClient
+  namespace: ESRI.ArcGIS.GISClient
+  summary: Provides access to the server object manager, server object admin and server object configurations for the GIS server.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("2609D396-4C06-4C35-9AE3-DF690ED88506")]
+
+      public interface IAGSServerConnectionAdmin
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("2609D396-4C06-4C35-9AE3-DF690ED88506")>
+
+      Public Interface IAGSServerConnectionAdmin
+  derivedClasses:
+  - ESRI.ArcGIS.GISClient.AGSServerConnectionClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2609D396-4C06-4C35-9AE3-DF690ED88506
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+  commentId: P:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+  id: ServerObjectManager
+  parent: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  langs:
+  - csharp
+  - vb
+  name: ServerObjectManager
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectManager
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+  type: Property
+  assemblies:
+  - ESRI.Server.GISClient
+  namespace: ESRI.ArcGIS.GISClient
+  summary: The server object manager for the connected GIS server.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectManager ServerObjectManager { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectManager
+    content.vb: ReadOnly Property ServerObjectManager As IServerObjectManager
+  overload: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager*
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+  commentId: P:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+  id: ServerObjectAdmin
+  parent: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  langs:
+  - csharp
+  - vb
+  name: ServerObjectAdmin
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectAdmin
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+  type: Property
+  assemblies:
+  - ESRI.Server.GISClient
+  namespace: ESRI.ArcGIS.GISClient
+  summary: The server object admin for the connected GIS server.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectAdmin ServerObjectAdmin { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectAdmin
+    content.vb: ReadOnly Property ServerObjectAdmin As IServerObjectAdmin
+  overload: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin*
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration(System.String,System.String)
+  commentId: P:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration(System.String,System.String)
+  id: ServerObjectConfiguration(System.String,System.String)
+  parent: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin
+  langs:
+  - csharp
+  - vb
+  name: ServerObjectConfiguration[string, string]
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectConfiguration[string, string]
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration[string, string]
+  type: Property
+  assemblies:
+  - ESRI.Server.GISClient
+  namespace: ESRI.ArcGIS.GISClient
+  summary: The server object configuration with the specified Name and TypeName.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectConfiguration ServerObjectConfiguration[string Name, string Type] { get; }
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Type
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectConfiguration
+    content.vb: ReadOnly Property ServerObjectConfiguration(Name As String, Type As String) As IServerObjectConfiguration
+  overload: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration*
+  nameWithType.vb: IAGSServerConnectionAdmin.ServerObjectConfiguration(String, String)
+  fullName.vb: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration(String, String)
+  name.vb: ServerObjectConfiguration(String, String)
+references:
+- uid: ESRI.ArcGIS.GISClient
+  commentId: N:ESRI.ArcGIS.GISClient
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GISClient
+  nameWithType: ESRI.ArcGIS.GISClient
+  fullName: ESRI.ArcGIS.GISClient
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GISClient
+    name: GISClient
+    isExternal: true
+    href: ESRI.ArcGIS.GISClient.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GISClient
+    name: GISClient
+    isExternal: true
+    href: ESRI.ArcGIS.GISClient.html
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager*
+  commentId: Overload:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+  isExternal: true
+  href: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.html#ESRI_ArcGIS_GISClient_IAGSServerConnectionAdmin_ServerObjectManager
+  name: ServerObjectManager
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectManager
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectManager
+- uid: ESRI.ArcGIS.Server.IServerObjectManager
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectManager
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html
+  name: IServerObjectManager
+  nameWithType: IServerObjectManager
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin*
+  commentId: Overload:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+  isExternal: true
+  href: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.html#ESRI_ArcGIS_GISClient_IAGSServerConnectionAdmin_ServerObjectAdmin
+  name: ServerObjectAdmin
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectAdmin
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectAdmin
+- uid: ESRI.ArcGIS.Server.IServerObjectAdmin
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectAdmin
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectAdmin.html
+  name: IServerObjectAdmin
+  nameWithType: IServerObjectAdmin
+  fullName: ESRI.ArcGIS.Server.IServerObjectAdmin
+- uid: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration*
+  commentId: Overload:ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration
+  isExternal: true
+  href: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.html#ESRI_ArcGIS_GISClient_IAGSServerConnectionAdmin_ServerObjectConfiguration_System_String_System_String_
+  name: ServerObjectConfiguration
+  nameWithType: IAGSServerConnectionAdmin.ServerObjectConfiguration
+  fullName: ESRI.ArcGIS.GISClient.IAGSServerConnectionAdmin.ServerObjectConfiguration
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectConfiguration
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html
+  name: IServerObjectConfiguration
+  nameWithType: IServerObjectConfiguration
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

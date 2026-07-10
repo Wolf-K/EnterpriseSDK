@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  commentId: T:ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  id: IPolycurveGeodetic
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  - ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify(System.Double)
+  - ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit)
+  langs:
+  - csharp
+  - vb
+  name: IPolycurveGeodetic
+  nameWithType: IPolycurveGeodetic
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides various geodetic operations on curves.
+  example: []
+  syntax:
+    content: >-
+      [Guid("00FCC4E5-5A6C-482B-9B77-1524D05B19D3")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IPolycurveGeodetic : IPolycurve4
+    content.vb: >-
+      <Guid("00FCC4E5-5A6C-482B-9B77-1524D05B19D3")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IPolycurveGeodetic Inherits IPolycurve4
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 00FCC4E5-5A6C-482B-9B77-1524D05B19D3
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify(System.Double)
+  id: GeodesicDensify(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  langs:
+  - csharp
+  - vb
+  name: GeodesicDensify(double)
+  nameWithType: IPolycurveGeodetic.GeodesicDensify(double)
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GeodesicDensify(double maxSegmentLength)
+    parameters:
+    - id: maxSegmentLength
+      type: System.Double
+    content.vb: Sub GeodesicDensify(maxSegmentLength As Double)
+  overload: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify*
+  nameWithType.vb: IPolycurveGeodetic.GeodesicDensify(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify(Double)
+  name.vb: GeodesicDensify(Double)
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  id: DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  langs:
+  - csharp
+  - vb
+  name: DensifyGeodetic(esriGeodeticType, ILinearUnit, esriCurveDensifyMethod, double)
+  nameWithType: IPolycurveGeodetic.DensifyGeodetic(esriGeodeticType, ILinearUnit, esriCurveDensifyMethod, double)
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType, ESRI.ArcGIS.Geometry.ILinearUnit, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void DensifyGeodetic(esriGeodeticType geodeticLineType, ILinearUnit pLU, esriCurveDensifyMethod densifyMethod, double densifyParameter)
+    parameters:
+    - id: geodeticLineType
+      type: ESRI.ArcGIS.Geometry.esriGeodeticType
+    - id: pLU
+      type: ESRI.ArcGIS.Geometry.ILinearUnit
+    - id: densifyMethod
+      type: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+    - id: densifyParameter
+      type: System.Double
+    content.vb: Sub DensifyGeodetic(geodeticLineType As esriGeodeticType, pLU As ILinearUnit, densifyMethod As esriCurveDensifyMethod, densifyParameter As Double)
+  overload: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic*
+  nameWithType.vb: IPolycurveGeodetic.DensifyGeodetic(esriGeodeticType, ILinearUnit, esriCurveDensifyMethod, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType, ESRI.ArcGIS.Geometry.ILinearUnit, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, Double)
+  name.vb: DensifyGeodetic(esriGeodeticType, ILinearUnit, esriCurveDensifyMethod, Double)
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit)
+  commentId: P:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit)
+  id: LengthGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType,ESRI.ArcGIS.Geometry.ILinearUnit)
+  parent: ESRI.ArcGIS.Geometry.IPolycurveGeodetic
+  langs:
+  - csharp
+  - vb
+  name: LengthGeodetic[esriGeodeticType, ILinearUnit]
+  nameWithType: IPolycurveGeodetic.LengthGeodetic[esriGeodeticType, ILinearUnit]
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic[ESRI.ArcGIS.Geometry.esriGeodeticType, ESRI.ArcGIS.Geometry.ILinearUnit]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns length of this polycurve calculated using various types of geodetic methods.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double LengthGeodetic[esriGeodeticType geodeticLineType, ILinearUnit pLU] { get; }
+    parameters:
+    - id: geodeticLineType
+      type: ESRI.ArcGIS.Geometry.esriGeodeticType
+    - id: pLU
+      type: ESRI.ArcGIS.Geometry.ILinearUnit
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property LengthGeodetic(geodeticLineType As esriGeodeticType, pLU As ILinearUnit) As Double
+  overload: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic*
+  nameWithType.vb: IPolycurveGeodetic.LengthGeodetic(esriGeodeticType, ILinearUnit)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic(ESRI.ArcGIS.Geometry.esriGeodeticType, ESRI.ArcGIS.Geometry.ILinearUnit)
+  name.vb: LengthGeodetic(esriGeodeticType, ILinearUnit)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.html#ESRI_ArcGIS_Geometry_IPolycurveGeodetic_GeodesicDensify_System_Double_
+  name: GeodesicDensify
+  nameWithType: IPolycurveGeodetic.GeodesicDensify
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.GeodesicDensify
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.html#ESRI_ArcGIS_Geometry_IPolycurveGeodetic_DensifyGeodetic_ESRI_ArcGIS_Geometry_esriGeodeticType_ESRI_ArcGIS_Geometry_ILinearUnit_ESRI_ArcGIS_Geometry_esriCurveDensifyMethod_System_Double_
+  name: DensifyGeodetic
+  nameWithType: IPolycurveGeodetic.DensifyGeodetic
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.DensifyGeodetic
+- uid: ESRI.ArcGIS.Geometry.esriGeodeticType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeodeticType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeodeticType.html
+  name: esriGeodeticType
+  nameWithType: esriGeodeticType
+  fullName: ESRI.ArcGIS.Geometry.esriGeodeticType
+- uid: ESRI.ArcGIS.Geometry.ILinearUnit
+  commentId: T:ESRI.ArcGIS.Geometry.ILinearUnit
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILinearUnit.html
+  name: ILinearUnit
+  nameWithType: ILinearUnit
+  fullName: ESRI.ArcGIS.Geometry.ILinearUnit
+- uid: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+  commentId: T:ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod.html
+  name: esriCurveDensifyMethod
+  nameWithType: esriCurveDensifyMethod
+  fullName: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+- uid: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.html#ESRI_ArcGIS_Geometry_IPolycurveGeodetic_LengthGeodetic_ESRI_ArcGIS_Geometry_esriGeodeticType_ESRI_ArcGIS_Geometry_ILinearUnit_
+  name: LengthGeodetic
+  nameWithType: IPolycurveGeodetic.LengthGeodetic
+  fullName: ESRI.ArcGIS.Geometry.IPolycurveGeodetic.LengthGeodetic

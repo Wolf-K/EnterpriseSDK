@@ -1,0 +1,433 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  id: ITxEnumTrackId
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime(System.String)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent(System.String,ESRI.ArcGIS.esriSystem.ITime@,ESRI.ArcGIS.esriSystem.ITime@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures(System.String)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+  langs:
+  - csharp
+  - vb
+  name: ITxEnumTrackId
+  nameWithType: ITxEnumTrackId
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to the list of unique Track IDs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("057B4C30-5C61-4B6C-A24D-B02F98BE418F")]
+
+      public interface ITxEnumTrackId
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("057B4C30-5C61-4B6C-A24D-B02F98BE418F")>
+
+      Public Interface ITxEnumTrackId
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 057B4C30-5C61-4B6C-A24D-B02F98BE418F
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent(System.String,ESRI.ArcGIS.esriSystem.ITime@,ESRI.ArcGIS.esriSystem.ITime@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent(System.String,ESRI.ArcGIS.esriSystem.ITime@,ESRI.ArcGIS.esriSystem.ITime@)
+  id: QueryTrackTimeExtent(System.String,ESRI.ArcGIS.esriSystem.ITime@,ESRI.ArcGIS.esriSystem.ITime@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: QueryTrackTimeExtent(string, out ITime, out ITime)
+  nameWithType: ITxEnumTrackId.QueryTrackTimeExtent(string, out ITime, out ITime)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent(string, out ESRI.ArcGIS.esriSystem.ITime, out ESRI.ArcGIS.esriSystem.ITime)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void QueryTrackTimeExtent(string trackId, out ITime startTime, out ITime endTime)
+    parameters:
+    - id: trackId
+      type: System.String
+    - id: startTime
+      type: ESRI.ArcGIS.esriSystem.ITime
+    - id: endTime
+      type: ESRI.ArcGIS.esriSystem.ITime
+    content.vb: Sub QueryTrackTimeExtent(trackId As String, startTime As ITime, endTime As ITime)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent*
+  nameWithType.vb: ITxEnumTrackId.QueryTrackTimeExtent(String, ITime, ITime)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent(String, ESRI.ArcGIS.esriSystem.ITime, ESRI.ArcGIS.esriSystem.ITime)
+  name.vb: QueryTrackTimeExtent(String, ITime, ITime)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+  id: FirstTrackId
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: FirstTrackId
+  nameWithType: ITxEnumTrackId.FirstTrackId
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Retrives the first Track ID in the list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string FirstTrackId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property FirstTrackId As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+  id: NextTrackId
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: NextTrackId
+  nameWithType: ITxEnumTrackId.NextTrackId
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Retrives the next Track ID in the list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string NextTrackId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property NextTrackId As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+  id: TrackIds
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: TrackIds
+  nameWithType: ITxEnumTrackId.TrackIds
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Retrives the Track ID list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string[] TrackIds { get; }
+    parameters: []
+    return:
+      type: System.String[]
+    content.vb: ReadOnly Property TrackIds As String()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures(System.String)
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures(System.String)
+  id: TrackFeatures(System.String)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: TrackFeatures[string]
+  nameWithType: ITxEnumTrackId.TrackFeatures[string]
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Returns a selection set of features in a given track.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet TrackFeatures[string trackId] { get; }
+    parameters:
+    - id: trackId
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: ReadOnly Property TrackFeatures(trackId As String) As ISelectionSet
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures*
+  nameWithType.vb: ITxEnumTrackId.TrackFeatures(String)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures(String)
+  name.vb: TrackFeatures(String)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime(System.String)
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime(System.String)
+  id: LastUpdateTime(System.String)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId
+  langs:
+  - csharp
+  - vb
+  name: LastUpdateTime[string]
+  nameWithType: ITxEnumTrackId.LastUpdateTime[string]
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Returns the time that a given track was last updated.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITime LastUpdateTime[string trackId] { get; }
+    parameters:
+    - id: trackId
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.ITime
+    content.vb: ReadOnly Property LastUpdateTime(trackId As String) As ITime
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime*
+  nameWithType.vb: ITxEnumTrackId.LastUpdateTime(String)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime(String)
+  name.vb: LastUpdateTime(String)
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_QueryTrackTimeExtent_System_String_ESRI_ArcGIS_esriSystem_ITime__ESRI_ArcGIS_esriSystem_ITime__
+  name: QueryTrackTimeExtent
+  nameWithType: ITxEnumTrackId.QueryTrackTimeExtent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.QueryTrackTimeExtent
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.ITime
+  commentId: T:ESRI.ArcGIS.esriSystem.ITime
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITime.html
+  name: ITime
+  nameWithType: ITime
+  fullName: ESRI.ArcGIS.esriSystem.ITime
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_FirstTrackId
+  name: FirstTrackId
+  nameWithType: ITxEnumTrackId.FirstTrackId
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.FirstTrackId
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_NextTrackId
+  name: NextTrackId
+  nameWithType: ITxEnumTrackId.NextTrackId
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.NextTrackId
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_TrackIds
+  name: TrackIds
+  nameWithType: ITxEnumTrackId.TrackIds
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackIds
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_TrackFeatures_System_String_
+  name: TrackFeatures
+  nameWithType: ITxEnumTrackId.TrackFeatures
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.TrackFeatures
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITxEnumTrackId_LastUpdateTime_System_String_
+  name: LastUpdateTime
+  nameWithType: ITxEnumTrackId.LastUpdateTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITxEnumTrackId.LastUpdateTime

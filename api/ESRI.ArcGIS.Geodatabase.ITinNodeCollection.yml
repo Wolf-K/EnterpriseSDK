@@ -1,0 +1,664 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  id: ITinNodeCollection
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geodatabase.ITinFilter,ESRI.ArcGIS.Geometry.IPolygon,System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion(System.Int32,ESRI.ArcGIS.Geometry.IPolygon)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode(System.Int32,ESRI.ArcGIS.Geodatabase.ITinNode)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ(System.Int32,ESRI.ArcGIS.esriSystem.WKSPointZ@)
+  langs:
+  - csharp
+  - vb
+  name: ITinNodeCollection
+  nameWithType: ITinNodeCollection
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control TIN nodes.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("9A2A4B72-11CF-11D2-A556-0000F8774F0F")]
+
+      public interface ITinNodeCollection
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("9A2A4B72-11CF-11D2-A556-0000F8774F0F")>
+
+      Public Interface ITinNodeCollection
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9A2A4B72-11CF-11D2-A556-0000F8774F0F
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode(System.Int32)
+  id: GetNode(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetNode(int)
+  nameWithType: ITinNodeCollection.GetNode(int)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The node referenced by the index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITinNode GetNode(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITinNode
+    content.vb: Function GetNode(Index As Integer) As ITinNode
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode*
+  nameWithType.vb: ITinNodeCollection.GetNode(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode(Integer)
+  name.vb: GetNode(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode(System.Int32,ESRI.ArcGIS.Geodatabase.ITinNode)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode(System.Int32,ESRI.ArcGIS.Geodatabase.ITinNode)
+  id: QueryNode(System.Int32,ESRI.ArcGIS.Geodatabase.ITinNode)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: QueryNode(int, ITinNode)
+  nameWithType: ITinNodeCollection.QueryNode(int, ITinNode)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode(int, ESRI.ArcGIS.Geodatabase.ITinNode)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryNode(int Index, ITinNode pNode)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pNode
+      type: ESRI.ArcGIS.Geodatabase.ITinNode
+    content.vb: Sub QueryNode(Index As Integer, pNode As ITinNode)
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode*
+  nameWithType.vb: ITinNodeCollection.QueryNode(Integer, ITinNode)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode(Integer, ESRI.ArcGIS.Geodatabase.ITinNode)
+  name.vb: QueryNode(Integer, ITinNode)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryNodeAsPoint(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: QueryNodeAsPoint(int, IPoint)
+  nameWithType: ITinNodeCollection.QueryNodeAsPoint(int, IPoint)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint(int, ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryNodeAsPoint(int Index, IPoint pPoint)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryNodeAsPoint(Index As Integer, pPoint As IPoint)
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint*
+  nameWithType.vb: ITinNodeCollection.QueryNodeAsPoint(Integer, IPoint)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint(Integer, ESRI.ArcGIS.Geometry.IPoint)
+  name.vb: QueryNodeAsPoint(Integer, IPoint)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ(System.Int32,ESRI.ArcGIS.esriSystem.WKSPointZ@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ(System.Int32,ESRI.ArcGIS.esriSystem.WKSPointZ@)
+  id: QueryNodeAsWKSPointZ(System.Int32,ESRI.ArcGIS.esriSystem.WKSPointZ@)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: QueryNodeAsWKSPointZ(int, out WKSPointZ)
+  nameWithType: ITinNodeCollection.QueryNodeAsWKSPointZ(int, out WKSPointZ)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ(int, out ESRI.ArcGIS.esriSystem.WKSPointZ)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryNodeAsWKSPointZ(int Index, out WKSPointZ pPoint)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pPoint
+      type: ESRI.ArcGIS.esriSystem.WKSPointZ
+    content.vb: Sub QueryNodeAsWKSPointZ(Index As Integer, pPoint As WKSPointZ)
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ*
+  nameWithType.vb: ITinNodeCollection.QueryNodeAsWKSPointZ(Integer, WKSPointZ)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ(Integer, ESRI.ArcGIS.esriSystem.WKSPointZ)
+  name.vb: QueryNodeAsWKSPointZ(Integer, WKSPointZ)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip(System.Int32)
+  id: GetVoronoiRegionNoClip(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetVoronoiRegionNoClip(int)
+  nameWithType: ITinNodeCollection.GetVoronoiRegionNoClip(int)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns a Voronoi polygon about the node referenced by the index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolygon GetVoronoiRegionNoClip(int nodeIndex)
+    parameters:
+    - id: nodeIndex
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: Function GetVoronoiRegionNoClip(nodeIndex As Integer) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip*
+  nameWithType.vb: ITinNodeCollection.GetVoronoiRegionNoClip(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip(Integer)
+  name.vb: GetVoronoiRegionNoClip(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion(System.Int32,ESRI.ArcGIS.Geometry.IPolygon)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion(System.Int32,ESRI.ArcGIS.Geometry.IPolygon)
+  id: GetVoronoiRegion(System.Int32,ESRI.ArcGIS.Geometry.IPolygon)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetVoronoiRegion(int, IPolygon)
+  nameWithType: ITinNodeCollection.GetVoronoiRegion(int, IPolygon)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion(int, ESRI.ArcGIS.Geometry.IPolygon)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IPolygon GetVoronoiRegion(int nodeIndex, IPolygon pClippingPolygon)
+    parameters:
+    - id: nodeIndex
+      type: System.Int32
+    - id: pClippingPolygon
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: Function GetVoronoiRegion(nodeIndex As Integer, pClippingPolygon As IPolygon) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion*
+  nameWithType.vb: ITinNodeCollection.GetVoronoiRegion(Integer, IPolygon)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion(Integer, ESRI.ArcGIS.Geometry.IPolygon)
+  name.vb: GetVoronoiRegion(Integer, IPolygon)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geodatabase.ITinFilter,ESRI.ArcGIS.Geometry.IPolygon,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geodatabase.ITinFilter,ESRI.ArcGIS.Geometry.IPolygon,System.String,System.String)
+  id: ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geodatabase.ITinFilter,ESRI.ArcGIS.Geometry.IPolygon,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: ConvertToVoronoiRegions(IFeatureClass, ITinFilter, IPolygon, string, string)
+  nameWithType: ITinNodeCollection.ConvertToVoronoiRegions(IFeatureClass, ITinFilter, IPolygon, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.Geodatabase.ITinFilter, ESRI.ArcGIS.Geometry.IPolygon, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ConvertToVoronoiRegions(IFeatureClass pFeatureClass, ITinFilter pFilter, IPolygon pClippingPolygon, string indexFieldName, string tagFieldName)
+    parameters:
+    - id: pFeatureClass
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: pFilter
+      type: ESRI.ArcGIS.Geodatabase.ITinFilter
+    - id: pClippingPolygon
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    - id: indexFieldName
+      type: System.String
+    - id: tagFieldName
+      type: System.String
+    content.vb: Sub ConvertToVoronoiRegions(pFeatureClass As IFeatureClass, pFilter As ITinFilter, pClippingPolygon As IPolygon, indexFieldName As String, tagFieldName As String)
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions*
+  nameWithType.vb: ITinNodeCollection.ConvertToVoronoiRegions(IFeatureClass, ITinFilter, IPolygon, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions(ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.Geodatabase.ITinFilter, ESRI.ArcGIS.Geometry.IPolygon, String, String)
+  name.vb: ConvertToVoronoiRegions(IFeatureClass, ITinFilter, IPolygon, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ(System.Int32)
+  id: GetNodeZ(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetNodeZ(int)
+  nameWithType: ITinNodeCollection.GetNodeZ(int)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the z value of the node referenced by the index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double GetNodeZ(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Function GetNodeZ(Index As Integer) As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ*
+  nameWithType.vb: ITinNodeCollection.GetNodeZ(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ(Integer)
+  name.vb: GetNodeZ(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue(System.Int32)
+  id: GetNodeTagValue(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: GetNodeTagValue(int)
+  nameWithType: ITinNodeCollection.GetNodeTagValue(int)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the tag value of the TIN node specified by the index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int GetNodeTagValue(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function GetNodeTagValue(Index As Integer) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue*
+  nameWithType.vb: ITinNodeCollection.GetNodeTagValue(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue(Integer)
+  name.vb: GetNodeTagValue(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+  id: NodeCount
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: NodeCount
+  nameWithType: ITinNodeCollection.NodeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of nodes in the TIN.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int NodeCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NodeCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+  id: HasNodeTagValues
+  parent: ESRI.ArcGIS.Geodatabase.ITinNodeCollection
+  langs:
+  - csharp
+  - vb
+  name: HasNodeTagValues
+  nameWithType: ITinNodeCollection.HasNodeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if TIN nodes have tag values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasNodeTagValues { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasNodeTagValues As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_GetNode_System_Int32_
+  name: GetNode
+  nameWithType: ITinNodeCollection.GetNode
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITinNode
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinNode
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNode.html
+  name: ITinNode
+  nameWithType: ITinNode
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNode
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_QueryNode_System_Int32_ESRI_ArcGIS_Geodatabase_ITinNode_
+  name: QueryNode
+  nameWithType: ITinNodeCollection.QueryNode
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNode
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_QueryNodeAsPoint_System_Int32_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryNodeAsPoint
+  nameWithType: ITinNodeCollection.QueryNodeAsPoint
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsPoint
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_QueryNodeAsWKSPointZ_System_Int32_ESRI_ArcGIS_esriSystem_WKSPointZ__
+  name: QueryNodeAsWKSPointZ
+  nameWithType: ITinNodeCollection.QueryNodeAsWKSPointZ
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.QueryNodeAsWKSPointZ
+- uid: ESRI.ArcGIS.esriSystem.WKSPointZ
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPointZ
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPointZ.html
+  name: WKSPointZ
+  nameWithType: WKSPointZ
+  fullName: ESRI.ArcGIS.esriSystem.WKSPointZ
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_GetVoronoiRegionNoClip_System_Int32_
+  name: GetVoronoiRegionNoClip
+  nameWithType: ITinNodeCollection.GetVoronoiRegionNoClip
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegionNoClip
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_GetVoronoiRegion_System_Int32_ESRI_ArcGIS_Geometry_IPolygon_
+  name: GetVoronoiRegion
+  nameWithType: ITinNodeCollection.GetVoronoiRegion
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetVoronoiRegion
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_ConvertToVoronoiRegions_ESRI_ArcGIS_Geodatabase_IFeatureClass_ESRI_ArcGIS_Geodatabase_ITinFilter_ESRI_ArcGIS_Geometry_IPolygon_System_String_System_String_
+  name: ConvertToVoronoiRegions
+  nameWithType: ITinNodeCollection.ConvertToVoronoiRegions
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.ConvertToVoronoiRegions
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.ITinFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinFilter.html
+  name: ITinFilter
+  nameWithType: ITinFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ITinFilter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_GetNodeZ_System_Int32_
+  name: GetNodeZ
+  nameWithType: ITinNodeCollection.GetNodeZ
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeZ
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_GetNodeTagValue_System_Int32_
+  name: GetNodeTagValue
+  nameWithType: ITinNodeCollection.GetNodeTagValue
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.GetNodeTagValue
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_NodeCount
+  name: NodeCount
+  nameWithType: ITinNodeCollection.NodeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.NodeCount
+- uid: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.html#ESRI_ArcGIS_Geodatabase_ITinNodeCollection_HasNodeTagValues
+  name: HasNodeTagValues
+  nameWithType: ITinNodeCollection.HasNodeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITinNodeCollection.HasNodeTagValues
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

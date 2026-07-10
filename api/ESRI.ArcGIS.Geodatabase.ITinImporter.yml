@@ -1,0 +1,238 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITinImporter
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinImporter
+  id: ITinImporter
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML(System.String,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  - ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML(System.String,System.String,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  langs:
+  - csharp
+  - vb
+  name: ITinImporter
+  nameWithType: ITinImporter
+  fullName: ESRI.ArcGIS.Geodatabase.ITinImporter
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides methods to import TIN from external formats (LandXML for example).
+  example: []
+  syntax:
+    content: >-
+      [Guid("D7EFF758-0095-41A4-AB6C-E4A87F35BEDB")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITinImporter
+    content.vb: >-
+      <Guid("D7EFF758-0095-41A4-AB6C-E4A87F35BEDB")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITinImporter
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinImporterClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D7EFF758-0095-41A4-AB6C-E4A87F35BEDB
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML(System.String,System.String,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML(System.String,System.String,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: ImportFromLandXML(System.String,System.String,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.Geodatabase.ITinImporter
+  langs:
+  - csharp
+  - vb
+  name: ImportFromLandXML(string, string, ILongArray, ITrackCancel, out IStringArray)
+  nameWithType: ITinImporter.ImportFromLandXML(string, string, ILongArray, ITrackCancel, out IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML(string, string, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ITrackCancel, out ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ImportFromLandXML(string xmlName, string TinName, ILongArray pIndices, ITrackCancel pTrackCancel, out IStringArray ppOutTinNames)
+    parameters:
+    - id: xmlName
+      type: System.String
+    - id: TinName
+      type: System.String
+    - id: pIndices
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: ppOutTinNames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub ImportFromLandXML(xmlName As String, TinName As String, pIndices As ILongArray, pTrackCancel As ITrackCancel, ppOutTinNames As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML*
+  nameWithType.vb: ITinImporter.ImportFromLandXML(String, String, ILongArray, ITrackCancel, IStringArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML(String, String, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: ImportFromLandXML(String, String, ILongArray, ITrackCancel, IStringArray)
+- uid: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML(System.String,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML(System.String,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: GetTinNamesFromLandXML(System.String,ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.Geodatabase.ITinImporter
+  langs:
+  - csharp
+  - vb
+  name: GetTinNamesFromLandXML(string, ITrackCancel, out IStringArray)
+  nameWithType: ITinImporter.GetTinNamesFromLandXML(string, ITrackCancel, out IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML(string, ESRI.ArcGIS.esriSystem.ITrackCancel, out ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void GetTinNamesFromLandXML(string xmlName, ITrackCancel pTrackCancel, out IStringArray ppOutTinNames)
+    parameters:
+    - id: xmlName
+      type: System.String
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: ppOutTinNames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub GetTinNamesFromLandXML(xmlName As String, pTrackCancel As ITrackCancel, ppOutTinNames As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML*
+  nameWithType.vb: ITinImporter.GetTinNamesFromLandXML(String, ITrackCancel, IStringArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML(String, ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: GetTinNamesFromLandXML(String, ITrackCancel, IStringArray)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinImporter.html#ESRI_ArcGIS_Geodatabase_ITinImporter_ImportFromLandXML_System_String_System_String_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_esriSystem_IStringArray__
+  name: ImportFromLandXML
+  nameWithType: ITinImporter.ImportFromLandXML
+  fullName: ESRI.ArcGIS.Geodatabase.ITinImporter.ImportFromLandXML
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinImporter.html#ESRI_ArcGIS_Geodatabase_ITinImporter_GetTinNamesFromLandXML_System_String_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_esriSystem_IStringArray__
+  name: GetTinNamesFromLandXML
+  nameWithType: ITinImporter.GetTinNamesFromLandXML
+  fullName: ESRI.ArcGIS.Geodatabase.ITinImporter.GetTinNamesFromLandXML

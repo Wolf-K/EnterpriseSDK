@@ -1,0 +1,249 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler
+  id: IRasterDatasetCrawler
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+  langs:
+  - csharp
+  - vb
+  name: IRasterDatasetCrawler
+  nameWithType: IRasterDatasetCrawler
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster dataset crawler.
+  example: []
+  syntax:
+    content: >-
+      [Guid("31D3DCE2-6908-44A1-BEC5-0026EC05DF76")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRasterDatasetCrawler
+    content.vb: >-
+      <Guid("31D3DCE2-6908-44A1-BEC5-0026EC05DF76")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRasterDatasetCrawler
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetCrawlerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 31D3DCE2-6908-44A1-BEC5-0026EC05DF76
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+  id: RasterDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler
+  langs:
+  - csharp
+  - vb
+  name: RasterDataset
+  nameWithType: IRasterDatasetCrawler.RasterDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The raster dataset to crawl.
+  remarks: >-
+    &lt;P&gt;The &lt;STRONG&gt;RasterDataset&lt;/STRONG&gt; object represents a dataset on disk or in a database. It is composed of one or more persistent raster bands. The dataset provides access only to operations that apply to the entire dataset, with the &lt;STRONG&gt;RasterBand&lt;/STRONG&gt; providing access to operations that occur on individual bands.&lt;/P&gt;
+
+    &lt;P&gt;The RasterDataset object performs basic dataset management functions, such as copy, rename, and delete. It can also instantiat RasterBand and &lt;STRONG&gt;Raster&lt;/STRONG&gt; objects representing other aspects of the data. It can be used to examine dataset properties including different format, extent, spatial reference, and number of bands.&lt;/P&gt;
+
+    &lt;P&gt;The spatial reference of the raster raster dataset can be changed through interface &lt;STRONG&gt;IGeoDatasetSchemaEdit&lt;/STRONG&gt;, but it does not project the dataset, only changes the coordinate system associated with the dataset.&lt;BR&gt;The pyramid of the raster dataset can be built or rebuilt to improve display performance for large raster datasets.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterDataset RasterDataset { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Property RasterDataset As IRasterDataset
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+  id: DatasetName
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler
+  langs:
+  - csharp
+  - vb
+  name: DatasetName
+  nameWithType: IRasterDatasetCrawler.DatasetName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The name object representing the raster dataset to crawl.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName DatasetName { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: Property DatasetName As IName
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.html#ESRI_ArcGIS_DatasourcesRaster_IRasterDatasetCrawler_RasterDataset
+  name: RasterDataset
+  nameWithType: IRasterDatasetCrawler.RasterDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.RasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.html#ESRI_ArcGIS_DatasourcesRaster_IRasterDatasetCrawler_DatasetName
+  name: DatasetName
+  nameWithType: IRasterDatasetCrawler.DatasetName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterDatasetCrawler.DatasetName
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

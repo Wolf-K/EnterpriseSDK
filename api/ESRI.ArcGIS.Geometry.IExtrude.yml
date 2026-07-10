@@ -1,0 +1,344 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IExtrude
+  commentId: T:ESRI.ArcGIS.Geometry.IExtrude
+  id: IExtrude
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IExtrude.Extrude(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine(ESRI.ArcGIS.Geometry.ILine,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween(ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo(System.Double,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative(ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IGeometry)
+  langs:
+  - csharp
+  - vb
+  name: IExtrude
+  nameWithType: IExtrude
+  fullName: ESRI.ArcGIS.Geometry.IExtrude
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that can be used to take a geometry and connect it to a translated version of itself to generate a higher-dimensional geometry.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("6B256AE0-1CDE-11D4-9F5C-00C04F6BDF0D")]
+
+      public interface IExtrude
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("6B256AE0-1CDE-11D4-9F5C-00C04F6BDF0D")>
+
+      Public Interface IExtrude
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeometryEnvironmentClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6B256AE0-1CDE-11D4-9F5C-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo(System.Double,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo(System.Double,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  id: ExtrudeFromTo(System.Double,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeFromTo(double, double, IGeometry)
+  nameWithType: IExtrude.ExtrudeFromTo(double, double, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo(double, double, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ExtrudeFromTo(double fromZ, double toZ, IGeometry baseGeom)
+    parameters:
+    - id: fromZ
+      type: System.Double
+    - id: toZ
+      type: System.Double
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ExtrudeFromTo(fromZ As Double, toZ As Double, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo*
+  nameWithType.vb: IExtrude.ExtrudeFromTo(Double, Double, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo(Double, Double, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: ExtrudeFromTo(Double, Double, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  id: ExtrudeAbsolute(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeAbsolute(double, IGeometry)
+  nameWithType: IExtrude.ExtrudeAbsolute(double, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute(double, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ExtrudeAbsolute(double toZ, IGeometry baseGeom)
+    parameters:
+    - id: toZ
+      type: System.Double
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ExtrudeAbsolute(toZ As Double, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute*
+  nameWithType.vb: IExtrude.ExtrudeAbsolute(Double, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute(Double, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: ExtrudeAbsolute(Double, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween(ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween(ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IGeometry)
+  id: ExtrudeBetween(ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IFunctionalSurface,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeBetween(IFunctionalSurface, IFunctionalSurface, IGeometry)
+  nameWithType: IExtrude.ExtrudeBetween(IFunctionalSurface, IFunctionalSurface, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween(ESRI.ArcGIS.Geometry.IFunctionalSurface, ESRI.ArcGIS.Geometry.IFunctionalSurface, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ExtrudeBetween(IFunctionalSurface fromSurface, IFunctionalSurface toSurface, IGeometry baseGeom)
+    parameters:
+    - id: fromSurface
+      type: ESRI.ArcGIS.Geometry.IFunctionalSurface
+    - id: toSurface
+      type: ESRI.ArcGIS.Geometry.IFunctionalSurface
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ExtrudeBetween(fromSurface As IFunctionalSurface, toSurface As IFunctionalSurface, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween*
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine(ESRI.ArcGIS.Geometry.ILine,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine(ESRI.ArcGIS.Geometry.ILine,ESRI.ArcGIS.Geometry.IGeometry)
+  id: ExtrudeAlongLine(ESRI.ArcGIS.Geometry.ILine,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeAlongLine(ILine, IGeometry)
+  nameWithType: IExtrude.ExtrudeAlongLine(ILine, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine(ESRI.ArcGIS.Geometry.ILine, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ExtrudeAlongLine(ILine extrusionLine, IGeometry baseGeom)
+    parameters:
+    - id: extrusionLine
+      type: ESRI.ArcGIS.Geometry.ILine
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ExtrudeAlongLine(extrusionLine As ILine, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine*
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative(ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative(ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IGeometry)
+  id: ExtrudeRelative(ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: ExtrudeRelative(IVector3D, IGeometry)
+  nameWithType: IExtrude.ExtrudeRelative(IVector3D, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative(ESRI.ArcGIS.Geometry.IVector3D, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ExtrudeRelative(IVector3D extrusionVector, IGeometry baseGeom)
+    parameters:
+    - id: extrusionVector
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ExtrudeRelative(extrusionVector As IVector3D, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative*
+- uid: ESRI.ArcGIS.Geometry.IExtrude.Extrude(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IExtrude.Extrude(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  id: Extrude(System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IExtrude
+  langs:
+  - csharp
+  - vb
+  name: Extrude(double, IGeometry)
+  nameWithType: IExtrude.Extrude(double, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.Extrude(double, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry Extrude(double OffsetZ, IGeometry baseGeom)
+    parameters:
+    - id: OffsetZ
+      type: System.Double
+    - id: baseGeom
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function Extrude(OffsetZ As Double, baseGeom As IGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IExtrude.Extrude*
+  nameWithType.vb: IExtrude.Extrude(Double, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IExtrude.Extrude(Double, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: Extrude(Double, IGeometry)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_ExtrudeFromTo_System_Double_System_Double_ESRI_ArcGIS_Geometry_IGeometry_
+  name: ExtrudeFromTo
+  nameWithType: IExtrude.ExtrudeFromTo
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeFromTo
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_ExtrudeAbsolute_System_Double_ESRI_ArcGIS_Geometry_IGeometry_
+  name: ExtrudeAbsolute
+  nameWithType: IExtrude.ExtrudeAbsolute
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAbsolute
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_ExtrudeBetween_ESRI_ArcGIS_Geometry_IFunctionalSurface_ESRI_ArcGIS_Geometry_IFunctionalSurface_ESRI_ArcGIS_Geometry_IGeometry_
+  name: ExtrudeBetween
+  nameWithType: IExtrude.ExtrudeBetween
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeBetween
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface
+  commentId: T:ESRI.ArcGIS.Geometry.IFunctionalSurface
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IFunctionalSurface.html
+  name: IFunctionalSurface
+  nameWithType: IFunctionalSurface
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_ExtrudeAlongLine_ESRI_ArcGIS_Geometry_ILine_ESRI_ArcGIS_Geometry_IGeometry_
+  name: ExtrudeAlongLine
+  nameWithType: IExtrude.ExtrudeAlongLine
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeAlongLine
+- uid: ESRI.ArcGIS.Geometry.ILine
+  commentId: T:ESRI.ArcGIS.Geometry.ILine
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: ESRI.ArcGIS.Geometry.ILine
+- uid: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_ExtrudeRelative_ESRI_ArcGIS_Geometry_IVector3D_ESRI_ArcGIS_Geometry_IGeometry_
+  name: ExtrudeRelative
+  nameWithType: IExtrude.ExtrudeRelative
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.ExtrudeRelative
+- uid: ESRI.ArcGIS.Geometry.IVector3D
+  commentId: T:ESRI.ArcGIS.Geometry.IVector3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector3D.html
+  name: IVector3D
+  nameWithType: IVector3D
+  fullName: ESRI.ArcGIS.Geometry.IVector3D
+- uid: ESRI.ArcGIS.Geometry.IExtrude.Extrude*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IExtrude.Extrude
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IExtrude.html#ESRI_ArcGIS_Geometry_IExtrude_Extrude_System_Double_ESRI_ArcGIS_Geometry_IGeometry_
+  name: Extrude
+  nameWithType: IExtrude.Extrude
+  fullName: ESRI.ArcGIS.Geometry.IExtrude.Extrude

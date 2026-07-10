@@ -1,0 +1,616 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinSurface3
+  id: ITinSurface3
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract(ESRI.ArcGIS.Geometry.IPolygon,ESRI.ArcGIS.Geodatabase.esriTinEdgeType,System.Int32,System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry,System.Double,ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType,System.Boolean@,System.Object@,System.Object@,System.Object@)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ(System.Double,System.Double)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface,ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geodatabase.IFeatureClass,System.String,System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate(ESRI.ArcGIS.Geometry.IRay,System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal(System.Int32,ESRI.ArcGIS.Geometry.IVector3D)
+  langs:
+  - csharp
+  - vb
+  name: ITinSurface3
+  nameWithType: ITinSurface3
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control TIN surfaces.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("6FC85CBE-929C-4482-8192-2959D4E673CD")]
+
+      public interface ITinSurface3
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("6FC85CBE-929C-4482-8192-2959D4E673CD")>
+
+      Public Interface ITinSurface3
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6FC85CBE-929C-4482-8192-2959D4E673CD
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ(System.Double,System.Double)
+  id: InterpolateZ(System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: InterpolateZ(double, double)
+  nameWithType: ITinSurface3.InterpolateZ(double, double)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Interpolate the z-coordinate of the specified location.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double InterpolateZ(double X, double Y)
+    parameters:
+    - id: X
+      type: System.Double
+    - id: Y
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function InterpolateZ(X As Double, Y As Double) As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ*
+  nameWithType.vb: ITinSurface3.InterpolateZ(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ(Double, Double)
+  name.vb: InterpolateZ(Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry,System.Double,ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType,System.Boolean@,System.Object@,System.Object@,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry,System.Double,ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType,System.Boolean@,System.Object@,System.Object@,System.Object@)
+  id: GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry,System.Double,ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType,System.Boolean@,System.Object@,System.Object@,System.Object@)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: GetVolumeAndArea(IGeometry, double, esriPlaneReferenceType, out bool, ref object, ref object, ref object)
+  nameWithType: ITinSurface3.GetVolumeAndArea(IGeometry, double, esriPlaneReferenceType, out bool, ref object, ref object, ref object)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry, double, ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType, out bool, ref object, ref object, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void GetVolumeAndArea(IGeometry pAOI, double referenceHeight, esriPlaneReferenceType Type, out bool pbIsOutsideDataArea, ref object pVolume, ref object pSurfaceArea, ref object pProjectedArea)
+    parameters:
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: referenceHeight
+      type: System.Double
+    - id: Type
+      type: ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType
+    - id: pbIsOutsideDataArea
+      type: System.Boolean
+    - id: pVolume
+      type: System.Object
+    - id: pSurfaceArea
+      type: System.Object
+    - id: pProjectedArea
+      type: System.Object
+    content.vb: Sub GetVolumeAndArea(pAOI As IGeometry, referenceHeight As Double, Type As esriPlaneReferenceType, pbIsOutsideDataArea As Boolean, pVolume As Object, pSurfaceArea As Object, pProjectedArea As Object)
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea*
+  nameWithType.vb: ITinSurface3.GetVolumeAndArea(IGeometry, Double, esriPlaneReferenceType, Boolean, Object, Object, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea(ESRI.ArcGIS.Geometry.IGeometry, Double, ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType, Boolean, Object, Object, Object)
+  name.vb: GetVolumeAndArea(IGeometry, Double, esriPlaneReferenceType, Boolean, Object, Object, Object)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface,ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geodatabase.IFeatureClass,System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface,ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geodatabase.IFeatureClass,System.String,System.String,System.String)
+  id: Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface,ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.Geodatabase.IFeatureClass,System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: Intersect(ITinSurface, IGeometry, IFeatureClass, string, string, string)
+  nameWithType: ITinSurface3.Intersect(ITinSurface, IGeometry, IFeatureClass, string, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface, ESRI.ArcGIS.Geometry.IGeometry, ESRI.ArcGIS.Geodatabase.IFeatureClass, string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Intersect(ITinSurface pReferenceSurface, IGeometry pAOI, IFeatureClass pOutFeatureClass, string volumeFieldName, string surfaceAreaFieldName, string codeFieldName)
+    parameters:
+    - id: pReferenceSurface
+      type: ESRI.ArcGIS.Geodatabase.ITinSurface
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: pOutFeatureClass
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: volumeFieldName
+      type: System.String
+    - id: surfaceAreaFieldName
+      type: System.String
+    - id: codeFieldName
+      type: System.String
+    content.vb: Sub Intersect(pReferenceSurface As ITinSurface, pAOI As IGeometry, pOutFeatureClass As IFeatureClass, volumeFieldName As String, surfaceAreaFieldName As String, codeFieldName As String)
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect*
+  nameWithType.vb: ITinSurface3.Intersect(ITinSurface, IGeometry, IFeatureClass, String, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect(ESRI.ArcGIS.Geodatabase.ITinSurface, ESRI.ArcGIS.Geometry.IGeometry, ESRI.ArcGIS.Geodatabase.IFeatureClass, String, String, String)
+  name.vb: Intersect(ITinSurface, IGeometry, IFeatureClass, String, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal(System.Int32,ESRI.ArcGIS.Geometry.IVector3D)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal(System.Int32,ESRI.ArcGIS.Geometry.IVector3D)
+  id: QueryTriangleNormal(System.Int32,ESRI.ArcGIS.Geometry.IVector3D)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: QueryTriangleNormal(int, IVector3D)
+  nameWithType: ITinSurface3.QueryTriangleNormal(int, IVector3D)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal(int, ESRI.ArcGIS.Geometry.IVector3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryTriangleNormal(int Triangle, IVector3D pNormal)
+    parameters:
+    - id: Triangle
+      type: System.Int32
+    - id: pNormal
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    content.vb: Sub QueryTriangleNormal(Triangle As Integer, pNormal As IVector3D)
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal*
+  nameWithType.vb: ITinSurface3.QueryTriangleNormal(Integer, IVector3D)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal(Integer, ESRI.ArcGIS.Geometry.IVector3D)
+  name.vb: QueryTriangleNormal(Integer, IVector3D)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate(ESRI.ArcGIS.Geometry.IRay,System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate(ESRI.ArcGIS.Geometry.IRay,System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryLocate(ESRI.ArcGIS.Geometry.IRay,System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: QueryLocate(IRay, int, IPoint)
+  nameWithType: ITinSurface3.QueryLocate(IRay, int, IPoint)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate(ESRI.ArcGIS.Geometry.IRay, int, ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryLocate(IRay pRay, int hint, IPoint pLocation)
+    parameters:
+    - id: pRay
+      type: ESRI.ArcGIS.Geometry.IRay
+    - id: hint
+      type: System.Int32
+    - id: pLocation
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryLocate(pRay As IRay, hint As Integer, pLocation As IPoint)
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate*
+  nameWithType.vb: ITinSurface3.QueryLocate(IRay, Integer, IPoint)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate(ESRI.ArcGIS.Geometry.IRay, Integer, ESRI.ArcGIS.Geometry.IPoint)
+  name.vb: QueryLocate(IRay, Integer, IPoint)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  id: QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: QueryLocateWithinDistance(IRay, double, IGeometry)
+  nameWithType: ITinSurface3.QueryLocateWithinDistance(IRay, double, IGeometry)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay, double, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryLocateWithinDistance(IRay pRay, double maxDistance, IGeometry pLocations)
+    parameters:
+    - id: pRay
+      type: ESRI.ArcGIS.Geometry.IRay
+    - id: maxDistance
+      type: System.Double
+    - id: pLocations
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub QueryLocateWithinDistance(pRay As IRay, maxDistance As Double, pLocations As IGeometry)
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance*
+  nameWithType.vb: ITinSurface3.QueryLocateWithinDistance(IRay, Double, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance(ESRI.ArcGIS.Geometry.IRay, Double, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: QueryLocateWithinDistance(IRay, Double, IGeometry)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract(ESRI.ArcGIS.Geometry.IPolygon,ESRI.ArcGIS.Geodatabase.esriTinEdgeType,System.Int32,System.Boolean,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract(ESRI.ArcGIS.Geometry.IPolygon,ESRI.ArcGIS.Geodatabase.esriTinEdgeType,System.Int32,System.Boolean,System.Boolean)
+  id: Extract(ESRI.ArcGIS.Geometry.IPolygon,ESRI.ArcGIS.Geodatabase.esriTinEdgeType,System.Int32,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: Extract(IPolygon, esriTinEdgeType, int, bool, bool)
+  nameWithType: ITinSurface3.Extract(IPolygon, esriTinEdgeType, int, bool, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract(ESRI.ArcGIS.Geometry.IPolygon, ESRI.ArcGIS.Geodatabase.esriTinEdgeType, int, bool, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ITin Extract(IPolygon pBoundary, esriTinEdgeType boundaryEdgeType, int boundaryEdgeValue, bool bConstrainedDelaunay, bool bAllowEdgeSwapping)
+    parameters:
+    - id: pBoundary
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    - id: boundaryEdgeType
+      type: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+    - id: boundaryEdgeValue
+      type: System.Int32
+    - id: bConstrainedDelaunay
+      type: System.Boolean
+    - id: bAllowEdgeSwapping
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITin
+    content.vb: Function Extract(pBoundary As IPolygon, boundaryEdgeType As esriTinEdgeType, boundaryEdgeValue As Integer, bConstrainedDelaunay As Boolean, bAllowEdgeSwapping As Boolean) As ITin
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract*
+  nameWithType.vb: ITinSurface3.Extract(IPolygon, esriTinEdgeType, Integer, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract(ESRI.ArcGIS.Geometry.IPolygon, ESRI.ArcGIS.Geodatabase.esriTinEdgeType, Integer, Boolean, Boolean)
+  name.vb: Extract(IPolygon, esriTinEdgeType, Integer, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+  id: InterpolationMethod
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: InterpolationMethod
+  nameWithType: ITinSurface3.InterpolationMethod
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The elevation interpolation method.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSurfaceInterpolationType InterpolationMethod { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriSurfaceInterpolationType
+    content.vb: Property InterpolationMethod As esriSurfaceInterpolationType
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod*
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance
+  id: ProfileWeedTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITinSurface3
+  langs:
+  - csharp
+  - vb
+  name: ProfileWeedTolerance
+  nameWithType: ITinSurface3.ProfileWeedTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The profile weeding tolerance.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ProfileWeedTolerance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ProfileWeedTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_InterpolateZ_System_Double_System_Double_
+  name: InterpolateZ
+  nameWithType: ITinSurface3.InterpolateZ
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolateZ
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_GetVolumeAndArea_ESRI_ArcGIS_Geometry_IGeometry_System_Double_ESRI_ArcGIS_Geodatabase_esriPlaneReferenceType_System_Boolean__System_Object__System_Object__System_Object__
+  name: GetVolumeAndArea
+  nameWithType: ITinSurface3.GetVolumeAndArea
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.GetVolumeAndArea
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType.html
+  name: esriPlaneReferenceType
+  nameWithType: esriPlaneReferenceType
+  fullName: ESRI.ArcGIS.Geodatabase.esriPlaneReferenceType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_Intersect_ESRI_ArcGIS_Geodatabase_ITinSurface_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_Geodatabase_IFeatureClass_System_String_System_String_System_String_
+  name: Intersect
+  nameWithType: ITinSurface3.Intersect
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.Intersect
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinSurface
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface.html
+  name: ITinSurface
+  nameWithType: ITinSurface
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_QueryTriangleNormal_System_Int32_ESRI_ArcGIS_Geometry_IVector3D_
+  name: QueryTriangleNormal
+  nameWithType: ITinSurface3.QueryTriangleNormal
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryTriangleNormal
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IVector3D
+  commentId: T:ESRI.ArcGIS.Geometry.IVector3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector3D.html
+  name: IVector3D
+  nameWithType: IVector3D
+  fullName: ESRI.ArcGIS.Geometry.IVector3D
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_QueryLocate_ESRI_ArcGIS_Geometry_IRay_System_Int32_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryLocate
+  nameWithType: ITinSurface3.QueryLocate
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocate
+- uid: ESRI.ArcGIS.Geometry.IRay
+  commentId: T:ESRI.ArcGIS.Geometry.IRay
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRay.html
+  name: IRay
+  nameWithType: IRay
+  fullName: ESRI.ArcGIS.Geometry.IRay
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_QueryLocateWithinDistance_ESRI_ArcGIS_Geometry_IRay_System_Double_ESRI_ArcGIS_Geometry_IGeometry_
+  name: QueryLocateWithinDistance
+  nameWithType: ITinSurface3.QueryLocateWithinDistance
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.QueryLocateWithinDistance
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_Extract_ESRI_ArcGIS_Geometry_IPolygon_ESRI_ArcGIS_Geodatabase_esriTinEdgeType_System_Int32_System_Boolean_System_Boolean_
+  name: Extract
+  nameWithType: ITinSurface3.Extract
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.Extract
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTinEdgeType.html
+  name: esriTinEdgeType
+  nameWithType: esriTinEdgeType
+  fullName: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+- uid: ESRI.ArcGIS.Geodatabase.ITin
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITin
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html
+  name: ITin
+  nameWithType: ITin
+  fullName: ESRI.ArcGIS.Geodatabase.ITin
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_InterpolationMethod
+  name: InterpolationMethod
+  nameWithType: ITinSurface3.InterpolationMethod
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.InterpolationMethod
+- uid: ESRI.ArcGIS.Geodatabase.esriSurfaceInterpolationType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSurfaceInterpolationType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSurfaceInterpolationType.html
+  name: esriSurfaceInterpolationType
+  nameWithType: esriSurfaceInterpolationType
+  fullName: ESRI.ArcGIS.Geodatabase.esriSurfaceInterpolationType
+- uid: ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinSurface3.html#ESRI_ArcGIS_Geodatabase_ITinSurface3_ProfileWeedTolerance
+  name: ProfileWeedTolerance
+  nameWithType: ITinSurface3.ProfileWeedTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITinSurface3.ProfileWeedTolerance

@@ -1,0 +1,332 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  id: ILockedFeatureSearch
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures
+  langs:
+  - csharp
+  - vb
+  name: ILockedFeatureSearch
+  nameWithType: ILockedFeatureSearch
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to methods needed to select, search and lock MBDB records.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("6FB36881-6399-4BD6-BE3D-B07033A79114")]
+
+      public interface ILockedFeatureSearch
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("6FB36881-6399-4BD6-BE3D-B07033A79114")>
+
+      Public Interface ILockedFeatureSearch
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6FB36881-6399-4BD6-BE3D-B07033A79114
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)
+  id: SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  langs:
+  - csharp
+  - vb
+  name: SearchAndLock(IQueryFilter, bool)
+  nameWithType: ILockedFeatureSearch.SearchAndLock(IQueryFilter, bool)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ICursor SearchAndLock(IQueryFilter piQueryFilter, bool Recycling)
+    parameters:
+    - id: piQueryFilter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    - id: Recycling
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: Function SearchAndLock(piQueryFilter As IQueryFilter, Recycling As Boolean) As ICursor
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock*
+  nameWithType.vb: ILockedFeatureSearch.SearchAndLock(IQueryFilter, Boolean)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter, Boolean)
+  name.vb: SearchAndLock(IQueryFilter, Boolean)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  id: SelectAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  langs:
+  - csharp
+  - vb
+  name: SelectAndLock(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  nameWithType: ILockedFeatureSearch.SelectAndLock(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock(ESRI.ArcGIS.Geodatabase.IQueryFilter, ESRI.ArcGIS.Geodatabase.esriSelectionType, ESRI.ArcGIS.Geodatabase.esriSelectionOption, ESRI.ArcGIS.Geodatabase.IWorkspace)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ISelectionSet SelectAndLock(IQueryFilter piQueryFilter, esriSelectionType selType, esriSelectionOption selOption, IWorkspace piSelectionContainer)
+    parameters:
+    - id: piQueryFilter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    - id: selType
+      type: ESRI.ArcGIS.Geodatabase.esriSelectionType
+    - id: selOption
+      type: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+    - id: piSelectionContainer
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Function SelectAndLock(piQueryFilter As IQueryFilter, selType As esriSelectionType, selOption As esriSelectionOption, piSelectionContainer As IWorkspace) As ISelectionSet
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures
+  id: UnlockAllFeatures
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  langs:
+  - csharp
+  - vb
+  name: UnlockAllFeatures()
+  nameWithType: ILockedFeatureSearch.UnlockAllFeatures()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Unlocks all features that are locked.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UnlockAllFeatures()
+    content.vb: Sub UnlockAllFeatures()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+  id: AllLockedFIDs
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch
+  langs:
+  - csharp
+  - vb
+  name: AllLockedFIDs
+  nameWithType: ILockedFeatureSearch.AllLockedFIDs
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates the FIDs for all locked features.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFIDSet AllLockedFIDs { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFIDSet
+    content.vb: ReadOnly Property AllLockedFIDs As IFIDSet
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILockedFeatureSearch_SearchAndLock_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_
+  name: SearchAndLock
+  nameWithType: ILockedFeatureSearch.SearchAndLock
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SearchAndLock
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILockedFeatureSearch_SelectAndLock_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_esriSelectionType_ESRI_ArcGIS_Geodatabase_esriSelectionOption_ESRI_ArcGIS_Geodatabase_IWorkspace_
+  name: SelectAndLock
+  nameWithType: ILockedFeatureSearch.SelectAndLock
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.SelectAndLock
+- uid: ESRI.ArcGIS.Geodatabase.esriSelectionType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSelectionType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSelectionType.html
+  name: esriSelectionType
+  nameWithType: esriSelectionType
+  fullName: ESRI.ArcGIS.Geodatabase.esriSelectionType
+- uid: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSelectionOption
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSelectionOption.html
+  name: esriSelectionOption
+  nameWithType: esriSelectionOption
+  fullName: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILockedFeatureSearch_UnlockAllFeatures
+  name: UnlockAllFeatures
+  nameWithType: ILockedFeatureSearch.UnlockAllFeatures
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.UnlockAllFeatures
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILockedFeatureSearch_AllLockedFIDs
+  name: AllLockedFIDs
+  nameWithType: ILockedFeatureSearch.AllLockedFIDs
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILockedFeatureSearch.AllLockedFIDs
+- uid: ESRI.ArcGIS.Geodatabase.IFIDSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFIDSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFIDSet.html
+  name: IFIDSet
+  nameWithType: IFIDSet
+  fullName: ESRI.ArcGIS.Geodatabase.IFIDSet

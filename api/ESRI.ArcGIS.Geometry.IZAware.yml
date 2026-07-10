@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IZAware
+  commentId: T:ESRI.ArcGIS.Geometry.IZAware
+  id: IZAware
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IZAware.DropZs
+  - ESRI.ArcGIS.Geometry.IZAware.ZAware
+  - ESRI.ArcGIS.Geometry.IZAware.ZSimple
+  langs:
+  - csharp
+  - vb
+  name: IZAware
+  nameWithType: IZAware
+  fullName: ESRI.ArcGIS.Geometry.IZAware
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicator interface that identifies geometries that can have persistent Z values attached to their vertices.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("EFEEB8B3-DC23-11D2-9F2E-00C04F6BDF0D")]
+
+      public interface IZAware
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("EFEEB8B3-DC23-11D2-9F2E-00C04F6BDF0D")>
+
+      Public Interface IZAware
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  - ESRI.ArcGIS.Geometry.TriangleFanClass
+  - ESRI.ArcGIS.Geometry.TriangleStripClass
+  - ESRI.ArcGIS.Geometry.TrianglesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EFEEB8B3-DC23-11D2-9F2E-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IZAware.DropZs
+  commentId: M:ESRI.ArcGIS.Geometry.IZAware.DropZs
+  id: DropZs
+  parent: ESRI.ArcGIS.Geometry.IZAware
+  langs:
+  - csharp
+  - vb
+  name: DropZs()
+  nameWithType: IZAware.DropZs()
+  fullName: ESRI.ArcGIS.Geometry.IZAware.DropZs()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets all the Z values to a non-valid number (NaN).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DropZs()
+    content.vb: Sub DropZs()
+  overload: ESRI.ArcGIS.Geometry.IZAware.DropZs*
+- uid: ESRI.ArcGIS.Geometry.IZAware.ZAware
+  commentId: P:ESRI.ArcGIS.Geometry.IZAware.ZAware
+  id: ZAware
+  parent: ESRI.ArcGIS.Geometry.IZAware
+  langs:
+  - csharp
+  - vb
+  name: ZAware
+  nameWithType: IZAware.ZAware
+  fullName: ESRI.ArcGIS.Geometry.IZAware.ZAware
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether or not the geometry is aware of and capable of handling Zs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ZAware { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ZAware As Boolean
+  overload: ESRI.ArcGIS.Geometry.IZAware.ZAware*
+- uid: ESRI.ArcGIS.Geometry.IZAware.ZSimple
+  commentId: P:ESRI.ArcGIS.Geometry.IZAware.ZSimple
+  id: ZSimple
+  parent: ESRI.ArcGIS.Geometry.IZAware
+  langs:
+  - csharp
+  - vb
+  name: ZSimple
+  nameWithType: IZAware.ZSimple
+  fullName: ESRI.ArcGIS.Geometry.IZAware.ZSimple
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if all the Zs are valid numbers.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ZSimple { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ZSimple As Boolean
+  overload: ESRI.ArcGIS.Geometry.IZAware.ZSimple*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IZAware.DropZs*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IZAware.DropZs
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IZAware.html#ESRI_ArcGIS_Geometry_IZAware_DropZs
+  name: DropZs
+  nameWithType: IZAware.DropZs
+  fullName: ESRI.ArcGIS.Geometry.IZAware.DropZs
+- uid: ESRI.ArcGIS.Geometry.IZAware.ZAware*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IZAware.ZAware
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IZAware.html#ESRI_ArcGIS_Geometry_IZAware_ZAware
+  name: ZAware
+  nameWithType: IZAware.ZAware
+  fullName: ESRI.ArcGIS.Geometry.IZAware.ZAware
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IZAware.ZSimple*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IZAware.ZSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IZAware.html#ESRI_ArcGIS_Geometry_IZAware_ZSimple
+  name: ZSimple
+  nameWithType: IZAware.ZSimple
+  fullName: ESRI.ArcGIS.Geometry.IZAware.ZSimple

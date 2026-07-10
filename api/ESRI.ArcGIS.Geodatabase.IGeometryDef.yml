@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeometryDef
+  id: IGeometryDef
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+  - ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+  langs:
+  - csharp
+  - vb
+  name: IGeometryDef
+  nameWithType: IGeometryDef
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about the geometry definition.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("439A0D50-3915-11D1-9CA7-0000F8780619")]
+
+      public interface IGeometryDef
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("439A0D50-3915-11D1-9CA7-0000F8780619")>
+
+      Public Interface IGeometryDef
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.GeometryDefClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 439A0D50-3915-11D1-9CA7-0000F8780619
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+  id: AvgNumPoints
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: AvgNumPoints
+  nameWithType: IGeometryDef.AvgNumPoints
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The estimated average number of points per feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int AvgNumPoints { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property AvgNumPoints As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints*
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+  id: GeometryType
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: GeometryType
+  nameWithType: IGeometryDef.GeometryType
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The enumerated geometry type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriGeometryType GeometryType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    content.vb: ReadOnly Property GeometryType As esriGeometryType
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType*
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize(System.Int32)
+  id: GridSize(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: GridSize[int]
+  nameWithType: IGeometryDef.GridSize[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The size of a spatial index grid.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double GridSize[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property GridSize(Index As Integer) As Double
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize*
+  nameWithType.vb: IGeometryDef.GridSize(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize(Integer)
+  name.vb: GridSize(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+  id: GridCount
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: GridCount
+  nameWithType: IGeometryDef.GridCount
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of spatial index grids.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int GridCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property GridCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount*
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IGeometryDef.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The spatial reference for the dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference*
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+  id: HasZ
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: HasZ
+  nameWithType: IGeometryDef.HasZ
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the featureClass has Z values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasZ { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasZ As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ*
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM
+  id: HasM
+  parent: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  langs:
+  - csharp
+  - vb
+  name: HasM
+  nameWithType: IGeometryDef.HasM
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the feature class has measure (M) values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasM { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasM As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_AvgNumPoints
+  name: AvgNumPoints
+  nameWithType: IGeometryDef.AvgNumPoints
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.AvgNumPoints
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_GeometryType
+  name: GeometryType
+  nameWithType: IGeometryDef.GeometryType
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GeometryType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_GridSize_System_Int32_
+  name: GridSize
+  nameWithType: IGeometryDef.GridSize
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridSize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_GridCount
+  name: GridCount
+  nameWithType: IGeometryDef.GridCount
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.GridCount
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_SpatialReference
+  name: SpatialReference
+  nameWithType: IGeometryDef.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_HasZ
+  name: HasZ
+  nameWithType: IGeometryDef.HasZ
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasZ
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html#ESRI_ArcGIS_Geodatabase_IGeometryDef_HasM
+  name: HasM
+  nameWithType: IGeometryDef.HasM
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef.HasM

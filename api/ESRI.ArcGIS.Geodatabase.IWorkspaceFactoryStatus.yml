@@ -1,0 +1,204 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  id: IWorkspaceFactoryStatus
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace(ESRI.ArcGIS.Geodatabase.IWorkspaceStatus)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus(ESRI.ArcGIS.Geodatabase.IWorkspace)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+  langs:
+  - csharp
+  - vb
+  name: IWorkspaceFactoryStatus
+  nameWithType: IWorkspaceFactoryStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that manage workspace status information.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9B90C0B4-6848-4A17-A0A4-708EE05193D6")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IWorkspaceFactoryStatus
+    content.vb: >-
+      <Guid("9B90C0B4-6848-4A17-A0A4-708EE05193D6")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IWorkspaceFactoryStatus
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesGDB.SdeWorkspaceFactoryClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9B90C0B4-6848-4A17-A0A4-708EE05193D6
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus(ESRI.ArcGIS.Geodatabase.IWorkspace)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus(ESRI.ArcGIS.Geodatabase.IWorkspace)
+  id: PingWorkspaceStatus(ESRI.ArcGIS.Geodatabase.IWorkspace)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  langs:
+  - csharp
+  - vb
+  name: PingWorkspaceStatus(IWorkspace)
+  nameWithType: IWorkspaceFactoryStatus.PingWorkspaceStatus(IWorkspace)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus(ESRI.ArcGIS.Geodatabase.IWorkspace)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspaceStatus PingWorkspaceStatus(IWorkspace Workspace)
+    parameters:
+    - id: Workspace
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceStatus
+    content.vb: Function PingWorkspaceStatus(Workspace As IWorkspace) As IWorkspaceStatus
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace(ESRI.ArcGIS.Geodatabase.IWorkspaceStatus)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace(ESRI.ArcGIS.Geodatabase.IWorkspaceStatus)
+  id: OpenAvailableWorkspace(ESRI.ArcGIS.Geodatabase.IWorkspaceStatus)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  langs:
+  - csharp
+  - vb
+  name: OpenAvailableWorkspace(IWorkspaceStatus)
+  nameWithType: IWorkspaceFactoryStatus.OpenAvailableWorkspace(IWorkspaceStatus)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace(ESRI.ArcGIS.Geodatabase.IWorkspaceStatus)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspace OpenAvailableWorkspace(IWorkspaceStatus wstatus)
+    parameters:
+    - id: wstatus
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceStatus
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Function OpenAvailableWorkspace(wstatus As IWorkspaceStatus) As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+  id: WorkspaceStatus
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceStatus
+  nameWithType: IWorkspaceFactoryStatus.WorkspaceStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Retrieve the workspace status information for all currently opened workspaces.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumWorkspaceStatus WorkspaceStatus { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumWorkspaceStatus
+    content.vb: ReadOnly Property WorkspaceStatus As IEnumWorkspaceStatus
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactoryStatus_PingWorkspaceStatus_ESRI_ArcGIS_Geodatabase_IWorkspace_
+  name: PingWorkspaceStatus
+  nameWithType: IWorkspaceFactoryStatus.PingWorkspaceStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.PingWorkspaceStatus
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceStatus
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceStatus
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceStatus.html
+  name: IWorkspaceStatus
+  nameWithType: IWorkspaceStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceStatus
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactoryStatus_OpenAvailableWorkspace_ESRI_ArcGIS_Geodatabase_IWorkspaceStatus_
+  name: OpenAvailableWorkspace
+  nameWithType: IWorkspaceFactoryStatus.OpenAvailableWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.OpenAvailableWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactoryStatus_WorkspaceStatus
+  name: WorkspaceStatus
+  nameWithType: IWorkspaceFactoryStatus.WorkspaceStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactoryStatus.WorkspaceStatus
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspaceStatus
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumWorkspaceStatus
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspaceStatus.html
+  name: IEnumWorkspaceStatus
+  nameWithType: IEnumWorkspaceStatus
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspaceStatus

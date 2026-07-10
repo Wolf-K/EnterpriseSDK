@@ -1,0 +1,676 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  id: ITerrainLasDataInfo2
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IDoubleArray@,ESRI.ArcGIS.esriSystem.IArray@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init(System.String)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+  langs:
+  - csharp
+  - vb
+  name: ITerrainLasDataInfo2
+  nameWithType: ITerrainLasDataInfo2
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members that provide information about a LAS file.
+  example: []
+  syntax:
+    content: >-
+      [Guid("08AC58E1-F142-45DB-9847-0D28F6D7D241")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITerrainLasDataInfo2 : ITerrainLasDataInfo
+    content.vb: >-
+      <Guid("08AC58E1-F142-45DB-9847-0D28F6D7D241")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITerrainLasDataInfo2 Inherits ITerrainLasDataInfo
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainLasDataImporterClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 08AC58E1-F142-45DB-9847-0D28F6D7D241
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init(System.String)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init(System.String)
+  id: Init(System.String)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: Init(string)
+  nameWithType: ITerrainLasDataInfo2.Init(string)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void Init(string lasFileName)
+    parameters:
+    - id: lasFileName
+      type: System.String
+    content.vb: Sub Init(lasFileName As String)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init*
+  nameWithType.vb: ITerrainLasDataInfo2.Init(String)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init(String)
+  name.vb: Init(String)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion(System.Int32@,System.Int32@)
+  id: GetVersion(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetVersion(out int, out int)
+  nameWithType: ITerrainLasDataInfo2.GetVersion(out int, out int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion(out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void GetVersion(out int pMajor, out int pMinor)
+    parameters:
+    - id: pMajor
+      type: System.Int32
+    - id: pMinor
+      type: System.Int32
+    content.vb: Sub GetVersion(pMajor As Integer, pMinor As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion*
+  nameWithType.vb: ITerrainLasDataInfo2.GetVersion(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion(Integer, Integer)
+  name.vb: GetVersion(Integer, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID
+  id: GetSystemID
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetSystemID()
+  nameWithType: ITerrainLasDataInfo2.GetSystemID()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: string GetSystemID()
+    return:
+      type: System.String
+    content.vb: Function GetSystemID() As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware
+  id: GetGeneratingSoftware
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetGeneratingSoftware()
+  nameWithType: ITerrainLasDataInfo2.GetGeneratingSoftware()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: string GetGeneratingSoftware()
+    return:
+      type: System.String
+    content.vb: Function GetGeneratingSoftware() As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian
+  id: GetFlightDateJulian
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetFlightDateJulian()
+  nameWithType: ITerrainLasDataInfo2.GetFlightDateJulian()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int GetFlightDateJulian()
+    return:
+      type: System.Int32
+    content.vb: Function GetFlightDateJulian() As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear
+  id: GetYear
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetYear()
+  nameWithType: ITerrainLasDataInfo2.GetYear()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int GetYear()
+    return:
+      type: System.Int32
+    content.vb: Function GetYear() As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat
+  id: GetPointDataFormat
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetPointDataFormat()
+  nameWithType: ITerrainLasDataInfo2.GetPointDataFormat()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int GetPointDataFormat()
+    return:
+      type: System.Int32
+    content.vb: Function GetPointDataFormat() As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords
+  id: GetNumberOfPointRecords
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetNumberOfPointRecords()
+  nameWithType: ITerrainLasDataInfo2.GetNumberOfPointRecords()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int GetNumberOfPointRecords()
+    return:
+      type: System.Int32
+    content.vb: Function GetNumberOfPointRecords() As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn(System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn(System.Int32)
+  id: GetNumberOfPointsByReturn(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetNumberOfPointsByReturn(int)
+  nameWithType: ITerrainLasDataInfo2.GetNumberOfPointsByReturn(int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int GetNumberOfPointsByReturn(int ReturnNumber)
+    parameters:
+    - id: ReturnNumber
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function GetNumberOfPointsByReturn(ReturnNumber As Integer) As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn*
+  nameWithType.vb: ITerrainLasDataInfo2.GetNumberOfPointsByReturn(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn(Integer)
+  name.vb: GetNumberOfPointsByReturn(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent
+  id: GetDataExtent
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetDataExtent()
+  nameWithType: ITerrainLasDataInfo2.GetDataExtent()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IEnvelope GetDataExtent()
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Function GetDataExtent() As IEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference
+  id: GetSpatialReference
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialReference()
+  nameWithType: ITerrainLasDataInfo2.GetSpatialReference()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ISpatialReference GetSpatialReference()
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Function GetSpatialReference() As ISpatialReference
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID
+  id: GetFileSourceID
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetFileSourceID()
+  nameWithType: ITerrainLasDataInfo2.GetFileSourceID()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The LAS file's source ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int GetFileSourceID()
+    return:
+      type: System.Int32
+    content.vb: Function GetFileSourceID() As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IDoubleArray@,ESRI.ArcGIS.esriSystem.IArray@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IDoubleArray@,ESRI.ArcGIS.esriSystem.IArray@)
+  id: GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IDoubleArray@,ESRI.ArcGIS.esriSystem.IArray@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: GetPointInfoByClassCode(ITrackCancel, ILongArray, out IDoubleArray, out IArray)
+  nameWithType: ITerrainLasDataInfo2.GetPointInfoByClassCode(ITrackCancel, ILongArray, out IDoubleArray, out IArray)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.IDoubleArray, out ESRI.ArcGIS.esriSystem.IArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void GetPointInfoByClassCode(ITrackCancel pTrackCancel, ILongArray pCodes, out IDoubleArray ppCounts, out IArray ppExtents)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pCodes
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: ppCounts
+      type: ESRI.ArcGIS.esriSystem.IDoubleArray
+    - id: ppExtents
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Sub GetPointInfoByClassCode(pTrackCancel As ITrackCancel, pCodes As ILongArray, ppCounts As IDoubleArray, ppExtents As IArray)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode*
+  nameWithType.vb: ITerrainLasDataInfo2.GetPointInfoByClassCode(ITrackCancel, ILongArray, IDoubleArray, IArray)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IDoubleArray, ESRI.ArcGIS.esriSystem.IArray)
+  name.vb: GetPointInfoByClassCode(ITrackCancel, ILongArray, IDoubleArray, IArray)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+  id: IsStandardGpsTime
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2
+  langs:
+  - csharp
+  - vb
+  name: IsStandardGpsTime
+  nameWithType: ITerrainLasDataInfo2.IsStandardGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if the GPS time is standard GPS Time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStandardGpsTime { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStandardGpsTime As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_Init_System_String_
+  name: Init
+  nameWithType: ITerrainLasDataInfo2.Init
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.Init
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetVersion_System_Int32__System_Int32__
+  name: GetVersion
+  nameWithType: ITerrainLasDataInfo2.GetVersion
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetVersion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetSystemID
+  name: GetSystemID
+  nameWithType: ITerrainLasDataInfo2.GetSystemID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSystemID
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetGeneratingSoftware
+  name: GetGeneratingSoftware
+  nameWithType: ITerrainLasDataInfo2.GetGeneratingSoftware
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetGeneratingSoftware
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetFlightDateJulian
+  name: GetFlightDateJulian
+  nameWithType: ITerrainLasDataInfo2.GetFlightDateJulian
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFlightDateJulian
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetYear
+  name: GetYear
+  nameWithType: ITerrainLasDataInfo2.GetYear
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetYear
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetPointDataFormat
+  name: GetPointDataFormat
+  nameWithType: ITerrainLasDataInfo2.GetPointDataFormat
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointDataFormat
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetNumberOfPointRecords
+  name: GetNumberOfPointRecords
+  nameWithType: ITerrainLasDataInfo2.GetNumberOfPointRecords
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointRecords
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetNumberOfPointsByReturn_System_Int32_
+  name: GetNumberOfPointsByReturn
+  nameWithType: ITerrainLasDataInfo2.GetNumberOfPointsByReturn
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetNumberOfPointsByReturn
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetDataExtent
+  name: GetDataExtent
+  nameWithType: ITerrainLasDataInfo2.GetDataExtent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetDataExtent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetSpatialReference
+  name: GetSpatialReference
+  nameWithType: ITerrainLasDataInfo2.GetSpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetSpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetFileSourceID
+  name: GetFileSourceID
+  nameWithType: ITerrainLasDataInfo2.GetFileSourceID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetFileSourceID
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_GetPointInfoByClassCode_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_IDoubleArray__ESRI_ArcGIS_esriSystem_IArray__
+  name: GetPointInfoByClassCode
+  nameWithType: ITerrainLasDataInfo2.GetPointInfoByClassCode
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.GetPointInfoByClassCode
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.esriSystem.IDoubleArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IDoubleArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDoubleArray.html
+  name: IDoubleArray
+  nameWithType: IDoubleArray
+  fullName: ESRI.ArcGIS.esriSystem.IDoubleArray
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainLasDataInfo2_IsStandardGpsTime
+  name: IsStandardGpsTime
+  nameWithType: ITerrainLasDataInfo2.IsStandardGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainLasDataInfo2.IsStandardGpsTime
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

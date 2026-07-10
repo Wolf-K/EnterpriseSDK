@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  commentId: T:ESRI.ArcGIS.Geometry.IEncode3DProperties
+  id: IEncode3DProperties
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal(ESRI.ArcGIS.Geometry.IVector3D,System.Double@)
+  - ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D(System.Double,System.Double,System.Double@)
+  - ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal(System.Double,ESRI.ArcGIS.Geometry.IVector3D,System.Boolean@)
+  - ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D(System.Double,System.Double@,System.Double@,System.Boolean@)
+  langs:
+  - csharp
+  - vb
+  name: IEncode3DProperties
+  nameWithType: IEncode3DProperties
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that encode and decode normals and 2D texture coordinates into a single double value.
+  example: []
+  syntax:
+    content: >-
+      [Guid("7767A6F1-69D1-11D4-9F66-00C04F6BDF0D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IEncode3DProperties
+    content.vb: >-
+      <Guid("7767A6F1-69D1-11D4-9F66-00C04F6BDF0D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IEncode3DProperties
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeometryEnvironmentClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7767A6F1-69D1-11D4-9F66-00C04F6BDF0D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal(ESRI.ArcGIS.Geometry.IVector3D,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal(ESRI.ArcGIS.Geometry.IVector3D,System.Double@)
+  id: PackNormal(ESRI.ArcGIS.Geometry.IVector3D,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  langs:
+  - csharp
+  - vb
+  name: PackNormal(IVector3D, out double)
+  nameWithType: IEncode3DProperties.PackNormal(IVector3D, out double)
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal(ESRI.ArcGIS.Geometry.IVector3D, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PackNormal(IVector3D normalVector, out double packedNormal)
+    parameters:
+    - id: normalVector
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    - id: packedNormal
+      type: System.Double
+    content.vb: Sub PackNormal(normalVector As IVector3D, packedNormal As Double)
+  overload: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal*
+  nameWithType.vb: IEncode3DProperties.PackNormal(IVector3D, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal(ESRI.ArcGIS.Geometry.IVector3D, Double)
+  name.vb: PackNormal(IVector3D, Double)
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal(System.Double,ESRI.ArcGIS.Geometry.IVector3D,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal(System.Double,ESRI.ArcGIS.Geometry.IVector3D,System.Boolean@)
+  id: UnPackNormal(System.Double,ESRI.ArcGIS.Geometry.IVector3D,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  langs:
+  - csharp
+  - vb
+  name: UnPackNormal(double, IVector3D, out bool)
+  nameWithType: IEncode3DProperties.UnPackNormal(double, IVector3D, out bool)
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal(double, ESRI.ArcGIS.Geometry.IVector3D, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void UnPackNormal(double packedNormal, IVector3D normalVector, out bool wasProductive)
+    parameters:
+    - id: packedNormal
+      type: System.Double
+    - id: normalVector
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    - id: wasProductive
+      type: System.Boolean
+    content.vb: Sub UnPackNormal(packedNormal As Double, normalVector As IVector3D, wasProductive As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal*
+  nameWithType.vb: IEncode3DProperties.UnPackNormal(Double, IVector3D, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal(Double, ESRI.ArcGIS.Geometry.IVector3D, Boolean)
+  name.vb: UnPackNormal(Double, IVector3D, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D(System.Double,System.Double,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D(System.Double,System.Double,System.Double@)
+  id: PackTexture2D(System.Double,System.Double,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  langs:
+  - csharp
+  - vb
+  name: PackTexture2D(double, double, out double)
+  nameWithType: IEncode3DProperties.PackTexture2D(double, double, out double)
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D(double, double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Encodes texture coordinates into part of a double. A normal and texture information can both be packed in a single double without conflict.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PackTexture2D(double textureS, double textureT, out double packedTexture)
+    parameters:
+    - id: textureS
+      type: System.Double
+    - id: textureT
+      type: System.Double
+    - id: packedTexture
+      type: System.Double
+    content.vb: Sub PackTexture2D(textureS As Double, textureT As Double, packedTexture As Double)
+  overload: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D*
+  nameWithType.vb: IEncode3DProperties.PackTexture2D(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D(Double, Double, Double)
+  name.vb: PackTexture2D(Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D(System.Double,System.Double@,System.Double@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D(System.Double,System.Double@,System.Double@,System.Boolean@)
+  id: UnPackTexture2D(System.Double,System.Double@,System.Double@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IEncode3DProperties
+  langs:
+  - csharp
+  - vb
+  name: UnPackTexture2D(double, out double, out double, out bool)
+  nameWithType: IEncode3DProperties.UnPackTexture2D(double, out double, out double, out bool)
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D(double, out double, out double, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Decodes texture coordinates.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UnPackTexture2D(double packedTextureST, out double textureS, out double textureT, out bool wasProductive)
+    parameters:
+    - id: packedTextureST
+      type: System.Double
+    - id: textureS
+      type: System.Double
+    - id: textureT
+      type: System.Double
+    - id: wasProductive
+      type: System.Boolean
+    content.vb: Sub UnPackTexture2D(packedTextureST As Double, textureS As Double, textureT As Double, wasProductive As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D*
+  nameWithType.vb: IEncode3DProperties.UnPackTexture2D(Double, Double, Double, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D(Double, Double, Double, Boolean)
+  name.vb: UnPackTexture2D(Double, Double, Double, Boolean)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEncode3DProperties.html#ESRI_ArcGIS_Geometry_IEncode3DProperties_PackNormal_ESRI_ArcGIS_Geometry_IVector3D_System_Double__
+  name: PackNormal
+  nameWithType: IEncode3DProperties.PackNormal
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackNormal
+- uid: ESRI.ArcGIS.Geometry.IVector3D
+  commentId: T:ESRI.ArcGIS.Geometry.IVector3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector3D.html
+  name: IVector3D
+  nameWithType: IVector3D
+  fullName: ESRI.ArcGIS.Geometry.IVector3D
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEncode3DProperties.html#ESRI_ArcGIS_Geometry_IEncode3DProperties_UnPackNormal_System_Double_ESRI_ArcGIS_Geometry_IVector3D_System_Boolean__
+  name: UnPackNormal
+  nameWithType: IEncode3DProperties.UnPackNormal
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackNormal
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEncode3DProperties.html#ESRI_ArcGIS_Geometry_IEncode3DProperties_PackTexture2D_System_Double_System_Double_System_Double__
+  name: PackTexture2D
+  nameWithType: IEncode3DProperties.PackTexture2D
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.PackTexture2D
+- uid: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEncode3DProperties.html#ESRI_ArcGIS_Geometry_IEncode3DProperties_UnPackTexture2D_System_Double_System_Double__System_Double__System_Boolean__
+  name: UnPackTexture2D
+  nameWithType: IEncode3DProperties.UnPackTexture2D
+  fullName: ESRI.ArcGIS.Geometry.IEncode3DProperties.UnPackTexture2D

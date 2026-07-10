@@ -1,0 +1,275 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  id: IEventSourceErrors
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor(ESRI.ArcGIS.Geodatabase.IQueryFilter)
+  - ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors
+  - ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID(System.Int64)
+  - ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow(ESRI.ArcGIS.Geodatabase.IRow)
+  langs:
+  - csharp
+  - vb
+  name: IEventSourceErrors
+  nameWithType: IEventSourceErrors
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that deal with event source errors.
+  example: []
+  syntax:
+    content: >-
+      [Guid("A9EB56E1-7452-11D4-9FE4-00C04F6BDF06")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IEventSourceErrors
+    content.vb: >-
+      <Guid("A9EB56E1-7452-11D4-9FE4-00C04F6BDF06")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IEventSourceErrors
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A9EB56E1-7452-11D4-9FE4-00C04F6BDF06
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors
+  id: GetErrors
+  parent: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  langs:
+  - csharp
+  - vb
+  name: GetErrors()
+  nameWithType: IEventSourceErrors.GetErrors()
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The enumerator of the event source errors.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumEventError GetErrors()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumEventError
+    content.vb: Function GetErrors() As IEnumEventError
+  overload: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors*
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor(ESRI.ArcGIS.Geodatabase.IQueryFilter)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor(ESRI.ArcGIS.Geodatabase.IQueryFilter)
+  id: GetErrorCursor(ESRI.ArcGIS.Geodatabase.IQueryFilter)
+  parent: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  langs:
+  - csharp
+  - vb
+  name: GetErrorCursor(IQueryFilter)
+  nameWithType: IEventSourceErrors.GetErrorCursor(IQueryFilter)
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor(ESRI.ArcGIS.Geodatabase.IQueryFilter)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ICursor GetErrorCursor(IQueryFilter filter)
+    parameters:
+    - id: filter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: Function GetErrorCursor(filter As IQueryFilter) As ICursor
+  overload: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor*
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID(System.Int64)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID(System.Int64)
+  id: GetLocatingErrorOID(System.Int64)
+  parent: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  langs:
+  - csharp
+  - vb
+  name: GetLocatingErrorOID(long)
+  nameWithType: IEventSourceErrors.GetLocatingErrorOID(long)
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID(long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The locating error associated with an event's OID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLocatingError GetLocatingErrorOID(long OID)
+    parameters:
+    - id: OID
+      type: System.Int64
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriLocatingError
+    content.vb: Function GetLocatingErrorOID(OID As Long) As esriLocatingError
+  overload: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID*
+  nameWithType.vb: IEventSourceErrors.GetLocatingErrorOID(Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID(Long)
+  name.vb: GetLocatingErrorOID(Long)
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow(ESRI.ArcGIS.Geodatabase.IRow)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow(ESRI.ArcGIS.Geodatabase.IRow)
+  id: GetLocatingErrorRow(ESRI.ArcGIS.Geodatabase.IRow)
+  parent: ESRI.ArcGIS.Geodatabase.IEventSourceErrors
+  langs:
+  - csharp
+  - vb
+  name: GetLocatingErrorRow(IRow)
+  nameWithType: IEventSourceErrors.GetLocatingErrorRow(IRow)
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow(ESRI.ArcGIS.Geodatabase.IRow)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriLocatingError GetLocatingErrorRow(IRow Row)
+    parameters:
+    - id: Row
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriLocatingError
+    content.vb: Function GetLocatingErrorRow(Row As IRow) As esriLocatingError
+  overload: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.html#ESRI_ArcGIS_Geodatabase_IEventSourceErrors_GetErrors
+  name: GetErrors
+  nameWithType: IEventSourceErrors.GetErrors
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrors
+- uid: ESRI.ArcGIS.Geodatabase.IEnumEventError
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumEventError
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumEventError.html
+  name: IEnumEventError
+  nameWithType: IEnumEventError
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumEventError
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.html#ESRI_ArcGIS_Geodatabase_IEventSourceErrors_GetErrorCursor_ESRI_ArcGIS_Geodatabase_IQueryFilter_
+  name: GetErrorCursor
+  nameWithType: IEventSourceErrors.GetErrorCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetErrorCursor
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.html#ESRI_ArcGIS_Geodatabase_IEventSourceErrors_GetLocatingErrorOID_System_Int64_
+  name: GetLocatingErrorOID
+  nameWithType: IEventSourceErrors.GetLocatingErrorOID
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorOID
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.esriLocatingError
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriLocatingError
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriLocatingError.html
+  name: esriLocatingError
+  nameWithType: esriLocatingError
+  fullName: ESRI.ArcGIS.Geodatabase.esriLocatingError
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.html#ESRI_ArcGIS_Geodatabase_IEventSourceErrors_GetLocatingErrorRow_ESRI_ArcGIS_Geodatabase_IRow_
+  name: GetLocatingErrorRow
+  nameWithType: IEventSourceErrors.GetLocatingErrorRow
+  fullName: ESRI.ArcGIS.Geodatabase.IEventSourceErrors.GetLocatingErrorRow
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow

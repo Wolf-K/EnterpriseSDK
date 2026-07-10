@@ -1,0 +1,477 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  id: IPushbroomUtilities
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross(System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection(System.Double@,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid(System.Double@,System.Double@,System.Double,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize(System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes(System.Double@,System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString(System.SByte@,System.Int32@,System.Double@)
+  langs:
+  - csharp
+  - vb
+  name: IPushbroomUtilities
+  nameWithType: IPushbroomUtilities
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Pushbroom Xform Utilities.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("BFEFEDB3-12CB-42C9-B59B-1092998414BB")]
+
+      public interface IPushbroomUtilities
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("BFEFEDB3-12CB-42C9-B59B-1092998414BB")>
+
+      Public Interface IPushbroomUtilities
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.PushbroomUtilitiesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BFEFEDB3-12CB-42C9-B59B-1092998414BB
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize(System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize(System.Double@)
+  id: VectorNormalize(System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: VectorNormalize(ref double)
+  nameWithType: IPushbroomUtilities.VectorNormalize(ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize(ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Normalize a vector so its length is 1.0.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double VectorNormalize(ref double v1)
+    parameters:
+    - id: v1
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function VectorNormalize(v1 As Double) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize*
+  nameWithType.vb: IPushbroomUtilities.VectorNormalize(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize(Double)
+  name.vb: VectorNormalize(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross(System.Double@,System.Double@)
+  id: VectorCross(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: VectorCross(ref double, ref double)
+  nameWithType: IPushbroomUtilities.VectorCross(ref double, ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross(ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Calculate cross product of two vectors.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double VectorCross(ref double v1, ref double v2)
+    parameters:
+    - id: v1
+      type: System.Double
+    - id: v2
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function VectorCross(v1 As Double, v2 As Double) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross*
+  nameWithType.vb: IPushbroomUtilities.VectorCross(Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross(Double, Double)
+  name.vb: VectorCross(Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection(System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection(System.Double@,System.Double@,System.Double@)
+  id: VectorDirection(System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: VectorDirection(ref double, ref double, ref double)
+  nameWithType: IPushbroomUtilities.VectorDirection(ref double, ref double, ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection(ref double, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Express a 3D vector in polar coords (lon, lat).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void VectorDirection(ref double v, ref double lon, ref double lat)
+    parameters:
+    - id: v
+      type: System.Double
+    - id: lon
+      type: System.Double
+    - id: lat
+      type: System.Double
+    content.vb: Sub VectorDirection(v As Double, lon As Double, lat As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection*
+  nameWithType.vb: IPushbroomUtilities.VectorDirection(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection(Double, Double, Double)
+  name.vb: VectorDirection(Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid(System.Double@,System.Double@,System.Double,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid(System.Double@,System.Double@,System.Double,System.Double@,System.Double@)
+  id: VectorIntersectEllipsoid(System.Double@,System.Double@,System.Double,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: VectorIntersectEllipsoid(ref double, ref double, double, out double, out double)
+  nameWithType: IPushbroomUtilities.VectorIntersectEllipsoid(ref double, ref double, double, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid(ref double, ref double, double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Intersect a vector with an ellipsoidal surface plus height
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void VectorIntersectEllipsoid(ref double vP, ref double vU3, double htAboveEllipsoid, out double lon, out double lat)
+    parameters:
+    - id: vP
+      type: System.Double
+    - id: vU3
+      type: System.Double
+    - id: htAboveEllipsoid
+      type: System.Double
+    - id: lon
+      type: System.Double
+    - id: lat
+      type: System.Double
+    content.vb: Sub VectorIntersectEllipsoid(vP As Double, vU3 As Double, htAboveEllipsoid As Double, lon As Double, lat As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid*
+  nameWithType.vb: IPushbroomUtilities.VectorIntersectEllipsoid(Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid(Double, Double, Double, Double, Double)
+  name.vb: VectorIntersectEllipsoid(Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes(System.Double@,System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes(System.Double@,System.Double,System.Double,System.Double)
+  id: VectorRotate3Axes(System.Double@,System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: VectorRotate3Axes(ref double, double, double, double)
+  nameWithType: IPushbroomUtilities.VectorRotate3Axes(ref double, double, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes(ref double, double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Rotate a vector about 3 axes (inputs radians)
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double VectorRotate3Axes(ref double vIn, double xRot, double yRot, double zRot)
+    parameters:
+    - id: vIn
+      type: System.Double
+    - id: xRot
+      type: System.Double
+    - id: yRot
+      type: System.Double
+    - id: zRot
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function VectorRotate3Axes(vIn As Double, xRot As Double, yRot As Double, zRot As Double) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes*
+  nameWithType.vb: IPushbroomUtilities.VectorRotate3Axes(Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes(Double, Double, Double, Double)
+  name.vb: VectorRotate3Axes(Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  id: convertLonLatToECEF(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: convertLonLatToECEF(double, double, double, out double, out double, out double)
+  nameWithType: IPushbroomUtilities.convertLonLatToECEF(double, double, double, out double, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF(double, double, double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Convert longitude, latitude, elevation to ECEF coordinates
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void convertLonLatToECEF(double lon, double lat, double elev, out double x, out double y, out double Z)
+    parameters:
+    - id: lon
+      type: System.Double
+    - id: lat
+      type: System.Double
+    - id: elev
+      type: System.Double
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: Z
+      type: System.Double
+    content.vb: Sub convertLonLatToECEF(lon As Double, lat As Double, elev As Double, x As Double, y As Double, Z As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF*
+  nameWithType.vb: IPushbroomUtilities.convertLonLatToECEF(Double, Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF(Double, Double, Double, Double, Double, Double)
+  name.vb: convertLonLatToECEF(Double, Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  id: convertECEFtoLonLat(System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: convertECEFtoLonLat(double, double, double, out double, out double, out double)
+  nameWithType: IPushbroomUtilities.convertECEFtoLonLat(double, double, double, out double, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat(double, double, double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Convert ECEF coordinates to longitude, latitude, elevation
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void convertECEFtoLonLat(double x, double y, double Z, out double lon, out double lat, out double elev)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: Z
+      type: System.Double
+    - id: lon
+      type: System.Double
+    - id: lat
+      type: System.Double
+    - id: elev
+      type: System.Double
+    content.vb: Sub convertECEFtoLonLat(x As Double, y As Double, Z As Double, lon As Double, lat As Double, elev As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat*
+  nameWithType.vb: IPushbroomUtilities.convertECEFtoLonLat(Double, Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat(Double, Double, Double, Double, Double, Double)
+  name.vb: convertECEFtoLonLat(Double, Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString(System.SByte@,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString(System.SByte@,System.Int32@,System.Double@)
+  id: evalDIMAPTimeString(System.SByte@,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities
+  langs:
+  - csharp
+  - vb
+  name: evalDIMAPTimeString(ref sbyte, out int, out double)
+  nameWithType: IPushbroomUtilities.evalDIMAPTimeString(ref sbyte, out int, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString(ref sbyte, out int, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Express DIMAP time string as fraction of a day
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void evalDIMAPTimeString(ref sbyte time_str, out int jDayPtr, out double fraction)
+    parameters:
+    - id: time_str
+      type: System.SByte
+    - id: jDayPtr
+      type: System.Int32
+    - id: fraction
+      type: System.Double
+    content.vb: Sub evalDIMAPTimeString(time_str As SByte, jDayPtr As Integer, fraction As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString*
+  nameWithType.vb: IPushbroomUtilities.evalDIMAPTimeString(SByte, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString(SByte, Integer, Double)
+  name.vb: evalDIMAPTimeString(SByte, Integer, Double)
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_VectorNormalize_System_Double__
+  name: VectorNormalize
+  nameWithType: IPushbroomUtilities.VectorNormalize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorNormalize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_VectorCross_System_Double__System_Double__
+  name: VectorCross
+  nameWithType: IPushbroomUtilities.VectorCross
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorCross
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_VectorDirection_System_Double__System_Double__System_Double__
+  name: VectorDirection
+  nameWithType: IPushbroomUtilities.VectorDirection
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorDirection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_VectorIntersectEllipsoid_System_Double__System_Double__System_Double_System_Double__System_Double__
+  name: VectorIntersectEllipsoid
+  nameWithType: IPushbroomUtilities.VectorIntersectEllipsoid
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorIntersectEllipsoid
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_VectorRotate3Axes_System_Double__System_Double_System_Double_System_Double_
+  name: VectorRotate3Axes
+  nameWithType: IPushbroomUtilities.VectorRotate3Axes
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.VectorRotate3Axes
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_convertLonLatToECEF_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__
+  name: convertLonLatToECEF
+  nameWithType: IPushbroomUtilities.convertLonLatToECEF
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertLonLatToECEF
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_convertECEFtoLonLat_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__
+  name: convertECEFtoLonLat
+  nameWithType: IPushbroomUtilities.convertECEFtoLonLat
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.convertECEFtoLonLat
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.html#ESRI_ArcGIS_DatasourcesRaster_IPushbroomUtilities_evalDIMAPTimeString_System_SByte__System_Int32__System_Double__
+  name: evalDIMAPTimeString
+  nameWithType: IPushbroomUtilities.evalDIMAPTimeString
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPushbroomUtilities.evalDIMAPTimeString
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

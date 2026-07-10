@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  id: IImportGeometryParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField
+  - ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+  - ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+  - ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+  langs:
+  - csharp
+  - vb
+  name: IImportGeometryParameters
+  nameWithType: IImportGeometryParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control how mosaic dataset geometry is imported.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("A63CC4B0-375B-4CF1-96D2-76B8EB882749")]
+
+      public interface IImportGeometryParameters
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("A63CC4B0-375B-4CF1-96D2-76B8EB882749")>
+
+      Public Interface IImportGeometryParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ImportGeometryParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A63CC4B0-375B-4CF1-96D2-76B8EB882749
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+  id: Target
+  parent: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: IImportGeometryParameters.Target
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The target feature class of this import operation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriImportGeometryTarget Target { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriImportGeometryTarget
+    content.vb: Property Target As esriImportGeometryTarget
+  overload: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+  id: TargetJoinField
+  parent: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  langs:
+  - csharp
+  - vb
+  name: TargetJoinField
+  nameWithType: IImportGeometryParameters.TargetJoinField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The mosaic dataset field name that participates in the table join that attempts to associate a row in the source feature class with every selected row in the target feature class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TargetJoinField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TargetJoinField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+  id: SourceTable
+  parent: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  langs:
+  - csharp
+  - vb
+  name: SourceTable
+  nameWithType: IImportGeometryParameters.SourceTable
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The source feature class from which geometry is imported.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureClass SourceTable { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    content.vb: Property SourceTable As IFeatureClass
+  overload: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField
+  id: SourceJoinField
+  parent: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters
+  langs:
+  - csharp
+  - vb
+  name: SourceJoinField
+  nameWithType: IImportGeometryParameters.SourceJoinField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The name of the field in the source feature class that participates in the table join.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SourceJoinField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SourceJoinField As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IImportGeometryParameters_Target
+  name: Target
+  nameWithType: IImportGeometryParameters.Target
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.Target
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriImportGeometryTarget
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriImportGeometryTarget
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriImportGeometryTarget.html
+  name: esriImportGeometryTarget
+  nameWithType: esriImportGeometryTarget
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriImportGeometryTarget
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IImportGeometryParameters_TargetJoinField
+  name: TargetJoinField
+  nameWithType: IImportGeometryParameters.TargetJoinField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.TargetJoinField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IImportGeometryParameters_SourceTable
+  name: SourceTable
+  nameWithType: IImportGeometryParameters.SourceTable
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceTable
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IImportGeometryParameters_SourceJoinField
+  name: SourceJoinField
+  nameWithType: IImportGeometryParameters.SourceJoinField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IImportGeometryParameters.SourceJoinField

@@ -1,0 +1,831 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  commentId: T:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  id: IProjectiveTransformation2DGEN
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPoint[]@,ESRI.ArcGIS.Geometry.IPoint[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError(System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError(System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  - ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  langs:
+  - csharp
+  - vb
+  name: IProjectiveTransformation2DGEN
+  nameWithType: IProjectiveTransformation2DGEN
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that define and manipulate projective transformations. IProjectiveTransformation2DGEN is generic version of IProjectiveTransformation.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("C7A467A9-0374-4F1A-9CBD-7156FE7DACB9")]
+
+      public interface IProjectiveTransformation2DGEN
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("C7A467A9-0374-4F1A-9CBD-7156FE7DACB9")>
+
+      Public Interface IProjectiveTransformation2DGEN
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.ProjectiveTransformation2DClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C7A467A9-0374-4F1A-9CBD-7156FE7DACB9
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  id: TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFF(esriTransformDirection, ref double[], ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresFF(esriTransformDirection, ref double[], ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[], ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms floating point measures to floating point measures (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformMeasuresFF(esriTransformDirection Direction, ref double[] inMeasures, ref double[] outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inMeasures
+      type: System.Double[]
+    - id: outMeasures
+      type: System.Double[]
+    content.vb: Sub TransformMeasuresFF(Direction As esriTransformDirection, inMeasures As Double(), outMeasures As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformMeasuresFF(esriTransformDirection, Double(), Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Double(), Double())
+  name.vb: TransformMeasuresFF(esriTransformDirection, Double(), Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  id: TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFI(esriTransformDirection, ref double[], ref int[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresFI(esriTransformDirection, ref double[], ref int[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[], ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms floating point measures to integer measures (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformMeasuresFI(esriTransformDirection Direction, ref double[] inMeasures, ref int[] outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inMeasures
+      type: System.Double[]
+    - id: outMeasures
+      type: System.Int32[]
+    content.vb: Sub TransformMeasuresFI(Direction As esriTransformDirection, inMeasures As Double(), outMeasures As Integer())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformMeasuresFI(esriTransformDirection, Double(), Integer())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Double(), Integer())
+  name.vb: TransformMeasuresFI(esriTransformDirection, Double(), Integer())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  id: TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresIF(esriTransformDirection, ref int[], ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresIF(esriTransformDirection, ref int[], ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, ref int[], ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms integer measures to floating point measures (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformMeasuresIF(esriTransformDirection Direction, ref int[] inMeasures, ref double[] outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inMeasures
+      type: System.Int32[]
+    - id: outMeasures
+      type: System.Double[]
+    content.vb: Sub TransformMeasuresIF(Direction As esriTransformDirection, inMeasures As Integer(), outMeasures As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformMeasuresIF(esriTransformDirection, Integer(), Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer(), Double())
+  name.vb: TransformMeasuresIF(esriTransformDirection, Integer(), Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  id: TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresII(esriTransformDirection, ref int[], ref int[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresII(esriTransformDirection, ref int[], ref int[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, ref int[], ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms integer measures to integer measures (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformMeasuresII(esriTransformDirection Direction, ref int[] inMeasures, ref int[] outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inMeasures
+      type: System.Int32[]
+    - id: outMeasures
+      type: System.Int32[]
+    content.vb: Sub TransformMeasuresII(Direction As esriTransformDirection, inMeasures As Integer(), outMeasures As Integer())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformMeasuresII(esriTransformDirection, Integer(), Integer())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer(), Integer())
+  name.vb: TransformMeasuresII(esriTransformDirection, Integer(), Integer())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  id: TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFF(esriTransformDirection, ref double[], ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsFF(esriTransformDirection, ref double[], ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[], ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms floating point points to floating point points (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformPointsFF(esriTransformDirection Direction, ref double[] inPoints, ref double[] outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inPoints
+      type: System.Double[]
+    - id: outPoints
+      type: System.Double[]
+    content.vb: Sub TransformPointsFF(Direction As esriTransformDirection, inPoints As Double(), outPoints As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformPointsFF(esriTransformDirection, Double(), Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Double(), Double())
+  name.vb: TransformPointsFF(esriTransformDirection, Double(), Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  id: TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFI(esriTransformDirection, ref double[], ref int[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsFI(esriTransformDirection, ref double[], ref int[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[], ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms floating point points to integer points (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformPointsFI(esriTransformDirection Direction, ref double[] inPoints, ref int[] outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inPoints
+      type: System.Double[]
+    - id: outPoints
+      type: System.Int32[]
+    content.vb: Sub TransformPointsFI(Direction As esriTransformDirection, inPoints As Double(), outPoints As Integer())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformPointsFI(esriTransformDirection, Double(), Integer())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Double(), Integer())
+  name.vb: TransformPointsFI(esriTransformDirection, Double(), Integer())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  id: TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsIF(esriTransformDirection, ref int[], ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsIF(esriTransformDirection, ref int[], ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, ref int[], ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms integer points to floating point points (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformPointsIF(esriTransformDirection Direction, ref int[] inPoints, ref double[] outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inPoints
+      type: System.Int32[]
+    - id: outPoints
+      type: System.Double[]
+    content.vb: Sub TransformPointsIF(Direction As esriTransformDirection, inPoints As Integer(), outPoints As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformPointsIF(esriTransformDirection, Integer(), Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer(), Double())
+  name.vb: TransformPointsIF(esriTransformDirection, Integer(), Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  id: TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32[]@,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsII(esriTransformDirection, ref int[], ref int[])
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsII(esriTransformDirection, ref int[], ref int[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, ref int[], ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Transforms integer points to integer points (or do the inverse).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void TransformPointsII(esriTransformDirection Direction, ref int[] inPoints, ref int[] outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: inPoints
+      type: System.Int32[]
+    - id: outPoints
+      type: System.Int32[]
+    content.vb: Sub TransformPointsII(Direction As esriTransformDirection, inPoints As Integer(), outPoints As Integer())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII*
+  nameWithType.vb: IProjectiveTransformation2DGEN.TransformPointsII(esriTransformDirection, Integer(), Integer())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer(), Integer())
+  name.vb: TransformPointsII(esriTransformDirection, Integer(), Integer())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IProjectiveTransformation2DGEN.Reset()
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Resets the tranformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset*
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPoint[]@,ESRI.ArcGIS.Geometry.IPoint[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPoint[]@,ESRI.ArcGIS.Geometry.IPoint[]@)
+  id: DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPoint[]@,ESRI.ArcGIS.Geometry.IPoint[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: DefineFromControlPoints(ref IPoint[], ref IPoint[])
+  nameWithType: IProjectiveTransformation2DGEN.DefineFromControlPoints(ref IPoint[], ref IPoint[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints(ref ESRI.ArcGIS.Geometry.IPoint[], ref ESRI.ArcGIS.Geometry.IPoint[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Defines the best projective transformation between two sets of points. Can be used to register paper maps on a digitizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DefineFromControlPoints(ref IPoint[] fromPoints, ref IPoint[] toPoints)
+    parameters:
+    - id: fromPoints
+      type: ESRI.ArcGIS.Geometry.IPoint[]
+    - id: toPoints
+      type: ESRI.ArcGIS.Geometry.IPoint[]
+    content.vb: Sub DefineFromControlPoints(fromPoints As IPoint(), toPoints As IPoint())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints*
+  nameWithType.vb: IProjectiveTransformation2DGEN.DefineFromControlPoints(IPoint(), IPoint())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPoint(), ESRI.ArcGIS.Geometry.IPoint())
+  name.vb: DefineFromControlPoints(IPoint(), IPoint())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError(System.Double@,System.Double@)
+  id: GetRMSError(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: GetRMSError(ref double, ref double)
+  nameWithType: IProjectiveTransformation2DGEN.GetRMSError(ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError(ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: RMS (Root Mean Square) error expressed relative to the 'from' and 'to' points defining the transformation. These error terms are valid after using DefineFromControlPoints/Ex to define the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetRMSError(ref double fromError, ref double toError)
+    parameters:
+    - id: fromError
+      type: System.Double
+    - id: toError
+      type: System.Double
+    content.vb: Sub GetRMSError(fromError As Double, toError As Double)
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError*
+  nameWithType.vb: IProjectiveTransformation2DGEN.GetRMSError(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError(Double, Double)
+  name.vb: GetRMSError(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError(System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError(System.Int32,System.Double@,System.Double@)
+  id: GetControlPointError(System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: GetControlPointError(int, ref double, ref double)
+  nameWithType: IProjectiveTransformation2DGEN.GetControlPointError(int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError(int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the errors involved in moving control point i from the 'from' to 'to' system. These error terms are valid after using DefineFromControlPoints/Ex to define the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetControlPointError(int i, ref double fromError, ref double toError)
+    parameters:
+    - id: i
+      type: System.Int32
+    - id: fromError
+      type: System.Double
+    - id: toError
+      type: System.Double
+    content.vb: Sub GetControlPointError(i As Integer, fromError As Double, toError As Double)
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError*
+  nameWithType.vb: IProjectiveTransformation2DGEN.GetControlPointError(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError(Integer, Double, Double)
+  name.vb: GetControlPointError(Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: Project(ISpatialReference)
+  nameWithType: IProjectiveTransformation2DGEN.Project(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Project(ISpatialReference newSpatialReference)
+    parameters:
+    - id: newSpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub Project(newSpatialReference As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project*
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  id: QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryTransformationParameters(esriTransformDirection, ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.QueryTransformationParameters(esriTransformDirection, ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the eight parameters which define the two dimensional projective transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryTransformationParameters(esriTransformDirection Direction, ref double[] @params)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: params
+      type: System.Double[]
+    content.vb: Sub QueryTransformationParameters(Direction As esriTransformDirection, params As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters*
+  nameWithType.vb: IProjectiveTransformation2DGEN.QueryTransformationParameters(esriTransformDirection, Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection, Double())
+  name.vb: QueryTransformationParameters(esriTransformDirection, Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  id: SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double[]@)
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: SetTransformationParameters(esriTransformDirection, ref double[])
+  nameWithType: IProjectiveTransformation2DGEN.SetTransformationParameters(esriTransformDirection, ref double[])
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the eight parameters which define the two dimensional projective transformation. The size of the incoming parameter array needs to be 8.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetTransformationParameters(esriTransformDirection Direction, ref double[] @params)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: params
+      type: System.Double[]
+    content.vb: Sub SetTransformationParameters(Direction As esriTransformDirection, params As Double())
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters*
+  nameWithType.vb: IProjectiveTransformation2DGEN.SetTransformationParameters(esriTransformDirection, Double())
+  fullName.vb: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters(ESRI.ArcGIS.Geometry.esriTransformDirection, Double())
+  name.vb: SetTransformationParameters(esriTransformDirection, Double())
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IProjectiveTransformation2DGEN.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The spatial reference in which this transformation is meaningful.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____System_Double____
+  name: TransformMeasuresFF
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresFF
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFF
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____System_Int32____
+  name: TransformMeasuresFI
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresFI
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresFI
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32____System_Double____
+  name: TransformMeasuresIF
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresIF
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresIF
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32____System_Int32____
+  name: TransformMeasuresII
+  nameWithType: IProjectiveTransformation2DGEN.TransformMeasuresII
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformMeasuresII
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____System_Double____
+  name: TransformPointsFF
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsFF
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFF
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____System_Int32____
+  name: TransformPointsFI
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsFI
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsFI
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32____System_Double____
+  name: TransformPointsIF
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsIF
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsIF
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32____System_Int32____
+  name: TransformPointsII
+  nameWithType: IProjectiveTransformation2DGEN.TransformPointsII
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.TransformPointsII
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_Reset
+  name: Reset
+  nameWithType: IProjectiveTransformation2DGEN.Reset
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Reset
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_DefineFromControlPoints_ESRI_ArcGIS_Geometry_IPoint____ESRI_ArcGIS_Geometry_IPoint____
+  name: DefineFromControlPoints
+  nameWithType: IProjectiveTransformation2DGEN.DefineFromControlPoints
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.DefineFromControlPoints
+- uid: ESRI.ArcGIS.Geometry.IPoint[]
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint[]
+  nameWithType: IPoint[]
+  fullName: ESRI.ArcGIS.Geometry.IPoint[]
+  nameWithType.vb: IPoint()
+  fullName.vb: ESRI.ArcGIS.Geometry.IPoint()
+  name.vb: IPoint()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geometry.IPoint
+    name: IPoint
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.IPoint.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geometry.IPoint
+    name: IPoint
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.IPoint.html
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_GetRMSError_System_Double__System_Double__
+  name: GetRMSError
+  nameWithType: IProjectiveTransformation2DGEN.GetRMSError
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetRMSError
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_GetControlPointError_System_Int32_System_Double__System_Double__
+  name: GetControlPointError
+  nameWithType: IProjectiveTransformation2DGEN.GetControlPointError
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.GetControlPointError
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_Project_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: Project
+  nameWithType: IProjectiveTransformation2DGEN.Project
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.Project
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_QueryTransformationParameters_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____
+  name: QueryTransformationParameters
+  nameWithType: IProjectiveTransformation2DGEN.QueryTransformationParameters
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.QueryTransformationParameters
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_SetTransformationParameters_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double____
+  name: SetTransformationParameters
+  nameWithType: IProjectiveTransformation2DGEN.SetTransformationParameters
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SetTransformationParameters
+- uid: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.html#ESRI_ArcGIS_Geometry_IProjectiveTransformation2DGEN_SpatialReference
+  name: SpatialReference
+  nameWithType: IProjectiveTransformation2DGEN.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IProjectiveTransformation2DGEN.SpatialReference

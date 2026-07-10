@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IValidate
+  commentId: T:ESRI.ArcGIS.Geodatabase.IValidate
+  id: IValidate
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields
+  - ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules
+  - ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField(System.String)
+  - ESRI.ArcGIS.Geodatabase.IValidate.Validate(System.String@)
+  langs:
+  - csharp
+  - vb
+  name: IValidate
+  nameWithType: IValidate
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members to validate individual features.
+  example: []
+  syntax:
+    content: >-
+      [Guid("80E4FF2C-475D-11D2-9932-0000F80372B4")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IValidate
+    content.vb: >-
+      <Guid("80E4FF2C-475D-11D2-9932-0000F80372B4")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IValidate
+  derivedClasses:
+  - ESRI.ArcGIS.CartoX.MEAnnotationFeatureClass
+  - ESRI.ArcGIS.CartoX.MEDimensionFeatureClass
+  - ESRI.ArcGIS.Geodatabase.FeatureClass_2
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 80E4FF2C-475D-11D2-9932-0000F80372B4
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields
+  commentId: M:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields
+  id: GetInvalidFields
+  parent: ESRI.ArcGIS.Geodatabase.IValidate
+  langs:
+  - csharp
+  - vb
+  name: GetInvalidFields()
+  nameWithType: IValidate.GetInvalidFields()
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns all invalid fields.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields GetInvalidFields()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Function GetInvalidFields() As IFields
+  overload: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields*
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules
+  commentId: M:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules
+  id: GetInvalidRules
+  parent: ESRI.ArcGIS.Geodatabase.IValidate
+  langs:
+  - csharp
+  - vb
+  name: GetInvalidRules()
+  nameWithType: IValidate.GetInvalidRules()
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The set of all invalid rules.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumRule GetInvalidRules()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumRule
+    content.vb: Function GetInvalidRules() As IEnumRule
+  overload: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules*
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField(System.String)
+  id: GetInvalidRulesByField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IValidate
+  langs:
+  - csharp
+  - vb
+  name: GetInvalidRulesByField(string)
+  nameWithType: IValidate.GetInvalidRulesByField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The set of all invalid rules for the specified field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumRule GetInvalidRulesByField(string FieldName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumRule
+    content.vb: Function GetInvalidRulesByField(FieldName As String) As IEnumRule
+  overload: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField*
+  nameWithType.vb: IValidate.GetInvalidRulesByField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField(String)
+  name.vb: GetInvalidRulesByField(String)
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.Validate(System.String@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IValidate.Validate(System.String@)
+  id: Validate(System.String@)
+  parent: ESRI.ArcGIS.Geodatabase.IValidate
+  langs:
+  - csharp
+  - vb
+  name: Validate(out string)
+  nameWithType: IValidate.Validate(out string)
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.Validate(out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Validates the row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Validate(out string ErrorMessage)
+    parameters:
+    - id: ErrorMessage
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Validate(ErrorMessage As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IValidate.Validate*
+  nameWithType.vb: IValidate.Validate(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IValidate.Validate(String)
+  name.vb: Validate(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IValidate.html#ESRI_ArcGIS_Geodatabase_IValidate_GetInvalidFields
+  name: GetInvalidFields
+  nameWithType: IValidate.GetInvalidFields
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidFields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IValidate.html#ESRI_ArcGIS_Geodatabase_IValidate_GetInvalidRules
+  name: GetInvalidRules
+  nameWithType: IValidate.GetInvalidRules
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRules
+- uid: ESRI.ArcGIS.Geodatabase.IEnumRule
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumRule
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumRule.html
+  name: IEnumRule
+  nameWithType: IEnumRule
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumRule
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IValidate.html#ESRI_ArcGIS_Geodatabase_IValidate_GetInvalidRulesByField_System_String_
+  name: GetInvalidRulesByField
+  nameWithType: IValidate.GetInvalidRulesByField
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.GetInvalidRulesByField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IValidate.Validate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IValidate.Validate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IValidate.html#ESRI_ArcGIS_Geodatabase_IValidate_Validate_System_String__
+  name: Validate
+  nameWithType: IValidate.Validate
+  fullName: ESRI.ArcGIS.Geodatabase.IValidate.Validate
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

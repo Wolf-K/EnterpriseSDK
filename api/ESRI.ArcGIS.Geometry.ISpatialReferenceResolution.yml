@@ -1,0 +1,357 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  id: ISpatialReferenceResolution
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution(System.Boolean)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ISpatialReferenceResolution
+  nameWithType: ISpatialReferenceResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control the resolution of a spatial reference.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("833AC5B9-20E3-4896-8D55-770F4E90A2E4")]
+
+      public interface ISpatialReferenceResolution
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("833AC5B9-20E3-4896-8D55-770F4E90A2E4")>
+
+      Public Interface ISpatialReferenceResolution
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeographicCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.ProjectedCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.UnknownCoordinateSystemClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 833AC5B9-20E3-4896-8D55-770F4E90A2E4
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon
+  id: ConstructFromHorizon
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: ConstructFromHorizon()
+  nameWithType: ISpatialReferenceResolution.ConstructFromHorizon()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Defines the XY resolution and domain extent of this spatial reference based on the extent of its horizon. Low precision SRs will have minimum resolution of 1/10mm in current units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ConstructFromHorizon()
+    content.vb: Sub ConstructFromHorizon()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution
+  id: SetDefaultXYResolution
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultXYResolution()
+  nameWithType: ISpatialReferenceResolution.SetDefaultXYResolution()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: 'defaults: PCS(hi): 1/10 mm; PCS(lo): 1 mm; GCS(hi): 1/10,000 arc-second; GCS(lo): 1/500 arc-second; UCS(hi): 1/10 mm (assumed); UCS(lo): 1 mm (assumed).'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultXYResolution()
+    content.vb: Sub SetDefaultXYResolution()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution
+  id: SetDefaultZResolution
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultZResolution()
+  nameWithType: ISpatialReferenceResolution.SetDefaultZResolution()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the z coordinate grid resolution to 1 mm for a low precision spatial reference or 1/10 mm for a high precision spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultZResolution()
+    content.vb: Sub SetDefaultZResolution()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution
+  id: SetDefaultMResolution
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultMResolution()
+  nameWithType: ISpatialReferenceResolution.SetDefaultMResolution()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the m coordinate grid resolution to 1 mm for a low precision spatial reference or 1/10 mm for a high precision spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultMResolution()
+    content.vb: Sub SetDefaultMResolution()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution(System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution(System.Boolean)
+  id: XYResolution(System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: XYResolution[bool]
+  nameWithType: ISpatialReferenceResolution.XYResolution[bool]
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution[bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The XY resolution (distance in SR units between distinguishable grid points) of this spatial reference. Reported in meters for PCS/UCS and degrees for GCS when bStandardUnits is true or in current units of SR when it is false.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double XYResolution[bool bStandardUnits] { get; set; }
+    parameters:
+    - id: bStandardUnits
+      type: System.Boolean
+    return:
+      type: System.Double
+    content.vb: Property XYResolution(bStandardUnits As Boolean) As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution*
+  nameWithType.vb: ISpatialReferenceResolution.XYResolution(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution(Boolean)
+  name.vb: XYResolution(Boolean)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution(System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution(System.Boolean)
+  id: ZResolution(System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: ZResolution[bool]
+  nameWithType: ISpatialReferenceResolution.ZResolution[bool]
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution[bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The Z resolution (height/depth distance between distinguishable grid points) of this spatial reference. Reported in meters when bStandardUnits is true or in current units of SR when it is false.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZResolution[bool bStandardUnits] { get; set; }
+    parameters:
+    - id: bStandardUnits
+      type: System.Boolean
+    return:
+      type: System.Double
+    content.vb: Property ZResolution(bStandardUnits As Boolean) As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution*
+  nameWithType.vb: ISpatialReferenceResolution.ZResolution(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution(Boolean)
+  name.vb: ZResolution(Boolean)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution
+  id: MResolution
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution
+  langs:
+  - csharp
+  - vb
+  name: MResolution
+  nameWithType: ISpatialReferenceResolution.MResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The M, or measure, resolution of this spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MResolution { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MResolution As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_ConstructFromHorizon
+  name: ConstructFromHorizon
+  nameWithType: ISpatialReferenceResolution.ConstructFromHorizon
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ConstructFromHorizon
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_SetDefaultXYResolution
+  name: SetDefaultXYResolution
+  nameWithType: ISpatialReferenceResolution.SetDefaultXYResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultXYResolution
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_SetDefaultZResolution
+  name: SetDefaultZResolution
+  nameWithType: ISpatialReferenceResolution.SetDefaultZResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultZResolution
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_SetDefaultMResolution
+  name: SetDefaultMResolution
+  nameWithType: ISpatialReferenceResolution.SetDefaultMResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.SetDefaultMResolution
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_XYResolution_System_Boolean_
+  name: XYResolution
+  nameWithType: ISpatialReferenceResolution.XYResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.XYResolution
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_ZResolution_System_Boolean_
+  name: ZResolution
+  nameWithType: ISpatialReferenceResolution.ZResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.ZResolution
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.html#ESRI_ArcGIS_Geometry_ISpatialReferenceResolution_MResolution
+  name: MResolution
+  nameWithType: ISpatialReferenceResolution.MResolution
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceResolution.MResolution

@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IIndexQuery
+  commentId: T:ESRI.ArcGIS.Carto.IIndexQuery
+  id: IIndexQuery
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature(ESRI.ArcGIS.Geometry.IGeometry,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Carto.IIndexQuery.Within(ESRI.ArcGIS.Geometry.IGeometry)
+  langs:
+  - csharp
+  - vb
+  name: IIndexQuery
+  nameWithType: IIndexQuery
+  fullName: ESRI.ArcGIS.Carto.IIndexQuery
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to members that control the index created with IFeatureIndex.
+  example: []
+  syntax:
+    content: >-
+      [Guid("59F60295-C1FB-11D2-9F23-00C04F6BC886")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IIndexQuery
+    content.vb: >-
+      <Guid("59F60295-C1FB-11D2-9F23-00C04F6BC886")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IIndexQuery
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.FeatureIndexClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 59F60295-C1FB-11D2-9F23-00C04F6BC886
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature(ESRI.ArcGIS.Geometry.IGeometry,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature(ESRI.ArcGIS.Geometry.IGeometry,System.Int32@,System.Double@)
+  id: NearestFeature(ESRI.ArcGIS.Geometry.IGeometry,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Carto.IIndexQuery
+  langs:
+  - csharp
+  - vb
+  name: NearestFeature(IGeometry, out int, out double)
+  nameWithType: IIndexQuery.NearestFeature(IGeometry, out int, out double)
+  fullName: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature(ESRI.ArcGIS.Geometry.IGeometry, out int, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  syntax:
+    content: void NearestFeature(IGeometry pShape, out int pClosestFeatureFID, out double pDistance)
+    parameters:
+    - id: pShape
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: pClosestFeatureFID
+      type: System.Int32
+    - id: pDistance
+      type: System.Double
+    content.vb: Sub NearestFeature(pShape As IGeometry, pClosestFeatureFID As Integer, pDistance As Double)
+  overload: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature*
+  nameWithType.vb: IIndexQuery.NearestFeature(IGeometry, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature(ESRI.ArcGIS.Geometry.IGeometry, Integer, Double)
+  name.vb: NearestFeature(IGeometry, Integer, Double)
+- uid: ESRI.ArcGIS.Carto.IIndexQuery.Within(ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: P:ESRI.ArcGIS.Carto.IIndexQuery.Within(ESRI.ArcGIS.Geometry.IGeometry)
+  id: Within(ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Carto.IIndexQuery
+  langs:
+  - csharp
+  - vb
+  name: Within[IGeometry]
+  nameWithType: IIndexQuery.Within[IGeometry]
+  fullName: ESRI.ArcGIS.Carto.IIndexQuery.Within[ESRI.ArcGIS.Geometry.IGeometry]
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Finds all features that the input shape lies within.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureCursor Within[IGeometry pShape] { get; }
+    parameters:
+    - id: pShape
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    content.vb: ReadOnly Property Within(pShape As IGeometry) As IFeatureCursor
+  overload: ESRI.ArcGIS.Carto.IIndexQuery.Within*
+  nameWithType.vb: IIndexQuery.Within(IGeometry)
+  fullName.vb: ESRI.ArcGIS.Carto.IIndexQuery.Within(ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: Within(IGeometry)
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature*
+  commentId: Overload:ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IIndexQuery.html#ESRI_ArcGIS_Carto_IIndexQuery_NearestFeature_ESRI_ArcGIS_Geometry_IGeometry_System_Int32__System_Double__
+  name: NearestFeature
+  nameWithType: IIndexQuery.NearestFeature
+  fullName: ESRI.ArcGIS.Carto.IIndexQuery.NearestFeature
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IIndexQuery.Within*
+  commentId: Overload:ESRI.ArcGIS.Carto.IIndexQuery.Within
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IIndexQuery.html#ESRI_ArcGIS_Carto_IIndexQuery_Within_ESRI_ArcGIS_Geometry_IGeometry_
+  name: Within
+  nameWithType: IIndexQuery.Within
+  fullName: ESRI.ArcGIS.Carto.IIndexQuery.Within
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

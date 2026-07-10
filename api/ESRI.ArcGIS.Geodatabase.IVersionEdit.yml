@@ -1,0 +1,737 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersionEdit
+  id: IVersionEdit
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost(ESRI.ArcGIS.esriSystem.IArray)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.Post(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2(System.String,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3(System.String,System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IVersionEdit
+  nameWithType: IVersionEdit
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about versions and posting of versions.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("2393B65D-74D4-11D2-AAD9-00C04FA37585")]
+
+      public interface IVersionEdit
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("2393B65D-74D4-11D2-AAD9-00C04FA37585")>
+
+      Public Interface IVersionEdit
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2393B65D-74D4-11D2-AAD9-00C04FA37585
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile(System.String)
+  id: Reconcile(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: Reconcile(string)
+  nameWithType: IVersionEdit.Reconcile(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Reconciles the current version with a target version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Reconcile(string VersionName)
+    parameters:
+    - id: VersionName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Reconcile(VersionName As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile*
+  nameWithType.vb: IVersionEdit.Reconcile(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile(String)
+  name.vb: Reconcile(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost
+  id: CanPost
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: CanPost()
+  nameWithType: IVersionEdit.CanPost()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns a boolean if the version can be posted to the reconcile version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanPost()
+    return:
+      type: System.Boolean
+    content.vb: Function CanPost() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.Post(System.String)
+  id: Post(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: Post(string)
+  nameWithType: IVersionEdit.Post(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Posts the current version to the reconciled version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Post(string VersionName)
+    parameters:
+    - id: VersionName
+      type: System.String
+    content.vb: Sub Post(VersionName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post*
+  nameWithType.vb: IVersionEdit.Post(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post(String)
+  name.vb: Post(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2(System.String,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2(System.String,System.Boolean)
+  id: Reconcile2(System.String,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: Reconcile2(string, bool)
+  nameWithType: IVersionEdit.Reconcile2(string, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2(string, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Reconciles the current version with a target version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Reconcile2(string VersionName, bool acquireLock)
+    parameters:
+    - id: VersionName
+      type: System.String
+    - id: acquireLock
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Function Reconcile2(VersionName As String, acquireLock As Boolean) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2*
+  nameWithType.vb: IVersionEdit.Reconcile2(String, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2(String, Boolean)
+  name.vb: Reconcile2(String, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3(System.String,System.Boolean,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3(System.String,System.Boolean,System.Boolean)
+  id: Reconcile3(System.String,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: Reconcile3(string, bool, bool)
+  nameWithType: IVersionEdit.Reconcile3(string, bool, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3(string, bool, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Reconciles the current version with a target version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Reconcile3(string VersionName, bool acquireLock, bool abortIfConflicts)
+    parameters:
+    - id: VersionName
+      type: System.String
+    - id: acquireLock
+      type: System.Boolean
+    - id: abortIfConflicts
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Function Reconcile3(VersionName As String, acquireLock As Boolean, abortIfConflicts As Boolean) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3*
+  nameWithType.vb: IVersionEdit.Reconcile3(String, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3(String, Boolean, Boolean)
+  name.vb: Reconcile3(String, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  id: Reconcile4(System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: Reconcile4(string, bool, bool, bool, bool)
+  nameWithType: IVersionEdit.Reconcile4(string, bool, bool, bool, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4(string, bool, bool, bool, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Reconciles the current version with a target version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Reconcile4(string VersionName, bool acquireLock, bool abortIfConflicts, bool ChildWins, bool ColumnLevel)
+    parameters:
+    - id: VersionName
+      type: System.String
+    - id: acquireLock
+      type: System.Boolean
+    - id: abortIfConflicts
+      type: System.Boolean
+    - id: ChildWins
+      type: System.Boolean
+    - id: ColumnLevel
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Function Reconcile4(VersionName As String, acquireLock As Boolean, abortIfConflicts As Boolean, ChildWins As Boolean, ColumnLevel As Boolean) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4*
+  nameWithType.vb: IVersionEdit.Reconcile4(String, Boolean, Boolean, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4(String, Boolean, Boolean, Boolean, Boolean)
+  name.vb: Reconcile4(String, Boolean, Boolean, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile(System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile(System.Boolean)
+  id: SupportParentPreReconcile(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: SupportParentPreReconcile(bool)
+  nameWithType: IVersionEdit.SupportParentPreReconcile(bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Enables or disables support for a Parent pre-Reconcile State to be created during Reconcile.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SupportParentPreReconcile(bool enableReconcile)
+    parameters:
+    - id: enableReconcile
+      type: System.Boolean
+    content.vb: Sub SupportParentPreReconcile(enableReconcile As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile*
+  nameWithType.vb: IVersionEdit.SupportParentPreReconcile(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile(Boolean)
+  name.vb: SupportParentPreReconcile(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost(ESRI.ArcGIS.esriSystem.IArray)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost(ESRI.ArcGIS.esriSystem.IArray)
+  id: PartialPost(ESRI.ArcGIS.esriSystem.IArray)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: PartialPost(IArray)
+  nameWithType: IVersionEdit.PartialPost(IArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost(ESRI.ArcGIS.esriSystem.IArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void PartialPost(IArray selectionSetsOfFeaturesToPost)
+    parameters:
+    - id: selectionSetsOfFeaturesToPost
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Sub PartialPost(selectionSetsOfFeaturesToPost As IArray)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+  id: ModifiedClasses
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: ModifiedClasses
+  nameWithType: IVersionEdit.ModifiedClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: All objects modified by the current and reconciled versions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumBSTR ModifiedClasses { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: ReadOnly Property ModifiedClasses As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+  id: ConflictClasses
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: ConflictClasses
+  nameWithType: IVersionEdit.ConflictClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: All objects which contain conflicts between the current and reconciled versions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumConflictClass ConflictClasses { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumConflictClass
+    content.vb: ReadOnly Property ConflictClasses As IEnumConflictClass
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+  id: ReconcileVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: ReconcileVersion
+  nameWithType: IVersionEdit.ReconcileVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version that the current version is reconciling against.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion ReconcileVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property ReconcileVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+  id: StartEditingVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: StartEditingVersion
+  nameWithType: IVersionEdit.StartEditingVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version prior to any edits.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion StartEditingVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property StartEditingVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+  id: PreReconcileVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: PreReconcileVersion
+  nameWithType: IVersionEdit.PreReconcileVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version prior to reconciliation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion PreReconcileVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property PreReconcileVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+  id: CommonAncestorVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: CommonAncestorVersion
+  nameWithType: IVersionEdit.CommonAncestorVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The common ancestor of this version and the reconcile version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion CommonAncestorVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property CommonAncestorVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion
+  id: ReconcilePrimeVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEdit
+  langs:
+  - csharp
+  - vb
+  name: ReconcilePrimeVersion
+  nameWithType: IVersionEdit.ReconcilePrimeVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version that the current version is reconciling against.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion ReconcilePrimeVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property ReconcilePrimeVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_Reconcile_System_String_
+  name: Reconcile
+  nameWithType: IVersionEdit.Reconcile
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_CanPost
+  name: CanPost
+  nameWithType: IVersionEdit.CanPost
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.CanPost
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.Post
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_Post_System_String_
+  name: Post
+  nameWithType: IVersionEdit.Post
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Post
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_Reconcile2_System_String_System_Boolean_
+  name: Reconcile2
+  nameWithType: IVersionEdit.Reconcile2
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile2
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_Reconcile3_System_String_System_Boolean_System_Boolean_
+  name: Reconcile3
+  nameWithType: IVersionEdit.Reconcile3
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile3
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_Reconcile4_System_String_System_Boolean_System_Boolean_System_Boolean_System_Boolean_
+  name: Reconcile4
+  nameWithType: IVersionEdit.Reconcile4
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.Reconcile4
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_SupportParentPreReconcile_System_Boolean_
+  name: SupportParentPreReconcile
+  nameWithType: IVersionEdit.SupportParentPreReconcile
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.SupportParentPreReconcile
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_PartialPost_ESRI_ArcGIS_esriSystem_IArray_
+  name: PartialPost
+  nameWithType: IVersionEdit.PartialPost
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.PartialPost
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_ModifiedClasses
+  name: ModifiedClasses
+  nameWithType: IVersionEdit.ModifiedClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ModifiedClasses
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_ConflictClasses
+  name: ConflictClasses
+  nameWithType: IVersionEdit.ConflictClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ConflictClasses
+- uid: ESRI.ArcGIS.Geodatabase.IEnumConflictClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumConflictClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumConflictClass.html
+  name: IEnumConflictClass
+  nameWithType: IEnumConflictClass
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumConflictClass
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_ReconcileVersion
+  name: ReconcileVersion
+  nameWithType: IVersionEdit.ReconcileVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcileVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersion
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersion
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html
+  name: IVersion
+  nameWithType: IVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_StartEditingVersion
+  name: StartEditingVersion
+  nameWithType: IVersionEdit.StartEditingVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.StartEditingVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_PreReconcileVersion
+  name: PreReconcileVersion
+  nameWithType: IVersionEdit.PreReconcileVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.PreReconcileVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_CommonAncestorVersion
+  name: CommonAncestorVersion
+  nameWithType: IVersionEdit.CommonAncestorVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.CommonAncestorVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEdit.html#ESRI_ArcGIS_Geodatabase_IVersionEdit_ReconcilePrimeVersion
+  name: ReconcilePrimeVersion
+  nameWithType: IVersionEdit.ReconcilePrimeVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEdit.ReconcilePrimeVersion

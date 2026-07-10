@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware
+  commentId: T:ESRI.ArcGIS.Geometry.IPointIDAware
+  id: IPointIDAware
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs
+  - ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+  - ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple
+  langs:
+  - csharp
+  - vb
+  name: IPointIDAware
+  nameWithType: IPointIDAware
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicator interface that identifies geometries that can have persistent point ID values attached to coordinates.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("739A1669-E870-11D2-9F30-00C04F6BDF0D")]
+
+      public interface IPointIDAware
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("739A1669-E870-11D2-9F30-00C04F6BDF0D")>
+
+      Public Interface IPointIDAware
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  - ESRI.ArcGIS.Geometry.TriangleFanClass
+  - ESRI.ArcGIS.Geometry.TriangleStripClass
+  - ESRI.ArcGIS.Geometry.TrianglesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 739A1669-E870-11D2-9F30-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs
+  commentId: M:ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs
+  id: DropPointIDs
+  parent: ESRI.ArcGIS.Geometry.IPointIDAware
+  langs:
+  - csharp
+  - vb
+  name: DropPointIDs()
+  nameWithType: IPointIDAware.DropPointIDs()
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Unsets all PointID values without changing awareness. Only works if geometry is aware of PointIDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DropPointIDs()
+    content.vb: Sub DropPointIDs()
+  overload: ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs*
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+  commentId: P:ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+  id: PointIDAware
+  parent: ESRI.ArcGIS.Geometry.IPointIDAware
+  langs:
+  - csharp
+  - vb
+  name: PointIDAware
+  nameWithType: IPointIDAware.PointIDAware
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether or not the geometry is aware of and capable of handling PointIDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool PointIDAware { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property PointIDAware As Boolean
+  overload: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware*
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple
+  commentId: P:ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple
+  id: PointIDSimple
+  parent: ESRI.ArcGIS.Geometry.IPointIDAware
+  langs:
+  - csharp
+  - vb
+  name: PointIDSimple
+  nameWithType: IPointIDAware.PointIDSimple
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if all PointID values for this geometry are well-defined. Only works if geometry is aware of PointIDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool PointIDSimple { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property PointIDSimple As Boolean
+  overload: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointIDAware.html#ESRI_ArcGIS_Geometry_IPointIDAware_DropPointIDs
+  name: DropPointIDs
+  nameWithType: IPointIDAware.DropPointIDs
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.DropPointIDs
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointIDAware.html#ESRI_ArcGIS_Geometry_IPointIDAware_PointIDAware
+  name: PointIDAware
+  nameWithType: IPointIDAware.PointIDAware
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDAware
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointIDAware.html#ESRI_ArcGIS_Geometry_IPointIDAware_PointIDSimple
+  name: PointIDSimple
+  nameWithType: IPointIDAware.PointIDSimple
+  fullName: ESRI.ArcGIS.Geometry.IPointIDAware.PointIDSimple

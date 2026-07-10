@@ -1,0 +1,185 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  commentId: T:ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  id: esriShapeImportFlags
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportAttach
+  - ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportDefaults
+  - ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNoSwap
+  - ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNonTrusted
+  - ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportRecalculateEnvelope
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportFlags
+  nameWithType: esriShapeImportFlags
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  type: Enum
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Flags used to control the behavior of IESRIShape2 import methods.
+  example: []
+  syntax:
+    content: >-
+      [Guid("5ADF494F-934B-430D-8EB5-53D307E76C64")]
+
+      public enum esriShapeImportFlags
+    content.vb: >-
+      <Guid("5ADF494F-934B-430D-8EB5-53D307E76C64")>
+
+      Public Enum esriShapeImportFlags
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5ADF494F-934B-430D-8EB5-53D307E76C64
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportDefaults
+  commentId: F:ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportDefaults
+  id: esriShapeImportDefaults
+  parent: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportDefaults
+  nameWithType: esriShapeImportFlags.esriShapeImportDefaults
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportDefaults
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '0: Uses default import behavior: performs byte swapping if the current platform is Big-Endian (Sun, Motorola, etc.), assumes the geometry being imported is simple, and does not attach to the import buffer.'
+  example: []
+  syntax:
+    content: esriShapeImportDefaults = 0
+    return:
+      type: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNoSwap
+  commentId: F:ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNoSwap
+  id: esriShapeImportNoSwap
+  parent: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportNoSwap
+  nameWithType: esriShapeImportFlags.esriShapeImportNoSwap
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNoSwap
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '1: Assumes shapefile standard byte ordering, regardless of current platform architecture. The default is to perform byte swapping if the current platform architecture is Big-Endian.'
+  example: []
+  syntax:
+    content: esriShapeImportNoSwap = 1
+    return:
+      type: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNonTrusted
+  commentId: F:ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNonTrusted
+  id: esriShapeImportNonTrusted
+  parent: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportNonTrusted
+  nameWithType: esriShapeImportFlags.esriShapeImportNonTrusted
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportNonTrusted
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '2: Does not assume that the input shapefile buffer represents a topologically correct geometry.'
+  example: []
+  syntax:
+    content: esriShapeImportNonTrusted = 2
+    return:
+      type: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportAttach
+  commentId: F:ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportAttach
+  id: esriShapeImportAttach
+  parent: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportAttach
+  nameWithType: esriShapeImportFlags.esriShapeImportAttach
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportAttach
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '4: Attaches the geometry directly to the input shapefile buffer. The geometry must be deleted, set to empty, edited, or imported from/attached to a different buffer before the buffer can be re-used, otherwise the buffer must be kept alive until geometry is destro'
+  example: []
+  syntax:
+    content: esriShapeImportAttach = 4
+    return:
+      type: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportRecalculateEnvelope
+  commentId: F:ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportRecalculateEnvelope
+  id: esriShapeImportRecalculateEnvelope
+  parent: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  langs:
+  - csharp
+  - vb
+  name: esriShapeImportRecalculateEnvelope
+  nameWithType: esriShapeImportFlags.esriShapeImportRecalculateEnvelope
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags.esriShapeImportRecalculateEnvelope
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '8: Causes the envelope of the imported shape to be recalculated.'
+  example: []
+  syntax:
+    content: esriShapeImportRecalculateEnvelope = 8
+    return:
+      type: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  commentId: T:ESRI.ArcGIS.Geometry.esriShapeImportFlags
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriShapeImportFlags.html
+  name: esriShapeImportFlags
+  nameWithType: esriShapeImportFlags
+  fullName: ESRI.ArcGIS.Geometry.esriShapeImportFlags

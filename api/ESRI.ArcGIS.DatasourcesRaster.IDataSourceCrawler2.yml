@@ -1,0 +1,436 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  id: IDataSourceCrawler2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems
+  - ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+  langs:
+  - csharp
+  - vb
+  name: IDataSourceCrawler2
+  nameWithType: IDataSourceCrawler2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a data source crawler.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("6585FBDE-358F-40A7-8748-79F99B374F5F")]
+
+      public interface IDataSourceCrawler2 : IDataSourceCrawler
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("6585FBDE-358F-40A7-8748-79F99B374F5F")>
+
+      Public Interface IDataSourceCrawler2 Inherits IDataSourceCrawler
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.CartosatFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.FileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.IkonosFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.KompsatFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.PixFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.PleiadesFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.QuickBirdFileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.ScientificDataCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.Spot6FileCrawlerClass
+  - ESRI.ArcGIS.DatasourcesRaster.SuperViewFileCrawlerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6585FBDE-358F-40A7-8748-79F99B374F5F
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: Crawl(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: Crawl(ITrackCancel)
+  nameWithType: IDataSourceCrawler2.Crawl(ITrackCancel)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IEnumVariantSimple Crawl(ITrackCancel pTrackCancel)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumVariantSimple
+    content.vb: Function Crawl(pTrackCancel As ITrackCancel) As IEnumVariantSimple
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+  id: CrawlerItemType
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: CrawlerItemType
+  nameWithType: IDataSourceCrawler2.CrawlerItemType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: esriCrawlerDataSourceType CrawlerItemType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+    content.vb: ReadOnly Property CrawlerItemType As esriCrawlerDataSourceType
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+  id: CanFilterByTime
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: CanFilterByTime
+  nameWithType: IDataSourceCrawler2.CanFilterByTime
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool CanFilterByTime { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanFilterByTime As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+  id: TimeExtent
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: TimeExtent
+  nameWithType: IDataSourceCrawler2.TimeExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ITimeExtent TimeExtent { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.ITimeExtent
+    content.vb: Property TimeExtent As ITimeExtent
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+  id: CanFilterByExpression
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: CanFilterByExpression
+  nameWithType: IDataSourceCrawler2.CanFilterByExpression
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool CanFilterByExpression { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanFilterByExpression As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+  id: Filter
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: IDataSourceCrawler2.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string Filter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Filter As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+  id: CanMergeItems
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: CanMergeItems
+  nameWithType: IDataSourceCrawler2.CanMergeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the crawler is capable of merging related data source items into one composite crawled item.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanMergeItems { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanMergeItems As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems
+  id: MergeItems
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2
+  langs:
+  - csharp
+  - vb
+  name: MergeItems
+  nameWithType: IDataSourceCrawler2.MergeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the crawler merges related data source items into one composite crawled item.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool MergeItems { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property MergeItems As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_Crawl_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: Crawl
+  nameWithType: IDataSourceCrawler2.Crawl
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Crawl
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.esriSystem.IEnumVariantSimple
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumVariantSimple
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumVariantSimple.html
+  name: IEnumVariantSimple
+  nameWithType: IEnumVariantSimple
+  fullName: ESRI.ArcGIS.esriSystem.IEnumVariantSimple
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_CrawlerItemType
+  name: CrawlerItemType
+  nameWithType: IDataSourceCrawler2.CrawlerItemType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CrawlerItemType
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType.html
+  name: esriCrawlerDataSourceType
+  nameWithType: esriCrawlerDataSourceType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriCrawlerDataSourceType
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_CanFilterByTime
+  name: CanFilterByTime
+  nameWithType: IDataSourceCrawler2.CanFilterByTime
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByTime
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_TimeExtent
+  name: TimeExtent
+  nameWithType: IDataSourceCrawler2.TimeExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.TimeExtent
+- uid: ESRI.ArcGIS.esriSystem.ITimeExtent
+  commentId: T:ESRI.ArcGIS.esriSystem.ITimeExtent
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeExtent.html
+  name: ITimeExtent
+  nameWithType: ITimeExtent
+  fullName: ESRI.ArcGIS.esriSystem.ITimeExtent
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_CanFilterByExpression
+  name: CanFilterByExpression
+  nameWithType: IDataSourceCrawler2.CanFilterByExpression
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanFilterByExpression
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_Filter
+  name: Filter
+  nameWithType: IDataSourceCrawler2.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.Filter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_CanMergeItems
+  name: CanMergeItems
+  nameWithType: IDataSourceCrawler2.CanMergeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.CanMergeItems
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.html#ESRI_ArcGIS_DatasourcesRaster_IDataSourceCrawler2_MergeItems
+  name: MergeItems
+  nameWithType: IDataSourceCrawler2.MergeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler2.MergeItems

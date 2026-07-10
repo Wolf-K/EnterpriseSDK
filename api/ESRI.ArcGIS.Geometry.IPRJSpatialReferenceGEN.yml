@@ -1,0 +1,228 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  commentId: T:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  id: IPRJSpatialReferenceGEN
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(System.String@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(System.String,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  langs:
+  - csharp
+  - vb
+  name: IPRJSpatialReferenceGEN
+  nameWithType: IPRJSpatialReferenceGEN
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control the import/export operations components of a spatial reference system.
+  example: []
+  syntax:
+    content: >-
+      [Guid("F0E1978B-AB3D-4F82-A374-C5533B179B17")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IPRJSpatialReferenceGEN
+    content.vb: >-
+      <Guid("F0E1978B-AB3D-4F82-A374-C5533B179B17")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IPRJSpatialReferenceGEN
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeographicCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.ProjectedCoordinateSystemClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F0E1978B-AB3D-4F82-A374-C5533B179B17
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(System.String,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(System.String,System.Int32@)
+  id: ImportSpatialReferenceFromPRJ(System.String,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  langs:
+  - csharp
+  - vb
+  name: ImportSpatialReferenceFromPRJ(string, out int)
+  nameWithType: IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(string, out int)
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(string, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Defines the spatial reference from the specified ESRISpatialReference buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ImportSpatialReferenceFromPRJ(string str, out int cBytesRead)
+    parameters:
+    - id: str
+      type: System.String
+    - id: cBytesRead
+      type: System.Int32
+    content.vb: Sub ImportSpatialReferenceFromPRJ(str As String, cBytesRead As Integer)
+  overload: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ*
+  nameWithType.vb: IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ(String, Integer)
+  name.vb: ImportSpatialReferenceFromPRJ(String, Integer)
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(System.String@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(System.String@,System.Int32@)
+  id: ExportSpatialReferenceToPRJ(System.String@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  langs:
+  - csharp
+  - vb
+  name: ExportSpatialReferenceToPRJ(out string, out int)
+  nameWithType: IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(out string, out int)
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(out string, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Exports the spatial reference to a buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ExportSpatialReferenceToPRJ(out string str, out int cBytesWrote)
+    parameters:
+    - id: str
+      type: System.String
+    - id: cBytesWrote
+      type: System.Int32
+    content.vb: Sub ExportSpatialReferenceToPRJ(str As String, cBytesWrote As Integer)
+  overload: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ*
+  nameWithType.vb: IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ(String, Integer)
+  name.vb: ExportSpatialReferenceToPRJ(String, Integer)
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  commentId: P:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  id: PRJSpatialReferenceSize
+  parent: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN
+  langs:
+  - csharp
+  - vb
+  name: PRJSpatialReferenceSize
+  nameWithType: IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of bytes required to hold the persistant representation of the spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int PRJSpatialReferenceSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property PRJSpatialReferenceSize As Integer
+  overload: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.html#ESRI_ArcGIS_Geometry_IPRJSpatialReferenceGEN_ImportSpatialReferenceFromPRJ_System_String_System_Int32__
+  name: ImportSpatialReferenceFromPRJ
+  nameWithType: IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ImportSpatialReferenceFromPRJ
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.html#ESRI_ArcGIS_Geometry_IPRJSpatialReferenceGEN_ExportSpatialReferenceToPRJ_System_String__System_Int32__
+  name: ExportSpatialReferenceToPRJ
+  nameWithType: IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.ExportSpatialReferenceToPRJ
+- uid: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.html#ESRI_ArcGIS_Geometry_IPRJSpatialReferenceGEN_PRJSpatialReferenceSize
+  name: PRJSpatialReferenceSize
+  nameWithType: IPRJSpatialReferenceGEN.PRJSpatialReferenceSize
+  fullName: ESRI.ArcGIS.Geometry.IPRJSpatialReferenceGEN.PRJSpatialReferenceSize

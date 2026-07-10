@@ -1,0 +1,410 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  id: IWorkspaceExtension3
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames(ESRI.ArcGIS.Geodatabase.IEnumDatasetName@,ESRI.ArcGIS.Geodatabase.IEnumDatasetName@)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+  langs:
+  - csharp
+  - vb
+  name: IWorkspaceExtension3
+  nameWithType: IWorkspaceExtension3
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that supply workspace extension information.
+  example: []
+  syntax:
+    content: >-
+      [Guid("5353322D-0CF1-4963-84D4-DAD544AC5A0C")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IWorkspaceExtension3 : IWorkspaceExtension2, IWorkspaceExtension
+    content.vb: >-
+      <Guid("5353322D-0CF1-4963-84D4-DAD544AC5A0C")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IWorkspaceExtension3 Inherits IWorkspaceExtension2, IWorkspaceExtension
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainWorkspaceExtensionClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5353322D-0CF1-4963-84D4-DAD544AC5A0C
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  id: OwnsDatasetType(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: OwnsDatasetType(esriDatasetType)
+  nameWithType: IWorkspaceExtension3.OwnsDatasetType(esriDatasetType)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool OwnsDatasetType(esriDatasetType DatasetType)
+    parameters:
+    - id: DatasetType
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    return:
+      type: System.Boolean
+    content.vb: Function OwnsDatasetType(DatasetType As esriDatasetType) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames(ESRI.ArcGIS.Geodatabase.IEnumDatasetName@,ESRI.ArcGIS.Geodatabase.IEnumDatasetName@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames(ESRI.ArcGIS.Geodatabase.IEnumDatasetName@,ESRI.ArcGIS.Geodatabase.IEnumDatasetName@)
+  id: PrivateTableAndOwnerNames(ESRI.ArcGIS.Geodatabase.IEnumDatasetName@,ESRI.ArcGIS.Geodatabase.IEnumDatasetName@)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: PrivateTableAndOwnerNames(out IEnumDatasetName, out IEnumDatasetName)
+  nameWithType: IWorkspaceExtension3.PrivateTableAndOwnerNames(out IEnumDatasetName, out IEnumDatasetName)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames(out ESRI.ArcGIS.Geodatabase.IEnumDatasetName, out ESRI.ArcGIS.Geodatabase.IEnumDatasetName)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Datasets that own tables in the list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PrivateTableAndOwnerNames(out IEnumDatasetName privateTables, out IEnumDatasetName owningDatasets)
+    parameters:
+    - id: privateTables
+      type: ESRI.ArcGIS.Geodatabase.IEnumDatasetName
+    - id: owningDatasets
+      type: ESRI.ArcGIS.Geodatabase.IEnumDatasetName
+    content.vb: Sub PrivateTableAndOwnerNames(privateTables As IEnumDatasetName, owningDatasets As IEnumDatasetName)
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames*
+  nameWithType.vb: IWorkspaceExtension3.PrivateTableAndOwnerNames(IEnumDatasetName, IEnumDatasetName)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames(ESRI.ArcGIS.Geodatabase.IEnumDatasetName, ESRI.ArcGIS.Geodatabase.IEnumDatasetName)
+  name.vb: PrivateTableAndOwnerNames(IEnumDatasetName, IEnumDatasetName)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IWorkspaceExtension3.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+  id: GUID
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: GUID
+  nameWithType: IWorkspaceExtension3.GUID
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: UID GUID { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: ReadOnly Property GUID As UID
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  id: PrivateDatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: PrivateDatasetNames[esriDatasetType]
+  nameWithType: IWorkspaceExtension3.PrivateDatasetNames[esriDatasetType]
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames[ESRI.ArcGIS.Geodatabase.esriDatasetType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IEnumBSTR PrivateDatasetNames[esriDatasetType dtype] { get; }
+    parameters:
+    - id: dtype
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: ReadOnly Property PrivateDatasetNames(dtype As esriDatasetType) As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames*
+  nameWithType.vb: IWorkspaceExtension3.PrivateDatasetNames(esriDatasetType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  name.vb: PrivateDatasetNames(esriDatasetType)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+  id: DataDictionaryTableNames
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: DataDictionaryTableNames
+  nameWithType: IWorkspaceExtension3.DataDictionaryTableNames
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IEnumBSTR DataDictionaryTableNames { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: ReadOnly Property DataDictionaryTableNames As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+  id: Workspace
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3
+  langs:
+  - csharp
+  - vb
+  name: Workspace
+  nameWithType: IWorkspaceExtension3.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspace Workspace { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: ReadOnly Property Workspace As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_OwnsDatasetType_ESRI_ArcGIS_Geodatabase_esriDatasetType_
+  name: OwnsDatasetType
+  nameWithType: IWorkspaceExtension3.OwnsDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.OwnsDatasetType
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetType.html
+  name: esriDatasetType
+  nameWithType: esriDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_PrivateTableAndOwnerNames_ESRI_ArcGIS_Geodatabase_IEnumDatasetName__ESRI_ArcGIS_Geodatabase_IEnumDatasetName__
+  name: PrivateTableAndOwnerNames
+  nameWithType: IWorkspaceExtension3.PrivateTableAndOwnerNames
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateTableAndOwnerNames
+- uid: ESRI.ArcGIS.Geodatabase.IEnumDatasetName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumDatasetName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumDatasetName.html
+  name: IEnumDatasetName
+  nameWithType: IEnumDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_Name
+  name: Name
+  nameWithType: IWorkspaceExtension3.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_GUID
+  name: GUID
+  nameWithType: IWorkspaceExtension3.GUID
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.GUID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_PrivateDatasetNames_ESRI_ArcGIS_Geodatabase_esriDatasetType_
+  name: PrivateDatasetNames
+  nameWithType: IWorkspaceExtension3.PrivateDatasetNames
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.PrivateDatasetNames
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_DataDictionaryTableNames
+  name: DataDictionaryTableNames
+  nameWithType: IWorkspaceExtension3.DataDictionaryTableNames
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.DataDictionaryTableNames
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.html#ESRI_ArcGIS_Geodatabase_IWorkspaceExtension3_Workspace
+  name: Workspace
+  nameWithType: IWorkspaceExtension3.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceExtension3.Workspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace

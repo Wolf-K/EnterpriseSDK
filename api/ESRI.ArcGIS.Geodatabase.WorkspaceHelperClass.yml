@@ -1,0 +1,432 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  id: WorkspaceHelperClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor
+  - ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceHelperClass
+  nameWithType: WorkspaceHelperClass
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("DA10C1C6-09A3-11D4-9FAA-00C04F6BDF0C")]
+
+      public class WorkspaceHelperClass : WorkspaceHelper, IWorkspaceHelper
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("DA10C1C6-09A3-11D4-9FAA-00C04F6BDF0C")>
+
+      Public Class WorkspaceHelperClass Implements WorkspaceHelper, IWorkspaceHelper
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.WorkspaceHelper
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DA10C1C6-09A3-11D4-9FAA-00C04F6BDF0C
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor
+  commentId: M:ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceHelperClass()
+  nameWithType: WorkspaceHelperClass.WorkspaceHelperClass()
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.WorkspaceHelperClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: public WorkspaceHelperClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor*
+  nameWithType.vb: WorkspaceHelperClass.New()
+  fullName.vb: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+  id: Workspace
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  langs:
+  - csharp
+  - vb
+  name: Workspace
+  nameWithType: WorkspaceHelperClass.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The workspace for this workspace helper.
+  remarks: '&lt;p&gt;A Workspace is a container of spatial and non-spatial datasets such as feature classes, raster datasets, and tables. It provides methods to instantiate existing datasets and to create new datasets. Workspaces are classified into types specified by the &lt;b&gt;&lt;a href="esriWorkspaceType.htm"&gt;esriWorkspaceType&lt;/a&gt;&lt;/b&gt; enumerator: FileSystemWorkspace, LocalDatabaseWorkspace, and RemoteDatabaseWorkspace. Shapefiles and ArcGIS for Desktop Advanced workspaces are examples of FileSystemWorkspace. A personal geodatabase stored in an Access or a File Geodatabase is an example of a LocalDatabaseWorkspace. A geodatabase stored in an RDBMS such as Oracle, DB2, SQL Server, or Informix and accessed via ArcSDE is an example of a RemoteDatabaseWorkspace.&lt;/p&gt;&amp;nbsp;&lt;p&gt;A Workspace hands out a &lt;b&gt;&lt;a href="WorkspaceName.htm"&gt;WorkspaceName&lt;/a&gt;&amp;nbsp;&lt;/b&gt;object as the value of its FullName property. For example, the WorkspaceName for a workspace can be persisted in a map document. An application can call the &lt;b&gt;Open()&lt;/b&gt; method on the workspace name after loading it from persistent storage to connect to and get an object reference to the workspace.&lt;/p&gt;'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IWorkspace Workspace { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Overridable ReadOnly Property Workspace As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelper
+  commentId: T:ESRI.ArcGIS.Geodatabase.WorkspaceHelper
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.WorkspaceHelper.html
+  name: WorkspaceHelper
+  nameWithType: WorkspaceHelper
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelper
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.html
+  name: IWorkspaceHelper
+  nameWithType: IWorkspaceHelper
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.html#ESRI_ArcGIS_Geodatabase_WorkspaceHelperClass__ctor
+  name: WorkspaceHelperClass
+  nameWithType: WorkspaceHelperClass.WorkspaceHelperClass
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.WorkspaceHelperClass
+  nameWithType.vb: WorkspaceHelperClass.New
+  fullName.vb: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.html#ESRI_ArcGIS_Geodatabase_WorkspaceHelperClass_Workspace
+  name: Workspace
+  nameWithType: WorkspaceHelperClass.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass.Workspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.html#ESRI_ArcGIS_Geodatabase_IWorkspaceHelper_Workspace
+  name: Workspace
+  nameWithType: IWorkspaceHelper.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace

@@ -1,0 +1,242 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  id: ISpatialReferenceSingletonManager
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity(System.Int64@)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS(System.Int64@)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS(System.Int32,System.Int64@)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys(System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: ISpatialReferenceSingletonManager
+  nameWithType: ISpatialReferenceSingletonManager
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Ensure that no duplicates of projection engine pcs or gcs objects are created.
+  example: []
+  syntax:
+    content: >-
+      [Guid("58AB2690-5981-11D2-BCDA-0000F875BCCE")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISpatialReferenceSingletonManager
+    content.vb: >-
+      <Guid("58AB2690-5981-11D2-BCDA-0000F875BCCE")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISpatialReferenceSingletonManager
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.SpatialReferenceEnvironmentClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 58AB2690-5981-11D2-BCDA-0000F875BCCE
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS(System.Int64@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS(System.Int64@)
+  id: CreateOwnedCS(System.Int64@)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  langs:
+  - csharp
+  - vb
+  name: CreateOwnedCS(ref long)
+  nameWithType: ISpatialReferenceSingletonManager.CreateOwnedCS(ref long)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS(ref long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void CreateOwnedCS(ref long ppInOutCoordSys)
+    parameters:
+    - id: ppInOutCoordSys
+      type: System.Int64
+    content.vb: Sub CreateOwnedCS(ppInOutCoordSys As Long)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS*
+  nameWithType.vb: ISpatialReferenceSingletonManager.CreateOwnedCS(Long)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS(Long)
+  name.vb: CreateOwnedCS(Long)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity(System.Int64@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity(System.Int64@)
+  id: CommitIdentity(System.Int64@)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  langs:
+  - csharp
+  - vb
+  name: CommitIdentity(ref long)
+  nameWithType: ISpatialReferenceSingletonManager.CommitIdentity(ref long)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity(ref long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void CommitIdentity(ref long ppInOutCoordSys)
+    parameters:
+    - id: ppInOutCoordSys
+      type: System.Int64
+    content.vb: Sub CommitIdentity(ppInOutCoordSys As Long)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity*
+  nameWithType.vb: ISpatialReferenceSingletonManager.CommitIdentity(Long)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity(Long)
+  name.vb: CommitIdentity(Long)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS(System.Int32,System.Int64@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS(System.Int32,System.Int64@)
+  id: FindFactoryCS(System.Int32,System.Int64@)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  langs:
+  - csharp
+  - vb
+  name: FindFactoryCS(int, out long)
+  nameWithType: ISpatialReferenceSingletonManager.FindFactoryCS(int, out long)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS(int, out long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void FindFactoryCS(int factoryCSCode, out long ppOutCoordSys)
+    parameters:
+    - id: factoryCSCode
+      type: System.Int32
+    - id: ppOutCoordSys
+      type: System.Int64
+    content.vb: Sub FindFactoryCS(factoryCSCode As Integer, ppOutCoordSys As Long)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS*
+  nameWithType.vb: ISpatialReferenceSingletonManager.FindFactoryCS(Integer, Long)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS(Integer, Long)
+  name.vb: FindFactoryCS(Integer, Long)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys(System.Int64)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys(System.Int64)
+  id: ReleaseCoordSys(System.Int64)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager
+  langs:
+  - csharp
+  - vb
+  name: ReleaseCoordSys(long)
+  nameWithType: ISpatialReferenceSingletonManager.ReleaseCoordSys(long)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys(long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ReleaseCoordSys(long pInCoordSys)
+    parameters:
+    - id: pInCoordSys
+      type: System.Int64
+    content.vb: Sub ReleaseCoordSys(pInCoordSys As Long)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys*
+  nameWithType.vb: ISpatialReferenceSingletonManager.ReleaseCoordSys(Long)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys(Long)
+  name.vb: ReleaseCoordSys(Long)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.html#ESRI_ArcGIS_Geometry_ISpatialReferenceSingletonManager_CreateOwnedCS_System_Int64__
+  name: CreateOwnedCS
+  nameWithType: ISpatialReferenceSingletonManager.CreateOwnedCS
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CreateOwnedCS
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.html#ESRI_ArcGIS_Geometry_ISpatialReferenceSingletonManager_CommitIdentity_System_Int64__
+  name: CommitIdentity
+  nameWithType: ISpatialReferenceSingletonManager.CommitIdentity
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.CommitIdentity
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.html#ESRI_ArcGIS_Geometry_ISpatialReferenceSingletonManager_FindFactoryCS_System_Int32_System_Int64__
+  name: FindFactoryCS
+  nameWithType: ISpatialReferenceSingletonManager.FindFactoryCS
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.FindFactoryCS
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.html#ESRI_ArcGIS_Geometry_ISpatialReferenceSingletonManager_ReleaseCoordSys_System_Int64_
+  name: ReleaseCoordSys
+  nameWithType: ISpatialReferenceSingletonManager.ReleaseCoordSys
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceSingletonManager.ReleaseCoordSys

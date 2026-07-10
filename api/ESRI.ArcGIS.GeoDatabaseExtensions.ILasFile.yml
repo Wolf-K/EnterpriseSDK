@@ -1,0 +1,955 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  id: ILasFile
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing(System.Boolean)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+  langs:
+  - csharp
+  - vb
+  name: ILasFile
+  nameWithType: ILasFile
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members of LasFile.
+  example: []
+  syntax:
+    content: >-
+      [Guid("36CCBFD3-8A6C-4C11-8551-96AE8629AAD9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ILasFile
+    content.vb: >-
+      <Guid("36CCBFD3-8A6C-4C11-8551-96AE8629AAD9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ILasFile
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasFileClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 36CCBFD3-8A6C-4C11-8551-96AE8629AAD9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion(System.Int32@,System.Int32@)
+  id: GetVersion(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: GetVersion(out int, out int)
+  nameWithType: ILasFile.GetVersion(out int, out int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion(out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The version of the LAS file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetVersion(out int pMajor, out int pMinor)
+    parameters:
+    - id: pMajor
+      type: System.Int32
+    - id: pMinor
+      type: System.Int32
+    content.vb: Sub GetVersion(pMajor As Integer, pMinor As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion*
+  nameWithType.vb: ILasFile.GetVersion(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion(Integer, Integer)
+  name.vb: GetVersion(Integer, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn(System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn(System.Int32)
+  id: GetNumberOfPointsByReturn(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: GetNumberOfPointsByReturn(int)
+  nameWithType: ILasFile.GetNumberOfPointsByReturn(int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of points in the LAS file based on the specified LiDAR return number.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double GetNumberOfPointsByReturn(int ReturnNumber)
+    parameters:
+    - id: ReturnNumber
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Function GetNumberOfPointsByReturn(ReturnNumber As Integer) As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn*
+  nameWithType.vb: ILasFile.GetNumberOfPointsByReturn(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn(Integer)
+  name.vb: GetNumberOfPointsByReturn(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics
+  id: GetStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: GetStatistics()
+  nameWithType: ILasFile.GetStatistics()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get statistics.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILasStatistics GetStatistics()
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+    content.vb: Function GetStatistics() As ILasStatistics
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo
+  id: GetHeaderInfo
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: GetHeaderInfo()
+  nameWithType: ILasFile.GetHeaderInfo()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get LAS file header information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILasHeaderInfo GetHeaderInfo()
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasHeaderInfo
+    content.vb: Function GetHeaderInfo() As ILasHeaderInfo
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing(System.Boolean)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing(System.Boolean)
+  id: EstimatePointSpacing(System.Boolean)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: EstimatePointSpacing(bool)
+  nameWithType: ILasFile.EstimatePointSpacing(bool)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Estimate point spacing.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double EstimatePointSpacing(bool bUseStatistics)
+    parameters:
+    - id: bUseStatistics
+      type: System.Boolean
+    return:
+      type: System.Double
+    content.vb: Function EstimatePointSpacing(bUseStatistics As Boolean) As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing*
+  nameWithType.vb: ILasFile.EstimatePointSpacing(Boolean)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing(Boolean)
+  name.vb: EstimatePointSpacing(Boolean)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  id: EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: EstimatePointCount(IGeometry)
+  nameWithType: ILasFile.EstimatePointCount(IGeometry)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: double EstimatePointCount(IGeometry pAOI)
+    parameters:
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: System.Double
+    content.vb: Function EstimatePointCount(pAOI As IGeometry) As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+  id: Name
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ILasFile.Name
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The (full) file name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+  id: PointDataFormat
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: PointDataFormat
+  nameWithType: ILasFile.PointDataFormat
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The record format for points in the LAS file
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int PointDataFormat { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property PointDataFormat As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+  id: NumberOfPointRecords
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: NumberOfPointRecords
+  nameWithType: ILasFile.NumberOfPointRecords
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of points in the LAS file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double NumberOfPointRecords { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property NumberOfPointRecords As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+  id: SizeInBytes
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: SizeInBytes
+  nameWithType: ILasFile.SizeInBytes
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The LAS/zLAS file's size in bytes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double SizeInBytes { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property SizeInBytes As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+  id: HasRGB
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: HasRGB
+  nameWithType: ILasFile.HasRGB
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if RGB is availabe.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasRGB { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasRGB As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+  id: HasGpsTime
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: HasGpsTime
+  nameWithType: ILasFile.HasGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates GPS time is available.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasGpsTime { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasGpsTime As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+  id: IsStandardGpsTime
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: IsStandardGpsTime
+  nameWithType: ILasFile.IsStandardGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if the GPS time is standard GPS Time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStandardGpsTime { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStandardGpsTime As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: ILasFile.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The XYZ extent of points in the LAS file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: ILasFile.SpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The spatial reference of the LAS file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+  id: NativeSpatialReference
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: NativeSpatialReference
+  nameWithType: ILasFile.NativeSpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The spatial reference defined in the LAS file header.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference NativeSpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property NativeSpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+  id: IsFileMissing
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: IsFileMissing
+  nameWithType: ILasFile.IsFileMissing
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if the LAS file is missing.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsFileMissing { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsFileMissing As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+  id: IsFileValid
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: IsFileValid
+  nameWithType: ILasFile.IsFileValid
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if the LAS file exists and is valid.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsFileValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsFileValid As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+  id: HasPrjFile
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: HasPrjFile
+  nameWithType: ILasFile.HasPrjFile
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if there is a corresponding PRJ file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasPrjFile { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasPrjFile As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+  id: HasStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: HasStatistics
+  nameWithType: ILasFile.HasStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if statistics is available.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasStatistics { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasStatistics As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics
+  id: NeedsUpdateStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile
+  langs:
+  - csharp
+  - vb
+  name: NeedsUpdateStatistics
+  nameWithType: ILasFile.NeedsUpdateStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if update is necessary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool NeedsUpdateStatistics { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property NeedsUpdateStatistics As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_GetVersion_System_Int32__System_Int32__
+  name: GetVersion
+  nameWithType: ILasFile.GetVersion
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetVersion
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_GetNumberOfPointsByReturn_System_Int32_
+  name: GetNumberOfPointsByReturn
+  nameWithType: ILasFile.GetNumberOfPointsByReturn
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetNumberOfPointsByReturn
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_GetStatistics
+  name: GetStatistics
+  nameWithType: ILasFile.GetStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html
+  name: ILasStatistics
+  nameWithType: ILasStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_GetHeaderInfo
+  name: GetHeaderInfo
+  nameWithType: ILasFile.GetHeaderInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.GetHeaderInfo
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasHeaderInfo
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasHeaderInfo
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasHeaderInfo.html
+  name: ILasHeaderInfo
+  nameWithType: ILasHeaderInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasHeaderInfo
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_EstimatePointSpacing_System_Boolean_
+  name: EstimatePointSpacing
+  nameWithType: ILasFile.EstimatePointSpacing
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointSpacing
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_EstimatePointCount_ESRI_ArcGIS_Geometry_IGeometry_
+  name: EstimatePointCount
+  nameWithType: ILasFile.EstimatePointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.EstimatePointCount
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_Name
+  name: Name
+  nameWithType: ILasFile.Name
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_PointDataFormat
+  name: PointDataFormat
+  nameWithType: ILasFile.PointDataFormat
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.PointDataFormat
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_NumberOfPointRecords
+  name: NumberOfPointRecords
+  nameWithType: ILasFile.NumberOfPointRecords
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NumberOfPointRecords
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_SizeInBytes
+  name: SizeInBytes
+  nameWithType: ILasFile.SizeInBytes
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SizeInBytes
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_HasRGB
+  name: HasRGB
+  nameWithType: ILasFile.HasRGB
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasRGB
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_HasGpsTime
+  name: HasGpsTime
+  nameWithType: ILasFile.HasGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasGpsTime
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_IsStandardGpsTime
+  name: IsStandardGpsTime
+  nameWithType: ILasFile.IsStandardGpsTime
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsStandardGpsTime
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_Extent
+  name: Extent
+  nameWithType: ILasFile.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_SpatialReference
+  name: SpatialReference
+  nameWithType: ILasFile.SpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_NativeSpatialReference
+  name: NativeSpatialReference
+  nameWithType: ILasFile.NativeSpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NativeSpatialReference
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_IsFileMissing
+  name: IsFileMissing
+  nameWithType: ILasFile.IsFileMissing
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileMissing
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_IsFileValid
+  name: IsFileValid
+  nameWithType: ILasFile.IsFileValid
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.IsFileValid
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_HasPrjFile
+  name: HasPrjFile
+  nameWithType: ILasFile.HasPrjFile
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasPrjFile
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_HasStatistics
+  name: HasStatistics
+  nameWithType: ILasFile.HasStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.HasStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasFile_NeedsUpdateStatistics
+  name: NeedsUpdateStatistics
+  nameWithType: ILasFile.NeedsUpdateStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasFile.NeedsUpdateStatistics

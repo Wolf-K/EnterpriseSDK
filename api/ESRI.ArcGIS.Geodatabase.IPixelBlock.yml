@@ -1,0 +1,384 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  id: IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+  langs:
+  - csharp
+  - vb
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control a PixelBlock.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("169BAFE0-40F6-11D2-9CFA-00A0249480F0")]
+
+      public interface IPixelBlock
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("169BAFE0-40F6-11D2-9CFA-00A0249480F0")>
+
+      Public Interface IPixelBlock
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 169BAFE0-40F6-11D2-9CFA-00A0249480F0
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal(System.Int32,System.Int32,System.Int32)
+  id: GetVal(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: GetVal(int, int, int)
+  nameWithType: IPixelBlock.GetVal(int, int, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The value for a specified pixel.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetVal(int plane, int X, int Y)
+    parameters:
+    - id: plane
+      type: System.Int32
+    - id: X
+      type: System.Int32
+    - id: Y
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Function GetVal(plane As Integer, X As Integer, Y As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal*
+  nameWithType.vb: IPixelBlock.GetVal(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal(Integer, Integer, Integer)
+  name.vb: GetVal(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+  id: Planes
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: Planes
+  nameWithType: IPixelBlock.Planes
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of pixel arrays contained in the PixelBlock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Planes { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Planes As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes*
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+  id: Width
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: IPixelBlock.Width
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The width of the PixelBlock in pixels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Width { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Width As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.Width*
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+  id: Height
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: IPixelBlock.Height
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The height of the PixelBlock in pixels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Height { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Height As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.Height*
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType(System.Int32)
+  id: PixelType(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: PixelType[int]
+  nameWithType: IPixelBlock.PixelType[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The pixel type of the PixelBlock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: rstPixelType PixelType[int plane] { get; set; }
+    parameters:
+    - id: plane
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.rstPixelType
+    content.vb: Property PixelType(plane As Integer) As rstPixelType
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType*
+  nameWithType.vb: IPixelBlock.PixelType(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType(Integer)
+  name.vb: PixelType(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+  id: BytesPerPixel
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: BytesPerPixel
+  nameWithType: IPixelBlock.BytesPerPixel
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of bytes per pixel for the PixelBlock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int BytesPerPixel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BytesPerPixel As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel*
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray(System.Int32)
+  id: SafeArray(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  langs:
+  - csharp
+  - vb
+  name: SafeArray[int]
+  nameWithType: IPixelBlock.SafeArray[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A variant SafeArray of pixels for a specified plane.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object SafeArray[int plane] { get; set; }
+    parameters:
+    - id: plane
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Property SafeArray(plane As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray*
+  nameWithType.vb: IPixelBlock.SafeArray(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray(Integer)
+  name.vb: SafeArray(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_GetVal_System_Int32_System_Int32_System_Int32_
+  name: GetVal
+  nameWithType: IPixelBlock.GetVal
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.GetVal
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_Planes
+  name: Planes
+  nameWithType: IPixelBlock.Planes
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Planes
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Width*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_Width
+  name: Width
+  nameWithType: IPixelBlock.Width
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Width
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.Height*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_Height
+  name: Height
+  nameWithType: IPixelBlock.Height
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.Height
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_PixelType_System_Int32_
+  name: PixelType
+  nameWithType: IPixelBlock.PixelType
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.PixelType
+- uid: ESRI.ArcGIS.Geodatabase.rstPixelType
+  commentId: T:ESRI.ArcGIS.Geodatabase.rstPixelType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.rstPixelType.html
+  name: rstPixelType
+  nameWithType: rstPixelType
+  fullName: ESRI.ArcGIS.Geodatabase.rstPixelType
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_BytesPerPixel
+  name: BytesPerPixel
+  nameWithType: IPixelBlock.BytesPerPixel
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.BytesPerPixel
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html#ESRI_ArcGIS_Geodatabase_IPixelBlock_SafeArray_System_Int32_
+  name: SafeArray
+  nameWithType: IPixelBlock.SafeArray
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock.SafeArray

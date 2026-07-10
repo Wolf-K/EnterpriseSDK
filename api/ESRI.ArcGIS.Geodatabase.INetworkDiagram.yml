@@ -1,0 +1,792 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  id: INetworkDiagram
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs(System.Boolean,System.Boolean,System.Boolean,System.Int64[],System.Int64[],System.Int64[],ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+  - ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  langs:
+  - csharp
+  - vb
+  name: INetworkDiagram
+  nameWithType: INetworkDiagram
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the network diagram content.
+  example: []
+  syntax:
+    content: >-
+      [Guid("75BB2954-2EAB-4AA3-A783-35366376494D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface INetworkDiagram
+    content.vb: >-
+      <Guid("75BB2954-2EAB-4AA3-A783-35366376494D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface INetworkDiagram
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 75BB2954-2EAB-4AA3-A783-35366376494D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete
+  id: Delete
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: INetworkDiagram.Delete()
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Delete()
+    content.vb: Sub Delete()
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  id: StoreAs(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: StoreAs(string, string, esriDiagramAccessType)
+  nameWithType: INetworkDiagram.StoreAs(string, string, esriDiagramAccessType)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs(string, string, ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Stores a temporary network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void StoreAs(string Name, string Tag, esriDiagramAccessType Access)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Tag
+      type: System.String
+    - id: Access
+      type: ESRI.ArcGIS.Geodatabase.esriDiagramAccessType
+    content.vb: Sub StoreAs(Name As String, Tag As String, Access As esriDiagramAccessType)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs*
+  nameWithType.vb: INetworkDiagram.StoreAs(String, String, esriDiagramAccessType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs(String, String, ESRI.ArcGIS.Geodatabase.esriDiagramAccessType)
+  name.vb: StoreAs(String, String, esriDiagramAccessType)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  id: QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: QueryFeaturesByExtent(IEnvelope, bool, bool, bool, bool, bool, out IEnumNetworkDiagramJunction, out IEnumNetworkDiagramEdge, out IEnumNetworkDiagramContainer)
+  nameWithType: INetworkDiagram.QueryFeaturesByExtent(IEnvelope, bool, bool, bool, bool, bool, out IEnumNetworkDiagramJunction, out IEnumNetworkDiagramEdge, out IEnumNetworkDiagramContainer)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope, bool, bool, bool, bool, bool, out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction, out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge, out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryFeaturesByExtent(IEnvelope envelope, bool addContents, bool QueryJunctions, bool queryEdges, bool queryContainers, bool returnGeometry, out IEnumNetworkDiagramJunction junctions, out IEnumNetworkDiagramEdge Edges, out IEnumNetworkDiagramContainer Containers)
+    parameters:
+    - id: envelope
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: addContents
+      type: System.Boolean
+    - id: QueryJunctions
+      type: System.Boolean
+    - id: queryEdges
+      type: System.Boolean
+    - id: queryContainers
+      type: System.Boolean
+    - id: returnGeometry
+      type: System.Boolean
+    - id: junctions
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction
+    - id: Edges
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge
+    - id: Containers
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer
+    content.vb: Sub QueryFeaturesByExtent(envelope As IEnvelope, addContents As Boolean, QueryJunctions As Boolean, queryEdges As Boolean, queryContainers As Boolean, returnGeometry As Boolean, junctions As IEnumNetworkDiagramJunction, Edges As IEnumNetworkDiagramEdge, Containers As IEnumNetworkDiagramContainer)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent*
+  nameWithType.vb: INetworkDiagram.QueryFeaturesByExtent(IEnvelope, Boolean, Boolean, Boolean, Boolean, Boolean, IEnumNetworkDiagramJunction, IEnumNetworkDiagramEdge, IEnumNetworkDiagramContainer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent(ESRI.ArcGIS.Geometry.IEnvelope, Boolean, Boolean, Boolean, Boolean, Boolean, ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction, ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge, ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer)
+  name.vb: QueryFeaturesByExtent(IEnvelope, Boolean, Boolean, Boolean, Boolean, Boolean, IEnumNetworkDiagramJunction, IEnumNetworkDiagramEdge, IEnumNetworkDiagramContainer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs(System.Boolean,System.Boolean,System.Boolean,System.Int64[],System.Int64[],System.Int64[],ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs(System.Boolean,System.Boolean,System.Boolean,System.Int64[],System.Int64[],System.Int64[],ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  id: QueryFeaturesByObjectIDs(System.Boolean,System.Boolean,System.Boolean,System.Int64[],System.Int64[],System.Int64[],ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge@,ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer@)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: QueryFeaturesByObjectIDs(bool, bool, bool, long[], long[], long[], out IEnumNetworkDiagramJunction, out IEnumNetworkDiagramEdge, out IEnumNetworkDiagramContainer)
+  nameWithType: INetworkDiagram.QueryFeaturesByObjectIDs(bool, bool, bool, long[], long[], long[], out IEnumNetworkDiagramJunction, out IEnumNetworkDiagramEdge, out IEnumNetworkDiagramContainer)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs(bool, bool, bool, long[], long[], long[], out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction, out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge, out ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the set of network diagram features corresponding to the specified object IDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryFeaturesByObjectIDs(bool addContents, bool addConnected, bool returnGeometry, long[] jctOids, long[] ctnrOids, long[] edgeOids, out IEnumNetworkDiagramJunction junctions, out IEnumNetworkDiagramEdge Edges, out IEnumNetworkDiagramContainer Containers)
+    parameters:
+    - id: addContents
+      type: System.Boolean
+    - id: addConnected
+      type: System.Boolean
+    - id: returnGeometry
+      type: System.Boolean
+    - id: jctOids
+      type: System.Int64[]
+    - id: ctnrOids
+      type: System.Int64[]
+    - id: edgeOids
+      type: System.Int64[]
+    - id: junctions
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction
+    - id: Edges
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge
+    - id: Containers
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer
+    content.vb: Sub QueryFeaturesByObjectIDs(addContents As Boolean, addConnected As Boolean, returnGeometry As Boolean, jctOids As Long(), ctnrOids As Long(), edgeOids As Long(), junctions As IEnumNetworkDiagramJunction, Edges As IEnumNetworkDiagramEdge, Containers As IEnumNetworkDiagramContainer)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs*
+  nameWithType.vb: INetworkDiagram.QueryFeaturesByObjectIDs(Boolean, Boolean, Boolean, Long(), Long(), Long(), IEnumNetworkDiagramJunction, IEnumNetworkDiagramEdge, IEnumNetworkDiagramContainer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs(Boolean, Boolean, Boolean, Long(), Long(), Long(), ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction, ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge, ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer)
+  name.vb: QueryFeaturesByObjectIDs(Boolean, Boolean, Boolean, Long(), Long(), Long(), IEnumNetworkDiagramJunction, IEnumNetworkDiagramEdge, IEnumNetworkDiagramContainer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: INetworkDiagram.Name
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+  id: GlobalID
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: GlobalID
+  nameWithType: INetworkDiagram.GlobalID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Global ID of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: Guid GlobalID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property GlobalID As Guid
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+  id: DiagramInfo
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: DiagramInfo
+  nameWithType: INetworkDiagram.DiagramInfo
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network diagram information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkDiagramInfo DiagramInfo { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkDiagramInfo
+    content.vb: ReadOnly Property DiagramInfo As INetworkDiagramInfo
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+  id: DiagramExtent
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: DiagramExtent
+  nameWithType: INetworkDiagram.DiagramExtent
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Extent of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope DiagramExtent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property DiagramExtent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+  id: IsStored
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: IsStored
+  nameWithType: INetworkDiagram.IsStored
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether the network diagram is stored.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStored { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsStored As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+  id: ConsistencyState
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: ConsistencyState
+  nameWithType: INetworkDiagram.ConsistencyState
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network diagram consistency state.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriDiagramConsistencyState ConsistencyState { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriDiagramConsistencyState
+    content.vb: ReadOnly Property ConsistencyState As esriDiagramConsistencyState
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+  id: DiagramDataset
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: DiagramDataset
+  nameWithType: INetworkDiagram.DiagramDataset
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Diagram dataset of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDiagramDataset DiagramDataset { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDiagramDataset
+    content.vb: ReadOnly Property DiagramDataset As IDiagramDataset
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+  id: DiagramTemplate
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: DiagramTemplate
+  nameWithType: INetworkDiagram.DiagramTemplate
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Diagram template of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDiagramTemplate DiagramTemplate { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDiagramTemplate
+    content.vb: ReadOnly Property DiagramTemplate As IDiagramTemplate
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+  id: Aggregations
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: Aggregations
+  nameWithType: INetworkDiagram.Aggregations
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Aggregations rows of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkDiagramAggregation Aggregations { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramAggregation
+    content.vb: ReadOnly Property Aggregations As IEnumNetworkDiagramAggregation
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+  id: Relations
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDiagram
+  langs:
+  - csharp
+  - vb
+  name: Relations
+  nameWithType: INetworkDiagram.Relations
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Relations rows of the network diagram.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkDiagramRelation Relations { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramRelation
+    content.vb: ReadOnly Property Relations As IEnumNetworkDiagramRelation
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_Delete
+  name: Delete
+  nameWithType: INetworkDiagram.Delete
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Delete
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_StoreAs_System_String_System_String_ESRI_ArcGIS_Geodatabase_esriDiagramAccessType_
+  name: StoreAs
+  nameWithType: INetworkDiagram.StoreAs
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.StoreAs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.esriDiagramAccessType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDiagramAccessType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDiagramAccessType.html
+  name: esriDiagramAccessType
+  nameWithType: esriDiagramAccessType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDiagramAccessType
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_QueryFeaturesByExtent_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Boolean_System_Boolean_System_Boolean_System_Boolean_ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramJunction__ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramEdge__ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramContainer__
+  name: QueryFeaturesByExtent
+  nameWithType: INetworkDiagram.QueryFeaturesByExtent
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByExtent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction.html
+  name: IEnumNetworkDiagramJunction
+  nameWithType: IEnumNetworkDiagramJunction
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramJunction
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge.html
+  name: IEnumNetworkDiagramEdge
+  nameWithType: IEnumNetworkDiagramEdge
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramEdge
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer.html
+  name: IEnumNetworkDiagramContainer
+  nameWithType: IEnumNetworkDiagramContainer
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramContainer
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_QueryFeaturesByObjectIDs_System_Boolean_System_Boolean_System_Boolean_System_Int64___System_Int64___System_Int64___ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramJunction__ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramEdge__ESRI_ArcGIS_Geodatabase_IEnumNetworkDiagramContainer__
+  name: QueryFeaturesByObjectIDs
+  nameWithType: INetworkDiagram.QueryFeaturesByObjectIDs
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.QueryFeaturesByObjectIDs
+- uid: System.Int64[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long[]
+  nameWithType: long[]
+  fullName: long[]
+  nameWithType.vb: Long()
+  fullName.vb: Long()
+  name.vb: Long()
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_Name
+  name: Name
+  nameWithType: INetworkDiagram.Name
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Name
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_GlobalID
+  name: GlobalID
+  nameWithType: INetworkDiagram.GlobalID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.GlobalID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_DiagramInfo
+  name: DiagramInfo
+  nameWithType: INetworkDiagram.DiagramInfo
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramInfo
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagramInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkDiagramInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagramInfo.html
+  name: INetworkDiagramInfo
+  nameWithType: INetworkDiagramInfo
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagramInfo
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_DiagramExtent
+  name: DiagramExtent
+  nameWithType: INetworkDiagram.DiagramExtent
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramExtent
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_IsStored
+  name: IsStored
+  nameWithType: INetworkDiagram.IsStored
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.IsStored
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_ConsistencyState
+  name: ConsistencyState
+  nameWithType: INetworkDiagram.ConsistencyState
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.ConsistencyState
+- uid: ESRI.ArcGIS.Geodatabase.esriDiagramConsistencyState
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDiagramConsistencyState
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDiagramConsistencyState.html
+  name: esriDiagramConsistencyState
+  nameWithType: esriDiagramConsistencyState
+  fullName: ESRI.ArcGIS.Geodatabase.esriDiagramConsistencyState
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_DiagramDataset
+  name: DiagramDataset
+  nameWithType: INetworkDiagram.DiagramDataset
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramDataset
+- uid: ESRI.ArcGIS.Geodatabase.IDiagramDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDiagramDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDiagramDataset.html
+  name: IDiagramDataset
+  nameWithType: IDiagramDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDiagramDataset
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_DiagramTemplate
+  name: DiagramTemplate
+  nameWithType: INetworkDiagram.DiagramTemplate
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.DiagramTemplate
+- uid: ESRI.ArcGIS.Geodatabase.IDiagramTemplate
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDiagramTemplate
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDiagramTemplate.html
+  name: IDiagramTemplate
+  nameWithType: IDiagramTemplate
+  fullName: ESRI.ArcGIS.Geodatabase.IDiagramTemplate
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_Aggregations
+  name: Aggregations
+  nameWithType: INetworkDiagram.Aggregations
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Aggregations
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramAggregation
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramAggregation
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramAggregation.html
+  name: IEnumNetworkDiagramAggregation
+  nameWithType: IEnumNetworkDiagramAggregation
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramAggregation
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDiagram.html#ESRI_ArcGIS_Geodatabase_INetworkDiagram_Relations
+  name: Relations
+  nameWithType: INetworkDiagram.Relations
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDiagram.Relations
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramRelation
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramRelation
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramRelation.html
+  name: IEnumNetworkDiagramRelation
+  nameWithType: IEnumNetworkDiagramRelation
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkDiagramRelation

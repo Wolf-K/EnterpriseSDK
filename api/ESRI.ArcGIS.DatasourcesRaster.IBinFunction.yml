@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  id: IBinFunction
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert(System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins
+  - ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title(System.String@)
+  - ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IBinFunction
+  nameWithType: IBinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster histogram bin function.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("07F78971-F990-11D2-80B0-00500462E955")]
+
+      public interface IBinFunction
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("07F78971-F990-11D2-80B0-00500462E955")>
+
+      Public Interface IBinFunction
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 07F78971-F990-11D2-80B0-00500462E955
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex(System.Double)
+  id: ValueToIndex(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  langs:
+  - csharp
+  - vb
+  name: ValueToIndex(double)
+  nameWithType: IBinFunction.ValueToIndex(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Converts pixel values to columns in the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ValueToIndex(double pixval)
+    parameters:
+    - id: pixval
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function ValueToIndex(pixval As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex*
+  nameWithType.vb: IBinFunction.ValueToIndex(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex(Double)
+  name.vb: ValueToIndex(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert(System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert(System.Int32,System.Double@,System.Double@)
+  id: Invert(System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  langs:
+  - csharp
+  - vb
+  name: Invert(int, out double, out double)
+  nameWithType: IBinFunction.Invert(int, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert(int, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns upper and lower limits of bin.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Invert(int Bin, out double upper, out double lower)
+    parameters:
+    - id: Bin
+      type: System.Int32
+    - id: upper
+      type: System.Double
+    - id: lower
+      type: System.Double
+    content.vb: Sub Invert(Bin As Integer, upper As Double, lower As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert*
+  nameWithType.vb: IBinFunction.Invert(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert(Integer, Double, Double)
+  name.vb: Invert(Integer, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title(System.String@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title(System.String@)
+  id: Title(System.String@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  langs:
+  - csharp
+  - vb
+  name: Title(out string)
+  nameWithType: IBinFunction.Title(out string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title(out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Name of bin function.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Title(out string Title)
+    parameters:
+    - id: Title
+      type: System.String
+    content.vb: Sub Title(Title As String)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title*
+  nameWithType.vb: IBinFunction.Title(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title(String)
+  name.vb: Title(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins
+  id: NumBins
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  langs:
+  - csharp
+  - vb
+  name: NumBins
+  nameWithType: IBinFunction.NumBins
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Number of bins (same as rows in table).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int NumBins { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NumBins As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html#ESRI_ArcGIS_DatasourcesRaster_IBinFunction_ValueToIndex_System_Double_
+  name: ValueToIndex
+  nameWithType: IBinFunction.ValueToIndex
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.ValueToIndex
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html#ESRI_ArcGIS_DatasourcesRaster_IBinFunction_Invert_System_Int32_System_Double__System_Double__
+  name: Invert
+  nameWithType: IBinFunction.Invert
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Invert
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html#ESRI_ArcGIS_DatasourcesRaster_IBinFunction_Title_System_String__
+  name: Title
+  nameWithType: IBinFunction.Title
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html#ESRI_ArcGIS_DatasourcesRaster_IBinFunction_NumBins
+  name: NumBins
+  nameWithType: IBinFunction.NumBins
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.NumBins

@@ -1,0 +1,590 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  id: ISynchronizationHelper
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase(ESRI.ArcGIS.Geodatabase.IDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties(ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32,System.Boolean@)
+  langs:
+  - csharp
+  - vb
+  name: ISynchronizationHelper
+  nameWithType: ISynchronizationHelper
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to helper functions for metadata synchronization.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("7002C8B5-1D00-11D3-A63B-0008C7D3AE50")]
+
+      public interface ISynchronizationHelper
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("7002C8B5-1D00-11D3-A63B-0008C7D3AE50")>
+
+      Public Interface ISynchronizationHelper
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FGDCSynchronizationHelperClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7002C8B5-1D00-11D3-A63B-0008C7D3AE50
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32,System.Boolean@)
+  id: StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction,System.Int32,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: StartSynchronization(IPropertySet, esriMetadataSyncAction, int, out bool)
+  nameWithType: ISynchronizationHelper.StartSynchronization(IPropertySet, esriMetadataSyncAction, int, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet, ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction, int, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void StartSynchronization(IPropertySet PropertySet, esriMetadataSyncAction action, int interval, out bool Ok)
+    parameters:
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: action
+      type: ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction
+    - id: interval
+      type: System.Int32
+    - id: Ok
+      type: System.Boolean
+    content.vb: Sub StartSynchronization(PropertySet As IPropertySet, action As esriMetadataSyncAction, interval As Integer, Ok As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization*
+  nameWithType.vb: ISynchronizationHelper.StartSynchronization(IPropertySet, esriMetadataSyncAction, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet, ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction, Integer, Boolean)
+  name.vb: StartSynchronization(IPropertySet, esriMetadataSyncAction, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: FinishSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: FinishSynchronization(IPropertySet)
+  nameWithType: ISynchronizationHelper.FinishSynchronization(IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization(ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void FinishSynchronization(IPropertySet PropertySet)
+    parameters:
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub FinishSynchronization(PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization*
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties(ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties(ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: PopulateStaticProperties(ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: PopulateStaticProperties(IPropertySet)
+  nameWithType: ISynchronizationHelper.PopulateStaticProperties(IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties(ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void PopulateStaticProperties(IPropertySet PropertySet)
+    parameters:
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub PopulateStaticProperties(PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties*
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractSpatialProperties(ESRI.ArcGIS.Geodatabase.IGeoDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractSpatialProperties(IGeoDataset, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractSpatialProperties(IGeoDataset, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties(ESRI.ArcGIS.Geodatabase.IGeoDataset, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractSpatialProperties(IGeoDataset geoDataset, IPropertySet PropertySet)
+    parameters:
+    - id: geoDataset
+      type: ESRI.ArcGIS.Geodatabase.IGeoDataset
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractSpatialProperties(geoDataset As IGeoDataset, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties*
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractFeatureClassProperties(IFeatureClass, int, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractFeatureClassProperties(IFeatureClass, int, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass, int, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractFeatureClassProperties(IFeatureClass geoDataset, int Index, IPropertySet PropertySet)
+    parameters:
+    - id: geoDataset
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: Index
+      type: System.Int32
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractFeatureClassProperties(geoDataset As IFeatureClass, Index As Integer, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties*
+  nameWithType.vb: ISynchronizationHelper.ExtractFeatureClassProperties(IFeatureClass, Integer, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties(ESRI.ArcGIS.Geodatabase.IFeatureClass, Integer, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ExtractFeatureClassProperties(IFeatureClass, Integer, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractEntityAttrProperties(IClass, int, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractEntityAttrProperties(IClass, int, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass, int, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractEntityAttrProperties(IClass geoDataset, int Index, IPropertySet PropertySet)
+    parameters:
+    - id: geoDataset
+      type: ESRI.ArcGIS.Geodatabase.IClass
+    - id: Index
+      type: System.Int32
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractEntityAttrProperties(geoDataset As IClass, Index As Integer, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties*
+  nameWithType.vb: ISynchronizationHelper.ExtractEntityAttrProperties(IClass, Integer, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass, Integer, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ExtractEntityAttrProperties(IClass, Integer, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractRelationshipProperties(IRelationshipClass, int, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractRelationshipProperties(IRelationshipClass, int, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass, int, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractRelationshipProperties(IRelationshipClass RelationshipClass, int Index, IPropertySet PropertySet)
+    parameters:
+    - id: RelationshipClass
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    - id: Index
+      type: System.Int32
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractRelationshipProperties(RelationshipClass As IRelationshipClass, Index As Integer, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties*
+  nameWithType.vb: ISynchronizationHelper.ExtractRelationshipProperties(IRelationshipClass, Integer, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass, Integer, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ExtractRelationshipProperties(IRelationshipClass, Integer, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: PopulateDistributionProperties(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: PopulateDistributionProperties(string, string, IPropertySet)
+  nameWithType: ISynchronizationHelper.PopulateDistributionProperties(string, string, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties(string, string, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void PopulateDistributionProperties(string fileName, string fileType, IPropertySet PropertySet)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: fileType
+      type: System.String
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub PopulateDistributionProperties(fileName As String, fileType As String, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties*
+  nameWithType.vb: ISynchronizationHelper.PopulateDistributionProperties(String, String, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties(String, String, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: PopulateDistributionProperties(String, String, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase(ESRI.ArcGIS.Geodatabase.IDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase(ESRI.ArcGIS.Geodatabase.IDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: PopulateDistributionPropertiesForDatabase(ESRI.ArcGIS.Geodatabase.IDataset,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: PopulateDistributionPropertiesForDatabase(IDataset, IPropertySet)
+  nameWithType: ISynchronizationHelper.PopulateDistributionPropertiesForDatabase(IDataset, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase(ESRI.ArcGIS.Geodatabase.IDataset, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void PopulateDistributionPropertiesForDatabase(IDataset Dataset, IPropertySet PropertySet)
+    parameters:
+    - id: Dataset
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub PopulateDistributionPropertiesForDatabase(Dataset As IDataset, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase*
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractBriefEntityAttrProperties(IClass, int, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractBriefEntityAttrProperties(IClass, int, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass, int, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractBriefEntityAttrProperties(IClass geoDataset, int Index, IPropertySet PropertySet)
+    parameters:
+    - id: geoDataset
+      type: ESRI.ArcGIS.Geodatabase.IClass
+    - id: Index
+      type: System.Int32
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractBriefEntityAttrProperties(geoDataset As IClass, Index As Integer, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties*
+  nameWithType.vb: ISynchronizationHelper.ExtractBriefEntityAttrProperties(IClass, Integer, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties(ESRI.ArcGIS.Geodatabase.IClass, Integer, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ExtractBriefEntityAttrProperties(IClass, Integer, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Int32,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper
+  langs:
+  - csharp
+  - vb
+  name: ExtractBriefRelationshipProperties(IRelationshipClass, int, IPropertySet)
+  nameWithType: ISynchronizationHelper.ExtractBriefRelationshipProperties(IRelationshipClass, int, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass, int, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ExtractBriefRelationshipProperties(IRelationshipClass RelationshipClass, int Index, IPropertySet PropertySet)
+    parameters:
+    - id: RelationshipClass
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    - id: Index
+      type: System.Int32
+    - id: PropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ExtractBriefRelationshipProperties(RelationshipClass As IRelationshipClass, Index As Integer, PropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties*
+  nameWithType.vb: ISynchronizationHelper.ExtractBriefRelationshipProperties(IRelationshipClass, Integer, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties(ESRI.ArcGIS.Geodatabase.IRelationshipClass, Integer, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ExtractBriefRelationshipProperties(IRelationshipClass, Integer, IPropertySet)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_StartSynchronization_ESRI_ArcGIS_esriSystem_IPropertySet_ESRI_ArcGIS_Geodatabase_esriMetadataSyncAction_System_Int32_System_Boolean__
+  name: StartSynchronization
+  nameWithType: ISynchronizationHelper.StartSynchronization
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.StartSynchronization
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction.html
+  name: esriMetadataSyncAction
+  nameWithType: esriMetadataSyncAction
+  fullName: ESRI.ArcGIS.Geodatabase.esriMetadataSyncAction
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_FinishSynchronization_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: FinishSynchronization
+  nameWithType: ISynchronizationHelper.FinishSynchronization
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.FinishSynchronization
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_PopulateStaticProperties_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: PopulateStaticProperties
+  nameWithType: ISynchronizationHelper.PopulateStaticProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateStaticProperties
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractSpatialProperties_ESRI_ArcGIS_Geodatabase_IGeoDataset_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractSpatialProperties
+  nameWithType: ISynchronizationHelper.ExtractSpatialProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractSpatialProperties
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeoDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset.html
+  name: IGeoDataset
+  nameWithType: IGeoDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractFeatureClassProperties_ESRI_ArcGIS_Geodatabase_IFeatureClass_System_Int32_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractFeatureClassProperties
+  nameWithType: ISynchronizationHelper.ExtractFeatureClassProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractFeatureClassProperties
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractEntityAttrProperties_ESRI_ArcGIS_Geodatabase_IClass_System_Int32_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractEntityAttrProperties
+  nameWithType: ISynchronizationHelper.ExtractEntityAttrProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractEntityAttrProperties
+- uid: ESRI.ArcGIS.Geodatabase.IClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClass.html
+  name: IClass
+  nameWithType: IClass
+  fullName: ESRI.ArcGIS.Geodatabase.IClass
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractRelationshipProperties_ESRI_ArcGIS_Geodatabase_IRelationshipClass_System_Int32_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractRelationshipProperties
+  nameWithType: ISynchronizationHelper.ExtractRelationshipProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractRelationshipProperties
+- uid: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationshipClass.html
+  name: IRelationshipClass
+  nameWithType: IRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_PopulateDistributionProperties_System_String_System_String_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: PopulateDistributionProperties
+  nameWithType: ISynchronizationHelper.PopulateDistributionProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionProperties
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_PopulateDistributionPropertiesForDatabase_ESRI_ArcGIS_Geodatabase_IDataset_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: PopulateDistributionPropertiesForDatabase
+  nameWithType: ISynchronizationHelper.PopulateDistributionPropertiesForDatabase
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.PopulateDistributionPropertiesForDatabase
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractBriefEntityAttrProperties_ESRI_ArcGIS_Geodatabase_IClass_System_Int32_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractBriefEntityAttrProperties
+  nameWithType: ISynchronizationHelper.ExtractBriefEntityAttrProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefEntityAttrProperties
+- uid: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.html#ESRI_ArcGIS_Geodatabase_ISynchronizationHelper_ExtractBriefRelationshipProperties_ESRI_ArcGIS_Geodatabase_IRelationshipClass_System_Int32_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ExtractBriefRelationshipProperties
+  nameWithType: ISynchronizationHelper.ExtractBriefRelationshipProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ISynchronizationHelper.ExtractBriefRelationshipProperties

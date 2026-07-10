@@ -1,0 +1,965 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  commentId: T:ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  id: SoapSOIHelper
+  parent: ESRI.Server.SOESupport.SOI
+  children:
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor(ESRI.ArcGIS.Server.IServerObjectHelper,System.String)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData(System.String,System.Object,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage(System.Byte[])
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage(System.String)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage(ESRI.ArcGIS.esriSystem.IMessage)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData(System.Int32,System.String,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName(System.String,System.Int32)
+  - ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName(System.String,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SoapSOIHelper
+  nameWithType: SoapSOIHelper
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  type: Class
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: 'public class SoapSOIHelper : SOIBase'
+    content.vb: Public Class SoapSOIHelper Inherits SOIBase
+  inheritance:
+  - System.Object
+  - ESRI.Server.SOESupport.SOI.SOIBase
+  inheritedMembers:
+  - ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment
+  - ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+  - ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(System.String,System.String)
+  - ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate``1
+  - ESRI.Server.SOESupport.SOI.SOIBase.ServerObjectHelper
+  - ESRI.Server.SOESupport.SOI.SOIBase.ServerEnvironment
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor(ESRI.ArcGIS.Server.IServerObjectHelper,System.String)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor(ESRI.ArcGIS.Server.IServerObjectHelper,System.String)
+  id: '#ctor(ESRI.ArcGIS.Server.IServerObjectHelper,System.String)'
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: SoapSOIHelper(IServerObjectHelper, string)
+  nameWithType: SoapSOIHelper.SoapSOIHelper(IServerObjectHelper, string)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.SoapSOIHelper(ESRI.ArcGIS.Server.IServerObjectHelper, string)
+  type: Constructor
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public SoapSOIHelper(IServerObjectHelper soHelper, string wsdlFilePath)
+    parameters:
+    - id: soHelper
+      type: ESRI.ArcGIS.Server.IServerObjectHelper
+    - id: wsdlFilePath
+      type: System.String
+    content.vb: Public Sub New(soHelper As IServerObjectHelper, wsdlFilePath As String)
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor*
+  nameWithType.vb: SoapSOIHelper.New(IServerObjectHelper, String)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.New(ESRI.ArcGIS.Server.IServerObjectHelper, String)
+  name.vb: New(IServerObjectHelper, String)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName(System.String,System.Int32)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName(System.String,System.Int32)
+  id: GetSoapOperationParameterName(System.String,System.Int32)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSoapOperationParameterName(string, int)
+  nameWithType: SoapSOIHelper.GetSoapOperationParameterName(string, int)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public string GetSoapOperationParameterName(string operationName, int index)
+    parameters:
+    - id: operationName
+      type: System.String
+    - id: index
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetSoapOperationParameterName(operationName As String, index As Integer) As String
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName*
+  nameWithType.vb: SoapSOIHelper.GetSoapOperationParameterName(String, Integer)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName(String, Integer)
+  name.vb: GetSoapOperationParameterName(String, Integer)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName(System.String,System.Int32)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName(System.String,System.Int32)
+  id: GetSoapOperationParameterTypeName(System.String,System.Int32)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSoapOperationParameterTypeName(string, int)
+  nameWithType: SoapSOIHelper.GetSoapOperationParameterTypeName(string, int)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public string GetSoapOperationParameterTypeName(string operationName, int index)
+    parameters:
+    - id: operationName
+      type: System.String
+    - id: index
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GetSoapOperationParameterTypeName(operationName As String, index As Integer) As String
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName*
+  nameWithType.vb: SoapSOIHelper.GetSoapOperationParameterTypeName(String, Integer)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName(String, Integer)
+  name.vb: GetSoapOperationParameterTypeName(String, Integer)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData(System.Int32,System.String,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData(System.Int32,System.String,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  id: GetObjectFromXMLSerializeData(System.Int32,System.String,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: GetObjectFromXMLSerializeData(int, string, string, IXMLSerializeData)
+  nameWithType: SoapSOIHelper.GetObjectFromXMLSerializeData(int, string, string, IXMLSerializeData)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData(int, string, string, ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public object GetObjectFromXMLSerializeData(int index, string typeNamespace, string typeName, IXMLSerializeData data)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: typeNamespace
+      type: System.String
+    - id: typeName
+      type: System.String
+    - id: data
+      type: ESRI.ArcGIS.esriSystem.IXMLSerializeData
+    return:
+      type: System.Object
+    content.vb: Public Function GetObjectFromXMLSerializeData(index As Integer, typeNamespace As String, typeName As String, data As IXMLSerializeData) As Object
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData*
+  nameWithType.vb: SoapSOIHelper.GetObjectFromXMLSerializeData(Integer, String, String, IXMLSerializeData)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData(Integer, String, String, ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  name.vb: GetObjectFromXMLSerializeData(Integer, String, String, IXMLSerializeData)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData(System.String,System.Object,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData(System.String,System.Object,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  id: AddObjectToXMLSerializeData(System.String,System.Object,System.String,ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: AddObjectToXMLSerializeData(string, object, string, IXMLSerializeData)
+  nameWithType: SoapSOIHelper.AddObjectToXMLSerializeData(string, object, string, IXMLSerializeData)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData(string, object, string, ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public void AddObjectToXMLSerializeData(string name, object value, string typeName, IXMLSerializeData data)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: System.Object
+    - id: typeName
+      type: System.String
+    - id: data
+      type: ESRI.ArcGIS.esriSystem.IXMLSerializeData
+    content.vb: Public Sub AddObjectToXMLSerializeData(name As String, value As Object, typeName As String, data As IXMLSerializeData)
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData*
+  nameWithType.vb: SoapSOIHelper.AddObjectToXMLSerializeData(String, Object, String, IXMLSerializeData)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData(String, Object, String, ESRI.ArcGIS.esriSystem.IXMLSerializeData)
+  name.vb: AddObjectToXMLSerializeData(String, Object, String, IXMLSerializeData)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage(ESRI.ArcGIS.esriSystem.IMessage)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage(ESRI.ArcGIS.esriSystem.IMessage)
+  id: CreateNewIMessage(ESRI.ArcGIS.esriSystem.IMessage)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: CreateNewIMessage(IMessage)
+  nameWithType: SoapSOIHelper.CreateNewIMessage(IMessage)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage(ESRI.ArcGIS.esriSystem.IMessage)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public IMessage CreateNewIMessage(IMessage originalIMessage)
+    parameters:
+    - id: originalIMessage
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    return:
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    content.vb: Public Function CreateNewIMessage(originalIMessage As IMessage) As IMessage
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage*
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage(System.Byte[])
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage(System.Byte[])
+  id: ConvertBinaryRequestToMessage(System.Byte[])
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertBinaryRequestToMessage(byte[])
+  nameWithType: SoapSOIHelper.ConvertBinaryRequestToMessage(byte[])
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage(byte[])
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public static IMessage ConvertBinaryRequestToMessage(byte[] request)
+    parameters:
+    - id: request
+      type: System.Byte[]
+    return:
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    content.vb: Public Shared Function ConvertBinaryRequestToMessage(request As Byte()) As IMessage
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage*
+  nameWithType.vb: SoapSOIHelper.ConvertBinaryRequestToMessage(Byte())
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage(Byte())
+  name.vb: ConvertBinaryRequestToMessage(Byte())
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage(System.String)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage(System.String)
+  id: ConvertStringRequestToMessage(System.String)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertStringRequestToMessage(string)
+  nameWithType: SoapSOIHelper.ConvertStringRequestToMessage(string)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public static IMessage ConvertStringRequestToMessage(string request)
+    parameters:
+    - id: request
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    content.vb: Public Shared Function ConvertStringRequestToMessage(request As String) As IMessage
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage*
+  nameWithType.vb: SoapSOIHelper.ConvertStringRequestToMessage(String)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage(String)
+  name.vb: ConvertStringRequestToMessage(String)
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  id: ConvertMessageToStringRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertMessageToStringRequest(IMessage)
+  nameWithType: SoapSOIHelper.ConvertMessageToStringRequest(IMessage)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public static string ConvertMessageToStringRequest(IMessage iMessage)
+    parameters:
+    - id: iMessage
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    return:
+      type: System.String
+    content.vb: Public Shared Function ConvertMessageToStringRequest(iMessage As IMessage) As String
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest*
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  commentId: M:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  id: ConvertMessageToBinaryRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  parent: ESRI.Server.SOESupport.SOI.SoapSOIHelper
+  langs:
+  - csharp
+  - vb
+  name: ConvertMessageToBinaryRequest(IMessage)
+  nameWithType: SoapSOIHelper.ConvertMessageToBinaryRequest(IMessage)
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest(ESRI.ArcGIS.esriSystem.IMessage)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport.SOI
+  syntax:
+    content: public static byte[] ConvertMessageToBinaryRequest(IMessage iMessage)
+    parameters:
+    - id: iMessage
+      type: ESRI.ArcGIS.esriSystem.IMessage
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ConvertMessageToBinaryRequest(iMessage As IMessage) As Byte()
+  overload: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest*
+references:
+- uid: ESRI.Server.SOESupport.SOI
+  commentId: N:ESRI.Server.SOESupport.SOI
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.Server.SOESupport.SOI
+  nameWithType: ESRI.Server.SOESupport.SOI
+  fullName: ESRI.Server.SOESupport.SOI
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+  - name: .
+  - uid: ESRI.Server.SOESupport.SOI
+    name: SOI
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+  - name: .
+  - uid: ESRI.Server.SOESupport.SOI
+    name: SOI
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.Server.SOESupport.SOI.SOIBase
+  commentId: T:ESRI.Server.SOESupport.SOI.SOIBase
+  parent: ESRI.Server.SOESupport.SOI
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html
+  name: SOIBase
+  nameWithType: SOIBase
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment
+  commentId: M:ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetServerEnvironment
+  name: GetServerEnvironment()
+  nameWithType: SOIBase.GetServerEnvironment()
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment()
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment
+    name: GetServerEnvironment
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetServerEnvironment
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.GetServerEnvironment
+    name: GetServerEnvironment
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetServerEnvironment
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+  commentId: M:ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetRoleInformation_ESRI_ArcGIS_esriSystem_IServerUserInfo_
+  name: GetRoleInformation(IServerUserInfo)
+  nameWithType: SOIBase.GetRoleInformation(IServerUserInfo)
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+    name: GetRoleInformation
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetRoleInformation_ESRI_ArcGIS_esriSystem_IServerUserInfo_
+  - name: (
+  - uid: ESRI.ArcGIS.esriSystem.IServerUserInfo
+    name: IServerUserInfo
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.GetRoleInformation(ESRI.ArcGIS.esriSystem.IServerUserInfo)
+    name: GetRoleInformation
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_GetRoleInformation_ESRI_ArcGIS_esriSystem_IServerUserInfo_
+  - name: (
+  - uid: ESRI.ArcGIS.esriSystem.IServerUserInfo
+    name: IServerUserInfo
+    isExternal: true
+  - name: )
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(System.String,System.String)
+  commentId: M:ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(System.String,System.String)
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_QueryConfigurationProperties_System_String_System_String_
+  name: QueryConfigurationProperties(string, string)
+  nameWithType: SOIBase.QueryConfigurationProperties(string, string)
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(string, string)
+  nameWithType.vb: SOIBase.QueryConfigurationProperties(String, String)
+  fullName.vb: ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(String, String)
+  name.vb: QueryConfigurationProperties(String, String)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(System.String,System.String)
+    name: QueryConfigurationProperties
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_QueryConfigurationProperties_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.QueryConfigurationProperties(System.String,System.String)
+    name: QueryConfigurationProperties
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_QueryConfigurationProperties_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate``1
+  commentId: M:ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate``1
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_FindRequestHandlerDelegate__1
+  name: FindRequestHandlerDelegate<THandlerInterface>()
+  nameWithType: SOIBase.FindRequestHandlerDelegate<THandlerInterface>()
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate<THandlerInterface>()
+  nameWithType.vb: SOIBase.FindRequestHandlerDelegate(Of THandlerInterface)()
+  fullName.vb: ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate(Of THandlerInterface)()
+  name.vb: FindRequestHandlerDelegate(Of THandlerInterface)()
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate``1
+    name: FindRequestHandlerDelegate
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_FindRequestHandlerDelegate__1
+  - name: <
+  - name: THandlerInterface
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.SOI.SOIBase.FindRequestHandlerDelegate``1
+    name: FindRequestHandlerDelegate
+    isExternal: true
+    href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_FindRequestHandlerDelegate__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: THandlerInterface
+  - name: )
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.ServerObjectHelper
+  commentId: P:ESRI.Server.SOESupport.SOI.SOIBase.ServerObjectHelper
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_ServerObjectHelper
+  name: ServerObjectHelper
+  nameWithType: SOIBase.ServerObjectHelper
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.ServerObjectHelper
+- uid: ESRI.Server.SOESupport.SOI.SOIBase.ServerEnvironment
+  commentId: P:ESRI.Server.SOESupport.SOI.SOIBase.ServerEnvironment
+  parent: ESRI.Server.SOESupport.SOI.SOIBase
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SOIBase.html#ESRI_Server_SOESupport_SOI_SOIBase_ServerEnvironment
+  name: ServerEnvironment
+  nameWithType: SOIBase.ServerEnvironment
+  fullName: ESRI.Server.SOESupport.SOI.SOIBase.ServerEnvironment
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.#ctor
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper__ctor_ESRI_ArcGIS_Server_IServerObjectHelper_System_String_
+  name: SoapSOIHelper
+  nameWithType: SoapSOIHelper.SoapSOIHelper
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.SoapSOIHelper
+  nameWithType.vb: SoapSOIHelper.New
+  fullName.vb: ESRI.Server.SOESupport.SOI.SoapSOIHelper.New
+  name.vb: New
+- uid: ESRI.ArcGIS.Server.IServerObjectHelper
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectHelper
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectHelper.html
+  name: IServerObjectHelper
+  nameWithType: IServerObjectHelper
+  fullName: ESRI.ArcGIS.Server.IServerObjectHelper
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_GetSoapOperationParameterName_System_String_System_Int32_
+  name: GetSoapOperationParameterName
+  nameWithType: SoapSOIHelper.GetSoapOperationParameterName
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterName
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_GetSoapOperationParameterTypeName_System_String_System_Int32_
+  name: GetSoapOperationParameterTypeName
+  nameWithType: SoapSOIHelper.GetSoapOperationParameterTypeName
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetSoapOperationParameterTypeName
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_GetObjectFromXMLSerializeData_System_Int32_System_String_System_String_ESRI_ArcGIS_esriSystem_IXMLSerializeData_
+  name: GetObjectFromXMLSerializeData
+  nameWithType: SoapSOIHelper.GetObjectFromXMLSerializeData
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.GetObjectFromXMLSerializeData
+- uid: ESRI.ArcGIS.esriSystem.IXMLSerializeData
+  commentId: T:ESRI.ArcGIS.esriSystem.IXMLSerializeData
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IXMLSerializeData.html
+  name: IXMLSerializeData
+  nameWithType: IXMLSerializeData
+  fullName: ESRI.ArcGIS.esriSystem.IXMLSerializeData
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_AddObjectToXMLSerializeData_System_String_System_Object_System_String_ESRI_ArcGIS_esriSystem_IXMLSerializeData_
+  name: AddObjectToXMLSerializeData
+  nameWithType: SoapSOIHelper.AddObjectToXMLSerializeData
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.AddObjectToXMLSerializeData
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_CreateNewIMessage_ESRI_ArcGIS_esriSystem_IMessage_
+  name: CreateNewIMessage
+  nameWithType: SoapSOIHelper.CreateNewIMessage
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.CreateNewIMessage
+- uid: ESRI.ArcGIS.esriSystem.IMessage
+  commentId: T:ESRI.ArcGIS.esriSystem.IMessage
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IMessage.html
+  name: IMessage
+  nameWithType: IMessage
+  fullName: ESRI.ArcGIS.esriSystem.IMessage
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_ConvertBinaryRequestToMessage_System_Byte___
+  name: ConvertBinaryRequestToMessage
+  nameWithType: SoapSOIHelper.ConvertBinaryRequestToMessage
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertBinaryRequestToMessage
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_ConvertStringRequestToMessage_System_String_
+  name: ConvertStringRequestToMessage
+  nameWithType: SoapSOIHelper.ConvertStringRequestToMessage
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertStringRequestToMessage
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_ConvertMessageToStringRequest_ESRI_ArcGIS_esriSystem_IMessage_
+  name: ConvertMessageToStringRequest
+  nameWithType: SoapSOIHelper.ConvertMessageToStringRequest
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToStringRequest
+- uid: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest*
+  commentId: Overload:ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest
+  isExternal: true
+  href: ESRI.Server.SOESupport.SOI.SoapSOIHelper.html#ESRI_Server_SOESupport_SOI_SoapSOIHelper_ConvertMessageToBinaryRequest_ESRI_ArcGIS_esriSystem_IMessage_
+  name: ConvertMessageToBinaryRequest
+  nameWithType: SoapSOIHelper.ConvertMessageToBinaryRequest
+  fullName: ESRI.Server.SOESupport.SOI.SoapSOIHelper.ConvertMessageToBinaryRequest

@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  id: IEnumNodeEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+  - ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise
+  - ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next(ESRI.ArcGIS.Geodatabase.ITopologyEdge@,System.Boolean@)
+  - ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset
+  langs:
+  - csharp
+  - vb
+  name: IEnumNodeEdge
+  nameWithType: IEnumNodeEdge
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to the set of edges incident on the specified node.
+  example: []
+  syntax:
+    content: >-
+      [Guid("5CEE64BE-56DC-11D5-9FEE-00C04F6BDD7F")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IEnumNodeEdge
+    content.vb: >-
+      <Guid("5CEE64BE-56DC-11D5-9FEE-00C04F6BDD7F")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IEnumNodeEdge
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5CEE64BE-56DC-11D5-9FEE-00C04F6BDD7F
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IEnumNodeEdge.Reset()
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Resets this eumerator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset*
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next(ESRI.ArcGIS.Geodatabase.ITopologyEdge@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next(ESRI.ArcGIS.Geodatabase.ITopologyEdge@,System.Boolean@)
+  id: Next(ESRI.ArcGIS.Geodatabase.ITopologyEdge@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  langs:
+  - csharp
+  - vb
+  name: Next(out ITopologyEdge, out bool)
+  nameWithType: IEnumNodeEdge.Next(out ITopologyEdge, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next(out ESRI.ArcGIS.Geodatabase.ITopologyEdge, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the next edge in clockwise or counterclockwise order about the node. 'atFrom' is true if the from point of the edge is incident on this node.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Next(out ITopologyEdge nextEdge, out bool atFrom)
+    parameters:
+    - id: nextEdge
+      type: ESRI.ArcGIS.Geodatabase.ITopologyEdge
+    - id: atFrom
+      type: System.Boolean
+    content.vb: Sub [Next](nextEdge As ITopologyEdge, atFrom As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next*
+  nameWithType.vb: IEnumNodeEdge.Next(ITopologyEdge, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next(ESRI.ArcGIS.Geodatabase.ITopologyEdge, Boolean)
+  name.vb: Next(ITopologyEdge, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+  id: Count
+  parent: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IEnumNodeEdge.Count
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of edges entering and leaving this node. A closed edge will be counted twice.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count*
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise
+  id: IsClockwise
+  parent: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  langs:
+  - csharp
+  - vb
+  name: IsClockwise
+  nameWithType: IEnumNodeEdge.IsClockwise
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this enumerator is returning edges in clockwise order, or false if it is returning them in counterclockwise order.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsClockwise { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsClockwise As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.html#ESRI_ArcGIS_Geodatabase_IEnumNodeEdge_Reset
+  name: Reset
+  nameWithType: IEnumNodeEdge.Reset
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Reset
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.html#ESRI_ArcGIS_Geodatabase_IEnumNodeEdge_Next_ESRI_ArcGIS_Geodatabase_ITopologyEdge__System_Boolean__
+  name: Next
+  nameWithType: IEnumNodeEdge.Next
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Next
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyEdge.html
+  name: ITopologyEdge
+  nameWithType: ITopologyEdge
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyEdge
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.html#ESRI_ArcGIS_Geodatabase_IEnumNodeEdge_Count
+  name: Count
+  nameWithType: IEnumNodeEdge.Count
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.html#ESRI_ArcGIS_Geodatabase_IEnumNodeEdge_IsClockwise
+  name: IsClockwise
+  nameWithType: IEnumNodeEdge.IsClockwise
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.IsClockwise

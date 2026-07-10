@@ -1,0 +1,323 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  id: IBuildBoundaryParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary
+  - ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+  langs:
+  - csharp
+  - vb
+  name: IBuildBoundaryParameters
+  nameWithType: IBuildBoundaryParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control parameters for building the boundary of a mosaic dataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("B178F641-6536-4C94-9A99-20974850DB45")]
+
+      public interface IBuildBoundaryParameters
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("B178F641-6536-4C94-9A99-20974850DB45")>
+
+      Public Interface IBuildBoundaryParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.BuildBoundaryParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.DefineOverviewsParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: B178F641-6536-4C94-9A99-20974850DB45
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+  id: AppendToExistingBoundary
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: AppendToExistingBoundary
+  nameWithType: IBuildBoundaryParameters.AppendToExistingBoundary
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the computed boundary geometry is merged with existing mosaic boundary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool AppendToExistingBoundary { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AppendToExistingBoundary As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+  id: PerformWeeding
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: PerformWeeding
+  nameWithType: IBuildBoundaryParameters.PerformWeeding
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the computed boundary geometry is run through a point-weeding routine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool PerformWeeding { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property PerformWeeding As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+  id: WeedTolerance
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: WeedTolerance
+  nameWithType: IBuildBoundaryParameters.WeedTolerance
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The tolerance for weeding points.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double WeedTolerance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property WeedTolerance As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+  id: BufferDistanceFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: BufferDistanceFactor
+  nameWithType: IBuildBoundaryParameters.BufferDistanceFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The buffer factor applied on each item footprint before it is merged with the cumulative boundary geometry.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double BufferDistanceFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property BufferDistanceFactor As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+  id: RemoveSlivers
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: RemoveSlivers
+  nameWithType: IBuildBoundaryParameters.RemoveSlivers
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether polygons designated as slivers are removed from the boundary geometry.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool RemoveSlivers { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property RemoveSlivers As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary
+  id: UpdateBoundary
+  parent: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters
+  langs:
+  - csharp
+  - vb
+  name: UpdateBoundary
+  nameWithType: IBuildBoundaryParameters.UpdateBoundary
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the mosaic dataset is updated with the computed boundary geometry.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool UpdateBoundary { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property UpdateBoundary As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_AppendToExistingBoundary
+  name: AppendToExistingBoundary
+  nameWithType: IBuildBoundaryParameters.AppendToExistingBoundary
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.AppendToExistingBoundary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_PerformWeeding
+  name: PerformWeeding
+  nameWithType: IBuildBoundaryParameters.PerformWeeding
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.PerformWeeding
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_WeedTolerance
+  name: WeedTolerance
+  nameWithType: IBuildBoundaryParameters.WeedTolerance
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.WeedTolerance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_BufferDistanceFactor
+  name: BufferDistanceFactor
+  nameWithType: IBuildBoundaryParameters.BufferDistanceFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.BufferDistanceFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_RemoveSlivers
+  name: RemoveSlivers
+  nameWithType: IBuildBoundaryParameters.RemoveSlivers
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.RemoveSlivers
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.html#ESRI_ArcGIS_DatasourcesRaster_IBuildBoundaryParameters_UpdateBoundary
+  name: UpdateBoundary
+  nameWithType: IBuildBoundaryParameters.UpdateBoundary
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBuildBoundaryParameters.UpdateBoundary

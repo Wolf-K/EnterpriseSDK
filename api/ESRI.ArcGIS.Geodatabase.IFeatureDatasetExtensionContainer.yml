@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  id: IFeatureDatasetExtensionContainer
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+  - ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  langs:
+  - csharp
+  - vb
+  name: IFeatureDatasetExtensionContainer
+  nameWithType: IFeatureDatasetExtensionContainer
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to the collection of feature dataset extensions.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("23869B3A-1AD9-468B-9E52-6FDC3C261FDA")]
+
+      public interface IFeatureDatasetExtensionContainer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("23869B3A-1AD9-468B-9E52-6FDC3C261FDA")>
+
+      Public Interface IFeatureDatasetExtensionContainer
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 23869B3A-1AD9-468B-9E52-6FDC3C261FDA
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  id: FindExtension(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  langs:
+  - csharp
+  - vb
+  name: FindExtension(esriDatasetType)
+  nameWithType: IFeatureDatasetExtensionContainer.FindExtension(esriDatasetType)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension(ESRI.ArcGIS.Geodatabase.esriDatasetType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to the feature dataset extension that supports the specified dataset type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureDatasetExtension FindExtension(esriDatasetType Type)
+    parameters:
+    - id: Type
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension
+    content.vb: Function FindExtension(Type As esriDatasetType) As IFeatureDatasetExtension
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+  id: ExtensionCount
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  langs:
+  - csharp
+  - vb
+  name: ExtensionCount
+  nameWithType: IFeatureDatasetExtensionContainer.ExtensionCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of feature dataset extensions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ExtensionCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ExtensionCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension(System.Int32)
+  id: Extension(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer
+  langs:
+  - csharp
+  - vb
+  name: Extension[int]
+  nameWithType: IFeatureDatasetExtensionContainer.Extension[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to a feature dataset extension.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureDatasetExtension Extension[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension
+    content.vb: ReadOnly Property Extension(Index As Integer) As IFeatureDatasetExtension
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension*
+  nameWithType.vb: IFeatureDatasetExtensionContainer.Extension(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension(Integer)
+  name.vb: Extension(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtensionContainer_FindExtension_ESRI_ArcGIS_Geodatabase_esriDatasetType_
+  name: FindExtension
+  nameWithType: IFeatureDatasetExtensionContainer.FindExtension
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.FindExtension
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetType.html
+  name: esriDatasetType
+  nameWithType: esriDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetType
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension.html
+  name: IFeatureDatasetExtension
+  nameWithType: IFeatureDatasetExtension
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtension
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtensionContainer_ExtensionCount
+  name: ExtensionCount
+  nameWithType: IFeatureDatasetExtensionContainer.ExtensionCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.ExtensionCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.html#ESRI_ArcGIS_Geodatabase_IFeatureDatasetExtensionContainer_Extension_System_Int32_
+  name: Extension
+  nameWithType: IFeatureDatasetExtensionContainer.Extension
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetExtensionContainer.Extension

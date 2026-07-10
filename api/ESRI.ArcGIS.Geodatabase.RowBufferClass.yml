@@ -1,0 +1,490 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.RowBufferClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.RowBufferClass
+  id: RowBufferClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+  - ESRI.ArcGIS.Geodatabase.RowBufferClass.Value(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: RowBufferClass
+  nameWithType: RowBufferClass
+  fullName: ESRI.ArcGIS.Geodatabase.RowBufferClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("AF10D716-A61B-11D4-A64C-0008C711C8C1")]
+
+      public class RowBufferClass : RowBuffer, IRowBuffer
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("AF10D716-A61B-11D4-A64C-0008C711C8C1")>
+
+      Public Class RowBufferClass Implements RowBuffer, IRowBuffer
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.RowBuffer
+  - ESRI.ArcGIS.Geodatabase.IRowBuffer
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AF10D716-A61B-11D4-A64C-0008C711C8C1
+- uid: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.RowBufferClass.Value(System.Int32)
+  id: Value(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.RowBufferClass
+  langs:
+  - csharp
+  - vb
+  name: Value[int]
+  nameWithType: RowBufferClass.Value[int]
+  fullName: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The value of the field with the specified  index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual object Value[int Index] { get; set; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Overridable Property Value(Index As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(System.Int32)
+  nameWithType.vb: RowBufferClass.Value(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value(Integer)
+  name.vb: Value(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+  id: Fields
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.RowBufferClass
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: RowBufferClass.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields Collection for this row buffer.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Overridable ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IRowBuffer.Fields
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.RowBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.RowBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.RowBuffer.html
+  name: RowBuffer
+  nameWithType: RowBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.RowBuffer
+- uid: ESRI.ArcGIS.Geodatabase.IRowBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRowBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html
+  name: IRowBuffer
+  nameWithType: IRowBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IRowBuffer
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.RowBufferClass.Value
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.RowBufferClass.html#ESRI_ArcGIS_Geodatabase_RowBufferClass_Value_System_Int32_
+  name: Value
+  nameWithType: RowBufferClass.Value
+  fullName: ESRI.ArcGIS.Geodatabase.RowBufferClass.Value
+- uid: ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRowBuffer
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html#ESRI_ArcGIS_Geodatabase_IRowBuffer_Value_System_Int32_
+  name: Value[int]
+  nameWithType: IRowBuffer.Value[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IRowBuffer.Value[int]
+  nameWithType.vb: IRowBuffer.Value(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(Integer)
+  name.vb: Value(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(System.Int32)
+    name: Value
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html#ESRI_ArcGIS_Geodatabase_IRowBuffer_Value_System_Int32_
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IRowBuffer.Value(System.Int32)
+    name: Value
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html#ESRI_ArcGIS_Geodatabase_IRowBuffer_Value_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.RowBufferClass.html#ESRI_ArcGIS_Geodatabase_RowBufferClass_Fields
+  name: Fields
+  nameWithType: RowBufferClass.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.RowBufferClass.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IRowBuffer.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRowBuffer.Fields
+  parent: ESRI.ArcGIS.Geodatabase.IRowBuffer
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html#ESRI_ArcGIS_Geodatabase_IRowBuffer_Fields
+  name: Fields
+  nameWithType: IRowBuffer.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IRowBuffer.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

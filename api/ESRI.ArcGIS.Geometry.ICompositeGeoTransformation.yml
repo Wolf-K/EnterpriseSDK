@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  id: ICompositeGeoTransformation
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation(System.Int32)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse(ESRI.ArcGIS.Geometry.ICompositeGeoTransformation@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ICompositeGeoTransformation
+  nameWithType: ICompositeGeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control a set of geographic transformations.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("3BE52788-DDA4-11D3-9F61-00C04F6BDD7F")]
+
+      public interface ICompositeGeoTransformation : IGeoTransformation, ITransformation
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("3BE52788-DDA4-11D3-9F61-00C04F6BDD7F")>
+
+      Public Interface ICompositeGeoTransformation Inherits IGeoTransformation, ITransformation
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.CompositeGeoTransformationClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3BE52788-DDA4-11D3-9F61-00C04F6BDD7F
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFF(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresFF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF*
+  nameWithType.vb: ICompositeGeoTransformation.TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFI(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresFI(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI*
+  nameWithType.vb: ICompositeGeoTransformation.TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresIF(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresIF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF*
+  nameWithType.vb: ICompositeGeoTransformation.TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresII(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresII(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII*
+  nameWithType.vb: ICompositeGeoTransformation.TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: ICompositeGeoTransformation.TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFF(esriTransformDirection Direction, int cPoints, ref double inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsFF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF*
+  nameWithType.vb: ICompositeGeoTransformation.TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: ICompositeGeoTransformation.TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFI(esriTransformDirection Direction, int cPoints, ref double inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsFI(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI*
+  nameWithType.vb: ICompositeGeoTransformation.TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: ICompositeGeoTransformation.TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsIF(esriTransformDirection Direction, int cPoints, ref int inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsIF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF*
+  nameWithType.vb: ICompositeGeoTransformation.TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: ICompositeGeoTransformation.TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsII(esriTransformDirection Direction, int cPoints, ref int inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsII(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII*
+  nameWithType.vb: ICompositeGeoTransformation.TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  id: GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  nameWithType: ICompositeGeoTransformation.GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences(out ESRI.ArcGIS.Geometry.ISpatialReference, out ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GetSpatialReferences(out ISpatialReference from, out ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub GetSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences*
+  nameWithType.vb: ICompositeGeoTransformation.GetSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: GetSpatialReferences(ISpatialReference, ISpatialReference)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutSpatialReferences(ISpatialReference, ISpatialReference)
+  nameWithType: ICompositeGeoTransformation.PutSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutSpatialReferences(ISpatialReference from, ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub PutSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences*
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation)
+  id: Add(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: Add(esriTransformDirection, IGeoTransformation)
+  nameWithType: ICompositeGeoTransformation.Add(esriTransformDirection, IGeoTransformation)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IGeoTransformation)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Add(esriTransformDirection Direction, IGeoTransformation pXForm)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: pXForm
+      type: ESRI.ArcGIS.Geometry.IGeoTransformation
+    content.vb: Sub Add(Direction As esriTransformDirection, pXForm As IGeoTransformation)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add*
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty
+  id: SetEmpty
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: SetEmpty()
+  nameWithType: ICompositeGeoTransformation.SetEmpty()
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Clears the list of geographic transformations from the object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetEmpty()
+    content.vb: Sub SetEmpty()
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty*
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse(ESRI.ArcGIS.Geometry.ICompositeGeoTransformation@)
+  commentId: M:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse(ESRI.ArcGIS.Geometry.ICompositeGeoTransformation@)
+  id: GetInverse(ESRI.ArcGIS.Geometry.ICompositeGeoTransformation@)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetInverse(out ICompositeGeoTransformation)
+  nameWithType: ICompositeGeoTransformation.GetInverse(out ICompositeGeoTransformation)
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse(out ESRI.ArcGIS.Geometry.ICompositeGeoTransformation)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns an inverted transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetInverse(out ICompositeGeoTransformation pInverted)
+    parameters:
+    - id: pInverted
+      type: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+    content.vb: Sub GetInverse(pInverted As ICompositeGeoTransformation)
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse*
+  nameWithType.vb: ICompositeGeoTransformation.GetInverse(ICompositeGeoTransformation)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse(ESRI.ArcGIS.Geometry.ICompositeGeoTransformation)
+  name.vb: GetInverse(ICompositeGeoTransformation)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+  commentId: P:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ICompositeGeoTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name*
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation(System.Int32)
+  id: GeoTransformation(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: GeoTransformation[int]
+  nameWithType: ICompositeGeoTransformation.GeoTransformation[int]
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A geographic transformation from the list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeoTransformation GeoTransformation[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeoTransformation
+    content.vb: ReadOnly Property GeoTransformation(i As Integer) As IGeoTransformation
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation*
+  nameWithType.vb: ICompositeGeoTransformation.GeoTransformation(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation(Integer)
+  name.vb: GeoTransformation(Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection(System.Int32)
+  id: TransformationDirection(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformationDirection[int]
+  nameWithType: ICompositeGeoTransformation.TransformationDirection[int]
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The direction (forward/reverse) of a geographic transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriTransformDirection TransformationDirection[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    content.vb: ReadOnly Property TransformationDirection(i As Integer) As esriTransformDirection
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection*
+  nameWithType.vb: ICompositeGeoTransformation.TransformationDirection(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection(Integer)
+  name.vb: TransformationDirection(Integer)
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count
+  commentId: P:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count
+  id: Count
+  parent: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ICompositeGeoTransformation.Count
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of geographic transformations in the list.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformMeasuresFF
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresFF
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFF
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformMeasuresFI
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresFI
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresFI
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformMeasuresIF
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresIF
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresIF
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformMeasuresII
+  nameWithType: ICompositeGeoTransformation.TransformMeasuresII
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformMeasuresII
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformPointsFF
+  nameWithType: ICompositeGeoTransformation.TransformPointsFF
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFF
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformPointsFI
+  nameWithType: ICompositeGeoTransformation.TransformPointsFI
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsFI
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformPointsIF
+  nameWithType: ICompositeGeoTransformation.TransformPointsIF
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsIF
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformPointsII
+  nameWithType: ICompositeGeoTransformation.TransformPointsII
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformPointsII
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_GetSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference__ESRI_ArcGIS_Geometry_ISpatialReference__
+  name: GetSpatialReferences
+  nameWithType: ICompositeGeoTransformation.GetSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_PutSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: PutSpatialReferences
+  nameWithType: ICompositeGeoTransformation.PutSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.PutSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_Add_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IGeoTransformation_
+  name: Add
+  nameWithType: ICompositeGeoTransformation.Add
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Add
+- uid: ESRI.ArcGIS.Geometry.IGeoTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.IGeoTransformation
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeoTransformation.html
+  name: IGeoTransformation
+  nameWithType: IGeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.IGeoTransformation
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_SetEmpty
+  name: SetEmpty
+  nameWithType: ICompositeGeoTransformation.SetEmpty
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.SetEmpty
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_GetInverse_ESRI_ArcGIS_Geometry_ICompositeGeoTransformation__
+  name: GetInverse
+  nameWithType: ICompositeGeoTransformation.GetInverse
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GetInverse
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html
+  name: ICompositeGeoTransformation
+  nameWithType: ICompositeGeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_Name
+  name: Name
+  nameWithType: ICompositeGeoTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_GeoTransformation_System_Int32_
+  name: GeoTransformation
+  nameWithType: ICompositeGeoTransformation.GeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.GeoTransformation
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_TransformationDirection_System_Int32_
+  name: TransformationDirection
+  nameWithType: ICompositeGeoTransformation.TransformationDirection
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.TransformationDirection
+- uid: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.html#ESRI_ArcGIS_Geometry_ICompositeGeoTransformation_Count
+  name: Count
+  nameWithType: ICompositeGeoTransformation.Count
+  fullName: ESRI.ArcGIS.Geometry.ICompositeGeoTransformation.Count

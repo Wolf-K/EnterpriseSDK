@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  id: ILasClassCodeStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+  langs:
+  - csharp
+  - vb
+  name: ILasClassCodeStatistics
+  nameWithType: ILasClassCodeStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to LasClassCodeStatistics object.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("89E4489F-87E2-4690-8385-5143FE6D9753")]
+
+      public interface ILasClassCodeStatistics
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("89E4489F-87E2-4690-8385-5143FE6D9753")>
+
+      Public Interface ILasClassCodeStatistics
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasClassCodeStatisticsClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 89E4489F-87E2-4690-8385-5143FE6D9753
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange(System.Int32@,System.Int32@)
+  id: GetIntensityRange(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetIntensityRange(out int, out int)
+  nameWithType: ILasClassCodeStatistics.GetIntensityRange(out int, out int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange(out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The minimum and maximum intensity values associated with this class code (excluding withheld points).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetIntensityRange(out int pMin, out int pMax)
+    parameters:
+    - id: pMin
+      type: System.Int32
+    - id: pMax
+      type: System.Int32
+    content.vb: Sub GetIntensityRange(pMin As Integer, pMax As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange*
+  nameWithType.vb: ILasClassCodeStatistics.GetIntensityRange(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange(Integer, Integer)
+  name.vb: GetIntensityRange(Integer, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+  id: ClassCode
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: ClassCode
+  nameWithType: ILasClassCodeStatistics.ClassCode
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The class code associated with the statistics.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ClassCode { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ClassCode As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+  id: PointCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: PointCount
+  nameWithType: ILasClassCodeStatistics.PointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of points associated with this class code (excluding withheld points).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double PointCount { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property PointCount As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+  id: SyntheticPointCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: SyntheticPointCount
+  nameWithType: ILasClassCodeStatistics.SyntheticPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of Synthetic points associated with this class code.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double SyntheticPointCount { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property SyntheticPointCount As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+  id: KeyPointCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: KeyPointCount
+  nameWithType: ILasClassCodeStatistics.KeyPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of Key points associated with this class code.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double KeyPointCount { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property KeyPointCount As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: ILasClassCodeStatistics.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The XYZ extent of points associated with this class code (excluding withheld points).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_GetIntensityRange_System_Int32__System_Int32__
+  name: GetIntensityRange
+  nameWithType: ILasClassCodeStatistics.GetIntensityRange
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.GetIntensityRange
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_ClassCode
+  name: ClassCode
+  nameWithType: ILasClassCodeStatistics.ClassCode
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.ClassCode
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_PointCount
+  name: PointCount
+  nameWithType: ILasClassCodeStatistics.PointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.PointCount
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_SyntheticPointCount
+  name: SyntheticPointCount
+  nameWithType: ILasClassCodeStatistics.SyntheticPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.SyntheticPointCount
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_KeyPointCount
+  name: KeyPointCount
+  nameWithType: ILasClassCodeStatistics.KeyPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.KeyPointCount
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasClassCodeStatistics_Extent
+  name: Extent
+  nameWithType: ILasClassCodeStatistics.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

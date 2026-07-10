@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  commentId: T:ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  id: ITransformation3DGEN
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate(System.Double,ESRI.ArcGIS.Geometry.IVector3D)
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale(System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform(ESRI.ArcGIS.esriSystem.WKSPointZ[]@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  - ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate(ESRI.ArcGIS.Geometry.IVector3D)
+  langs:
+  - csharp
+  - vb
+  name: ITransformation3DGEN
+  nameWithType: ITransformation3DGEN
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control a 3D affine transformation. ITransformation3DGEN is generic version of ITransformation3D.
+  example: []
+  syntax:
+    content: >-
+      [Guid("1B9FA97E-66C8-477C-88C2-E87A96B56239")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITransformation3DGEN
+    content.vb: >-
+      <Guid("1B9FA97E-66C8-477C-88C2-E87A96B56239")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITransformation3DGEN
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.AffineTransformation3DClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1B9FA97E-66C8-477C-88C2-E87A96B56239
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ITransformation3DGEN.Reset()
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Resets the transformation to unit matrix.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset*
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate(ESRI.ArcGIS.Geometry.IVector3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate(ESRI.ArcGIS.Geometry.IVector3D)
+  id: Translate(ESRI.ArcGIS.Geometry.IVector3D)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: Translate(IVector3D)
+  nameWithType: ITransformation3DGEN.Translate(IVector3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate(ESRI.ArcGIS.Geometry.IVector3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Translate(IVector3D offsetVector)
+    parameters:
+    - id: offsetVector
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    content.vb: Sub Translate(offsetVector As IVector3D)
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate*
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale(System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale(System.Double,System.Double,System.Double)
+  id: Scale(System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: Scale(double, double, double)
+  nameWithType: ITransformation3DGEN.Scale(double, double, double)
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale(double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Adds a scaling factor to the transformation matrix.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Scale(double sx, double sy, double sz)
+    parameters:
+    - id: sx
+      type: System.Double
+    - id: sy
+      type: System.Double
+    - id: sz
+      type: System.Double
+    content.vb: Sub Scale(sx As Double, sy As Double, sz As Double)
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale*
+  nameWithType.vb: ITransformation3DGEN.Scale(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale(Double, Double, Double)
+  name.vb: Scale(Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate(System.Double,ESRI.ArcGIS.Geometry.IVector3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate(System.Double,ESRI.ArcGIS.Geometry.IVector3D)
+  id: Rotate(System.Double,ESRI.ArcGIS.Geometry.IVector3D)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: Rotate(double, IVector3D)
+  nameWithType: ITransformation3DGEN.Rotate(double, IVector3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate(double, ESRI.ArcGIS.Geometry.IVector3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Rotate(double rotationAngle, IVector3D rotationAxis)
+    parameters:
+    - id: rotationAngle
+      type: System.Double
+    - id: rotationAxis
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    content.vb: Sub Rotate(rotationAngle As Double, rotationAxis As IVector3D)
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate*
+  nameWithType.vb: ITransformation3DGEN.Rotate(Double, IVector3D)
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate(Double, ESRI.ArcGIS.Geometry.IVector3D)
+  name.vb: Rotate(Double, IVector3D)
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  id: PostMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: PostMultiply(ITransformation3D)
+  nameWithType: ITransformation3DGEN.PostMultiply(ITransformation3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PostMultiply(ITransformation3D postTransform)
+    parameters:
+    - id: postTransform
+      type: ESRI.ArcGIS.Geometry.ITransformation3D
+    content.vb: Sub PostMultiply(postTransform As ITransformation3D)
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply*
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  id: PreMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: PreMultiply(ITransformation3D)
+  nameWithType: ITransformation3DGEN.PreMultiply(ITransformation3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply(ESRI.ArcGIS.Geometry.ITransformation3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PreMultiply(ITransformation3D preTransform)
+    parameters:
+    - id: preTransform
+      type: ESRI.ArcGIS.Geometry.ITransformation3D
+    content.vb: Sub PreMultiply(preTransform As ITransformation3D)
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply*
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform(ESRI.ArcGIS.esriSystem.WKSPointZ[]@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform(ESRI.ArcGIS.esriSystem.WKSPointZ[]@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  id: Transform(ESRI.ArcGIS.esriSystem.WKSPointZ[]@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  parent: ESRI.ArcGIS.Geometry.ITransformation3DGEN
+  langs:
+  - csharp
+  - vb
+  name: Transform(ref WKSPointZ[], ref WKSPointZ[])
+  nameWithType: ITransformation3DGEN.Transform(ref WKSPointZ[], ref WKSPointZ[])
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform(ref ESRI.ArcGIS.esriSystem.WKSPointZ[], ref ESRI.ArcGIS.esriSystem.WKSPointZ[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Transform(ref WKSPointZ[] originalPoints, ref WKSPointZ[] transformedPoints)
+    parameters:
+    - id: originalPoints
+      type: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+    - id: transformedPoints
+      type: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+    content.vb: Sub Transform(originalPoints As WKSPointZ(), transformedPoints As WKSPointZ())
+  overload: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform*
+  nameWithType.vb: ITransformation3DGEN.Transform(WKSPointZ(), WKSPointZ())
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform(ESRI.ArcGIS.esriSystem.WKSPointZ(), ESRI.ArcGIS.esriSystem.WKSPointZ())
+  name.vb: Transform(WKSPointZ(), WKSPointZ())
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_Reset
+  name: Reset
+  nameWithType: ITransformation3DGEN.Reset
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Reset
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_Translate_ESRI_ArcGIS_Geometry_IVector3D_
+  name: Translate
+  nameWithType: ITransformation3DGEN.Translate
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Translate
+- uid: ESRI.ArcGIS.Geometry.IVector3D
+  commentId: T:ESRI.ArcGIS.Geometry.IVector3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector3D.html
+  name: IVector3D
+  nameWithType: IVector3D
+  fullName: ESRI.ArcGIS.Geometry.IVector3D
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_Scale_System_Double_System_Double_System_Double_
+  name: Scale
+  nameWithType: ITransformation3DGEN.Scale
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Scale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_Rotate_System_Double_ESRI_ArcGIS_Geometry_IVector3D_
+  name: Rotate
+  nameWithType: ITransformation3DGEN.Rotate
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Rotate
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_PostMultiply_ESRI_ArcGIS_Geometry_ITransformation3D_
+  name: PostMultiply
+  nameWithType: ITransformation3DGEN.PostMultiply
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PostMultiply
+- uid: ESRI.ArcGIS.Geometry.ITransformation3D
+  commentId: T:ESRI.ArcGIS.Geometry.ITransformation3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3D.html
+  name: ITransformation3D
+  nameWithType: ITransformation3D
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3D
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_PreMultiply_ESRI_ArcGIS_Geometry_ITransformation3D_
+  name: PreMultiply
+  nameWithType: ITransformation3DGEN.PreMultiply
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.PreMultiply
+- uid: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3DGEN.html#ESRI_ArcGIS_Geometry_ITransformation3DGEN_Transform_ESRI_ArcGIS_esriSystem_WKSPointZ____ESRI_ArcGIS_esriSystem_WKSPointZ____
+  name: Transform
+  nameWithType: ITransformation3DGEN.Transform
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3DGEN.Transform
+- uid: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+  isExternal: true
+  name: WKSPointZ[]
+  nameWithType: WKSPointZ[]
+  fullName: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+  nameWithType.vb: WKSPointZ()
+  fullName.vb: ESRI.ArcGIS.esriSystem.WKSPointZ()
+  name.vb: WKSPointZ()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.WKSPointZ
+    name: WKSPointZ
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.WKSPointZ
+    name: WKSPointZ
+    isExternal: true
+  - name: (
+  - name: )

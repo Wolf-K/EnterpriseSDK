@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2
+  commentId: T:ESRI.ArcGIS.Geometry.IConstructCurve2
+  id: IConstructCurve2
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve,System.Object@,System.Object@)
+  - ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended(ESRI.ArcGIS.Geometry.ICurve,ESRI.ArcGIS.Geometry.ICurve,System.Int32,System.Boolean@)
+  - ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Int32)
+  - ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Object@,System.Object@)
+  langs:
+  - csharp
+  - vb
+  name: IConstructCurve2
+  nameWithType: IConstructCurve2
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that construct a curve using other geometries and measures.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("4A877E3C-BA67-4F78-B1EF-A728C968D787")]
+
+      public interface IConstructCurve2 : IConstructCurve
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("4A877E3C-BA67-4F78-B1EF-A728C968D787")>
+
+      Public Interface IConstructCurve2 Inherits IConstructCurve
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4A877E3C-BA67-4F78-B1EF-A728C968D787
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Object@,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Object@,System.Object@)
+  id: ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Object@,System.Object@)
+  parent: ESRI.ArcGIS.Geometry.IConstructCurve2
+  langs:
+  - csharp
+  - vb
+  name: ConstructOffset(IPolycurve, double, ref object, ref object)
+  nameWithType: IConstructCurve2.ConstructOffset(IPolycurve, double, ref object, ref object)
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve, double, ref object, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructOffset(IPolycurve inCurve, double Offset, ref object offsetHow, ref object bevelRatio)
+    parameters:
+    - id: inCurve
+      type: ESRI.ArcGIS.Geometry.IPolycurve
+    - id: Offset
+      type: System.Double
+    - id: offsetHow
+      type: System.Object
+    - id: bevelRatio
+      type: System.Object
+    content.vb: Sub ConstructOffset(inCurve As IPolycurve, Offset As Double, offsetHow As Object, bevelRatio As Object)
+  overload: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset*
+  nameWithType.vb: IConstructCurve2.ConstructOffset(IPolycurve, Double, Object, Object)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset(ESRI.ArcGIS.Geometry.IPolycurve, Double, Object, Object)
+  name.vb: ConstructOffset(IPolycurve, Double, Object, Object)
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Int32)
+  id: ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve,System.Double,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IConstructCurve2
+  langs:
+  - csharp
+  - vb
+  name: ConstructKoch(IPolycurve, double, int)
+  nameWithType: IConstructCurve2.ConstructKoch(IPolycurve, double, int)
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve, double, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructKoch(IPolycurve p, double r, int recursionLevel)
+    parameters:
+    - id: p
+      type: ESRI.ArcGIS.Geometry.IPolycurve
+    - id: r
+      type: System.Double
+    - id: recursionLevel
+      type: System.Int32
+    content.vb: Sub ConstructKoch(p As IPolycurve, r As Double, recursionLevel As Integer)
+  overload: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch*
+  nameWithType.vb: IConstructCurve2.ConstructKoch(IPolycurve, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch(ESRI.ArcGIS.Geometry.IPolycurve, Double, Integer)
+  name.vb: ConstructKoch(IPolycurve, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended(ESRI.ArcGIS.Geometry.ICurve,ESRI.ArcGIS.Geometry.ICurve,System.Int32,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended(ESRI.ArcGIS.Geometry.ICurve,ESRI.ArcGIS.Geometry.ICurve,System.Int32,System.Boolean@)
+  id: ConstructExtended(ESRI.ArcGIS.Geometry.ICurve,ESRI.ArcGIS.Geometry.ICurve,System.Int32,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IConstructCurve2
+  langs:
+  - csharp
+  - vb
+  name: ConstructExtended(ICurve, ICurve, int, ref bool)
+  nameWithType: IConstructCurve2.ConstructExtended(ICurve, ICurve, int, ref bool)
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended(ESRI.ArcGIS.Geometry.ICurve, ESRI.ArcGIS.Geometry.ICurve, int, ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructExtended(ICurve fromCurve, ICurve toCurve, int extensionFlags, ref bool extensionsPerformed)
+    parameters:
+    - id: fromCurve
+      type: ESRI.ArcGIS.Geometry.ICurve
+    - id: toCurve
+      type: ESRI.ArcGIS.Geometry.ICurve
+    - id: extensionFlags
+      type: System.Int32
+    - id: extensionsPerformed
+      type: System.Boolean
+    content.vb: Sub ConstructExtended(fromCurve As ICurve, toCurve As ICurve, extensionFlags As Integer, extensionsPerformed As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended*
+  nameWithType.vb: IConstructCurve2.ConstructExtended(ICurve, ICurve, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended(ESRI.ArcGIS.Geometry.ICurve, ESRI.ArcGIS.Geometry.ICurve, Integer, Boolean)
+  name.vb: ConstructExtended(ICurve, ICurve, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve,System.Object@,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve,System.Object@,System.Object@)
+  id: ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve,System.Object@,System.Object@)
+  parent: ESRI.ArcGIS.Geometry.IConstructCurve2
+  langs:
+  - csharp
+  - vb
+  name: ApproximateByBeziers(IPolycurve, ref object, ref object)
+  nameWithType: IConstructCurve2.ApproximateByBeziers(IPolycurve, ref object, ref object)
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve, ref object, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ApproximateByBeziers(IPolycurve pInCurve, ref object pMaxDistance, ref object smoothClosedParts)
+    parameters:
+    - id: pInCurve
+      type: ESRI.ArcGIS.Geometry.IPolycurve
+    - id: pMaxDistance
+      type: System.Object
+    - id: smoothClosedParts
+      type: System.Object
+    content.vb: Sub ApproximateByBeziers(pInCurve As IPolycurve, pMaxDistance As Object, smoothClosedParts As Object)
+  overload: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers*
+  nameWithType.vb: IConstructCurve2.ApproximateByBeziers(IPolycurve, Object, Object)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers(ESRI.ArcGIS.Geometry.IPolycurve, Object, Object)
+  name.vb: ApproximateByBeziers(IPolycurve, Object, Object)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructCurve2.html#ESRI_ArcGIS_Geometry_IConstructCurve2_ConstructOffset_ESRI_ArcGIS_Geometry_IPolycurve_System_Double_System_Object__System_Object__
+  name: ConstructOffset
+  nameWithType: IConstructCurve2.ConstructOffset
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructOffset
+- uid: ESRI.ArcGIS.Geometry.IPolycurve
+  commentId: T:ESRI.ArcGIS.Geometry.IPolycurve
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurve.html
+  name: IPolycurve
+  nameWithType: IPolycurve
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructCurve2.html#ESRI_ArcGIS_Geometry_IConstructCurve2_ConstructKoch_ESRI_ArcGIS_Geometry_IPolycurve_System_Double_System_Int32_
+  name: ConstructKoch
+  nameWithType: IConstructCurve2.ConstructKoch
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructKoch
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructCurve2.html#ESRI_ArcGIS_Geometry_IConstructCurve2_ConstructExtended_ESRI_ArcGIS_Geometry_ICurve_ESRI_ArcGIS_Geometry_ICurve_System_Int32_System_Boolean__
+  name: ConstructExtended
+  nameWithType: IConstructCurve2.ConstructExtended
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ConstructExtended
+- uid: ESRI.ArcGIS.Geometry.ICurve
+  commentId: T:ESRI.ArcGIS.Geometry.ICurve
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICurve.html
+  name: ICurve
+  nameWithType: ICurve
+  fullName: ESRI.ArcGIS.Geometry.ICurve
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructCurve2.html#ESRI_ArcGIS_Geometry_IConstructCurve2_ApproximateByBeziers_ESRI_ArcGIS_Geometry_IPolycurve_System_Object__System_Object__
+  name: ApproximateByBeziers
+  nameWithType: IConstructCurve2.ApproximateByBeziers
+  fullName: ESRI.ArcGIS.Geometry.IConstructCurve2.ApproximateByBeziers

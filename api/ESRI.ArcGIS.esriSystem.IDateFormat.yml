@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat
+  commentId: T:ESRI.ArcGIS.esriSystem.IDateFormat
+  id: IDateFormat
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+  - ESRI.ArcGIS.esriSystem.IDateFormat.Format
+  - ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate(System.Double,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+  - ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IDateFormat
+  nameWithType: IDateFormat
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that format date time.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9FA0D58F-3FC7-45B4-95A3-DB8961ED6E00")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IDateFormat
+    content.vb: >-
+      <Guid("9FA0D58F-3FC7-45B4-95A3-DB8961ED6E00")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IDateFormat
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.DateFormatClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9FA0D58F-3FC7-45B4-95A3-DB8961ED6E00
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: ToOADate(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.esriSystem.IDateFormat
+  langs:
+  - csharp
+  - vb
+  name: ToOADate(int, int, int, int, int, int, int)
+  nameWithType: IDateFormat.ToOADate(int, int, int, int, int, int, int)
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate(int, int, int, int, int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Convert date time to OADate with the milliseconds preserved.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ToOADate(int Year, int Month, int Day, int Hour, int Minute, int Second, int millisecond)
+    parameters:
+    - id: Year
+      type: System.Int32
+    - id: Month
+      type: System.Int32
+    - id: Day
+      type: System.Int32
+    - id: Hour
+      type: System.Int32
+    - id: Minute
+      type: System.Int32
+    - id: Second
+      type: System.Int32
+    - id: millisecond
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Function ToOADate(Year As Integer, Month As Integer, Day As Integer, Hour As Integer, Minute As Integer, Second As Integer, millisecond As Integer) As Double
+  overload: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate*
+  nameWithType.vb: IDateFormat.ToOADate(Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate(Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+  name.vb: ToOADate(Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate(System.Double,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate(System.Double,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  id: FromOADate(System.Double,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.esriSystem.IDateFormat
+  langs:
+  - csharp
+  - vb
+  name: FromOADate(double, out int, out int, out int, out int, out int, out int, out int, out int)
+  nameWithType: IDateFormat.FromOADate(double, out int, out int, out int, out int, out int, out int, out int, out int)
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate(double, out int, out int, out int, out int, out int, out int, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Convert OADate to date time with the milliseconds preserved. Day of week is an integer between 0 and 6, where 0 indicates Sunday and 6 indicates Saturday.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FromOADate(double oadate, out int Year, out int Month, out int Day, out int Hour, out int Minute, out int Second, out int millisecond, out int DayOfWeek)
+    parameters:
+    - id: oadate
+      type: System.Double
+    - id: Year
+      type: System.Int32
+    - id: Month
+      type: System.Int32
+    - id: Day
+      type: System.Int32
+    - id: Hour
+      type: System.Int32
+    - id: Minute
+      type: System.Int32
+    - id: Second
+      type: System.Int32
+    - id: millisecond
+      type: System.Int32
+    - id: DayOfWeek
+      type: System.Int32
+    content.vb: Sub FromOADate(oadate As Double, Year As Integer, Month As Integer, Day As Integer, Hour As Integer, Minute As Integer, Second As Integer, millisecond As Integer, DayOfWeek As Integer)
+  overload: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate*
+  nameWithType.vb: IDateFormat.FromOADate(Double, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate(Double, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+  name.vb: FromOADate(Double, Integer, Integer, Integer, Integer, Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Format
+  commentId: P:ESRI.ArcGIS.esriSystem.IDateFormat.Format
+  id: Format
+  parent: ESRI.ArcGIS.esriSystem.IDateFormat
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: IDateFormat.Format
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Format
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Format used to convert date time to string, i.e., yyyy/MM/dd.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Format { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Format As String
+  overload: ESRI.ArcGIS.esriSystem.IDateFormat.Format*
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+  commentId: P:ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+  id: Locale
+  parent: ESRI.ArcGIS.esriSystem.IDateFormat
+  langs:
+  - csharp
+  - vb
+  name: Locale
+  nameWithType: IDateFormat.Locale
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Locale used for date time formating, i.e., en-US, zh-CN, ja-JP. If not set, the user default locale will be used.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Locale { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Locale As String
+  overload: ESRI.ArcGIS.esriSystem.IDateFormat.Locale*
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+  commentId: P:ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+  id: Calendar
+  parent: ESRI.ArcGIS.esriSystem.IDateFormat
+  langs:
+  - csharp
+  - vb
+  name: Calendar
+  nameWithType: IDateFormat.Calendar
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Calendar used for date time formating. If not set, the default calendar for the locale will be used.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriCalendarEnum Calendar { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriCalendarEnum
+    content.vb: Property Calendar As esriCalendarEnum
+  overload: ESRI.ArcGIS.esriSystem.IDateFormat.Calendar*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDateFormat.html#ESRI_ArcGIS_esriSystem_IDateFormat_ToOADate_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: ToOADate
+  nameWithType: IDateFormat.ToOADate
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.ToOADate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDateFormat.html#ESRI_ArcGIS_esriSystem_IDateFormat_FromOADate_System_Double_System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__System_Int32__
+  name: FromOADate
+  nameWithType: IDateFormat.FromOADate
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.FromOADate
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Format*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IDateFormat.Format
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDateFormat.html#ESRI_ArcGIS_esriSystem_IDateFormat_Format
+  name: Format
+  nameWithType: IDateFormat.Format
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Format
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Locale*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDateFormat.html#ESRI_ArcGIS_esriSystem_IDateFormat_Locale
+  name: Locale
+  nameWithType: IDateFormat.Locale
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Locale
+- uid: ESRI.ArcGIS.esriSystem.IDateFormat.Calendar*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDateFormat.html#ESRI_ArcGIS_esriSystem_IDateFormat_Calendar
+  name: Calendar
+  nameWithType: IDateFormat.Calendar
+  fullName: ESRI.ArcGIS.esriSystem.IDateFormat.Calendar
+- uid: ESRI.ArcGIS.esriSystem.esriCalendarEnum
+  commentId: T:ESRI.ArcGIS.esriSystem.esriCalendarEnum
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriCalendarEnum.html
+  name: esriCalendarEnum
+  nameWithType: esriCalendarEnum
+  fullName: ESRI.ArcGIS.esriSystem.esriCalendarEnum

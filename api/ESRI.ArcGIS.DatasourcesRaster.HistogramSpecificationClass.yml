@@ -1,0 +1,1165 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  id: HistogramSpecificationClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update
+  langs:
+  - csharp
+  - vb
+  name: HistogramSpecificationClass
+  nameWithType: HistogramSpecificationClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [Guid("B66278B0-8352-499B-AD5C-5140C54EC52F")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class HistogramSpecificationClass : HistogramSpecification, IHistogramSpecification, IStockFrequencyDistributionHistogram, IPixelFilter
+    content.vb: >-
+      <Guid("B66278B0-8352-499B-AD5C-5140C54EC52F")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class HistogramSpecificationClass Implements HistogramSpecification, IHistogramSpecification, IStockFrequencyDistributionHistogram, IPixelFilter
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecification
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  - ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: B66278B0-8352-499B-AD5C-5140C54EC52F
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: HistogramSpecificationClass()
+  nameWithType: HistogramSpecificationClass.HistogramSpecificationClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.HistogramSpecificationClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public HistogramSpecificationClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor*
+  nameWithType.vb: HistogramSpecificationClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update
+  id: Update
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: HistogramSpecificationClass.Update()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Recalculates the look-up that maps input values -- having a distribution described by the input histograms -- to output values that have a distribution described by the target histograms.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Update()
+    content.vb: Overridable Sub Update()
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup(System.Int32)
+  id: GetLookup(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: GetLookup(int)
+  nameWithType: HistogramSpecificationClass.GetLookup(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the look-up array for the requested band for remapping pixel values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual object GetLookup(int iBand)
+    parameters:
+    - id: iBand
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Overridable Function GetLookup(iBand As Integer) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  nameWithType.vb: HistogramSpecificationClass.GetLookup(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup(Integer)
+  name.vb: GetLookup(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  id: GetNormalDistribution(System.Int32,System.Double,System.Double)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: GetNormalDistribution(int, double, double)
+  nameWithType: HistogramSpecificationClass.GetNormalDistribution(int, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution(int, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns a histogram containing a specified number of bins describing a normal/gaussian distribution with a specified mean and standard deviation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IRasterHistogram GetNormalDistribution(int nBins, double Mean, double StdDev)
+    parameters:
+    - id: nBins
+      type: System.Int32
+    - id: Mean
+      type: System.Double
+    - id: StdDev
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+    content.vb: Overridable Function GetNormalDistribution(nBins As Integer, Mean As Double, StdDev As Double) As IRasterHistogram
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  nameWithType.vb: HistogramSpecificationClass.GetNormalDistribution(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution(Integer, Double, Double)
+  name.vb: GetNormalDistribution(Integer, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution(System.Int32)
+  id: GetUniformDistribution(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: GetUniformDistribution(int)
+  nameWithType: HistogramSpecificationClass.GetUniformDistribution(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns a histogram containing a specified number of bins describing a uniform distribution.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IRasterHistogram GetUniformDistribution(int nBins)
+    parameters:
+    - id: nBins
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+    content.vb: Overridable Function GetUniformDistribution(nBins As Integer) As IRasterHistogram
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(System.Int32)
+  nameWithType.vb: HistogramSpecificationClass.GetUniformDistribution(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution(Integer)
+  name.vb: GetUniformDistribution(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: HistogramSpecificationClass.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets dimension of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetSize(ref int Columns, ref int Rows)
+    parameters:
+    - id: Columns
+      type: System.Int32
+    - id: Rows
+      type: System.Int32
+    content.vb: Overridable Sub GetSize(Columns As Integer, Rows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  nameWithType.vb: HistogramSpecificationClass.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: HistogramSpecificationClass.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets center position of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Overridable Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  nameWithType.vb: HistogramSpecificationClass.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: Filter(IPixelBlock)
+  nameWithType: HistogramSpecificationClass.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void Filter(IPixelBlock pBlock)
+    parameters:
+    - id: pBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Overridable Sub Filter(pBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+  id: InputHistogram
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: InputHistogram
+  nameWithType: HistogramSpecificationClass.InputHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The collection of histograms that describe the distribution of input values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray InputHistogram { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property InputHistogram As IArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+  id: TargetHistogram
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  langs:
+  - csharp
+  - vb
+  name: TargetHistogram
+  nameWithType: HistogramSpecificationClass.TargetHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The collection of target histograms that describe the desired distribution of output values. These are the histograms to which each input histogram is matched.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray TargetHistogram { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property TargetHistogram As IArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecification
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecification
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecification.html
+  name: HistogramSpecification
+  nameWithType: HistogramSpecification
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecification
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html
+  name: IHistogramSpecification
+  nameWithType: IHistogramSpecification
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+- uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html
+  name: IStockFrequencyDistributionHistogram
+  nameWithType: IStockFrequencyDistributionHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html
+  name: IPixelFilter
+  nameWithType: IPixelFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass__ctor
+  name: HistogramSpecificationClass
+  nameWithType: HistogramSpecificationClass.HistogramSpecificationClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.HistogramSpecificationClass
+  nameWithType.vb: HistogramSpecificationClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_Update
+  name: Update
+  nameWithType: HistogramSpecificationClass.Update
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Update
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_Update
+  name: Update()
+  nameWithType: IHistogramSpecification.Update()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+    name: Update
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+    name: Update
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_Update
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_GetLookup_System_Int32_
+  name: GetLookup
+  nameWithType: HistogramSpecificationClass.GetLookup
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetLookup
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_GetLookup_System_Int32_
+  name: GetLookup(int)
+  nameWithType: IHistogramSpecification.GetLookup(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(int)
+  nameWithType.vb: IHistogramSpecification.GetLookup(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(Integer)
+  name.vb: GetLookup(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+    name: GetLookup
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_GetLookup_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+    name: GetLookup
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_GetLookup_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_GetNormalDistribution_System_Int32_System_Double_System_Double_
+  name: GetNormalDistribution
+  nameWithType: HistogramSpecificationClass.GetNormalDistribution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetNormalDistribution
+- uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(System.Int32,System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetNormalDistribution_System_Int32_System_Double_System_Double_
+  name: GetNormalDistribution(int, double, double)
+  nameWithType: IStockFrequencyDistributionHistogram.GetNormalDistribution(int, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(int, double, double)
+  nameWithType.vb: IStockFrequencyDistributionHistogram.GetNormalDistribution(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(Integer, Double, Double)
+  name.vb: GetNormalDistribution(Integer, Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(System.Int32,System.Double,System.Double)
+    name: GetNormalDistribution
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetNormalDistribution_System_Int32_System_Double_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetNormalDistribution(System.Int32,System.Double,System.Double)
+    name: GetNormalDistribution
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetNormalDistribution_System_Int32_System_Double_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html
+  name: IRasterHistogram
+  nameWithType: IRasterHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_GetUniformDistribution_System_Int32_
+  name: GetUniformDistribution
+  nameWithType: HistogramSpecificationClass.GetUniformDistribution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetUniformDistribution
+- uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetUniformDistribution_System_Int32_
+  name: GetUniformDistribution(int)
+  nameWithType: IStockFrequencyDistributionHistogram.GetUniformDistribution(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(int)
+  nameWithType.vb: IStockFrequencyDistributionHistogram.GetUniformDistribution(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(Integer)
+  name.vb: GetUniformDistribution(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(System.Int32)
+    name: GetUniformDistribution
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetUniformDistribution_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.GetUniformDistribution(System.Int32)
+    name: GetUniformDistribution
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IStockFrequencyDistributionHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IStockFrequencyDistributionHistogram_GetUniformDistribution_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: HistogramSpecificationClass.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize(ref int, ref int)
+  nameWithType: IPixelFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: HistogramSpecificationClass.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IPixelFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter
+  nameWithType: HistogramSpecificationClass.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.Filter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter(IPixelBlock)
+  nameWithType: IPixelFilter.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_InputHistogram
+  name: InputHistogram
+  nameWithType: HistogramSpecificationClass.InputHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.InputHistogram
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_InputHistogram
+  name: InputHistogram
+  nameWithType: IHistogramSpecification.InputHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.html#ESRI_ArcGIS_DatasourcesRaster_HistogramSpecificationClass_TargetHistogram
+  name: TargetHistogram
+  nameWithType: HistogramSpecificationClass.TargetHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass.TargetHistogram
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_TargetHistogram
+  name: TargetHistogram
+  nameWithType: IHistogramSpecification.TargetHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram

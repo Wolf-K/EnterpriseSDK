@@ -1,0 +1,229 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  id: IRasterLODInfos
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution(System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels
+  - ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IRasterLODInfos
+  nameWithType: IRasterLODInfos
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control custom Level of Details.
+  example: []
+  syntax:
+    content: >-
+      [Guid("2EE0F992-E4CB-429D-B663-7A12213B0CD1")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRasterLODInfos
+    content.vb: >-
+      <Guid("2EE0F992-E4CB-429D-B663-7A12213B0CD1")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRasterLODInfos
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2EE0F992-E4CB-429D-B663-7A12213B0CD1
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap(System.Double,System.Double)
+  id: Snap(System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  langs:
+  - csharp
+  - vb
+  name: Snap(double, double)
+  nameWithType: IRasterLODInfos.Snap(double, double)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Snaps a given cellsize to a proper Level Of Details.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Snap(double dx, double dy)
+    parameters:
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function Snap(dx As Double, dy As Double) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap*
+  nameWithType.vb: IRasterLODInfos.Snap(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap(Double, Double)
+  name.vb: Snap(Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution(System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution(System.Int32,System.Double@,System.Double@)
+  id: GetResolution(System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  langs:
+  - csharp
+  - vb
+  name: GetResolution(int, out double, out double)
+  nameWithType: IRasterLODInfos.GetResolution(int, out double, out double)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution(int, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Gets X and Y resolution (cellsize) at a given level.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetResolution(int Level, out double XResolution, out double YResolution)
+    parameters:
+    - id: Level
+      type: System.Int32
+    - id: XResolution
+      type: System.Double
+    - id: YResolution
+      type: System.Double
+    content.vb: Sub GetResolution(Level As Integer, XResolution As Double, YResolution As Double)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution*
+  nameWithType.vb: IRasterLODInfos.GetResolution(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution(Integer, Double, Double)
+  name.vb: GetResolution(Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels
+  id: NumLevels
+  parent: ESRI.ArcGIS.Geodatabase.IRasterLODInfos
+  langs:
+  - csharp
+  - vb
+  name: NumLevels
+  nameWithType: IRasterLODInfos.NumLevels
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of levels of details.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int NumLevels { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NumLevels As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.html#ESRI_ArcGIS_Geodatabase_IRasterLODInfos_Snap_System_Double_System_Double_
+  name: Snap
+  nameWithType: IRasterLODInfos.Snap
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.Snap
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.html#ESRI_ArcGIS_Geodatabase_IRasterLODInfos_GetResolution_System_Int32_System_Double__System_Double__
+  name: GetResolution
+  nameWithType: IRasterLODInfos.GetResolution
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.GetResolution
+- uid: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.html#ESRI_ArcGIS_Geodatabase_IRasterLODInfos_NumLevels
+  name: NumLevels
+  nameWithType: IRasterLODInfos.NumLevels
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterLODInfos.NumLevels

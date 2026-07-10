@@ -1,0 +1,688 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkDataset
+  id: INetworkDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName(System.String)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.Source(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName(System.String)
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+  - ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+  langs:
+  - csharp
+  - vb
+  name: INetworkDataset
+  nameWithType: INetworkDataset
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that query the schema of the network dataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5299F003-FCA2-453D-AB8E-28B9AC6648B5")]
+
+      public interface INetworkDataset
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5299F003-FCA2-453D-AB8E-28B9AC6648B5")>
+
+      Public Interface INetworkDataset
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5299F003-FCA2-453D-AB8E-28B9AC6648B5
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+  id: Buildable
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: Buildable
+  nameWithType: INetworkDataset.Buildable
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this network dataset is buildable.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Buildable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Buildable As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+  id: NetworkType
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: NetworkType
+  nameWithType: INetworkDataset.NetworkType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The type of the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkDatasetType NetworkType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType
+    content.vb: ReadOnly Property NetworkType As esriNetworkDatasetType
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+  id: SupportsTurns
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: SupportsTurns
+  nameWithType: INetworkDataset.SupportsTurns
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this network dataset supports network turn elements.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsTurns { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SupportsTurns As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID(System.Int32)
+  id: AttributeByID(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: AttributeByID[int]
+  nameWithType: INetworkDataset.AttributeByID[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset attribute corresponding to the specified ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkAttribute AttributeByID[int ID] { get; }
+    parameters:
+    - id: ID
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkAttribute
+    content.vb: ReadOnly Property AttributeByID(ID As Integer) As INetworkAttribute
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID*
+  nameWithType.vb: INetworkDataset.AttributeByID(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID(Integer)
+  name.vb: AttributeByID(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName(System.String)
+  id: AttributeByName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: AttributeByName[string]
+  nameWithType: INetworkDataset.AttributeByName[string]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset attribute corresponding to the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkAttribute AttributeByName[string Name] { get; }
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkAttribute
+    content.vb: ReadOnly Property AttributeByName(Name As String) As INetworkAttribute
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName*
+  nameWithType.vb: INetworkDataset.AttributeByName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName(String)
+  name.vb: AttributeByName(String)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+  id: AttributeCount
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: AttributeCount
+  nameWithType: INetworkDataset.AttributeCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Number of attributes in the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int AttributeCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property AttributeCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute(System.Int32)
+  id: Attribute(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: Attribute[int]
+  nameWithType: INetworkDataset.Attribute[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset attribute by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkAttribute Attribute[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkAttribute
+    content.vb: ReadOnly Property Attribute(Index As Integer) As INetworkAttribute
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute*
+  nameWithType.vb: INetworkDataset.Attribute(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute(Integer)
+  name.vb: Attribute(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID(System.Int32)
+  id: SourceByID(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: SourceByID[int]
+  nameWithType: INetworkDataset.SourceByID[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset source corresponding to the specified ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkSource SourceByID[int ID] { get; }
+    parameters:
+    - id: ID
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkSource
+    content.vb: ReadOnly Property SourceByID(ID As Integer) As INetworkSource
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID*
+  nameWithType.vb: INetworkDataset.SourceByID(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID(Integer)
+  name.vb: SourceByID(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName(System.String)
+  id: SourceByName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: SourceByName[string]
+  nameWithType: INetworkDataset.SourceByName[string]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset source corresponding to the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkSource SourceByName[string Name] { get; }
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkSource
+    content.vb: ReadOnly Property SourceByName(Name As String) As INetworkSource
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName*
+  nameWithType.vb: INetworkDataset.SourceByName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName(String)
+  name.vb: SourceByName(String)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+  id: SourceCount
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: SourceCount
+  nameWithType: INetworkDataset.SourceCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Number of sources in the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SourceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SourceCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.Source(System.Int32)
+  id: Source(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: Source[int]
+  nameWithType: INetworkDataset.Source[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Network dataset source by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkSource Source[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkSource
+    content.vb: ReadOnly Property Source(Index As Integer) As INetworkSource
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source*
+  nameWithType.vb: INetworkDataset.Source(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source(Integer)
+  name.vb: Source(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+  id: State
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: INetworkDataset.State
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether the network dataset is built or not.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkDatasetState State { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState
+    content.vb: ReadOnly Property State As esriNetworkDatasetState
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.State*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  id: DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDataset
+  langs:
+  - csharp
+  - vb
+  name: DirtyArea[IPolygon]
+  nameWithType: INetworkDataset.DirtyArea[IPolygon]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea[ESRI.ArcGIS.Geometry.IPolygon]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The dirty area polygon of the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolygon DirtyArea[IPolygon Location] { get; }
+    parameters:
+    - id: Location
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: ReadOnly Property DirtyArea(Location As IPolygon) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea*
+  nameWithType.vb: INetworkDataset.DirtyArea(IPolygon)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  name.vb: DirtyArea(IPolygon)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_Buildable
+  name: Buildable
+  nameWithType: INetworkDataset.Buildable
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Buildable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_NetworkType
+  name: NetworkType
+  nameWithType: INetworkDataset.NetworkType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.NetworkType
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType.html
+  name: esriNetworkDatasetType
+  nameWithType: esriNetworkDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetType
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_SupportsTurns
+  name: SupportsTurns
+  nameWithType: INetworkDataset.SupportsTurns
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SupportsTurns
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByID_System_Int32_
+  name: AttributeByID
+  nameWithType: INetworkDataset.AttributeByID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.INetworkAttribute
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkAttribute
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkAttribute.html
+  name: INetworkAttribute
+  nameWithType: INetworkAttribute
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkAttribute
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeByName_System_String_
+  name: AttributeByName
+  nameWithType: INetworkDataset.AttributeByName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_AttributeCount
+  name: AttributeCount
+  nameWithType: INetworkDataset.AttributeCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.AttributeCount
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_Attribute_System_Int32_
+  name: Attribute
+  nameWithType: INetworkDataset.Attribute
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Attribute
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByID_System_Int32_
+  name: SourceByID
+  nameWithType: INetworkDataset.SourceByID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByID
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSource
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkSource
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSource.html
+  name: INetworkSource
+  nameWithType: INetworkSource
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSource
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceByName_System_String_
+  name: SourceByName
+  nameWithType: INetworkDataset.SourceByName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceByName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_SourceCount
+  name: SourceCount
+  nameWithType: INetworkDataset.SourceCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.SourceCount
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.Source
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_Source_System_Int32_
+  name: Source
+  nameWithType: INetworkDataset.Source
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.Source
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.State*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_State
+  name: State
+  nameWithType: INetworkDataset.State
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.State
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState.html
+  name: esriNetworkDatasetState
+  nameWithType: esriNetworkDatasetState
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkDatasetState
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDataset.html#ESRI_ArcGIS_Geodatabase_INetworkDataset_DirtyArea_ESRI_ArcGIS_Geometry_IPolygon_
+  name: DirtyArea
+  nameWithType: INetworkDataset.DirtyArea
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDataset.DirtyArea
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

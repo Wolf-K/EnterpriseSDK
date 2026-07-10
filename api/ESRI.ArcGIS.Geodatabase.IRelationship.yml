@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationship
+  id: IRelationship
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject
+  - ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+  - ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+  langs:
+  - csharp
+  - vb
+  name: IRelationship
+  nameWithType: IRelationship
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about the relationship.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("22B00696-8895-11D2-8A0D-006097AFF44E")]
+
+      public interface IRelationship
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("22B00696-8895-11D2-8A0D-006097AFF44E")>
+
+      Public Interface IRelationship
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.RelationshipClass_2
+  - ESRI.ArcGIS.Geodatabase.SimpleRelationshipClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 22B00696-8895-11D2-8A0D-006097AFF44E
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+  id: RelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase.IRelationship
+  langs:
+  - csharp
+  - vb
+  name: RelationshipClass
+  nameWithType: IRelationship.RelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The relationship class to which this relationship belongs.
+  remarks: '&lt;P&gt;You can create a relationship class with either &lt;STRONG&gt;IRelationshipClassContainer &lt;/STRONG&gt;or &lt;STRONG&gt;IFeatureWorkspace&lt;/STRONG&gt;. &lt;STRONG&gt;RelationshipClass &lt;/STRONG&gt;objects implement &lt;STRONG&gt;IDataset &lt;/STRONG&gt;(useful for getting the name or the workspace), but note that they do not implement &lt;STRONG&gt;IClass &lt;/STRONG&gt;(unless they are attributed). This is because a non-attributed relationship class does not have any fields of its own.&lt;/P&gt;'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRelationshipClass RelationshipClass { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    content.vb: ReadOnly Property RelationshipClass As IRelationshipClass
+  overload: ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass*
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+  id: OriginObject
+  parent: ESRI.ArcGIS.Geodatabase.IRelationship
+  langs:
+  - csharp
+  - vb
+  name: OriginObject
+  nameWithType: IRelationship.OriginObject
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The origin object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IObject OriginObject { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IObject
+    content.vb: ReadOnly Property OriginObject As IObject
+  overload: ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject*
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject
+  id: DestinationObject
+  parent: ESRI.ArcGIS.Geodatabase.IRelationship
+  langs:
+  - csharp
+  - vb
+  name: DestinationObject
+  nameWithType: IRelationship.DestinationObject
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The destination object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IObject DestinationObject { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IObject
+    content.vb: ReadOnly Property DestinationObject As IObject
+  overload: ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationship.html#ESRI_ArcGIS_Geodatabase_IRelationship_RelationshipClass
+  name: RelationshipClass
+  nameWithType: IRelationship.RelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.RelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationshipClass.html
+  name: IRelationshipClass
+  nameWithType: IRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationship.html#ESRI_ArcGIS_Geodatabase_IRelationship_OriginObject
+  name: OriginObject
+  nameWithType: IRelationship.OriginObject
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.OriginObject
+- uid: ESRI.ArcGIS.Geodatabase.IObject
+  commentId: T:ESRI.ArcGIS.Geodatabase.IObject
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IObject.html
+  name: IObject
+  nameWithType: IObject
+  fullName: ESRI.ArcGIS.Geodatabase.IObject
+- uid: ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationship.html#ESRI_ArcGIS_Geodatabase_IRelationship_DestinationObject
+  name: DestinationObject
+  nameWithType: IRelationship.DestinationObject
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationship.DestinationObject

@@ -1,0 +1,468 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer
+  commentId: T:ESRI.ArcGIS.Carto.ITiledImageServer
+  id: ITiledImageServer
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo
+  - ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory
+  - ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage
+  langs:
+  - csharp
+  - vb
+  name: ITiledImageServer
+  nameWithType: ITiledImageServer
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to members that serve tiled images.
+  example: []
+  syntax:
+    content: >-
+      [Guid("10BFD112-33D2-4986-997A-F2B6069E45B8")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITiledImageServer
+    content.vb: >-
+      <Guid("10BFD112-33D2-4986-997A-F2B6069E45B8")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITiledImageServer
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.ImageServerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 10BFD112-33D2-4986-997A-F2B6069E45B8
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo
+  id: GetTileCacheInfo
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetTileCacheInfo()
+  nameWithType: ITiledImageServer.GetTileCacheInfo()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the cache configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITileCacheInfo GetTileCacheInfo()
+    return:
+      type: ESRI.ArcGIS.Carto.ITileCacheInfo
+    content.vb: Function GetTileCacheInfo() As ITileCacheInfo
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile(System.Int32,System.Int32,System.Int32)
+  id: GetImageTile(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetImageTile(int, int, int)
+  nameWithType: ITiledImageServer.GetImageTile(int, int, int)
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets a tile for a given tile location.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: byte[] GetImageTile(int Level, int Row, int Column)
+    parameters:
+    - id: Level
+      type: System.Int32
+    - id: Row
+      type: System.Int32
+    - id: Column
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: Function GetImageTile(Level As Integer, Row As Integer, Column As Integer) As Byte()
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile*
+  nameWithType.vb: ITiledImageServer.GetImageTile(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile(Integer, Integer, Integer)
+  name.vb: GetImageTile(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo
+  id: GetTileImageInfo
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetTileImageInfo()
+  nameWithType: ITiledImageServer.GetTileImageInfo()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the cache tile image information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITileImageInfo GetTileImageInfo()
+    return:
+      type: ESRI.ArcGIS.Carto.ITileImageInfo
+    content.vb: Function GetTileImageInfo() As ITileImageInfo
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo
+  id: GetCacheStorageInfo
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetCacheStorageInfo()
+  nameWithType: ITiledImageServer.GetCacheStorageInfo()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the cache storage information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICacheStorageInfo GetCacheStorageInfo()
+    return:
+      type: ESRI.ArcGIS.Carto.ICacheStorageInfo
+    content.vb: Function GetCacheStorageInfo() As ICacheStorageInfo
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage
+  id: IsFixedScaleImage
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: IsFixedScaleImage()
+  nameWithType: ITiledImageServer.IsFixedScaleImage()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Indicates if it is fixed scale image.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsFixedScaleImage()
+    return:
+      type: System.Boolean
+    content.vb: Function IsFixedScaleImage() As Boolean
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory
+  id: GetVirtualCacheDirectory
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetVirtualCacheDirectory()
+  nameWithType: ITiledImageServer.GetVirtualCacheDirectory()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the virtual cache directory for a given layer within a map.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetVirtualCacheDirectory()
+    return:
+      type: System.String
+    content.vb: Function GetVirtualCacheDirectory() As String
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo
+  id: GetCacheDescriptionInfo
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetCacheDescriptionInfo()
+  nameWithType: ITiledImageServer.GetCacheDescriptionInfo()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the cache description information for a given map.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICacheDescriptionInfo GetCacheDescriptionInfo()
+    return:
+      type: ESRI.ArcGIS.Carto.ICacheDescriptionInfo
+    content.vb: Function GetCacheDescriptionInfo() As ICacheDescriptionInfo
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo*
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo
+  commentId: M:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo
+  id: GetCacheControlInfo
+  parent: ESRI.ArcGIS.Carto.ITiledImageServer
+  langs:
+  - csharp
+  - vb
+  name: GetCacheControlInfo()
+  nameWithType: ITiledImageServer.GetCacheControlInfo()
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo()
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Gets the cache description information for a given map.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICacheControlInfo GetCacheControlInfo()
+    return:
+      type: ESRI.ArcGIS.Carto.ICacheControlInfo
+    content.vb: Function GetCacheControlInfo() As ICacheControlInfo
+  overload: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetTileCacheInfo
+  name: GetTileCacheInfo
+  nameWithType: ITiledImageServer.GetTileCacheInfo
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileCacheInfo
+- uid: ESRI.ArcGIS.Carto.ITileCacheInfo
+  commentId: T:ESRI.ArcGIS.Carto.ITileCacheInfo
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITileCacheInfo.html
+  name: ITileCacheInfo
+  nameWithType: ITileCacheInfo
+  fullName: ESRI.ArcGIS.Carto.ITileCacheInfo
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetImageTile_System_Int32_System_Int32_System_Int32_
+  name: GetImageTile
+  nameWithType: ITiledImageServer.GetImageTile
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetImageTile
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetTileImageInfo
+  name: GetTileImageInfo
+  nameWithType: ITiledImageServer.GetTileImageInfo
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetTileImageInfo
+- uid: ESRI.ArcGIS.Carto.ITileImageInfo
+  commentId: T:ESRI.ArcGIS.Carto.ITileImageInfo
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITileImageInfo.html
+  name: ITileImageInfo
+  nameWithType: ITileImageInfo
+  fullName: ESRI.ArcGIS.Carto.ITileImageInfo
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetCacheStorageInfo
+  name: GetCacheStorageInfo
+  nameWithType: ITiledImageServer.GetCacheStorageInfo
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheStorageInfo
+- uid: ESRI.ArcGIS.Carto.ICacheStorageInfo
+  commentId: T:ESRI.ArcGIS.Carto.ICacheStorageInfo
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ICacheStorageInfo.html
+  name: ICacheStorageInfo
+  nameWithType: ICacheStorageInfo
+  fullName: ESRI.ArcGIS.Carto.ICacheStorageInfo
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_IsFixedScaleImage
+  name: IsFixedScaleImage
+  nameWithType: ITiledImageServer.IsFixedScaleImage
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.IsFixedScaleImage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetVirtualCacheDirectory
+  name: GetVirtualCacheDirectory
+  nameWithType: ITiledImageServer.GetVirtualCacheDirectory
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetVirtualCacheDirectory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetCacheDescriptionInfo
+  name: GetCacheDescriptionInfo
+  nameWithType: ITiledImageServer.GetCacheDescriptionInfo
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheDescriptionInfo
+- uid: ESRI.ArcGIS.Carto.ICacheDescriptionInfo
+  commentId: T:ESRI.ArcGIS.Carto.ICacheDescriptionInfo
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ICacheDescriptionInfo.html
+  name: ICacheDescriptionInfo
+  nameWithType: ICacheDescriptionInfo
+  fullName: ESRI.ArcGIS.Carto.ICacheDescriptionInfo
+- uid: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo*
+  commentId: Overload:ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ITiledImageServer.html#ESRI_ArcGIS_Carto_ITiledImageServer_GetCacheControlInfo
+  name: GetCacheControlInfo
+  nameWithType: ITiledImageServer.GetCacheControlInfo
+  fullName: ESRI.ArcGIS.Carto.ITiledImageServer.GetCacheControlInfo
+- uid: ESRI.ArcGIS.Carto.ICacheControlInfo
+  commentId: T:ESRI.ArcGIS.Carto.ICacheControlInfo
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ICacheControlInfo.html
+  name: ICacheControlInfo
+  nameWithType: ICacheControlInfo
+  fullName: ESRI.ArcGIS.Carto.ICacheControlInfo

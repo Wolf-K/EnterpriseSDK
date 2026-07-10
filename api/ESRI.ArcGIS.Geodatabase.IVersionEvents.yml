@@ -1,0 +1,429 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersionEvents
+  id: IVersionEvents
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated(System.Object)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected(System.Boolean@,System.Boolean@,System.String@)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile(System.String,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion
+  langs:
+  - csharp
+  - vb
+  name: IVersionEvents
+  nameWithType: IVersionEvents
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to events that occur on a version.
+  example: []
+  syntax:
+    content: >-
+      [Guid("0B437961-89F9-11D4-8B5F-000000000000")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IVersionEvents
+    content.vb: >-
+      <Guid("0B437961-89F9-11D4-8B5F-000000000000")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IVersionEvents
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.IVersionEvents_SinkHelper
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0B437961-89F9-11D4-8B5F-000000000000
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected(System.Boolean@,System.Boolean@,System.String@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected(System.Boolean@,System.Boolean@,System.String@)
+  id: OnConflictsDetected(System.Boolean@,System.Boolean@,System.String@)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnConflictsDetected(ref bool, ref bool, ref string)
+  nameWithType: IVersionEvents.OnConflictsDetected(ref bool, ref bool, ref string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected(ref bool, ref bool, ref string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired during reconciliation, after conflicts are detected. It can be used by application developers to filter found conflicts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnConflictsDetected(ref bool conflictsRemoved, ref bool errorOccurred, ref string errorString)
+    parameters:
+    - id: conflictsRemoved
+      type: System.Boolean
+    - id: errorOccurred
+      type: System.Boolean
+    - id: errorString
+      type: System.String
+    content.vb: Sub OnConflictsDetected(conflictsRemoved As Boolean, errorOccurred As Boolean, errorString As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected*
+  nameWithType.vb: IVersionEvents.OnConflictsDetected(Boolean, Boolean, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected(Boolean, Boolean, String)
+  name.vb: OnConflictsDetected(Boolean, Boolean, String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile(System.String,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile(System.String,System.Boolean)
+  id: OnReconcile(System.String,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnReconcile(string, bool)
+  nameWithType: IVersionEvents.OnReconcile(string, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile(string, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired after the version is reconciled, associating it with a new database state. Applications must discard or refresh any cached row objects.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnReconcile(string targetVersionName, bool HasConflicts)
+    parameters:
+    - id: targetVersionName
+      type: System.String
+    - id: HasConflicts
+      type: System.Boolean
+    content.vb: Sub OnReconcile(targetVersionName As String, HasConflicts As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile*
+  nameWithType.vb: IVersionEvents.OnReconcile(String, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile(String, Boolean)
+  name.vb: OnReconcile(String, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion
+  id: OnRefreshVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnRefreshVersion()
+  nameWithType: IVersionEvents.OnRefreshVersion()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired after the version is refreshed, associating it with a new database state. Applications must discard or refresh any cached row objects.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnRefreshVersion()
+    content.vb: Sub OnRefreshVersion()
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion(System.String,System.String)
+  id: OnRedefineVersion(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnRedefineVersion(string, string)
+  nameWithType: IVersionEvents.OnRedefineVersion(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired after the version is changed in place to represent a different version, associating it with a new database state. Applications must discard or refresh any cached row objects.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnRedefineVersion(string oldVersionName, string newVersionName)
+    parameters:
+    - id: oldVersionName
+      type: System.String
+    - id: newVersionName
+      type: System.String
+    content.vb: Sub OnRedefineVersion(oldVersionName As String, newVersionName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion*
+  nameWithType.vb: IVersionEvents.OnRedefineVersion(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion(String, String)
+  name.vb: OnRedefineVersion(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated(System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated(System.Object)
+  id: OnArchiveUpdated(System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnArchiveUpdated(object)
+  nameWithType: IVersionEvents.OnArchiveUpdated(object)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired after the historical archive has been updated with changes saved or posted to the DEFAULT version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnArchiveUpdated(object archiveTransactionTime)
+    parameters:
+    - id: archiveTransactionTime
+      type: System.Object
+    content.vb: Sub OnArchiveUpdated(archiveTransactionTime As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated*
+  nameWithType.vb: IVersionEvents.OnArchiveUpdated(Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated(Object)
+  name.vb: OnArchiveUpdated(Object)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile(System.String)
+  id: OnBeginReconcile(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnBeginReconcile(string)
+  nameWithType: IVersionEvents.OnBeginReconcile(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired before a version is reconciled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnBeginReconcile(string targetVersionName)
+    parameters:
+    - id: targetVersionName
+      type: System.String
+    content.vb: Sub OnBeginReconcile(targetVersionName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile*
+  nameWithType.vb: IVersionEvents.OnBeginReconcile(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile(String)
+  name.vb: OnBeginReconcile(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost(System.String)
+  id: OnPost(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnPost(string)
+  nameWithType: IVersionEvents.OnPost(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired after a version is posted.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnPost(string targetVersionName)
+    parameters:
+    - id: targetVersionName
+      type: System.String
+    content.vb: Sub OnPost(targetVersionName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost*
+  nameWithType.vb: IVersionEvents.OnPost(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost(String)
+  name.vb: OnPost(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion(System.String)
+  id: OnDeleteVersion(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionEvents
+  langs:
+  - csharp
+  - vb
+  name: OnDeleteVersion(string)
+  nameWithType: IVersionEvents.OnDeleteVersion(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This event is fired before a version is deleted.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OnDeleteVersion(string VersionName)
+    parameters:
+    - id: VersionName
+      type: System.String
+    content.vb: Sub OnDeleteVersion(VersionName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion*
+  nameWithType.vb: IVersionEvents.OnDeleteVersion(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion(String)
+  name.vb: OnDeleteVersion(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnConflictsDetected_System_Boolean__System_Boolean__System_String__
+  name: OnConflictsDetected
+  nameWithType: IVersionEvents.OnConflictsDetected
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnConflictsDetected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnReconcile_System_String_System_Boolean_
+  name: OnReconcile
+  nameWithType: IVersionEvents.OnReconcile
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnReconcile
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnRefreshVersion
+  name: OnRefreshVersion
+  nameWithType: IVersionEvents.OnRefreshVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRefreshVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnRedefineVersion_System_String_System_String_
+  name: OnRedefineVersion
+  nameWithType: IVersionEvents.OnRedefineVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnRedefineVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnArchiveUpdated_System_Object_
+  name: OnArchiveUpdated
+  nameWithType: IVersionEvents.OnArchiveUpdated
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnArchiveUpdated
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnBeginReconcile_System_String_
+  name: OnBeginReconcile
+  nameWithType: IVersionEvents.OnBeginReconcile
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnBeginReconcile
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnPost_System_String_
+  name: OnPost
+  nameWithType: IVersionEvents.OnPost
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnPost
+- uid: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionEvents.html#ESRI_ArcGIS_Geodatabase_IVersionEvents_OnDeleteVersion_System_String_
+  name: OnDeleteVersion
+  nameWithType: IVersionEvents.OnDeleteVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionEvents.OnDeleteVersion

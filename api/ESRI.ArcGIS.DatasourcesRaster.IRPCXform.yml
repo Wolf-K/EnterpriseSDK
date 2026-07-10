@@ -1,0 +1,707 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  id: IRPCXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients(System.Object@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients(System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients(System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  langs:
+  - csharp
+  - vb
+  name: IRPCXform
+  nameWithType: IRPCXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a RPC transform.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("FBFC2EEA-2177-48E2-B79B-5451FB6FD123")]
+
+      public interface IRPCXform : IGeodataXform
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("FBFC2EEA-2177-48E2-B79B-5451FB6FD123")>
+
+      Public Interface IRPCXform Inherits IGeodataXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RPCXformClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FBFC2EEA-2177-48E2-B79B-5451FB6FD123
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  id: Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: Transform(esriTransformDirection, int, ref WKSPoint)
+  nameWithType: IRPCXform.Transform(esriTransformDirection, int, ref WKSPoint)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref ESRI.ArcGIS.esriSystem.WKSPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Transform(esriTransformDirection Direction, int npoints, ref WKSPoint points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: npoints
+      type: System.Int32
+    - id: points
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    content.vb: Sub Transform(Direction As esriTransformDirection, npoints As Integer, points As WKSPoint)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform*
+  nameWithType.vb: IRPCXform.Transform(esriTransformDirection, Integer, WKSPoint)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, ESRI.ArcGIS.esriSystem.WKSPoint)
+  name.vb: Transform(esriTransformDirection, Integer, WKSPoint)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  nameWithType: IRPCXform.TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double, ref double, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformCellsize(esriTransformDirection Direction, ref double dx, ref double dy, IEnvelope AreaOfInterest)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: AreaOfInterest
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformCellsize(Direction As esriTransformDirection, dx As Double, dy As Double, AreaOfInterest As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize*
+  nameWithType.vb: IRPCXform.TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, Double, Double, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: TransformExtent(esriTransformDirection, IEnvelope)
+  nameWithType: IRPCXform.TransformExtent(esriTransformDirection, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformExtent(esriTransformDirection Direction, IEnvelope Extent)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformExtent(Direction As esriTransformDirection, Extent As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  id: TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: TransformPoints(esriTransformDirection, IPointCollection)
+  nameWithType: IRPCXform.TransformPoints(esriTransformDirection, IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformPoints(esriTransformDirection Direction, IPointCollection points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: points
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub TransformPoints(Direction As esriTransformDirection, points As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients(System.Object@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients(System.Object@)
+  id: DefineFromCoefficients(System.Object@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: DefineFromCoefficients(ref object)
+  nameWithType: IRPCXform.DefineFromCoefficients(ref object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients(ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Defines a RPC transform from 90 coefficients.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DefineFromCoefficients(ref object pRPC)
+    parameters:
+    - id: pRPC
+      type: System.Object
+    content.vb: Sub DefineFromCoefficients(pRPC As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients*
+  nameWithType.vb: IRPCXform.DefineFromCoefficients(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients(Object)
+  name.vb: DefineFromCoefficients(Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients
+  id: GetCoefficients
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: GetCoefficients()
+  nameWithType: IRPCXform.GetCoefficients()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the rational polynomial coefficients.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetCoefficients()
+    return:
+      type: System.Object
+    content.vb: Function GetCoefficients() As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients(System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients(System.Double@)
+  id: PutCoefficients(System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: PutCoefficients(ref double)
+  nameWithType: IRPCXform.PutCoefficients(ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients(ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Puts the rational polynomial coefficients.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoefficients(ref double RPC)
+    parameters:
+    - id: RPC
+      type: System.Double
+    content.vb: Sub PutCoefficients(RPC As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients*
+  nameWithType.vb: IRPCXform.PutCoefficients(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients(Double)
+  name.vb: PutCoefficients(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients(System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients(System.Double@)
+  id: QueryCoefficients(System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: QueryCoefficients(ref double)
+  nameWithType: IRPCXform.QueryCoefficients(ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients(ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Queries the rational polynomial coefficients.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryCoefficients(ref double RPC)
+    parameters:
+    - id: RPC
+      type: System.Double
+    content.vb: Sub QueryCoefficients(RPC As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients*
+  nameWithType.vb: IRPCXform.QueryCoefficients(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients(Double)
+  name.vb: QueryCoefficients(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IRPCXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+  id: Domains
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: Domains
+  nameWithType: IRPCXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IGeometryCollection Domains { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometryCollection
+    content.vb: ReadOnly Property Domains As IGeometryCollection
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+  id: IsIdentity
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: IRPCXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool IsIdentity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsIdentity As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+  id: ForwardXform
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRPCXform
+  langs:
+  - csharp
+  - vb
+  name: ForwardXform
+  nameWithType: IRPCXform.ForwardXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The forward transformation from native to GCS WGS84.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeodataXform ForwardXform { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    content.vb: Property ForwardXform As IGeodataXform
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_Transform_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__
+  name: Transform
+  nameWithType: IRPCXform.Transform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Transform
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_TransformCellsize_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double__System_Double__ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformCellsize
+  nameWithType: IRPCXform.TransformCellsize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformCellsize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_TransformExtent_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformExtent
+  nameWithType: IRPCXform.TransformExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformExtent
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_TransformPoints_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IPointCollection_
+  name: TransformPoints
+  nameWithType: IRPCXform.TransformPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.TransformPoints
+- uid: ESRI.ArcGIS.Geometry.IPointCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IPointCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointCollection.html
+  name: IPointCollection
+  nameWithType: IPointCollection
+  fullName: ESRI.ArcGIS.Geometry.IPointCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_DefineFromCoefficients_System_Object__
+  name: DefineFromCoefficients
+  nameWithType: IRPCXform.DefineFromCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.DefineFromCoefficients
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_GetCoefficients
+  name: GetCoefficients
+  nameWithType: IRPCXform.GetCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.GetCoefficients
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_PutCoefficients_System_Double__
+  name: PutCoefficients
+  nameWithType: IRPCXform.PutCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.PutCoefficients
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_QueryCoefficients_System_Double__
+  name: QueryCoefficients
+  nameWithType: IRPCXform.QueryCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.QueryCoefficients
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_SpatialReference
+  name: SpatialReference
+  nameWithType: IRPCXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_Domains
+  name: Domains
+  nameWithType: IRPCXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.Domains
+- uid: ESRI.ArcGIS.Geometry.IGeometryCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometryCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryCollection.html
+  name: IGeometryCollection
+  nameWithType: IGeometryCollection
+  fullName: ESRI.ArcGIS.Geometry.IGeometryCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_IsIdentity
+  name: IsIdentity
+  nameWithType: IRPCXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.IsIdentity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.html#ESRI_ArcGIS_DatasourcesRaster_IRPCXform_ForwardXform
+  name: ForwardXform
+  nameWithType: IRPCXform.ForwardXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRPCXform.ForwardXform
+- uid: ESRI.ArcGIS.Geodatabase.IGeodataXform
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeodataXform
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeodataXform.html
+  name: IGeodataXform
+  nameWithType: IGeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeodataXform
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

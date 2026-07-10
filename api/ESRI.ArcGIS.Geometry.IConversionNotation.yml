@@ -1,0 +1,766 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation
+  commentId: T:ESRI.ArcGIS.Geometry.IConversionNotation
+  id: IConversionNotation
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS(System.Int32,System.Boolean,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords(System.Int32)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords(System.Int32)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords(System.Int32)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords(System.Int32,System.Boolean)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords(System.Int32,System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD(System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM(System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS(System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum,System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef(System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS(System.String,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG(System.String)
+  - ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IConversionNotation
+  nameWithType: IConversionNotation
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to functions that convert to and from various geographic string notations.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5F90BCEF-A161-443A-A8C7-450C3FAEF4AB")]
+
+      public interface IConversionNotation : IConversionMGRS
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5F90BCEF-A161-443A-A8C7-450C3FAEF4AB")>
+
+      Public Interface IConversionNotation Inherits IConversionMGRS
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.PointClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5F90BCEF-A161-443A-A8C7-450C3FAEF4AB
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS(System.String,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS(System.String,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  id: PutCoordsFromMGRS(System.String,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromMGRS(string, esriMGRSModeEnum)
+  nameWithType: IConversionNotation.PutCoordsFromMGRS(string, esriMGRSModeEnum)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS(string, ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutCoordsFromMGRS(string mgrs, esriMGRSModeEnum mode)
+    parameters:
+    - id: mgrs
+      type: System.String
+    - id: mode
+      type: ESRI.ArcGIS.Geometry.esriMGRSModeEnum
+    content.vb: Sub PutCoordsFromMGRS(mgrs As String, mode As esriMGRSModeEnum)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS*
+  nameWithType.vb: IConversionNotation.PutCoordsFromMGRS(String, esriMGRSModeEnum)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS(String, ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  name.vb: PutCoordsFromMGRS(String, esriMGRSModeEnum)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS(System.Int32,System.Boolean,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS(System.Int32,System.Boolean,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  id: CreateMGRS(System.Int32,System.Boolean,ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: CreateMGRS(int, bool, esriMGRSModeEnum)
+  nameWithType: IConversionNotation.CreateMGRS(int, bool, esriMGRSModeEnum)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS(int, bool, ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: string CreateMGRS(int numDigits, bool round, esriMGRSModeEnum mode)
+    parameters:
+    - id: numDigits
+      type: System.Int32
+    - id: round
+      type: System.Boolean
+    - id: mode
+      type: ESRI.ArcGIS.Geometry.esriMGRSModeEnum
+    return:
+      type: System.String
+    content.vb: Function CreateMGRS(numDigits As Integer, round As Boolean, mode As esriMGRSModeEnum) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS*
+  nameWithType.vb: IConversionNotation.CreateMGRS(Integer, Boolean, esriMGRSModeEnum)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS(Integer, Boolean, ESRI.ArcGIS.Geometry.esriMGRSModeEnum)
+  name.vb: CreateMGRS(Integer, Boolean, esriMGRSModeEnum)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords(System.Int32,System.Boolean,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords(System.Int32,System.Boolean,System.Boolean)
+  id: GetUSNGFromCoords(System.Int32,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetUSNGFromCoords(int, bool, bool)
+  nameWithType: IConversionNotation.GetUSNGFromCoords(int, bool, bool)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords(int, bool, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the USNG description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetUSNGFromCoords(int numDigits, bool numericRounding, bool addSpaces)
+    parameters:
+    - id: numDigits
+      type: System.Int32
+    - id: numericRounding
+      type: System.Boolean
+    - id: addSpaces
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Function GetUSNGFromCoords(numDigits As Integer, numericRounding As Boolean, addSpaces As Boolean) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords*
+  nameWithType.vb: IConversionNotation.GetUSNGFromCoords(Integer, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords(Integer, Boolean, Boolean)
+  name.vb: GetUSNGFromCoords(Integer, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum)
+  id: GetUTMFromCoords(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetUTMFromCoords(esriUTMConversionOptionsEnum)
+  nameWithType: IConversionNotation.GetUTMFromCoords(esriUTMConversionOptionsEnum)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the UTM description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetUTMFromCoords(esriUTMConversionOptionsEnum utmOptions)
+    parameters:
+    - id: utmOptions
+      type: ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum
+    return:
+      type: System.String
+    content.vb: Function GetUTMFromCoords(utmOptions As esriUTMConversionOptionsEnum) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords*
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords
+  id: GetGARSFromCoords
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetGARSFromCoords()
+  nameWithType: IConversionNotation.GetGARSFromCoords()
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the GARS description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetGARSFromCoords()
+    return:
+      type: System.String
+    content.vb: Function GetGARSFromCoords() As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords*
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords(System.Int32,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords(System.Int32,System.Boolean)
+  id: GetGeoRefFromCoords(System.Int32,System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetGeoRefFromCoords(int, bool)
+  nameWithType: IConversionNotation.GetGeoRefFromCoords(int, bool)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords(int, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the GeoRef description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetGeoRefFromCoords(int numDigits, bool numericRounding)
+    parameters:
+    - id: numDigits
+      type: System.Int32
+    - id: numericRounding
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Function GetGeoRefFromCoords(numDigits As Integer, numericRounding As Boolean) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords*
+  nameWithType.vb: IConversionNotation.GetGeoRefFromCoords(Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords(Integer, Boolean)
+  name.vb: GetGeoRefFromCoords(Integer, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords(System.Int32)
+  id: GetDDFromCoords(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetDDFromCoords(int)
+  nameWithType: IConversionNotation.GetDDFromCoords(int)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the decimal degrees description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetDDFromCoords(int precision)
+    parameters:
+    - id: precision
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function GetDDFromCoords(precision As Integer) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords*
+  nameWithType.vb: IConversionNotation.GetDDFromCoords(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords(Integer)
+  name.vb: GetDDFromCoords(Integer)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords(System.Int32)
+  id: GetDDMFromCoords(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetDDMFromCoords(int)
+  nameWithType: IConversionNotation.GetDDMFromCoords(int)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the degrees decimal minutes description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetDDMFromCoords(int precision)
+    parameters:
+    - id: precision
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function GetDDMFromCoords(precision As Integer) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords*
+  nameWithType.vb: IConversionNotation.GetDDMFromCoords(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords(Integer)
+  name.vb: GetDDMFromCoords(Integer)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords(System.Int32)
+  id: GetDMSFromCoords(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: GetDMSFromCoords(int)
+  nameWithType: IConversionNotation.GetDMSFromCoords(int)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the degrees/minutes/seconds description of a point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetDMSFromCoords(int precision)
+    parameters:
+    - id: precision
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Function GetDMSFromCoords(precision As Integer) As String
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords*
+  nameWithType.vb: IConversionNotation.GetDMSFromCoords(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords(Integer)
+  name.vb: GetDMSFromCoords(Integer)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG(System.String)
+  id: PutCoordsFromUSNG(System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromUSNG(string)
+  nameWithType: IConversionNotation.PutCoordsFromUSNG(string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the USNG description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromUSNG(string USNGString)
+    parameters:
+    - id: USNGString
+      type: System.String
+    content.vb: Sub PutCoordsFromUSNG(USNGString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG*
+  nameWithType.vb: IConversionNotation.PutCoordsFromUSNG(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG(String)
+  name.vb: PutCoordsFromUSNG(String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum,System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum,System.String)
+  id: PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum,System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromUTM(esriUTMConversionOptionsEnum, string)
+  nameWithType: IConversionNotation.PutCoordsFromUTM(esriUTMConversionOptionsEnum, string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the UTM description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromUTM(esriUTMConversionOptionsEnum utmOptions, string UTMString)
+    parameters:
+    - id: utmOptions
+      type: ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum
+    - id: UTMString
+      type: System.String
+    content.vb: Sub PutCoordsFromUTM(utmOptions As esriUTMConversionOptionsEnum, UTMString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM*
+  nameWithType.vb: IConversionNotation.PutCoordsFromUTM(esriUTMConversionOptionsEnum, String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM(ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum, String)
+  name.vb: PutCoordsFromUTM(esriUTMConversionOptionsEnum, String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum,System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum,System.String)
+  id: PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum,System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromGARS(esriGARSModeEnum, string)
+  nameWithType: IConversionNotation.PutCoordsFromGARS(esriGARSModeEnum, string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the GARS description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromGARS(esriGARSModeEnum mode, string GARSString)
+    parameters:
+    - id: mode
+      type: ESRI.ArcGIS.Geometry.esriGARSModeEnum
+    - id: GARSString
+      type: System.String
+    content.vb: Sub PutCoordsFromGARS(mode As esriGARSModeEnum, GARSString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS*
+  nameWithType.vb: IConversionNotation.PutCoordsFromGARS(esriGARSModeEnum, String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS(ESRI.ArcGIS.Geometry.esriGARSModeEnum, String)
+  name.vb: PutCoordsFromGARS(esriGARSModeEnum, String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef(System.String)
+  id: PutCoordsFromGeoRef(System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromGeoRef(string)
+  nameWithType: IConversionNotation.PutCoordsFromGeoRef(string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the GeoRef description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromGeoRef(string GeoRefString)
+    parameters:
+    - id: GeoRefString
+      type: System.String
+    content.vb: Sub PutCoordsFromGeoRef(GeoRefString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef*
+  nameWithType.vb: IConversionNotation.PutCoordsFromGeoRef(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef(String)
+  name.vb: PutCoordsFromGeoRef(String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD(System.String)
+  id: PutCoordsFromDD(System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromDD(string)
+  nameWithType: IConversionNotation.PutCoordsFromDD(string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the decimal degrees description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromDD(string DDString)
+    parameters:
+    - id: DDString
+      type: System.String
+    content.vb: Sub PutCoordsFromDD(DDString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD*
+  nameWithType.vb: IConversionNotation.PutCoordsFromDD(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD(String)
+  name.vb: PutCoordsFromDD(String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM(System.String)
+  id: PutCoordsFromDDM(System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromDDM(string)
+  nameWithType: IConversionNotation.PutCoordsFromDDM(string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the degrees decimal minutes description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromDDM(string DDMString)
+    parameters:
+    - id: DDMString
+      type: System.String
+    content.vb: Sub PutCoordsFromDDM(DDMString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM*
+  nameWithType.vb: IConversionNotation.PutCoordsFromDDM(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM(String)
+  name.vb: PutCoordsFromDDM(String)
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS(System.String)
+  id: PutCoordsFromDMS(System.String)
+  parent: ESRI.ArcGIS.Geometry.IConversionNotation
+  langs:
+  - csharp
+  - vb
+  name: PutCoordsFromDMS(string)
+  nameWithType: IConversionNotation.PutCoordsFromDMS(string)
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates the coordinates of a point from the degrees/minutes/seconds description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoordsFromDMS(string DMSString)
+    parameters:
+    - id: DMSString
+      type: System.String
+    content.vb: Sub PutCoordsFromDMS(DMSString As String)
+  overload: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS*
+  nameWithType.vb: IConversionNotation.PutCoordsFromDMS(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS(String)
+  name.vb: PutCoordsFromDMS(String)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromMGRS_System_String_ESRI_ArcGIS_Geometry_esriMGRSModeEnum_
+  name: PutCoordsFromMGRS
+  nameWithType: IConversionNotation.PutCoordsFromMGRS
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromMGRS
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geometry.esriMGRSModeEnum
+  commentId: T:ESRI.ArcGIS.Geometry.esriMGRSModeEnum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriMGRSModeEnum.html
+  name: esriMGRSModeEnum
+  nameWithType: esriMGRSModeEnum
+  fullName: ESRI.ArcGIS.Geometry.esriMGRSModeEnum
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_CreateMGRS_System_Int32_System_Boolean_ESRI_ArcGIS_Geometry_esriMGRSModeEnum_
+  name: CreateMGRS
+  nameWithType: IConversionNotation.CreateMGRS
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.CreateMGRS
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetUSNGFromCoords_System_Int32_System_Boolean_System_Boolean_
+  name: GetUSNGFromCoords
+  nameWithType: IConversionNotation.GetUSNGFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetUSNGFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetUTMFromCoords_ESRI_ArcGIS_Geometry_esriUTMConversionOptionsEnum_
+  name: GetUTMFromCoords
+  nameWithType: IConversionNotation.GetUTMFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetUTMFromCoords
+- uid: ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum
+  commentId: T:ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum.html
+  name: esriUTMConversionOptionsEnum
+  nameWithType: esriUTMConversionOptionsEnum
+  fullName: ESRI.ArcGIS.Geometry.esriUTMConversionOptionsEnum
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetGARSFromCoords
+  name: GetGARSFromCoords
+  nameWithType: IConversionNotation.GetGARSFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetGARSFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetGeoRefFromCoords_System_Int32_System_Boolean_
+  name: GetGeoRefFromCoords
+  nameWithType: IConversionNotation.GetGeoRefFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetGeoRefFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetDDFromCoords_System_Int32_
+  name: GetDDFromCoords
+  nameWithType: IConversionNotation.GetDDFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetDDMFromCoords_System_Int32_
+  name: GetDDMFromCoords
+  nameWithType: IConversionNotation.GetDDMFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDDMFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_GetDMSFromCoords_System_Int32_
+  name: GetDMSFromCoords
+  nameWithType: IConversionNotation.GetDMSFromCoords
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.GetDMSFromCoords
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromUSNG_System_String_
+  name: PutCoordsFromUSNG
+  nameWithType: IConversionNotation.PutCoordsFromUSNG
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUSNG
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromUTM_ESRI_ArcGIS_Geometry_esriUTMConversionOptionsEnum_System_String_
+  name: PutCoordsFromUTM
+  nameWithType: IConversionNotation.PutCoordsFromUTM
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromUTM
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromGARS_ESRI_ArcGIS_Geometry_esriGARSModeEnum_System_String_
+  name: PutCoordsFromGARS
+  nameWithType: IConversionNotation.PutCoordsFromGARS
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGARS
+- uid: ESRI.ArcGIS.Geometry.esriGARSModeEnum
+  commentId: T:ESRI.ArcGIS.Geometry.esriGARSModeEnum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGARSModeEnum.html
+  name: esriGARSModeEnum
+  nameWithType: esriGARSModeEnum
+  fullName: ESRI.ArcGIS.Geometry.esriGARSModeEnum
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromGeoRef_System_String_
+  name: PutCoordsFromGeoRef
+  nameWithType: IConversionNotation.PutCoordsFromGeoRef
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromGeoRef
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromDD_System_String_
+  name: PutCoordsFromDD
+  nameWithType: IConversionNotation.PutCoordsFromDD
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDD
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromDDM_System_String_
+  name: PutCoordsFromDDM
+  nameWithType: IConversionNotation.PutCoordsFromDDM
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDDM
+- uid: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConversionNotation.html#ESRI_ArcGIS_Geometry_IConversionNotation_PutCoordsFromDMS_System_String_
+  name: PutCoordsFromDMS
+  nameWithType: IConversionNotation.PutCoordsFromDMS
+  fullName: ESRI.ArcGIS.Geometry.IConversionNotation.PutCoordsFromDMS

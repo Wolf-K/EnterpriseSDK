@@ -1,0 +1,415 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize
+  commentId: T:ESRI.ArcGIS.esriSystem.IAoInitialize
+  id: IAoInitialize
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode,ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  - ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown
+  langs:
+  - csharp
+  - vb
+  name: IAoInitialize
+  nameWithType: IAoInitialize
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that initialize licensing for ArcGIS Desktop, Engine, and Server.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("9AB6A638-ACA8-4820-830C-463EA11C8722")]
+
+      public interface IAoInitialize
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("9AB6A638-ACA8-4820-830C-463EA11C8722")>
+
+      Public Interface IAoInitialize
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.AoInitializeClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9AB6A638-ACA8-4820-830C-463EA11C8722
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  id: IsProductCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: IsProductCodeAvailable(esriLicenseProductCode)
+  nameWithType: IAoInitialize.IsProductCodeAvailable(esriLicenseProductCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Check if the Product Code is available.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseStatus IsProductCodeAvailable(esriLicenseProductCode ProductCode)
+    parameters:
+    - id: ProductCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+    content.vb: Function IsProductCodeAvailable(ProductCode As esriLicenseProductCode) As esriLicenseStatus
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode,ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode,ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  id: IsExtensionCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode,ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: IsExtensionCodeAvailable(esriLicenseProductCode, esriLicenseExtensionCode)
+  nameWithType: IAoInitialize.IsExtensionCodeAvailable(esriLicenseProductCode, esriLicenseExtensionCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable(ESRI.ArcGIS.esriSystem.esriLicenseProductCode, ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Check if the Product Code is available and then the Extension Code for that product.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseStatus IsExtensionCodeAvailable(esriLicenseProductCode ProductCode, esriLicenseExtensionCode extensionCode)
+    parameters:
+    - id: ProductCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+    - id: extensionCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+    content.vb: Function IsExtensionCodeAvailable(ProductCode As esriLicenseProductCode, extensionCode As esriLicenseExtensionCode) As esriLicenseStatus
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  id: Initialize(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: Initialize(esriLicenseProductCode)
+  nameWithType: IAoInitialize.Initialize(esriLicenseProductCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize(ESRI.ArcGIS.esriSystem.esriLicenseProductCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: This must be called before any other ArcObjects are created to initialize product Code. If called a second time during the life time of an executable with a new product code, it will return esriLicenseAlreadyInitialized.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseStatus Initialize(esriLicenseProductCode ProductCode)
+    parameters:
+    - id: ProductCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+    content.vb: Function Initialize(ProductCode As esriLicenseProductCode) As esriLicenseStatus
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  id: CheckOutExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: CheckOutExtension(esriLicenseExtensionCode)
+  nameWithType: IAoInitialize.CheckOutExtension(esriLicenseExtensionCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Check out an extension.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseStatus CheckOutExtension(esriLicenseExtensionCode extensionCode)
+    parameters:
+    - id: extensionCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+    content.vb: Function CheckOutExtension(extensionCode As esriLicenseExtensionCode) As esriLicenseStatus
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  id: CheckInExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: CheckInExtension(esriLicenseExtensionCode)
+  nameWithType: IAoInitialize.CheckInExtension(esriLicenseExtensionCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Check in an extension.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseStatus CheckInExtension(esriLicenseExtensionCode extensionCode)
+    parameters:
+    - id: extensionCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+    content.vb: Function CheckInExtension(extensionCode As esriLicenseExtensionCode) As esriLicenseStatus
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown
+  id: Shutdown
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: IAoInitialize.Shutdown()
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Shutdown method.  This should be the last call to ArcObjects in an application.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Shutdown()
+    content.vb: Sub Shutdown()
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct
+  id: InitializedProduct
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: InitializedProduct()
+  nameWithType: IAoInitialize.InitializedProduct()
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieve's the product code at which the application has been initialized.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriLicenseProductCode InitializedProduct()
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+    content.vb: Function InitializedProduct() As esriLicenseProductCode
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct*
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  commentId: M:ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  id: IsExtensionCheckedOut(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  parent: ESRI.ArcGIS.esriSystem.IAoInitialize
+  langs:
+  - csharp
+  - vb
+  name: IsExtensionCheckedOut(esriLicenseExtensionCode)
+  nameWithType: IAoInitialize.IsExtensionCheckedOut(esriLicenseExtensionCode)
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut(ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Is the Extension checked out.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsExtensionCheckedOut(esriLicenseExtensionCode extensionCode)
+    parameters:
+    - id: extensionCode
+      type: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+    return:
+      type: System.Boolean
+    content.vb: Function IsExtensionCheckedOut(extensionCode As esriLicenseExtensionCode) As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_IsProductCodeAvailable_ESRI_ArcGIS_esriSystem_esriLicenseProductCode_
+  name: IsProductCodeAvailable
+  nameWithType: IAoInitialize.IsProductCodeAvailable
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsProductCodeAvailable
+- uid: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+  commentId: T:ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriLicenseProductCode.html
+  name: esriLicenseProductCode
+  nameWithType: esriLicenseProductCode
+  fullName: ESRI.ArcGIS.esriSystem.esriLicenseProductCode
+- uid: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+  commentId: T:ESRI.ArcGIS.esriSystem.esriLicenseStatus
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriLicenseStatus.html
+  name: esriLicenseStatus
+  nameWithType: esriLicenseStatus
+  fullName: ESRI.ArcGIS.esriSystem.esriLicenseStatus
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_IsExtensionCodeAvailable_ESRI_ArcGIS_esriSystem_esriLicenseProductCode_ESRI_ArcGIS_esriSystem_esriLicenseExtensionCode_
+  name: IsExtensionCodeAvailable
+  nameWithType: IAoInitialize.IsExtensionCodeAvailable
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCodeAvailable
+- uid: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+  commentId: T:ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode.html
+  name: esriLicenseExtensionCode
+  nameWithType: esriLicenseExtensionCode
+  fullName: ESRI.ArcGIS.esriSystem.esriLicenseExtensionCode
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_Initialize_ESRI_ArcGIS_esriSystem_esriLicenseProductCode_
+  name: Initialize
+  nameWithType: IAoInitialize.Initialize
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.Initialize
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_CheckOutExtension_ESRI_ArcGIS_esriSystem_esriLicenseExtensionCode_
+  name: CheckOutExtension
+  nameWithType: IAoInitialize.CheckOutExtension
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckOutExtension
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_CheckInExtension_ESRI_ArcGIS_esriSystem_esriLicenseExtensionCode_
+  name: CheckInExtension
+  nameWithType: IAoInitialize.CheckInExtension
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.CheckInExtension
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_Shutdown
+  name: Shutdown
+  nameWithType: IAoInitialize.Shutdown
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.Shutdown
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_InitializedProduct
+  name: InitializedProduct
+  nameWithType: IAoInitialize.InitializedProduct
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.InitializedProduct
+- uid: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAoInitialize.html#ESRI_ArcGIS_esriSystem_IAoInitialize_IsExtensionCheckedOut_ESRI_ArcGIS_esriSystem_esriLicenseExtensionCode_
+  name: IsExtensionCheckedOut
+  nameWithType: IAoInitialize.IsExtensionCheckedOut
+  fullName: ESRI.ArcGIS.esriSystem.IAoInitialize.IsExtensionCheckedOut
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

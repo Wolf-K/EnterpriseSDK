@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServerObjectManager
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectManager
+  id: IServerObjectManager
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext(System.String,System.String)
+  - ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo(System.String,System.String)
+  - ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos
+  - ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos
+  - ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos
+  langs:
+  - csharp
+  - vb
+  name: IServerObjectManager
+  nameWithType: IServerObjectManager
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to properties and members of the ArcGIS server's server object manager.
+  example: []
+  syntax:
+    content: >-
+      [Guid("CF25EA7A-B5BC-47AA-94B2-4CD598B0C428")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IServerObjectManager
+    content.vb: >-
+      <Guid("CF25EA7A-B5BC-47AA-94B2-4CD598B0C428")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IServerObjectManager
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CF25EA7A-B5BC-47AA-94B2-4CD598B0C428
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext(System.String,System.String)
+  id: CreateServerContext(System.String,System.String)
+  parent: ESRI.ArcGIS.Server.IServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: CreateServerContext(string, string)
+  nameWithType: IServerObjectManager.CreateServerContext(string, string)
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Gets a reference to a server context. The server context can be based on a specified server object configuration, or can be an empty server context if no server object configuration is specified.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerContext CreateServerContext(string configName, string TypeName)
+    parameters:
+    - id: configName
+      type: System.String
+    - id: TypeName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServerContext
+    content.vb: Function CreateServerContext(configName As String, TypeName As String) As IServerContext
+  overload: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext*
+  nameWithType.vb: IServerObjectManager.CreateServerContext(String, String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext(String, String)
+  name.vb: CreateServerContext(String, String)
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo(System.String,System.String)
+  id: GetConfigurationInfo(System.String,System.String)
+  parent: ESRI.ArcGIS.Server.IServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: GetConfigurationInfo(string, string)
+  nameWithType: IServerObjectManager.GetConfigurationInfo(string, string)
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Gets the ServerObjectConfigurationInfo for the specified Name and TypeName.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectConfigurationInfo GetConfigurationInfo(string Name, string TypeName)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: TypeName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectConfigurationInfo
+    content.vb: Function GetConfigurationInfo(Name As String, TypeName As String) As IServerObjectConfigurationInfo
+  overload: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo*
+  nameWithType.vb: IServerObjectManager.GetConfigurationInfo(String, String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo(String, String)
+  name.vb: GetConfigurationInfo(String, String)
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos
+  id: GetConfigurationInfos
+  parent: ESRI.ArcGIS.Server.IServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: GetConfigurationInfos()
+  nameWithType: IServerObjectManager.GetConfigurationInfos()
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos()
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: An enumerator over all the GIS server's ServerObjectConfigurationInfos.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumServerObjectConfigurationInfo GetConfigurationInfos()
+    return:
+      type: ESRI.ArcGIS.Server.IEnumServerObjectConfigurationInfo
+    content.vb: Function GetConfigurationInfos() As IEnumServerObjectConfigurationInfo
+  overload: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos*
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos
+  id: GetTypeInfos
+  parent: ESRI.ArcGIS.Server.IServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: GetTypeInfos()
+  nameWithType: IServerObjectManager.GetTypeInfos()
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos()
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: An enumerator over all the GIS server's ServerObjectTypeInfos.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumServerObjectTypeInfo GetTypeInfos()
+    return:
+      type: ESRI.ArcGIS.Server.IEnumServerObjectTypeInfo
+    content.vb: Function GetTypeInfos() As IEnumServerObjectTypeInfo
+  overload: ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos*
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos
+  id: GetServerDirectoryInfos
+  parent: ESRI.ArcGIS.Server.IServerObjectManager
+  langs:
+  - csharp
+  - vb
+  name: GetServerDirectoryInfos()
+  nameWithType: IServerObjectManager.GetServerDirectoryInfos()
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos()
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: An enumerator over all the GIS server's ServerDirectoryInfos.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumServerDirectoryInfo GetServerDirectoryInfos()
+    return:
+      type: ESRI.ArcGIS.Server.IEnumServerDirectoryInfo
+    content.vb: Function GetServerDirectoryInfos() As IEnumServerDirectoryInfo
+  overload: ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos*
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html#ESRI_ArcGIS_Server_IServerObjectManager_CreateServerContext_System_String_System_String_
+  name: CreateServerContext
+  nameWithType: IServerObjectManager.CreateServerContext
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.CreateServerContext
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Server.IServerContext
+  commentId: T:ESRI.ArcGIS.Server.IServerContext
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html
+  name: IServerContext
+  nameWithType: IServerContext
+  fullName: ESRI.ArcGIS.Server.IServerContext
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html#ESRI_ArcGIS_Server_IServerObjectManager_GetConfigurationInfo_System_String_System_String_
+  name: GetConfigurationInfo
+  nameWithType: IServerObjectManager.GetConfigurationInfo
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfo
+- uid: ESRI.ArcGIS.Server.IServerObjectConfigurationInfo
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectConfigurationInfo
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfigurationInfo.html
+  name: IServerObjectConfigurationInfo
+  nameWithType: IServerObjectConfigurationInfo
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfigurationInfo
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html#ESRI_ArcGIS_Server_IServerObjectManager_GetConfigurationInfos
+  name: GetConfigurationInfos
+  nameWithType: IServerObjectManager.GetConfigurationInfos
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetConfigurationInfos
+- uid: ESRI.ArcGIS.Server.IEnumServerObjectConfigurationInfo
+  commentId: T:ESRI.ArcGIS.Server.IEnumServerObjectConfigurationInfo
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IEnumServerObjectConfigurationInfo.html
+  name: IEnumServerObjectConfigurationInfo
+  nameWithType: IEnumServerObjectConfigurationInfo
+  fullName: ESRI.ArcGIS.Server.IEnumServerObjectConfigurationInfo
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html#ESRI_ArcGIS_Server_IServerObjectManager_GetTypeInfos
+  name: GetTypeInfos
+  nameWithType: IServerObjectManager.GetTypeInfos
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetTypeInfos
+- uid: ESRI.ArcGIS.Server.IEnumServerObjectTypeInfo
+  commentId: T:ESRI.ArcGIS.Server.IEnumServerObjectTypeInfo
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IEnumServerObjectTypeInfo.html
+  name: IEnumServerObjectTypeInfo
+  nameWithType: IEnumServerObjectTypeInfo
+  fullName: ESRI.ArcGIS.Server.IEnumServerObjectTypeInfo
+- uid: ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectManager.html#ESRI_ArcGIS_Server_IServerObjectManager_GetServerDirectoryInfos
+  name: GetServerDirectoryInfos
+  nameWithType: IServerObjectManager.GetServerDirectoryInfos
+  fullName: ESRI.ArcGIS.Server.IServerObjectManager.GetServerDirectoryInfos
+- uid: ESRI.ArcGIS.Server.IEnumServerDirectoryInfo
+  commentId: T:ESRI.ArcGIS.Server.IEnumServerDirectoryInfo
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IEnumServerDirectoryInfo.html
+  name: IEnumServerDirectoryInfo
+  nameWithType: IEnumServerDirectoryInfo
+  fullName: ESRI.ArcGIS.Server.IEnumServerDirectoryInfo

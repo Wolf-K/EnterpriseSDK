@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IVector
+  commentId: T:ESRI.ArcGIS.Geometry.IVector
+  id: IVector
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IVector.AddVector(ESRI.ArcGIS.Geometry.IVector)
+  - ESRI.ArcGIS.Geometry.IVector.ComponentByIndex(System.Int32)
+  - ESRI.ArcGIS.Geometry.IVector.ConstructAddVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  - ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  - ESRI.ArcGIS.Geometry.IVector.Dimension
+  - ESRI.ArcGIS.Geometry.IVector.DotProduct(ESRI.ArcGIS.Geometry.IVector)
+  - ESRI.ArcGIS.Geometry.IVector.IsEmpty
+  - ESRI.ArcGIS.Geometry.IVector.Magnitude
+  - ESRI.ArcGIS.Geometry.IVector.Normalize
+  - ESRI.ArcGIS.Geometry.IVector.Scale(System.Double)
+  - ESRI.ArcGIS.Geometry.IVector.SetEmpty
+  - ESRI.ArcGIS.Geometry.IVector.SubtractVector(ESRI.ArcGIS.Geometry.IVector)
+  langs:
+  - csharp
+  - vb
+  name: IVector
+  nameWithType: IVector
+  fullName: ESRI.ArcGIS.Geometry.IVector
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to vector properties and operations.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("40D717C9-10C2-11D4-9F59-00C04F6BDF0D")]
+
+      public interface IVector
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("40D717C9-10C2-11D4-9F59-00C04F6BDF0D")>
+
+      Public Interface IVector
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.Vector3DClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 40D717C9-10C2-11D4-9F59-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IVector.SetEmpty
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.SetEmpty
+  id: SetEmpty
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: SetEmpty()
+  nameWithType: IVector.SetEmpty()
+  fullName: ESRI.ArcGIS.Geometry.IVector.SetEmpty()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Makes the vector empty (unset).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetEmpty()
+    content.vb: Sub SetEmpty()
+  overload: ESRI.ArcGIS.Geometry.IVector.SetEmpty*
+- uid: ESRI.ArcGIS.Geometry.IVector.Normalize
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.Normalize
+  id: Normalize
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: IVector.Normalize()
+  fullName: ESRI.ArcGIS.Geometry.IVector.Normalize()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Normalize the vector (scale it to magnitude = 1).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Normalize()
+    content.vb: Sub Normalize()
+  overload: ESRI.ArcGIS.Geometry.IVector.Normalize*
+- uid: ESRI.ArcGIS.Geometry.IVector.Scale(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.Scale(System.Double)
+  id: Scale(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: Scale(double)
+  nameWithType: IVector.Scale(double)
+  fullName: ESRI.ArcGIS.Geometry.IVector.Scale(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Scale the vector by the given factor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Scale(double ScaleFactor)
+    parameters:
+    - id: ScaleFactor
+      type: System.Double
+    content.vb: Sub Scale(ScaleFactor As Double)
+  overload: ESRI.ArcGIS.Geometry.IVector.Scale*
+  nameWithType.vb: IVector.Scale(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVector.Scale(Double)
+  name.vb: Scale(Double)
+- uid: ESRI.ArcGIS.Geometry.IVector.AddVector(ESRI.ArcGIS.Geometry.IVector)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.AddVector(ESRI.ArcGIS.Geometry.IVector)
+  id: AddVector(ESRI.ArcGIS.Geometry.IVector)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: AddVector(IVector)
+  nameWithType: IVector.AddVector(IVector)
+  fullName: ESRI.ArcGIS.Geometry.IVector.AddVector(ESRI.ArcGIS.Geometry.IVector)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IVector AddVector(IVector otherVector)
+    parameters:
+    - id: otherVector
+      type: ESRI.ArcGIS.Geometry.IVector
+    return:
+      type: ESRI.ArcGIS.Geometry.IVector
+    content.vb: Function AddVector(otherVector As IVector) As IVector
+  overload: ESRI.ArcGIS.Geometry.IVector.AddVector*
+- uid: ESRI.ArcGIS.Geometry.IVector.SubtractVector(ESRI.ArcGIS.Geometry.IVector)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.SubtractVector(ESRI.ArcGIS.Geometry.IVector)
+  id: SubtractVector(ESRI.ArcGIS.Geometry.IVector)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: SubtractVector(IVector)
+  nameWithType: IVector.SubtractVector(IVector)
+  fullName: ESRI.ArcGIS.Geometry.IVector.SubtractVector(ESRI.ArcGIS.Geometry.IVector)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IVector SubtractVector(IVector otherVector)
+    parameters:
+    - id: otherVector
+      type: ESRI.ArcGIS.Geometry.IVector
+    return:
+      type: ESRI.ArcGIS.Geometry.IVector
+    content.vb: Function SubtractVector(otherVector As IVector) As IVector
+  overload: ESRI.ArcGIS.Geometry.IVector.SubtractVector*
+- uid: ESRI.ArcGIS.Geometry.IVector.ConstructAddVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.ConstructAddVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  id: ConstructAddVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: ConstructAddVector(IVector, IVector)
+  nameWithType: IVector.ConstructAddVector(IVector, IVector)
+  fullName: ESRI.ArcGIS.Geometry.IVector.ConstructAddVector(ESRI.ArcGIS.Geometry.IVector, ESRI.ArcGIS.Geometry.IVector)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructAddVector(IVector vector1, IVector vector2)
+    parameters:
+    - id: vector1
+      type: ESRI.ArcGIS.Geometry.IVector
+    - id: vector2
+      type: ESRI.ArcGIS.Geometry.IVector
+    content.vb: Sub ConstructAddVector(vector1 As IVector, vector2 As IVector)
+  overload: ESRI.ArcGIS.Geometry.IVector.ConstructAddVector*
+- uid: ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  id: ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector,ESRI.ArcGIS.Geometry.IVector)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: ConstructSubtractVector(IVector, IVector)
+  nameWithType: IVector.ConstructSubtractVector(IVector, IVector)
+  fullName: ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector(ESRI.ArcGIS.Geometry.IVector, ESRI.ArcGIS.Geometry.IVector)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructSubtractVector(IVector vector1, IVector vector2)
+    parameters:
+    - id: vector1
+      type: ESRI.ArcGIS.Geometry.IVector
+    - id: vector2
+      type: ESRI.ArcGIS.Geometry.IVector
+    content.vb: Sub ConstructSubtractVector(vector1 As IVector, vector2 As IVector)
+  overload: ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector*
+- uid: ESRI.ArcGIS.Geometry.IVector.DotProduct(ESRI.ArcGIS.Geometry.IVector)
+  commentId: M:ESRI.ArcGIS.Geometry.IVector.DotProduct(ESRI.ArcGIS.Geometry.IVector)
+  id: DotProduct(ESRI.ArcGIS.Geometry.IVector)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: DotProduct(IVector)
+  nameWithType: IVector.DotProduct(IVector)
+  fullName: ESRI.ArcGIS.Geometry.IVector.DotProduct(ESRI.ArcGIS.Geometry.IVector)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: double DotProduct(IVector otherVector)
+    parameters:
+    - id: otherVector
+      type: ESRI.ArcGIS.Geometry.IVector
+    return:
+      type: System.Double
+    content.vb: Function DotProduct(otherVector As IVector) As Double
+  overload: ESRI.ArcGIS.Geometry.IVector.DotProduct*
+- uid: ESRI.ArcGIS.Geometry.IVector.Dimension
+  commentId: P:ESRI.ArcGIS.Geometry.IVector.Dimension
+  id: Dimension
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: IVector.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IVector.Dimension
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The dimension of this vector.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Dimension { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Dimension As Integer
+  overload: ESRI.ArcGIS.Geometry.IVector.Dimension*
+- uid: ESRI.ArcGIS.Geometry.IVector.IsEmpty
+  commentId: P:ESRI.ArcGIS.Geometry.IVector.IsEmpty
+  id: IsEmpty
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: IVector.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IVector.IsEmpty
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if the vector is empty (unset).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEmpty As Boolean
+  overload: ESRI.ArcGIS.Geometry.IVector.IsEmpty*
+- uid: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geometry.IVector.ComponentByIndex(System.Int32)
+  id: ComponentByIndex(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: ComponentByIndex[int]
+  nameWithType: IVector.ComponentByIndex[int]
+  fullName: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The component corresponding to a given index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ComponentByIndex[int componentIndex] { get; set; }
+    parameters:
+    - id: componentIndex
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Property ComponentByIndex(componentIndex As Integer) As Double
+  overload: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex*
+  nameWithType.vb: IVector.ComponentByIndex(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex(Integer)
+  name.vb: ComponentByIndex(Integer)
+- uid: ESRI.ArcGIS.Geometry.IVector.Magnitude
+  commentId: P:ESRI.ArcGIS.Geometry.IVector.Magnitude
+  id: Magnitude
+  parent: ESRI.ArcGIS.Geometry.IVector
+  langs:
+  - csharp
+  - vb
+  name: Magnitude
+  nameWithType: IVector.Magnitude
+  fullName: ESRI.ArcGIS.Geometry.IVector.Magnitude
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The length of the vector.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double Magnitude { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property Magnitude As Double
+  overload: ESRI.ArcGIS.Geometry.IVector.Magnitude*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IVector.SetEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.SetEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_SetEmpty
+  name: SetEmpty
+  nameWithType: IVector.SetEmpty
+  fullName: ESRI.ArcGIS.Geometry.IVector.SetEmpty
+- uid: ESRI.ArcGIS.Geometry.IVector.Normalize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.Normalize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_Normalize
+  name: Normalize
+  nameWithType: IVector.Normalize
+  fullName: ESRI.ArcGIS.Geometry.IVector.Normalize
+- uid: ESRI.ArcGIS.Geometry.IVector.Scale*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.Scale
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_Scale_System_Double_
+  name: Scale
+  nameWithType: IVector.Scale
+  fullName: ESRI.ArcGIS.Geometry.IVector.Scale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IVector.AddVector*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.AddVector
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_AddVector_ESRI_ArcGIS_Geometry_IVector_
+  name: AddVector
+  nameWithType: IVector.AddVector
+  fullName: ESRI.ArcGIS.Geometry.IVector.AddVector
+- uid: ESRI.ArcGIS.Geometry.IVector
+  commentId: T:ESRI.ArcGIS.Geometry.IVector
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html
+  name: IVector
+  nameWithType: IVector
+  fullName: ESRI.ArcGIS.Geometry.IVector
+- uid: ESRI.ArcGIS.Geometry.IVector.SubtractVector*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.SubtractVector
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_SubtractVector_ESRI_ArcGIS_Geometry_IVector_
+  name: SubtractVector
+  nameWithType: IVector.SubtractVector
+  fullName: ESRI.ArcGIS.Geometry.IVector.SubtractVector
+- uid: ESRI.ArcGIS.Geometry.IVector.ConstructAddVector*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.ConstructAddVector
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_ConstructAddVector_ESRI_ArcGIS_Geometry_IVector_ESRI_ArcGIS_Geometry_IVector_
+  name: ConstructAddVector
+  nameWithType: IVector.ConstructAddVector
+  fullName: ESRI.ArcGIS.Geometry.IVector.ConstructAddVector
+- uid: ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_ConstructSubtractVector_ESRI_ArcGIS_Geometry_IVector_ESRI_ArcGIS_Geometry_IVector_
+  name: ConstructSubtractVector
+  nameWithType: IVector.ConstructSubtractVector
+  fullName: ESRI.ArcGIS.Geometry.IVector.ConstructSubtractVector
+- uid: ESRI.ArcGIS.Geometry.IVector.DotProduct*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.DotProduct
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_DotProduct_ESRI_ArcGIS_Geometry_IVector_
+  name: DotProduct
+  nameWithType: IVector.DotProduct
+  fullName: ESRI.ArcGIS.Geometry.IVector.DotProduct
+- uid: ESRI.ArcGIS.Geometry.IVector.Dimension*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.Dimension
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_Dimension
+  name: Dimension
+  nameWithType: IVector.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IVector.Dimension
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IVector.IsEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.IsEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_IsEmpty
+  name: IsEmpty
+  nameWithType: IVector.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IVector.IsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.ComponentByIndex
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_ComponentByIndex_System_Int32_
+  name: ComponentByIndex
+  nameWithType: IVector.ComponentByIndex
+  fullName: ESRI.ArcGIS.Geometry.IVector.ComponentByIndex
+- uid: ESRI.ArcGIS.Geometry.IVector.Magnitude*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVector.Magnitude
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector.html#ESRI_ArcGIS_Geometry_IVector_Magnitude
+  name: Magnitude
+  nameWithType: IVector.Magnitude
+  fullName: ESRI.ArcGIS.Geometry.IVector.Magnitude

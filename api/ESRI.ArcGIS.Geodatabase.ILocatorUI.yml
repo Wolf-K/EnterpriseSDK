@@ -1,0 +1,316 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI
+  commentId: T:ESRI.ArcGIS.Geodatabase.ILocatorUI
+  id: ILocatorUI
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator(System.Int32,ESRI.ArcGIS.Geodatabase.ILocatorStyle,ESRI.ArcGIS.Geodatabase.ILocatorWorkspace,System.String)
+  - ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties(System.Int32,ESRI.ArcGIS.Geodatabase.ILocator,System.String)
+  - ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable(System.Int32,ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ILocator,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: ILocatorUI
+  nameWithType: ILocatorUI
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the locator's user interface.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("E0F10B77-EB7C-11D2-9F47-00C04F8ED1C4")]
+
+      public interface ILocatorUI
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("E0F10B77-EB7C-11D2-9F47-00C04F8ED1C4")>
+
+      Public Interface ILocatorUI
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E0F10B77-EB7C-11D2-9F47-00C04F8ED1C4
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator(System.Int32,ESRI.ArcGIS.Geodatabase.ILocatorStyle,ESRI.ArcGIS.Geodatabase.ILocatorWorkspace,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator(System.Int32,ESRI.ArcGIS.Geodatabase.ILocatorStyle,ESRI.ArcGIS.Geodatabase.ILocatorWorkspace,System.String)
+  id: CreateLocator(System.Int32,ESRI.ArcGIS.Geodatabase.ILocatorStyle,ESRI.ArcGIS.Geodatabase.ILocatorWorkspace,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ILocatorUI
+  langs:
+  - csharp
+  - vb
+  name: CreateLocator(int, ILocatorStyle, ILocatorWorkspace, string)
+  nameWithType: ILocatorUI.CreateLocator(int, ILocatorStyle, ILocatorWorkspace, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator(int, ESRI.ArcGIS.Geodatabase.ILocatorStyle, ESRI.ArcGIS.Geodatabase.ILocatorWorkspace, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ILocator CreateLocator(int parentWindow, ILocatorStyle locatorStyle, ILocatorWorkspace locWks, string connectionName)
+    parameters:
+    - id: parentWindow
+      type: System.Int32
+    - id: locatorStyle
+      type: ESRI.ArcGIS.Geodatabase.ILocatorStyle
+    - id: locWks
+      type: ESRI.ArcGIS.Geodatabase.ILocatorWorkspace
+    - id: connectionName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ILocator
+    content.vb: Function CreateLocator(parentWindow As Integer, locatorStyle As ILocatorStyle, locWks As ILocatorWorkspace, connectionName As String) As ILocator
+  overload: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator*
+  nameWithType.vb: ILocatorUI.CreateLocator(Integer, ILocatorStyle, ILocatorWorkspace, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator(Integer, ESRI.ArcGIS.Geodatabase.ILocatorStyle, ESRI.ArcGIS.Geodatabase.ILocatorWorkspace, String)
+  name.vb: CreateLocator(Integer, ILocatorStyle, ILocatorWorkspace, String)
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties(System.Int32,ESRI.ArcGIS.Geodatabase.ILocator,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties(System.Int32,ESRI.ArcGIS.Geodatabase.ILocator,System.String)
+  id: LocatorProperties(System.Int32,ESRI.ArcGIS.Geodatabase.ILocator,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ILocatorUI
+  langs:
+  - csharp
+  - vb
+  name: LocatorProperties(int, ILocator, string)
+  nameWithType: ILocatorUI.LocatorProperties(int, ILocator, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties(int, ESRI.ArcGIS.Geodatabase.ILocator, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool LocatorProperties(int parentWindow, ILocator locator, string Title)
+    parameters:
+    - id: parentWindow
+      type: System.Int32
+    - id: locator
+      type: ESRI.ArcGIS.Geodatabase.ILocator
+    - id: Title
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function LocatorProperties(parentWindow As Integer, locator As ILocator, Title As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties*
+  nameWithType.vb: ILocatorUI.LocatorProperties(Integer, ILocator, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties(Integer, ESRI.ArcGIS.Geodatabase.ILocator, String)
+  name.vb: LocatorProperties(Integer, ILocator, String)
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable(System.Int32,ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ILocator,System.String@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable(System.Int32,ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ILocator,System.String@)
+  id: MatchTable(System.Int32,ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ILocator,System.String@)
+  parent: ESRI.ArcGIS.Geodatabase.ILocatorUI
+  langs:
+  - csharp
+  - vb
+  name: MatchTable(int, ITable, ILocator, ref string)
+  nameWithType: ILocatorUI.MatchTable(int, ITable, ILocator, ref string)
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable(int, ESRI.ArcGIS.Geodatabase.ITable, ESRI.ArcGIS.Geodatabase.ILocator, ref string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IName MatchTable(int parentWindow, ITable tableOfLocations, ILocator locator, ref string pathForGxBrowser)
+    parameters:
+    - id: parentWindow
+      type: System.Int32
+    - id: tableOfLocations
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    - id: locator
+      type: ESRI.ArcGIS.Geodatabase.ILocator
+    - id: pathForGxBrowser
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: Function MatchTable(parentWindow As Integer, tableOfLocations As ITable, locator As ILocator, pathForGxBrowser As String) As IName
+  overload: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable*
+  nameWithType.vb: ILocatorUI.MatchTable(Integer, ITable, ILocator, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable(Integer, ESRI.ArcGIS.Geodatabase.ITable, ESRI.ArcGIS.Geodatabase.ILocator, String)
+  name.vb: MatchTable(Integer, ITable, ILocator, String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocatorUI.html#ESRI_ArcGIS_Geodatabase_ILocatorUI_CreateLocator_System_Int32_ESRI_ArcGIS_Geodatabase_ILocatorStyle_ESRI_ArcGIS_Geodatabase_ILocatorWorkspace_System_String_
+  name: CreateLocator
+  nameWithType: ILocatorUI.CreateLocator
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.CreateLocator
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorStyle
+  commentId: T:ESRI.ArcGIS.Geodatabase.ILocatorStyle
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocatorStyle.html
+  name: ILocatorStyle
+  nameWithType: ILocatorStyle
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorStyle
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.ILocatorWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocatorWorkspace.html
+  name: ILocatorWorkspace
+  nameWithType: ILocatorWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorWorkspace
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ILocator
+  commentId: T:ESRI.ArcGIS.Geodatabase.ILocator
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocator.html
+  name: ILocator
+  nameWithType: ILocator
+  fullName: ESRI.ArcGIS.Geodatabase.ILocator
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocatorUI.html#ESRI_ArcGIS_Geodatabase_ILocatorUI_LocatorProperties_System_Int32_ESRI_ArcGIS_Geodatabase_ILocator_System_String_
+  name: LocatorProperties
+  nameWithType: ILocatorUI.LocatorProperties
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.LocatorProperties
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ILocatorUI.html#ESRI_ArcGIS_Geodatabase_ILocatorUI_MatchTable_System_Int32_ESRI_ArcGIS_Geodatabase_ITable_ESRI_ArcGIS_Geodatabase_ILocator_System_String__
+  name: MatchTable
+  nameWithType: ILocatorUI.MatchTable
+  fullName: ESRI.ArcGIS.Geodatabase.ILocatorUI.MatchTable
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

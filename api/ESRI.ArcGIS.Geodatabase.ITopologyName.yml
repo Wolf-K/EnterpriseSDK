@@ -1,0 +1,291 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyName
+  id: ITopologyName
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+  - ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+  - ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName(ESRI.ArcGIS.Geometry.esriGeometryType)
+  langs:
+  - csharp
+  - vb
+  name: ITopologyName
+  nameWithType: ITopologyName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the topology name.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("505B6FDD-9E6E-42F9-B705-53355B2F1DEF")]
+
+      public interface ITopologyName
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("505B6FDD-9E6E-42F9-B705-53355B2F1DEF")>
+
+      Public Interface ITopologyName
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TopologyNameClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 505B6FDD-9E6E-42F9-B705-53355B2F1DEF
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+  id: DirtyAreasName
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyName
+  langs:
+  - csharp
+  - vb
+  name: DirtyAreasName
+  nameWithType: ITopologyName.DirtyAreasName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Dirty areas name object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName DirtyAreasName { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: ReadOnly Property DirtyAreasName As IName
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName(ESRI.ArcGIS.Geometry.esriGeometryType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName(ESRI.ArcGIS.Geometry.esriGeometryType)
+  id: TopologyErrorName(ESRI.ArcGIS.Geometry.esriGeometryType)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyName
+  langs:
+  - csharp
+  - vb
+  name: TopologyErrorName[esriGeometryType]
+  nameWithType: ITopologyName.TopologyErrorName[esriGeometryType]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName[ESRI.ArcGIS.Geometry.esriGeometryType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name of class holding errors for the specified geometry type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName TopologyErrorName[esriGeometryType GeometryType] { get; }
+    parameters:
+    - id: GeometryType
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: ReadOnly Property TopologyErrorName(GeometryType As esriGeometryType) As IName
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName*
+  nameWithType.vb: ITopologyName.TopologyErrorName(esriGeometryType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName(ESRI.ArcGIS.Geometry.esriGeometryType)
+  name.vb: TopologyErrorName(esriGeometryType)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+  id: FeatureDatasetName
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyName
+  langs:
+  - csharp
+  - vb
+  name: FeatureDatasetName
+  nameWithType: ITopologyName.FeatureDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name of feature dataset containing the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDatasetName FeatureDatasetName { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDatasetName
+    content.vb: Property FeatureDatasetName As IDatasetName
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyName.html#ESRI_ArcGIS_Geodatabase_ITopologyName_DirtyAreasName
+  name: DirtyAreasName
+  nameWithType: ITopologyName.DirtyAreasName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.DirtyAreasName
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyName.html#ESRI_ArcGIS_Geodatabase_ITopologyName_TopologyErrorName_ESRI_ArcGIS_Geometry_esriGeometryType_
+  name: TopologyErrorName
+  nameWithType: ITopologyName.TopologyErrorName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.TopologyErrorName
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyName.html#ESRI_ArcGIS_Geodatabase_ITopologyName_FeatureDatasetName
+  name: FeatureDatasetName
+  nameWithType: ITopologyName.FeatureDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyName.FeatureDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDatasetName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatasetName.html
+  name: IDatasetName
+  nameWithType: IDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetName

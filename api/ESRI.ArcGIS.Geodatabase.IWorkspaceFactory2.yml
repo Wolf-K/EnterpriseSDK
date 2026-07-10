@@ -1,0 +1,678 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  id: IWorkspaceFactory2
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace(System.String)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile(System.String,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString(System.String,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile(System.String)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+  langs:
+  - csharp
+  - vb
+  name: IWorkspaceFactory2
+  nameWithType: IWorkspaceFactory2
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that create and open workspaces and supply workspace factory information.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D29CD15F-3014-11D4-8141-00C04F686238")]
+
+      public interface IWorkspaceFactory2 : IWorkspaceFactory
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D29CD15F-3014-11D4-8141-00C04F686238")>
+
+      Public Interface IWorkspaceFactory2 Inherits IWorkspaceFactory
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesFile.BDConnectionWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.BimFileWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.CadWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.PCCoverageWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.ShapefileWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.TinWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesFile.VpfWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.FileGDBWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.InMemoryWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.MemoryWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.RealtimePluginWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.SdeWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.SqlWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesGDB.SqliteWorkspaceFactoryClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterWorkspaceFactoryClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasDatasetWorkspaceFactoryClass
+  - ESRI.ArcGIS.Geodatabase.PlugInWorkspaceFactoryClass
+  - ESRI.ArcGIS.Geodatabase.WorkspaceFactoryClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D29CD15F-3014-11D4-8141-00C04F686238
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  id: Open(ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: Open(IPropertySet, int)
+  nameWithType: IWorkspaceFactory2.Open(IPropertySet, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open(ESRI.ArcGIS.esriSystem.IPropertySet, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspace Open(IPropertySet ConnectionProperties, int hWnd)
+    parameters:
+    - id: ConnectionProperties
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: hWnd
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Function Open(ConnectionProperties As IPropertySet, hWnd As Integer) As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open*
+  nameWithType.vb: IWorkspaceFactory2.Open(IPropertySet, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open(ESRI.ArcGIS.esriSystem.IPropertySet, Integer)
+  name.vb: Open(IPropertySet, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile(System.String,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile(System.String,System.Int32)
+  id: OpenFromFile(System.String,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: OpenFromFile(string, int)
+  nameWithType: IWorkspaceFactory2.OpenFromFile(string, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspace OpenFromFile(string fileName, int hWnd)
+    parameters:
+    - id: fileName
+      type: System.String
+    - id: hWnd
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Function OpenFromFile(fileName As String, hWnd As Integer) As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile*
+  nameWithType.vb: IWorkspaceFactory2.OpenFromFile(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile(String, Integer)
+  name.vb: OpenFromFile(String, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  id: Create(System.String,System.String,ESRI.ArcGIS.esriSystem.IPropertySet,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: Create(string, string, IPropertySet, int)
+  nameWithType: IWorkspaceFactory2.Create(string, string, IPropertySet, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create(string, string, ESRI.ArcGIS.esriSystem.IPropertySet, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspaceName Create(string parentDirectory, string Name, IPropertySet ConnectionProperties, int hWnd)
+    parameters:
+    - id: parentDirectory
+      type: System.String
+    - id: Name
+      type: System.String
+    - id: ConnectionProperties
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: hWnd
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    content.vb: Function Create(parentDirectory As String, Name As String, ConnectionProperties As IPropertySet, hWnd As Integer) As IWorkspaceName
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create*
+  nameWithType.vb: IWorkspaceFactory2.Create(String, String, IPropertySet, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create(String, String, ESRI.ArcGIS.esriSystem.IPropertySet, Integer)
+  name.vb: Create(String, String, IPropertySet, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  id: ContainsWorkspace(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: ContainsWorkspace(string, IFileNames)
+  nameWithType: IWorkspaceFactory2.ContainsWorkspace(string, IFileNames)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace(string, ESRI.ArcGIS.esriSystem.IFileNames)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool ContainsWorkspace(string parentDirectory, IFileNames fileNames)
+    parameters:
+    - id: parentDirectory
+      type: System.String
+    - id: fileNames
+      type: ESRI.ArcGIS.esriSystem.IFileNames
+    return:
+      type: System.Boolean
+    content.vb: Function ContainsWorkspace(parentDirectory As String, fileNames As IFileNames) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace*
+  nameWithType.vb: IWorkspaceFactory2.ContainsWorkspace(String, IFileNames)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace(String, ESRI.ArcGIS.esriSystem.IFileNames)
+  name.vb: ContainsWorkspace(String, IFileNames)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  id: GetWorkspaceName(System.String,ESRI.ArcGIS.esriSystem.IFileNames)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: GetWorkspaceName(string, IFileNames)
+  nameWithType: IWorkspaceFactory2.GetWorkspaceName(string, IFileNames)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName(string, ESRI.ArcGIS.esriSystem.IFileNames)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspaceName GetWorkspaceName(string parentDirectory, IFileNames fileNames)
+    parameters:
+    - id: parentDirectory
+      type: System.String
+    - id: fileNames
+      type: ESRI.ArcGIS.esriSystem.IFileNames
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    content.vb: Function GetWorkspaceName(parentDirectory As String, fileNames As IFileNames) As IWorkspaceName
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName*
+  nameWithType.vb: IWorkspaceFactory2.GetWorkspaceName(String, IFileNames)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName(String, ESRI.ArcGIS.esriSystem.IFileNames)
+  name.vb: GetWorkspaceName(String, IFileNames)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID
+  id: GetClassID
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: GetClassID()
+  nameWithType: IWorkspaceFactory2.GetClassID()
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: UID GetClassID()
+    return:
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: Function GetClassID() As UID
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID*
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace(System.String)
+  id: IsWorkspace(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: IsWorkspace(string)
+  nameWithType: IWorkspaceFactory2.IsWorkspace(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsWorkspace(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function IsWorkspace(fileName As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace*
+  nameWithType.vb: IWorkspaceFactory2.IsWorkspace(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace(String)
+  name.vb: IsWorkspace(String)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile(System.String)
+  id: ReadConnectionPropertiesFromFile(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: ReadConnectionPropertiesFromFile(string)
+  nameWithType: IWorkspaceFactory2.ReadConnectionPropertiesFromFile(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IPropertySet ReadConnectionPropertiesFromFile(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Function ReadConnectionPropertiesFromFile(fileName As String) As IPropertySet
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile*
+  nameWithType.vb: IWorkspaceFactory2.ReadConnectionPropertiesFromFile(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile(String)
+  name.vb: ReadConnectionPropertiesFromFile(String)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)
+  id: Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String,ESRI.ArcGIS.Geodatabase.IWorkspaceName@)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: Copy(IWorkspaceName, string, out IWorkspaceName)
+  nameWithType: IWorkspaceFactory2.Copy(IWorkspaceName, string, out IWorkspaceName)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName, string, out ESRI.ArcGIS.Geodatabase.IWorkspaceName)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool Copy(IWorkspaceName WorkspaceName, string destinationFolder, out IWorkspaceName workspaceNameCopy)
+    parameters:
+    - id: WorkspaceName
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    - id: destinationFolder
+      type: System.String
+    - id: workspaceNameCopy
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    return:
+      type: System.Boolean
+    content.vb: Function Copy(WorkspaceName As IWorkspaceName, destinationFolder As String, workspaceNameCopy As IWorkspaceName) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy*
+  nameWithType.vb: IWorkspaceFactory2.Copy(IWorkspaceName, String, IWorkspaceName)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy(ESRI.ArcGIS.Geodatabase.IWorkspaceName, String, ESRI.ArcGIS.Geodatabase.IWorkspaceName)
+  name.vb: Copy(IWorkspaceName, String, IWorkspaceName)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)
+  id: Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: Move(IWorkspaceName, string)
+  nameWithType: IWorkspaceFactory2.Move(IWorkspaceName, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool Move(IWorkspaceName WorkspaceName, string destinationFolder)
+    parameters:
+    - id: WorkspaceName
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    - id: destinationFolder
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Move(WorkspaceName As IWorkspaceName, destinationFolder As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move*
+  nameWithType.vb: IWorkspaceFactory2.Move(IWorkspaceName, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move(ESRI.ArcGIS.Geodatabase.IWorkspaceName, String)
+  name.vb: Move(IWorkspaceName, String)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString(System.String,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString(System.String,System.Int32)
+  id: OpenFromString(System.String,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: OpenFromString(string, int)
+  nameWithType: IWorkspaceFactory2.OpenFromString(string, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IWorkspace OpenFromString(string connectStr, int hWnd)
+    parameters:
+    - id: connectStr
+      type: System.String
+    - id: hWnd
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Function OpenFromString(connectStr As String, hWnd As Integer) As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString*
+  nameWithType.vb: IWorkspaceFactory2.OpenFromString(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString(String, Integer)
+  name.vb: OpenFromString(String, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription(System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription(System.Boolean)
+  id: WorkspaceDescription(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceDescription[bool]
+  nameWithType: IWorkspaceFactory2.WorkspaceDescription[bool]
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription[bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: string WorkspaceDescription[bool plural] { get; }
+    parameters:
+    - id: plural
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: ReadOnly Property WorkspaceDescription(plural As Boolean) As String
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription*
+  nameWithType.vb: IWorkspaceFactory2.WorkspaceDescription(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription(Boolean)
+  name.vb: WorkspaceDescription(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+  id: WorkspaceType
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceType
+  nameWithType: IWorkspaceFactory2.WorkspaceType
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriWorkspaceType WorkspaceType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriWorkspaceType
+    content.vb: ReadOnly Property WorkspaceType As esriWorkspaceType
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_Open_ESRI_ArcGIS_esriSystem_IPropertySet_System_Int32_
+  name: Open
+  nameWithType: IWorkspaceFactory2.Open
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Open
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_OpenFromFile_System_String_System_Int32_
+  name: OpenFromFile
+  nameWithType: IWorkspaceFactory2.OpenFromFile
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_Create_System_String_System_String_ESRI_ArcGIS_esriSystem_IPropertySet_System_Int32_
+  name: Create
+  nameWithType: IWorkspaceFactory2.Create
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Create
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceName.html
+  name: IWorkspaceName
+  nameWithType: IWorkspaceName
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_ContainsWorkspace_System_String_ESRI_ArcGIS_esriSystem_IFileNames_
+  name: ContainsWorkspace
+  nameWithType: IWorkspaceFactory2.ContainsWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ContainsWorkspace
+- uid: ESRI.ArcGIS.esriSystem.IFileNames
+  commentId: T:ESRI.ArcGIS.esriSystem.IFileNames
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IFileNames.html
+  name: IFileNames
+  nameWithType: IFileNames
+  fullName: ESRI.ArcGIS.esriSystem.IFileNames
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_GetWorkspaceName_System_String_ESRI_ArcGIS_esriSystem_IFileNames_
+  name: GetWorkspaceName
+  nameWithType: IWorkspaceFactory2.GetWorkspaceName
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetWorkspaceName
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_GetClassID
+  name: GetClassID
+  nameWithType: IWorkspaceFactory2.GetClassID
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.GetClassID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_IsWorkspace_System_String_
+  name: IsWorkspace
+  nameWithType: IWorkspaceFactory2.IsWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.IsWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_ReadConnectionPropertiesFromFile_System_String_
+  name: ReadConnectionPropertiesFromFile
+  nameWithType: IWorkspaceFactory2.ReadConnectionPropertiesFromFile
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.ReadConnectionPropertiesFromFile
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_Copy_ESRI_ArcGIS_Geodatabase_IWorkspaceName_System_String_ESRI_ArcGIS_Geodatabase_IWorkspaceName__
+  name: Copy
+  nameWithType: IWorkspaceFactory2.Copy
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Copy
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_Move_ESRI_ArcGIS_Geodatabase_IWorkspaceName_System_String_
+  name: Move
+  nameWithType: IWorkspaceFactory2.Move
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.Move
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_OpenFromString_System_String_System_Int32_
+  name: OpenFromString
+  nameWithType: IWorkspaceFactory2.OpenFromString
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.OpenFromString
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_WorkspaceDescription_System_Boolean_
+  name: WorkspaceDescription
+  nameWithType: IWorkspaceFactory2.WorkspaceDescription
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceDescription
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.html#ESRI_ArcGIS_Geodatabase_IWorkspaceFactory2_WorkspaceType
+  name: WorkspaceType
+  nameWithType: IWorkspaceFactory2.WorkspaceType
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceFactory2.WorkspaceType
+- uid: ESRI.ArcGIS.Geodatabase.esriWorkspaceType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriWorkspaceType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriWorkspaceType.html
+  name: esriWorkspaceType
+  nameWithType: esriWorkspaceType
+  fullName: ESRI.ArcGIS.Geodatabase.esriWorkspaceType

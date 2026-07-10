@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IIndex
+  commentId: T:ESRI.ArcGIS.Geodatabase.IIndex
+  id: IIndex
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IIndex.Fields
+  - ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+  - ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+  - ESRI.ArcGIS.Geodatabase.IIndex.Name
+  langs:
+  - csharp
+  - vb
+  name: IIndex
+  nameWithType: IIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about the index.
+  example: []
+  syntax:
+    content: >-
+      [Guid("2063FD01-4CE0-11D1-89DB-006097AFF44E")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IIndex
+    content.vb: >-
+      <Guid("2063FD01-4CE0-11D1-89DB-006097AFF44E")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IIndex
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FullTextIndexDefinitionClass
+  - ESRI.ArcGIS.Geodatabase.IndexClass
+  - ESRI.ArcGIS.Geodatabase.XMLIndexClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2063FD01-4CE0-11D1-89DB-006097AFF44E
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndex.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geodatabase.IIndex
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IIndex.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.IIndex.Name*
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+  id: IsUnique
+  parent: ESRI.ArcGIS.Geodatabase.IIndex
+  langs:
+  - csharp
+  - vb
+  name: IsUnique
+  nameWithType: IIndex.IsUnique
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the index is unique.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsUnique { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsUnique As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IIndex.IsUnique*
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+  id: IsAscending
+  parent: ESRI.ArcGIS.Geodatabase.IIndex
+  langs:
+  - csharp
+  - vb
+  name: IsAscending
+  nameWithType: IIndex.IsAscending
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the index is based on ascending order.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsAscending { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsAscending As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IIndex.IsAscending*
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndex.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.IIndex
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: IIndex.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields collection for this index.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.IIndex.Fields*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndex.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndex.html#ESRI_ArcGIS_Geodatabase_IIndex_Name
+  name: Name
+  nameWithType: IIndex.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.IsUnique*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndex.html#ESRI_ArcGIS_Geodatabase_IIndex_IsUnique
+  name: IsUnique
+  nameWithType: IIndex.IsUnique
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.IsUnique
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.IsAscending*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndex.html#ESRI_ArcGIS_Geodatabase_IIndex_IsAscending
+  name: IsAscending
+  nameWithType: IIndex.IsAscending
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.IsAscending
+- uid: ESRI.ArcGIS.Geodatabase.IIndex.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndex.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndex.html#ESRI_ArcGIS_Geodatabase_IIndex_Fields
+  name: Fields
+  nameWithType: IIndex.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

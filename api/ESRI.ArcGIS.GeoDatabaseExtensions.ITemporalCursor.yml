@@ -1,0 +1,466 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  id: ITemporalCursor
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField(System.String)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject(ESRI.ArcGIS.Geodatabase.IFeature@,System.Object@,System.Int64@,System.Int32@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  langs:
+  - csharp
+  - vb
+  name: ITemporalCursor
+  nameWithType: ITemporalCursor
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to methods needed to control the temporal cursor.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CC018A66-24FB-11D4-B34C-00104BA2ABCC")]
+
+      public interface ITemporalCursor : IFeatureCursor
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CC018A66-24FB-11D4-B34C-00104BA2ABCC")>
+
+      Public Interface ITemporalCursor Inherits IFeatureCursor
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CC018A66-24FB-11D4-B34C-00104BA2ABCC
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField(System.String)
+  id: FindField(System.String)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: FindField(string)
+  nameWithType: ITemporalCursor.FindField(string)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int FindField(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Function FindField(Name As String) As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField*
+  nameWithType.vb: ITemporalCursor.FindField(String)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField(String)
+  name.vb: FindField(String)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature
+  id: NextFeature
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: NextFeature()
+  nameWithType: ITemporalCursor.NextFeature()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IFeature NextFeature()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Function NextFeature() As IFeature
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  id: UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: UpdateFeature(IFeature)
+  nameWithType: ITemporalCursor.UpdateFeature(IFeature)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void UpdateFeature(IFeature Object)
+    parameters:
+    - id: Object
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Sub UpdateFeature([Object] As IFeature)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature
+  id: DeleteFeature
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: DeleteFeature()
+  nameWithType: ITemporalCursor.DeleteFeature()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void DeleteFeature()
+    content.vb: Sub DeleteFeature()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  id: InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: InsertFeature(IFeatureBuffer)
+  nameWithType: ITemporalCursor.InsertFeature(IFeatureBuffer)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: object InsertFeature(IFeatureBuffer buffer)
+    parameters:
+    - id: buffer
+      type: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    return:
+      type: System.Object
+    content.vb: Function InsertFeature(buffer As IFeatureBuffer) As Object
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush
+  id: Flush
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: ITemporalCursor.Flush()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void Flush()
+    content.vb: Sub Flush()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject(ESRI.ArcGIS.Geodatabase.IFeature@,System.Object@,System.Int64@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject(ESRI.ArcGIS.Geodatabase.IFeature@,System.Object@,System.Int64@,System.Int32@)
+  id: NextObject(ESRI.ArcGIS.Geodatabase.IFeature@,System.Object@,System.Int64@,System.Int32@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: NextObject(ref IFeature, ref object, ref long, ref int)
+  nameWithType: ITemporalCursor.NextObject(ref IFeature, ref object, ref long, ref int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject(ref ESRI.ArcGIS.Geodatabase.IFeature, ref object, ref long, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void NextObject(ref IFeature ppiFeature, ref object pvarTimeSeries, ref long phyTimeStamp, ref int plOID)
+    parameters:
+    - id: ppiFeature
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    - id: pvarTimeSeries
+      type: System.Object
+    - id: phyTimeStamp
+      type: System.Int64
+    - id: plOID
+      type: System.Int32
+    content.vb: Sub NextObject(ppiFeature As IFeature, pvarTimeSeries As Object, phyTimeStamp As Long, plOID As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject*
+  nameWithType.vb: ITemporalCursor.NextObject(IFeature, Object, Long, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject(ESRI.ArcGIS.Geodatabase.IFeature, Object, Long, Integer)
+  name.vb: NextObject(IFeature, Object, Long, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ITemporalCursor.Reset()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Resets the cursor position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: ITemporalCursor.Fields
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_FindField_System_String_
+  name: FindField
+  nameWithType: ITemporalCursor.FindField
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.FindField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_NextFeature
+  name: NextFeature
+  nameWithType: ITemporalCursor.NextFeature
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  name: IFeature
+  nameWithType: IFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  name: UpdateFeature
+  nameWithType: ITemporalCursor.UpdateFeature
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.UpdateFeature
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_DeleteFeature
+  name: DeleteFeature
+  nameWithType: ITemporalCursor.DeleteFeature
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.DeleteFeature
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  name: InsertFeature
+  nameWithType: ITemporalCursor.InsertFeature
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.InsertFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  name: IFeatureBuffer
+  nameWithType: IFeatureBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_Flush
+  name: Flush
+  nameWithType: ITemporalCursor.Flush
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Flush
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_NextObject_ESRI_ArcGIS_Geodatabase_IFeature__System_Object__System_Int64__System_Int32__
+  name: NextObject
+  nameWithType: ITemporalCursor.NextObject
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.NextObject
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_Reset
+  name: Reset
+  nameWithType: ITemporalCursor.Reset
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Reset
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITemporalCursor_Fields
+  name: Fields
+  nameWithType: ITemporalCursor.Fields
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITemporalCursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

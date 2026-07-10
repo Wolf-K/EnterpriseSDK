@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  id: IGeoDataset2
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+  langs:
+  - csharp
+  - vb
+  name: IGeoDataset2
+  nameWithType: IGeoDataset2
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that provide geodata transformation information about a Dataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("8FEFCCB6-9519-4700-9E01-3450106A11A4")]
+
+      public interface IGeoDataset2 : IGeoDataset
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("8FEFCCB6-9519-4700-9E01-3450106A11A4")>
+
+      Public Interface IGeoDataset2 Inherits IGeoDataset
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.FunctionRasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8FEFCCB6-9519-4700-9E01-3450106A11A4
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IGeoDataset2.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ISpatialReference SpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: IGeoDataset2.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+  id: GeodataXform
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  langs:
+  - csharp
+  - vb
+  name: GeodataXform
+  nameWithType: IGeoDataset2.GeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The geodata transformation of the GeoDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeodataXform GeodataXform { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    content.vb: ReadOnly Property GeodataXform As IGeodataXform
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+  id: NativeSpatialReference
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  langs:
+  - csharp
+  - vb
+  name: NativeSpatialReference
+  nameWithType: IGeoDataset2.NativeSpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The native spatial reference of the GeoDataset (before transformation applied).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference NativeSpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property NativeSpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent
+  id: NativeExtent
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset2
+  langs:
+  - csharp
+  - vb
+  name: NativeExtent
+  nameWithType: IGeoDataset2.NativeExtent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The native extent of the GeoDataset (before transformation applied).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope NativeExtent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property NativeExtent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset2.html#ESRI_ArcGIS_Geodatabase_IGeoDataset2_SpatialReference
+  name: SpatialReference
+  nameWithType: IGeoDataset2.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset2.html#ESRI_ArcGIS_Geodatabase_IGeoDataset2_Extent
+  name: Extent
+  nameWithType: IGeoDataset2.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset2.html#ESRI_ArcGIS_Geodatabase_IGeoDataset2_GeodataXform
+  name: GeodataXform
+  nameWithType: IGeoDataset2.GeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.GeodataXform
+- uid: ESRI.ArcGIS.Geodatabase.IGeodataXform
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeodataXform
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeodataXform.html
+  name: IGeodataXform
+  nameWithType: IGeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeodataXform
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset2.html#ESRI_ArcGIS_Geodatabase_IGeoDataset2_NativeSpatialReference
+  name: NativeSpatialReference
+  nameWithType: IGeoDataset2.NativeSpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeSpatialReference
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset2.html#ESRI_ArcGIS_Geodatabase_IGeoDataset2_NativeExtent
+  name: NativeExtent
+  nameWithType: IGeoDataset2.NativeExtent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset2.NativeExtent

@@ -1,0 +1,1 @@
+"C:\Tools\XMLSnippetsInjector\XMLSnippetsInjector.exe" "C:\Repos\Wolf-K\EnterpriseSDK\bin" "C:\Repos\Wolf-K\EnterpriseSDK\Samples\dot net\SOE\EditAnnotationRESTSOE" "C:\Repos\Wolf-K\EnterpriseSDK\output"

@@ -1,0 +1,303 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  commentId: T:ESRI.ArcGIS.esriSystem.IServerEnvironment
+  id: IServerEnvironment
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID
+  - ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory(System.String)
+  - ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+  - ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+  - ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+  langs:
+  - csharp
+  - vb
+  name: IServerEnvironment
+  nameWithType: IServerEnvironment
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to Server configuration information.
+  example: []
+  syntax:
+    content: >-
+      [Guid("32D4C328-E473-4615-922C-63C108F55E60")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IServerEnvironment
+    content.vb: >-
+      <Guid("32D4C328-E473-4615-922C-63C108F55E60")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IServerEnvironment
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 32D4C328-E473-4615-922C-63C108F55E60
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+  commentId: P:ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+  id: Log
+  parent: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Log
+  nameWithType: IServerEnvironment.Log
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves an ILog interface that can be used to add logging messages.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILog Log { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.ILog
+    content.vb: ReadOnly Property Log As ILog
+  overload: ESRI.ArcGIS.esriSystem.IServerEnvironment.Log*
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+  commentId: P:ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+  id: Properties
+  parent: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IServerEnvironment.Properties
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves an IProperySet interface that provides access to the server configuration information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPropertySet Properties { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: ReadOnly Property Properties As IPropertySet
+  overload: ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties*
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+  commentId: P:ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+  id: JobTracker
+  parent: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  langs:
+  - csharp
+  - vb
+  name: JobTracker
+  nameWithType: IServerEnvironment.JobTracker
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves IJobTracker interface that provides access to members that track and control execution of jobs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJobTracker JobTracker { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJobTracker
+    content.vb: ReadOnly Property JobTracker As IJobTracker
+  overload: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker*
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory(System.String)
+  commentId: P:ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory(System.String)
+  id: JobDirectory(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  langs:
+  - csharp
+  - vb
+  name: JobDirectory[string]
+  nameWithType: IServerEnvironment.JobDirectory[string]
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves job directory for given job.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string JobDirectory[string JobID] { get; }
+    parameters:
+    - id: JobID
+      type: System.String
+    return:
+      type: System.String
+    content.vb: ReadOnly Property JobDirectory(JobID As String) As String
+  overload: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory*
+  nameWithType.vb: IServerEnvironment.JobDirectory(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory(String)
+  name.vb: JobDirectory(String)
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID
+  commentId: P:ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID
+  id: CurrentJobID
+  parent: ESRI.ArcGIS.esriSystem.IServerEnvironment
+  langs:
+  - csharp
+  - vb
+  name: CurrentJobID
+  nameWithType: IServerEnvironment.CurrentJobID
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves current job ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CurrentJobID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CurrentJobID As String
+  overload: ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.Log*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IServerEnvironment.html#ESRI_ArcGIS_esriSystem_IServerEnvironment_Log
+  name: Log
+  nameWithType: IServerEnvironment.Log
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.Log
+- uid: ESRI.ArcGIS.esriSystem.ILog
+  commentId: T:ESRI.ArcGIS.esriSystem.ILog
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILog.html
+  name: ILog
+  nameWithType: ILog
+  fullName: ESRI.ArcGIS.esriSystem.ILog
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IServerEnvironment.html#ESRI_ArcGIS_esriSystem_IServerEnvironment_Properties
+  name: Properties
+  nameWithType: IServerEnvironment.Properties
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.Properties
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IServerEnvironment.html#ESRI_ArcGIS_esriSystem_IServerEnvironment_JobTracker
+  name: JobTracker
+  nameWithType: IServerEnvironment.JobTracker
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobTracker
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker
+  commentId: T:ESRI.ArcGIS.esriSystem.IJobTracker
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobTracker.html
+  name: IJobTracker
+  nameWithType: IJobTracker
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IServerEnvironment.html#ESRI_ArcGIS_esriSystem_IServerEnvironment_JobDirectory_System_String_
+  name: JobDirectory
+  nameWithType: IServerEnvironment.JobDirectory
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.JobDirectory
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IServerEnvironment.html#ESRI_ArcGIS_esriSystem_IServerEnvironment_CurrentJobID
+  name: CurrentJobID
+  nameWithType: IServerEnvironment.CurrentJobID
+  fullName: ESRI.ArcGIS.esriSystem.IServerEnvironment.CurrentJobID

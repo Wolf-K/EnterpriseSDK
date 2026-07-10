@@ -1,0 +1,333 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  id: IRawBlocks
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock
+  - ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush
+  - ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+  - ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  langs:
+  - csharp
+  - vb
+  name: IRawBlocks
+  nameWithType: IRawBlocks
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control raw pixel block access.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F20FF8FF-643A-4669-A465-E14A5095E7DD")]
+
+      public interface IRawBlocks
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F20FF8FF-643A-4669-A465-E14A5095E7DD")>
+
+      Public Interface IRawBlocks
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterBandClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F20FF8FF-643A-4669-A465-E14A5095E7DD
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock
+  id: CreatePixelBlock
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  langs:
+  - csharp
+  - vb
+  name: CreatePixelBlock()
+  nameWithType: IRawBlocks.CreatePixelBlock()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Create a compatible pixel block.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPixelBlock CreatePixelBlock()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Function CreatePixelBlock() As IPixelBlock
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: ReadBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  langs:
+  - csharp
+  - vb
+  name: ReadBlock(int, int, int, IPixelBlock)
+  nameWithType: IRawBlocks.ReadBlock(int, int, int, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock(int, int, int, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void ReadBlock(int tx, int ty, int Level, IPixelBlock pPixelBlock)
+    parameters:
+    - id: tx
+      type: System.Int32
+    - id: ty
+      type: System.Int32
+    - id: Level
+      type: System.Int32
+    - id: pPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub ReadBlock(tx As Integer, ty As Integer, Level As Integer, pPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock*
+  nameWithType.vb: IRawBlocks.ReadBlock(Integer, Integer, Integer, IPixelBlock)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock(Integer, Integer, Integer, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  name.vb: ReadBlock(Integer, Integer, Integer, IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: WriteBlock(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  langs:
+  - csharp
+  - vb
+  name: WriteBlock(int, int, int, IPixelBlock)
+  nameWithType: IRawBlocks.WriteBlock(int, int, int, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock(int, int, int, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void WriteBlock(int tx, int ty, int Level, IPixelBlock pPixelBlock)
+    parameters:
+    - id: tx
+      type: System.Int32
+    - id: ty
+      type: System.Int32
+    - id: Level
+      type: System.Int32
+    - id: pPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub WriteBlock(tx As Integer, ty As Integer, Level As Integer, pPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock*
+  nameWithType.vb: IRawBlocks.WriteBlock(Integer, Integer, Integer, IPixelBlock)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock(Integer, Integer, Integer, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  name.vb: WriteBlock(Integer, Integer, Integer, IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush
+  id: Flush
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: IRawBlocks.Flush()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Flushes buffered data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Flush()
+    content.vb: Sub Flush()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+  id: RasterInfo
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks
+  langs:
+  - csharp
+  - vb
+  name: RasterInfo
+  nameWithType: IRawBlocks.RasterInfo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The raster information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterInfo RasterInfo { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterInfo
+    content.vb: ReadOnly Property RasterInfo As IRasterInfo
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html#ESRI_ArcGIS_DatasourcesRaster_IRawBlocks_CreatePixelBlock
+  name: CreatePixelBlock
+  nameWithType: IRawBlocks.CreatePixelBlock
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.CreatePixelBlock
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html#ESRI_ArcGIS_DatasourcesRaster_IRawBlocks_ReadBlock_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: ReadBlock
+  nameWithType: IRawBlocks.ReadBlock
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.ReadBlock
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html#ESRI_ArcGIS_DatasourcesRaster_IRawBlocks_WriteBlock_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: WriteBlock
+  nameWithType: IRawBlocks.WriteBlock
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.WriteBlock
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html#ESRI_ArcGIS_DatasourcesRaster_IRawBlocks_Flush
+  name: Flush
+  nameWithType: IRawBlocks.Flush
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.Flush
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.html#ESRI_ArcGIS_DatasourcesRaster_IRawBlocks_RasterInfo
+  name: RasterInfo
+  nameWithType: IRawBlocks.RasterInfo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawBlocks.RasterInfo
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterInfo
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterInfo
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterInfo.html
+  name: IRasterInfo
+  nameWithType: IRasterInfo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterInfo

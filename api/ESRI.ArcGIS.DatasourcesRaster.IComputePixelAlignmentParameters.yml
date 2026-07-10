@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  id: IComputePixelAlignmentParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+  - ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+  - ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin
+  langs:
+  - csharp
+  - vb
+  name: IComputePixelAlignmentParameters
+  nameWithType: IComputePixelAlignmentParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control how pixel alignment of selected mosaic dataset items is computed.
+  example: []
+  syntax:
+    content: >-
+      [Guid("4E0E5BA2-1E95-428F-95D5-693D62BEB036")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IComputePixelAlignmentParameters
+    content.vb: >-
+      <Guid("4E0E5BA2-1E95-428F-95D5-693D62BEB036")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IComputePixelAlignmentParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ComputePixelAlignmentParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4E0E5BA2-1E95-428F-95D5-693D62BEB036
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+  id: MinimumCellSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  langs:
+  - csharp
+  - vb
+  name: MinimumCellSize
+  nameWithType: IComputePixelAlignmentParameters.MinimumCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The optional lower limit of the visibility of candidate items allowed to participate in the analysis of pixel alignment. For a selected item to be eligible, it must be visible between MinimumCellSize and MaximumCellSize and it's cell size must also lie within
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint MinimumCellSize { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Property MinimumCellSize As IPoint
+  overload: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+  id: MaximumCellSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  langs:
+  - csharp
+  - vb
+  name: MaximumCellSize
+  nameWithType: IComputePixelAlignmentParameters.MaximumCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The optional upper limit of the visibility of candidate items allowed to participate in the analysis of pixel alignment. For a selected item to be eligible, it must be visible between MinimumCellSize and MaximumCellSize and it's cell size must also lie within
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint MaximumCellSize { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Property MaximumCellSize As IPoint
+  overload: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin
+  id: Origin
+  parent: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: IComputePixelAlignmentParameters.Origin
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The optional origin against which pixel alignment of eligible items is computed. The parameter defaults to the top-left corner of the first eligible item.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint Origin { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Property Origin As IPoint
+  overload: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.html#ESRI_ArcGIS_DatasourcesRaster_IComputePixelAlignmentParameters_MinimumCellSize
+  name: MinimumCellSize
+  nameWithType: IComputePixelAlignmentParameters.MinimumCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MinimumCellSize
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.html#ESRI_ArcGIS_DatasourcesRaster_IComputePixelAlignmentParameters_MaximumCellSize
+  name: MaximumCellSize
+  nameWithType: IComputePixelAlignmentParameters.MaximumCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.MaximumCellSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.html#ESRI_ArcGIS_DatasourcesRaster_IComputePixelAlignmentParameters_Origin
+  name: Origin
+  nameWithType: IComputePixelAlignmentParameters.Origin
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputePixelAlignmentParameters.Origin

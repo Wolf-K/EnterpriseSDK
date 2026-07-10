@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject
+  commentId: T:ESRI.ArcGIS.Geodatabase.IArchivableObject
+  id: IArchivableObject
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving(System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving(ESRI.ArcGIS.esriSystem.ISet,System.Object,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving
+  langs:
+  - csharp
+  - vb
+  name: IArchivableObject
+  nameWithType: IArchivableObject
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Guid("5A6D0742-CD6B-4502-9251-AF9CB7ACAD51")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IArchivableObject
+    content.vb: >-
+      <Guid("5A6D0742-CD6B-4502-9251-AF9CB7ACAD51")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IArchivableObject
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5A6D0742-CD6B-4502-9251-AF9CB7ACAD51
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving(ESRI.ArcGIS.esriSystem.ISet,System.Object,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving(ESRI.ArcGIS.esriSystem.ISet,System.Object,System.Boolean)
+  id: EnableArchiving(ESRI.ArcGIS.esriSystem.ISet,System.Object,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IArchivableObject
+  langs:
+  - csharp
+  - vb
+  name: EnableArchiving(ISet, object, bool)
+  nameWithType: IArchivableObject.EnableArchiving(ISet, object, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving(ESRI.ArcGIS.esriSystem.ISet, object, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void EnableArchiving(ISet archiveRegistrationInfos, object SeedTimeStamp, bool traverseRelationships)
+    parameters:
+    - id: archiveRegistrationInfos
+      type: ESRI.ArcGIS.esriSystem.ISet
+    - id: SeedTimeStamp
+      type: System.Object
+    - id: traverseRelationships
+      type: System.Boolean
+    content.vb: Sub EnableArchiving(archiveRegistrationInfos As ISet, SeedTimeStamp As Object, traverseRelationships As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving*
+  nameWithType.vb: IArchivableObject.EnableArchiving(ISet, Object, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving(ESRI.ArcGIS.esriSystem.ISet, Object, Boolean)
+  name.vb: EnableArchiving(ISet, Object, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving(System.Boolean,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving(System.Boolean,System.Boolean)
+  id: DisableArchiving(System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IArchivableObject
+  langs:
+  - csharp
+  - vb
+  name: DisableArchiving(bool, bool)
+  nameWithType: IArchivableObject.DisableArchiving(bool, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving(bool, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Disable historical archiving for this object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DisableArchiving(bool deleteArchive, bool traverseRelationships)
+    parameters:
+    - id: deleteArchive
+      type: System.Boolean
+    - id: traverseRelationships
+      type: System.Boolean
+    content.vb: Sub DisableArchiving(deleteArchive As Boolean, traverseRelationships As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving*
+  nameWithType.vb: IArchivableObject.DisableArchiving(Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving(Boolean, Boolean)
+  name.vb: DisableArchiving(Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving
+  commentId: P:ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving
+  id: IsArchiving
+  parent: ESRI.ArcGIS.Geodatabase.IArchivableObject
+  langs:
+  - csharp
+  - vb
+  name: IsArchiving
+  nameWithType: IArchivableObject.IsArchiving
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: True if this object has historical archiving enabled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsArchiving { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsArchiving As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IArchivableObject.html#ESRI_ArcGIS_Geodatabase_IArchivableObject_EnableArchiving_ESRI_ArcGIS_esriSystem_ISet_System_Object_System_Boolean_
+  name: EnableArchiving
+  nameWithType: IArchivableObject.EnableArchiving
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.EnableArchiving
+- uid: ESRI.ArcGIS.esriSystem.ISet
+  commentId: T:ESRI.ArcGIS.esriSystem.ISet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISet.html
+  name: ISet
+  nameWithType: ISet
+  fullName: ESRI.ArcGIS.esriSystem.ISet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IArchivableObject.html#ESRI_ArcGIS_Geodatabase_IArchivableObject_DisableArchiving_System_Boolean_System_Boolean_
+  name: DisableArchiving
+  nameWithType: IArchivableObject.DisableArchiving
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.DisableArchiving
+- uid: ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IArchivableObject.html#ESRI_ArcGIS_Geodatabase_IArchivableObject_IsArchiving
+  name: IsArchiving
+  nameWithType: IArchivableObject.IsArchiving
+  fullName: ESRI.ArcGIS.Geodatabase.IArchivableObject.IsArchiving

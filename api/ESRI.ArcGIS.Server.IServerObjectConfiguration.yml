@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectConfiguration
+  id: IServerObjectConfiguration
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout
+  - ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+  langs:
+  - csharp
+  - vb
+  name: IServerObjectConfiguration
+  nameWithType: IServerObjectConfiguration
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to administrators to members that control the behavior and properties of a server object configuration.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("832DAB4C-A03D-429E-8C14-401E3F807284")]
+
+      public interface IServerObjectConfiguration
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("832DAB4C-A03D-429E-8C14-401E3F807284")>
+
+      Public Interface IServerObjectConfiguration
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 832DAB4C-A03D-429E-8C14-401E3F807284
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+  id: Name
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IServerObjectConfiguration.Name
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Name of the server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.Name*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+  id: TypeName
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: TypeName
+  nameWithType: IServerObjectConfiguration.TypeName
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Type of the server object configuration (MapServer or GeocodeServer).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TypeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TypeName As String
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+  id: Description
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IServerObjectConfiguration.Description
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Description of the server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Description As String
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.Description*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+  id: Properties
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IServerObjectConfiguration.Properties
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Initialization parameters and properties for the server objects created by the server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPropertySet Properties { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Property Properties As IPropertySet
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+  id: RecycleProperties
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: RecycleProperties
+  nameWithType: IServerObjectConfiguration.RecycleProperties
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The recycling properties for the server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPropertySet RecycleProperties { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Property RecycleProperties As IPropertySet
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+  id: MinInstances
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MinInstances
+  nameWithType: IServerObjectConfiguration.MinInstances
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The minimum number of server object instances for a server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MinInstances { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MinInstances As Integer
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+  id: MaxInstances
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: MaxInstances
+  nameWithType: IServerObjectConfiguration.MaxInstances
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The maximum number of server object instances for a server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaxInstances { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaxInstances As Integer
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+  id: IsPooled
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsPooled
+  nameWithType: IServerObjectConfiguration.IsPooled
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Indicates whether the server objects defined by this configuration are pooled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsPooled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsPooled As Boolean
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+  id: IsolationLevel
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: IsolationLevel
+  nameWithType: IServerObjectConfiguration.IsolationLevel
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The isolation level of the server objects defined by the server object configuration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriServerIsolationLevel IsolationLevel { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.esriServerIsolationLevel
+    content.vb: Property IsolationLevel As esriServerIsolationLevel
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+  id: StartupType
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: StartupType
+  nameWithType: IServerObjectConfiguration.StartupType
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The startup type for this server object configuration. Startup type describes whether the server object configuration is started when the server object manager service is started for the GIS server.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriStartupType StartupType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.esriStartupType
+    content.vb: Property StartupType As esriStartupType
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+  id: WaitTimeout
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: WaitTimeout
+  nameWithType: IServerObjectConfiguration.WaitTimeout
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Maximum time (in seconds) a client will wait for an instance of a server object for this server object configuration using the CreateServerContext method on IServerObjectManager before timing out.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int WaitTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property WaitTimeout As Integer
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout*
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout
+  commentId: P:ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout
+  id: UsageTimeout
+  parent: ESRI.ArcGIS.Server.IServerObjectConfiguration
+  langs:
+  - csharp
+  - vb
+  name: UsageTimeout
+  nameWithType: IServerObjectConfiguration.UsageTimeout
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Maximum time (in seconds) a client can hold onto an instance of a server object for this server object configuration before releasing it back to the server. It is the maximum time allowed between calling CreateServerContext and ReleaseServerContext.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int UsageTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property UsageTimeout As Integer
+  overload: ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout*
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Name*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_Name
+  name: Name
+  nameWithType: IServerObjectConfiguration.Name
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_TypeName
+  name: TypeName
+  nameWithType: IServerObjectConfiguration.TypeName
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.TypeName
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Description*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_Description
+  name: Description
+  nameWithType: IServerObjectConfiguration.Description
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Description
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_Properties
+  name: Properties
+  nameWithType: IServerObjectConfiguration.Properties
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.Properties
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_RecycleProperties
+  name: RecycleProperties
+  nameWithType: IServerObjectConfiguration.RecycleProperties
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.RecycleProperties
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_MinInstances
+  name: MinInstances
+  nameWithType: IServerObjectConfiguration.MinInstances
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.MinInstances
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_MaxInstances
+  name: MaxInstances
+  nameWithType: IServerObjectConfiguration.MaxInstances
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.MaxInstances
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_IsPooled
+  name: IsPooled
+  nameWithType: IServerObjectConfiguration.IsPooled
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsPooled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_IsolationLevel
+  name: IsolationLevel
+  nameWithType: IServerObjectConfiguration.IsolationLevel
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.IsolationLevel
+- uid: ESRI.ArcGIS.Server.esriServerIsolationLevel
+  commentId: T:ESRI.ArcGIS.Server.esriServerIsolationLevel
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.esriServerIsolationLevel.html
+  name: esriServerIsolationLevel
+  nameWithType: esriServerIsolationLevel
+  fullName: ESRI.ArcGIS.Server.esriServerIsolationLevel
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_StartupType
+  name: StartupType
+  nameWithType: IServerObjectConfiguration.StartupType
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.StartupType
+- uid: ESRI.ArcGIS.Server.esriStartupType
+  commentId: T:ESRI.ArcGIS.Server.esriStartupType
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.esriStartupType.html
+  name: esriStartupType
+  nameWithType: esriStartupType
+  fullName: ESRI.ArcGIS.Server.esriStartupType
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_WaitTimeout
+  name: WaitTimeout
+  nameWithType: IServerObjectConfiguration.WaitTimeout
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.WaitTimeout
+- uid: ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectConfiguration.html#ESRI_ArcGIS_Server_IServerObjectConfiguration_UsageTimeout
+  name: UsageTimeout
+  nameWithType: IServerObjectConfiguration.UsageTimeout
+  fullName: ESRI.ArcGIS.Server.IServerObjectConfiguration.UsageTimeout

@@ -1,0 +1,561 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  commentId: T:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  id: IHistoricalTrafficData
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  langs:
+  - csharp
+  - vb
+  name: IHistoricalTrafficData
+  nameWithType: IHistoricalTrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members in historical traffic data.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("074C64B3-0D8B-471D-A16E-606C70DDC84A")]
+
+      public interface IHistoricalTrafficData
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("074C64B3-0D8B-471D-A16E-606C70DDC84A")>
+
+      Public Interface IHistoricalTrafficData
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 074C64B3-0D8B-471D-A16E-606C70DDC84A
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  id: ProfilesTableName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: ProfilesTableName
+  nameWithType: IHistoricalTrafficData.ProfilesTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the table containing profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ProfilesTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ProfilesTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  id: TimeSliceDurationInMinutes
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: TimeSliceDurationInMinutes
+  nameWithType: IHistoricalTrafficData.TimeSliceDurationInMinutes
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The duration of time slice in minutes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TimeSliceDurationInMinutes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property TimeSliceDurationInMinutes As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  id: FirstTimeSliceStartTime
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: FirstTimeSliceStartTime
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceStartTime
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The start time of valid period of a day for traffic data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: DateTime FirstTimeSliceStartTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Property FirstTimeSliceStartTime As Date
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  id: FirstTimeSliceFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: FirstTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name of the first time slice of the given period in the profile table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string FirstTimeSliceFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FirstTimeSliceFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  id: LastTimeSliceFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: LastTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.LastTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name of the last time slice of the given period in the profile table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string LastTimeSliceFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LastTimeSliceFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  id: JoinTableName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableName
+  nameWithType: IHistoricalTrafficData.JoinTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the join table between edges and profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string JoinTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property JoinTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  id: JoinTableBaseTravelTimeFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseTravelTimeFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for base travel time in the join table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string JoinTableBaseTravelTimeFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property JoinTableBaseTravelTimeFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  id: JoinTableBaseTravelTimeUnits
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseTravelTimeUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Base travel time units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkAttributeUnits JoinTableBaseTravelTimeUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    content.vb: Property JoinTableBaseTravelTimeUnits As esriNetworkAttributeUnits
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  id: JoinTableProfileIDFieldNames
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableProfileIDFieldNames
+  nameWithType: IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field names of the historic join table pointing to speed profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray JoinTableProfileIDFieldNames { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Property JoinTableProfileIDFieldNames As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  id: JoinTableBaseSpeedFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseSpeedFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for base speed in the join table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string JoinTableBaseSpeedFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property JoinTableBaseSpeedFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  id: JoinTableBaseSpeedUnits
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseSpeedUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Base speed units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkAttributeUnits JoinTableBaseSpeedUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    content.vb: Property JoinTableBaseSpeedUnits As esriNetworkAttributeUnits
+  overload: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_ProfilesTableName
+  name: ProfilesTableName
+  nameWithType: IHistoricalTrafficData.ProfilesTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_TimeSliceDurationInMinutes
+  name: TimeSliceDurationInMinutes
+  nameWithType: IHistoricalTrafficData.TimeSliceDurationInMinutes
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_FirstTimeSliceStartTime
+  name: FirstTimeSliceStartTime
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceStartTime
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_FirstTimeSliceFieldName
+  name: FirstTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_LastTimeSliceFieldName
+  name: LastTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.LastTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableName
+  name: JoinTableName
+  nameWithType: IHistoricalTrafficData.JoinTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseTravelTimeFieldName
+  name: JoinTableBaseTravelTimeFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseTravelTimeUnits
+  name: JoinTableBaseTravelTimeUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits.html
+  name: esriNetworkAttributeUnits
+  nameWithType: esriNetworkAttributeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableProfileIDFieldNames
+  name: JoinTableProfileIDFieldNames
+  nameWithType: IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseSpeedFieldName
+  name: JoinTableBaseSpeedFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseSpeedUnits
+  name: JoinTableBaseSpeedUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits

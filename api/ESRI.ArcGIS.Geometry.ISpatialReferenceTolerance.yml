@@ -1,0 +1,625 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  id: ISpatialReferenceTolerance
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+  langs:
+  - csharp
+  - vb
+  name: ISpatialReferenceTolerance
+  nameWithType: ISpatialReferenceTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that specify the spatial and M tolerances of a spatial reference.
+  example: []
+  syntax:
+    content: >-
+      [Guid("587DC301-2766-4597-A3E5-9FA152329EB8")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISpatialReferenceTolerance
+    content.vb: >-
+      <Guid("587DC301-2766-4597-A3E5-9FA152329EB8")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISpatialReferenceTolerance
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeographicCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.ProjectedCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.UnknownCoordinateSystemClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 587DC301-2766-4597-A3E5-9FA152329EB8
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance
+  id: SetDefaultXYTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultXYTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetDefaultXYTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the default cluster tolerance used to control point coalescing in the X and Y dimensions (the equivalent of 1 mm in the current spatial reference units).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultXYTolerance()
+    content.vb: Sub SetDefaultXYTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance
+  id: SetMinimumXYTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetMinimumXYTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetMinimumXYTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the xy cluster tolerance to be 2.0 * resolution. Use this value for compatibility with pre-9.2 topological and relational operators.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetMinimumXYTolerance()
+    content.vb: Sub SetMinimumXYTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance
+  id: SetDefaultZTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultZTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetDefaultZTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the default value for the Z cluster tolerance used to control point coalescing strictly along the Z axis (the equivalent of 1 mm in the current vertical coordinate system units).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultZTolerance()
+    content.vb: Sub SetDefaultZTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance
+  id: SetMinimumZTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetMinimumZTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetMinimumZTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the minimum value for the Z cluster tolerance (i.e., pre 9.2) used to control point coalescing strictly along the Z axis (the equivalent of 1 mm in the current vertical coordinate system units).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetMinimumZTolerance()
+    content.vb: Sub SetMinimumZTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance
+  id: SetDefaultMTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultMTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetDefaultMTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the default tolerance used to determine equality of M values (2.0 * m resolution).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetDefaultMTolerance()
+    content.vb: Sub SetDefaultMTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance
+  id: SetMinimumMTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: SetMinimumMTolerance()
+  nameWithType: ISpatialReferenceTolerance.SetMinimumMTolerance()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the minimum tolerance (i.e., pre 9.2) used to determine equality of M values (2.0 * m resolution).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetMinimumMTolerance()
+    content.vb: Sub SetMinimumMTolerance()
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: IsXYToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: IsXYToleranceEqual(ISpatialReference)
+  nameWithType: ISpatialReferenceTolerance.IsXYToleranceEqual(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsXYToleranceEqual(ISpatialReference otherSR)
+    parameters:
+    - id: otherSR
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    return:
+      type: System.Boolean
+    content.vb: Function IsXYToleranceEqual(otherSR As ISpatialReference) As Boolean
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: IsMToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: IsMToleranceEqual(ISpatialReference)
+  nameWithType: ISpatialReferenceTolerance.IsMToleranceEqual(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsMToleranceEqual(ISpatialReference otherSR)
+    parameters:
+    - id: otherSR
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    return:
+      type: System.Boolean
+    content.vb: Function IsMToleranceEqual(otherSR As ISpatialReference) As Boolean
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: IsZToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: IsZToleranceEqual(ISpatialReference)
+  nameWithType: ISpatialReferenceTolerance.IsZToleranceEqual(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsZToleranceEqual(ISpatialReference otherSR)
+    parameters:
+    - id: otherSR
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    return:
+      type: System.Boolean
+    content.vb: Function IsZToleranceEqual(otherSR As ISpatialReference) As Boolean
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+  id: XYTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: XYTolerance
+  nameWithType: ISpatialReferenceTolerance.XYTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The xy tolerance used to control point coalescing in the X and Y dimensions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double XYTolerance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property XYTolerance As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+  id: ZTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: ZTolerance
+  nameWithType: ISpatialReferenceTolerance.ZTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The tolerance used to control point coalescing strictly along the Z axis.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZTolerance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ZTolerance As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+  id: MTolerance
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: MTolerance
+  nameWithType: ISpatialReferenceTolerance.MTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The tolerance used to determine equality of M values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MTolerance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MTolerance As Double
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+  id: XYToleranceValid
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: XYToleranceValid
+  nameWithType: ISpatialReferenceTolerance.XYToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns esriSRToleranceOK if the XY tolerance is well defined (not NaN) and &gt;= the minimum XY tolerance.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSRToleranceEnum XYToleranceValid { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+    content.vb: ReadOnly Property XYToleranceValid As esriSRToleranceEnum
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+  id: ZToleranceValid
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: ZToleranceValid
+  nameWithType: ISpatialReferenceTolerance.ZToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns true if the Z tolerance is well defined (not NaN) and &gt;= the minimum Z tolerance.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSRToleranceEnum ZToleranceValid { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+    content.vb: ReadOnly Property ZToleranceValid As esriSRToleranceEnum
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid
+  commentId: P:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid
+  id: MToleranceValid
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance
+  langs:
+  - csharp
+  - vb
+  name: MToleranceValid
+  nameWithType: ISpatialReferenceTolerance.MToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns true if the M tolerance is well defined (not NaN) and &gt;= the minimum M tolerance.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSRToleranceEnum MToleranceValid { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+    content.vb: ReadOnly Property MToleranceValid As esriSRToleranceEnum
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetDefaultXYTolerance
+  name: SetDefaultXYTolerance
+  nameWithType: ISpatialReferenceTolerance.SetDefaultXYTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultXYTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetMinimumXYTolerance
+  name: SetMinimumXYTolerance
+  nameWithType: ISpatialReferenceTolerance.SetMinimumXYTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumXYTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetDefaultZTolerance
+  name: SetDefaultZTolerance
+  nameWithType: ISpatialReferenceTolerance.SetDefaultZTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultZTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetMinimumZTolerance
+  name: SetMinimumZTolerance
+  nameWithType: ISpatialReferenceTolerance.SetMinimumZTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumZTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetDefaultMTolerance
+  name: SetDefaultMTolerance
+  nameWithType: ISpatialReferenceTolerance.SetDefaultMTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetDefaultMTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_SetMinimumMTolerance
+  name: SetMinimumMTolerance
+  nameWithType: ISpatialReferenceTolerance.SetMinimumMTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.SetMinimumMTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_IsXYToleranceEqual_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: IsXYToleranceEqual
+  nameWithType: ISpatialReferenceTolerance.IsXYToleranceEqual
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsXYToleranceEqual
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_IsMToleranceEqual_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: IsMToleranceEqual
+  nameWithType: ISpatialReferenceTolerance.IsMToleranceEqual
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsMToleranceEqual
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_IsZToleranceEqual_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: IsZToleranceEqual
+  nameWithType: ISpatialReferenceTolerance.IsZToleranceEqual
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.IsZToleranceEqual
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_XYTolerance
+  name: XYTolerance
+  nameWithType: ISpatialReferenceTolerance.XYTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYTolerance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_ZTolerance
+  name: ZTolerance
+  nameWithType: ISpatialReferenceTolerance.ZTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_MTolerance
+  name: MTolerance
+  nameWithType: ISpatialReferenceTolerance.MTolerance
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MTolerance
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_XYToleranceValid
+  name: XYToleranceValid
+  nameWithType: ISpatialReferenceTolerance.XYToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.XYToleranceValid
+- uid: ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+  commentId: T:ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriSRToleranceEnum.html
+  name: esriSRToleranceEnum
+  nameWithType: esriSRToleranceEnum
+  fullName: ESRI.ArcGIS.Geometry.esriSRToleranceEnum
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_ZToleranceValid
+  name: ZToleranceValid
+  nameWithType: ISpatialReferenceTolerance.ZToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.ZToleranceValid
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.html#ESRI_ArcGIS_Geometry_ISpatialReferenceTolerance_MToleranceValid
+  name: MToleranceValid
+  nameWithType: ISpatialReferenceTolerance.MToleranceValid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceTolerance.MToleranceValid

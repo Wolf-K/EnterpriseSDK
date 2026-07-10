@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  id: ITrafficDataManager
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey(System.String)
+  - ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData(System.String,System.DateTime)
+  - ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert(System.UInt32,ESRI.ArcGIS.esriSystem.IDoubleArray)
+  - ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing(System.DateTime,System.Int32,System.Int32,System.DateTime,System.Int32,ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing(System.String,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ITrafficDataManager
+  nameWithType: ITrafficDataManager
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides editing capabilities for creating or deleting dynamic traffic files.
+  example: []
+  syntax:
+    content: >-
+      [Guid("DD1AE245-B211-4502-89D4-B880BB10701D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITrafficDataManager
+    content.vb: >-
+      <Guid("DD1AE245-B211-4502-89D4-B880BB10701D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITrafficDataManager
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TrafficDataManagerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DD1AE245-B211-4502-89D4-B880BB10701D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing(System.DateTime,System.Int32,System.Int32,System.DateTime,System.Int32,ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing(System.DateTime,System.Int32,System.Int32,System.DateTime,System.Int32,ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits,System.Int32,System.Int32)
+  id: StartEditing(System.DateTime,System.Int32,System.Int32,System.DateTime,System.Int32,ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  langs:
+  - csharp
+  - vb
+  name: StartEditing(DateTime, int, int, DateTime, int, esriNetworkAttributeUnits, int, int)
+  nameWithType: ITrafficDataManager.StartEditing(DateTime, int, int, DateTime, int, esriNetworkAttributeUnits, int, int)
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing(System.DateTime, int, int, System.DateTime, int, ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Starts a new edit session for tracking edits to a new dynamic traffic file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void StartEditing(DateTime feedUTCStartTime, int estimatedKeyCount, int timeSliceCount, DateTime firstTimeSliceUTCStartTime, int TimeSliceDurationInMinutes, esriNetworkAttributeUnits speedUnits, int updateIntervalInMinutes, int feedVersionNumber)
+    parameters:
+    - id: feedUTCStartTime
+      type: System.DateTime
+    - id: estimatedKeyCount
+      type: System.Int32
+    - id: timeSliceCount
+      type: System.Int32
+    - id: firstTimeSliceUTCStartTime
+      type: System.DateTime
+    - id: TimeSliceDurationInMinutes
+      type: System.Int32
+    - id: speedUnits
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    - id: updateIntervalInMinutes
+      type: System.Int32
+    - id: feedVersionNumber
+      type: System.Int32
+    content.vb: Sub StartEditing(feedUTCStartTime As Date, estimatedKeyCount As Integer, timeSliceCount As Integer, firstTimeSliceUTCStartTime As Date, TimeSliceDurationInMinutes As Integer, speedUnits As esriNetworkAttributeUnits, updateIntervalInMinutes As Integer, feedVersionNumber As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing*
+  nameWithType.vb: ITrafficDataManager.StartEditing(Date, Integer, Integer, Date, Integer, esriNetworkAttributeUnits, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing(Date, Integer, Integer, Date, Integer, ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits, Integer, Integer)
+  name.vb: StartEditing(Date, Integer, Integer, Date, Integer, esriNetworkAttributeUnits, Integer, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert(System.UInt32,ESRI.ArcGIS.esriSystem.IDoubleArray)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert(System.UInt32,ESRI.ArcGIS.esriSystem.IDoubleArray)
+  id: Insert(System.UInt32,ESRI.ArcGIS.esriSystem.IDoubleArray)
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  langs:
+  - csharp
+  - vb
+  name: Insert(uint, IDoubleArray)
+  nameWithType: ITrafficDataManager.Insert(uint, IDoubleArray)
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert(uint, ESRI.ArcGIS.esriSystem.IDoubleArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Insert(uint key, IDoubleArray pTimeSliceSpeeds)
+    parameters:
+    - id: key
+      type: System.UInt32
+    - id: pTimeSliceSpeeds
+      type: ESRI.ArcGIS.esriSystem.IDoubleArray
+    content.vb: Sub Insert(key As UInteger, pTimeSliceSpeeds As IDoubleArray)
+  overload: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert*
+  nameWithType.vb: ITrafficDataManager.Insert(UInteger, IDoubleArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert(UInteger, ESRI.ArcGIS.esriSystem.IDoubleArray)
+  name.vb: Insert(UInteger, IDoubleArray)
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing(System.String,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing(System.String,System.Boolean)
+  id: StopEditing(System.String,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  langs:
+  - csharp
+  - vb
+  name: StopEditing(string, bool)
+  nameWithType: ITrafficDataManager.StopEditing(string, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing(string, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Stops the current edit session and writes all current edits to a new dynamic traffic file in the specified folder.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void StopEditing(string feedFolderPath, bool createCompressedFile)
+    parameters:
+    - id: feedFolderPath
+      type: System.String
+    - id: createCompressedFile
+      type: System.Boolean
+    content.vb: Sub StopEditing(feedFolderPath As String, createCompressedFile As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing*
+  nameWithType.vb: ITrafficDataManager.StopEditing(String, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing(String, Boolean)
+  name.vb: StopEditing(String, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData(System.String,System.DateTime)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData(System.String,System.DateTime)
+  id: DeleteData(System.String,System.DateTime)
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  langs:
+  - csharp
+  - vb
+  name: DeleteData(string, DateTime)
+  nameWithType: ITrafficDataManager.DeleteData(string, DateTime)
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData(string, System.DateTime)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes all dynamic traffic files in the specified folder which are older than the specified cutoff date.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteData(string feedFolderPath, DateTime utcCutoffDate)
+    parameters:
+    - id: feedFolderPath
+      type: System.String
+    - id: utcCutoffDate
+      type: System.DateTime
+    content.vb: Sub DeleteData(feedFolderPath As String, utcCutoffDate As Date)
+  overload: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData*
+  nameWithType.vb: ITrafficDataManager.DeleteData(String, Date)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData(String, Date)
+  name.vb: DeleteData(String, Date)
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey(System.String)
+  id: ConvertTMCToKey(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficDataManager
+  langs:
+  - csharp
+  - vb
+  name: ConvertTMCToKey(string)
+  nameWithType: ITrafficDataManager.ConvertTMCToKey(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Converts a TMC string to a unique integer key value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: uint ConvertTMCToKey(string tmcCode)
+    parameters:
+    - id: tmcCode
+      type: System.String
+    return:
+      type: System.UInt32
+    content.vb: Function ConvertTMCToKey(tmcCode As String) As UInteger
+  overload: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey*
+  nameWithType.vb: ITrafficDataManager.ConvertTMCToKey(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey(String)
+  name.vb: ConvertTMCToKey(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.html#ESRI_ArcGIS_Geodatabase_ITrafficDataManager_StartEditing_System_DateTime_System_Int32_System_Int32_System_DateTime_System_Int32_ESRI_ArcGIS_Geodatabase_esriNetworkAttributeUnits_System_Int32_System_Int32_
+  name: StartEditing
+  nameWithType: ITrafficDataManager.StartEditing
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StartEditing
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits.html
+  name: esriNetworkAttributeUnits
+  nameWithType: esriNetworkAttributeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.html#ESRI_ArcGIS_Geodatabase_ITrafficDataManager_Insert_System_UInt32_ESRI_ArcGIS_esriSystem_IDoubleArray_
+  name: Insert
+  nameWithType: ITrafficDataManager.Insert
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.Insert
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: ESRI.ArcGIS.esriSystem.IDoubleArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IDoubleArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDoubleArray.html
+  name: IDoubleArray
+  nameWithType: IDoubleArray
+  fullName: ESRI.ArcGIS.esriSystem.IDoubleArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.html#ESRI_ArcGIS_Geodatabase_ITrafficDataManager_StopEditing_System_String_System_Boolean_
+  name: StopEditing
+  nameWithType: ITrafficDataManager.StopEditing
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.StopEditing
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.html#ESRI_ArcGIS_Geodatabase_ITrafficDataManager_DeleteData_System_String_System_DateTime_
+  name: DeleteData
+  nameWithType: ITrafficDataManager.DeleteData
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.DeleteData
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.html#ESRI_ArcGIS_Geodatabase_ITrafficDataManager_ConvertTMCToKey_System_String_
+  name: ConvertTMCToKey
+  nameWithType: ITrafficDataManager.ConvertTMCToKey
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficDataManager.ConvertTMCToKey

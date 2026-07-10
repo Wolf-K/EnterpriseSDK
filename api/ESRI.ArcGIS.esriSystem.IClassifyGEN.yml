@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  commentId: T:ESRI.ArcGIS.esriSystem.IClassifyGEN
+  id: IClassifyGEN
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+  - ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+  - ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify(System.Object,System.Object,System.Int32@)
+  - ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+  langs:
+  - csharp
+  - vb
+  name: IClassifyGEN
+  nameWithType: IClassifyGEN
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that control classification.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CBA26148-CD2C-44AC-BBF5-B228B55A198D")]
+
+      public interface IClassifyGEN
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CBA26148-CD2C-44AC-BBF5-B228B55A198D")>
+
+      Public Interface IClassifyGEN
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.DefinedIntervalClass
+  - ESRI.ArcGIS.esriSystem.EqualIntervalClass
+  - ESRI.ArcGIS.esriSystem.GeometricalIntervalClass
+  - ESRI.ArcGIS.esriSystem.NaturalBreaksClass
+  - ESRI.ArcGIS.esriSystem.QuantileClass
+  - ESRI.ArcGIS.esriSystem.StandardDeviationClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CBA26148-CD2C-44AC-BBF5-B228B55A198D
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify(System.Object,System.Object,System.Int32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify(System.Object,System.Object,System.Int32@)
+  id: Classify(System.Object,System.Object,System.Int32@)
+  parent: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  langs:
+  - csharp
+  - vb
+  name: Classify(object, object, ref int)
+  nameWithType: IClassifyGEN.Classify(object, object, ref int)
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify(object, object, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Classifies histogram data (array of values (doubles) and a paired array of frequencies (longs)) into the specified number of classes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Classify(object doubleArrayValues, object longArrayFrequencies, ref int numClasses)
+    parameters:
+    - id: doubleArrayValues
+      type: System.Object
+    - id: longArrayFrequencies
+      type: System.Object
+    - id: numClasses
+      type: System.Int32
+    content.vb: Sub Classify(doubleArrayValues As Object, longArrayFrequencies As Object, numClasses As Integer)
+  overload: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify*
+  nameWithType.vb: IClassifyGEN.Classify(Object, Object, Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify(Object, Object, Integer)
+  name.vb: Classify(Object, Object, Integer)
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+  commentId: P:ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+  id: ClassBreaks
+  parent: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  langs:
+  - csharp
+  - vb
+  name: ClassBreaks
+  nameWithType: IClassifyGEN.ClassBreaks
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The array of class breaks (double).  ClassBreaks(0) is the minimum value in the dataset, and subsequent breaks represent the upper limit of each class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object ClassBreaks { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property ClassBreaks As Object
+  overload: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks*
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+  commentId: P:ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+  id: MethodName
+  parent: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  langs:
+  - csharp
+  - vb
+  name: MethodName
+  nameWithType: IClassifyGEN.MethodName
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The name of the classification method (based on choice of classification object).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string MethodName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MethodName As String
+  overload: ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName*
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+  commentId: P:ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+  id: ClassID
+  parent: ESRI.ArcGIS.esriSystem.IClassifyGEN
+  langs:
+  - csharp
+  - vb
+  name: ClassID
+  nameWithType: IClassifyGEN.ClassID
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The CLSID for the classification object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: UID ClassID { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: ReadOnly Property ClassID As UID
+  overload: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IClassifyGEN.html#ESRI_ArcGIS_esriSystem_IClassifyGEN_Classify_System_Object_System_Object_System_Int32__
+  name: Classify
+  nameWithType: IClassifyGEN.Classify
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.Classify
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IClassifyGEN.html#ESRI_ArcGIS_esriSystem_IClassifyGEN_ClassBreaks
+  name: ClassBreaks
+  nameWithType: IClassifyGEN.ClassBreaks
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassBreaks
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IClassifyGEN.html#ESRI_ArcGIS_esriSystem_IClassifyGEN_MethodName
+  name: MethodName
+  nameWithType: IClassifyGEN.MethodName
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.MethodName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IClassifyGEN.html#ESRI_ArcGIS_esriSystem_IClassifyGEN_ClassID
+  name: ClassID
+  nameWithType: IClassifyGEN.ClassID
+  fullName: ESRI.ArcGIS.esriSystem.IClassifyGEN.ClassID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID

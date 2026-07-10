@@ -1,0 +1,768 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  commentId: T:ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  id: IContingentValueEdit
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2(System.Object)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange(System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize(ESRI.ArcGIS.Geodatabase.IFieldGroup)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange(System.Int32,System.Double,System.Double)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup(System.String)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue(System.Int32,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IContingentValueEdit
+  nameWithType: IContingentValueEdit
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that edit a contingent value.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("1EA6DEB1-CFA8-495F-BDEF-CFB9B75C5130")]
+
+      public interface IContingentValueEdit : IContingentValue
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("1EA6DEB1-CFA8-495F-BDEF-CFB9B75C5130")>
+
+      Public Interface IContingentValueEdit Inherits IContingentValue
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.ContingentValueClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1EA6DEB1-CFA8-495F-BDEF-CFB9B75C5130
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange(System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange(System.Int32,System.Double@,System.Double@)
+  id: GetRange(System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: GetRange(int, out double, out double)
+  nameWithType: IContingentValueEdit.GetRange(int, out double, out double)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange(int, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void GetRange(int FieldIndex, out double MinValue, out double MaxValue)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    - id: MinValue
+      type: System.Double
+    - id: MaxValue
+      type: System.Double
+    content.vb: Sub GetRange(FieldIndex As Integer, MinValue As Double, MaxValue As Double)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange*
+  nameWithType.vb: IContingentValueEdit.GetRange(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange(Integer, Double, Double)
+  name.vb: GetRange(Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize(ESRI.ArcGIS.Geodatabase.IFieldGroup)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize(ESRI.ArcGIS.Geodatabase.IFieldGroup)
+  id: Initialize(ESRI.ArcGIS.Geodatabase.IFieldGroup)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IFieldGroup)
+  nameWithType: IContingentValueEdit.Initialize(IFieldGroup)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize(ESRI.ArcGIS.Geodatabase.IFieldGroup)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Initialize(IFieldGroup FieldGroup)
+    parameters:
+    - id: FieldGroup
+      type: ESRI.ArcGIS.Geodatabase.IFieldGroup
+    content.vb: Sub Initialize(FieldGroup As IFieldGroup)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue(System.Int32)
+  id: AllowAnyDomainValue(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: AllowAnyDomainValue(int)
+  nameWithType: IContingentValueEdit.AllowAnyDomainValue(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This contingency allows any values from the field domain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AllowAnyDomainValue(int FieldIndex)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    content.vb: Sub AllowAnyDomainValue(FieldIndex As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue*
+  nameWithType.vb: IContingentValueEdit.AllowAnyDomainValue(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue(Integer)
+  name.vb: AllowAnyDomainValue(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull(System.Int32)
+  id: RequireNull(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: RequireNull(int)
+  nameWithType: IContingentValueEdit.RequireNull(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This contingency requires that the field value be null.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RequireNull(int FieldIndex)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    content.vb: Sub RequireNull(FieldIndex As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull*
+  nameWithType.vb: IContingentValueEdit.RequireNull(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull(Integer)
+  name.vb: RequireNull(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue(System.Int32,System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue(System.Int32,System.Object)
+  id: set_CodedValue(System.Int32,System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: set_CodedValue(int, object)
+  nameWithType: IContingentValueEdit.set_CodedValue(int, object)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue(int, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void set_CodedValue(int FieldIndex, object A_2)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    - id: A_2
+      type: System.Object
+    content.vb: Sub set_CodedValue(FieldIndex As Integer, A_2 As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue*
+  nameWithType.vb: IContingentValueEdit.set_CodedValue(Integer, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue(Integer, Object)
+  name.vb: set_CodedValue(Integer, Object)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange(System.Int32,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange(System.Int32,System.Double,System.Double)
+  id: PutRange(System.Int32,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: PutRange(int, double, double)
+  nameWithType: IContingentValueEdit.PutRange(int, double, double)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange(int, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This contingency limits the field value to a sub-range of a range domain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutRange(int FieldIndex, double MinValue, double MaxValue)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    - id: MinValue
+      type: System.Double
+    - id: MaxValue
+      type: System.Double
+    content.vb: Sub PutRange(FieldIndex As Integer, MinValue As Double, MaxValue As Double)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange*
+  nameWithType.vb: IContingentValueEdit.PutRange(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange(Integer, Double, Double)
+  name.vb: PutRange(Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup(System.String)
+  id: RenameFieldGroup(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: RenameFieldGroup(string)
+  nameWithType: IContingentValueEdit.RenameFieldGroup(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Renames the underlying Field Group. It does not do any initialization
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RenameFieldGroup(string fieldGroupName)
+    parameters:
+    - id: fieldGroupName
+      type: System.String
+    content.vb: Sub RenameFieldGroup(fieldGroupName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup*
+  nameWithType.vb: IContingentValueEdit.RenameFieldGroup(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup(String)
+  name.vb: RenameFieldGroup(String)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+  id: ID
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IContingentValueEdit.ID
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int ID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+  id: FieldGroup
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: FieldGroup
+  nameWithType: IContingentValueEdit.FieldGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: string FieldGroup { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property FieldGroup As String
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+  id: SubType
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: SubType
+  nameWithType: IContingentValueEdit.SubType
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int SubType { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SubType As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type(System.Int32)
+  id: Type(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: Type[int]
+  nameWithType: IContingentValueEdit.Type[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriContingentValueType Type[int FieldIndex] { get; }
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriContingentValueType
+    content.vb: ReadOnly Property Type(FieldIndex As Integer) As esriContingentValueType
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type*
+  nameWithType.vb: IContingentValueEdit.Type(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type(Integer)
+  name.vb: Type(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue(System.Int32)
+  id: CodedValue(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: CodedValue[int]
+  nameWithType: IContingentValueEdit.CodedValue[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object CodedValue[int FieldIndex] { get; }
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property CodedValue(FieldIndex As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue*
+  nameWithType.vb: IContingentValueEdit.CodedValue(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue(Integer)
+  name.vb: CodedValue(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+  id: IsRetired
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: IsRetired
+  nameWithType: IContingentValueEdit.IsRetired
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsRetired { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsRetired As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+  id: Count
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: IContingentValueEdit.Count
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+  id: ID_2
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: ID_2
+  nameWithType: IContingentValueEdit.ID_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The unique ID of the contingent value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ID_2 { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: WriteOnly Property ID_2 As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+  id: SubType_2
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: SubType_2
+  nameWithType: IContingentValueEdit.SubType_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The subtype the contingent value applies to (if on a subtype class).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SubType_2 { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: WriteOnly Property SubType_2 As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2*
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2(System.Object)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2(System.Object)
+  id: CodedValue_2(System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: CodedValue_2[object]
+  nameWithType: IContingentValueEdit.CodedValue_2[object]
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2[object]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object CodedValue_2[object FieldIndex] { set; }
+    parameters:
+    - id: FieldIndex
+      type: System.Object
+    return:
+      type: System.Object
+    content.vb: WriteOnly Property CodedValue_2(FieldIndex As Object) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2*
+  nameWithType.vb: IContingentValueEdit.CodedValue_2(Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2(Object)
+  name.vb: CodedValue_2(Object)
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2
+  commentId: P:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2
+  id: IsRetired_2
+  parent: ESRI.ArcGIS.Geodatabase.IContingentValueEdit
+  langs:
+  - csharp
+  - vb
+  name: IsRetired_2
+  nameWithType: IContingentValueEdit.IsRetired_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Is this contingency retired?
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsRetired_2 { set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: WriteOnly Property IsRetired_2 As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_GetRange_System_Int32_System_Double__System_Double__
+  name: GetRange
+  nameWithType: IContingentValueEdit.GetRange
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.GetRange
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_Initialize_ESRI_ArcGIS_Geodatabase_IFieldGroup_
+  name: Initialize
+  nameWithType: IContingentValueEdit.Initialize
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Initialize
+- uid: ESRI.ArcGIS.Geodatabase.IFieldGroup
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFieldGroup
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldGroup.html
+  name: IFieldGroup
+  nameWithType: IFieldGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldGroup
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_AllowAnyDomainValue_System_Int32_
+  name: AllowAnyDomainValue
+  nameWithType: IContingentValueEdit.AllowAnyDomainValue
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.AllowAnyDomainValue
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_RequireNull_System_Int32_
+  name: RequireNull
+  nameWithType: IContingentValueEdit.RequireNull
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RequireNull
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_set_CodedValue_System_Int32_System_Object_
+  name: set_CodedValue
+  nameWithType: IContingentValueEdit.set_CodedValue
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.set_CodedValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_PutRange_System_Int32_System_Double_System_Double_
+  name: PutRange
+  nameWithType: IContingentValueEdit.PutRange
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.PutRange
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_RenameFieldGroup_System_String_
+  name: RenameFieldGroup
+  nameWithType: IContingentValueEdit.RenameFieldGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.RenameFieldGroup
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_ID
+  name: ID
+  nameWithType: IContingentValueEdit.ID
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_FieldGroup
+  name: FieldGroup
+  nameWithType: IContingentValueEdit.FieldGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.FieldGroup
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_SubType
+  name: SubType
+  nameWithType: IContingentValueEdit.SubType
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_Type_System_Int32_
+  name: Type
+  nameWithType: IContingentValueEdit.Type
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Type
+- uid: ESRI.ArcGIS.Geodatabase.esriContingentValueType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriContingentValueType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriContingentValueType.html
+  name: esriContingentValueType
+  nameWithType: esriContingentValueType
+  fullName: ESRI.ArcGIS.Geodatabase.esriContingentValueType
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_CodedValue_System_Int32_
+  name: CodedValue
+  nameWithType: IContingentValueEdit.CodedValue
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_IsRetired
+  name: IsRetired
+  nameWithType: IContingentValueEdit.IsRetired
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_Count
+  name: Count
+  nameWithType: IContingentValueEdit.Count
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.Count
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_ID_2
+  name: ID_2
+  nameWithType: IContingentValueEdit.ID_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.ID_2
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_SubType_2
+  name: SubType_2
+  nameWithType: IContingentValueEdit.SubType_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.SubType_2
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_CodedValue_2_System_Object_
+  name: CodedValue_2
+  nameWithType: IContingentValueEdit.CodedValue_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.CodedValue_2
+- uid: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.html#ESRI_ArcGIS_Geodatabase_IContingentValueEdit_IsRetired_2
+  name: IsRetired_2
+  nameWithType: IContingentValueEdit.IsRetired_2
+  fullName: ESRI.ArcGIS.Geodatabase.IContingentValueEdit.IsRetired_2

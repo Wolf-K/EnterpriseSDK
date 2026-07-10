@@ -1,0 +1,600 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  id: IRecordNumberSet
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  langs:
+  - csharp
+  - vb
+  name: IRecordNumberSet
+  nameWithType: IRecordNumberSet
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the collection of record numbers, and to compare record number collections. Record number sets are used in selections with file based data.
+  example: []
+  syntax:
+    content: >-
+      [Guid("33572F5A-46C7-11D4-A124-00C04F6BDF0E")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRecordNumberSet
+    content.vb: >-
+      <Guid("33572F5A-46C7-11D4-A124-00C04F6BDF0E")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRecordNumberSet
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.RecordNumberSetClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 33572F5A-46C7-11D4-A124-00C04F6BDF0E
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds(System.Int32,System.Int32)
+  id: SetBounds(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: SetBounds(int, int)
+  nameWithType: IRecordNumberSet.SetBounds(int, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Sets the starting and ending record numbers for the record number collection, then adds all record numbers between those values to the collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetBounds(int startRecordNumber, int maxRecordNumber)
+    parameters:
+    - id: startRecordNumber
+      type: System.Int32
+    - id: maxRecordNumber
+      type: System.Int32
+    content.vb: Sub SetBounds(startRecordNumber As Integer, maxRecordNumber As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds*
+  nameWithType.vb: IRecordNumberSet.SetBounds(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds(Integer, Integer)
+  name.vb: SetBounds(Integer, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add(System.Int32)
+  id: Add(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: Add(int)
+  nameWithType: IRecordNumberSet.Add(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Adds a record number to the collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Add(int recordNumber)
+    parameters:
+    - id: recordNumber
+      type: System.Int32
+    content.vb: Sub Add(recordNumber As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add*
+  nameWithType.vb: IRecordNumberSet.Add(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add(Integer)
+  name.vb: Add(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete(System.Int32)
+  id: Delete(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: Delete(int)
+  nameWithType: IRecordNumberSet.Delete(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Removes a record number from the collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Delete(int recordNumber)
+    parameters:
+    - id: recordNumber
+      type: System.Int32
+    content.vb: Sub Delete(recordNumber As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete*
+  nameWithType.vb: IRecordNumberSet.Delete(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete(Integer)
+  name.vb: Delete(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange(System.Int32,System.Int32)
+  id: AddRange(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: AddRange(int, int)
+  nameWithType: IRecordNumberSet.AddRange(int, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Adds a range of record numbers to the collection starting with the minRecord and ending with the maxRecord.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddRange(int minRecord, int maxRecord)
+    parameters:
+    - id: minRecord
+      type: System.Int32
+    - id: maxRecord
+      type: System.Int32
+    content.vb: Sub AddRange(minRecord As Integer, maxRecord As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange*
+  nameWithType.vb: IRecordNumberSet.AddRange(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange(Integer, Integer)
+  name.vb: AddRange(Integer, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll
+  id: SetAll
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: SetAll()
+  nameWithType: IRecordNumberSet.SetAll()
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Set all record numbers.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetAll()
+    content.vb: Sub SetAll()
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll
+  id: ClearAll
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: ClearAll()
+  nameWithType: IRecordNumberSet.ClearAll()
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Clear all record numbers.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ClearAll()
+    content.vb: Sub ClearAll()
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  id: And(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: And(IRecordNumberSet)
+  nameWithType: IRecordNumberSet.And(IRecordNumberSet)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRecordNumberSet And(IRecordNumberSet otherRecordNumberSet)
+    parameters:
+    - id: otherRecordNumberSet
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    content.vb: Function [And](otherRecordNumberSet As IRecordNumberSet) As IRecordNumberSet
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  id: Or(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: Or(IRecordNumberSet)
+  nameWithType: IRecordNumberSet.Or(IRecordNumberSet)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRecordNumberSet Or(IRecordNumberSet otherRecordNumberSet)
+    parameters:
+    - id: otherRecordNumberSet
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    content.vb: Function [Or](otherRecordNumberSet As IRecordNumberSet) As IRecordNumberSet
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  id: XOr(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: XOr(IRecordNumberSet)
+  nameWithType: IRecordNumberSet.XOr(IRecordNumberSet)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRecordNumberSet XOr(IRecordNumberSet otherRecordNumberSet)
+    parameters:
+    - id: otherRecordNumberSet
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    content.vb: Function [XOr](otherRecordNumberSet As IRecordNumberSet) As IRecordNumberSet
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  id: Difference(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: Difference(IRecordNumberSet)
+  nameWithType: IRecordNumberSet.Difference(IRecordNumberSet)
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference(ESRI.ArcGIS.Geodatabase.IRecordNumberSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRecordNumberSet Difference(IRecordNumberSet otherRecordNumberSet)
+    parameters:
+    - id: otherRecordNumberSet
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    content.vb: Function Difference(otherRecordNumberSet As IRecordNumberSet) As IRecordNumberSet
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate
+  id: Negate
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: Negate()
+  nameWithType: IRecordNumberSet.Negate()
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Inverts the collection; selected records become unselected and unselected records become selected.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRecordNumberSet Negate()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+    content.vb: Function Negate() As IRecordNumberSet
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+  id: MinimumRecordNumber
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: MinimumRecordNumber
+  nameWithType: IRecordNumberSet.MinimumRecordNumber
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The minimum record in the record number collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MinimumRecordNumber { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MinimumRecordNumber As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+  id: MaximumRecordNumber
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: MaximumRecordNumber
+  nameWithType: IRecordNumberSet.MaximumRecordNumber
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The maximum record in the record number collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaximumRecordNumber { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaximumRecordNumber As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber*
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+  id: IDs
+  parent: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  langs:
+  - csharp
+  - vb
+  name: IDs
+  nameWithType: IRecordNumberSet.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Enumerates the record numbers in the record number collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumIDs IDs { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumIDs
+    content.vb: ReadOnly Property IDs As IEnumIDs
+  overload: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_SetBounds_System_Int32_System_Int32_
+  name: SetBounds
+  nameWithType: IRecordNumberSet.SetBounds
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetBounds
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_Add_System_Int32_
+  name: Add
+  nameWithType: IRecordNumberSet.Add
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Add
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_Delete_System_Int32_
+  name: Delete
+  nameWithType: IRecordNumberSet.Delete
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Delete
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_AddRange_System_Int32_System_Int32_
+  name: AddRange
+  nameWithType: IRecordNumberSet.AddRange
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.AddRange
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_SetAll
+  name: SetAll
+  nameWithType: IRecordNumberSet.SetAll
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.SetAll
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_ClearAll
+  name: ClearAll
+  nameWithType: IRecordNumberSet.ClearAll
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.ClearAll
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_And_ESRI_ArcGIS_Geodatabase_IRecordNumberSet_
+  name: And
+  nameWithType: IRecordNumberSet.And
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.And
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html
+  name: IRecordNumberSet
+  nameWithType: IRecordNumberSet
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_Or_ESRI_ArcGIS_Geodatabase_IRecordNumberSet_
+  name: Or
+  nameWithType: IRecordNumberSet.Or
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Or
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_XOr_ESRI_ArcGIS_Geodatabase_IRecordNumberSet_
+  name: XOr
+  nameWithType: IRecordNumberSet.XOr
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.XOr
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_Difference_ESRI_ArcGIS_Geodatabase_IRecordNumberSet_
+  name: Difference
+  nameWithType: IRecordNumberSet.Difference
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Difference
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_Negate
+  name: Negate
+  nameWithType: IRecordNumberSet.Negate
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.Negate
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_MinimumRecordNumber
+  name: MinimumRecordNumber
+  nameWithType: IRecordNumberSet.MinimumRecordNumber
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MinimumRecordNumber
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_MaximumRecordNumber
+  name: MaximumRecordNumber
+  nameWithType: IRecordNumberSet.MaximumRecordNumber
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.MaximumRecordNumber
+- uid: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.html#ESRI_ArcGIS_Geodatabase_IRecordNumberSet_IDs
+  name: IDs
+  nameWithType: IRecordNumberSet.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordNumberSet.IDs
+- uid: ESRI.ArcGIS.Geodatabase.IEnumIDs
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumIDs
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumIDs.html
+  name: IEnumIDs
+  nameWithType: IEnumIDs
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumIDs

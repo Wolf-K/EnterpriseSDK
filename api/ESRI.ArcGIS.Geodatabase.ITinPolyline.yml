@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinPolyline
+  id: ITinPolyline
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges
+  - ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes
+  - ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: ITinPolyline
+  nameWithType: ITinPolyline
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control TIN polyline characteristics.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("83A9E75C-A212-11D3-AB4B-0008C73FD50C")]
+
+      public interface ITinPolyline
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("83A9E75C-A212-11D3-AB4B-0008C73FD50C")>
+
+      Public Interface ITinPolyline
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinPolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 83A9E75C-A212-11D3-AB4B-0008C73FD50C
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes
+  id: AsNodes
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolyline
+  langs:
+  - csharp
+  - vb
+  name: AsNodes()
+  nameWithType: ITinPolyline.AsNodes()
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified polyline as TIN nodes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumTinNode AsNodes()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+    content.vb: Function AsNodes() As IEnumTinNode
+  overload: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes*
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges
+  id: AsEdges
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolyline
+  langs:
+  - csharp
+  - vb
+  name: AsEdges()
+  nameWithType: ITinPolyline.AsEdges()
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified polyline as triangle edges.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumTinEdge AsEdges()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+    content.vb: Function AsEdges() As IEnumTinEdge
+  overload: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges*
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  id: AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolyline
+  langs:
+  - csharp
+  - vb
+  name: AsPolyline(ITinFilter, bool)
+  nameWithType: ITinPolyline.AsPolyline(ITinFilter, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IPolyline AsPolyline(ITinFilter pNodeFilter, bool bGetZ)
+    parameters:
+    - id: pNodeFilter
+      type: ESRI.ArcGIS.Geodatabase.ITinFilter
+    - id: bGetZ
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    content.vb: Function AsPolyline(pNodeFilter As ITinFilter, bGetZ As Boolean) As IPolyline
+  overload: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline*
+  nameWithType.vb: ITinPolyline.AsPolyline(ITinFilter, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline(ESRI.ArcGIS.Geodatabase.ITinFilter, Boolean)
+  name.vb: AsPolyline(ITinFilter, Boolean)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolyline.html#ESRI_ArcGIS_Geodatabase_ITinPolyline_AsNodes
+  name: AsNodes
+  nameWithType: ITinPolyline.AsNodes
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsNodes
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTinNode
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTinNode.html
+  name: IEnumTinNode
+  nameWithType: IEnumTinNode
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolyline.html#ESRI_ArcGIS_Geodatabase_ITinPolyline_AsEdges
+  name: AsEdges
+  nameWithType: ITinPolyline.AsEdges
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsEdges
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTinEdge.html
+  name: IEnumTinEdge
+  nameWithType: IEnumTinEdge
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolyline.html#ESRI_ArcGIS_Geodatabase_ITinPolyline_AsPolyline_ESRI_ArcGIS_Geodatabase_ITinFilter_System_Boolean_
+  name: AsPolyline
+  nameWithType: ITinPolyline.AsPolyline
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolyline.AsPolyline
+- uid: ESRI.ArcGIS.Geodatabase.ITinFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinFilter.html
+  name: ITinFilter
+  nameWithType: ITinFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ITinFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IPolyline
+  commentId: T:ESRI.ArcGIS.Geometry.IPolyline
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolyline.html
+  name: IPolyline
+  nameWithType: IPolyline
+  fullName: ESRI.ArcGIS.Geometry.IPolyline
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

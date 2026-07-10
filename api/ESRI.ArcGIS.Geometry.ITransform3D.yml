@@ -1,0 +1,359 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ITransform3D
+  commentId: T:ESRI.ArcGIS.Geometry.ITransform3D
+  id: ITransform3D
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ITransform3D.Move3D(System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D(ESRI.ArcGIS.Geometry.IVector3D)
+  - ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IVector3D)
+  - ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D,System.Double)
+  - ESRI.ArcGIS.Geometry.ITransform3D.Scale3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.ITransform3D.Transform3D(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.ITransformation3D)
+  langs:
+  - csharp
+  - vb
+  name: ITransform3D
+  nameWithType: ITransform3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to methods for transforming 3D geometries using either specific parameters or arbitrary transformation objects.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("9414E949-FFA0-11D3-9F56-00C04F6BDF0D")]
+
+      public interface ITransform3D
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("9414E949-FFA0-11D3-9F56-00C04F6BDF0D")>
+
+      Public Interface ITransform3D
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PathClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  - ESRI.ArcGIS.Geometry.RingClass
+  - ESRI.ArcGIS.Geometry.TriangleFanClass
+  - ESRI.ArcGIS.Geometry.TriangleStripClass
+  - ESRI.ArcGIS.Geometry.TrianglesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9414E949-FFA0-11D3-9F56-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Move3D(System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.Move3D(System.Double,System.Double,System.Double)
+  id: Move3D(System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: Move3D(double, double, double)
+  nameWithType: ITransform3D.Move3D(double, double, double)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Move3D(double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Moves the object by dx, dy and dz along the x, y, and z axes respectively.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Move3D(double dx, double dy, double dz)
+    parameters:
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: dz
+      type: System.Double
+    content.vb: Sub Move3D(dx As Double, dy As Double, dz As Double)
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.Move3D*
+  nameWithType.vb: ITransform3D.Move3D(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransform3D.Move3D(Double, Double, Double)
+  name.vb: Move3D(Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D(ESRI.ArcGIS.Geometry.IVector3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D(ESRI.ArcGIS.Geometry.IVector3D)
+  id: MoveVector3D(ESRI.ArcGIS.Geometry.IVector3D)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: MoveVector3D(IVector3D)
+  nameWithType: ITransform3D.MoveVector3D(IVector3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D(ESRI.ArcGIS.Geometry.IVector3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void MoveVector3D(IVector3D v)
+    parameters:
+    - id: v
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    content.vb: Sub MoveVector3D(v As IVector3D)
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D*
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.Scale3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,System.Double,System.Double)
+  id: Scale3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: Scale3D(IPoint, double, double, double)
+  nameWithType: ITransform3D.Scale3D(IPoint, double, double, double)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D(ESRI.ArcGIS.Geometry.IPoint, double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Scale3D(IPoint Origin, double sx, double sy, double sz)
+    parameters:
+    - id: Origin
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: sx
+      type: System.Double
+    - id: sy
+      type: System.Double
+    - id: sz
+      type: System.Double
+    content.vb: Sub Scale3D(Origin As IPoint, sx As Double, sy As Double, sz As Double)
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D*
+  nameWithType.vb: ITransform3D.Scale3D(IPoint, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D(ESRI.ArcGIS.Geometry.IPoint, Double, Double, Double)
+  name.vb: Scale3D(IPoint, Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D,System.Double)
+  id: RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: RotateVector3D(IVector3D, double)
+  nameWithType: ITransform3D.RotateVector3D(IVector3D, double)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void RotateVector3D(IVector3D axis, double rotationAngle)
+    parameters:
+    - id: axis
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    - id: rotationAngle
+      type: System.Double
+    content.vb: Sub RotateVector3D(axis As IVector3D, rotationAngle As Double)
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D*
+  nameWithType.vb: ITransform3D.RotateVector3D(IVector3D, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D(ESRI.ArcGIS.Geometry.IVector3D, Double)
+  name.vb: RotateVector3D(IVector3D, Double)
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Transform3D(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.ITransformation3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.Transform3D(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.ITransformation3D)
+  id: Transform3D(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.ITransformation3D)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: Transform3D(esriTransformDirection, ITransformation3D)
+  nameWithType: ITransform3D.Transform3D(esriTransformDirection, ITransformation3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Transform3D(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.ITransformation3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Transform3D(esriTransformDirection Direction, ITransformation3D Transformation)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: Transformation
+      type: ESRI.ArcGIS.Geometry.ITransformation3D
+    content.vb: Sub Transform3D(Direction As esriTransformDirection, Transformation As ITransformation3D)
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.Transform3D*
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IVector3D)
+  commentId: M:ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IVector3D)
+  id: ProjectToPlane(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IVector3D,ESRI.ArcGIS.Geometry.IVector3D)
+  parent: ESRI.ArcGIS.Geometry.ITransform3D
+  langs:
+  - csharp
+  - vb
+  name: ProjectToPlane(IPoint, IVector3D, IVector3D)
+  nameWithType: ITransform3D.ProjectToPlane(IPoint, IVector3D, IVector3D)
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IVector3D, ESRI.ArcGIS.Geometry.IVector3D)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry ProjectToPlane(IPoint planarOrigin, IVector3D planarPositiveX, IVector3D planarNorm)
+    parameters:
+    - id: planarOrigin
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: planarPositiveX
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    - id: planarNorm
+      type: ESRI.ArcGIS.Geometry.IVector3D
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ProjectToPlane(planarOrigin As IPoint, planarPositiveX As IVector3D, planarNorm As IVector3D) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Move3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.Move3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_Move3D_System_Double_System_Double_System_Double_
+  name: Move3D
+  nameWithType: ITransform3D.Move3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Move3D
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_MoveVector3D_ESRI_ArcGIS_Geometry_IVector3D_
+  name: MoveVector3D
+  nameWithType: ITransform3D.MoveVector3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.MoveVector3D
+- uid: ESRI.ArcGIS.Geometry.IVector3D
+  commentId: T:ESRI.ArcGIS.Geometry.IVector3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVector3D.html
+  name: IVector3D
+  nameWithType: IVector3D
+  fullName: ESRI.ArcGIS.Geometry.IVector3D
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.Scale3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_Scale3D_ESRI_ArcGIS_Geometry_IPoint_System_Double_System_Double_System_Double_
+  name: Scale3D
+  nameWithType: ITransform3D.Scale3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Scale3D
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_RotateVector3D_ESRI_ArcGIS_Geometry_IVector3D_System_Double_
+  name: RotateVector3D
+  nameWithType: ITransform3D.RotateVector3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.RotateVector3D
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.Transform3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.Transform3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_Transform3D_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_ITransformation3D_
+  name: Transform3D
+  nameWithType: ITransform3D.Transform3D
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.Transform3D
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: ESRI.ArcGIS.Geometry.ITransformation3D
+  commentId: T:ESRI.ArcGIS.Geometry.ITransformation3D
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation3D.html
+  name: ITransformation3D
+  nameWithType: ITransformation3D
+  fullName: ESRI.ArcGIS.Geometry.ITransformation3D
+- uid: ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransform3D.html#ESRI_ArcGIS_Geometry_ITransform3D_ProjectToPlane_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_Geometry_IVector3D_ESRI_ArcGIS_Geometry_IVector3D_
+  name: ProjectToPlane
+  nameWithType: ITransform3D.ProjectToPlane
+  fullName: ESRI.ArcGIS.Geometry.ITransform3D.ProjectToPlane
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry

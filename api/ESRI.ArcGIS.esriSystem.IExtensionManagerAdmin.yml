@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  commentId: T:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  id: IExtensionManagerAdmin
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension(ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  - ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions
+  - ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  langs:
+  - csharp
+  - vb
+  name: IExtensionManagerAdmin
+  nameWithType: IExtensionManagerAdmin
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that give life to the extensions.
+  example: []
+  syntax:
+    content: >-
+      [Guid("262C00F9-114D-45F8-BC9D-A0DD208DC9E1")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IExtensionManagerAdmin
+    content.vb: >-
+      <Guid("262C00F9-114D-45F8-BC9D-A0DD208DC9E1")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IExtensionManagerAdmin
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.ExtensionManagerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 262C00F9-114D-45F8-BC9D-A0DD208DC9E1
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  id: StartupExtensions(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  langs:
+  - csharp
+  - vb
+  name: StartupExtensions(UID, UID, ref object)
+  nameWithType: IExtensionManagerAdmin.StartupExtensions(UID, UID, ref object)
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions(ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void StartupExtensions(UID componentCategory, UID jitCategory, ref object initializationData)
+    parameters:
+    - id: componentCategory
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: jitCategory
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: initializationData
+      type: System.Object
+    content.vb: Sub StartupExtensions(componentCategory As UID, jitCategory As UID, initializationData As Object)
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions*
+  nameWithType.vb: IExtensionManagerAdmin.StartupExtensions(UID, UID, Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions(ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, Object)
+  name.vb: StartupExtensions(UID, UID, Object)
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions
+  id: ShutdownExtensions
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  langs:
+  - csharp
+  - vb
+  name: ShutdownExtensions()
+  nameWithType: IExtensionManagerAdmin.ShutdownExtensions()
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Shuts down and releases the extensions that are loaded and calls IExtension::Shutdown.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ShutdownExtensions()
+    content.vb: Sub ShutdownExtensions()
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions*
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension(ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension(ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  id: AddExtension(ESRI.ArcGIS.esriSystem.UID,System.Object@)
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin
+  langs:
+  - csharp
+  - vb
+  name: AddExtension(UID, ref object)
+  nameWithType: IExtensionManagerAdmin.AddExtension(UID, ref object)
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension(ESRI.ArcGIS.esriSystem.UID, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void AddExtension(UID ExtensionCLSID, ref object initializationData)
+    parameters:
+    - id: ExtensionCLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: initializationData
+      type: System.Object
+    content.vb: Sub AddExtension(ExtensionCLSID As UID, initializationData As Object)
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension*
+  nameWithType.vb: IExtensionManagerAdmin.AddExtension(UID, Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension(ESRI.ArcGIS.esriSystem.UID, Object)
+  name.vb: AddExtension(UID, Object)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.html#ESRI_ArcGIS_esriSystem_IExtensionManagerAdmin_StartupExtensions_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_UID_System_Object__
+  name: StartupExtensions
+  nameWithType: IExtensionManagerAdmin.StartupExtensions
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.StartupExtensions
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.html#ESRI_ArcGIS_esriSystem_IExtensionManagerAdmin_ShutdownExtensions
+  name: ShutdownExtensions
+  nameWithType: IExtensionManagerAdmin.ShutdownExtensions
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.ShutdownExtensions
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.html#ESRI_ArcGIS_esriSystem_IExtensionManagerAdmin_AddExtension_ESRI_ArcGIS_esriSystem_UID_System_Object__
+  name: AddExtension
+  nameWithType: IExtensionManagerAdmin.AddExtension
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManagerAdmin.AddExtension

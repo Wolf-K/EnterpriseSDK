@@ -1,0 +1,1286 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  id: RemapFilterClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass(System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass(System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  langs:
+  - csharp
+  - vb
+  name: RemapFilterClass
+  nameWithType: RemapFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("2AA277E1-0772-4941-A322-F07B2B6AE782")]
+
+      public class RemapFilterClass : RemapFilter, IPixelFilter, IRemapFilter
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("2AA277E1-0772-4941-A322-F07B2B6AE782")>
+
+      Public Class RemapFilterClass Implements RemapFilter, IPixelFilter, IRemapFilter
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilter
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2AA277E1-0772-4941-A322-F07B2B6AE782
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: RemapFilterClass()
+  nameWithType: RemapFilterClass.RemapFilterClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.RemapFilterClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public RemapFilterClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor*
+  nameWithType.vb: RemapFilterClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: RemapFilterClass.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets dimension of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetSize(ref int Columns, ref int Rows)
+    parameters:
+    - id: Columns
+      type: System.Int32
+    - id: Rows
+      type: System.Int32
+    content.vb: Overridable Sub GetSize(Columns As Integer, Rows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  nameWithType.vb: RemapFilterClass.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: RemapFilterClass.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets center position of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Overridable Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  nameWithType.vb: RemapFilterClass.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Filter(IPixelBlock)
+  nameWithType: RemapFilterClass.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void Filter(IPixelBlock pBlock)
+    parameters:
+    - id: pBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Overridable Sub Filter(pBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass(System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass(System.Double,System.Double,System.Double)
+  id: AddClass(System.Double,System.Double,System.Double)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: AddClass(double, double, double)
+  nameWithType: RemapFilterClass.AddClass(double, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass(double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Adds a remap class that remaps values in [minvalue,maxvalue) to a give new value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void AddClass(double minvalue, double maxvalue, double newvalue)
+    parameters:
+    - id: minvalue
+      type: System.Double
+    - id: maxvalue
+      type: System.Double
+    - id: newvalue
+      type: System.Double
+    content.vb: Overridable Sub AddClass(minvalue As Double, maxvalue As Double, newvalue As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(System.Double,System.Double,System.Double)
+  nameWithType.vb: RemapFilterClass.AddClass(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass(Double, Double, Double)
+  name.vb: AddClass(Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass(System.Double,System.Double)
+  id: AddNoDataClass(System.Double,System.Double)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: AddNoDataClass(double, double)
+  nameWithType: RemapFilterClass.AddNoDataClass(double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Adds a remap class that remaps values in [minvalue,maxvalue) to NoData.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void AddNoDataClass(double minvalue, double maxvalue)
+    parameters:
+    - id: minvalue
+      type: System.Double
+    - id: maxvalue
+      type: System.Double
+    content.vb: Overridable Sub AddNoDataClass(minvalue As Double, maxvalue As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(System.Double,System.Double)
+  nameWithType.vb: RemapFilterClass.AddNoDataClass(Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass(Double, Double)
+  name.vb: AddNoDataClass(Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  id: QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: QueryClass(int, out double, out double, out double)
+  nameWithType: RemapFilterClass.QueryClass(int, out double, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass(int, out double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Queries a remap class at a given class index (starting from 0).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void QueryClass(int Index, out double minvalue, out double maxvalue, out double newvalue)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: minvalue
+      type: System.Double
+    - id: maxvalue
+      type: System.Double
+    - id: newvalue
+      type: System.Double
+    content.vb: Overridable Sub QueryClass(Index As Integer, minvalue As Double, maxvalue As Double, newvalue As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  nameWithType.vb: RemapFilterClass.QueryClass(Integer, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass(Integer, Double, Double, Double)
+  name.vb: QueryClass(Integer, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  id: PutClass(System.Int32,System.Double,System.Double,System.Double)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: PutClass(int, double, double, double)
+  nameWithType: RemapFilterClass.PutClass(int, double, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass(int, double, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Puts a remap class at a given class index (starting from 0).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void PutClass(int Index, double minvalue, double maxvalue, double newvalue)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: minvalue
+      type: System.Double
+    - id: maxvalue
+      type: System.Double
+    - id: newvalue
+      type: System.Double
+    content.vb: Overridable Sub PutClass(Index As Integer, minvalue As Double, maxvalue As Double, newvalue As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  nameWithType.vb: RemapFilterClass.PutClass(Integer, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass(Integer, Double, Double, Double)
+  name.vb: PutClass(Integer, Double, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty
+  id: Empty
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Empty()
+  nameWithType: RemapFilterClass.Empty()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Removes all classes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Empty()
+    content.vb: Overridable Sub Empty()
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+  id: ClassCount
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: ClassCount
+  nameWithType: RemapFilterClass.ClassCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The number of remapped classes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int ClassCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable ReadOnly Property ClassCount As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.ClassCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+  id: AllowUnmatched
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  langs:
+  - csharp
+  - vb
+  name: AllowUnmatched
+  nameWithType: RemapFilterClass.AllowUnmatched
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if unmatched values should be passed through.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual bool AllowUnmatched { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Overridable Property AllowUnmatched As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AllowUnmatched
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.RemapFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilter.html
+  name: RemapFilter
+  nameWithType: RemapFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html
+  name: IPixelFilter
+  nameWithType: IPixelFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html
+  name: IRemapFilter
+  nameWithType: IRemapFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass__ctor
+  name: RemapFilterClass
+  nameWithType: RemapFilterClass.RemapFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.RemapFilterClass
+  nameWithType.vb: RemapFilterClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: RemapFilterClass.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize(ref int, ref int)
+  nameWithType: IPixelFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: RemapFilterClass.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IPixelFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter
+  nameWithType: RemapFilterClass.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Filter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter(IPixelBlock)
+  nameWithType: IPixelFilter.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_AddClass_System_Double_System_Double_System_Double_
+  name: AddClass
+  nameWithType: RemapFilterClass.AddClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddClass
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddClass_System_Double_System_Double_System_Double_
+  name: AddClass(double, double, double)
+  nameWithType: IRemapFilter.AddClass(double, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(double, double, double)
+  nameWithType.vb: IRemapFilter.AddClass(Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(Double, Double, Double)
+  name.vb: AddClass(Double, Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(System.Double,System.Double,System.Double)
+    name: AddClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddClass_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddClass(System.Double,System.Double,System.Double)
+    name: AddClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddClass_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_AddNoDataClass_System_Double_System_Double_
+  name: AddNoDataClass
+  nameWithType: RemapFilterClass.AddNoDataClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AddNoDataClass
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddNoDataClass_System_Double_System_Double_
+  name: AddNoDataClass(double, double)
+  nameWithType: IRemapFilter.AddNoDataClass(double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(double, double)
+  nameWithType.vb: IRemapFilter.AddNoDataClass(Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(Double, Double)
+  name.vb: AddNoDataClass(Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(System.Double,System.Double)
+    name: AddNoDataClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddNoDataClass_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AddNoDataClass(System.Double,System.Double)
+    name: AddNoDataClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AddNoDataClass_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_QueryClass_System_Int32_System_Double__System_Double__System_Double__
+  name: QueryClass
+  nameWithType: RemapFilterClass.QueryClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.QueryClass
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_QueryClass_System_Int32_System_Double__System_Double__System_Double__
+  name: QueryClass(int, out double, out double, out double)
+  nameWithType: IRemapFilter.QueryClass(int, out double, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(int, out double, out double, out double)
+  nameWithType.vb: IRemapFilter.QueryClass(Integer, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(Integer, Double, Double, Double)
+  name.vb: QueryClass(Integer, Double, Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+    name: QueryClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_QueryClass_System_Int32_System_Double__System_Double__System_Double__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.QueryClass(System.Int32,System.Double@,System.Double@,System.Double@)
+    name: QueryClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_QueryClass_System_Int32_System_Double__System_Double__System_Double__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_PutClass_System_Int32_System_Double_System_Double_System_Double_
+  name: PutClass
+  nameWithType: RemapFilterClass.PutClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.PutClass
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(System.Int32,System.Double,System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_PutClass_System_Int32_System_Double_System_Double_System_Double_
+  name: PutClass(int, double, double, double)
+  nameWithType: IRemapFilter.PutClass(int, double, double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(int, double, double, double)
+  nameWithType.vb: IRemapFilter.PutClass(Integer, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(Integer, Double, Double, Double)
+  name.vb: PutClass(Integer, Double, Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(System.Int32,System.Double,System.Double,System.Double)
+    name: PutClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_PutClass_System_Int32_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.PutClass(System.Int32,System.Double,System.Double,System.Double)
+    name: PutClass
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_PutClass_System_Int32_System_Double_System_Double_System_Double_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_Empty
+  name: Empty
+  nameWithType: RemapFilterClass.Empty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.Empty
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_Empty
+  name: Empty()
+  nameWithType: IRemapFilter.Empty()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty
+    name: Empty
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_Empty
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.Empty
+    name: Empty
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_Empty
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_ClassCount
+  name: ClassCount
+  nameWithType: RemapFilterClass.ClassCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.ClassCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.ClassCount
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.ClassCount
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_ClassCount
+  name: ClassCount
+  nameWithType: IRemapFilter.ClassCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.ClassCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_RemapFilterClass_AllowUnmatched
+  name: AllowUnmatched
+  nameWithType: RemapFilterClass.AllowUnmatched
+  fullName: ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass.AllowUnmatched
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AllowUnmatched
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AllowUnmatched
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRemapFilter_AllowUnmatched
+  name: AllowUnmatched
+  nameWithType: IRemapFilter.AllowUnmatched
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRemapFilter.AllowUnmatched
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

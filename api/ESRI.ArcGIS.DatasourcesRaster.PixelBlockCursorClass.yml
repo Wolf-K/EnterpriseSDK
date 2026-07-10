@@ -1,0 +1,959 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  id: PixelBlockCursorClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PixelBlockCursorClass
+  nameWithType: PixelBlockCursorClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [Guid("A0DC85B9-FB40-4839-B4FB-AA0EA4FB4229")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class PixelBlockCursorClass : PixelBlockCursor, IPixelBlockCursor
+    content.vb: >-
+      <Guid("A0DC85B9-FB40-4839-B4FB-AA0EA4FB4229")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class PixelBlockCursorClass Implements PixelBlockCursor, IPixelBlockCursor
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursor
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A0DC85B9-FB40-4839-B4FB-AA0EA4FB4229
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: PixelBlockCursorClass()
+  nameWithType: PixelBlockCursorClass.PixelBlockCursorClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.PixelBlockCursorClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public PixelBlockCursorClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor*
+  nameWithType.vb: PixelBlockCursorClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  id: InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: InitByRawPixels(IRawPixels, int, int)
+  nameWithType: PixelBlockCursorClass.InitByRawPixels(IRawPixels, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void InitByRawPixels(IRawPixels pRowPixels, int BlockSizeX, int BlockSizeY)
+    parameters:
+    - id: pRowPixels
+      type: ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+    - id: BlockSizeX
+      type: System.Int32
+    - id: BlockSizeY
+      type: System.Int32
+    content.vb: Overridable Sub InitByRawPixels(pRowPixels As IRawPixels, BlockSizeX As Integer, BlockSizeY As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  nameWithType.vb: PixelBlockCursorClass.InitByRawPixels(IRawPixels, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels, Integer, Integer)
+  name.vb: InitByRawPixels(IRawPixels, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  id: InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: InitByRaster(IRaster)
+  nameWithType: PixelBlockCursorClass.InitByRaster(IRaster)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void InitByRaster(IRaster pRaster)
+    parameters:
+    - id: pRaster
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    content.vb: Overridable Sub InitByRaster(pRaster As IRaster)
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize(System.Int32,System.Int32)
+  id: UpdateBlockSize(System.Int32,System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: UpdateBlockSize(int, int)
+  nameWithType: PixelBlockCursorClass.UpdateBlockSize(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Updates the cursor block size.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void UpdateBlockSize(int BlockSizeX, int BlockSizeY)
+    parameters:
+    - id: BlockSizeX
+      type: System.Int32
+    - id: BlockSizeY
+      type: System.Int32
+    content.vb: Overridable Sub UpdateBlockSize(BlockSizeX As Integer, BlockSizeY As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(System.Int32,System.Int32)
+  nameWithType.vb: PixelBlockCursorClass.UpdateBlockSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize(Integer, Integer)
+  name.vb: UpdateBlockSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize(System.Int32@,System.Int32@)
+  id: GetBlockSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: GetBlockSize(ref int, ref int)
+  nameWithType: PixelBlockCursorClass.GetBlockSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the cursor block size.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetBlockSize(ref int pBlockSizeX, ref int pBlockSizeY)
+    parameters:
+    - id: pBlockSizeX
+      type: System.Int32
+    - id: pBlockSizeY
+      type: System.Int32
+    content.vb: Overridable Sub GetBlockSize(pBlockSizeX As Integer, pBlockSizeY As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(System.Int32@,System.Int32@)
+  nameWithType.vb: PixelBlockCursorClass.GetBlockSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize(Integer, Integer)
+  name.vb: GetBlockSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  id: NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: NextBlock(ref int, ref int, ref int, ref int)
+  nameWithType: PixelBlockCursorClass.NextBlock(ref int, ref int, ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock(ref int, ref int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Obtains the next pixel block from the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IPixelBlock NextBlock(ref int pLeft, ref int pTop, ref int pSizeX, ref int pSizeY)
+    parameters:
+    - id: pLeft
+      type: System.Int32
+    - id: pTop
+      type: System.Int32
+    - id: pSizeX
+      type: System.Int32
+    - id: pSizeY
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Overridable Function NextBlock(pLeft As Integer, pTop As Integer, pSizeX As Integer, pSizeY As Integer) As IPixelBlock
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  nameWithType.vb: PixelBlockCursorClass.NextBlock(Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock(Integer, Integer, Integer, Integer)
+  name.vb: NextBlock(Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+  id: ScanMode
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass
+  langs:
+  - csharp
+  - vb
+  name: ScanMode
+  nameWithType: PixelBlockCursorClass.ScanMode
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: 'The cursor scan mode: Line = 0, LineSerpent = 1, Serpent2 = 3, alaGIF = 4.'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int ScanMode { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable WriteOnly Property ScanMode As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.ScanMode
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursor
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursor
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursor.html
+  name: PixelBlockCursor
+  nameWithType: PixelBlockCursor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursor
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html
+  name: IPixelBlockCursor
+  nameWithType: IPixelBlockCursor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass__ctor
+  name: PixelBlockCursorClass
+  nameWithType: PixelBlockCursorClass.PixelBlockCursorClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.PixelBlockCursorClass
+  nameWithType.vb: PixelBlockCursorClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_InitByRawPixels_ESRI_ArcGIS_DatasourcesRaster_IRawPixels_System_Int32_System_Int32_
+  name: InitByRawPixels
+  nameWithType: PixelBlockCursorClass.InitByRawPixels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRawPixels
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRawPixels_ESRI_ArcGIS_DatasourcesRaster_IRawPixels_System_Int32_System_Int32_
+  name: InitByRawPixels(IRawPixels, int, int)
+  nameWithType: IPixelBlockCursor.InitByRawPixels(IRawPixels, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels, int, int)
+  nameWithType.vb: IPixelBlockCursor.InitByRawPixels(IRawPixels, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels, Integer, Integer)
+  name.vb: InitByRawPixels(IRawPixels, Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+    name: InitByRawPixels
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRawPixels_ESRI_ArcGIS_DatasourcesRaster_IRawPixels_System_Int32_System_Int32_
+  - name: (
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+    name: IRawPixels
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRawPixels.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRawPixels(ESRI.ArcGIS.DatasourcesRaster.IRawPixels,System.Int32,System.Int32)
+    name: InitByRawPixels
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRawPixels_ESRI_ArcGIS_DatasourcesRaster_IRawPixels_System_Int32_System_Int32_
+  - name: (
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+    name: IRawPixels
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IRawPixels.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRawPixels.html
+  name: IRawPixels
+  nameWithType: IRawPixels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRawPixels
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_InitByRaster_ESRI_ArcGIS_Geodatabase_IRaster_
+  name: InitByRaster
+  nameWithType: PixelBlockCursorClass.InitByRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.InitByRaster
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRaster_ESRI_ArcGIS_Geodatabase_IRaster_
+  name: InitByRaster(IRaster)
+  nameWithType: IPixelBlockCursor.InitByRaster(IRaster)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+    name: InitByRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRaster_ESRI_ArcGIS_Geodatabase_IRaster_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRaster
+    name: IRaster
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.InitByRaster(ESRI.ArcGIS.Geodatabase.IRaster)
+    name: InitByRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_InitByRaster_ESRI_ArcGIS_Geodatabase_IRaster_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRaster
+    name: IRaster
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_UpdateBlockSize_System_Int32_System_Int32_
+  name: UpdateBlockSize
+  nameWithType: PixelBlockCursorClass.UpdateBlockSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.UpdateBlockSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_UpdateBlockSize_System_Int32_System_Int32_
+  name: UpdateBlockSize(int, int)
+  nameWithType: IPixelBlockCursor.UpdateBlockSize(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(int, int)
+  nameWithType.vb: IPixelBlockCursor.UpdateBlockSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(Integer, Integer)
+  name.vb: UpdateBlockSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(System.Int32,System.Int32)
+    name: UpdateBlockSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_UpdateBlockSize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.UpdateBlockSize(System.Int32,System.Int32)
+    name: UpdateBlockSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_UpdateBlockSize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_GetBlockSize_System_Int32__System_Int32__
+  name: GetBlockSize
+  nameWithType: PixelBlockCursorClass.GetBlockSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.GetBlockSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_GetBlockSize_System_Int32__System_Int32__
+  name: GetBlockSize(ref int, ref int)
+  nameWithType: IPixelBlockCursor.GetBlockSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(ref int, ref int)
+  nameWithType.vb: IPixelBlockCursor.GetBlockSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(Integer, Integer)
+  name.vb: GetBlockSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(System.Int32@,System.Int32@)
+    name: GetBlockSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_GetBlockSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.GetBlockSize(System.Int32@,System.Int32@)
+    name: GetBlockSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_GetBlockSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_NextBlock_System_Int32__System_Int32__System_Int32__System_Int32__
+  name: NextBlock
+  nameWithType: PixelBlockCursorClass.NextBlock
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.NextBlock
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_NextBlock_System_Int32__System_Int32__System_Int32__System_Int32__
+  name: NextBlock(ref int, ref int, ref int, ref int)
+  nameWithType: IPixelBlockCursor.NextBlock(ref int, ref int, ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(ref int, ref int, ref int, ref int)
+  nameWithType.vb: IPixelBlockCursor.NextBlock(Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(Integer, Integer, Integer, Integer)
+  name.vb: NextBlock(Integer, Integer, Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+    name: NextBlock
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_NextBlock_System_Int32__System_Int32__System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.NextBlock(System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+    name: NextBlock
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_NextBlock_System_Int32__System_Int32__System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.html#ESRI_ArcGIS_DatasourcesRaster_PixelBlockCursorClass_ScanMode
+  name: ScanMode
+  nameWithType: PixelBlockCursorClass.ScanMode
+  fullName: ESRI.ArcGIS.DatasourcesRaster.PixelBlockCursorClass.ScanMode
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.ScanMode
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.ScanMode
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.html#ESRI_ArcGIS_DatasourcesRaster_IPixelBlockCursor_ScanMode
+  name: ScanMode
+  nameWithType: IPixelBlockCursor.ScanMode
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelBlockCursor.ScanMode

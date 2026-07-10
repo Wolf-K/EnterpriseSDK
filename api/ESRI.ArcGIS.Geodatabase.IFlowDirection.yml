@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFlowDirection
+  id: IFlowDirection
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+  - ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+  - ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+  - ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+  langs:
+  - csharp
+  - vb
+  name: IFlowDirection
+  nameWithType: IFlowDirection
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members of flow direction.
+  example: []
+  syntax:
+    content: >-
+      [Guid("CBFE7E3D-B235-4452-9DFE-6B6B3B6A0E2C")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFlowDirection
+    content.vb: >-
+      <Guid("CBFE7E3D-B235-4452-9DFE-6B6B3B6A0E2C")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFlowDirection
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CBFE7E3D-B235-4452-9DFE-6B6B3B6A0E2C
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+  id: NetworkSourceID
+  parent: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  langs:
+  - csharp
+  - vb
+  name: NetworkSourceID
+  nameWithType: IFlowDirection.NetworkSourceID
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the network source ID of the feature that the flow direction belongs to.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int NetworkSourceID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NetworkSourceID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID*
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+  id: GlobalID
+  parent: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  langs:
+  - csharp
+  - vb
+  name: GlobalID
+  nameWithType: IFlowDirection.GlobalID
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the global ID of the feature that the flow direction belongs to.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: Guid GlobalID { get; }
+    parameters: []
+    return:
+      type: System.Guid
+    content.vb: ReadOnly Property GlobalID As Guid
+  overload: ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID*
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+  id: FlowDirectionType
+  parent: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  langs:
+  - csharp
+  - vb
+  name: FlowDirectionType
+  nameWithType: IFlowDirection.FlowDirectionType
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the flow direction type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriFlowDirection FlowDirectionType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriFlowDirection
+    content.vb: ReadOnly Property FlowDirectionType As esriFlowDirection
+  overload: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType*
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+  id: FlowDirectionLine
+  parent: ESRI.ArcGIS.Geodatabase.IFlowDirection
+  langs:
+  - csharp
+  - vb
+  name: FlowDirectionLine
+  nameWithType: IFlowDirection.FlowDirectionLine
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the flow direction line that corresponds to edge element.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolyline FlowDirectionLine { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    content.vb: ReadOnly Property FlowDirectionLine As IPolyline
+  overload: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFlowDirection.html#ESRI_ArcGIS_Geodatabase_IFlowDirection_NetworkSourceID
+  name: NetworkSourceID
+  nameWithType: IFlowDirection.NetworkSourceID
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.NetworkSourceID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFlowDirection.html#ESRI_ArcGIS_Geodatabase_IFlowDirection_GlobalID
+  name: GlobalID
+  nameWithType: IFlowDirection.GlobalID
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.GlobalID
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFlowDirection.html#ESRI_ArcGIS_Geodatabase_IFlowDirection_FlowDirectionType
+  name: FlowDirectionType
+  nameWithType: IFlowDirection.FlowDirectionType
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionType
+- uid: ESRI.ArcGIS.Geodatabase.esriFlowDirection
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriFlowDirection
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriFlowDirection.html
+  name: esriFlowDirection
+  nameWithType: esriFlowDirection
+  fullName: ESRI.ArcGIS.Geodatabase.esriFlowDirection
+- uid: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFlowDirection.html#ESRI_ArcGIS_Geodatabase_IFlowDirection_FlowDirectionLine
+  name: FlowDirectionLine
+  nameWithType: IFlowDirection.FlowDirectionLine
+  fullName: ESRI.ArcGIS.Geodatabase.IFlowDirection.FlowDirectionLine
+- uid: ESRI.ArcGIS.Geometry.IPolyline
+  commentId: T:ESRI.ArcGIS.Geometry.IPolyline
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolyline.html
+  name: IPolyline
+  nameWithType: IPolyline
+  fullName: ESRI.ArcGIS.Geometry.IPolyline
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

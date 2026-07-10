@@ -1,0 +1,496 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  id: IRasterKeyProperties
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties(System.Int32,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty(System.String,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty(System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty(System.String,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty(System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty(System.String,System.Int32,System.Object)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IRasterKeyProperties
+  nameWithType: IRasterKeyProperties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control raster key properties.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("01002227-F833-40AA-A0C9-429EA383C51F")]
+
+      public interface IRasterKeyProperties
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("01002227-F833-40AA-A0C9-429EA383C51F")>
+
+      Public Interface IRasterKeyProperties
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.CachedRasterFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.ComputeChangeFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.ExtractBandFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.FunctionRasterDatasetNameClass
+  - ESRI.ArcGIS.DatasourcesRaster.GeometricFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.IdentityFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterInfoFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.SimpleCollectionFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.StretchFunctionClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 01002227-F833-40AA-A0C9-429EA383C51F
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty(System.String)
+  id: GetProperty(System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: GetProperty(string)
+  nameWithType: IRasterKeyProperties.GetProperty(string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the requested key property by name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetProperty(string sName)
+    parameters:
+    - id: sName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function GetProperty(sName As String) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty*
+  nameWithType.vb: IRasterKeyProperties.GetProperty(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty(String)
+  name.vb: GetProperty(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty(System.String,System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty(System.String,System.Object)
+  id: SetProperty(System.String,System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: SetProperty(string, object)
+  nameWithType: IRasterKeyProperties.SetProperty(string, object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty(string, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Updates the value of the specified key property by name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetProperty(string sName, object vtValue)
+    parameters:
+    - id: sName
+      type: System.String
+    - id: vtValue
+      type: System.Object
+    content.vb: Sub SetProperty(sName As String, vtValue As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty*
+  nameWithType.vb: IRasterKeyProperties.SetProperty(String, Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty(String, Object)
+  name.vb: SetProperty(String, Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty(System.String)
+  id: RemoveProperty(System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: RemoveProperty(string)
+  nameWithType: IRasterKeyProperties.RemoveProperty(string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Removes all occurrences of the specified key property.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveProperty(string sName)
+    parameters:
+    - id: sName
+      type: System.String
+    content.vb: Sub RemoveProperty(sName As String)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty*
+  nameWithType.vb: IRasterKeyProperties.RemoveProperty(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty(String)
+  name.vb: RemoveProperty(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  id: GetAllProperties(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: GetAllProperties(out IStringArray, out IVariantArray)
+  nameWithType: IRasterKeyProperties.GetAllProperties(out IStringArray, out IVariantArray)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties(out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IVariantArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetAllProperties(out IStringArray ppNames, out IVariantArray ppValues)
+    parameters:
+    - id: ppNames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: ppValues
+      type: ESRI.ArcGIS.esriSystem.IVariantArray
+    content.vb: Sub GetAllProperties(ppNames As IStringArray, ppValues As IVariantArray)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties*
+  nameWithType.vb: IRasterKeyProperties.GetAllProperties(IStringArray, IVariantArray)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties(ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IVariantArray)
+  name.vb: GetAllProperties(IStringArray, IVariantArray)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty(System.String,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty(System.String,System.Int32)
+  id: GetBandProperty(System.String,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: GetBandProperty(string, int)
+  nameWithType: IRasterKeyProperties.GetBandProperty(string, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the requested key property by name for a given band.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetBandProperty(string sName, int BandIndex)
+    parameters:
+    - id: sName
+      type: System.String
+    - id: BandIndex
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Function GetBandProperty(sName As String, BandIndex As Integer) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty*
+  nameWithType.vb: IRasterKeyProperties.GetBandProperty(String, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty(String, Integer)
+  name.vb: GetBandProperty(String, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty(System.String,System.Int32,System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty(System.String,System.Int32,System.Object)
+  id: SetBandProperty(System.String,System.Int32,System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: SetBandProperty(string, int, object)
+  nameWithType: IRasterKeyProperties.SetBandProperty(string, int, object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty(string, int, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Updates the value of the specified key property by name for a given band.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetBandProperty(string sName, int BandIndex, object vtValue)
+    parameters:
+    - id: sName
+      type: System.String
+    - id: BandIndex
+      type: System.Int32
+    - id: vtValue
+      type: System.Object
+    content.vb: Sub SetBandProperty(sName As String, BandIndex As Integer, vtValue As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty*
+  nameWithType.vb: IRasterKeyProperties.SetBandProperty(String, Integer, Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty(String, Integer, Object)
+  name.vb: SetBandProperty(String, Integer, Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty(System.String,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty(System.String,System.Int32)
+  id: RemoveBandProperty(System.String,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: RemoveBandProperty(string, int)
+  nameWithType: IRasterKeyProperties.RemoveBandProperty(string, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty(string, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Removes all occurrences of the specified key property for a given band.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveBandProperty(string sName, int BandIndex)
+    parameters:
+    - id: sName
+      type: System.String
+    - id: BandIndex
+      type: System.Int32
+    content.vb: Sub RemoveBandProperty(sName As String, BandIndex As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty*
+  nameWithType.vb: IRasterKeyProperties.RemoveBandProperty(String, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty(String, Integer)
+  name.vb: RemoveBandProperty(String, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties(System.Int32,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties(System.Int32,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  id: GetAllBandProperties(System.Int32,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties
+  langs:
+  - csharp
+  - vb
+  name: GetAllBandProperties(int, out IStringArray, out IVariantArray)
+  nameWithType: IRasterKeyProperties.GetAllBandProperties(int, out IStringArray, out IVariantArray)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties(int, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IVariantArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetAllBandProperties(int BandIndex, out IStringArray ppNames, out IVariantArray ppValues)
+    parameters:
+    - id: BandIndex
+      type: System.Int32
+    - id: ppNames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: ppValues
+      type: ESRI.ArcGIS.esriSystem.IVariantArray
+    content.vb: Sub GetAllBandProperties(BandIndex As Integer, ppNames As IStringArray, ppValues As IVariantArray)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties*
+  nameWithType.vb: IRasterKeyProperties.GetAllBandProperties(Integer, IStringArray, IVariantArray)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties(Integer, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IVariantArray)
+  name.vb: GetAllBandProperties(Integer, IStringArray, IVariantArray)
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_GetProperty_System_String_
+  name: GetProperty
+  nameWithType: IRasterKeyProperties.GetProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetProperty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_SetProperty_System_String_System_Object_
+  name: SetProperty
+  nameWithType: IRasterKeyProperties.SetProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetProperty
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_RemoveProperty_System_String_
+  name: RemoveProperty
+  nameWithType: IRasterKeyProperties.RemoveProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveProperty
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_GetAllProperties_ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IVariantArray__
+  name: GetAllProperties
+  nameWithType: IRasterKeyProperties.GetAllProperties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllProperties
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem.IVariantArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IVariantArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IVariantArray.html
+  name: IVariantArray
+  nameWithType: IVariantArray
+  fullName: ESRI.ArcGIS.esriSystem.IVariantArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_GetBandProperty_System_String_System_Int32_
+  name: GetBandProperty
+  nameWithType: IRasterKeyProperties.GetBandProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetBandProperty
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_SetBandProperty_System_String_System_Int32_System_Object_
+  name: SetBandProperty
+  nameWithType: IRasterKeyProperties.SetBandProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.SetBandProperty
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_RemoveBandProperty_System_String_System_Int32_
+  name: RemoveBandProperty
+  nameWithType: IRasterKeyProperties.RemoveBandProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.RemoveBandProperty
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.html#ESRI_ArcGIS_DatasourcesRaster_IRasterKeyProperties_GetAllBandProperties_System_Int32_ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IVariantArray__
+  name: GetAllBandProperties
+  nameWithType: IRasterKeyProperties.GetAllBandProperties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterKeyProperties.GetAllBandProperties

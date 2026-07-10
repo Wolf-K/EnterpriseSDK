@@ -1,0 +1,217 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  commentId: T:ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  id: IMSegmentationInternal
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+  - ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs
+  - ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM(System.Double@,System.Double@)
+  langs:
+  - csharp
+  - vb
+  name: IMSegmentationInternal
+  nameWithType: IMSegmentationInternal
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that allow certain MSegmentation functionality, similar to that on IMSegmentation3 but more limited.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("040E3809-1106-11D6-9FA9-00C04F6BDF0D")]
+
+      public interface IMSegmentationInternal
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("040E3809-1106-11D6-9FA9-00C04F6BDF0D")>
+
+      Public Interface IMSegmentationInternal
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 040E3809-1106-11D6-9FA9-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM(System.Double@,System.Double@)
+  id: QueryFirstLastM(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  langs:
+  - csharp
+  - vb
+  name: QueryFirstLastM(out double, out double)
+  nameWithType: IMSegmentationInternal.QueryFirstLastM(out double, out double)
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM(out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the first and last defined M value for the curve.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryFirstLastM(out double firstM, out double lastM)
+    parameters:
+    - id: firstM
+      type: System.Double
+    - id: lastM
+      type: System.Double
+    content.vb: Sub QueryFirstLastM(firstM As Double, lastM As Double)
+  overload: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM*
+  nameWithType.vb: IMSegmentationInternal.QueryFirstLastM(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM(Double, Double)
+  name.vb: QueryFirstLastM(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs
+  commentId: M:ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs
+  id: OrientByMs
+  parent: ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  langs:
+  - csharp
+  - vb
+  name: OrientByMs()
+  nameWithType: IMSegmentationInternal.OrientByMs()
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Re-orients the curve to make Ms non-decreasing, if possible.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OrientByMs()
+    content.vb: Sub OrientByMs()
+  overload: ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs*
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+  commentId: P:ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+  id: MMonotonicity
+  parent: ESRI.ArcGIS.Geometry.IMSegmentationInternal
+  langs:
+  - csharp
+  - vb
+  name: MMonotonicity
+  nameWithType: IMSegmentationInternal.MMonotonicity
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns a combination of esriMonotinicityEnum values that describes all trends in M values over the length of the curve.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MMonotonicity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MMonotonicity As Integer
+  overload: ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMSegmentationInternal.html#ESRI_ArcGIS_Geometry_IMSegmentationInternal_QueryFirstLastM_System_Double__System_Double__
+  name: QueryFirstLastM
+  nameWithType: IMSegmentationInternal.QueryFirstLastM
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.QueryFirstLastM
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMSegmentationInternal.html#ESRI_ArcGIS_Geometry_IMSegmentationInternal_OrientByMs
+  name: OrientByMs
+  nameWithType: IMSegmentationInternal.OrientByMs
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.OrientByMs
+- uid: ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMSegmentationInternal.html#ESRI_ArcGIS_Geometry_IMSegmentationInternal_MMonotonicity
+  name: MMonotonicity
+  nameWithType: IMSegmentationInternal.MMonotonicity
+  fullName: ESRI.ArcGIS.Geometry.IMSegmentationInternal.MMonotonicity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

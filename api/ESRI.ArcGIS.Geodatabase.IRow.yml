@@ -1,0 +1,390 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  id: IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRow.Delete
+  - ESRI.ArcGIS.Geodatabase.IRow.Fields
+  - ESRI.ArcGIS.Geodatabase.IRow.HasOID
+  - ESRI.ArcGIS.Geodatabase.IRow.OID
+  - ESRI.ArcGIS.Geodatabase.IRow.Store
+  - ESRI.ArcGIS.Geodatabase.IRow.Table
+  - ESRI.ArcGIS.Geodatabase.IRow.Value(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about the row, the table the row belongs to and storing and deleting the row.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("FCB01CB4-9F0B-11D0-BEC7-00805F7C4268")]
+
+      public interface IRow : IRowBuffer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("FCB01CB4-9F0B-11D0-BEC7-00805F7C4268")>
+
+      Public Interface IRow Inherits IRowBuffer
+  derivedClasses:
+  - ESRI.ArcGIS.CartoX.MEAnnotationFeatureClass
+  - ESRI.ArcGIS.CartoX.MEDimensionFeatureClass
+  - ESRI.ArcGIS.Geodatabase.FeatureClass_2
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FCB01CB4-9F0B-11D0-BEC7-00805F7C4268
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Store
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRow.Store
+  id: Store
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: Store()
+  nameWithType: IRow.Store()
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Store()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Stores the row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Store()
+    content.vb: Sub Store()
+  overload: ESRI.ArcGIS.Geodatabase.IRow.Store*
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Delete
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRow.Delete
+  id: Delete
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: IRow.Delete()
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Delete()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes the row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Delete()
+    content.vb: Sub Delete()
+  overload: ESRI.ArcGIS.Geodatabase.IRow.Delete*
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Value(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRow.Value(System.Int32)
+  id: Value(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: Value[int]
+  nameWithType: IRow.Value[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Value[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object Value[int Index] { get; set; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Property Value(Index As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IRow.Value*
+  nameWithType.vb: IRow.Value(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRow.Value(Integer)
+  name.vb: Value(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRow.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: IRow.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.IRow.Fields*
+- uid: ESRI.ArcGIS.Geodatabase.IRow.HasOID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRow.HasOID
+  id: HasOID
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: HasOID
+  nameWithType: IRow.HasOID
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.HasOID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the row has an OID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasOID { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasOID As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IRow.HasOID*
+- uid: ESRI.ArcGIS.Geodatabase.IRow.OID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRow.OID
+  id: OID
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: OID
+  nameWithType: IRow.OID
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.OID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The OID for the row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long OID { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property OID As Long
+  overload: ESRI.ArcGIS.Geodatabase.IRow.OID*
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Table
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRow.Table
+  id: Table
+  parent: ESRI.ArcGIS.Geodatabase.IRow
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: IRow.Table
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Table
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The Table for the row.
+  remarks: >-
+    &lt;P&gt;A &lt;STRONG&gt;Table &lt;/STRONG&gt;object has one or more columns, referred to as fields, and contains an unordered collection of rows. Each row has for each field exactly one value in the data type of the field.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Table &lt;/STRONG&gt;is a &lt;STRONG&gt;Dataset &lt;/STRONG&gt;and properties such as the name of the table, the persistable name object for the table, and the workspace containing the table, may be obtained via the &lt;STRONG&gt;IDataset &lt;/STRONG&gt;interface. In relational terms, a &lt;STRONG&gt;Table &lt;/STRONG&gt;object represents an RDBMS table or view. In objected-oriented terms, a Table object represents an ObjectClass or a RelationshipClass in a geodatabase. A &lt;STRONG&gt;Table &lt;/STRONG&gt;object hands out &lt;STRONG&gt;Row &lt;/STRONG&gt;objects which themselves support application callable methods depending on the type of data stored in the table.&lt;/P&gt;
+
+    &lt;P&gt;The &lt;STRONG&gt;Name &lt;/STRONG&gt;property of a &lt;STRONG&gt;Table&lt;/STRONG&gt;, accessible via the &lt;STRONG&gt;IDataset &lt;/STRONG&gt;interface, returns its fully qualified name. The level of qualification may vary depending on the host DBMS. For example, a table named ‘pipes’, owned by a user named ‘gas’ may be called ‘pipes’ in and Access or File Geodatabase, ‘gas.pipes’ on Oracle and ‘mydb.gas.pipes’ on SQLServer. The &lt;STRONG&gt;ParseTableNamemethod &lt;/STRONG&gt;on the &lt;STRONG&gt;ISqlSyntax &lt;/STRONG&gt;interface supported by the table’s workspace can be used to split the fully qualified name into its components.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable Table { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: ReadOnly Property Table As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IRow.Table*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Store*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.Store
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_Store
+  name: Store
+  nameWithType: IRow.Store
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Store
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Delete*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.Delete
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_Delete
+  name: Delete
+  nameWithType: IRow.Delete
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Delete
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Value*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.Value
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_Value_System_Int32_
+  name: Value
+  nameWithType: IRow.Value
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Value
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_Fields
+  name: Fields
+  nameWithType: IRow.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IRow.HasOID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.HasOID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_HasOID
+  name: HasOID
+  nameWithType: IRow.HasOID
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.HasOID
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IRow.OID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.OID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_OID
+  name: OID
+  nameWithType: IRow.OID
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.OID
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.IRow.Table*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRow.Table
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html#ESRI_ArcGIS_Geodatabase_IRow_Table
+  name: Table
+  nameWithType: IRow.Table
+  fullName: ESRI.ArcGIS.Geodatabase.IRow.Table
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable

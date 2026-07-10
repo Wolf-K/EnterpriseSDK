@@ -1,0 +1,1270 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  id: FeatureCursorClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField(System.String)
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField(System.String)
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  langs:
+  - csharp
+  - vb
+  name: FeatureCursorClass
+  nameWithType: FeatureCursorClass
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("4DD32C19-1720-11D5-A664-0008C711C8C1")]
+
+      public class FeatureCursorClass : FeatureCursor, ICursor, IFeatureCursor
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("4DD32C19-1720-11D5-A664-0008C711C8C1")>
+
+      Public Class FeatureCursorClass Implements FeatureCursor, ICursor, IFeatureCursor
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.FeatureCursor
+  - ESRI.ArcGIS.Geodatabase.ICursor
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4DD32C19-1720-11D5-A664-0008C711C8C1
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField(System.String)
+  id: FindField(System.String)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: FindField(string)
+  nameWithType: FeatureCursorClass.FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The index of the field with the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int FindField(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Overridable Function FindField(Name As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  nameWithType.vb: FeatureCursorClass.FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField(String)
+  name.vb: FindField(String)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow
+  id: NextRow
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: NextRow()
+  nameWithType: FeatureCursorClass.NextRow()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Advance the position of the cursor by one and return the Row object at that position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IRow NextRow()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Overridable Function NextRow() As IRow
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  id: UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: UpdateRow(IRow)
+  nameWithType: FeatureCursorClass.UpdateRow(IRow)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual void UpdateRow(IRow Row)
+    parameters:
+    - id: Row
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Overridable Sub UpdateRow(Row As IRow)
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow
+  id: DeleteRow
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: DeleteRow()
+  nameWithType: FeatureCursorClass.DeleteRow()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Delete the existing Row in the database corresponding to the current position of the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void DeleteRow()
+    content.vb: Overridable Sub DeleteRow()
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  id: InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: InsertRow(IRowBuffer)
+  nameWithType: FeatureCursorClass.InsertRow(IRowBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual object InsertRow(IRowBuffer buffer)
+    parameters:
+    - id: buffer
+      type: ESRI.ArcGIS.Geodatabase.IRowBuffer
+    return:
+      type: System.Object
+    content.vb: Overridable Function InsertRow(buffer As IRowBuffer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush
+  id: Flush
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: FeatureCursorClass.Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Flush any outstanding buffered writes to the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Flush()
+    content.vb: Overridable Sub Flush()
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.Flush
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField(System.String)
+  id: IFeatureCursor_FindField(System.String)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: IFeatureCursor_FindField(string)
+  nameWithType: FeatureCursorClass.IFeatureCursor_FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The index of the field with the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int IFeatureCursor_FindField(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Overridable Function IFeatureCursor_FindField(Name As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  nameWithType.vb: FeatureCursorClass.IFeatureCursor_FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField(String)
+  name.vb: IFeatureCursor_FindField(String)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature
+  id: NextFeature
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: NextFeature()
+  nameWithType: FeatureCursorClass.NextFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Advance the position of the cursor by one and return the Feature object at that position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IFeature NextFeature()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Overridable Function NextFeature() As IFeature
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  id: UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: UpdateFeature(IFeature)
+  nameWithType: FeatureCursorClass.UpdateFeature(IFeature)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual void UpdateFeature(IFeature Object)
+    parameters:
+    - id: Object
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Overridable Sub UpdateFeature([Object] As IFeature)
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature
+  id: DeleteFeature
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: DeleteFeature()
+  nameWithType: FeatureCursorClass.DeleteFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Delete the existing Feature in the database corresponding to the current position of the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void DeleteFeature()
+    content.vb: Overridable Sub DeleteFeature()
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  id: InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: InsertFeature(IFeatureBuffer)
+  nameWithType: FeatureCursorClass.InsertFeature(IFeatureBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual object InsertFeature(IFeatureBuffer buffer)
+    parameters:
+    - id: buffer
+      type: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    return:
+      type: System.Object
+    content.vb: Overridable Function InsertFeature(buffer As IFeatureBuffer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush
+  id: IFeatureCursor_Flush
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: IFeatureCursor_Flush()
+  nameWithType: FeatureCursorClass.IFeatureCursor_Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Flush any outstanding buffered writes to the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void IFeatureCursor_Flush()
+    content.vb: Overridable Sub IFeatureCursor_Flush()
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+  id: Fields
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: FeatureCursorClass.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The Fields Collection for this cursor.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Overridable ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ICursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+  id: IFeatureCursor_Fields
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  langs:
+  - csharp
+  - vb
+  name: IFeatureCursor_Fields
+  nameWithType: FeatureCursorClass.IFeatureCursor_Fields
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields Collection for this cursor.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IFields IFeatureCursor_Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Overridable ReadOnly Property IFeatureCursor_Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.FeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursor.html
+  name: FeatureCursor
+  nameWithType: FeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursor
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_FindField_System_String_
+  name: FindField
+  nameWithType: FeatureCursorClass.FindField
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.FindField
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_FindField_System_String_
+  name: FindField(string)
+  nameWithType: ICursor.FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.FindField(string)
+  nameWithType.vb: ICursor.FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ICursor.FindField(String)
+  name.vb: FindField(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_NextRow
+  name: NextRow
+  nameWithType: FeatureCursorClass.NextRow
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_NextRow
+  name: NextRow()
+  nameWithType: ICursor.NextRow()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.NextRow()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+    name: NextRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_NextRow
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+    name: NextRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_NextRow
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_UpdateRow_ESRI_ArcGIS_Geodatabase_IRow_
+  name: UpdateRow
+  nameWithType: FeatureCursorClass.UpdateRow
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_UpdateRow_ESRI_ArcGIS_Geodatabase_IRow_
+  name: UpdateRow(IRow)
+  nameWithType: ICursor.UpdateRow(IRow)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+    name: UpdateRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_UpdateRow_ESRI_ArcGIS_Geodatabase_IRow_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRow
+    name: IRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRow.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+    name: UpdateRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_UpdateRow_ESRI_ArcGIS_Geodatabase_IRow_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRow
+    name: IRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRow.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_DeleteRow
+  name: DeleteRow
+  nameWithType: FeatureCursorClass.DeleteRow
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_DeleteRow
+  name: DeleteRow()
+  nameWithType: ICursor.DeleteRow()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+    name: DeleteRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_DeleteRow
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+    name: DeleteRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_DeleteRow
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_InsertRow_ESRI_ArcGIS_Geodatabase_IRowBuffer_
+  name: InsertRow
+  nameWithType: FeatureCursorClass.InsertRow
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_InsertRow_ESRI_ArcGIS_Geodatabase_IRowBuffer_
+  name: InsertRow(IRowBuffer)
+  nameWithType: ICursor.InsertRow(IRowBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+    name: InsertRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_InsertRow_ESRI_ArcGIS_Geodatabase_IRowBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRowBuffer
+    name: IRowBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+    name: InsertRow
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_InsertRow_ESRI_ArcGIS_Geodatabase_IRowBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IRowBuffer
+    name: IRowBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IRowBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRowBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html
+  name: IRowBuffer
+  nameWithType: IRowBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IRowBuffer
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_Flush
+  name: Flush
+  nameWithType: FeatureCursorClass.Flush
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Flush
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Flush
+  name: Flush()
+  nameWithType: ICursor.Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Flush()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Flush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Flush
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_IFeatureCursor_FindField_System_String_
+  name: IFeatureCursor_FindField
+  nameWithType: FeatureCursorClass.IFeatureCursor_FindField
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_FindField
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  name: FindField(string)
+  nameWithType: IFeatureCursor.FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(string)
+  nameWithType.vb: IFeatureCursor.FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(String)
+  name.vb: FindField(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_NextFeature
+  name: NextFeature
+  nameWithType: FeatureCursorClass.NextFeature
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.NextFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  name: NextFeature()
+  nameWithType: IFeatureCursor.NextFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+    name: NextFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+    name: NextFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  name: IFeature
+  nameWithType: IFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  name: UpdateFeature
+  nameWithType: FeatureCursorClass.UpdateFeature
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.UpdateFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  name: UpdateFeature(IFeature)
+  nameWithType: IFeatureCursor.UpdateFeature(IFeature)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+    name: UpdateFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeature
+    name: IFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+    name: UpdateFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeature
+    name: IFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_DeleteFeature
+  name: DeleteFeature
+  nameWithType: FeatureCursorClass.DeleteFeature
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.DeleteFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  name: DeleteFeature()
+  nameWithType: IFeatureCursor.DeleteFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+    name: DeleteFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+    name: DeleteFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  name: InsertFeature
+  nameWithType: FeatureCursorClass.InsertFeature
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.InsertFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  name: InsertFeature(IFeatureBuffer)
+  nameWithType: IFeatureCursor.InsertFeature(IFeatureBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+    name: InsertFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    name: IFeatureBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+    name: InsertFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    name: IFeatureBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  name: IFeatureBuffer
+  nameWithType: IFeatureBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_IFeatureCursor_Flush
+  name: IFeatureCursor_Flush
+  nameWithType: FeatureCursorClass.IFeatureCursor_Flush
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Flush
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  name: Flush()
+  nameWithType: IFeatureCursor.Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_Fields
+  name: Fields
+  nameWithType: FeatureCursorClass.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.Fields
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Fields
+  name: Fields
+  nameWithType: ICursor.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.html#ESRI_ArcGIS_Geodatabase_FeatureCursorClass_IFeatureCursor_Fields
+  name: IFeatureCursor_Fields
+  nameWithType: FeatureCursorClass.IFeatureCursor_Fields
+  fullName: ESRI.ArcGIS.Geodatabase.FeatureCursorClass.IFeatureCursor_Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Fields
+  name: Fields
+  nameWithType: IFeatureCursor.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields

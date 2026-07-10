@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  id: IDatabaseView2
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView(System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView(System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView(System.String)
+  - ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDatabaseView2
+  nameWithType: IDatabaseView2
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that request database views.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("DADC9333-8622-4B4B-BBAC-A34D7FC49BED")]
+
+      public interface IDatabaseView2 : IDatabaseView
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("DADC9333-8622-4B4B-BBAC-A34D7FC49BED")>
+
+      Public Interface IDatabaseView2 Inherits IDatabaseView
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DADC9333-8622-4B4B-BBAC-A34D7FC49BED
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView(System.String,System.String)
+  id: CreateView(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: CreateView(string, string)
+  nameWithType: IDatabaseView2.CreateView(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void CreateView(string viewName, string ViewDefinition)
+    parameters:
+    - id: viewName
+      type: System.String
+    - id: ViewDefinition
+      type: System.String
+    content.vb: Sub CreateView(viewName As String, ViewDefinition As String)
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView*
+  nameWithType.vb: IDatabaseView2.CreateView(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView(String, String)
+  name.vb: CreateView(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView(System.String)
+  id: DropView(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: DropView(string)
+  nameWithType: IDatabaseView2.DropView(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DropView(string viewName)
+    parameters:
+    - id: viewName
+      type: System.String
+    content.vb: Sub DropView(viewName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView*
+  nameWithType.vb: IDatabaseView2.DropView(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView(String)
+  name.vb: DropView(String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView(System.String,System.String)
+  id: CreateMaterializedView(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: CreateMaterializedView(string, string)
+  nameWithType: IDatabaseView2.CreateMaterializedView(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Create materialized view from SQL statemnt input.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateMaterializedView(string materializedViewName, string materializedViewDefinition)
+    parameters:
+    - id: materializedViewName
+      type: System.String
+    - id: materializedViewDefinition
+      type: System.String
+    content.vb: Sub CreateMaterializedView(materializedViewName As String, materializedViewDefinition As String)
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView*
+  nameWithType.vb: IDatabaseView2.CreateMaterializedView(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView(String, String)
+  name.vb: CreateMaterializedView(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView(System.String,System.String)
+  id: CanCreateMaterializedView(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: CanCreateMaterializedView(string, string)
+  nameWithType: IDatabaseView2.CanCreateMaterializedView(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fails if a materialized view with the given name and definition cannot be created.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanCreateMaterializedView(string materializedViewName, string materializedViewDefinition)
+    parameters:
+    - id: materializedViewName
+      type: System.String
+    - id: materializedViewDefinition
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function CanCreateMaterializedView(materializedViewName As String, materializedViewDefinition As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView*
+  nameWithType.vb: IDatabaseView2.CanCreateMaterializedView(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView(String, String)
+  name.vb: CanCreateMaterializedView(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView(System.String)
+  id: IsView(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: IsView[string]
+  nameWithType: IDatabaseView2.IsView[string]
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsView[string viewName] { get; }
+    parameters:
+    - id: viewName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsView(viewName As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView*
+  nameWithType.vb: IDatabaseView2.IsView(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView(String)
+  name.vb: IsView(String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition(System.String)
+  id: ViewDefinition(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: ViewDefinition[string]
+  nameWithType: IDatabaseView2.ViewDefinition[string]
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: string ViewDefinition[string viewName] { get; }
+    parameters:
+    - id: viewName
+      type: System.String
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ViewDefinition(viewName As String) As String
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition*
+  nameWithType.vb: IDatabaseView2.ViewDefinition(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition(String)
+  name.vb: ViewDefinition(String)
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView(System.String)
+  id: IsMaterializedView(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IDatabaseView2
+  langs:
+  - csharp
+  - vb
+  name: IsMaterializedView[string]
+  nameWithType: IDatabaseView2.IsMaterializedView[string]
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Is the table a materialized view?
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsMaterializedView[string materializedViewName] { get; }
+    parameters:
+    - id: materializedViewName
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsMaterializedView(materializedViewName As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView*
+  nameWithType.vb: IDatabaseView2.IsMaterializedView(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView(String)
+  name.vb: IsMaterializedView(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_CreateView_System_String_System_String_
+  name: CreateView
+  nameWithType: IDatabaseView2.CreateView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateView
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_DropView_System_String_
+  name: DropView
+  nameWithType: IDatabaseView2.DropView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.DropView
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_CreateMaterializedView_System_String_System_String_
+  name: CreateMaterializedView
+  nameWithType: IDatabaseView2.CreateMaterializedView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CreateMaterializedView
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_CanCreateMaterializedView_System_String_System_String_
+  name: CanCreateMaterializedView
+  nameWithType: IDatabaseView2.CanCreateMaterializedView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.CanCreateMaterializedView
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_IsView_System_String_
+  name: IsView
+  nameWithType: IDatabaseView2.IsView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsView
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_ViewDefinition_System_String_
+  name: ViewDefinition
+  nameWithType: IDatabaseView2.ViewDefinition
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.ViewDefinition
+- uid: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatabaseView2.html#ESRI_ArcGIS_Geodatabase_IDatabaseView2_IsMaterializedView_System_String_
+  name: IsMaterializedView
+  nameWithType: IDatabaseView2.IsMaterializedView
+  fullName: ESRI.ArcGIS.Geodatabase.IDatabaseView2.IsMaterializedView

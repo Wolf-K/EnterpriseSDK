@@ -1,0 +1,236 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterXform
+  id: IRasterXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare(System.Int32,System.Double,System.Double,ESRI.ArcGIS.Geometry.IEnvelope)
+  langs:
+  - csharp
+  - vb
+  name: IRasterXform
+  nameWithType: IRasterXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control raster specific geodata transform.
+  example: []
+  syntax:
+    content: >-
+      [Guid("45B14F29-01B8-489A-9F55-CD21EA84FD7F")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRasterXform
+    content.vb: >-
+      <Guid("45B14F29-01B8-489A-9F55-CD21EA84FD7F")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRasterXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ApproximationXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.CompositeXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.CoordinateXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.EpipolarXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.FrameXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.PushbroomXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.RPCXformClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 45B14F29-01B8-489A-9F55-CD21EA84FD7F
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare(System.Int32,System.Double,System.Double,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare(System.Int32,System.Double,System.Double,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: Prepare(System.Int32,System.Double,System.Double,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterXform
+  langs:
+  - csharp
+  - vb
+  name: Prepare(int, double, double, IEnvelope)
+  nameWithType: IRasterXform.Prepare(int, double, double, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare(int, double, double, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Prepare(int iDomain, double Dx, double Dy, IEnvelope pExtent)
+    parameters:
+    - id: iDomain
+      type: System.Int32
+    - id: Dx
+      type: System.Double
+    - id: Dy
+      type: System.Double
+    - id: pExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub Prepare(iDomain As Integer, Dx As Double, Dy As Double, pExtent As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare*
+  nameWithType.vb: IRasterXform.Prepare(Integer, Double, Double, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare(Integer, Double, Double, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: Prepare(Integer, Double, Double, IEnvelope)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent
+  id: FullExtent
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterXform
+  langs:
+  - csharp
+  - vb
+  name: FullExtent
+  nameWithType: IRasterXform.FullExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The full output extent within which this xform is applied.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope FullExtent { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Property FullExtent As IEnvelope
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.html#ESRI_ArcGIS_DatasourcesRaster_IRasterXform_Prepare_System_Int32_System_Double_System_Double_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: Prepare
+  nameWithType: IRasterXform.Prepare
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.Prepare
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.html#ESRI_ArcGIS_DatasourcesRaster_IRasterXform_FullExtent
+  name: FullExtent
+  nameWithType: IRasterXform.FullExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXform.FullExtent

@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  id: IFeatureClassEdit
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+  - ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship(ESRI.ArcGIS.Geodatabase.IRow,ESRI.ArcGIS.Geodatabase.IRelationshipClass)
+  - ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+  langs:
+  - csharp
+  - vb
+  name: IFeatureClassEdit
+  nameWithType: IFeatureClassEdit
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to information about feature class editing properties.
+  example: []
+  syntax:
+    content: >-
+      [Guid("A5D5E364-FEA9-11D3-A052-00C04F6BDD84")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFeatureClassEdit
+    content.vb: >-
+      <Guid("A5D5E364-FEA9-11D3-A052-00C04F6BDD84")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFeatureClassEdit
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A5D5E364-FEA9-11D3-A052-00C04F6BDD84
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+  id: HasCustomSplitPolicyForRelationship
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  langs:
+  - csharp
+  - vb
+  name: HasCustomSplitPolicyForRelationship()
+  nameWithType: IFeatureClassEdit.HasCustomSplitPolicyForRelationship()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: True if the feature class has a custom split policy for handling relationships.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasCustomSplitPolicyForRelationship()
+    return:
+      type: System.Boolean
+    content.vb: Function HasCustomSplitPolicyForRelationship() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+  id: CanEditWithProjection
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  langs:
+  - csharp
+  - vb
+  name: CanEditWithProjection
+  nameWithType: IFeatureClassEdit.CanEditWithProjection
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the associated feature class can be edited in projected spaces.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanEditWithProjection { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanEditWithProjection As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship(ESRI.ArcGIS.Geodatabase.IRow,ESRI.ArcGIS.Geodatabase.IRelationshipClass)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship(ESRI.ArcGIS.Geodatabase.IRow,ESRI.ArcGIS.Geodatabase.IRelationshipClass)
+  id: CustomSplitPolicyForRelationship(ESRI.ArcGIS.Geodatabase.IRow,ESRI.ArcGIS.Geodatabase.IRelationshipClass)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit
+  langs:
+  - csharp
+  - vb
+  name: CustomSplitPolicyForRelationship[IRow, IRelationshipClass]
+  nameWithType: IFeatureClassEdit.CustomSplitPolicyForRelationship[IRow, IRelationshipClass]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship[ESRI.ArcGIS.Geodatabase.IRow, ESRI.ArcGIS.Geodatabase.IRelationshipClass]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The custom split policy for handling relationships.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriRelationshipSplitPolicy CustomSplitPolicyForRelationship[IRow Row, IRelationshipClass relClass] { get; }
+    parameters:
+    - id: Row
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    - id: relClass
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriRelationshipSplitPolicy
+    content.vb: ReadOnly Property CustomSplitPolicyForRelationship(Row As IRow, relClass As IRelationshipClass) As esriRelationshipSplitPolicy
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship*
+  nameWithType.vb: IFeatureClassEdit.CustomSplitPolicyForRelationship(IRow, IRelationshipClass)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship(ESRI.ArcGIS.Geodatabase.IRow, ESRI.ArcGIS.Geodatabase.IRelationshipClass)
+  name.vb: CustomSplitPolicyForRelationship(IRow, IRelationshipClass)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.html#ESRI_ArcGIS_Geodatabase_IFeatureClassEdit_HasCustomSplitPolicyForRelationship
+  name: HasCustomSplitPolicyForRelationship
+  nameWithType: IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.HasCustomSplitPolicyForRelationship
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.html#ESRI_ArcGIS_Geodatabase_IFeatureClassEdit_CanEditWithProjection
+  name: CanEditWithProjection
+  nameWithType: IFeatureClassEdit.CanEditWithProjection
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CanEditWithProjection
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.html#ESRI_ArcGIS_Geodatabase_IFeatureClassEdit_CustomSplitPolicyForRelationship_ESRI_ArcGIS_Geodatabase_IRow_ESRI_ArcGIS_Geodatabase_IRelationshipClass_
+  name: CustomSplitPolicyForRelationship
+  nameWithType: IFeatureClassEdit.CustomSplitPolicyForRelationship
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClassEdit.CustomSplitPolicyForRelationship
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+- uid: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationshipClass.html
+  name: IRelationshipClass
+  nameWithType: IRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.esriRelationshipSplitPolicy
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriRelationshipSplitPolicy
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriRelationshipSplitPolicy.html
+  name: esriRelationshipSplitPolicy
+  nameWithType: esriRelationshipSplitPolicy
+  fullName: ESRI.ArcGIS.Geodatabase.esriRelationshipSplitPolicy

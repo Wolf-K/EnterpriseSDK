@@ -1,0 +1,393 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2
+  commentId: T:ESRI.ArcGIS.Carto.IFeatureIndex2
+  id: IFeatureIndex2
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+  - ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+  - ESRI.ArcGIS.Carto.IFeatureIndex2.Index(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IFeatureIndex2
+  nameWithType: IFeatureIndex2
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to members that control the creation of an index on a feature class.
+  example: []
+  syntax:
+    content: >-
+      [Guid("BC2E4428-1311-42FB-B364-0AA46F03A1AC")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFeatureIndex2
+    content.vb: >-
+      <Guid("BC2E4428-1311-42FB-B364-0AA46F03A1AC")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFeatureIndex2
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.FeatureIndexClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BC2E4428-1311-42FB-B364-0AA46F03A1AC
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.Index(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Carto.IFeatureIndex2.Index(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: Index(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Carto.IFeatureIndex2
+  langs:
+  - csharp
+  - vb
+  name: Index(ITrackCancel, IEnvelope)
+  nameWithType: IFeatureIndex2.Index(ITrackCancel, IEnvelope)
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.Index(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  syntax:
+    content: void Index(ITrackCancel pTrackCancel, IEnvelope pQueryingGeometryFullExtent)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pQueryingGeometryFullExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub Index(pTrackCancel As ITrackCancel, pQueryingGeometryFullExtent As IEnvelope)
+  overload: ESRI.ArcGIS.Carto.IFeatureIndex2.Index*
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+  commentId: P:ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+  id: FeatureClass
+  parent: ESRI.ArcGIS.Carto.IFeatureIndex2
+  langs:
+  - csharp
+  - vb
+  name: FeatureClass
+  nameWithType: IFeatureIndex2.FeatureClass
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: FeatureClass to index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureClass FeatureClass { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    content.vb: WriteOnly Property FeatureClass As IFeatureClass
+  overload: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass*
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+  commentId: P:ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+  id: FeatureCursor
+  parent: ESRI.ArcGIS.Carto.IFeatureIndex2
+  langs:
+  - csharp
+  - vb
+  name: FeatureCursor
+  nameWithType: IFeatureIndex2.FeatureCursor
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Cursor on feature class, to reduce the number of feature indexed (optional).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureCursor FeatureCursor { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    content.vb: WriteOnly Property FeatureCursor As IFeatureCursor
+  overload: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor*
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference(System.String)
+  commentId: P:ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference(System.String)
+  id: OutputSpatialReference(System.String)
+  parent: ESRI.ArcGIS.Carto.IFeatureIndex2
+  langs:
+  - csharp
+  - vb
+  name: OutputSpatialReference[string]
+  nameWithType: IFeatureIndex2.OutputSpatialReference[string]
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The spatial reference in which to output geometry for a given field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference OutputSpatialReference[string FieldName] { get; set; }
+    parameters:
+    - id: FieldName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property OutputSpatialReference(FieldName As String) As ISpatialReference
+  overload: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference*
+  nameWithType.vb: IFeatureIndex2.OutputSpatialReference(String)
+  fullName.vb: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference(String)
+  name.vb: OutputSpatialReference(String)
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.Index*
+  commentId: Overload:ESRI.ArcGIS.Carto.IFeatureIndex2.Index
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IFeatureIndex2.html#ESRI_ArcGIS_Carto_IFeatureIndex2_Index_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: Index
+  nameWithType: IFeatureIndex2.Index
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.Index
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass*
+  commentId: Overload:ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IFeatureIndex2.html#ESRI_ArcGIS_Carto_IFeatureIndex2_FeatureClass
+  name: FeatureClass
+  nameWithType: IFeatureIndex2.FeatureClass
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor*
+  commentId: Overload:ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IFeatureIndex2.html#ESRI_ArcGIS_Carto_IFeatureIndex2_FeatureCursor
+  name: FeatureCursor
+  nameWithType: IFeatureIndex2.FeatureCursor
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.FeatureCursor
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IFeatureIndex2.html#ESRI_ArcGIS_Carto_IFeatureIndex2_OutputSpatialReference_System_String_
+  name: OutputSpatialReference
+  nameWithType: IFeatureIndex2.OutputSpatialReference
+  fullName: ESRI.ArcGIS.Carto.IFeatureIndex2.OutputSpatialReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

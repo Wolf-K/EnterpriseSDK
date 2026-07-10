@@ -1,0 +1,267 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  id: IERasterStatus
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel
+  - ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel
+  - ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName(System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus(System.String,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IERasterStatus
+  nameWithType: IERasterStatus
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that get events from the Raster Engine.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CE4BCC80-2758-11D3-80CE-00500462E955")]
+
+      public interface IERasterStatus
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CE4BCC80-2758-11D3-80CE-00500462E955")>
+
+      Public Interface IERasterStatus
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.DefaultRasterStatusEventClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CE4BCC80-2758-11D3-80CE-00500462E955
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName(System.String)
+  id: UpdateTaskName(System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  langs:
+  - csharp
+  - vb
+  name: UpdateTaskName(string)
+  nameWithType: IERasterStatus.UpdateTaskName(string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Raster Engine has started a different subtask.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UpdateTaskName(string new_task)
+    parameters:
+    - id: new_task
+      type: System.String
+    content.vb: Sub UpdateTaskName(new_task As String)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName*
+  nameWithType.vb: IERasterStatus.UpdateTaskName(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName(String)
+  name.vb: UpdateTaskName(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel
+  id: QueryCancel
+  parent: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  langs:
+  - csharp
+  - vb
+  name: QueryCancel()
+  nameWithType: IERasterStatus.QueryCancel()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Raster Engine asks if user has decided to quit.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool QueryCancel()
+    return:
+      type: System.Boolean
+    content.vb: Function QueryCancel() As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus(System.String,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus(System.String,System.Double)
+  id: UpdateTaskStatus(System.String,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  langs:
+  - csharp
+  - vb
+  name: UpdateTaskStatus(string, double)
+  nameWithType: IERasterStatus.UpdateTaskStatus(string, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus(string, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Raster Engine reports job status.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UpdateTaskStatus(string taskname, double percent_finished)
+    parameters:
+    - id: taskname
+      type: System.String
+    - id: percent_finished
+      type: System.Double
+    content.vb: Sub UpdateTaskStatus(taskname As String, percent_finished As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus*
+  nameWithType.vb: IERasterStatus.UpdateTaskStatus(String, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus(String, Double)
+  name.vb: UpdateTaskStatus(String, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel
+  id: ResetCancel
+  parent: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus
+  langs:
+  - csharp
+  - vb
+  name: ResetCancel()
+  nameWithType: IERasterStatus.ResetCancel()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Raster Engine acknowledges user's desire to abort.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ResetCancel()
+    content.vb: Sub ResetCancel()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.html#ESRI_ArcGIS_DatasourcesRaster_IERasterStatus_UpdateTaskName_System_String_
+  name: UpdateTaskName
+  nameWithType: IERasterStatus.UpdateTaskName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.html#ESRI_ArcGIS_DatasourcesRaster_IERasterStatus_QueryCancel
+  name: QueryCancel
+  nameWithType: IERasterStatus.QueryCancel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.QueryCancel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.html#ESRI_ArcGIS_DatasourcesRaster_IERasterStatus_UpdateTaskStatus_System_String_System_Double_
+  name: UpdateTaskStatus
+  nameWithType: IERasterStatus.UpdateTaskStatus
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.UpdateTaskStatus
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.html#ESRI_ArcGIS_DatasourcesRaster_IERasterStatus_ResetCancel
+  name: ResetCancel
+  nameWithType: IERasterStatus.ResetCancel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IERasterStatus.ResetCancel

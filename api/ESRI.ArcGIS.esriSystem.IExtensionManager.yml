@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager
+  commentId: T:ESRI.ArcGIS.esriSystem.IExtensionManager
+  id: IExtensionManager
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IExtensionManager.Extension(System.Int32)
+  - ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID(System.Int32)
+  - ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+  - ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IExtensionManager
+  nameWithType: IExtensionManager
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that query extension.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("05C71634-D9D5-4D6F-B68E-D7661142FA06")]
+
+      public interface IExtensionManager
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("05C71634-D9D5-4D6F-B68E-D7661142FA06")>
+
+      Public Interface IExtensionManager
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.ExtensionManagerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 05C71634-D9D5-4D6F-B68E-D7661142FA06
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension(System.Object)
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension(System.Object)
+  id: FindExtension(System.Object)
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: FindExtension(object)
+  nameWithType: IExtensionManager.FindExtension(object)
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Finds the extension by CLSID (IUID) or name (String).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IExtension FindExtension(object nameOrID)
+    parameters:
+    - id: nameOrID
+      type: System.Object
+    return:
+      type: ESRI.ArcGIS.esriSystem.IExtension
+    content.vb: Function FindExtension(nameOrID As Object) As IExtension
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension*
+  nameWithType.vb: IExtensionManager.FindExtension(Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension(Object)
+  name.vb: FindExtension(Object)
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+  commentId: P:ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+  id: ExtensionCount
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: ExtensionCount
+  nameWithType: IExtensionManager.ExtensionCount
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The number of extensions loaded in the application.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ExtensionCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ExtensionCount As Integer
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount*
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension(System.Int32)
+  commentId: P:ESRI.ArcGIS.esriSystem.IExtensionManager.Extension(System.Int32)
+  id: Extension(System.Int32)
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: Extension[int]
+  nameWithType: IExtensionManager.Extension[int]
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The extension at the specified index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IExtension Extension[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.esriSystem.IExtension
+    content.vb: ReadOnly Property Extension(Index As Integer) As IExtension
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension*
+  nameWithType.vb: IExtensionManager.Extension(Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension(Integer)
+  name.vb: Extension(Integer)
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID(System.Int32)
+  commentId: P:ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID(System.Int32)
+  id: ExtensionCLSID(System.Int32)
+  parent: ESRI.ArcGIS.esriSystem.IExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: ExtensionCLSID[int]
+  nameWithType: IExtensionManager.ExtensionCLSID[int]
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The CLSID of the extension at the specified index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: UID ExtensionCLSID[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: ReadOnly Property ExtensionCLSID(Index As Integer) As UID
+  overload: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID*
+  nameWithType.vb: IExtensionManager.ExtensionCLSID(Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID(Integer)
+  name.vb: ExtensionCLSID(Integer)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManager.html#ESRI_ArcGIS_esriSystem_IExtensionManager_FindExtension_System_Object_
+  name: FindExtension
+  nameWithType: IExtensionManager.FindExtension
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.FindExtension
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.esriSystem.IExtension
+  commentId: T:ESRI.ArcGIS.esriSystem.IExtension
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: ESRI.ArcGIS.esriSystem.IExtension
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManager.html#ESRI_ArcGIS_esriSystem_IExtensionManager_ExtensionCount
+  name: ExtensionCount
+  nameWithType: IExtensionManager.ExtensionCount
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManager.Extension
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManager.html#ESRI_ArcGIS_esriSystem_IExtensionManager_Extension_System_Int32_
+  name: Extension
+  nameWithType: IExtensionManager.Extension
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.Extension
+- uid: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtensionManager.html#ESRI_ArcGIS_esriSystem_IExtensionManager_ExtensionCLSID_System_Int32_
+  name: ExtensionCLSID
+  nameWithType: IExtensionManager.ExtensionCLSID
+  fullName: ESRI.ArcGIS.esriSystem.IExtensionManager.ExtensionCLSID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID

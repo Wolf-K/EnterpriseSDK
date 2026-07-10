@@ -1,0 +1,504 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  id: ITerrainDataSource
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds(System.Double@,System.Double@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds(System.Double,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+  langs:
+  - csharp
+  - vb
+  name: ITerrainDataSource
+  nameWithType: ITerrainDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members of Terrain Data Source.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("4D228018-1EC1-4FCC-9646-9C6A67F9EF3C")]
+
+      public interface ITerrainDataSource
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("4D228018-1EC1-4FCC-9646-9C6A67F9EF3C")>
+
+      Public Interface ITerrainDataSource
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainDataSourceClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4D228018-1EC1-4FCC-9646-9C6A67F9EF3C
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds(System.Double,System.Double)
+  id: SetResolutionBounds(System.Double,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: SetResolutionBounds(double, double)
+  nameWithType: ITerrainDataSource.SetResolutionBounds(double, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Sets the lower and upper resolution bounds in which the line/area data source participates in the triangulation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetResolutionBounds(double lowerBound, double upperBound)
+    parameters:
+    - id: lowerBound
+      type: System.Double
+    - id: upperBound
+      type: System.Double
+    content.vb: Sub SetResolutionBounds(lowerBound As Double, upperBound As Double)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds*
+  nameWithType.vb: ITerrainDataSource.SetResolutionBounds(Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds(Double, Double)
+  name.vb: SetResolutionBounds(Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds(System.Double@,System.Double@)
+  id: QueryResolutionBounds(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: QueryResolutionBounds(out double, out double)
+  nameWithType: ITerrainDataSource.QueryResolutionBounds(out double, out double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds(out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Returns the lower and upper resolution bounds in which the line/area data source participates in the triangulation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryResolutionBounds(out double pLowerBound, out double pUpperBound)
+    parameters:
+    - id: pLowerBound
+      type: System.Double
+    - id: pUpperBound
+      type: System.Double
+    content.vb: Sub QueryResolutionBounds(pLowerBound As Double, pUpperBound As Double)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds*
+  nameWithType.vb: ITerrainDataSource.QueryResolutionBounds(Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds(Double, Double)
+  name.vb: QueryResolutionBounds(Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+  id: FeatureClassID
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: FeatureClassID
+  nameWithType: ITerrainDataSource.FeatureClassID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The unique database identifier for the feature class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int FeatureClassID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property FeatureClassID As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+  id: GroupID
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: GroupID
+  nameWithType: ITerrainDataSource.GroupID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The identifier of the terrain's thematic group to which this feature class belongs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int GroupID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property GroupID As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+  id: HeightField
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: HeightField
+  nameWithType: ITerrainDataSource.HeightField
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The database column providing heights for the features.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string HeightField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property HeightField As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+  id: TagValueField
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: TagValueField
+  nameWithType: ITerrainDataSource.TagValueField
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The database column providing tag values for TIN elements derived from the terrain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TagValueField { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TagValueField As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+  id: SurfaceFeatureType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: SurfaceFeatureType
+  nameWithType: ITerrainDataSource.SurfaceFeatureType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates how the features are used to define the terrain surface.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriTinSurfaceType SurfaceFeatureType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriTinSurfaceType
+    content.vb: Property SurfaceFeatureType As esriTinSurfaceType
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+  id: ApplyToOverviewTerrain
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: ApplyToOverviewTerrain
+  nameWithType: ITerrainDataSource.ApplyToOverviewTerrain
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates if the 'breakline' data source should be added to the overview Terrain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ApplyToOverviewTerrain { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ApplyToOverviewTerrain As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded
+  id: Embedded
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  langs:
+  - csharp
+  - vb
+  name: Embedded
+  nameWithType: ITerrainDataSource.Embedded
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Indicates whether or not the data source is contained by the terrain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Embedded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Embedded As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_SetResolutionBounds_System_Double_System_Double_
+  name: SetResolutionBounds
+  nameWithType: ITerrainDataSource.SetResolutionBounds
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SetResolutionBounds
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_QueryResolutionBounds_System_Double__System_Double__
+  name: QueryResolutionBounds
+  nameWithType: ITerrainDataSource.QueryResolutionBounds
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.QueryResolutionBounds
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_FeatureClassID
+  name: FeatureClassID
+  nameWithType: ITerrainDataSource.FeatureClassID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.FeatureClassID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_GroupID
+  name: GroupID
+  nameWithType: ITerrainDataSource.GroupID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.GroupID
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_HeightField
+  name: HeightField
+  nameWithType: ITerrainDataSource.HeightField
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.HeightField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_TagValueField
+  name: TagValueField
+  nameWithType: ITerrainDataSource.TagValueField
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.TagValueField
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_SurfaceFeatureType
+  name: SurfaceFeatureType
+  nameWithType: ITerrainDataSource.SurfaceFeatureType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.SurfaceFeatureType
+- uid: ESRI.ArcGIS.Geodatabase.esriTinSurfaceType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTinSurfaceType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTinSurfaceType.html
+  name: esriTinSurfaceType
+  nameWithType: esriTinSurfaceType
+  fullName: ESRI.ArcGIS.Geodatabase.esriTinSurfaceType
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_ApplyToOverviewTerrain
+  name: ApplyToOverviewTerrain
+  nameWithType: ITerrainDataSource.ApplyToOverviewTerrain
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.ApplyToOverviewTerrain
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_Embedded
+  name: Embedded
+  nameWithType: ITerrainDataSource.Embedded
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.Embedded

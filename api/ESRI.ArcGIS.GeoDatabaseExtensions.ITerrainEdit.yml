@@ -1,0 +1,620 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  id: ITerrainEdit
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale(System.Int32,System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds(System.Int32,System.Double,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  langs:
+  - csharp
+  - vb
+  name: ITerrainEdit
+  nameWithType: ITerrainEdit
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members used to modify and build a terrain.
+  example: []
+  syntax:
+    content: >-
+      [Guid("8E9C9736-60B1-4DB5-AF18-ED40F41D4714")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITerrainEdit
+    content.vb: >-
+      <Guid("8E9C9736-60B1-4DB5-AF18-ED40F41D4714")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITerrainEdit
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8E9C9736-60B1-4DB5-AF18-ED40F41D4714
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource)
+  id: AddDataSource(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: AddDataSource(ITerrainDataSource)
+  nameWithType: ITerrainEdit.AddDataSource(ITerrainDataSource)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void AddDataSource(ITerrainDataSource pDataSource)
+    parameters:
+    - id: pDataSource
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+    content.vb: Sub AddDataSource(pDataSource As ITerrainDataSource)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource(System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource(System.Int32)
+  id: RemoveDataSource(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: RemoveDataSource(int)
+  nameWithType: ITerrainEdit.RemoveDataSource(int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Removes reference to a participating feature class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveDataSource(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    content.vb: Sub RemoveDataSource(Index As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource*
+  nameWithType.vb: ITerrainEdit.RemoveDataSource(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource(Integer)
+  name.vb: RemoveDataSource(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel)
+  id: AddPyramidLevel(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: AddPyramidLevel(ITerrainPyramidLevel)
+  nameWithType: ITerrainEdit.AddPyramidLevel(ITerrainPyramidLevel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel(ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void AddPyramidLevel(ITerrainPyramidLevel pPyramidLevel)
+    parameters:
+    - id: pPyramidLevel
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+    content.vb: Sub AddPyramidLevel(pPyramidLevel As ITerrainPyramidLevel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel(System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel(System.Int32)
+  id: RemovePyramidLevel(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: RemovePyramidLevel(int)
+  nameWithType: ITerrainEdit.RemovePyramidLevel(int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Removes a pyramid level.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemovePyramidLevel(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    content.vb: Sub RemovePyramidLevel(Index As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel*
+  nameWithType.vb: ITerrainEdit.RemovePyramidLevel(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel(Integer)
+  name.vb: RemovePyramidLevel(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale(System.Int32,System.Int32)
+  id: ChangeMaxScale(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: ChangeMaxScale(int, int)
+  nameWithType: ITerrainEdit.ChangeMaxScale(int, int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Modifies the largest display scale used for a particular level of a terrain pyramid.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ChangeMaxScale(int Index, int newScale)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: newScale
+      type: System.Int32
+    content.vb: Sub ChangeMaxScale(Index As Integer, newScale As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale*
+  nameWithType.vb: ITerrainEdit.ChangeMaxScale(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale(Integer, Integer)
+  name.vb: ChangeMaxScale(Integer, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds(System.Int32,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds(System.Int32,System.Double,System.Double)
+  id: ChangeResolutionBounds(System.Int32,System.Double,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: ChangeResolutionBounds(int, double, double)
+  nameWithType: ITerrainEdit.ChangeResolutionBounds(int, double, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds(int, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Change the resolution bounds of a data source.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ChangeResolutionBounds(int Index, double lowerBound, double upperBound)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: lowerBound
+      type: System.Double
+    - id: upperBound
+      type: System.Double
+    content.vb: Sub ChangeResolutionBounds(Index As Integer, lowerBound As Double, upperBound As Double)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds*
+  nameWithType.vb: ITerrainEdit.ChangeResolutionBounds(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds(Integer, Double, Double)
+  name.vb: ChangeResolutionBounds(Integer, Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: DeleteDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: DeleteDataSourceData(int, IEnvelope, ITrackCancel)
+  nameWithType: ITerrainEdit.DeleteDataSourceData(int, IEnvelope, ITrackCancel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData(int, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void DeleteDataSourceData(int Index, IEnvelope pAOI, ITrackCancel pTrackCancel)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub DeleteDataSourceData(Index As Integer, pAOI As IEnvelope, pTrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData*
+  nameWithType.vb: ITerrainEdit.DeleteDataSourceData(Integer, IEnvelope, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData(Integer, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: DeleteDataSourceData(Integer, IEnvelope, ITrackCancel)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: AddDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: AddDataSourceData(int, IEnvelope, IFeatureClass, ITrackCancel)
+  nameWithType: ITerrainEdit.AddDataSourceData(int, IEnvelope, IFeatureClass, ITrackCancel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData(int, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void AddDataSourceData(int Index, IEnvelope pAOI, IFeatureClass pInFC, ITrackCancel pTrackCancel)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pInFC
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub AddDataSourceData(Index As Integer, pAOI As IEnvelope, pInFC As IFeatureClass, pTrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData*
+  nameWithType.vb: ITerrainEdit.AddDataSourceData(Integer, IEnvelope, IFeatureClass, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData(Integer, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: AddDataSourceData(Integer, IEnvelope, IFeatureClass, ITrackCancel)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: ReplaceDataSourceData(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: ReplaceDataSourceData(int, IEnvelope, IFeatureClass, ITrackCancel)
+  nameWithType: ITerrainEdit.ReplaceDataSourceData(int, IEnvelope, IFeatureClass, ITrackCancel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData(int, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void ReplaceDataSourceData(int Index, IEnvelope pAOI, IFeatureClass pInFC, ITrackCancel pTrackCancel)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pInFC
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub ReplaceDataSourceData(Index As Integer, pAOI As IEnvelope, pInFC As IFeatureClass, pTrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData*
+  nameWithType.vb: ITerrainEdit.ReplaceDataSourceData(Integer, IEnvelope, IFeatureClass, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData(Integer, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: ReplaceDataSourceData(Integer, IEnvelope, IFeatureClass, ITrackCancel)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: Build(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit
+  langs:
+  - csharp
+  - vb
+  name: Build(ITrackCancel)
+  nameWithType: ITerrainEdit.Build(ITrackCancel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void Build(ITrackCancel pTrackCancel)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub Build(pTrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_AddDataSource_ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainDataSource_
+  name: AddDataSource
+  nameWithType: ITerrainEdit.AddDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSource
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html
+  name: ITerrainDataSource
+  nameWithType: ITerrainDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_RemoveDataSource_System_Int32_
+  name: RemoveDataSource
+  nameWithType: ITerrainEdit.RemoveDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemoveDataSource
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_AddPyramidLevel_ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainPyramidLevel_
+  name: AddPyramidLevel
+  nameWithType: ITerrainEdit.AddPyramidLevel
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddPyramidLevel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel.html
+  name: ITerrainPyramidLevel
+  nameWithType: ITerrainPyramidLevel
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_RemovePyramidLevel_System_Int32_
+  name: RemovePyramidLevel
+  nameWithType: ITerrainEdit.RemovePyramidLevel
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.RemovePyramidLevel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_ChangeMaxScale_System_Int32_System_Int32_
+  name: ChangeMaxScale
+  nameWithType: ITerrainEdit.ChangeMaxScale
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeMaxScale
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_ChangeResolutionBounds_System_Int32_System_Double_System_Double_
+  name: ChangeResolutionBounds
+  nameWithType: ITerrainEdit.ChangeResolutionBounds
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ChangeResolutionBounds
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_DeleteDataSourceData_System_Int32_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: DeleteDataSourceData
+  nameWithType: ITerrainEdit.DeleteDataSourceData
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.DeleteDataSourceData
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_AddDataSourceData_System_Int32_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geodatabase_IFeatureClass_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: AddDataSourceData
+  nameWithType: ITerrainEdit.AddDataSourceData
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.AddDataSourceData
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_ReplaceDataSourceData_System_Int32_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geodatabase_IFeatureClass_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: ReplaceDataSourceData
+  nameWithType: ITerrainEdit.ReplaceDataSourceData
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.ReplaceDataSourceData
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainEdit_Build_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: Build
+  nameWithType: ITerrainEdit.Build
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainEdit.Build

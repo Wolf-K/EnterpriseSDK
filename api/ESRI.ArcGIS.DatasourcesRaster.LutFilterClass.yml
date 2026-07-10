@@ -1,0 +1,943 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  id: LutFilterClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set(System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+  langs:
+  - csharp
+  - vb
+  name: LutFilterClass
+  nameWithType: LutFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("E825FC58-151A-4BC6-8AB5-2CC1481FE403")]
+
+      public class LutFilterClass : LutFilter, IPixelFilter, ILutFilter
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("E825FC58-151A-4BC6-8AB5-2CC1481FE403")>
+
+      Public Class LutFilterClass Implements LutFilter, IPixelFilter, ILutFilter
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilter
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  - ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E825FC58-151A-4BC6-8AB5-2CC1481FE403
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: LutFilterClass()
+  nameWithType: LutFilterClass.LutFilterClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.LutFilterClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public LutFilterClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor*
+  nameWithType.vb: LutFilterClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: LutFilterClass.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets dimension of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetSize(ref int Columns, ref int Rows)
+    parameters:
+    - id: Columns
+      type: System.Int32
+    - id: Rows
+      type: System.Int32
+    content.vb: Overridable Sub GetSize(Columns As Integer, Rows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  nameWithType.vb: LutFilterClass.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: LutFilterClass.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets center position of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Overridable Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  nameWithType.vb: LutFilterClass.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Filter(IPixelBlock)
+  nameWithType: LutFilterClass.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void Filter(IPixelBlock pBlock)
+    parameters:
+    - id: pBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Overridable Sub Filter(pBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get(System.Int32)
+  id: Get(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Get(int)
+  nameWithType: LutFilterClass.Get(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Looks a value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int Get(int v1)
+    parameters:
+    - id: v1
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Overridable Function [Get](v1 As Integer) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(System.Int32)
+  nameWithType.vb: LutFilterClass.Get(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get(Integer)
+  name.vb: Get(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set(System.Int32,System.Int32)
+  id: Set(System.Int32,System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Set(int, int)
+  nameWithType: LutFilterClass.Set(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets a LUT value mapping.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Set(int v1, int v2)
+    parameters:
+    - id: v1
+      type: System.Int32
+    - id: v2
+      type: System.Int32
+    content.vb: Overridable Sub [Set](v1 As Integer, v2 As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(System.Int32,System.Int32)
+  nameWithType.vb: LutFilterClass.Set(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+  id: Min
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: LutFilterClass.Min
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The min LUT value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int Min { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable Property Min As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Min
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+  id: Size
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: LutFilterClass.Size
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The LUT size.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int Size { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable Property Size As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Size
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.LutFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilter.html
+  name: LutFilter
+  nameWithType: LutFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html
+  name: IPixelFilter
+  nameWithType: IPixelFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html
+  name: ILutFilter
+  nameWithType: ILutFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass__ctor
+  name: LutFilterClass
+  nameWithType: LutFilterClass.LutFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.LutFilterClass
+  nameWithType.vb: LutFilterClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: LutFilterClass.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize(ref int, ref int)
+  nameWithType: IPixelFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: LutFilterClass.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IPixelFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter
+  nameWithType: LutFilterClass.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Filter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter(IPixelBlock)
+  nameWithType: IPixelFilter.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_Get_System_Int32_
+  name: Get
+  nameWithType: LutFilterClass.Get
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Get
+- uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Get_System_Int32_
+  name: Get(int)
+  nameWithType: ILutFilter.Get(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(int)
+  nameWithType.vb: ILutFilter.Get(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(Integer)
+  name.vb: Get(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(System.Int32)
+    name: Get
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Get_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Get(System.Int32)
+    name: Get
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Get_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_Set_System_Int32_System_Int32_
+  name: Set
+  nameWithType: LutFilterClass.Set
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Set
+- uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Set_System_Int32_System_Int32_
+  name: Set(int, int)
+  nameWithType: ILutFilter.Set(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(int, int)
+  nameWithType.vb: ILutFilter.Set(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(Integer, Integer)
+  name.vb: Set(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Set_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Set(System.Int32,System.Int32)
+    name: Set
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Set_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_Min
+  name: Min
+  nameWithType: LutFilterClass.Min
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Min
+- uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Min
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Min
+  parent: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Min
+  name: Min
+  nameWithType: ILutFilter.Min
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Min
+- uid: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_LutFilterClass_Size
+  name: Size
+  nameWithType: LutFilterClass.Size
+  fullName: ESRI.ArcGIS.DatasourcesRaster.LutFilterClass.Size
+- uid: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Size
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Size
+  parent: ESRI.ArcGIS.DatasourcesRaster.ILutFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.html#ESRI_ArcGIS_DatasourcesRaster_ILutFilter_Size
+  name: Size
+  nameWithType: ILutFilter.Size
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ILutFilter.Size

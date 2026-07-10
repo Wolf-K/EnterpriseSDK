@@ -1,0 +1,277 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  commentId: T:ESRI.ArcGIS.esriSystem.IGlobeCompression
+  id: IGlobeCompression
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression
+  - ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG(System.Int32,System.Byte@,System.Boolean,System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression
+  langs:
+  - csharp
+  - vb
+  name: IGlobeCompression
+  nameWithType: IGlobeCompression
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to compress and uncompress JPEG data used by ArcGlobe.
+  example: []
+  syntax:
+    content: >-
+      [Guid("650FC137-7869-4414-A511-F7E176D3301E")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IGlobeCompression
+    content.vb: >-
+      <Guid("650FC137-7869-4414-A511-F7E176D3301E")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IGlobeCompression
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 650FC137-7869-4414-A511-F7E176D3301E
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression
+  commentId: M:ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression
+  id: InitGlobeCompression
+  parent: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  langs:
+  - csharp
+  - vb
+  name: InitGlobeCompression()
+  nameWithType: IGlobeCompression.InitGlobeCompression()
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Initialize for the compression of Globe JPEG data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void InitGlobeCompression()
+    content.vb: Sub InitGlobeCompression()
+  overload: ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression*
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression
+  commentId: M:ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression
+  id: EndGlobeCompression
+  parent: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  langs:
+  - csharp
+  - vb
+  name: EndGlobeCompression()
+  nameWithType: IGlobeCompression.EndGlobeCompression()
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: End the compression of Globe JPEG data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void EndGlobeCompression()
+    content.vb: Sub EndGlobeCompression()
+  overload: ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression*
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  id: GlobeToJPEG(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  langs:
+  - csharp
+  - vb
+  name: GlobeToJPEG(int, ref byte, int, out int, out byte)
+  nameWithType: IGlobeCompression.GlobeToJPEG(int, ref byte, int, out int, out byte)
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG(int, ref byte, int, out int, out byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Compress rgba data to Globe JPEG format.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GlobeToJPEG(int inputSize, ref byte pSrcData, int quality, out int pOutputSize, out byte pDestData)
+    parameters:
+    - id: inputSize
+      type: System.Int32
+    - id: pSrcData
+      type: System.Byte
+    - id: quality
+      type: System.Int32
+    - id: pOutputSize
+      type: System.Int32
+    - id: pDestData
+      type: System.Byte
+    content.vb: Sub GlobeToJPEG(inputSize As Integer, pSrcData As Byte, quality As Integer, pOutputSize As Integer, pDestData As Byte)
+  overload: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG*
+  nameWithType.vb: IGlobeCompression.GlobeToJPEG(Integer, Byte, Integer, Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG(Integer, Byte, Integer, Integer, Byte)
+  name.vb: GlobeToJPEG(Integer, Byte, Integer, Integer, Byte)
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG(System.Int32,System.Byte@,System.Boolean,System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG(System.Int32,System.Byte@,System.Boolean,System.Int32@,System.Byte@)
+  id: GlobeFromJPEG(System.Int32,System.Byte@,System.Boolean,System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.IGlobeCompression
+  langs:
+  - csharp
+  - vb
+  name: GlobeFromJPEG(int, ref byte, bool, out int, out byte)
+  nameWithType: IGlobeCompression.GlobeFromJPEG(int, ref byte, bool, out int, out byte)
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG(int, ref byte, bool, out int, out byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: UnCompress the Globe JPEG format to rgba data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GlobeFromJPEG(int inputSize, ref byte pSrcData, bool use5551, out int pOutputSize, out byte pDestData)
+    parameters:
+    - id: inputSize
+      type: System.Int32
+    - id: pSrcData
+      type: System.Byte
+    - id: use5551
+      type: System.Boolean
+    - id: pOutputSize
+      type: System.Int32
+    - id: pDestData
+      type: System.Byte
+    content.vb: Sub GlobeFromJPEG(inputSize As Integer, pSrcData As Byte, use5551 As Boolean, pOutputSize As Integer, pDestData As Byte)
+  overload: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG*
+  nameWithType.vb: IGlobeCompression.GlobeFromJPEG(Integer, Byte, Boolean, Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG(Integer, Byte, Boolean, Integer, Byte)
+  name.vb: GlobeFromJPEG(Integer, Byte, Boolean, Integer, Byte)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IGlobeCompression.html#ESRI_ArcGIS_esriSystem_IGlobeCompression_InitGlobeCompression
+  name: InitGlobeCompression
+  nameWithType: IGlobeCompression.InitGlobeCompression
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.InitGlobeCompression
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IGlobeCompression.html#ESRI_ArcGIS_esriSystem_IGlobeCompression_EndGlobeCompression
+  name: EndGlobeCompression
+  nameWithType: IGlobeCompression.EndGlobeCompression
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.EndGlobeCompression
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IGlobeCompression.html#ESRI_ArcGIS_esriSystem_IGlobeCompression_GlobeToJPEG_System_Int32_System_Byte__System_Int32_System_Int32__System_Byte__
+  name: GlobeToJPEG
+  nameWithType: IGlobeCompression.GlobeToJPEG
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeToJPEG
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IGlobeCompression.html#ESRI_ArcGIS_esriSystem_IGlobeCompression_GlobeFromJPEG_System_Int32_System_Byte__System_Boolean_System_Int32__System_Byte__
+  name: GlobeFromJPEG
+  nameWithType: IGlobeCompression.GlobeFromJPEG
+  fullName: ESRI.ArcGIS.esriSystem.IGlobeCompression.GlobeFromJPEG
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

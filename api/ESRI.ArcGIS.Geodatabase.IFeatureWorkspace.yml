@@ -1,0 +1,817 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  id: IFeatureWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.Geodatabase.esriFeatureType,System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass(System.String,ESRI.ArcGIS.Geodatabase.IObjectClass,ESRI.ArcGIS.Geodatabase.IObjectClass,System.String,System.String,ESRI.ArcGIS.Geodatabase.esriRelCardinality,ESRI.ArcGIS.Geodatabase.esriRelNotification,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType,System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass(System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset(System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery(System.String,ESRI.ArcGIS.Geodatabase.IQueryDef)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass(System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Boolean,ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.ISelectionSet,System.String,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IFeatureWorkspace
+  nameWithType: IFeatureWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that create and open various types of datasets and other workspace level objects.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D9CAB491-3F69-11D1-B095-0000F8780820")]
+
+      public interface IFeatureWorkspace
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D9CAB491-3F69-11D1-B095-0000F8780820")>
+
+      Public Interface IFeatureWorkspace
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesFile.BimFileWorkspaceClass
+  - ESRI.ArcGIS.DatasourcesFile.ParquetFileWorkspaceClass
+  - ESRI.ArcGIS.DatasourcesGDB.SqlWorkspaceClass
+  - ESRI.ArcGIS.Geodatabase.WorkspaceClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D9CAB491-3F69-11D1-B095-0000F8780820
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable(System.String)
+  id: OpenTable(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenTable(string)
+  nameWithType: IFeatureWorkspace.OpenTable(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable OpenTable(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Function OpenTable(Name As String) As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable*
+  nameWithType.vb: IFeatureWorkspace.OpenTable(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable(String)
+  name.vb: OpenTable(String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.String)
+  id: CreateTable(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CreateTable(string, IFields, UID, UID, string)
+  nameWithType: IFeatureWorkspace.CreateTable(string, IFields, UID, UID, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable(string, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ITable CreateTable(string Name, IFields Fields, UID CLSID, UID EXTCLSID, string ConfigKeyword)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Fields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: CLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: EXTCLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: ConfigKeyword
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Function CreateTable(Name As String, Fields As IFields, CLSID As UID, EXTCLSID As UID, ConfigKeyword As String) As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable*
+  nameWithType.vb: IFeatureWorkspace.CreateTable(String, IFields, UID, UID, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable(String, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, String)
+  name.vb: CreateTable(String, IFields, UID, UID, String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass(System.String)
+  id: OpenFeatureClass(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenFeatureClass(string)
+  nameWithType: IFeatureWorkspace.OpenFeatureClass(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing feature class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureClass OpenFeatureClass(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    content.vb: Function OpenFeatureClass(Name As String) As IFeatureClass
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass*
+  nameWithType.vb: IFeatureWorkspace.OpenFeatureClass(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass(String)
+  name.vb: OpenFeatureClass(String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.Geodatabase.esriFeatureType,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.Geodatabase.esriFeatureType,System.String,System.String)
+  id: CreateFeatureClass(System.String,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.Geodatabase.esriFeatureType,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CreateFeatureClass(string, IFields, UID, UID, esriFeatureType, string, string)
+  nameWithType: IFeatureWorkspace.CreateFeatureClass(string, IFields, UID, UID, esriFeatureType, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass(string, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.Geodatabase.esriFeatureType, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureClass CreateFeatureClass(string Name, IFields Fields, UID CLSID, UID EXTCLSID, esriFeatureType FeatureType, string ShapeFieldName, string ConfigKeyword)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Fields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: CLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: EXTCLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: FeatureType
+      type: ESRI.ArcGIS.Geodatabase.esriFeatureType
+    - id: ShapeFieldName
+      type: System.String
+    - id: ConfigKeyword
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    content.vb: Function CreateFeatureClass(Name As String, Fields As IFields, CLSID As UID, EXTCLSID As UID, FeatureType As esriFeatureType, ShapeFieldName As String, ConfigKeyword As String) As IFeatureClass
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass*
+  nameWithType.vb: IFeatureWorkspace.CreateFeatureClass(String, IFields, UID, UID, esriFeatureType, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass(String, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.Geodatabase.esriFeatureType, String, String)
+  name.vb: CreateFeatureClass(String, IFields, UID, UID, esriFeatureType, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset(System.String)
+  id: OpenFeatureDataset(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenFeatureDataset(string)
+  nameWithType: IFeatureWorkspace.OpenFeatureDataset(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing feature dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureDataset OpenFeatureDataset(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: Function OpenFeatureDataset(Name As String) As IFeatureDataset
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset*
+  nameWithType.vb: IFeatureWorkspace.OpenFeatureDataset(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset(String)
+  name.vb: OpenFeatureDataset(String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: CreateFeatureDataset(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CreateFeatureDataset(string, ISpatialReference)
+  nameWithType: IFeatureWorkspace.CreateFeatureDataset(string, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset(string, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureDataset CreateFeatureDataset(string Name, ISpatialReference SpatialReference)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: Function CreateFeatureDataset(Name As String, SpatialReference As ISpatialReference) As IFeatureDataset
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset*
+  nameWithType.vb: IFeatureWorkspace.CreateFeatureDataset(String, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset(String, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: CreateFeatureDataset(String, ISpatialReference)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef
+  id: CreateQueryDef
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CreateQueryDef()
+  nameWithType: IFeatureWorkspace.CreateQueryDef()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Create a query definition object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IQueryDef CreateQueryDef()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryDef
+    content.vb: Function CreateQueryDef() As IQueryDef
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery(System.String,ESRI.ArcGIS.Geodatabase.IQueryDef)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery(System.String,ESRI.ArcGIS.Geodatabase.IQueryDef)
+  id: OpenFeatureQuery(System.String,ESRI.ArcGIS.Geodatabase.IQueryDef)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenFeatureQuery(string, IQueryDef)
+  nameWithType: IFeatureWorkspace.OpenFeatureQuery(string, IQueryDef)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery(string, ESRI.ArcGIS.Geodatabase.IQueryDef)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureDataset OpenFeatureQuery(string QueryName, IQueryDef QueryDef)
+    parameters:
+    - id: QueryName
+      type: System.String
+    - id: QueryDef
+      type: ESRI.ArcGIS.Geodatabase.IQueryDef
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: Function OpenFeatureQuery(QueryName As String, QueryDef As IQueryDef) As IFeatureDataset
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery*
+  nameWithType.vb: IFeatureWorkspace.OpenFeatureQuery(String, IQueryDef)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery(String, ESRI.ArcGIS.Geodatabase.IQueryDef)
+  name.vb: OpenFeatureQuery(String, IQueryDef)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass(System.String)
+  id: OpenRelationshipClass(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenRelationshipClass(string)
+  nameWithType: IFeatureWorkspace.OpenRelationshipClass(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing relationship class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRelationshipClass OpenRelationshipClass(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    content.vb: Function OpenRelationshipClass(Name As String) As IRelationshipClass
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass*
+  nameWithType.vb: IFeatureWorkspace.OpenRelationshipClass(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass(String)
+  name.vb: OpenRelationshipClass(String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass(System.String,ESRI.ArcGIS.Geodatabase.IObjectClass,ESRI.ArcGIS.Geodatabase.IObjectClass,System.String,System.String,ESRI.ArcGIS.Geodatabase.esriRelCardinality,ESRI.ArcGIS.Geodatabase.esriRelNotification,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass(System.String,ESRI.ArcGIS.Geodatabase.IObjectClass,ESRI.ArcGIS.Geodatabase.IObjectClass,System.String,System.String,ESRI.ArcGIS.Geodatabase.esriRelCardinality,ESRI.ArcGIS.Geodatabase.esriRelNotification,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String,System.String)
+  id: CreateRelationshipClass(System.String,ESRI.ArcGIS.Geodatabase.IObjectClass,ESRI.ArcGIS.Geodatabase.IObjectClass,System.String,System.String,ESRI.ArcGIS.Geodatabase.esriRelCardinality,ESRI.ArcGIS.Geodatabase.esriRelNotification,System.Boolean,System.Boolean,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CreateRelationshipClass(string, IObjectClass, IObjectClass, string, string, esriRelCardinality, esriRelNotification, bool, bool, IFields, string, string, string, string)
+  nameWithType: IFeatureWorkspace.CreateRelationshipClass(string, IObjectClass, IObjectClass, string, string, esriRelCardinality, esriRelNotification, bool, bool, IFields, string, string, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass(string, ESRI.ArcGIS.Geodatabase.IObjectClass, ESRI.ArcGIS.Geodatabase.IObjectClass, string, string, ESRI.ArcGIS.Geodatabase.esriRelCardinality, ESRI.ArcGIS.Geodatabase.esriRelNotification, bool, bool, ESRI.ArcGIS.Geodatabase.IFields, string, string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRelationshipClass CreateRelationshipClass(string relClassName, IObjectClass OriginClass, IObjectClass DestinationClass, string ForwardLabel, string BackwardLabel, esriRelCardinality Cardinality, esriRelNotification Notification, bool IsComposite, bool IsAttributed, IFields relAttrFields, string OriginPrimaryKey, string destPrimaryKey, string OriginForeignKey, string destForeignKey)
+    parameters:
+    - id: relClassName
+      type: System.String
+    - id: OriginClass
+      type: ESRI.ArcGIS.Geodatabase.IObjectClass
+    - id: DestinationClass
+      type: ESRI.ArcGIS.Geodatabase.IObjectClass
+    - id: ForwardLabel
+      type: System.String
+    - id: BackwardLabel
+      type: System.String
+    - id: Cardinality
+      type: ESRI.ArcGIS.Geodatabase.esriRelCardinality
+    - id: Notification
+      type: ESRI.ArcGIS.Geodatabase.esriRelNotification
+    - id: IsComposite
+      type: System.Boolean
+    - id: IsAttributed
+      type: System.Boolean
+    - id: relAttrFields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: OriginPrimaryKey
+      type: System.String
+    - id: destPrimaryKey
+      type: System.String
+    - id: OriginForeignKey
+      type: System.String
+    - id: destForeignKey
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    content.vb: Function CreateRelationshipClass(relClassName As String, OriginClass As IObjectClass, DestinationClass As IObjectClass, ForwardLabel As String, BackwardLabel As String, Cardinality As esriRelCardinality, Notification As esriRelNotification, IsComposite As Boolean, IsAttributed As Boolean, relAttrFields As IFields, OriginPrimaryKey As String, destPrimaryKey As String, OriginForeignKey As String, destForeignKey As String) As IRelationshipClass
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass*
+  nameWithType.vb: IFeatureWorkspace.CreateRelationshipClass(String, IObjectClass, IObjectClass, String, String, esriRelCardinality, esriRelNotification, Boolean, Boolean, IFields, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass(String, ESRI.ArcGIS.Geodatabase.IObjectClass, ESRI.ArcGIS.Geodatabase.IObjectClass, String, String, ESRI.ArcGIS.Geodatabase.esriRelCardinality, ESRI.ArcGIS.Geodatabase.esriRelNotification, Boolean, Boolean, ESRI.ArcGIS.Geodatabase.IFields, String, String, String, String)
+  name.vb: CreateRelationshipClass(String, IObjectClass, IObjectClass, String, String, esriRelCardinality, esriRelNotification, Boolean, Boolean, IFields, String, String, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Boolean,ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.ISelectionSet,System.String,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Boolean,ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.ISelectionSet,System.String,System.Boolean)
+  id: OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass,System.Boolean,ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.ISelectionSet,System.String,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenRelationshipQuery(IRelationshipClass, bool, IQueryFilter, ISelectionSet, string, bool)
+  nameWithType: IFeatureWorkspace.OpenRelationshipQuery(IRelationshipClass, bool, IQueryFilter, ISelectionSet, string, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass, bool, ESRI.ArcGIS.Geodatabase.IQueryFilter, ESRI.ArcGIS.Geodatabase.ISelectionSet, string, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ITable OpenRelationshipQuery(IRelationshipClass relClass, bool joinForward, IQueryFilter SrcQueryFilter, ISelectionSet SrcSelectionSet, string TargetColumns, bool DoNotPushJoinToDB)
+    parameters:
+    - id: relClass
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    - id: joinForward
+      type: System.Boolean
+    - id: SrcQueryFilter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    - id: SrcSelectionSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: TargetColumns
+      type: System.String
+    - id: DoNotPushJoinToDB
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Function OpenRelationshipQuery(relClass As IRelationshipClass, joinForward As Boolean, SrcQueryFilter As IQueryFilter, SrcSelectionSet As ISelectionSet, TargetColumns As String, DoNotPushJoinToDB As Boolean) As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery*
+  nameWithType.vb: IFeatureWorkspace.OpenRelationshipQuery(IRelationshipClass, Boolean, IQueryFilter, ISelectionSet, String, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery(ESRI.ArcGIS.Geodatabase.IRelationshipClass, Boolean, ESRI.ArcGIS.Geodatabase.IQueryFilter, ESRI.ArcGIS.Geodatabase.ISelectionSet, String, Boolean)
+  name.vb: OpenRelationshipQuery(IRelationshipClass, Boolean, IQueryFilter, ISelectionSet, String, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType,System.String)
+  id: OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenExtensionDataset(esriDatasetType, string)
+  nameWithType: IFeatureWorkspace.OpenExtensionDataset(esriDatasetType, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing extension dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDataset OpenExtensionDataset(esriDatasetType extensionDatasetType, string extensionDatasetName)
+    parameters:
+    - id: extensionDatasetType
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    - id: extensionDatasetName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    content.vb: Function OpenExtensionDataset(extensionDatasetType As esriDatasetType, extensionDatasetName As String) As IDataset
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset*
+  nameWithType.vb: IFeatureWorkspace.OpenExtensionDataset(esriDatasetType, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset(ESRI.ArcGIS.Geodatabase.esriDatasetType, String)
+  name.vb: OpenExtensionDataset(esriDatasetType, String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenTable_System_String_
+  name: OpenTable
+  nameWithType: IFeatureWorkspace.OpenTable
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenTable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_CreateTable_System_String_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_UID_System_String_
+  name: CreateTable
+  nameWithType: IFeatureWorkspace.CreateTable
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateTable
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenFeatureClass_System_String_
+  name: OpenFeatureClass
+  nameWithType: IFeatureWorkspace.OpenFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_CreateFeatureClass_System_String_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_Geodatabase_esriFeatureType_System_String_System_String_
+  name: CreateFeatureClass
+  nameWithType: IFeatureWorkspace.CreateFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureClass
+- uid: ESRI.ArcGIS.Geodatabase.esriFeatureType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriFeatureType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriFeatureType.html
+  name: esriFeatureType
+  nameWithType: esriFeatureType
+  fullName: ESRI.ArcGIS.Geodatabase.esriFeatureType
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenFeatureDataset_System_String_
+  name: OpenFeatureDataset
+  nameWithType: IFeatureWorkspace.OpenFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDataset.html
+  name: IFeatureDataset
+  nameWithType: IFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_CreateFeatureDataset_System_String_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: CreateFeatureDataset
+  nameWithType: IFeatureWorkspace.CreateFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateFeatureDataset
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_CreateQueryDef
+  name: CreateQueryDef
+  nameWithType: IFeatureWorkspace.CreateQueryDef
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateQueryDef
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryDef
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDef.html
+  name: IQueryDef
+  nameWithType: IQueryDef
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDef
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenFeatureQuery_System_String_ESRI_ArcGIS_Geodatabase_IQueryDef_
+  name: OpenFeatureQuery
+  nameWithType: IFeatureWorkspace.OpenFeatureQuery
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenFeatureQuery
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenRelationshipClass_System_String_
+  name: OpenRelationshipClass
+  nameWithType: IFeatureWorkspace.OpenRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationshipClass.html
+  name: IRelationshipClass
+  nameWithType: IRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_CreateRelationshipClass_System_String_ESRI_ArcGIS_Geodatabase_IObjectClass_ESRI_ArcGIS_Geodatabase_IObjectClass_System_String_System_String_ESRI_ArcGIS_Geodatabase_esriRelCardinality_ESRI_ArcGIS_Geodatabase_esriRelNotification_System_Boolean_System_Boolean_ESRI_ArcGIS_Geodatabase_IFields_System_String_System_String_System_String_System_String_
+  name: CreateRelationshipClass
+  nameWithType: IFeatureWorkspace.CreateRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.CreateRelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IObjectClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IObjectClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IObjectClass.html
+  name: IObjectClass
+  nameWithType: IObjectClass
+  fullName: ESRI.ArcGIS.Geodatabase.IObjectClass
+- uid: ESRI.ArcGIS.Geodatabase.esriRelCardinality
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriRelCardinality
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriRelCardinality.html
+  name: esriRelCardinality
+  nameWithType: esriRelCardinality
+  fullName: ESRI.ArcGIS.Geodatabase.esriRelCardinality
+- uid: ESRI.ArcGIS.Geodatabase.esriRelNotification
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriRelNotification
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriRelNotification.html
+  name: esriRelNotification
+  nameWithType: esriRelNotification
+  fullName: ESRI.ArcGIS.Geodatabase.esriRelNotification
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenRelationshipQuery_ESRI_ArcGIS_Geodatabase_IRelationshipClass_System_Boolean_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_ISelectionSet_System_String_System_Boolean_
+  name: OpenRelationshipQuery
+  nameWithType: IFeatureWorkspace.OpenRelationshipQuery
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenRelationshipQuery
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.html#ESRI_ArcGIS_Geodatabase_IFeatureWorkspace_OpenExtensionDataset_ESRI_ArcGIS_Geodatabase_esriDatasetType_System_String_
+  name: OpenExtensionDataset
+  nameWithType: IFeatureWorkspace.OpenExtensionDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureWorkspace.OpenExtensionDataset
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetType.html
+  name: esriDatasetType
+  nameWithType: esriDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetType
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset

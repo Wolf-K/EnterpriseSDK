@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension
+  commentId: T:ESRI.ArcGIS.Geometry.esriCurveExtension
+  id: esriCurveExtension
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriDefaultCurveExtension
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriKeepEndAttributes
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoEndAttributes
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtFrom
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtTo
+  - ESRI.ArcGIS.Geometry.esriCurveExtension.esriRelocateEnds
+  langs:
+  - csharp
+  - vb
+  name: esriCurveExtension
+  nameWithType: esriCurveExtension
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension
+  type: Enum
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Describes the options to be used when extending a polyline. See the IConstructCurve::ConstructExtended method.
+  example: []
+  syntax:
+    content: >-
+      [Guid("DEEAC43F-6ADA-11D3-9F46-00C04F6BDF0D")]
+
+      public enum esriCurveExtension
+    content.vb: >-
+      <Guid("DEEAC43F-6ADA-11D3-9F46-00C04F6BDF0D")>
+
+      Public Enum esriCurveExtension
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DEEAC43F-6ADA-11D3-9F46-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriDefaultCurveExtension
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriDefaultCurveExtension
+  id: esriDefaultCurveExtension
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriDefaultCurveExtension
+  nameWithType: esriCurveExtension.esriDefaultCurveExtension
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriDefaultCurveExtension
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '0: By default, extension considers both ends of paths. The old ends remain and new points are added at the extended ends. The new points have attributes that are extrapolated from adjacent existing segments.'
+  example: []
+  syntax:
+    content: esriDefaultCurveExtension = 0
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriRelocateEnds
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriRelocateEnds
+  id: esriRelocateEnds
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriRelocateEnds
+  nameWithType: esriCurveExtension.esriRelocateEnds
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriRelocateEnds
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: '1: If an extension is performed at an end, relocate the end point to the new position instead of leaving the old point and adding a new point at the new position.'
+  example: []
+  syntax:
+    content: esriRelocateEnds = 1
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriKeepEndAttributes
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriKeepEndAttributes
+  id: esriKeepEndAttributes
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriKeepEndAttributes
+  nameWithType: esriCurveExtension.esriKeepEndAttributes
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriKeepEndAttributes
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: "2: If an extension is performed at an end, do not extrapolate the end-segment's attributes for the new point. Instead, make its attributes the same as the current end. Incompatible with esriNoAttributes."
+  example: []
+  syntax:
+    content: esriKeepEndAttributes = 2
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoEndAttributes
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoEndAttributes
+  id: esriNoEndAttributes
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriNoEndAttributes
+  nameWithType: esriCurveExtension.esriNoEndAttributes
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoEndAttributes
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: "4: If an extension is performed at an end, do not extrapolate the end-segment's attributes for the new point. Instead, make its attributes be empty. Incompatible with esriKeepAttributes."
+  example: []
+  syntax:
+    content: esriNoEndAttributes = 4
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtFrom
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtFrom
+  id: esriNoExtendAtFrom
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriNoExtendAtFrom
+  nameWithType: esriCurveExtension.esriNoExtendAtFrom
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtFrom
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: "8: Do not extend the 'from' end of any path."
+  example: []
+  syntax:
+    content: esriNoExtendAtFrom = 8
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtTo
+  commentId: F:ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtTo
+  id: esriNoExtendAtTo
+  parent: ESRI.ArcGIS.Geometry.esriCurveExtension
+  langs:
+  - csharp
+  - vb
+  name: esriNoExtendAtTo
+  nameWithType: esriCurveExtension.esriNoExtendAtTo
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension.esriNoExtendAtTo
+  type: Field
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: "16: Do not extend the 'to' end of any path."
+  example: []
+  syntax:
+    content: esriNoExtendAtTo = 16
+    return:
+      type: ESRI.ArcGIS.Geometry.esriCurveExtension
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.esriCurveExtension
+  commentId: T:ESRI.ArcGIS.Geometry.esriCurveExtension
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriCurveExtension.html
+  name: esriCurveExtension
+  nameWithType: esriCurveExtension
+  fullName: ESRI.ArcGIS.Geometry.esriCurveExtension

@@ -1,0 +1,386 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  id: IEdgeFeatureSource
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName
+  - ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+  langs:
+  - csharp
+  - vb
+  name: IEdgeFeatureSource
+  nameWithType: IEdgeFeatureSource
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that specify the properties of a network dataset source whose edge elements are derived from line geometry.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CC16E6DB-051A-4CCB-ADAF-0CA823ECD00B")]
+
+      public interface IEdgeFeatureSource
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CC16E6DB-051A-4CCB-ADAF-0CA823ECD00B")>
+
+      Public Interface IEdgeFeatureSource
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.EdgeFeatureSourceClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CC16E6DB-051A-4CCB-ADAF-0CA823ECD00B
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+  id: ClassConnectivityPolicy
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: ClassConnectivityPolicy
+  nameWithType: IEdgeFeatureSource.ClassConnectivityPolicy
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Policy determining how all edge elements in this source connect to each other.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkEdgeConnectivityPolicy ClassConnectivityPolicy { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy
+    content.vb: Property ClassConnectivityPolicy As esriNetworkEdgeConnectivityPolicy
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy*
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+  id: ClassConnectivityGroup
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: ClassConnectivityGroup
+  nameWithType: IEdgeFeatureSource.ClassConnectivityGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Connectivity group in which this edge feature source participates.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ClassConnectivityGroup { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property ClassConnectivityGroup As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup*
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy(System.Int32)
+  id: SubtypeConnectivityPolicy(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: SubtypeConnectivityPolicy[int]
+  nameWithType: IEdgeFeatureSource.SubtypeConnectivityPolicy[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Policy determining how the edge elements in the specified subtype of this source connect to each other.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkEdgeConnectivityPolicy SubtypeConnectivityPolicy[int SubtypeCode] { get; set; }
+    parameters:
+    - id: SubtypeCode
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy
+    content.vb: Property SubtypeConnectivityPolicy(SubtypeCode As Integer) As esriNetworkEdgeConnectivityPolicy
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy*
+  nameWithType.vb: IEdgeFeatureSource.SubtypeConnectivityPolicy(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy(Integer)
+  name.vb: SubtypeConnectivityPolicy(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup(System.Int32)
+  id: SubtypeConnectivityGroup(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: SubtypeConnectivityGroup[int]
+  nameWithType: IEdgeFeatureSource.SubtypeConnectivityGroup[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Connectivity group in which the specified subtype of this edge feature source participates.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SubtypeConnectivityGroup[int SubtypeCode] { get; set; }
+    parameters:
+    - id: SubtypeCode
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Property SubtypeConnectivityGroup(SubtypeCode As Integer) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup*
+  nameWithType.vb: IEdgeFeatureSource.SubtypeConnectivityGroup(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup(Integer)
+  name.vb: SubtypeConnectivityGroup(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+  id: UsesSubtypes
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: UsesSubtypes
+  nameWithType: IEdgeFeatureSource.UsesSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this edge feature source determines connectivity groups and policies by subtypes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool UsesSubtypes { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property UsesSubtypes As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes*
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+  id: FromElevationFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: FromElevationFieldName
+  nameWithType: IEdgeFeatureSource.FromElevationFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name on the feature source to be used as the from elevation field when determining connectivity at coincident end vertices.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string FromElevationFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FromElevationFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName
+  id: ToElevationFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource
+  langs:
+  - csharp
+  - vb
+  name: ToElevationFieldName
+  nameWithType: IEdgeFeatureSource.ToElevationFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name on the feature source to be used as the to elevation field when determining connectivity at coincident end vertices.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ToElevationFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ToElevationFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_ClassConnectivityPolicy
+  name: ClassConnectivityPolicy
+  nameWithType: IEdgeFeatureSource.ClassConnectivityPolicy
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityPolicy
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy.html
+  name: esriNetworkEdgeConnectivityPolicy
+  nameWithType: esriNetworkEdgeConnectivityPolicy
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeConnectivityPolicy
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_ClassConnectivityGroup
+  name: ClassConnectivityGroup
+  nameWithType: IEdgeFeatureSource.ClassConnectivityGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ClassConnectivityGroup
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_SubtypeConnectivityPolicy_System_Int32_
+  name: SubtypeConnectivityPolicy
+  nameWithType: IEdgeFeatureSource.SubtypeConnectivityPolicy
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityPolicy
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_SubtypeConnectivityGroup_System_Int32_
+  name: SubtypeConnectivityGroup
+  nameWithType: IEdgeFeatureSource.SubtypeConnectivityGroup
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.SubtypeConnectivityGroup
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_UsesSubtypes
+  name: UsesSubtypes
+  nameWithType: IEdgeFeatureSource.UsesSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.UsesSubtypes
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_FromElevationFieldName
+  name: FromElevationFieldName
+  nameWithType: IEdgeFeatureSource.FromElevationFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.FromElevationFieldName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.html#ESRI_ArcGIS_Geodatabase_IEdgeFeatureSource_ToElevationFieldName
+  name: ToElevationFieldName
+  nameWithType: IEdgeFeatureSource.ToElevationFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IEdgeFeatureSource.ToElevationFieldName

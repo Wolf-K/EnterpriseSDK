@@ -1,0 +1,638 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream
+  commentId: T:ESRI.ArcGIS.esriSystem.IBlobStream
+  id: IBlobStream
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IBlobStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.Commit(System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile(System.String)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.Revert
+  - ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile(System.String)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.Size
+  - ESRI.ArcGIS.esriSystem.IBlobStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  - ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  langs:
+  - csharp
+  - vb
+  name: IBlobStream
+  nameWithType: IBlobStream
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that control a Blob Stream.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("BC92995E-E736-11D0-9A93-080009EC734B")]
+
+      public interface IBlobStream : IStream, ISequentialStream
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("BC92995E-E736-11D0-9A93-080009EC734B")>
+
+      Public Interface IBlobStream Inherits IStream, ISequentialStream
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.FileStreamClass
+  - ESRI.ArcGIS.esriSystem.MemoryBlobStreamClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BC92995E-E736-11D0-9A93-080009EC734B
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  id: RemoteRead(System.Byte@,System.UInt32,System.UInt32@)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteRead(out byte, uint, out uint)
+  nameWithType: IBlobStream.RemoteRead(out byte, uint, out uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead(out byte, uint, out uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteRead(out byte pv, uint cb, out uint pcbRead)
+    parameters:
+    - id: pv
+      type: System.Byte
+    - id: cb
+      type: System.UInt32
+    - id: pcbRead
+      type: System.UInt32
+    content.vb: Sub RemoteRead(pv As Byte, cb As UInteger, pcbRead As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead*
+  nameWithType.vb: IBlobStream.RemoteRead(Byte, UInteger, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead(Byte, UInteger, UInteger)
+  name.vb: RemoteRead(Byte, UInteger, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  id: RemoteWrite(System.Byte@,System.UInt32,System.UInt32@)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteWrite(ref byte, uint, out uint)
+  nameWithType: IBlobStream.RemoteWrite(ref byte, uint, out uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite(ref byte, uint, out uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteWrite(ref byte pv, uint cb, out uint pcbWritten)
+    parameters:
+    - id: pv
+      type: System.Byte
+    - id: cb
+      type: System.UInt32
+    - id: pcbWritten
+      type: System.UInt32
+    content.vb: Sub RemoteWrite(pv As Byte, cb As UInteger, pcbWritten As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite*
+  nameWithType.vb: IBlobStream.RemoteWrite(Byte, UInteger, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite(Byte, UInteger, UInteger)
+  name.vb: RemoteWrite(Byte, UInteger, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  id: RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER,System.UInt32,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteSeek(_LARGE_INTEGER, uint, out _ULARGE_INTEGER)
+  nameWithType: IBlobStream.RemoteSeek(_LARGE_INTEGER, uint, out _ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER, uint, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteSeek(_LARGE_INTEGER dlibMove, uint dwOrigin, out _ULARGE_INTEGER plibNewPosition)
+    parameters:
+    - id: dlibMove
+      type: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+    - id: dwOrigin
+      type: System.UInt32
+    - id: plibNewPosition
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub RemoteSeek(dlibMove As _LARGE_INTEGER, dwOrigin As UInteger, plibNewPosition As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek*
+  nameWithType.vb: IBlobStream.RemoteSeek(_LARGE_INTEGER, UInteger, _ULARGE_INTEGER)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek(ESRI.ArcGIS.esriSystem._LARGE_INTEGER, UInteger, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  name.vb: RemoteSeek(_LARGE_INTEGER, UInteger, _ULARGE_INTEGER)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  id: SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: SetSize(_ULARGE_INTEGER)
+  nameWithType: IBlobStream.SetSize(_ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.SetSize(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void SetSize(_ULARGE_INTEGER libNewSize)
+    parameters:
+    - id: libNewSize
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub SetSize(libNewSize As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.SetSize*
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  id: RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER@)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: RemoteCopyTo(IStream, _ULARGE_INTEGER, out _ULARGE_INTEGER, out _ULARGE_INTEGER)
+  nameWithType: IBlobStream.RemoteCopyTo(IStream, _ULARGE_INTEGER, out _ULARGE_INTEGER, out _ULARGE_INTEGER)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, out ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void RemoteCopyTo(IStream pstm, _ULARGE_INTEGER cb, out _ULARGE_INTEGER pcbRead, out _ULARGE_INTEGER pcbWritten)
+    parameters:
+    - id: pstm
+      type: ESRI.ArcGIS.esriSystem.IStream
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: pcbRead
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: pcbWritten
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    content.vb: Sub RemoteCopyTo(pstm As IStream, cb As _ULARGE_INTEGER, pcbRead As _ULARGE_INTEGER, pcbWritten As _ULARGE_INTEGER)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo*
+  nameWithType.vb: IBlobStream.RemoteCopyTo(IStream, _ULARGE_INTEGER, _ULARGE_INTEGER, _ULARGE_INTEGER)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo(ESRI.ArcGIS.esriSystem.IStream, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER)
+  name.vb: RemoteCopyTo(IStream, _ULARGE_INTEGER, _ULARGE_INTEGER, _ULARGE_INTEGER)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Commit(System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.Commit(System.UInt32)
+  id: Commit(System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: Commit(uint)
+  nameWithType: IBlobStream.Commit(uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Commit(uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Commit(uint grfCommitFlags)
+    parameters:
+    - id: grfCommitFlags
+      type: System.UInt32
+    content.vb: Sub Commit(grfCommitFlags As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.Commit*
+  nameWithType.vb: IBlobStream.Commit(UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.Commit(UInteger)
+  name.vb: Commit(UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Revert
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.Revert
+  id: Revert
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: Revert()
+  nameWithType: IBlobStream.Revert()
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Revert()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Revert()
+    content.vb: Sub Revert()
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.Revert*
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  id: LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  nameWithType: IBlobStream.LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void LockRegion(_ULARGE_INTEGER libOffset, _ULARGE_INTEGER cb, uint dwLockType)
+    parameters:
+    - id: libOffset
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: dwLockType
+      type: System.UInt32
+    content.vb: Sub LockRegion(libOffset As _ULARGE_INTEGER, cb As _ULARGE_INTEGER, dwLockType As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion*
+  nameWithType.vb: IBlobStream.LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, UInteger)
+  name.vb: LockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  id: UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,ESRI.ArcGIS.esriSystem._ULARGE_INTEGER,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  nameWithType: IBlobStream.UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void UnlockRegion(_ULARGE_INTEGER libOffset, _ULARGE_INTEGER cb, uint dwLockType)
+    parameters:
+    - id: libOffset
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: cb
+      type: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+    - id: dwLockType
+      type: System.UInt32
+    content.vb: Sub UnlockRegion(libOffset As _ULARGE_INTEGER, cb As _ULARGE_INTEGER, dwLockType As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion*
+  nameWithType.vb: IBlobStream.UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion(ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, ESRI.ArcGIS.esriSystem._ULARGE_INTEGER, UInteger)
+  name.vb: UnlockRegion(_ULARGE_INTEGER, _ULARGE_INTEGER, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  id: Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG@,System.UInt32)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: Stat(out tagSTATSTG, uint)
+  nameWithType: IBlobStream.Stat(out tagSTATSTG, uint)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Stat(out ESRI.ArcGIS.esriSystem.tagSTATSTG, uint)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Stat(out tagSTATSTG pstatstg, uint grfStatFlag)
+    parameters:
+    - id: pstatstg
+      type: ESRI.ArcGIS.esriSystem.tagSTATSTG
+    - id: grfStatFlag
+      type: System.UInt32
+    content.vb: Sub Stat(pstatstg As tagSTATSTG, grfStatFlag As UInteger)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.Stat*
+  nameWithType.vb: IBlobStream.Stat(tagSTATSTG, UInteger)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.Stat(ESRI.ArcGIS.esriSystem.tagSTATSTG, UInteger)
+  name.vb: Stat(tagSTATSTG, UInteger)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  id: Clone(ESRI.ArcGIS.esriSystem.IStream@)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: Clone(out IStream)
+  nameWithType: IBlobStream.Clone(out IStream)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Clone(out ESRI.ArcGIS.esriSystem.IStream)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Clone(out IStream ppstm)
+    parameters:
+    - id: ppstm
+      type: ESRI.ArcGIS.esriSystem.IStream
+    content.vb: Sub Clone(ppstm As IStream)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.Clone*
+  nameWithType.vb: IBlobStream.Clone(IStream)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.Clone(ESRI.ArcGIS.esriSystem.IStream)
+  name.vb: Clone(IStream)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile(System.String)
+  id: SaveToFile(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: SaveToFile(string)
+  nameWithType: IBlobStream.SaveToFile(string)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Saves the stream to the specified file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SaveToFile(string FileName)
+    parameters:
+    - id: FileName
+      type: System.String
+    content.vb: Sub SaveToFile(FileName As String)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile*
+  nameWithType.vb: IBlobStream.SaveToFile(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile(String)
+  name.vb: SaveToFile(String)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile(System.String)
+  id: LoadFromFile(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: LoadFromFile(string)
+  nameWithType: IBlobStream.LoadFromFile(string)
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Loads a stream from the specified file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void LoadFromFile(string FileName)
+    parameters:
+    - id: FileName
+      type: System.String
+    content.vb: Sub LoadFromFile(FileName As String)
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile*
+  nameWithType.vb: IBlobStream.LoadFromFile(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile(String)
+  name.vb: LoadFromFile(String)
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Size
+  commentId: P:ESRI.ArcGIS.esriSystem.IBlobStream.Size
+  id: Size
+  parent: ESRI.ArcGIS.esriSystem.IBlobStream
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: IBlobStream.Size
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Size
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The size of the stream.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: uint Size { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property Size As UInteger
+  overload: ESRI.ArcGIS.esriSystem.IBlobStream.Size*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_RemoteRead_System_Byte__System_UInt32_System_UInt32__
+  name: RemoteRead
+  nameWithType: IBlobStream.RemoteRead
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteRead
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_RemoteWrite_System_Byte__System_UInt32_System_UInt32__
+  name: RemoteWrite
+  nameWithType: IBlobStream.RemoteWrite
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteWrite
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_RemoteSeek_ESRI_ArcGIS_esriSystem__LARGE_INTEGER_System_UInt32_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__
+  name: RemoteSeek
+  nameWithType: IBlobStream.RemoteSeek
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteSeek
+- uid: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+  commentId: T:ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem._LARGE_INTEGER.html
+  name: _LARGE_INTEGER
+  nameWithType: _LARGE_INTEGER
+  fullName: ESRI.ArcGIS.esriSystem._LARGE_INTEGER
+- uid: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+  commentId: T:ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER.html
+  name: _ULARGE_INTEGER
+  nameWithType: _ULARGE_INTEGER
+  fullName: ESRI.ArcGIS.esriSystem._ULARGE_INTEGER
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.SetSize*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.SetSize
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_SetSize_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_
+  name: SetSize
+  nameWithType: IBlobStream.SetSize
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.SetSize
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_RemoteCopyTo_ESRI_ArcGIS_esriSystem_IStream_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__ESRI_ArcGIS_esriSystem__ULARGE_INTEGER__
+  name: RemoteCopyTo
+  nameWithType: IBlobStream.RemoteCopyTo
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.RemoteCopyTo
+- uid: ESRI.ArcGIS.esriSystem.IStream
+  commentId: T:ESRI.ArcGIS.esriSystem.IStream
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStream.html
+  name: IStream
+  nameWithType: IStream
+  fullName: ESRI.ArcGIS.esriSystem.IStream
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Commit*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.Commit
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_Commit_System_UInt32_
+  name: Commit
+  nameWithType: IBlobStream.Commit
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Commit
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Revert*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.Revert
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_Revert
+  name: Revert
+  nameWithType: IBlobStream.Revert
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Revert
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_LockRegion_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_System_UInt32_
+  name: LockRegion
+  nameWithType: IBlobStream.LockRegion
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.LockRegion
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_UnlockRegion_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_ESRI_ArcGIS_esriSystem__ULARGE_INTEGER_System_UInt32_
+  name: UnlockRegion
+  nameWithType: IBlobStream.UnlockRegion
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.UnlockRegion
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Stat*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.Stat
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_Stat_ESRI_ArcGIS_esriSystem_tagSTATSTG__System_UInt32_
+  name: Stat
+  nameWithType: IBlobStream.Stat
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Stat
+- uid: ESRI.ArcGIS.esriSystem.tagSTATSTG
+  commentId: T:ESRI.ArcGIS.esriSystem.tagSTATSTG
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.tagSTATSTG.html
+  name: tagSTATSTG
+  nameWithType: tagSTATSTG
+  fullName: ESRI.ArcGIS.esriSystem.tagSTATSTG
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Clone*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.Clone
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_Clone_ESRI_ArcGIS_esriSystem_IStream__
+  name: Clone
+  nameWithType: IBlobStream.Clone
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Clone
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_SaveToFile_System_String_
+  name: SaveToFile
+  nameWithType: IBlobStream.SaveToFile
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.SaveToFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_LoadFromFile_System_String_
+  name: LoadFromFile
+  nameWithType: IBlobStream.LoadFromFile
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.LoadFromFile
+- uid: ESRI.ArcGIS.esriSystem.IBlobStream.Size*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IBlobStream.Size
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IBlobStream.html#ESRI_ArcGIS_esriSystem_IBlobStream_Size
+  name: Size
+  nameWithType: IBlobStream.Size
+  fullName: ESRI.ArcGIS.esriSystem.IBlobStream.Size

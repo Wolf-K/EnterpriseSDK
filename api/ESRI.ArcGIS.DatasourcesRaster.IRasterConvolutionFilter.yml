@@ -1,0 +1,557 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  id: IRasterConvolutionFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients(System.Double[]@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients(System.Double[]@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy(System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition(System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IRasterConvolutionFilter
+  nameWithType: IRasterConvolutionFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster kernel-based filter.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("64DB07DF-FC21-4C9A-8441-7CB9791855EA")]
+
+      public interface IRasterConvolutionFilter
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("64DB07DF-FC21-4C9A-8441-7CB9791855EA")>
+
+      Public Interface IRasterConvolutionFilter
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterConvolutionFilterClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 64DB07DF-FC21-4C9A-8441-7CB9791855EA
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize(System.Int32,System.Int32)
+  id: SetSize(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: SetSize(int, int)
+  nameWithType: IRasterConvolutionFilter.SetSize(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets the size of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetSize(int nColumns, int nRows)
+    parameters:
+    - id: nColumns
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    content.vb: Sub SetSize(nColumns As Integer, nRows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize*
+  nameWithType.vb: IRasterConvolutionFilter.SetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize(Integer, Integer)
+  name.vb: SetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: IRasterConvolutionFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the size of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetSize(ref int nColumns, ref int nRows)
+    parameters:
+    - id: nColumns
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    content.vb: Sub GetSize(nColumns As Integer, nRows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize*
+  nameWithType.vb: IRasterConvolutionFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition(System.Int32,System.Int32)
+  id: SetCenterPosition(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: SetCenterPosition(int, int)
+  nameWithType: IRasterConvolutionFilter.SetCenterPosition(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets the center position of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetCenterPosition(int atColumn, int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Sub SetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition*
+  nameWithType.vb: IRasterConvolutionFilter.SetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition(Integer, Integer)
+  name.vb: SetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IRasterConvolutionFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the center position of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition*
+  nameWithType.vb: IRasterConvolutionFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients(System.Double[]@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients(System.Double[]@)
+  id: PutCoefficients(System.Double[]@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: PutCoefficients(ref double[])
+  nameWithType: IRasterConvolutionFilter.PutCoefficients(ref double[])
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients(ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets the element coefficients of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoefficients(ref double[] coefList)
+    parameters:
+    - id: coefList
+      type: System.Double[]
+    content.vb: Sub PutCoefficients(coefList As Double())
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients*
+  nameWithType.vb: IRasterConvolutionFilter.PutCoefficients(Double())
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients(Double())
+  name.vb: PutCoefficients(Double())
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients(System.Double[]@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients(System.Double[]@)
+  id: QueryCoefficients(System.Double[]@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: QueryCoefficients(ref double[])
+  nameWithType: IRasterConvolutionFilter.QueryCoefficients(ref double[])
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients(ref double[])
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the element coefficients of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryCoefficients(ref double[] coefList)
+    parameters:
+    - id: coefList
+      type: System.Double[]
+    content.vb: Sub QueryCoefficients(coefList As Double())
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients*
+  nameWithType.vb: IRasterConvolutionFilter.QueryCoefficients(Double())
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients(Double())
+  name.vb: QueryCoefficients(Double())
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize
+  id: Normalize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: Normalize()
+  nameWithType: IRasterConvolutionFilter.Normalize()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Normalizes the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Normalize()
+    content.vb: Sub Normalize()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy(System.Double)
+  id: ScaleBy(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: ScaleBy(double)
+  nameWithType: IRasterConvolutionFilter.ScaleBy(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Scales the filter coefficients.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ScaleBy(double ScaleFactor)
+    parameters:
+    - id: ScaleFactor
+      type: System.Double
+    content.vb: Sub ScaleBy(ScaleFactor As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy*
+  nameWithType.vb: IRasterConvolutionFilter.ScaleBy(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy(Double)
+  name.vb: ScaleBy(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+  id: GainFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: GainFactor
+  nameWithType: IRasterConvolutionFilter.GainFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The gain factor of the kernel filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double GainFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property GainFactor As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+  id: Recursive
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: Recursive
+  nameWithType: IRasterConvolutionFilter.Recursive
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the filter is recursive.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Recursive { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Recursive As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized
+  id: IsNormalized
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter
+  langs:
+  - csharp
+  - vb
+  name: IsNormalized
+  nameWithType: IRasterConvolutionFilter.IsNormalized
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the filter is normalized.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsNormalized { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsNormalized As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_SetSize_System_Int32_System_Int32_
+  name: SetSize
+  nameWithType: IRasterConvolutionFilter.SetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: IRasterConvolutionFilter.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_SetCenterPosition_System_Int32_System_Int32_
+  name: SetCenterPosition
+  nameWithType: IRasterConvolutionFilter.SetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.SetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: IRasterConvolutionFilter.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_PutCoefficients_System_Double____
+  name: PutCoefficients
+  nameWithType: IRasterConvolutionFilter.PutCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.PutCoefficients
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_QueryCoefficients_System_Double____
+  name: QueryCoefficients
+  nameWithType: IRasterConvolutionFilter.QueryCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.QueryCoefficients
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_Normalize
+  name: Normalize
+  nameWithType: IRasterConvolutionFilter.Normalize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Normalize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_ScaleBy_System_Double_
+  name: ScaleBy
+  nameWithType: IRasterConvolutionFilter.ScaleBy
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.ScaleBy
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_GainFactor
+  name: GainFactor
+  nameWithType: IRasterConvolutionFilter.GainFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.GainFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_Recursive
+  name: Recursive
+  nameWithType: IRasterConvolutionFilter.Recursive
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.Recursive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.html#ESRI_ArcGIS_DatasourcesRaster_IRasterConvolutionFilter_IsNormalized
+  name: IsNormalized
+  nameWithType: IRasterConvolutionFilter.IsNormalized
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterConvolutionFilter.IsNormalized

@@ -1,0 +1,904 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  id: TinPolygonClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  - ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo(System.Guid@)
+  langs:
+  - csharp
+  - vb
+  name: TinPolygonClass
+  nameWithType: TinPolygonClass
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [Guid("2FA264B7-A214-11D3-AB4B-0008C73FD50C")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class TinPolygonClass : TinPolygon, ITinPolygon, ISupportErrorInfo
+    content.vb: >-
+      <Guid("2FA264B7-A214-11D3-AB4B-0008C73FD50C")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class TinPolygonClass Implements TinPolygon, ITinPolygon, ISupportErrorInfo
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.TinPolygon
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon
+  - ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2FA264B7-A214-11D3-AB4B-0008C73FD50C
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes
+  id: AsNodes
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: AsNodes()
+  nameWithType: TinPolygonClass.AsNodes()
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified polygon as TIN nodes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IEnumTinNode AsNodes()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+    content.vb: Overridable Function AsNodes() As IEnumTinNode
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges
+  id: AsEdges
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: AsEdges()
+  nameWithType: TinPolygonClass.AsEdges()
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified polygon as triangle edges.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IEnumTinEdge AsEdges()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+    content.vb: Overridable Function AsEdges() As IEnumTinEdge
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles
+  id: AsTriangles
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: AsTriangles()
+  nameWithType: TinPolygonClass.AsTriangles()
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified polygon as its constituent triangles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IEnumTinTriangle AsTriangles()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTinTriangle
+    content.vb: Overridable Function AsTriangles() As IEnumTinTriangle
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  id: AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: AsPolygon(ITinFilter, bool)
+  nameWithType: TinPolygonClass.AsPolygon(ITinFilter, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual IPolygon AsPolygon(ITinFilter pNodeFilter, bool bGetZ)
+    parameters:
+    - id: pNodeFilter
+      type: ESRI.ArcGIS.Geodatabase.ITinFilter
+    - id: bGetZ
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: Overridable Function AsPolygon(pNodeFilter As ITinFilter, bGetZ As Boolean) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  nameWithType.vb: TinPolygonClass.AsPolygon(ITinFilter, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter, Boolean)
+  name.vb: AsPolygon(ITinFilter, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  id: GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: GetBoundaryEdgeType(out esriTinEdgeType)
+  nameWithType: TinPolygonClass.GetBoundaryEdgeType(out esriTinEdgeType)
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType(out ESRI.ArcGIS.Geodatabase.esriTinEdgeType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Restricted.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetBoundaryEdgeType(out esriTinEdgeType pType)
+    parameters:
+    - id: pType
+      type: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+    content.vb: Overridable Sub GetBoundaryEdgeType(pType As esriTinEdgeType)
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  nameWithType.vb: TinPolygonClass.GetBoundaryEdgeType(esriTinEdgeType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType)
+  name.vb: GetBoundaryEdgeType(esriTinEdgeType)
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo(System.Guid@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo(System.Guid@)
+  id: InterfaceSupportsErrorInfo(System.Guid@)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TinPolygonClass
+  langs:
+  - csharp
+  - vb
+  name: InterfaceSupportsErrorInfo(ref Guid)
+  nameWithType: TinPolygonClass.InterfaceSupportsErrorInfo(ref Guid)
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo(ref System.Guid)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  example: []
+  syntax:
+    content: virtual void InterfaceSupportsErrorInfo(ref Guid riid)
+    parameters:
+    - id: riid
+      type: System.Guid
+    content.vb: Overridable Sub InterfaceSupportsErrorInfo(riid As Guid)
+  overload: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo*
+  implements:
+  - ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  nameWithType.vb: TinPolygonClass.InterfaceSupportsErrorInfo(Guid)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo(System.Guid)
+  name.vb: InterfaceSupportsErrorInfo(Guid)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygon
+  commentId: T:ESRI.ArcGIS.Geodatabase.TinPolygon
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygon.html
+  name: TinPolygon
+  nameWithType: TinPolygon
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygon
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinPolygon
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html
+  name: ITinPolygon
+  nameWithType: ITinPolygon
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon
+- uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  commentId: T:ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html
+  name: ISupportErrorInfo
+  nameWithType: ISupportErrorInfo
+  fullName: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_AsNodes
+  name: AsNodes
+  nameWithType: TinPolygonClass.AsNodes
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsNodes
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsNodes
+  name: AsNodes()
+  nameWithType: ITinPolygon.AsNodes()
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes
+    name: AsNodes
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsNodes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsNodes
+    name: AsNodes
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsNodes
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTinNode
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTinNode.html
+  name: IEnumTinNode
+  nameWithType: IEnumTinNode
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTinNode
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_AsEdges
+  name: AsEdges
+  nameWithType: TinPolygonClass.AsEdges
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsEdges
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsEdges
+  name: AsEdges()
+  nameWithType: ITinPolygon.AsEdges()
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges
+    name: AsEdges
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsEdges
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsEdges
+    name: AsEdges
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsEdges
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTinEdge.html
+  name: IEnumTinEdge
+  nameWithType: IEnumTinEdge
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTinEdge
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_AsTriangles
+  name: AsTriangles
+  nameWithType: TinPolygonClass.AsTriangles
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsTriangles
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsTriangles
+  name: AsTriangles()
+  nameWithType: ITinPolygon.AsTriangles()
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles
+    name: AsTriangles
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsTriangles
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsTriangles
+    name: AsTriangles
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsTriangles
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTinTriangle
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTinTriangle
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTinTriangle.html
+  name: IEnumTinTriangle
+  nameWithType: IEnumTinTriangle
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTinTriangle
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_AsPolygon_ESRI_ArcGIS_Geodatabase_ITinFilter_System_Boolean_
+  name: AsPolygon
+  nameWithType: TinPolygonClass.AsPolygon
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.AsPolygon
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsPolygon_ESRI_ArcGIS_Geodatabase_ITinFilter_System_Boolean_
+  name: AsPolygon(ITinFilter, bool)
+  nameWithType: ITinPolygon.AsPolygon(ITinFilter, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter, bool)
+  nameWithType.vb: ITinPolygon.AsPolygon(ITinFilter, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter, Boolean)
+  name.vb: AsPolygon(ITinFilter, Boolean)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+    name: AsPolygon
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsPolygon_ESRI_ArcGIS_Geodatabase_ITinFilter_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.ITinFilter
+    name: ITinFilter
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinFilter.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.AsPolygon(ESRI.ArcGIS.Geodatabase.ITinFilter,System.Boolean)
+    name: AsPolygon
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_AsPolygon_ESRI_ArcGIS_Geodatabase_ITinFilter_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.ITinFilter
+    name: ITinFilter
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinFilter.html
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.ITinFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinFilter.html
+  name: ITinFilter
+  nameWithType: ITinFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ITinFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_GetBoundaryEdgeType_ESRI_ArcGIS_Geodatabase_esriTinEdgeType__
+  name: GetBoundaryEdgeType
+  nameWithType: TinPolygonClass.GetBoundaryEdgeType
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.GetBoundaryEdgeType
+- uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+  parent: ESRI.ArcGIS.Geodatabase.ITinPolygon
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_GetBoundaryEdgeType_ESRI_ArcGIS_Geodatabase_esriTinEdgeType__
+  name: GetBoundaryEdgeType(out esriTinEdgeType)
+  nameWithType: ITinPolygon.GetBoundaryEdgeType(out esriTinEdgeType)
+  fullName: ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(out ESRI.ArcGIS.Geodatabase.esriTinEdgeType)
+  nameWithType.vb: ITinPolygon.GetBoundaryEdgeType(esriTinEdgeType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType)
+  name.vb: GetBoundaryEdgeType(esriTinEdgeType)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+    name: GetBoundaryEdgeType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_GetBoundaryEdgeType_ESRI_ArcGIS_Geodatabase_esriTinEdgeType__
+  - name: (
+  - name: out
+  - name: " "
+  - uid: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+    name: esriTinEdgeType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.esriTinEdgeType.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.ITinPolygon.GetBoundaryEdgeType(ESRI.ArcGIS.Geodatabase.esriTinEdgeType@)
+    name: GetBoundaryEdgeType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.ITinPolygon.html#ESRI_ArcGIS_Geodatabase_ITinPolygon_GetBoundaryEdgeType_ESRI_ArcGIS_Geodatabase_esriTinEdgeType__
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+    name: esriTinEdgeType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.esriTinEdgeType.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTinEdgeType.html
+  name: esriTinEdgeType
+  nameWithType: esriTinEdgeType
+  fullName: ESRI.ArcGIS.Geodatabase.esriTinEdgeType
+- uid: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TinPolygonClass.html#ESRI_ArcGIS_Geodatabase_TinPolygonClass_InterfaceSupportsErrorInfo_System_Guid__
+  name: InterfaceSupportsErrorInfo
+  nameWithType: TinPolygonClass.InterfaceSupportsErrorInfo
+  fullName: ESRI.ArcGIS.Geodatabase.TinPolygonClass.InterfaceSupportsErrorInfo
+- uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  commentId: M:ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  parent: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  name: InterfaceSupportsErrorInfo(ref Guid)
+  nameWithType: ISupportErrorInfo.InterfaceSupportsErrorInfo(ref Guid)
+  fullName: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(ref System.Guid)
+  nameWithType.vb: ISupportErrorInfo.InterfaceSupportsErrorInfo(Guid)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid)
+  name.vb: InterfaceSupportsErrorInfo(Guid)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+    name: InterfaceSupportsErrorInfo
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+    name: InterfaceSupportsErrorInfo
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid

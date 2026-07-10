@@ -1,0 +1,404 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3
+  commentId: T:ESRI.ArcGIS.Server.IServiceCatalog3
+  id: IServiceCatalog3
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders(System.String)
+  - ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+  - ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+  - ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+  - ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+  - ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx(System.String)
+  - ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL
+  langs:
+  - csharp
+  - vb
+  name: IServiceCatalog3
+  nameWithType: IServiceCatalog3
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to properties of an ArcGIS Server web service catalog.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("BB163DC2-8EC3-4536-8B0C-7FFE7B91B7B0")]
+
+      public interface IServiceCatalog3 : IServiceCatalog2, IServiceCatalog
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("BB163DC2-8EC3-4536-8B0C-7FFE7B91B7B0")>
+
+      Public Interface IServiceCatalog3 Inherits IServiceCatalog2, IServiceCatalog
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: BB163DC2-8EC3-4536-8B0C-7FFE7B91B7B0
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders(System.String)
+  id: GetFolders(System.String)
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: GetFolders(string)
+  nameWithType: IServiceCatalog3.GetFolders(string)
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IStringArray GetFolders(string folderName)
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Function GetFolders(folderName As String) As IStringArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders*
+  nameWithType.vb: IServiceCatalog3.GetFolders(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders(String)
+  name.vb: GetFolders(String)
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+  id: ServiceDescriptions
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: ServiceDescriptions
+  nameWithType: IServiceCatalog3.ServiceDescriptions
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IServiceDescriptionArray ServiceDescriptions { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServiceDescriptionArray
+    content.vb: ReadOnly Property ServiceDescriptions As IServiceDescriptionArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+  id: MessageVersion
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: MessageVersion
+  nameWithType: IServiceCatalog3.MessageVersion
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: esriArcGISVersion MessageVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+    content.vb: ReadOnly Property MessageVersion As esriArcGISVersion
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+  id: MessageFormats
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: MessageFormats
+  nameWithType: IServiceCatalog3.MessageFormats
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: esriServiceCatalogMessageFormat MessageFormats { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+    content.vb: ReadOnly Property MessageFormats As esriServiceCatalogMessageFormat
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx(System.String)
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx(System.String)
+  id: ServiceDescriptionsEx(System.String)
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: ServiceDescriptionsEx[string]
+  nameWithType: IServiceCatalog3.ServiceDescriptionsEx[string]
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IServiceDescriptionArray ServiceDescriptionsEx[string folderName] { get; }
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServiceDescriptionArray
+    content.vb: ReadOnly Property ServiceDescriptionsEx(folderName As String) As IServiceDescriptionArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx*
+  nameWithType.vb: IServiceCatalog3.ServiceDescriptionsEx(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx(String)
+  name.vb: ServiceDescriptionsEx(String)
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+  id: RequiresTokens
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: RequiresTokens
+  nameWithType: IServiceCatalog3.RequiresTokens
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Indicates whether the service catalog requires tokens for authentication.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool RequiresTokens { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property RequiresTokens As Boolean
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL
+  id: TokenServiceURL
+  parent: ESRI.ArcGIS.Server.IServiceCatalog3
+  langs:
+  - csharp
+  - vb
+  name: TokenServiceURL
+  nameWithType: IServiceCatalog3.TokenServiceURL
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Token service url.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TokenServiceURL { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property TokenServiceURL As String
+  overload: ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL*
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_GetFolders_System_String_
+  name: GetFolders
+  nameWithType: IServiceCatalog3.GetFolders
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.GetFolders
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_ServiceDescriptions
+  name: ServiceDescriptions
+  nameWithType: IServiceCatalog3.ServiceDescriptions
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptions
+- uid: ESRI.ArcGIS.Server.IServiceDescriptionArray
+  commentId: T:ESRI.ArcGIS.Server.IServiceDescriptionArray
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceDescriptionArray.html
+  name: IServiceDescriptionArray
+  nameWithType: IServiceDescriptionArray
+  fullName: ESRI.ArcGIS.Server.IServiceDescriptionArray
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_MessageVersion
+  name: MessageVersion
+  nameWithType: IServiceCatalog3.MessageVersion
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.MessageVersion
+- uid: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+  commentId: T:ESRI.ArcGIS.esriSystem.esriArcGISVersion
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriArcGISVersion.html
+  name: esriArcGISVersion
+  nameWithType: esriArcGISVersion
+  fullName: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_MessageFormats
+  name: MessageFormats
+  nameWithType: IServiceCatalog3.MessageFormats
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.MessageFormats
+- uid: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+  commentId: T:ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat.html
+  name: esriServiceCatalogMessageFormat
+  nameWithType: esriServiceCatalogMessageFormat
+  fullName: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_ServiceDescriptionsEx_System_String_
+  name: ServiceDescriptionsEx
+  nameWithType: IServiceCatalog3.ServiceDescriptionsEx
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.ServiceDescriptionsEx
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_RequiresTokens
+  name: RequiresTokens
+  nameWithType: IServiceCatalog3.RequiresTokens
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.RequiresTokens
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog3.html#ESRI_ArcGIS_Server_IServiceCatalog3_TokenServiceURL
+  name: TokenServiceURL
+  nameWithType: IServiceCatalog3.TokenServiceURL
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog3.TokenServiceURL

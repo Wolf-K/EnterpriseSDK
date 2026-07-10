@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface
+  commentId: T:ESRI.ArcGIS.Geometry.IFunctionalSurface
+  id: IFunctionalSurface
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+  - ESRI.ArcGIS.Geometry.IFunctionalSurface.Z(System.Double,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IFunctionalSurface
+  nameWithType: IFunctionalSurface
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to information about the functional surface, generating heights given x,y locations. Also see IFunctionalSurface2.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("98D17B10-951C-11D2-BCFC-0000F875BCCE")]
+
+      public interface IFunctionalSurface
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("98D17B10-951C-11D2-BCFC-0000F875BCCE")>
+
+      Public Interface IFunctionalSurface
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 98D17B10-951C-11D2-BCFC-0000F875BCCE
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z(System.Double,System.Double)
+  commentId: P:ESRI.ArcGIS.Geometry.IFunctionalSurface.Z(System.Double,System.Double)
+  id: Z(System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IFunctionalSurface
+  langs:
+  - csharp
+  - vb
+  name: Z[double, double]
+  nameWithType: IFunctionalSurface.Z[double, double]
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z[double, double]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The surface Z = f(x,y).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double Z[double X, double Y] { get; }
+    parameters:
+    - id: X
+      type: System.Double
+    - id: Y
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Z(X As Double, Y As Double) As Double
+  overload: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z*
+  nameWithType.vb: IFunctionalSurface.Z(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z(Double, Double)
+  name.vb: Z(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+  commentId: P:ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+  id: Domain
+  parent: ESRI.ArcGIS.Geometry.IFunctionalSurface
+  langs:
+  - csharp
+  - vb
+  name: Domain
+  nameWithType: IFunctionalSurface.Domain
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The interpolation domain of the surface.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolygon Domain { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: ReadOnly Property Domain As IPolygon
+  overload: ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IFunctionalSurface.Z
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IFunctionalSurface.html#ESRI_ArcGIS_Geometry_IFunctionalSurface_Z_System_Double_System_Double_
+  name: Z
+  nameWithType: IFunctionalSurface.Z
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface.Z
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IFunctionalSurface.html#ESRI_ArcGIS_Geometry_IFunctionalSurface_Domain
+  name: Domain
+  nameWithType: IFunctionalSurface.Domain
+  fullName: ESRI.ArcGIS.Geometry.IFunctionalSurface.Domain
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon

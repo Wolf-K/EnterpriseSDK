@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.Server.SOESupport.ResourceHandler
+  commentId: T:ESRI.Server.SOESupport.ResourceHandler
+  id: ResourceHandler
+  parent: ESRI.Server.SOESupport
+  children:
+  - ESRI.Server.SOESupport.ResourceHandler.#ctor(System.Object,System.IntPtr)
+  - ESRI.Server.SOESupport.ResourceHandler.BeginInvoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@,System.AsyncCallback,System.Object)
+  - ESRI.Server.SOESupport.ResourceHandler.EndInvoke(System.String@,System.IAsyncResult)
+  - ESRI.Server.SOESupport.ResourceHandler.Invoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: ResourceHandler
+  nameWithType: ResourceHandler
+  fullName: ESRI.Server.SOESupport.ResourceHandler
+  type: Delegate
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public delegate byte[] ResourceHandler(NameValueCollection boundVariables, string outputFormat, string requestProperties, out string responseProperties)
+    parameters:
+    - id: boundVariables
+      type: System.Collections.Specialized.NameValueCollection
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Delegate Function ResourceHandler(boundVariables As NameValueCollection, outputFormat As String, requestProperties As String, responseProperties As String) As Byte()
+- uid: ESRI.Server.SOESupport.ResourceHandler.#ctor(System.Object,System.IntPtr)
+  commentId: M:ESRI.Server.SOESupport.ResourceHandler.#ctor(System.Object,System.IntPtr)
+  id: '#ctor(System.Object,System.IntPtr)'
+  parent: ESRI.Server.SOESupport.ResourceHandler
+  langs:
+  - csharp
+  - vb
+  name: ResourceHandler(object, nint)
+  nameWithType: ResourceHandler.ResourceHandler(object, nint)
+  fullName: ESRI.Server.SOESupport.ResourceHandler.ResourceHandler(object, nint)
+  type: Constructor
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public ResourceHandler(object @object, nint method)
+    parameters:
+    - id: object
+      type: System.Object
+    - id: method
+      type: System.IntPtr
+    content.vb: Public Sub New([object] As Object, method As IntPtr)
+  overload: ESRI.Server.SOESupport.ResourceHandler.#ctor*
+  nameWithType.vb: ResourceHandler.New(Object, IntPtr)
+  fullName.vb: ESRI.Server.SOESupport.ResourceHandler.New(Object, System.IntPtr)
+  name.vb: New(Object, IntPtr)
+- uid: ESRI.Server.SOESupport.ResourceHandler.Invoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@)
+  commentId: M:ESRI.Server.SOESupport.ResourceHandler.Invoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@)
+  id: Invoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@)
+  parent: ESRI.Server.SOESupport.ResourceHandler
+  langs:
+  - csharp
+  - vb
+  name: Invoke(NameValueCollection, string, string, out string)
+  nameWithType: ResourceHandler.Invoke(NameValueCollection, string, string, out string)
+  fullName: ESRI.Server.SOESupport.ResourceHandler.Invoke(System.Collections.Specialized.NameValueCollection, string, string, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public virtual byte[] Invoke(NameValueCollection boundVariables, string outputFormat, string requestProperties, out string responseProperties)
+    parameters:
+    - id: boundVariables
+      type: System.Collections.Specialized.NameValueCollection
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function Invoke(boundVariables As NameValueCollection, outputFormat As String, requestProperties As String, responseProperties As String) As Byte()
+  overload: ESRI.Server.SOESupport.ResourceHandler.Invoke*
+  nameWithType.vb: ResourceHandler.Invoke(NameValueCollection, String, String, String)
+  fullName.vb: ESRI.Server.SOESupport.ResourceHandler.Invoke(System.Collections.Specialized.NameValueCollection, String, String, String)
+  name.vb: Invoke(NameValueCollection, String, String, String)
+- uid: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@,System.AsyncCallback,System.Object)
+  commentId: M:ESRI.Server.SOESupport.ResourceHandler.BeginInvoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@,System.AsyncCallback,System.Object)
+  id: BeginInvoke(System.Collections.Specialized.NameValueCollection,System.String,System.String,System.String@,System.AsyncCallback,System.Object)
+  parent: ESRI.Server.SOESupport.ResourceHandler
+  langs:
+  - csharp
+  - vb
+  name: BeginInvoke(NameValueCollection, string, string, out string, AsyncCallback, object)
+  nameWithType: ResourceHandler.BeginInvoke(NameValueCollection, string, string, out string, AsyncCallback, object)
+  fullName: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke(System.Collections.Specialized.NameValueCollection, string, string, out string, System.AsyncCallback, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public virtual IAsyncResult BeginInvoke(NameValueCollection boundVariables, string outputFormat, string requestProperties, out string responseProperties, AsyncCallback callback, object @object)
+    parameters:
+    - id: boundVariables
+      type: System.Collections.Specialized.NameValueCollection
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    - id: callback
+      type: System.AsyncCallback
+    - id: object
+      type: System.Object
+    return:
+      type: System.IAsyncResult
+    content.vb: Public Overridable Function BeginInvoke(boundVariables As NameValueCollection, outputFormat As String, requestProperties As String, responseProperties As String, callback As AsyncCallback, [object] As Object) As IAsyncResult
+  overload: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke*
+  nameWithType.vb: ResourceHandler.BeginInvoke(NameValueCollection, String, String, String, AsyncCallback, Object)
+  fullName.vb: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke(System.Collections.Specialized.NameValueCollection, String, String, String, System.AsyncCallback, Object)
+  name.vb: BeginInvoke(NameValueCollection, String, String, String, AsyncCallback, Object)
+- uid: ESRI.Server.SOESupport.ResourceHandler.EndInvoke(System.String@,System.IAsyncResult)
+  commentId: M:ESRI.Server.SOESupport.ResourceHandler.EndInvoke(System.String@,System.IAsyncResult)
+  id: EndInvoke(System.String@,System.IAsyncResult)
+  parent: ESRI.Server.SOESupport.ResourceHandler
+  langs:
+  - csharp
+  - vb
+  name: EndInvoke(out string, IAsyncResult)
+  nameWithType: ResourceHandler.EndInvoke(out string, IAsyncResult)
+  fullName: ESRI.Server.SOESupport.ResourceHandler.EndInvoke(out string, System.IAsyncResult)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public virtual byte[] EndInvoke(out string responseProperties, IAsyncResult result)
+    parameters:
+    - id: responseProperties
+      type: System.String
+    - id: result
+      type: System.IAsyncResult
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function EndInvoke(responseProperties As String, result As IAsyncResult) As Byte()
+  overload: ESRI.Server.SOESupport.ResourceHandler.EndInvoke*
+  nameWithType.vb: ResourceHandler.EndInvoke(String, IAsyncResult)
+  fullName.vb: ESRI.Server.SOESupport.ResourceHandler.EndInvoke(String, System.IAsyncResult)
+  name.vb: EndInvoke(String, IAsyncResult)
+references:
+- uid: ESRI.Server.SOESupport
+  commentId: N:ESRI.Server.SOESupport
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.Server.SOESupport
+  nameWithType: ESRI.Server.SOESupport
+  fullName: ESRI.Server.SOESupport
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+- uid: System.Collections.Specialized.NameValueCollection
+  commentId: T:System.Collections.Specialized.NameValueCollection
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.namevaluecollection
+  name: NameValueCollection
+  nameWithType: NameValueCollection
+  fullName: System.Collections.Specialized.NameValueCollection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.Server.SOESupport.ResourceHandler.#ctor*
+  commentId: Overload:ESRI.Server.SOESupport.ResourceHandler.#ctor
+  isExternal: true
+  href: ESRI.Server.SOESupport.ResourceHandler.html#ESRI_Server_SOESupport_ResourceHandler__ctor_System_Object_System_IntPtr_
+  name: ResourceHandler
+  nameWithType: ResourceHandler.ResourceHandler
+  fullName: ESRI.Server.SOESupport.ResourceHandler.ResourceHandler
+  nameWithType.vb: ResourceHandler.New
+  fullName.vb: ESRI.Server.SOESupport.ResourceHandler.New
+  name.vb: New
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: ESRI.Server.SOESupport.ResourceHandler.Invoke*
+  commentId: Overload:ESRI.Server.SOESupport.ResourceHandler.Invoke
+  isExternal: true
+  href: ESRI.Server.SOESupport.ResourceHandler.html#ESRI_Server_SOESupport_ResourceHandler_Invoke_System_Collections_Specialized_NameValueCollection_System_String_System_String_System_String__
+  name: Invoke
+  nameWithType: ResourceHandler.Invoke
+  fullName: ESRI.Server.SOESupport.ResourceHandler.Invoke
+- uid: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke*
+  commentId: Overload:ESRI.Server.SOESupport.ResourceHandler.BeginInvoke
+  isExternal: true
+  href: ESRI.Server.SOESupport.ResourceHandler.html#ESRI_Server_SOESupport_ResourceHandler_BeginInvoke_System_Collections_Specialized_NameValueCollection_System_String_System_String_System_String__System_AsyncCallback_System_Object_
+  name: BeginInvoke
+  nameWithType: ResourceHandler.BeginInvoke
+  fullName: ESRI.Server.SOESupport.ResourceHandler.BeginInvoke
+- uid: System.AsyncCallback
+  commentId: T:System.AsyncCallback
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.asynccallback
+  name: AsyncCallback
+  nameWithType: AsyncCallback
+  fullName: System.AsyncCallback
+- uid: System.IAsyncResult
+  commentId: T:System.IAsyncResult
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncresult
+  name: IAsyncResult
+  nameWithType: IAsyncResult
+  fullName: System.IAsyncResult
+- uid: ESRI.Server.SOESupport.ResourceHandler.EndInvoke*
+  commentId: Overload:ESRI.Server.SOESupport.ResourceHandler.EndInvoke
+  isExternal: true
+  href: ESRI.Server.SOESupport.ResourceHandler.html#ESRI_Server_SOESupport_ResourceHandler_EndInvoke_System_String__System_IAsyncResult_
+  name: EndInvoke
+  nameWithType: ResourceHandler.EndInvoke
+  fullName: ESRI.Server.SOESupport.ResourceHandler.EndInvoke

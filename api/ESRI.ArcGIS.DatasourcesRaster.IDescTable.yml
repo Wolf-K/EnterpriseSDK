@@ -1,0 +1,576 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  id: IDescTable
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc(System.Int32,System.String@,System.Int16@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField(System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex(System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  langs:
+  - csharp
+  - vb
+  name: IDescTable
+  nameWithType: IDescTable
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a descriptor table.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D777C1A0-F41A-11D2-80A7-00500462E955")]
+
+      public interface IDescTable
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D777C1A0-F41A-11D2-80A7-00500462E955")>
+
+      Public Interface IDescTable
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D777C1A0-F41A-11D2-80A7-00500462E955
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc(System.Int32,System.String@,System.Int16@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc(System.Int32,System.String@,System.Int16@,System.Int32@)
+  id: FieldDesc(System.Int32,System.String@,System.Int16@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: FieldDesc(int, out string, out short, out int)
+  nameWithType: IDescTable.FieldDesc(int, out string, out short, out int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc(int, out string, out short, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides a description of the field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FieldDesc(int Index, out string Name, out short Type, out int Width)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Name
+      type: System.String
+    - id: Type
+      type: System.Int16
+    - id: Width
+      type: System.Int32
+    content.vb: Sub FieldDesc(Index As Integer, Name As String, Type As Short, Width As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc*
+  nameWithType.vb: IDescTable.FieldDesc(Integer, String, Short, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc(Integer, String, Short, Integer)
+  name.vb: FieldDesc(Integer, String, Short, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex(System.Double)
+  id: ValueToIndex(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: ValueToIndex(double)
+  nameWithType: IDescTable.ValueToIndex(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Converts pixel values to rows in the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ValueToIndex(double pixval)
+    parameters:
+    - id: pixval
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function ValueToIndex(pixval As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex*
+  nameWithType.vb: IDescTable.ValueToIndex(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex(Double)
+  name.vb: ValueToIndex(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow(System.Int32)
+  id: ReadRow(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: ReadRow(int)
+  nameWithType: IDescTable.ReadRow(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns a row from the the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDescRow ReadRow(int row_index)
+    parameters:
+    - id: row_index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IDescRow
+    content.vb: Function ReadRow(row_index As Integer) As IDescRow
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow*
+  nameWithType.vb: IDescTable.ReadRow(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow(Integer)
+  name.vb: ReadRow(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  id: WriteRow(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: WriteRow(int, IDescRow)
+  nameWithType: IDescTable.WriteRow(int, IDescRow)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow(int, ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void WriteRow(int row_index, IDescRow Row)
+    parameters:
+    - id: row_index
+      type: System.Int32
+    - id: Row
+      type: ESRI.ArcGIS.DatasourcesRaster.IDescRow
+    content.vb: Sub WriteRow(row_index As Integer, Row As IDescRow)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow*
+  nameWithType.vb: IDescTable.WriteRow(Integer, IDescRow)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow(Integer, ESRI.ArcGIS.DatasourcesRaster.IDescRow)
+  name.vb: WriteRow(Integer, IDescRow)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn(System.Int32)
+  id: ReadColumn(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: ReadColumn(int)
+  nameWithType: IDescTable.ReadColumn(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Reads a column from the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDescColumn ReadColumn(int col_index)
+    parameters:
+    - id: col_index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+    content.vb: Function ReadColumn(col_index As Integer) As IDescColumn
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn*
+  nameWithType.vb: IDescTable.ReadColumn(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn(Integer)
+  name.vb: ReadColumn(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn(System.Int32)
+  id: WriteColumn(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: WriteColumn(int)
+  nameWithType: IDescTable.WriteColumn(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Writes column to the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDescColumn WriteColumn(int col_index)
+    parameters:
+    - id: col_index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+    content.vb: Function WriteColumn(col_index As Integer) As IDescColumn
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn*
+  nameWithType.vb: IDescTable.WriteColumn(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn(Integer)
+  name.vb: WriteColumn(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField(System.String)
+  id: FindField(System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: FindField(string)
+  nameWithType: IDescTable.FindField(string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Finds a field in the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int FindField(string strtofind)
+    parameters:
+    - id: strtofind
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Function FindField(strtofind As String) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField*
+  nameWithType.vb: IDescTable.FindField(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField(String)
+  name.vb: FindField(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  id: AddColumn(System.Int32,ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: AddColumn(int, IDescColumn)
+  nameWithType: IDescTable.AddColumn(int, IDescColumn)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn(int, ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void AddColumn(int col_index, IDescColumn col)
+    parameters:
+    - id: col_index
+      type: System.Int32
+    - id: col
+      type: ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+    content.vb: Sub AddColumn(col_index As Integer, col As IDescColumn)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn*
+  nameWithType.vb: IDescTable.AddColumn(Integer, IDescColumn)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn(Integer, ESRI.ArcGIS.DatasourcesRaster.IDescColumn)
+  name.vb: AddColumn(Integer, IDescColumn)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn(System.Int32)
+  id: DeleteColumn(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: DeleteColumn(int)
+  nameWithType: IDescTable.DeleteColumn(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Deletes a column from the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteColumn(int col_index)
+    parameters:
+    - id: col_index
+      type: System.Int32
+    content.vb: Sub DeleteColumn(col_index As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn*
+  nameWithType.vb: IDescTable.DeleteColumn(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn(Integer)
+  name.vb: DeleteColumn(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+  id: NumFields
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: NumFields
+  nameWithType: IDescTable.NumFields
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Number of fields in the descriptor table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int NumFields { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property NumFields As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+  id: BinFunction
+  parent: ESRI.ArcGIS.DatasourcesRaster.IDescTable
+  langs:
+  - csharp
+  - vb
+  name: BinFunction
+  nameWithType: IDescTable.BinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Pixel to Row tranlator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IBinFunction BinFunction { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+    content.vb: ReadOnly Property BinFunction As IBinFunction
+  overload: ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_FieldDesc_System_Int32_System_String__System_Int16__System_Int32__
+  name: FieldDesc
+  nameWithType: IDescTable.FieldDesc
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FieldDesc
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_ValueToIndex_System_Double_
+  name: ValueToIndex
+  nameWithType: IDescTable.ValueToIndex
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ValueToIndex
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_ReadRow_System_Int32_
+  name: ReadRow
+  nameWithType: IDescTable.ReadRow
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadRow
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescRow
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IDescRow
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescRow.html
+  name: IDescRow
+  nameWithType: IDescRow
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescRow
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_WriteRow_System_Int32_ESRI_ArcGIS_DatasourcesRaster_IDescRow_
+  name: WriteRow
+  nameWithType: IDescTable.WriteRow
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteRow
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_ReadColumn_System_Int32_
+  name: ReadColumn
+  nameWithType: IDescTable.ReadColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.ReadColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescColumn.html
+  name: IDescColumn
+  nameWithType: IDescColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_WriteColumn_System_Int32_
+  name: WriteColumn
+  nameWithType: IDescTable.WriteColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.WriteColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_FindField_System_String_
+  name: FindField
+  nameWithType: IDescTable.FindField
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.FindField
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_AddColumn_System_Int32_ESRI_ArcGIS_DatasourcesRaster_IDescColumn_
+  name: AddColumn
+  nameWithType: IDescTable.AddColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.AddColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_DeleteColumn_System_Int32_
+  name: DeleteColumn
+  nameWithType: IDescTable.DeleteColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.DeleteColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_NumFields
+  name: NumFields
+  nameWithType: IDescTable.NumFields
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.NumFields
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDescTable.html#ESRI_ArcGIS_DatasourcesRaster_IDescTable_BinFunction
+  name: BinFunction
+  nameWithType: IDescTable.BinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDescTable.BinFunction
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html
+  name: IBinFunction
+  nameWithType: IBinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction

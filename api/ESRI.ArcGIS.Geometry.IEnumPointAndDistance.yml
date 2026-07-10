@@ -1,0 +1,865 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  id: IEnumPointAndDistance
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip(System.Int32)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID(System.Int32)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M(System.Double)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X(System.Double)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y(System.Double)
+  - ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IEnumPointAndDistance
+  nameWithType: IEnumPointAndDistance
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that iterate over the points on a geometry that are closest to an input point, as returned by QueryPointsAndDistances.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("EA7AB50C-1A9D-11D6-9FA9-00C04F6BDF0D")]
+
+      public interface IEnumPointAndDistance : IEnumVertex
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("EA7AB50C-1A9D-11D6-9FA9-00C04F6BDF0D")>
+
+      Public Interface IEnumPointAndDistance Inherits IEnumVertex
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EA7AB50C-1A9D-11D6-9FA9-00C04F6BDF0D
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  id: Next(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: Next(out IPoint, out int, out int)
+  nameWithType: IEnumPointAndDistance.Next(out IPoint, out int, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next(out ESRI.ArcGIS.Geometry.IPoint, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Next(out IPoint outVertex, out int outPartIndex, out int vertexIndex)
+    parameters:
+    - id: outVertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: outPartIndex
+      type: System.Int32
+    - id: vertexIndex
+      type: System.Int32
+    content.vb: Sub [Next](outVertex As IPoint, outPartIndex As Integer, vertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next*
+  nameWithType.vb: IEnumPointAndDistance.Next(IPoint, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next(ESRI.ArcGIS.Geometry.IPoint, Integer, Integer)
+  name.vb: Next(IPoint, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  id: QueryNext(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: QueryNext(IPoint, out int, out int)
+  nameWithType: IEnumPointAndDistance.QueryNext(IPoint, out int, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext(ESRI.ArcGIS.Geometry.IPoint, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryNext(IPoint vertex, out int outPartIndex, out int vertexIndex)
+    parameters:
+    - id: vertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: outPartIndex
+      type: System.Int32
+    - id: vertexIndex
+      type: System.Int32
+    content.vb: Sub QueryNext(vertex As IPoint, outPartIndex As Integer, vertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext*
+  nameWithType.vb: IEnumPointAndDistance.QueryNext(IPoint, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext(ESRI.ArcGIS.Geometry.IPoint, Integer, Integer)
+  name.vb: QueryNext(IPoint, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  id: Previous(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: Previous(out IPoint, out int, out int)
+  nameWithType: IEnumPointAndDistance.Previous(out IPoint, out int, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous(out ESRI.ArcGIS.Geometry.IPoint, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Previous(out IPoint outVertex, out int outPartIndex, out int vertexIndex)
+    parameters:
+    - id: outVertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: outPartIndex
+      type: System.Int32
+    - id: vertexIndex
+      type: System.Int32
+    content.vb: Sub Previous(outVertex As IPoint, outPartIndex As Integer, vertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous*
+  nameWithType.vb: IEnumPointAndDistance.Previous(IPoint, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous(ESRI.ArcGIS.Geometry.IPoint, Integer, Integer)
+  name.vb: Previous(IPoint, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  id: QueryPrevious(ESRI.ArcGIS.Geometry.IPoint,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: QueryPrevious(IPoint, out int, out int)
+  nameWithType: IEnumPointAndDistance.QueryPrevious(IPoint, out int, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryPrevious(IPoint vertex, out int outPartIndex, out int vertexIndex)
+    parameters:
+    - id: vertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: outPartIndex
+      type: System.Int32
+    - id: vertexIndex
+      type: System.Int32
+    content.vb: Sub QueryPrevious(vertex As IPoint, outPartIndex As Integer, vertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious*
+  nameWithType.vb: IEnumPointAndDistance.QueryPrevious(IPoint, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious(ESRI.ArcGIS.Geometry.IPoint, Integer, Integer)
+  name.vb: QueryPrevious(IPoint, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@)
+  id: NextInPart(ESRI.ArcGIS.Geometry.IPoint@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: NextInPart(out IPoint, out int)
+  nameWithType: IEnumPointAndDistance.NextInPart(out IPoint, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart(out ESRI.ArcGIS.Geometry.IPoint, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void NextInPart(out IPoint outVertex, out int OutVertexIndex)
+    parameters:
+    - id: outVertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: OutVertexIndex
+      type: System.Int32
+    content.vb: Sub NextInPart(outVertex As IPoint, OutVertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart*
+  nameWithType.vb: IEnumPointAndDistance.NextInPart(IPoint, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart(ESRI.ArcGIS.Geometry.IPoint, Integer)
+  name.vb: NextInPart(IPoint, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint,System.Int32@)
+  id: QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: QueryNextInPart(IPoint, out int)
+  nameWithType: IEnumPointAndDistance.QueryNextInPart(IPoint, out int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryNextInPart(IPoint vertex, out int OutVertexIndex)
+    parameters:
+    - id: vertex
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: OutVertexIndex
+      type: System.Int32
+    content.vb: Sub QueryNextInPart(vertex As IPoint, OutVertexIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart*
+  nameWithType.vb: IEnumPointAndDistance.QueryNextInPart(IPoint, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart(ESRI.ArcGIS.Geometry.IPoint, Integer)
+  name.vb: QueryNextInPart(IPoint, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: Skip(int)
+  nameWithType: IEnumPointAndDistance.Skip(int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Skip(int numVertices)
+    parameters:
+    - id: numVertices
+      type: System.Int32
+    content.vb: Sub Skip(numVertices As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip*
+  nameWithType.vb: IEnumPointAndDistance.Skip(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip(Integer)
+  name.vb: Skip(Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IEnumPointAndDistance.Reset()
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone
+  id: Clone
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: IEnumPointAndDistance.Clone()
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IEnumVertex Clone()
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnumVertex
+    content.vb: Function Clone() As IEnumVertex
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd
+  id: ResetToEnd
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: ResetToEnd()
+  nameWithType: IEnumPointAndDistance.ResetToEnd()
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ResetToEnd()
+    content.vb: Sub ResetToEnd()
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt(System.Int32,System.Int32)
+  id: SetAt(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: SetAt(int, int)
+  nameWithType: IEnumPointAndDistance.SetAt(int, int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetAt(int iPart, int iVertex)
+    parameters:
+    - id: iPart
+      type: System.Int32
+    - id: iVertex
+      type: System.Int32
+    content.vb: Sub SetAt(iPart As Integer, iVertex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt*
+  nameWithType.vb: IEnumPointAndDistance.SetAt(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt(Integer, Integer)
+  name.vb: SetAt(Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart
+  id: IsLastInPart
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: IsLastInPart()
+  nameWithType: IEnumPointAndDistance.IsLastInPart()
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsLastInPart()
+    return:
+      type: System.Boolean
+    content.vb: Function IsLastInPart() As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X(System.Double)
+  id: put_X(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_X(double)
+  nameWithType: IEnumPointAndDistance.put_X(double)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_X(double X)
+    parameters:
+    - id: X
+      type: System.Double
+    content.vb: Sub put_X(X As Double)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X*
+  nameWithType.vb: IEnumPointAndDistance.put_X(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X(Double)
+  name.vb: put_X(Double)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y(System.Double)
+  id: put_Y(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_Y(double)
+  nameWithType: IEnumPointAndDistance.put_Y(double)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_Y(double Y)
+    parameters:
+    - id: Y
+      type: System.Double
+    content.vb: Sub put_Y(Y As Double)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y*
+  nameWithType.vb: IEnumPointAndDistance.put_Y(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y(Double)
+  name.vb: put_Y(Double)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z(System.Double)
+  id: put_Z(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_Z(double)
+  nameWithType: IEnumPointAndDistance.put_Z(double)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_Z(double Z)
+    parameters:
+    - id: Z
+      type: System.Double
+    content.vb: Sub put_Z(Z As Double)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z*
+  nameWithType.vb: IEnumPointAndDistance.put_Z(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z(Double)
+  name.vb: put_Z(Double)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M(System.Double)
+  id: put_M(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_M(double)
+  nameWithType: IEnumPointAndDistance.put_M(double)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_M(double M)
+    parameters:
+    - id: M
+      type: System.Double
+    content.vb: Sub put_M(M As Double)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M*
+  nameWithType.vb: IEnumPointAndDistance.put_M(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M(Double)
+  name.vb: put_M(Double)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID(System.Int32)
+  id: put_ID(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_ID(int)
+  nameWithType: IEnumPointAndDistance.put_ID(int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_ID(int pointID)
+    parameters:
+    - id: pointID
+      type: System.Int32
+    content.vb: Sub put_ID(pointID As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID*
+  nameWithType.vb: IEnumPointAndDistance.put_ID(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID(Integer)
+  name.vb: put_ID(Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  id: put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: put_Attribute(esriGeometryAttributes, double)
+  nameWithType: IEnumPointAndDistance.put_Attribute(esriGeometryAttributes, double)
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void put_Attribute(esriGeometryAttributes attributeType, double Value)
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    - id: Value
+      type: System.Double
+    content.vb: Sub put_Attribute(attributeType As esriGeometryAttributes, Value As Double)
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute*
+  nameWithType.vb: IEnumPointAndDistance.put_Attribute(esriGeometryAttributes, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute(ESRI.ArcGIS.Geometry.esriGeometryAttributes, Double)
+  name.vb: put_Attribute(esriGeometryAttributes, Double)
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+  commentId: P:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+  id: ContinuousSectionBefore
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: ContinuousSectionBefore
+  nameWithType: IEnumPointAndDistance.ContinuousSectionBefore
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether the current point and the previous point lie on a circular arc with the query point at its center.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ContinuousSectionBefore { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ContinuousSectionBefore As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+  commentId: P:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+  id: ContinuousSectionAfter
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: ContinuousSectionAfter
+  nameWithType: IEnumPointAndDistance.ContinuousSectionAfter
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether the current point and the next point lie on a circular arc with the query point at its center.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ContinuousSectionAfter { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ContinuousSectionAfter As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+  commentId: P:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+  id: OnRightSide
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: OnRightSide
+  nameWithType: IEnumPointAndDistance.OnRightSide
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether the query point is to the right of the curve at the current position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool OnRightSide { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property OnRightSide As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide*
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve
+  commentId: P:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve
+  id: DistanceAlongCurve
+  parent: ESRI.ArcGIS.Geometry.IEnumPointAndDistance
+  langs:
+  - csharp
+  - vb
+  name: DistanceAlongCurve
+  nameWithType: IEnumPointAndDistance.DistanceAlongCurve
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Gives the distance along the curve from the curve's from point to the current postion.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double DistanceAlongCurve { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property DistanceAlongCurve As Double
+  overload: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_Next_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__
+  name: Next
+  nameWithType: IEnumPointAndDistance.Next
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Next
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_QueryNext_ESRI_ArcGIS_Geometry_IPoint_System_Int32__System_Int32__
+  name: QueryNext
+  nameWithType: IEnumPointAndDistance.QueryNext
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNext
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_Previous_ESRI_ArcGIS_Geometry_IPoint__System_Int32__System_Int32__
+  name: Previous
+  nameWithType: IEnumPointAndDistance.Previous
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Previous
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_QueryPrevious_ESRI_ArcGIS_Geometry_IPoint_System_Int32__System_Int32__
+  name: QueryPrevious
+  nameWithType: IEnumPointAndDistance.QueryPrevious
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryPrevious
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_NextInPart_ESRI_ArcGIS_Geometry_IPoint__System_Int32__
+  name: NextInPart
+  nameWithType: IEnumPointAndDistance.NextInPart
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.NextInPart
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_QueryNextInPart_ESRI_ArcGIS_Geometry_IPoint_System_Int32__
+  name: QueryNextInPart
+  nameWithType: IEnumPointAndDistance.QueryNextInPart
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.QueryNextInPart
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_Skip_System_Int32_
+  name: Skip
+  nameWithType: IEnumPointAndDistance.Skip
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Skip
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_Reset
+  name: Reset
+  nameWithType: IEnumPointAndDistance.Reset
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Reset
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_Clone
+  name: Clone
+  nameWithType: IEnumPointAndDistance.Clone
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.Clone
+- uid: ESRI.ArcGIS.Geometry.IEnumVertex
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumVertex
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumVertex.html
+  name: IEnumVertex
+  nameWithType: IEnumVertex
+  fullName: ESRI.ArcGIS.Geometry.IEnumVertex
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_ResetToEnd
+  name: ResetToEnd
+  nameWithType: IEnumPointAndDistance.ResetToEnd
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ResetToEnd
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_SetAt_System_Int32_System_Int32_
+  name: SetAt
+  nameWithType: IEnumPointAndDistance.SetAt
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.SetAt
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_IsLastInPart
+  name: IsLastInPart
+  nameWithType: IEnumPointAndDistance.IsLastInPart
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.IsLastInPart
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_X_System_Double_
+  name: put_X
+  nameWithType: IEnumPointAndDistance.put_X
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_X
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_Y_System_Double_
+  name: put_Y
+  nameWithType: IEnumPointAndDistance.put_Y
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Y
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_Z_System_Double_
+  name: put_Z
+  nameWithType: IEnumPointAndDistance.put_Z
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Z
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_M_System_Double_
+  name: put_M
+  nameWithType: IEnumPointAndDistance.put_M
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_M
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_ID_System_Int32_
+  name: put_ID
+  nameWithType: IEnumPointAndDistance.put_ID
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_ID
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_put_Attribute_ESRI_ArcGIS_Geometry_esriGeometryAttributes_System_Double_
+  name: put_Attribute
+  nameWithType: IEnumPointAndDistance.put_Attribute
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.put_Attribute
+- uid: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryAttributes
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryAttributes.html
+  name: esriGeometryAttributes
+  nameWithType: esriGeometryAttributes
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_ContinuousSectionBefore
+  name: ContinuousSectionBefore
+  nameWithType: IEnumPointAndDistance.ContinuousSectionBefore
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionBefore
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_ContinuousSectionAfter
+  name: ContinuousSectionAfter
+  nameWithType: IEnumPointAndDistance.ContinuousSectionAfter
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.ContinuousSectionAfter
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_OnRightSide
+  name: OnRightSide
+  nameWithType: IEnumPointAndDistance.OnRightSide
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.OnRightSide
+- uid: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.html#ESRI_ArcGIS_Geometry_IEnumPointAndDistance_DistanceAlongCurve
+  name: DistanceAlongCurve
+  nameWithType: IEnumPointAndDistance.DistanceAlongCurve
+  fullName: ESRI.ArcGIS.Geometry.IEnumPointAndDistance.DistanceAlongCurve

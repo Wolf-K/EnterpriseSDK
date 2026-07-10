@@ -1,0 +1,426 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  id: IAddRastersParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+  - ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+  langs:
+  - csharp
+  - vb
+  name: IAddRastersParameters
+  nameWithType: IAddRastersParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control parameters for adding rasters to a mosaic dataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("88062D66-B095-4616-BBBE-5931B1FE1C4D")]
+
+      public interface IAddRastersParameters
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("88062D66-B095-4616-BBBE-5931B1FE1C4D")>
+
+      Public Interface IAddRastersParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.AddRastersParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 88062D66-B095-4616-BBBE-5931B1FE1C4D
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+  id: Crawler
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: Crawler
+  nameWithType: IAddRastersParameters.Crawler
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The data source crawler that provides incoming data source items.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDataSourceCrawler Crawler { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler
+    content.vb: Property Crawler As IDataSourceCrawler
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+  id: RasterType
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: RasterType
+  nameWithType: IAddRastersParameters.RasterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The raster type used for constructing raster datasets using incoming data source items.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterType RasterType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterType
+    content.vb: Property RasterType As IRasterType
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+  id: DuplicateItemsAction
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: DuplicateItemsAction
+  nameWithType: IAddRastersParameters.DuplicateItemsAction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates how incoming duplicates items are handled. Item URIs with the same key value are assumed to be duplicate.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriDuplicateItemsAction DuplicateItemsAction { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriDuplicateItemsAction
+    content.vb: Property DuplicateItemsAction As esriDuplicateItemsAction
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+  id: SynchronizeItems
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: SynchronizeItems
+  nameWithType: IAddRastersParameters.SynchronizeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether catalog items are synchronized once added to the mosaic dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SynchronizeItems { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SynchronizeItems As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+  id: AllowInPlaceSync
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: AllowInPlaceSync
+  nameWithType: IAddRastersParameters.AllowInPlaceSync
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Inidicates whether to allow items to be build as soon as they are added to the mosaic dataset (as long as the raster type allows in-place synchronization).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool AllowInPlaceSync { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllowInPlaceSync As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+  id: Filter
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: IAddRastersParameters.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Regular expression formed using wild card characters ('*', '?', or '.') for matching data source items created by the crawler. No item URIs are requested for those data sources don't match the specified regular expression.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Filter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Filter As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+  id: TimeExtent
+  parent: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters
+  langs:
+  - csharp
+  - vb
+  name: TimeExtent
+  nameWithType: IAddRastersParameters.TimeExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The range of allowed time value for Item URIs. Item URIs with 'SourceTimeStamp' that don't lie within the specified range are filtered out.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITimeExtent TimeExtent { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.ITimeExtent
+    content.vb: Property TimeExtent As ITimeExtent
+  overload: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_Crawler
+  name: Crawler
+  nameWithType: IAddRastersParameters.Crawler
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Crawler
+- uid: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler.html
+  name: IDataSourceCrawler
+  nameWithType: IDataSourceCrawler
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IDataSourceCrawler
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_RasterType
+  name: RasterType
+  nameWithType: IAddRastersParameters.RasterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.RasterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterType
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterType
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterType.html
+  name: IRasterType
+  nameWithType: IRasterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_DuplicateItemsAction
+  name: DuplicateItemsAction
+  nameWithType: IAddRastersParameters.DuplicateItemsAction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.DuplicateItemsAction
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriDuplicateItemsAction
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriDuplicateItemsAction
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriDuplicateItemsAction.html
+  name: esriDuplicateItemsAction
+  nameWithType: esriDuplicateItemsAction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriDuplicateItemsAction
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_SynchronizeItems
+  name: SynchronizeItems
+  nameWithType: IAddRastersParameters.SynchronizeItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.SynchronizeItems
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_AllowInPlaceSync
+  name: AllowInPlaceSync
+  nameWithType: IAddRastersParameters.AllowInPlaceSync
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.AllowInPlaceSync
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_Filter
+  name: Filter
+  nameWithType: IAddRastersParameters.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.Filter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.html#ESRI_ArcGIS_DatasourcesRaster_IAddRastersParameters_TimeExtent
+  name: TimeExtent
+  nameWithType: IAddRastersParameters.TimeExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IAddRastersParameters.TimeExtent
+- uid: ESRI.ArcGIS.esriSystem.ITimeExtent
+  commentId: T:ESRI.ArcGIS.esriSystem.ITimeExtent
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeExtent.html
+  name: ITimeExtent
+  nameWithType: ITimeExtent
+  fullName: ESRI.ArcGIS.esriSystem.ITimeExtent
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

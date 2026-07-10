@@ -1,0 +1,957 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  id: ISpatialReferenceFactory
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference(System.String,ESRI.ArcGIS.Geometry.ISpatialReference@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(System.String)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(System.String)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  langs:
+  - csharp
+  - vb
+  name: ISpatialReferenceFactory
+  nameWithType: ISpatialReferenceFactory
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that create different kinds of spatial reference components.
+  example: []
+  syntax:
+    content: >-
+      [Guid("6CD10B60-C4F6-11D1-BC92-0000F875BCCE")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISpatialReferenceFactory
+    content.vb: >-
+      <Guid("6CD10B60-C4F6-11D1-BC92-0000F875BCCE")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISpatialReferenceFactory
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.SpatialReferenceEnvironmentClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6CD10B60-C4F6-11D1-BC92-0000F875BCCE
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference(System.String,ESRI.ArcGIS.Geometry.ISpatialReference@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference(System.String,ESRI.ArcGIS.Geometry.ISpatialReference@,System.Int32@)
+  id: CreateESRISpatialReference(System.String,ESRI.ArcGIS.Geometry.ISpatialReference@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateESRISpatialReference(string, out ISpatialReference, out int)
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReference(string, out ISpatialReference, out int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference(string, out ESRI.ArcGIS.Geometry.ISpatialReference, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a spatial reference system and defines it from the specified ESRISpatialReference buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateESRISpatialReference(string spatRefInfo, out ISpatialReference SpatialReference, out int cBytesRead)
+    parameters:
+    - id: spatRefInfo
+      type: System.String
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: cBytesRead
+      type: System.Int32
+    content.vb: Sub CreateESRISpatialReference(spatRefInfo As String, SpatialReference As ISpatialReference, cBytesRead As Integer)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference*
+  nameWithType.vb: ISpatialReferenceFactory.CreateESRISpatialReference(String, ISpatialReference, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference(String, ESRI.ArcGIS.Geometry.ISpatialReference, Integer)
+  name.vb: CreateESRISpatialReference(String, ISpatialReference, Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(System.String)
+  id: CreateESRISpatialReferenceFromPRJ(System.String)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateESRISpatialReferenceFromPRJ(string)
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(string)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a spatial reference from a PRJ string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference CreateESRISpatialReferenceFromPRJ(string prj)
+    parameters:
+    - id: prj
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Function CreateESRISpatialReferenceFromPRJ(prj As String) As ISpatialReference
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ*
+  nameWithType.vb: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ(String)
+  name.vb: CreateESRISpatialReferenceFromPRJ(String)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(System.String)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(System.String)
+  id: CreateESRISpatialReferenceFromPRJFile(System.String)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateESRISpatialReferenceFromPRJFile(string)
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(string)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a spatial reference from a PRJ file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference CreateESRISpatialReferenceFromPRJFile(string prjFile)
+    parameters:
+    - id: prjFile
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Function CreateESRISpatialReferenceFromPRJFile(prjFile As String) As ISpatialReference
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile*
+  nameWithType.vb: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(String)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile(String)
+  name.vb: CreateESRISpatialReferenceFromPRJFile(String)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: ExportESRISpatialReferenceToPRJFile(System.String,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: ExportESRISpatialReferenceToPRJFile(string, ISpatialReference)
+  nameWithType: ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(string, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(string, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ExportESRISpatialReferenceToPRJFile(string prjFile, ISpatialReference SpatialReference)
+    parameters:
+    - id: prjFile
+      type: System.String
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub ExportESRISpatialReferenceToPRJFile(prjFile As String, SpatialReference As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile*
+  nameWithType.vb: ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(String, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile(String, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: ExportESRISpatialReferenceToPRJFile(String, ISpatialReference)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit(System.Int32)
+  id: CreateUnit(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateUnit(int)
+  nameWithType: ISpatialReferenceFactory.CreateUnit(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined unit of measure.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IUnit CreateUnit(int unitType)
+    parameters:
+    - id: unitType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IUnit
+    content.vb: Function CreateUnit(unitType As Integer) As IUnit
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit*
+  nameWithType.vb: ISpatialReferenceFactory.CreateUnit(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit(Integer)
+  name.vb: CreateUnit(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid(System.Int32)
+  id: CreateSpheroid(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateSpheroid(int)
+  nameWithType: ISpatialReferenceFactory.CreateSpheroid(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined spheroid.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpheroid CreateSpheroid(int spheroidType)
+    parameters:
+    - id: spheroidType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpheroid
+    content.vb: Function CreateSpheroid(spheroidType As Integer) As ISpheroid
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid*
+  nameWithType.vb: ISpatialReferenceFactory.CreateSpheroid(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid(Integer)
+  name.vb: CreateSpheroid(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum(System.Int32)
+  id: CreateDatum(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateDatum(int)
+  nameWithType: ISpatialReferenceFactory.CreateDatum(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined datum.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDatum CreateDatum(int datumType)
+    parameters:
+    - id: datumType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IDatum
+    content.vb: Function CreateDatum(datumType As Integer) As IDatum
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum*
+  nameWithType.vb: ISpatialReferenceFactory.CreateDatum(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum(Integer)
+  name.vb: CreateDatum(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian(System.Int32)
+  id: CreatePrimeMeridian(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePrimeMeridian(int)
+  nameWithType: ISpatialReferenceFactory.CreatePrimeMeridian(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined prime meridian.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPrimeMeridian CreatePrimeMeridian(int primeMeridianType)
+    parameters:
+    - id: primeMeridianType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IPrimeMeridian
+    content.vb: Function CreatePrimeMeridian(primeMeridianType As Integer) As IPrimeMeridian
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian*
+  nameWithType.vb: ISpatialReferenceFactory.CreatePrimeMeridian(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian(Integer)
+  name.vb: CreatePrimeMeridian(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection(System.Int32)
+  id: CreateProjection(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateProjection(int)
+  nameWithType: ISpatialReferenceFactory.CreateProjection(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined projection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IProjection CreateProjection(int projectionType)
+    parameters:
+    - id: projectionType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IProjection
+    content.vb: Function CreateProjection(projectionType As Integer) As IProjection
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection*
+  nameWithType.vb: ISpatialReferenceFactory.CreateProjection(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection(Integer)
+  name.vb: CreateProjection(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter(System.Int32)
+  id: CreateParameter(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateParameter(int)
+  nameWithType: ISpatialReferenceFactory.CreateParameter(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined parameter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IParameter CreateParameter(int parameterType)
+    parameters:
+    - id: parameterType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IParameter
+    content.vb: Function CreateParameter(parameterType As Integer) As IParameter
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter*
+  nameWithType.vb: ISpatialReferenceFactory.CreateParameter(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter(Integer)
+  name.vb: CreateParameter(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem(System.Int32)
+  id: CreateProjectedCoordinateSystem(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateProjectedCoordinateSystem(int)
+  nameWithType: ISpatialReferenceFactory.CreateProjectedCoordinateSystem(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined projected coordinate system.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IProjectedCoordinateSystem CreateProjectedCoordinateSystem(int pcsType)
+    parameters:
+    - id: pcsType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IProjectedCoordinateSystem
+    content.vb: Function CreateProjectedCoordinateSystem(pcsType As Integer) As IProjectedCoordinateSystem
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem*
+  nameWithType.vb: ISpatialReferenceFactory.CreateProjectedCoordinateSystem(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem(Integer)
+  name.vb: CreateProjectedCoordinateSystem(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem(System.Int32)
+  id: CreateGeographicCoordinateSystem(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeographicCoordinateSystem(int)
+  nameWithType: ISpatialReferenceFactory.CreateGeographicCoordinateSystem(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined geographic coordinate system.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeographicCoordinateSystem CreateGeographicCoordinateSystem(int gcsType)
+    parameters:
+    - id: gcsType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeographicCoordinateSystem
+    content.vb: Function CreateGeographicCoordinateSystem(gcsType As Integer) As IGeographicCoordinateSystem
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem*
+  nameWithType.vb: ISpatialReferenceFactory.CreateGeographicCoordinateSystem(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem(Integer)
+  name.vb: CreateGeographicCoordinateSystem(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation(System.Int32)
+  id: CreateGeoTransformation(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeoTransformation(int)
+  nameWithType: ISpatialReferenceFactory.CreateGeoTransformation(int)
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a predefined transformation between geographic coordinate systems.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITransformation CreateGeoTransformation(int gTransformationType)
+    parameters:
+    - id: gTransformationType
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.ITransformation
+    content.vb: Function CreateGeoTransformation(gTransformationType As Integer) As ITransformation
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation*
+  nameWithType.vb: ISpatialReferenceFactory.CreateGeoTransformation(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation(Integer)
+  name.vb: CreateGeoTransformation(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections
+  id: CreatePredefinedProjections
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedProjections()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedProjections()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of predefined projections.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedProjections()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedProjections() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits
+  id: CreatePredefinedLinearUnits
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedLinearUnits()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedLinearUnits()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of predefined linear units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedLinearUnits()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedLinearUnits() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums
+  id: CreatePredefinedDatums
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedDatums()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedDatums()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of a list of predefined datums.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedDatums()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedDatums() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits
+  id: CreatePredefinedAngularUnits
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedAngularUnits()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedAngularUnits()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of predefined angular units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedAngularUnits()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedAngularUnits() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+  id: CreatePredefinedPrimeMeridians
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedPrimeMeridians()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedPrimeMeridians()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of predefined prime meridians.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedPrimeMeridians()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedPrimeMeridians() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians*
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids
+  commentId: M:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids
+  id: CreatePredefinedSpheroids
+  parent: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory
+  langs:
+  - csharp
+  - vb
+  name: CreatePredefinedSpheroids()
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedSpheroids()
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates a list of predefined spheroids.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISet CreatePredefinedSpheroids()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ISet
+    content.vb: Function CreatePredefinedSpheroids() As ISet
+  overload: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateESRISpatialReference_System_String_ESRI_ArcGIS_Geometry_ISpatialReference__System_Int32__
+  name: CreateESRISpatialReference
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateESRISpatialReferenceFromPRJ_System_String_
+  name: CreateESRISpatialReferenceFromPRJ
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJ
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateESRISpatialReferenceFromPRJFile_System_String_
+  name: CreateESRISpatialReferenceFromPRJFile
+  nameWithType: ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateESRISpatialReferenceFromPRJFile
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_ExportESRISpatialReferenceToPRJFile_System_String_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: ExportESRISpatialReferenceToPRJFile
+  nameWithType: ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.ExportESRISpatialReferenceToPRJFile
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateUnit_System_Int32_
+  name: CreateUnit
+  nameWithType: ISpatialReferenceFactory.CreateUnit
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateUnit
+- uid: ESRI.ArcGIS.Geometry.IUnit
+  commentId: T:ESRI.ArcGIS.Geometry.IUnit
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IUnit.html
+  name: IUnit
+  nameWithType: IUnit
+  fullName: ESRI.ArcGIS.Geometry.IUnit
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateSpheroid_System_Int32_
+  name: CreateSpheroid
+  nameWithType: ISpatialReferenceFactory.CreateSpheroid
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateSpheroid
+- uid: ESRI.ArcGIS.Geometry.ISpheroid
+  commentId: T:ESRI.ArcGIS.Geometry.ISpheroid
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpheroid.html
+  name: ISpheroid
+  nameWithType: ISpheroid
+  fullName: ESRI.ArcGIS.Geometry.ISpheroid
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateDatum_System_Int32_
+  name: CreateDatum
+  nameWithType: ISpatialReferenceFactory.CreateDatum
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateDatum
+- uid: ESRI.ArcGIS.Geometry.IDatum
+  commentId: T:ESRI.ArcGIS.Geometry.IDatum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IDatum.html
+  name: IDatum
+  nameWithType: IDatum
+  fullName: ESRI.ArcGIS.Geometry.IDatum
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePrimeMeridian_System_Int32_
+  name: CreatePrimeMeridian
+  nameWithType: ISpatialReferenceFactory.CreatePrimeMeridian
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePrimeMeridian
+- uid: ESRI.ArcGIS.Geometry.IPrimeMeridian
+  commentId: T:ESRI.ArcGIS.Geometry.IPrimeMeridian
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPrimeMeridian.html
+  name: IPrimeMeridian
+  nameWithType: IPrimeMeridian
+  fullName: ESRI.ArcGIS.Geometry.IPrimeMeridian
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateProjection_System_Int32_
+  name: CreateProjection
+  nameWithType: ISpatialReferenceFactory.CreateProjection
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjection
+- uid: ESRI.ArcGIS.Geometry.IProjection
+  commentId: T:ESRI.ArcGIS.Geometry.IProjection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjection.html
+  name: IProjection
+  nameWithType: IProjection
+  fullName: ESRI.ArcGIS.Geometry.IProjection
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateParameter_System_Int32_
+  name: CreateParameter
+  nameWithType: ISpatialReferenceFactory.CreateParameter
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateParameter
+- uid: ESRI.ArcGIS.Geometry.IParameter
+  commentId: T:ESRI.ArcGIS.Geometry.IParameter
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IParameter.html
+  name: IParameter
+  nameWithType: IParameter
+  fullName: ESRI.ArcGIS.Geometry.IParameter
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateProjectedCoordinateSystem_System_Int32_
+  name: CreateProjectedCoordinateSystem
+  nameWithType: ISpatialReferenceFactory.CreateProjectedCoordinateSystem
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateProjectedCoordinateSystem
+- uid: ESRI.ArcGIS.Geometry.IProjectedCoordinateSystem
+  commentId: T:ESRI.ArcGIS.Geometry.IProjectedCoordinateSystem
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IProjectedCoordinateSystem.html
+  name: IProjectedCoordinateSystem
+  nameWithType: IProjectedCoordinateSystem
+  fullName: ESRI.ArcGIS.Geometry.IProjectedCoordinateSystem
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateGeographicCoordinateSystem_System_Int32_
+  name: CreateGeographicCoordinateSystem
+  nameWithType: ISpatialReferenceFactory.CreateGeographicCoordinateSystem
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeographicCoordinateSystem
+- uid: ESRI.ArcGIS.Geometry.IGeographicCoordinateSystem
+  commentId: T:ESRI.ArcGIS.Geometry.IGeographicCoordinateSystem
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographicCoordinateSystem.html
+  name: IGeographicCoordinateSystem
+  nameWithType: IGeographicCoordinateSystem
+  fullName: ESRI.ArcGIS.Geometry.IGeographicCoordinateSystem
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreateGeoTransformation_System_Int32_
+  name: CreateGeoTransformation
+  nameWithType: ISpatialReferenceFactory.CreateGeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreateGeoTransformation
+- uid: ESRI.ArcGIS.Geometry.ITransformation
+  commentId: T:ESRI.ArcGIS.Geometry.ITransformation
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITransformation.html
+  name: ITransformation
+  nameWithType: ITransformation
+  fullName: ESRI.ArcGIS.Geometry.ITransformation
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedProjections
+  name: CreatePredefinedProjections
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedProjections
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedProjections
+- uid: ESRI.ArcGIS.esriSystem.ISet
+  commentId: T:ESRI.ArcGIS.esriSystem.ISet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISet.html
+  name: ISet
+  nameWithType: ISet
+  fullName: ESRI.ArcGIS.esriSystem.ISet
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedLinearUnits
+  name: CreatePredefinedLinearUnits
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedLinearUnits
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedLinearUnits
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedDatums
+  name: CreatePredefinedDatums
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedDatums
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedDatums
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedAngularUnits
+  name: CreatePredefinedAngularUnits
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedAngularUnits
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedAngularUnits
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedPrimeMeridians
+  name: CreatePredefinedPrimeMeridians
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedPrimeMeridians
+- uid: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.html#ESRI_ArcGIS_Geometry_ISpatialReferenceFactory_CreatePredefinedSpheroids
+  name: CreatePredefinedSpheroids
+  nameWithType: ISpatialReferenceFactory.CreatePredefinedSpheroids
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReferenceFactory.CreatePredefinedSpheroids

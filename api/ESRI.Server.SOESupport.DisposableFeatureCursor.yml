@@ -1,0 +1,1120 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor
+  commentId: T:ESRI.Server.SOESupport.DisposableFeatureCursor
+  id: DisposableFeatureCursor
+  parent: ESRI.Server.SOESupport
+  children:
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.FindField(System.String)
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.Flush
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature
+  - ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  langs:
+  - csharp
+  - vb
+  name: DisposableFeatureCursor
+  nameWithType: DisposableFeatureCursor
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor
+  type: Class
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: 'public class DisposableFeatureCursor : IDisposable, IFeatureCursor'
+    content.vb: Public Class DisposableFeatureCursor Implements IDisposable, IFeatureCursor
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.ToDisposable
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  id: '#ctor(ESRI.ArcGIS.Geodatabase.IFeatureCursor)'
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: DisposableFeatureCursor(IFeatureCursor)
+  nameWithType: DisposableFeatureCursor.DisposableFeatureCursor(IFeatureCursor)
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.DisposableFeatureCursor(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  type: Constructor
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  syntax:
+    content: public DisposableFeatureCursor(IFeatureCursor cursor)
+    parameters:
+    - id: cursor
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    content.vb: Public Sub New(cursor As IFeatureCursor)
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor*
+  nameWithType.vb: DisposableFeatureCursor.New(IFeatureCursor)
+  fullName.vb: ESRI.Server.SOESupport.DisposableFeatureCursor.New(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  name.vb: New(IFeatureCursor)
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose
+  id: Dispose
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: DisposableFeatureCursor.Dispose()
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose()
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature
+  id: DeleteFeature
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: DeleteFeature()
+  nameWithType: DisposableFeatureCursor.DeleteFeature()
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  summary: Delete the existing Feature in the database corresponding to the current position of the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: public void DeleteFeature()
+    content.vb: Public Sub DeleteFeature()
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField(System.String)
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.FindField(System.String)
+  id: FindField(System.String)
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: FindField(string)
+  nameWithType: DisposableFeatureCursor.FindField(string)
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  summary: The index of the field with the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: public int FindField(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Function FindField(name As String) As Integer
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  nameWithType.vb: DisposableFeatureCursor.FindField(String)
+  fullName.vb: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField(String)
+  name.vb: FindField(String)
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Flush
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.Flush
+  id: Flush
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: DisposableFeatureCursor.Flush()
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  summary: Flush any outstanding buffered writes to the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: public void Flush()
+    content.vb: Public Sub Flush()
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.Flush*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  id: InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: InsertFeature(IFeatureBuffer)
+  nameWithType: DisposableFeatureCursor.InsertFeature(IFeatureBuffer)
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  example: []
+  syntax:
+    content: public object InsertFeature(IFeatureBuffer buffer)
+    parameters:
+    - id: buffer
+      type: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    return:
+      type: System.Object
+    content.vb: Public Function InsertFeature(buffer As IFeatureBuffer) As Object
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature
+  id: NextFeature
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: NextFeature()
+  nameWithType: DisposableFeatureCursor.NextFeature()
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature()
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  summary: Advance the position of the cursor by one and return the Feature object at that position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: public IFeature NextFeature()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Public Function NextFeature() As IFeature
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  commentId: M:ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  id: UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: UpdateFeature(IFeature)
+  nameWithType: DisposableFeatureCursor.UpdateFeature(IFeature)
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  type: Method
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  example: []
+  syntax:
+    content: public void UpdateFeature(IFeature feature)
+    parameters:
+    - id: feature
+      type: ESRI.ArcGIS.Geodatabase.IFeature
+    content.vb: Public Sub UpdateFeature(feature As IFeature)
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+  commentId: P:ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+  id: Fields
+  parent: ESRI.Server.SOESupport.DisposableFeatureCursor
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: DisposableFeatureCursor.Fields
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.SOESupport
+  namespace: ESRI.Server.SOESupport
+  summary: The fields Collection for this cursor.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: public IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Public ReadOnly Property Fields As IFields
+  overload: ESRI.Server.SOESupport.DisposableFeatureCursor.Fields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+references:
+- uid: ESRI.Server.SOESupport
+  commentId: N:ESRI.Server.SOESupport
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.Server.SOESupport
+  nameWithType: ESRI.Server.SOESupport
+  fullName: ESRI.Server.SOESupport
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.Server
+    name: Server
+    isExternal: true
+    href: ESRI.Server.html
+  - name: .
+  - uid: ESRI.Server.SOESupport
+    name: SOESupport
+    isExternal: true
+    href: ESRI.Server.SOESupport.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  parent: ESRI.Server.SOESupport.ICursorExtensions
+  definition: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  name: AsEnumerable(IFeatureCursor)
+  nameWithType: ICursorExtensions.AsEnumerable(IFeatureCursor)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(System.Boolean)
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+  parent: ESRI.Server.SOESupport.ICursorExtensions
+  definition: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  name: AsEnumerable(IFeatureCursor, bool)
+  nameWithType: ICursorExtensions.AsEnumerable(IFeatureCursor, bool)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor, bool)
+  nameWithType.vb: ICursorExtensions.AsEnumerable(IFeatureCursor, Boolean)
+  fullName.vb: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor, Boolean)
+  name.vb: AsEnumerable(IFeatureCursor, Boolean)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.ESRI.Server.SOESupport.ICursorExtensions.ToDisposable
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  parent: ESRI.Server.SOESupport.ICursorExtensions
+  definition: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  name: ToDisposable(IFeatureCursor)
+  nameWithType: ICursorExtensions.ToDisposable(IFeatureCursor)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: ToDisposable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: ToDisposable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  isExternal: true
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  name: AsEnumerable(IFeatureCursor)
+  nameWithType: ICursorExtensions.AsEnumerable(IFeatureCursor)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+- uid: ESRI.Server.SOESupport.ICursorExtensions
+  commentId: T:ESRI.Server.SOESupport.ICursorExtensions
+  parent: ESRI.Server.SOESupport
+  isExternal: true
+  href: ESRI.Server.SOESupport.ICursorExtensions.html
+  name: ICursorExtensions
+  nameWithType: ICursorExtensions
+  fullName: ESRI.Server.SOESupport.ICursorExtensions
+- uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+  isExternal: true
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  name: AsEnumerable(IFeatureCursor, bool)
+  nameWithType: ICursorExtensions.AsEnumerable(IFeatureCursor, bool)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor, bool)
+  nameWithType.vb: ICursorExtensions.AsEnumerable(IFeatureCursor, Boolean)
+  fullName.vb: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor, Boolean)
+  name.vb: AsEnumerable(IFeatureCursor, Boolean)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.AsEnumerable(ESRI.ArcGIS.Geodatabase.IFeatureCursor,System.Boolean)
+    name: AsEnumerable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_AsEnumerable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_System_Boolean_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  commentId: M:ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  isExternal: true
+  href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  name: ToDisposable(IFeatureCursor)
+  nameWithType: ICursorExtensions.ToDisposable(IFeatureCursor)
+  fullName: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+  spec.csharp:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: ToDisposable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.Server.SOESupport.ICursorExtensions.ToDisposable(ESRI.ArcGIS.Geodatabase.IFeatureCursor)
+    name: ToDisposable
+    isExternal: true
+    href: ESRI.Server.SOESupport.ICursorExtensions.html#ESRI_Server_SOESupport_ICursorExtensions_ToDisposable_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    name: IFeatureCursor
+    isExternal: true
+  - name: )
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.#ctor
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor__ctor_ESRI_ArcGIS_Geodatabase_IFeatureCursor_
+  name: DisposableFeatureCursor
+  nameWithType: DisposableFeatureCursor.DisposableFeatureCursor
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.DisposableFeatureCursor
+  nameWithType.vb: DisposableFeatureCursor.New
+  fullName.vb: ESRI.Server.SOESupport.DisposableFeatureCursor.New
+  name.vb: New
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_Dispose
+  name: Dispose
+  nameWithType: DisposableFeatureCursor.Dispose
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_DeleteFeature
+  name: DeleteFeature
+  nameWithType: DisposableFeatureCursor.DeleteFeature
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.DeleteFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  name: DeleteFeature()
+  nameWithType: IFeatureCursor.DeleteFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+    name: DeleteFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.DeleteFeature
+    name: DeleteFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_DeleteFeature
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.FindField
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_FindField_System_String_
+  name: FindField
+  nameWithType: DisposableFeatureCursor.FindField
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.FindField
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  name: FindField(string)
+  nameWithType: IFeatureCursor.FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(string)
+  nameWithType.vb: IFeatureCursor.FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(String)
+  name.vb: FindField(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.FindField(System.String)
+    name: FindField
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_FindField_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Flush*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.Flush
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_Flush
+  name: Flush
+  nameWithType: DisposableFeatureCursor.Flush
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Flush
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  name: Flush()
+  nameWithType: IFeatureCursor.Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Flush
+    name: Flush
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Flush
+  - name: (
+  - name: )
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  name: InsertFeature
+  nameWithType: DisposableFeatureCursor.InsertFeature
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.InsertFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  name: InsertFeature(IFeatureBuffer)
+  nameWithType: IFeatureCursor.InsertFeature(IFeatureBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+    name: InsertFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    name: IFeatureBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.InsertFeature(ESRI.ArcGIS.Geodatabase.IFeatureBuffer)
+    name: InsertFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_InsertFeature_ESRI_ArcGIS_Geodatabase_IFeatureBuffer_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+    name: IFeatureBuffer
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureBuffer.html
+  name: IFeatureBuffer
+  nameWithType: IFeatureBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureBuffer
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_NextFeature
+  name: NextFeature
+  nameWithType: DisposableFeatureCursor.NextFeature
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.NextFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  name: NextFeature()
+  nameWithType: IFeatureCursor.NextFeature()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+    name: NextFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.NextFeature
+    name: NextFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_NextFeature
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  name: IFeature
+  nameWithType: IFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  name: UpdateFeature
+  nameWithType: DisposableFeatureCursor.UpdateFeature
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.UpdateFeature
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  name: UpdateFeature(IFeature)
+  nameWithType: IFeatureCursor.UpdateFeature(IFeature)
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+    name: UpdateFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeature
+    name: IFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.UpdateFeature(ESRI.ArcGIS.Geodatabase.IFeature)
+    name: UpdateFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_UpdateFeature_ESRI_ArcGIS_Geodatabase_IFeature_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IFeature
+    name: IFeature
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IFeature.html
+  - name: )
+- uid: ESRI.Server.SOESupport.DisposableFeatureCursor.Fields*
+  commentId: Overload:ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+  isExternal: true
+  href: ESRI.Server.SOESupport.DisposableFeatureCursor.html#ESRI_Server_SOESupport_DisposableFeatureCursor_Fields
+  name: Fields
+  nameWithType: DisposableFeatureCursor.Fields
+  fullName: ESRI.Server.SOESupport.DisposableFeatureCursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html#ESRI_ArcGIS_Geodatabase_IFeatureCursor_Fields
+  name: Fields
+  nameWithType: IFeatureCursor.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

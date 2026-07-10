@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IHitTest3D
+  commentId: T:ESRI.ArcGIS.Geometry.IHitTest3D
+  id: IHitTest3D
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IHitTest3D
+  nameWithType: IHitTest3D
+  fullName: ESRI.ArcGIS.Geometry.IHitTest3D
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that locate a part of a geometry closest to a point.
+  example: []
+  syntax:
+    content: >-
+      [Guid("A2FA4E9A-4E10-4A62-9EED-48680A7423DD")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IHitTest3D
+    content.vb: >-
+      <Guid("A2FA4E9A-4E10-4A62-9EED-48680A7423DD")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IHitTest3D
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A2FA4E9A-4E10-4A62-9EED-48680A7423DD
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  id: HitTest3D(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IHitTest3D
+  langs:
+  - csharp
+  - vb
+  name: HitTest3D(IPoint, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int)
+  nameWithType: IHitTest3D.HitTest3D(IPoint, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D(ESRI.ArcGIS.Geometry.IPoint, double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, ref double, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool HitTest3D(IPoint QueryPoint, double searchRadius, esriGeometryHitPartType geometryPart, IPoint hitPoint, ref double hitDistance, ref int hitPartIndex, ref int hitSegmentIndex)
+    parameters:
+    - id: QueryPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: searchRadius
+      type: System.Double
+    - id: geometryPart
+      type: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+    - id: hitPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: hitDistance
+      type: System.Double
+    - id: hitPartIndex
+      type: System.Int32
+    - id: hitSegmentIndex
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function HitTest3D(QueryPoint As IPoint, searchRadius As Double, geometryPart As esriGeometryHitPartType, hitPoint As IPoint, hitDistance As Double, hitPartIndex As Integer, hitSegmentIndex As Integer) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D*
+  nameWithType.vb: IHitTest3D.HitTest3D(IPoint, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D(ESRI.ArcGIS.Geometry.IPoint, Double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, Double, Integer, Integer)
+  name.vb: HitTest3D(IPoint, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  id: HitTestCone(ESRI.ArcGIS.Geometry.IRay,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IHitTest3D
+  langs:
+  - csharp
+  - vb
+  name: HitTestCone(IRay, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int)
+  nameWithType: IHitTest3D.HitTestCone(IRay, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone(ESRI.ArcGIS.Geometry.IRay, double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, ref double, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool HitTestCone(IRay pQueryRay, double minAngle, esriGeometryHitPartType geometryPart, IPoint pHitPoint, ref double pHitDistance, ref int pHitPartIndex, ref int pHitSegmentIndex)
+    parameters:
+    - id: pQueryRay
+      type: ESRI.ArcGIS.Geometry.IRay
+    - id: minAngle
+      type: System.Double
+    - id: geometryPart
+      type: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+    - id: pHitPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pHitDistance
+      type: System.Double
+    - id: pHitPartIndex
+      type: System.Int32
+    - id: pHitSegmentIndex
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function HitTestCone(pQueryRay As IRay, minAngle As Double, geometryPart As esriGeometryHitPartType, pHitPoint As IPoint, pHitDistance As Double, pHitPartIndex As Integer, pHitSegmentIndex As Integer) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone*
+  nameWithType.vb: IHitTest3D.HitTestCone(IRay, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone(ESRI.ArcGIS.Geometry.IRay, Double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, Double, Integer, Integer)
+  name.vb: HitTestCone(IRay, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IHitTest3D.html#ESRI_ArcGIS_Geometry_IHitTest3D_HitTest3D_ESRI_ArcGIS_Geometry_IPoint_System_Double_ESRI_ArcGIS_Geometry_esriGeometryHitPartType_ESRI_ArcGIS_Geometry_IPoint_System_Double__System_Int32__System_Int32__
+  name: HitTest3D
+  nameWithType: IHitTest3D.HitTest3D
+  fullName: ESRI.ArcGIS.Geometry.IHitTest3D.HitTest3D
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryHitPartType.html
+  name: esriGeometryHitPartType
+  nameWithType: esriGeometryHitPartType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IHitTest3D.html#ESRI_ArcGIS_Geometry_IHitTest3D_HitTestCone_ESRI_ArcGIS_Geometry_IRay_System_Double_ESRI_ArcGIS_Geometry_esriGeometryHitPartType_ESRI_ArcGIS_Geometry_IPoint_System_Double__System_Int32__System_Int32__
+  name: HitTestCone
+  nameWithType: IHitTest3D.HitTestCone
+  fullName: ESRI.ArcGIS.Geometry.IHitTest3D.HitTestCone
+- uid: ESRI.ArcGIS.Geometry.IRay
+  commentId: T:ESRI.ArcGIS.Geometry.IRay
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRay.html
+  name: IRay
+  nameWithType: IRay
+  fullName: ESRI.ArcGIS.Geometry.IRay

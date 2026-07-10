@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  id: IRasterTransaction
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels
+  langs:
+  - csharp
+  - vb
+  name: IRasterTransaction
+  nameWithType: IRasterTransaction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that provide undo support.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("3BE922F3-6934-40A5-A82E-C368CB13995B")]
+
+      public interface IRasterTransaction
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("3BE922F3-6934-40A5-A82E-C368CB13995B")>
+
+      Public Interface IRasterTransaction
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterBandClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3BE922F3-6934-40A5-A82E-C368CB13995B
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit
+  id: Commit
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  langs:
+  - csharp
+  - vb
+  name: Commit()
+  nameWithType: IRasterTransaction.Commit()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sends all pending changes to persistent storage.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Commit()
+    content.vb: Sub Commit()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start
+  id: Start
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: IRasterTransaction.Start()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Starts double buffering edits for undo support.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Start()
+    content.vb: Sub Start()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End
+  id: End
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  langs:
+  - csharp
+  - vb
+  name: End()
+  nameWithType: IRasterTransaction.End()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Commits changes and stops double buffering.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void End()
+    content.vb: Sub [End]()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo(System.Int32)
+  id: Undo(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  langs:
+  - csharp
+  - vb
+  name: Undo(int)
+  nameWithType: IRasterTransaction.Undo(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Reverses last N changes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Undo(int N)
+    parameters:
+    - id: N
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function Undo(N As Integer) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo*
+  nameWithType.vb: IRasterTransaction.Undo(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo(Integer)
+  name.vb: Undo(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels
+  id: UndoLevels
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction
+  langs:
+  - csharp
+  - vb
+  name: UndoLevels
+  nameWithType: IRasterTransaction.UndoLevels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Maximum number of reversible operations.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int UndoLevels { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property UndoLevels As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html#ESRI_ArcGIS_DatasourcesRaster_IRasterTransaction_Commit
+  name: Commit
+  nameWithType: IRasterTransaction.Commit
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Commit
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html#ESRI_ArcGIS_DatasourcesRaster_IRasterTransaction_Start
+  name: Start
+  nameWithType: IRasterTransaction.Start
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Start
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html#ESRI_ArcGIS_DatasourcesRaster_IRasterTransaction_End
+  name: End
+  nameWithType: IRasterTransaction.End
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.End
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html#ESRI_ArcGIS_DatasourcesRaster_IRasterTransaction_Undo_System_Int32_
+  name: Undo
+  nameWithType: IRasterTransaction.Undo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.Undo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.html#ESRI_ArcGIS_DatasourcesRaster_IRasterTransaction_UndoLevels
+  name: UndoLevels
+  nameWithType: IRasterTransaction.UndoLevels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterTransaction.UndoLevels

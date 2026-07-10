@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataStatistics
+  id: IDataStatistics
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+  - ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+  langs:
+  - csharp
+  - vb
+  name: IDataStatistics
+  nameWithType: IDataStatistics
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members to generate statistics on a field.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CA691DD5-8A14-11D2-AE6C-080009EC732A")]
+
+      public interface IDataStatistics
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CA691DD5-8A14-11D2-AE6C-080009EC732A")>
+
+      Public Interface IDataStatistics
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.DataStatisticsClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CA691DD5-8A14-11D2-AE6C-080009EC732A
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+  id: Field
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: Field
+  nameWithType: IDataStatistics.Field
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field for which to gather statistics.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Field { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Field As String
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.Field*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+  id: Cursor
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: Cursor
+  nameWithType: IDataStatistics.Cursor
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The cursor which will generate the statistics.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICursor Cursor { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: WriteOnly Property Cursor As ICursor
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+  id: SampleRate
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: SampleRate
+  nameWithType: IDataStatistics.SampleRate
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The maximum number of records to sample at a time (-1 means pull all records).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SampleRate { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property SampleRate As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+  id: SimpleStats
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: SimpleStats
+  nameWithType: IDataStatistics.SimpleStats
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether only simple statistics are generated.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SimpleStats { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SimpleStats As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+  id: Statistics
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: Statistics
+  nameWithType: IDataStatistics.Statistics
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The statistics for the current field over the current cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStatisticsResults Statistics { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStatisticsResults
+    content.vb: ReadOnly Property Statistics As IStatisticsResults
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+  id: UniqueValues
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: UniqueValues
+  nameWithType: IDataStatistics.UniqueValues
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The unique values for the current field over the current cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumerator UniqueValues { get; }
+    parameters: []
+    return:
+      type: System.Collections.IEnumerator
+    content.vb: ReadOnly Property UniqueValues As IEnumerator
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+  id: UniqueValueCount
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: UniqueValueCount
+  nameWithType: IDataStatistics.UniqueValueCount
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of unique values for the current sample.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int UniqueValueCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property UniqueValueCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+  id: Continue
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: Continue
+  nameWithType: IDataStatistics.Continue
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the cursor contains more records than the current sample.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Continue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property [Continue] As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue*
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled
+  id: Cancelled
+  parent: ESRI.ArcGIS.Geodatabase.IDataStatistics
+  langs:
+  - csharp
+  - vb
+  name: Cancelled
+  nameWithType: IDataStatistics.Cancelled
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the operation has been cancelled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Cancelled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property Cancelled As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Field*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_Field
+  name: Field
+  nameWithType: IDataStatistics.Field
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Field
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_Cursor
+  name: Cursor
+  nameWithType: IDataStatistics.Cursor
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cursor
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_SampleRate
+  name: SampleRate
+  nameWithType: IDataStatistics.SampleRate
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.SampleRate
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_SimpleStats
+  name: SimpleStats
+  nameWithType: IDataStatistics.SimpleStats
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.SimpleStats
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_Statistics
+  name: Statistics
+  nameWithType: IDataStatistics.Statistics
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Statistics
+- uid: ESRI.ArcGIS.esriSystem.IStatisticsResults
+  commentId: T:ESRI.ArcGIS.esriSystem.IStatisticsResults
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStatisticsResults.html
+  name: IStatisticsResults
+  nameWithType: IStatisticsResults
+  fullName: ESRI.ArcGIS.esriSystem.IStatisticsResults
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_UniqueValues
+  name: UniqueValues
+  nameWithType: IDataStatistics.UniqueValues
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValues
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerator
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_UniqueValueCount
+  name: UniqueValueCount
+  nameWithType: IDataStatistics.UniqueValueCount
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.UniqueValueCount
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_Continue
+  name: Continue
+  nameWithType: IDataStatistics.Continue
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Continue
+- uid: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataStatistics.html#ESRI_ArcGIS_Geodatabase_IDataStatistics_Cancelled
+  name: Cancelled
+  nameWithType: IDataStatistics.Cancelled
+  fullName: ESRI.ArcGIS.Geodatabase.IDataStatistics.Cancelled

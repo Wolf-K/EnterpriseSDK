@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  commentId: T:ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  id: IConstructDomainExtent2
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  - ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent(System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference,System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  langs:
+  - csharp
+  - vb
+  name: IConstructDomainExtent2
+  nameWithType: IConstructDomainExtent2
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Constructs a Z/M domain extent from the specified extent and information from a spatial reference.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("32839157-DBC8-40A8-8FF9-FE8F716A300C")]
+
+      public interface IConstructDomainExtent2 : IConstructDomainExtent
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("32839157-DBC8-40A8-8FF9-FE8F716A300C")>
+
+      Public Interface IConstructDomainExtent2 Inherits IConstructDomainExtent
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 32839157-DBC8-40A8-8FF9-FE8F716A300C
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  id: ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  langs:
+  - csharp
+  - vb
+  name: ConstructDomainExtent(IEnvelope, double)
+  nameWithType: IConstructDomainExtent2.ConstructDomainExtent(IEnvelope, double)
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IEnvelope ConstructDomainExtent(IEnvelope extent, double Scale)
+    parameters:
+    - id: extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Scale
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Function ConstructDomainExtent(extent As IEnvelope, Scale As Double) As IEnvelope
+  overload: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent*
+  nameWithType.vb: IConstructDomainExtent2.ConstructDomainExtent(IEnvelope, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent(ESRI.ArcGIS.Geometry.IEnvelope, Double)
+  name.vb: ConstructDomainExtent(IEnvelope, Double)
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent(System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent(System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  id: ConstructZMDomainExtent(System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  langs:
+  - csharp
+  - vb
+  name: ConstructZMDomainExtent(double, double, double, out double, out double)
+  nameWithType: IConstructDomainExtent2.ConstructZMDomainExtent(double, double, double, out double, out double)
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent(double, double, double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructZMDomainExtent(double inMin, double inMax, double Scale, out double outMin, out double outMax)
+    parameters:
+    - id: inMin
+      type: System.Double
+    - id: inMax
+      type: System.Double
+    - id: Scale
+      type: System.Double
+    - id: outMin
+      type: System.Double
+    - id: outMax
+      type: System.Double
+    content.vb: Sub ConstructZMDomainExtent(inMin As Double, inMax As Double, Scale As Double, outMin As Double, outMax As Double)
+  overload: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent*
+  nameWithType.vb: IConstructDomainExtent2.ConstructZMDomainExtent(Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent(Double, Double, Double, Double, Double)
+  name.vb: ConstructZMDomainExtent(Double, Double, Double, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference,System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference,System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  id: ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference,System.Double,System.Double,System.Double,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IConstructDomainExtent2
+  langs:
+  - csharp
+  - vb
+  name: ConstructZMDomainExtent2(ISpatialReference, double, double, double, out double, out double)
+  nameWithType: IConstructDomainExtent2.ConstructZMDomainExtent2(ISpatialReference, double, double, double, out double, out double)
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference, double, double, double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: double ConstructZMDomainExtent2(ISpatialReference pSR, double inMin, double inMax, double inScale, out double outMin, out double outMax)
+    parameters:
+    - id: pSR
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: inMin
+      type: System.Double
+    - id: inMax
+      type: System.Double
+    - id: inScale
+      type: System.Double
+    - id: outMin
+      type: System.Double
+    - id: outMax
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function ConstructZMDomainExtent2(pSR As ISpatialReference, inMin As Double, inMax As Double, inScale As Double, outMin As Double, outMax As Double) As Double
+  overload: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2*
+  nameWithType.vb: IConstructDomainExtent2.ConstructZMDomainExtent2(ISpatialReference, Double, Double, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2(ESRI.ArcGIS.Geometry.ISpatialReference, Double, Double, Double, Double, Double)
+  name.vb: ConstructZMDomainExtent2(ISpatialReference, Double, Double, Double, Double, Double)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.html#ESRI_ArcGIS_Geometry_IConstructDomainExtent2_ConstructDomainExtent_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_
+  name: ConstructDomainExtent
+  nameWithType: IConstructDomainExtent2.ConstructDomainExtent
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructDomainExtent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.html#ESRI_ArcGIS_Geometry_IConstructDomainExtent2_ConstructZMDomainExtent_System_Double_System_Double_System_Double_System_Double__System_Double__
+  name: ConstructZMDomainExtent
+  nameWithType: IConstructDomainExtent2.ConstructZMDomainExtent
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent
+- uid: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.html#ESRI_ArcGIS_Geometry_IConstructDomainExtent2_ConstructZMDomainExtent2_ESRI_ArcGIS_Geometry_ISpatialReference_System_Double_System_Double_System_Double_System_Double__System_Double__
+  name: ConstructZMDomainExtent2
+  nameWithType: IConstructDomainExtent2.ConstructZMDomainExtent2
+  fullName: ESRI.ArcGIS.Geometry.IConstructDomainExtent2.ConstructZMDomainExtent2
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference

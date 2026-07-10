@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkDirections
+  id: INetworkDirections
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+  - ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+  langs:
+  - csharp
+  - vb
+  name: INetworkDirections
+  nameWithType: INetworkDirections
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to the properties for setting up directions.
+  example: []
+  syntax:
+    content: >-
+      [Guid("ACDA7B59-B41F-48B8-A1CE-582FE481053F")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface INetworkDirections
+    content.vb: >-
+      <Guid("ACDA7B59-B41F-48B8-A1CE-582FE481053F")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface INetworkDirections
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.NetworkDirectionsClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ACDA7B59-B41F-48B8-A1CE-582FE481053F
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+  id: DefaultOutputLengthUnits
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: DefaultOutputLengthUnits
+  nameWithType: INetworkDirections.DefaultOutputLengthUnits
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The default length units that will be used for reporting distances in directions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriNetworkAttributeUnits DefaultOutputLengthUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    content.vb: Property DefaultOutputLengthUnits As esriNetworkAttributeUnits
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+  id: LengthAttributeName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: LengthAttributeName
+  nameWithType: INetworkDirections.LengthAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the network attribute to be used for reporting travel distances.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string LengthAttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LengthAttributeName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+  id: TimeAttributeName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: TimeAttributeName
+  nameWithType: INetworkDirections.TimeAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the network attribute to be used for reporting travel time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TimeAttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TimeAttributeName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+  id: RoadClassAttributeName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: RoadClassAttributeName
+  nameWithType: INetworkDirections.RoadClassAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the network attribute to be used for road classification.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string RoadClassAttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property RoadClassAttributeName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+  id: AttributeMappings
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: AttributeMappings
+  nameWithType: INetworkDirections.AttributeMappings
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The collection of directions attribute mapping.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IArray AttributeMappings { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Property AttributeMappings As IArray
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+  id: SupportsLocalizedStreetNames
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: SupportsLocalizedStreetNames
+  nameWithType: INetworkDirections.SupportsLocalizedStreetNames
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The flag that indicates if network has street names translated in multiple languages.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsLocalizedStreetNames { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SupportsLocalizedStreetNames As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+  id: ReferenceLandmarkSources
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: ReferenceLandmarkSources
+  nameWithType: INetworkDirections.ReferenceLandmarkSources
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The array of reference landmark source names.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray ReferenceLandmarkSources { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Property ReferenceLandmarkSources As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+  id: AbbreviationsTableName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: AbbreviationsTableName
+  nameWithType: INetworkDirections.AbbreviationsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The abbreviatiations table name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string AbbreviationsTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property AbbreviationsTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+  id: RoadSplitsTableName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: RoadSplitsTableName
+  nameWithType: INetworkDirections.RoadSplitsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the table containing the road splits.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string RoadSplitsTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property RoadSplitsTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+  id: SignpostFeatureClassName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: SignpostFeatureClassName
+  nameWithType: INetworkDirections.SignpostFeatureClassName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the feature class containing the signposts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SignpostFeatureClassName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SignpostFeatureClassName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName
+  id: SignpostStreetsTableName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkDirections
+  langs:
+  - csharp
+  - vb
+  name: SignpostStreetsTableName
+  nameWithType: INetworkDirections.SignpostStreetsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the indexed table of signpost street references.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SignpostStreetsTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SignpostStreetsTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_DefaultOutputLengthUnits
+  name: DefaultOutputLengthUnits
+  nameWithType: INetworkDirections.DefaultOutputLengthUnits
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.DefaultOutputLengthUnits
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits.html
+  name: esriNetworkAttributeUnits
+  nameWithType: esriNetworkAttributeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_LengthAttributeName
+  name: LengthAttributeName
+  nameWithType: INetworkDirections.LengthAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.LengthAttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_TimeAttributeName
+  name: TimeAttributeName
+  nameWithType: INetworkDirections.TimeAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.TimeAttributeName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_RoadClassAttributeName
+  name: RoadClassAttributeName
+  nameWithType: INetworkDirections.RoadClassAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadClassAttributeName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_AttributeMappings
+  name: AttributeMappings
+  nameWithType: INetworkDirections.AttributeMappings
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.AttributeMappings
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_SupportsLocalizedStreetNames
+  name: SupportsLocalizedStreetNames
+  nameWithType: INetworkDirections.SupportsLocalizedStreetNames
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SupportsLocalizedStreetNames
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_ReferenceLandmarkSources
+  name: ReferenceLandmarkSources
+  nameWithType: INetworkDirections.ReferenceLandmarkSources
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.ReferenceLandmarkSources
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_AbbreviationsTableName
+  name: AbbreviationsTableName
+  nameWithType: INetworkDirections.AbbreviationsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.AbbreviationsTableName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_RoadSplitsTableName
+  name: RoadSplitsTableName
+  nameWithType: INetworkDirections.RoadSplitsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.RoadSplitsTableName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_SignpostFeatureClassName
+  name: SignpostFeatureClassName
+  nameWithType: INetworkDirections.SignpostFeatureClassName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostFeatureClassName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkDirections.html#ESRI_ArcGIS_Geodatabase_INetworkDirections_SignpostStreetsTableName
+  name: SignpostStreetsTableName
+  nameWithType: INetworkDirections.SignpostStreetsTableName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkDirections.SignpostStreetsTableName

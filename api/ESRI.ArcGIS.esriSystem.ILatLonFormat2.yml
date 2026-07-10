@@ -1,0 +1,307 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  commentId: T:ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  id: ILatLonFormat2
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS(System.Double,System.Int32@,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+  - ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+  - ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+  - ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds
+  langs:
+  - csharp
+  - vb
+  name: ILatLonFormat2
+  nameWithType: ILatLonFormat2
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that format Latitudes and Longitudes.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("127B0952-E8B4-428C-AC39-58DE4D1F17DE")]
+
+      public interface ILatLonFormat2
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("127B0952-E8B4-428C-AC39-58DE4D1F17DE")>
+
+      Public Interface ILatLonFormat2
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.LatLonFormatClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 127B0952-E8B4-428C-AC39-58DE4D1F17DE
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS(System.Double,System.Int32@,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS(System.Double,System.Int32@,System.Int32@,System.Double@)
+  id: GetDMS(System.Double,System.Int32@,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  langs:
+  - csharp
+  - vb
+  name: GetDMS(double, out int, out int, out double)
+  nameWithType: ILatLonFormat2.GetDMS(double, out int, out int, out double)
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS(double, out int, out int, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains the degrees, minutes, and seconds for a lat/lon number.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetDMS(double Value, out int degrees, out int Minutes, out double Seconds)
+    parameters:
+    - id: Value
+      type: System.Double
+    - id: degrees
+      type: System.Int32
+    - id: Minutes
+      type: System.Int32
+    - id: Seconds
+      type: System.Double
+    content.vb: Sub GetDMS(Value As Double, degrees As Integer, Minutes As Integer, Seconds As Double)
+  overload: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS*
+  nameWithType.vb: ILatLonFormat2.GetDMS(Double, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS(Double, Integer, Integer, Double)
+  name.vb: GetDMS(Double, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+  commentId: P:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+  id: ShowDirections
+  parent: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  langs:
+  - csharp
+  - vb
+  name: ShowDirections
+  nameWithType: ILatLonFormat2.ShowDirections
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates if a directional letter (N-S-E-W) is appended to the formatted number.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ShowDirections { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ShowDirections As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections*
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+  commentId: P:ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+  id: IsLatitude
+  parent: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  langs:
+  - csharp
+  - vb
+  name: IsLatitude
+  nameWithType: ILatLonFormat2.IsLatitude
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates if a formatted number is a latitude or not.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsLatitude { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsLatitude As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude*
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+  commentId: P:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+  id: ShowZeroMinutes
+  parent: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  langs:
+  - csharp
+  - vb
+  name: ShowZeroMinutes
+  nameWithType: ILatLonFormat2.ShowZeroMinutes
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates if zero minutes are included in formatted output.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ShowZeroMinutes { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ShowZeroMinutes As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes*
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds
+  commentId: P:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds
+  id: ShowZeroSeconds
+  parent: ESRI.ArcGIS.esriSystem.ILatLonFormat2
+  langs:
+  - csharp
+  - vb
+  name: ShowZeroSeconds
+  nameWithType: ILatLonFormat2.ShowZeroSeconds
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates if zero seconds are included in formatted output.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ShowZeroSeconds { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ShowZeroSeconds As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILatLonFormat2.html#ESRI_ArcGIS_esriSystem_ILatLonFormat2_GetDMS_System_Double_System_Int32__System_Int32__System_Double__
+  name: GetDMS
+  nameWithType: ILatLonFormat2.GetDMS
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.GetDMS
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILatLonFormat2.html#ESRI_ArcGIS_esriSystem_ILatLonFormat2_ShowDirections
+  name: ShowDirections
+  nameWithType: ILatLonFormat2.ShowDirections
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowDirections
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILatLonFormat2.html#ESRI_ArcGIS_esriSystem_ILatLonFormat2_IsLatitude
+  name: IsLatitude
+  nameWithType: ILatLonFormat2.IsLatitude
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.IsLatitude
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILatLonFormat2.html#ESRI_ArcGIS_esriSystem_ILatLonFormat2_ShowZeroMinutes
+  name: ShowZeroMinutes
+  nameWithType: ILatLonFormat2.ShowZeroMinutes
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroMinutes
+- uid: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILatLonFormat2.html#ESRI_ArcGIS_esriSystem_ILatLonFormat2_ShowZeroSeconds
+  name: ShowZeroSeconds
+  nameWithType: ILatLonFormat2.ShowZeroSeconds
+  fullName: ESRI.ArcGIS.esriSystem.ILatLonFormat2.ShowZeroSeconds

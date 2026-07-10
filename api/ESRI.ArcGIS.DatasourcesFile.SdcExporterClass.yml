@@ -1,0 +1,690 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  id: SdcExporterClass
+  parent: ESRI.ArcGIS.DatasourcesFile
+  children:
+  - ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor
+  - ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo(System.Guid@)
+  langs:
+  - csharp
+  - vb
+  name: SdcExporterClass
+  nameWithType: SdcExporterClass
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("3C8B1A03-64B8-4E29-86AD-D4C4CB371EC1")]
+
+      public class SdcExporterClass : SdcExporter, ISdcExporter, ISupportErrorInfo
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("3C8B1A03-64B8-4E29-86AD-D4C4CB371EC1")>
+
+      Public Class SdcExporterClass Implements SdcExporter, ISdcExporter, ISupportErrorInfo
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.SdcExporter
+  - ESRI.ArcGIS.DatasourcesFile.ISdcExporter
+  - ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3C8B1A03-64B8-4E29-86AD-D4C4CB371EC1
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  langs:
+  - csharp
+  - vb
+  name: SdcExporterClass()
+  nameWithType: SdcExporterClass.SdcExporterClass()
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.SdcExporterClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  syntax:
+    content: public SdcExporterClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor*
+  nameWithType.vb: SdcExporterClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  langs:
+  - csharp
+  - vb
+  name: Export(ICursor, string, ref Guid, ITrackCancel)
+  nameWithType: SdcExporterClass.Export(ICursor, string, ref Guid, ITrackCancel)
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export(ESRI.ArcGIS.Geodatabase.ICursor, string, ref System.Guid, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Creates a SDC dataset from the input cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IDataset Export(ICursor cursor, string outputRootname, ref Guid Key, ITrackCancel trackCancel)
+    parameters:
+    - id: cursor
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    - id: outputRootname
+      type: System.String
+    - id: Key
+      type: System.Guid
+    - id: trackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    content.vb: Overridable Function Export(cursor As ICursor, outputRootname As String, Key As Guid, trackCancel As ITrackCancel) As IDataset
+  overload: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  nameWithType.vb: SdcExporterClass.Export(ICursor, String, Guid, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export(ESRI.ArcGIS.Geodatabase.ICursor, String, System.Guid, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: Export(ICursor, String, Guid, ITrackCancel)
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo(System.Guid@)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo(System.Guid@)
+  id: InterfaceSupportsErrorInfo(System.Guid@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass
+  langs:
+  - csharp
+  - vb
+  name: InterfaceSupportsErrorInfo(ref Guid)
+  nameWithType: SdcExporterClass.InterfaceSupportsErrorInfo(ref Guid)
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo(ref System.Guid)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  example: []
+  syntax:
+    content: virtual void InterfaceSupportsErrorInfo(ref Guid riid)
+    parameters:
+    - id: riid
+      type: System.Guid
+    content.vb: Overridable Sub InterfaceSupportsErrorInfo(riid As Guid)
+  overload: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo*
+  implements:
+  - ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  nameWithType.vb: SdcExporterClass.InterfaceSupportsErrorInfo(Guid)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo(System.Guid)
+  name.vb: InterfaceSupportsErrorInfo(Guid)
+references:
+- uid: ESRI.ArcGIS.DatasourcesFile
+  commentId: N:ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesFile
+  nameWithType: ESRI.ArcGIS.DatasourcesFile
+  fullName: ESRI.ArcGIS.DatasourcesFile
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesFile
+    name: DatasourcesFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesFile
+    name: DatasourcesFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporter
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.SdcExporter
+  parent: ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.SdcExporter.html
+  name: SdcExporter
+  nameWithType: SdcExporter
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporter
+- uid: ESRI.ArcGIS.DatasourcesFile.ISdcExporter
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.ISdcExporter
+  parent: ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.html
+  name: ISdcExporter
+  nameWithType: ISdcExporter
+  fullName: ESRI.ArcGIS.DatasourcesFile.ISdcExporter
+- uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  commentId: T:ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html
+  name: ISupportErrorInfo
+  nameWithType: ISupportErrorInfo
+  fullName: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.html#ESRI_ArcGIS_DatasourcesFile_SdcExporterClass__ctor
+  name: SdcExporterClass
+  nameWithType: SdcExporterClass.SdcExporterClass
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.SdcExporterClass
+  nameWithType.vb: SdcExporterClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.html#ESRI_ArcGIS_DatasourcesFile_SdcExporterClass_Export_ESRI_ArcGIS_Geodatabase_ICursor_System_String_System_Guid__ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: Export
+  nameWithType: SdcExporterClass.Export
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.Export
+- uid: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.DatasourcesFile.ISdcExporter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.html#ESRI_ArcGIS_DatasourcesFile_ISdcExporter_Export_ESRI_ArcGIS_Geodatabase_ICursor_System_String_System_Guid__ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: Export(ICursor, string, ref Guid, ITrackCancel)
+  nameWithType: ISdcExporter.Export(ICursor, string, ref Guid, ITrackCancel)
+  fullName: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor, string, ref System.Guid, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  nameWithType.vb: ISdcExporter.Export(ICursor, String, Guid, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor, String, System.Guid, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: Export(ICursor, String, Guid, ITrackCancel)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+    name: Export
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.html#ESRI_ArcGIS_DatasourcesFile_ISdcExporter_Export_ESRI_ArcGIS_Geodatabase_ICursor_System_String_System_Guid__ESRI_ArcGIS_esriSystem_ITrackCancel_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor
+    name: ICursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+    name: ITrackCancel
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.Export(ESRI.ArcGIS.Geodatabase.ICursor,System.String,System.Guid@,ESRI.ArcGIS.esriSystem.ITrackCancel)
+    name: Export
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.ISdcExporter.html#ESRI_ArcGIS_DatasourcesFile_ISdcExporter_Export_ESRI_ArcGIS_Geodatabase_ICursor_System_String_System_Guid__ESRI_ArcGIS_esriSystem_ITrackCancel_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.ICursor
+    name: ICursor
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: ','
+  - name: " "
+  - uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+    name: ITrackCancel
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.html#ESRI_ArcGIS_DatasourcesFile_SdcExporterClass_InterfaceSupportsErrorInfo_System_Guid__
+  name: InterfaceSupportsErrorInfo
+  nameWithType: SdcExporterClass.InterfaceSupportsErrorInfo
+  fullName: ESRI.ArcGIS.DatasourcesFile.SdcExporterClass.InterfaceSupportsErrorInfo
+- uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  commentId: M:ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+  parent: ESRI.ArcGIS.esriSystem.ISupportErrorInfo
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  name: InterfaceSupportsErrorInfo(ref Guid)
+  nameWithType: ISupportErrorInfo.InterfaceSupportsErrorInfo(ref Guid)
+  fullName: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(ref System.Guid)
+  nameWithType.vb: ISupportErrorInfo.InterfaceSupportsErrorInfo(Guid)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid)
+  name.vb: InterfaceSupportsErrorInfo(Guid)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+    name: InterfaceSupportsErrorInfo
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.InterfaceSupportsErrorInfo(System.Guid@)
+    name: InterfaceSupportsErrorInfo
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.ISupportErrorInfo.html#ESRI_ArcGIS_esriSystem_ISupportErrorInfo_InterfaceSupportsErrorInfo_System_Guid__
+  - name: (
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )

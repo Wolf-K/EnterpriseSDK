@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  id: IJSONDeserializer
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader
+  langs:
+  - csharp
+  - vb
+  name: IJSONDeserializer
+  nameWithType: IJSONDeserializer
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to high-level JSON deserialization methods.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("1E6DC0EB-5C8A-4401-A8AF-BB5602DDFB7E")]
+
+      public interface IJSONDeserializer : IExternalDeserializer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("1E6DC0EB-5C8A-4401-A8AF-BB5602DDFB7E")>
+
+      Public Interface IJSONDeserializer Inherits IExternalDeserializer
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.JSONConverterGdbClass
+  - ESRI.ArcGIS.Geodatabase.JSONDeserializerGdbClass
+  - ESRI.ArcGIS.Geometry.JSONConverterGeometryClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1E6DC0EB-5C8A-4401-A8AF-BB5602DDFB7E
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: ReadObject(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  langs:
+  - csharp
+  - vb
+  name: ReadObject(Guid, IPropertySet)
+  nameWithType: IJSONDeserializer.ReadObject(Guid, IPropertySet)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject(System.Guid, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: object ReadObject(Guid riid, IPropertySet pProps)
+    parameters:
+    - id: riid
+      type: System.Guid
+    - id: pProps
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    return:
+      type: System.Object
+    content.vb: Function ReadObject(riid As Guid, pProps As IPropertySet) As Object
+  overload: ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject*
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: InitDeserializer(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  langs:
+  - csharp
+  - vb
+  name: InitDeserializer(IJSONReader, IPropertySet)
+  nameWithType: IJSONDeserializer.InitDeserializer(IJSONReader, IPropertySet)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer(ESRI.ArcGIS.esriSystem.IJSONReader, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void InitDeserializer(IJSONReader pReader, IPropertySet pProps)
+    parameters:
+    - id: pReader
+      type: ESRI.ArcGIS.esriSystem.IJSONReader
+    - id: pProps
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub InitDeserializer(pReader As IJSONReader, pProps As IPropertySet)
+  overload: ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer*
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader
+  commentId: P:ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader
+  id: Reader
+  parent: ESRI.ArcGIS.esriSystem.IJSONDeserializer
+  langs:
+  - csharp
+  - vb
+  name: Reader
+  nameWithType: IJSONDeserializer.Reader
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains JSON Reader.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJSONReader Reader { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJSONReader
+    content.vb: ReadOnly Property Reader As IJSONReader
+  overload: ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONDeserializer.html#ESRI_ArcGIS_esriSystem_IJSONDeserializer_ReadObject_System_Guid_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: ReadObject
+  nameWithType: IJSONDeserializer.ReadObject
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.ReadObject
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONDeserializer.html#ESRI_ArcGIS_esriSystem_IJSONDeserializer_InitDeserializer_ESRI_ArcGIS_esriSystem_IJSONReader_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: InitDeserializer
+  nameWithType: IJSONDeserializer.InitDeserializer
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.InitDeserializer
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONReader
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html
+  name: IJSONReader
+  nameWithType: IJSONReader
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader
+- uid: ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONDeserializer.html#ESRI_ArcGIS_esriSystem_IJSONDeserializer_Reader
+  name: Reader
+  nameWithType: IJSONDeserializer.Reader
+  fullName: ESRI.ArcGIS.esriSystem.IJSONDeserializer.Reader

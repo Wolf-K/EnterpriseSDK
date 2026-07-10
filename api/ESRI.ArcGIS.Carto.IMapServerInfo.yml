@@ -1,0 +1,740 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo
+  commentId: T:ESRI.ArcGIS.Carto.IMapServerInfo
+  id: IMapServerInfo
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+  - ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+  - ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+  - ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+  - ESRI.ArcGIS.Carto.IMapServerInfo.Description
+  - ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+  - ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+  - ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+  - ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+  - ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale
+  - ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+  - ESRI.ArcGIS.Carto.IMapServerInfo.Name
+  - ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+  - ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+  langs:
+  - csharp
+  - vb
+  name: IMapServerInfo
+  nameWithType: IMapServerInfo
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to the available properties of a map server info object.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("47DD2772-2F22-44DF-919B-0D16D8672626")]
+
+      public interface IMapServerInfo
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("47DD2772-2F22-44DF-919B-0D16D8672626")>
+
+      Public Interface IMapServerInfo
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.MapServerInfoClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 47DD2772-2F22-44DF-919B-0D16D8672626
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Name
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.Name
+  id: Name
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMapServerInfo.Name
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The name of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.Name*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Description
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.Description
+  id: Description
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IMapServerInfo.Description
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Description
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The description of the map (data frame). This property is set in the General tab of the Data Frame Properties dialog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Description { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Description As String
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.Description*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+  id: FullExtent
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: FullExtent
+  nameWithType: IMapServerInfo.FullExtent
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The full extent of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope FullExtent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property FullExtent As IEnvelope
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: IMapServerInfo.Extent
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The current extent of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.Extent*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+  id: MapLayerInfos
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: MapLayerInfos
+  nameWithType: IMapServerInfo.MapLayerInfos
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: A collection of Map Layer Info objects, each containing information about a layer in the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMapLayerInfos MapLayerInfos { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IMapLayerInfos
+    content.vb: ReadOnly Property MapLayerInfos As IMapLayerInfos
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+  id: BackgroundColor
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: BackgroundColor
+  nameWithType: IMapServerInfo.BackgroundColor
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The background color of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IColorDescription BackgroundColor { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IColorDescription
+    content.vb: ReadOnly Property BackgroundColor As IColorDescription
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+  id: Bookmarks
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: Bookmarks
+  nameWithType: IMapServerInfo.Bookmarks
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The published bookmarks for the map.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMapServerBookmarks Bookmarks { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IMapServerBookmarks
+    content.vb: ReadOnly Property Bookmarks As IMapServerBookmarks
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+  id: DefaultMapDescription
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: DefaultMapDescription
+  nameWithType: IMapServerInfo.DefaultMapDescription
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The default map settings.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMapDescription DefaultMapDescription { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IMapDescription
+    content.vb: ReadOnly Property DefaultMapDescription As IMapDescription
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+  id: MapUnits
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: MapUnits
+  nameWithType: IMapServerInfo.MapUnits
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The units for the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriUnits MapUnits { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriUnits
+    content.vb: ReadOnly Property MapUnits As esriUnits
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+  id: CopyrightText
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: CopyrightText
+  nameWithType: IMapServerInfo.CopyrightText
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Copyright information associated with the layer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CopyrightText { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CopyrightText As String
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+  id: StandaloneTableInfos
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: StandaloneTableInfos
+  nameWithType: IMapServerInfo.StandaloneTableInfos
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Standalone tables infromation in a given map.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStandaloneTableInfos StandaloneTableInfos { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IStandaloneTableInfos
+    content.vb: ReadOnly Property StandaloneTableInfos As IStandaloneTableInfos
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+  id: StandaloneTableDescriptions
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: StandaloneTableDescriptions
+  nameWithType: IMapServerInfo.StandaloneTableDescriptions
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Standalone tables descriptions that can passed in to other methods.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStandaloneTableDescriptions StandaloneTableDescriptions { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IStandaloneTableDescriptions
+    content.vb: ReadOnly Property StandaloneTableDescriptions As IStandaloneTableDescriptions
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+  id: MinScale
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: MinScale
+  nameWithType: IMapServerInfo.MinScale
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The minimum visible scale for the service.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MinScale { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MinScale As Double
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.MinScale*
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale
+  commentId: P:ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale
+  id: MaxScale
+  parent: ESRI.ArcGIS.Carto.IMapServerInfo
+  langs:
+  - csharp
+  - vb
+  name: MaxScale
+  nameWithType: IMapServerInfo.MaxScale
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The maximum visible scale for the service.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MaxScale { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MaxScale As Double
+  overload: ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Name*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_Name
+  name: Name
+  nameWithType: IMapServerInfo.Name
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Description*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.Description
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_Description
+  name: Description
+  nameWithType: IMapServerInfo.Description
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Description
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_FullExtent
+  name: FullExtent
+  nameWithType: IMapServerInfo.FullExtent
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.FullExtent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Extent*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_Extent
+  name: Extent
+  nameWithType: IMapServerInfo.Extent
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Extent
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_MapLayerInfos
+  name: MapLayerInfos
+  nameWithType: IMapServerInfo.MapLayerInfos
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MapLayerInfos
+- uid: ESRI.ArcGIS.Carto.IMapLayerInfos
+  commentId: T:ESRI.ArcGIS.Carto.IMapLayerInfos
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapLayerInfos.html
+  name: IMapLayerInfos
+  nameWithType: IMapLayerInfos
+  fullName: ESRI.ArcGIS.Carto.IMapLayerInfos
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_BackgroundColor
+  name: BackgroundColor
+  nameWithType: IMapServerInfo.BackgroundColor
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.BackgroundColor
+- uid: ESRI.ArcGIS.Carto.IColorDescription
+  commentId: T:ESRI.ArcGIS.Carto.IColorDescription
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IColorDescription.html
+  name: IColorDescription
+  nameWithType: IColorDescription
+  fullName: ESRI.ArcGIS.Carto.IColorDescription
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_Bookmarks
+  name: Bookmarks
+  nameWithType: IMapServerInfo.Bookmarks
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.Bookmarks
+- uid: ESRI.ArcGIS.Carto.IMapServerBookmarks
+  commentId: T:ESRI.ArcGIS.Carto.IMapServerBookmarks
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerBookmarks.html
+  name: IMapServerBookmarks
+  nameWithType: IMapServerBookmarks
+  fullName: ESRI.ArcGIS.Carto.IMapServerBookmarks
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_DefaultMapDescription
+  name: DefaultMapDescription
+  nameWithType: IMapServerInfo.DefaultMapDescription
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.DefaultMapDescription
+- uid: ESRI.ArcGIS.Carto.IMapDescription
+  commentId: T:ESRI.ArcGIS.Carto.IMapDescription
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html
+  name: IMapDescription
+  nameWithType: IMapDescription
+  fullName: ESRI.ArcGIS.Carto.IMapDescription
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_MapUnits
+  name: MapUnits
+  nameWithType: IMapServerInfo.MapUnits
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MapUnits
+- uid: ESRI.ArcGIS.esriSystem.esriUnits
+  commentId: T:ESRI.ArcGIS.esriSystem.esriUnits
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriUnits.html
+  name: esriUnits
+  nameWithType: esriUnits
+  fullName: ESRI.ArcGIS.esriSystem.esriUnits
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_CopyrightText
+  name: CopyrightText
+  nameWithType: IMapServerInfo.CopyrightText
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.CopyrightText
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_StandaloneTableInfos
+  name: StandaloneTableInfos
+  nameWithType: IMapServerInfo.StandaloneTableInfos
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableInfos
+- uid: ESRI.ArcGIS.Carto.IStandaloneTableInfos
+  commentId: T:ESRI.ArcGIS.Carto.IStandaloneTableInfos
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IStandaloneTableInfos.html
+  name: IStandaloneTableInfos
+  nameWithType: IStandaloneTableInfos
+  fullName: ESRI.ArcGIS.Carto.IStandaloneTableInfos
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_StandaloneTableDescriptions
+  name: StandaloneTableDescriptions
+  nameWithType: IMapServerInfo.StandaloneTableDescriptions
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.StandaloneTableDescriptions
+- uid: ESRI.ArcGIS.Carto.IStandaloneTableDescriptions
+  commentId: T:ESRI.ArcGIS.Carto.IStandaloneTableDescriptions
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IStandaloneTableDescriptions.html
+  name: IStandaloneTableDescriptions
+  nameWithType: IStandaloneTableDescriptions
+  fullName: ESRI.ArcGIS.Carto.IStandaloneTableDescriptions
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MinScale*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_MinScale
+  name: MinScale
+  nameWithType: IMapServerInfo.MinScale
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MinScale
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapServerInfo.html#ESRI_ArcGIS_Carto_IMapServerInfo_MaxScale
+  name: MaxScale
+  nameWithType: IMapServerInfo.MaxScale
+  fullName: ESRI.ArcGIS.Carto.IMapServerInfo.MaxScale

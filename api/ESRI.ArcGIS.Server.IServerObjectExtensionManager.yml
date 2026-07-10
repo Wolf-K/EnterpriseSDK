@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServerObjectExtensionManager
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectExtensionManager
+  id: IServerObjectExtensionManager
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID(System.String)
+  - ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IServerObjectExtensionManager
+  nameWithType: IServerObjectExtensionManager
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtensionManager
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to members that help locate installed server object extensions.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("25D8B9DD-C7E8-4DA4-BF4B-08A67087CEEA")]
+
+      public interface IServerObjectExtensionManager
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("25D8B9DD-C7E8-4DA4-BF4B-08A67087CEEA")>
+
+      Public Interface IServerObjectExtensionManager
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.ImageServerClass
+  - ESRI.ArcGIS.Carto.MapServerClass
+  - ESRI.ArcGIS.Geodatabase.GeometryServerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 25D8B9DD-C7E8-4DA4-BF4B-08A67087CEEA
+- uid: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID(System.String)
+  id: FindExtensionByCLSID(System.String)
+  parent: ESRI.ArcGIS.Server.IServerObjectExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: FindExtensionByCLSID(string)
+  nameWithType: IServerObjectExtensionManager.FindExtensionByCLSID(string)
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Returns a server object extension found using a string representation of its class ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectExtension FindExtensionByCLSID(string CLSID)
+    parameters:
+    - id: CLSID
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectExtension
+    content.vb: Function FindExtensionByCLSID(CLSID As String) As IServerObjectExtension
+  overload: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID*
+  nameWithType.vb: IServerObjectExtensionManager.FindExtensionByCLSID(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID(String)
+  name.vb: FindExtensionByCLSID(String)
+- uid: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName(System.String)
+  id: FindExtensionByTypeName(System.String)
+  parent: ESRI.ArcGIS.Server.IServerObjectExtensionManager
+  langs:
+  - csharp
+  - vb
+  name: FindExtensionByTypeName(string)
+  nameWithType: IServerObjectExtensionManager.FindExtensionByTypeName(string)
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Returns a server object extension found using its type name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObjectExtension FindExtensionByTypeName(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServerObjectExtension
+    content.vb: Function FindExtensionByTypeName(Name As String) As IServerObjectExtension
+  overload: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName*
+  nameWithType.vb: IServerObjectExtensionManager.FindExtensionByTypeName(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName(String)
+  name.vb: FindExtensionByTypeName(String)
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectExtensionManager.html#ESRI_ArcGIS_Server_IServerObjectExtensionManager_FindExtensionByCLSID_System_String_
+  name: FindExtensionByCLSID
+  nameWithType: IServerObjectExtensionManager.FindExtensionByCLSID
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByCLSID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Server.IServerObjectExtension
+  commentId: T:ESRI.ArcGIS.Server.IServerObjectExtension
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectExtension.html
+  name: IServerObjectExtension
+  nameWithType: IServerObjectExtension
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtension
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObjectExtensionManager.html#ESRI_ArcGIS_Server_IServerObjectExtensionManager_FindExtensionByTypeName_System_String_
+  name: FindExtensionByTypeName
+  nameWithType: IServerObjectExtensionManager.FindExtensionByTypeName
+  fullName: ESRI.ArcGIS.Server.IServerObjectExtensionManager.FindExtensionByTypeName

@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyRule
+  id: ITopologyRule
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes(System.Boolean@,System.Boolean@,System.Boolean@)
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+  - ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+  langs:
+  - csharp
+  - vb
+  name: ITopologyRule
+  nameWithType: ITopologyRule
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to memebers that return information about topology rules.
+  example: []
+  syntax:
+    content: >-
+      [Guid("A53B59A5-2EFC-41C4-9769-C0FAA13E62E9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITopologyRule
+    content.vb: >-
+      <Guid("A53B59A5-2EFC-41C4-9769-C0FAA13E62E9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITopologyRule
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TopologyRuleClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A53B59A5-2EFC-41C4-9769-C0FAA13E62E9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes(System.Boolean@,System.Boolean@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes(System.Boolean@,System.Boolean@,System.Boolean@)
+  id: ErrorShapeTypes(System.Boolean@,System.Boolean@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: ErrorShapeTypes(out bool, out bool, out bool)
+  nameWithType: ITopologyRule.ErrorShapeTypes(out bool, out bool, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes(out bool, out bool, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates the shape types of errors for the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ErrorShapeTypes(out bool multipoints, out bool polylines, out bool polygons)
+    parameters:
+    - id: multipoints
+      type: System.Boolean
+    - id: polylines
+      type: System.Boolean
+    - id: polygons
+      type: System.Boolean
+    content.vb: Sub ErrorShapeTypes(multipoints As Boolean, polylines As Boolean, polygons As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes*
+  nameWithType.vb: ITopologyRule.ErrorShapeTypes(Boolean, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes(Boolean, Boolean, Boolean)
+  name.vb: ErrorShapeTypes(Boolean, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ITopologyRule.Name
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.Name*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+  id: GUID
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: GUID
+  nameWithType: ITopologyRule.GUID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: GUID of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GUID { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property GUID As String
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+  id: OriginClassID
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: OriginClassID
+  nameWithType: ITopologyRule.OriginClassID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Origin ClassID of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int OriginClassID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property OriginClassID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+  id: OriginSubtype
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: OriginSubtype
+  nameWithType: ITopologyRule.OriginSubtype
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Origin subtype of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int OriginSubtype { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property OriginSubtype As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+  id: DestinationClassID
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: DestinationClassID
+  nameWithType: ITopologyRule.DestinationClassID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Destination ClassID of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int DestinationClassID { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property DestinationClassID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+  id: DestinationSubtype
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: DestinationSubtype
+  nameWithType: ITopologyRule.DestinationSubtype
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Destination subtype of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int DestinationSubtype { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property DestinationSubtype As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+  id: TopologyRuleType
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: TopologyRuleType
+  nameWithType: ITopologyRule.TopologyRuleType
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Topology rule type of the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriTopologyRuleType TopologyRuleType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+    content.vb: Property TopologyRuleType As esriTopologyRuleType
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+  id: TriggerErrorEvents
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: TriggerErrorEvents
+  nameWithType: ITopologyRule.TriggerErrorEvents
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if error events are triggered for the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool TriggerErrorEvents { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property TriggerErrorEvents As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+  id: AllOriginSubtypes
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: AllOriginSubtypes
+  nameWithType: ITopologyRule.AllOriginSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if all origin subtypes are specified for the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool AllOriginSubtypes { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllOriginSubtypes As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+  id: AllDestinationSubtypes
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: AllDestinationSubtypes
+  nameWithType: ITopologyRule.AllDestinationSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if all destination subtypes are specified for the topology rule.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool AllDestinationSubtypes { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AllDestinationSubtypes As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+  id: OriginSubtypeSpecified
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: OriginSubtypeSpecified
+  nameWithType: ITopologyRule.OriginSubtypeSpecified
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if an origin subtype has been specified.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool OriginSubtypeSpecified { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property OriginSubtypeSpecified As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified
+  id: DestinationSubtypeSpecified
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  langs:
+  - csharp
+  - vb
+  name: DestinationSubtypeSpecified
+  nameWithType: ITopologyRule.DestinationSubtypeSpecified
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if a destination subtype has been specified.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool DestinationSubtypeSpecified { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DestinationSubtypeSpecified As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_ErrorShapeTypes_System_Boolean__System_Boolean__System_Boolean__
+  name: ErrorShapeTypes
+  nameWithType: ITopologyRule.ErrorShapeTypes
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.ErrorShapeTypes
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_Name
+  name: Name
+  nameWithType: ITopologyRule.Name
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_GUID
+  name: GUID
+  nameWithType: ITopologyRule.GUID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.GUID
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_OriginClassID
+  name: OriginClassID
+  nameWithType: ITopologyRule.OriginClassID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginClassID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_OriginSubtype
+  name: OriginSubtype
+  nameWithType: ITopologyRule.OriginSubtype
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtype
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_DestinationClassID
+  name: DestinationClassID
+  nameWithType: ITopologyRule.DestinationClassID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationClassID
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_DestinationSubtype
+  name: DestinationSubtype
+  nameWithType: ITopologyRule.DestinationSubtype
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtype
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_TopologyRuleType
+  name: TopologyRuleType
+  nameWithType: ITopologyRule.TopologyRuleType
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.TopologyRuleType
+- uid: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType.html
+  name: esriTopologyRuleType
+  nameWithType: esriTopologyRuleType
+  fullName: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_TriggerErrorEvents
+  name: TriggerErrorEvents
+  nameWithType: ITopologyRule.TriggerErrorEvents
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.TriggerErrorEvents
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_AllOriginSubtypes
+  name: AllOriginSubtypes
+  nameWithType: ITopologyRule.AllOriginSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllOriginSubtypes
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_AllDestinationSubtypes
+  name: AllDestinationSubtypes
+  nameWithType: ITopologyRule.AllDestinationSubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.AllDestinationSubtypes
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_OriginSubtypeSpecified
+  name: OriginSubtypeSpecified
+  nameWithType: ITopologyRule.OriginSubtypeSpecified
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.OriginSubtypeSpecified
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html#ESRI_ArcGIS_Geodatabase_ITopologyRule_DestinationSubtypeSpecified
+  name: DestinationSubtypeSpecified
+  nameWithType: ITopologyRule.DestinationSubtypeSpecified
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule.DestinationSubtypeSpecified

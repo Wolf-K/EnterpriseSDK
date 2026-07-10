@@ -1,0 +1,398 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog
+  commentId: T:ESRI.ArcGIS.esriSystem.IJobCatalog
+  id: IJobCatalog
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob(System.String,System.Boolean)
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs(ESRI.ArcGIS.esriSystem.IJobFilter)
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.Init(System.String,System.String,System.String)
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+  - ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IJobCatalog
+  nameWithType: IJobCatalog
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to methods that control a catalog of jobs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5C395AAC-EBBC-4FFD-BB1E-C99858E168E0")]
+
+      public interface IJobCatalog
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5C395AAC-EBBC-4FFD-BB1E-C99858E168E0")>
+
+      Public Interface IJobCatalog
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5C395AAC-EBBC-4FFD-BB1E-C99858E168E0
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.Init(System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.Init(System.String,System.String,System.String)
+  id: Init(System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: Init(string, string, string)
+  nameWithType: IJobCatalog.Init(string, string, string)
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.Init(string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Initializes the job catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Init(string root, string JobProcessorName, string JobProcessorType)
+    parameters:
+    - id: root
+      type: System.String
+    - id: JobProcessorName
+      type: System.String
+    - id: JobProcessorType
+      type: System.String
+    content.vb: Sub Init(root As String, JobProcessorName As String, JobProcessorType As String)
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.Init*
+  nameWithType.vb: IJobCatalog.Init(String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJobCatalog.Init(String, String, String)
+  name.vb: Init(String, String, String)
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob
+  id: CreateJob
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: CreateJob()
+  nameWithType: IJobCatalog.CreateJob()
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Creates a job and adds it to the catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJob CreateJob()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJob
+    content.vb: Function CreateJob() As IJob
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob*
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter
+  id: CreateJobFilter
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: CreateJobFilter()
+  nameWithType: IJobCatalog.CreateJobFilter()
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Creates a filter used for searching jobs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJobFilter CreateJobFilter()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJobFilter
+    content.vb: Function CreateJobFilter() As IJobFilter
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter*
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob(System.String,System.Boolean)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob(System.String,System.Boolean)
+  id: GetJob(System.String,System.Boolean)
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: GetJob(string, bool)
+  nameWithType: IJobCatalog.GetJob(string, bool)
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob(string, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Retrieves job with given id from the catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJob GetJob(string JobID, bool bLock)
+    parameters:
+    - id: JobID
+      type: System.String
+    - id: bLock
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJob
+    content.vb: Function GetJob(JobID As String, bLock As Boolean) As IJob
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob*
+  nameWithType.vb: IJobCatalog.GetJob(String, Boolean)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob(String, Boolean)
+  name.vb: GetJob(String, Boolean)
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob(System.String)
+  id: RemoveJob(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: RemoveJob(string)
+  nameWithType: IJobCatalog.RemoveJob(string)
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Removes job with given id from the catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveJob(string JobID)
+    parameters:
+    - id: JobID
+      type: System.String
+    content.vb: Sub RemoveJob(JobID As String)
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob*
+  nameWithType.vb: IJobCatalog.RemoveJob(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob(String)
+  name.vb: RemoveJob(String)
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs(ESRI.ArcGIS.esriSystem.IJobFilter)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs(ESRI.ArcGIS.esriSystem.IJobFilter)
+  id: GetJobIDs(ESRI.ArcGIS.esriSystem.IJobFilter)
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: GetJobIDs(IJobFilter)
+  nameWithType: IJobCatalog.GetJobIDs(IJobFilter)
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs(ESRI.ArcGIS.esriSystem.IJobFilter)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: IEnumBSTR GetJobIDs(IJobFilter pFilter)
+    parameters:
+    - id: pFilter
+      type: ESRI.ArcGIS.esriSystem.IJobFilter
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: Function GetJobIDs(pFilter As IJobFilter) As IEnumBSTR
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs*
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+  commentId: P:ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+  id: JobRegistry
+  parent: ESRI.ArcGIS.esriSystem.IJobCatalog
+  langs:
+  - csharp
+  - vb
+  name: JobRegistry
+  nameWithType: IJobCatalog.JobRegistry
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Job Registry.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJobRegistry JobRegistry { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJobRegistry
+    content.vb: WriteOnly Property JobRegistry As IJobRegistry
+  overload: ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.Init*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.Init
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_Init_System_String_System_String_System_String_
+  name: Init
+  nameWithType: IJobCatalog.Init
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.Init
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_CreateJob
+  name: CreateJob
+  nameWithType: IJobCatalog.CreateJob
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJob
+- uid: ESRI.ArcGIS.esriSystem.IJob
+  commentId: T:ESRI.ArcGIS.esriSystem.IJob
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJob.html
+  name: IJob
+  nameWithType: IJob
+  fullName: ESRI.ArcGIS.esriSystem.IJob
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_CreateJobFilter
+  name: CreateJobFilter
+  nameWithType: IJobCatalog.CreateJobFilter
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.CreateJobFilter
+- uid: ESRI.ArcGIS.esriSystem.IJobFilter
+  commentId: T:ESRI.ArcGIS.esriSystem.IJobFilter
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobFilter.html
+  name: IJobFilter
+  nameWithType: IJobFilter
+  fullName: ESRI.ArcGIS.esriSystem.IJobFilter
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_GetJob_System_String_System_Boolean_
+  name: GetJob
+  nameWithType: IJobCatalog.GetJob
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJob
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_RemoveJob_System_String_
+  name: RemoveJob
+  nameWithType: IJobCatalog.RemoveJob
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.RemoveJob
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_GetJobIDs_ESRI_ArcGIS_esriSystem_IJobFilter_
+  name: GetJobIDs
+  nameWithType: IJobCatalog.GetJobIDs
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.GetJobIDs
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobCatalog.html#ESRI_ArcGIS_esriSystem_IJobCatalog_JobRegistry
+  name: JobRegistry
+  nameWithType: IJobCatalog.JobRegistry
+  fullName: ESRI.ArcGIS.esriSystem.IJobCatalog.JobRegistry
+- uid: ESRI.ArcGIS.esriSystem.IJobRegistry
+  commentId: T:ESRI.ArcGIS.esriSystem.IJobRegistry
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobRegistry.html
+  name: IJobRegistry
+  nameWithType: IJobRegistry
+  fullName: ESRI.ArcGIS.esriSystem.IJobRegistry

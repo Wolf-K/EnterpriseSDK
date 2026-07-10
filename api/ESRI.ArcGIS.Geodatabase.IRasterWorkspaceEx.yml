@@ -1,0 +1,534 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  id: IRasterWorkspaceEx
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog(System.String,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset(System.String,System.Int32,ESRI.ArcGIS.Geodatabase.rstPixelType,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog(System.String,System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  - ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IRaster,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  langs:
+  - csharp
+  - vb
+  name: IRasterWorkspaceEx
+  nameWithType: IRasterWorkspaceEx
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that create and open raster catalogs and datasets.
+  example: []
+  syntax:
+    content: >-
+      [Guid("C8778A65-0E27-4CB5-9A50-A7471B398EA7")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRasterWorkspaceEx
+    content.vb: >-
+      <Guid("C8778A65-0E27-4CB5-9A50-A7471B398EA7")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRasterWorkspaceEx
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.WorkspaceClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C8778A65-0E27-4CB5-9A50-A7471B398EA7
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset(System.String,System.Int32,ESRI.ArcGIS.Geodatabase.rstPixelType,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset(System.String,System.Int32,ESRI.ArcGIS.Geodatabase.rstPixelType,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  id: CreateRasterDataset(System.String,System.Int32,ESRI.ArcGIS.Geodatabase.rstPixelType,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: CreateRasterDataset(string, int, rstPixelType, IRasterStorageDef, string, IRasterDef, IGeometryDef)
+  nameWithType: IRasterWorkspaceEx.CreateRasterDataset(string, int, rstPixelType, IRasterStorageDef, string, IRasterDef, IGeometryDef)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset(string, int, ESRI.ArcGIS.Geodatabase.rstPixelType, ESRI.ArcGIS.Geodatabase.IRasterStorageDef, string, ESRI.ArcGIS.Geodatabase.IRasterDef, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRasterDataset CreateRasterDataset(string Name, int numBands, rstPixelType PixelType, IRasterStorageDef StorageDef, string ConfigKeyword, IRasterDef RasterDef, IGeometryDef GeometryDef)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: numBands
+      type: System.Int32
+    - id: PixelType
+      type: ESRI.ArcGIS.Geodatabase.rstPixelType
+    - id: StorageDef
+      type: ESRI.ArcGIS.Geodatabase.IRasterStorageDef
+    - id: ConfigKeyword
+      type: System.String
+    - id: RasterDef
+      type: ESRI.ArcGIS.Geodatabase.IRasterDef
+    - id: GeometryDef
+      type: ESRI.ArcGIS.Geodatabase.IGeometryDef
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Function CreateRasterDataset(Name As String, numBands As Integer, PixelType As rstPixelType, StorageDef As IRasterStorageDef, ConfigKeyword As String, RasterDef As IRasterDef, GeometryDef As IGeometryDef) As IRasterDataset
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset*
+  nameWithType.vb: IRasterWorkspaceEx.CreateRasterDataset(String, Integer, rstPixelType, IRasterStorageDef, String, IRasterDef, IGeometryDef)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset(String, Integer, ESRI.ArcGIS.Geodatabase.rstPixelType, ESRI.ArcGIS.Geodatabase.IRasterStorageDef, String, ESRI.ArcGIS.Geodatabase.IRasterDef, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  name.vb: CreateRasterDataset(String, Integer, rstPixelType, IRasterStorageDef, String, IRasterDef, IGeometryDef)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IRaster,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IRaster,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  id: SaveAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IRaster,ESRI.ArcGIS.Geodatabase.IRasterStorageDef,System.String,ESRI.ArcGIS.Geodatabase.IRasterDef,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: SaveAsRasterDataset(string, IRaster, IRasterStorageDef, string, IRasterDef, IGeometryDef)
+  nameWithType: IRasterWorkspaceEx.SaveAsRasterDataset(string, IRaster, IRasterStorageDef, string, IRasterDef, IGeometryDef)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset(string, ESRI.ArcGIS.Geodatabase.IRaster, ESRI.ArcGIS.Geodatabase.IRasterStorageDef, string, ESRI.ArcGIS.Geodatabase.IRasterDef, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRasterDataset SaveAsRasterDataset(string Name, IRaster Raster, IRasterStorageDef StorageDef, string ConfigKeyword, IRasterDef RasterDef, IGeometryDef GeometryDef)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Raster
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    - id: StorageDef
+      type: ESRI.ArcGIS.Geodatabase.IRasterStorageDef
+    - id: ConfigKeyword
+      type: System.String
+    - id: RasterDef
+      type: ESRI.ArcGIS.Geodatabase.IRasterDef
+    - id: GeometryDef
+      type: ESRI.ArcGIS.Geodatabase.IGeometryDef
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Function SaveAsRasterDataset(Name As String, Raster As IRaster, StorageDef As IRasterStorageDef, ConfigKeyword As String, RasterDef As IRasterDef, GeometryDef As IGeometryDef) As IRasterDataset
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset*
+  nameWithType.vb: IRasterWorkspaceEx.SaveAsRasterDataset(String, IRaster, IRasterStorageDef, String, IRasterDef, IGeometryDef)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset(String, ESRI.ArcGIS.Geodatabase.IRaster, ESRI.ArcGIS.Geodatabase.IRasterStorageDef, String, ESRI.ArcGIS.Geodatabase.IRasterDef, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  name.vb: SaveAsRasterDataset(String, IRaster, IRasterStorageDef, String, IRasterDef, IGeometryDef)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset(System.String)
+  id: OpenRasterDataset(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: OpenRasterDataset(string)
+  nameWithType: IRasterWorkspaceEx.OpenRasterDataset(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing raster dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterDataset OpenRasterDataset(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Function OpenRasterDataset(Name As String) As IRasterDataset
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset*
+  nameWithType.vb: IRasterWorkspaceEx.OpenRasterDataset(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset(String)
+  name.vb: OpenRasterDataset(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset(System.String)
+  id: DeleteRasterDataset(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: DeleteRasterDataset(string)
+  nameWithType: IRasterWorkspaceEx.DeleteRasterDataset(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes a raster dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteRasterDataset(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Sub DeleteRasterDataset(Name As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset*
+  nameWithType.vb: IRasterWorkspaceEx.DeleteRasterDataset(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset(String)
+  name.vb: DeleteRasterDataset(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  id: RegisterAsRasterDataset(System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsRasterDataset(string, IGeometryDef)
+  nameWithType: IRasterWorkspaceEx.RegisterAsRasterDataset(string, IGeometryDef)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset(string, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void RegisterAsRasterDataset(string Name, IGeometryDef GeometryDef)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: GeometryDef
+      type: ESRI.ArcGIS.Geodatabase.IGeometryDef
+    content.vb: Sub RegisterAsRasterDataset(Name As String, GeometryDef As IGeometryDef)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset*
+  nameWithType.vb: IRasterWorkspaceEx.RegisterAsRasterDataset(String, IGeometryDef)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset(String, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  name.vb: RegisterAsRasterDataset(String, IGeometryDef)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog(System.String,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog(System.String,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String)
+  id: CreateRasterCatalog(System.String,ESRI.ArcGIS.Geodatabase.IFields,System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: CreateRasterCatalog(string, IFields, string, string, string)
+  nameWithType: IRasterWorkspaceEx.CreateRasterCatalog(string, IFields, string, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog(string, ESRI.ArcGIS.Geodatabase.IFields, string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IRasterCatalog CreateRasterCatalog(string Name, IFields Fields, string ShapeFieldName, string RasterFieldName, string ConfigKeyword)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: Fields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: ShapeFieldName
+      type: System.String
+    - id: RasterFieldName
+      type: System.String
+    - id: ConfigKeyword
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterCatalog
+    content.vb: Function CreateRasterCatalog(Name As String, Fields As IFields, ShapeFieldName As String, RasterFieldName As String, ConfigKeyword As String) As IRasterCatalog
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog*
+  nameWithType.vb: IRasterWorkspaceEx.CreateRasterCatalog(String, IFields, String, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog(String, ESRI.ArcGIS.Geodatabase.IFields, String, String, String)
+  name.vb: CreateRasterCatalog(String, IFields, String, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog(System.String)
+  id: OpenRasterCatalog(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: OpenRasterCatalog(string)
+  nameWithType: IRasterWorkspaceEx.OpenRasterCatalog(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens an existing raster catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterCatalog OpenRasterCatalog(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterCatalog
+    content.vb: Function OpenRasterCatalog(Name As String) As IRasterCatalog
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog*
+  nameWithType.vb: IRasterWorkspaceEx.OpenRasterCatalog(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog(String)
+  name.vb: OpenRasterCatalog(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog(System.String)
+  id: DeleteRasterCatalog(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: DeleteRasterCatalog(string)
+  nameWithType: IRasterWorkspaceEx.DeleteRasterCatalog(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes a raster catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteRasterCatalog(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Sub DeleteRasterCatalog(Name As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog*
+  nameWithType.vb: IRasterWorkspaceEx.DeleteRasterCatalog(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog(String)
+  name.vb: DeleteRasterCatalog(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog(System.String,System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog(System.String,System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  id: RegisterAsRasterCatalog(System.String,System.String,ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsRasterCatalog(string, string, IGeometryDef)
+  nameWithType: IRasterWorkspaceEx.RegisterAsRasterCatalog(string, string, IGeometryDef)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog(string, string, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void RegisterAsRasterCatalog(string Name, string OIDFieldName, IGeometryDef GeometryDef)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: OIDFieldName
+      type: System.String
+    - id: GeometryDef
+      type: ESRI.ArcGIS.Geodatabase.IGeometryDef
+    content.vb: Sub RegisterAsRasterCatalog(Name As String, OIDFieldName As String, GeometryDef As IGeometryDef)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog*
+  nameWithType.vb: IRasterWorkspaceEx.RegisterAsRasterCatalog(String, String, IGeometryDef)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog(String, String, ESRI.ArcGIS.Geodatabase.IGeometryDef)
+  name.vb: RegisterAsRasterCatalog(String, String, IGeometryDef)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_CreateRasterDataset_System_String_System_Int32_ESRI_ArcGIS_Geodatabase_rstPixelType_ESRI_ArcGIS_Geodatabase_IRasterStorageDef_System_String_ESRI_ArcGIS_Geodatabase_IRasterDef_ESRI_ArcGIS_Geodatabase_IGeometryDef_
+  name: CreateRasterDataset
+  nameWithType: IRasterWorkspaceEx.CreateRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterDataset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.rstPixelType
+  commentId: T:ESRI.ArcGIS.Geodatabase.rstPixelType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.rstPixelType.html
+  name: rstPixelType
+  nameWithType: rstPixelType
+  fullName: ESRI.ArcGIS.Geodatabase.rstPixelType
+- uid: ESRI.ArcGIS.Geodatabase.IRasterStorageDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterStorageDef
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterStorageDef.html
+  name: IRasterStorageDef
+  nameWithType: IRasterStorageDef
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterStorageDef
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDef
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDef.html
+  name: IRasterDef
+  nameWithType: IRasterDef
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDef
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeometryDef
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html
+  name: IGeometryDef
+  nameWithType: IGeometryDef
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_SaveAsRasterDataset_System_String_ESRI_ArcGIS_Geodatabase_IRaster_ESRI_ArcGIS_Geodatabase_IRasterStorageDef_System_String_ESRI_ArcGIS_Geodatabase_IRasterDef_ESRI_ArcGIS_Geodatabase_IGeometryDef_
+  name: SaveAsRasterDataset
+  nameWithType: IRasterWorkspaceEx.SaveAsRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.SaveAsRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_OpenRasterDataset_System_String_
+  name: OpenRasterDataset
+  nameWithType: IRasterWorkspaceEx.OpenRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_DeleteRasterDataset_System_String_
+  name: DeleteRasterDataset
+  nameWithType: IRasterWorkspaceEx.DeleteRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_RegisterAsRasterDataset_System_String_ESRI_ArcGIS_Geodatabase_IGeometryDef_
+  name: RegisterAsRasterDataset
+  nameWithType: IRasterWorkspaceEx.RegisterAsRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_CreateRasterCatalog_System_String_ESRI_ArcGIS_Geodatabase_IFields_System_String_System_String_System_String_
+  name: CreateRasterCatalog
+  nameWithType: IRasterWorkspaceEx.CreateRasterCatalog
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.CreateRasterCatalog
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IRasterCatalog
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterCatalog
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterCatalog.html
+  name: IRasterCatalog
+  nameWithType: IRasterCatalog
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterCatalog
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_OpenRasterCatalog_System_String_
+  name: OpenRasterCatalog
+  nameWithType: IRasterWorkspaceEx.OpenRasterCatalog
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.OpenRasterCatalog
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_DeleteRasterCatalog_System_String_
+  name: DeleteRasterCatalog
+  nameWithType: IRasterWorkspaceEx.DeleteRasterCatalog
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.DeleteRasterCatalog
+- uid: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.html#ESRI_ArcGIS_Geodatabase_IRasterWorkspaceEx_RegisterAsRasterCatalog_System_String_System_String_ESRI_ArcGIS_Geodatabase_IGeometryDef_
+  name: RegisterAsRasterCatalog
+  nameWithType: IRasterWorkspaceEx.RegisterAsRasterCatalog
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterWorkspaceEx.RegisterAsRasterCatalog

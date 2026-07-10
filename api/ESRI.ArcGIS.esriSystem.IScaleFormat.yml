@@ -1,0 +1,716 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat
+  commentId: T:ESRI.ArcGIS.esriSystem.IScaleFormat
+  id: IScaleFormat
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue(System.Double)
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString(System.Double)
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+  - ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IScaleFormat
+  nameWithType: IScaleFormat
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to scale formatting options.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("AE9EDA31-A9F0-4687-B3A5-8C061C92D3EB")]
+
+      public interface IScaleFormat
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("AE9EDA31-A9F0-4687-B3A5-8C061C92D3EB")>
+
+      Public Interface IScaleFormat
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.ScaleFormatClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AE9EDA31-A9F0-4687-B3A5-8C061C92D3EB
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue(System.Double)
+  commentId: M:ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue(System.Double)
+  id: CalcMapUnitValue(System.Double)
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: CalcMapUnitValue(double)
+  nameWithType: IScaleFormat.CalcMapUnitValue(double)
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Calculate the number of map units corresponding to the specified page units at the given absolute scale.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double CalcMapUnitValue(double absoluteScale)
+    parameters:
+    - id: absoluteScale
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function CalcMapUnitValue(absoluteScale As Double) As Double
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue*
+  nameWithType.vb: IScaleFormat.CalcMapUnitValue(Double)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue(Double)
+  name.vb: CalcMapUnitValue(Double)
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString(System.Double)
+  commentId: M:ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString(System.Double)
+  id: ScaleToString(System.Double)
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: ScaleToString(double)
+  nameWithType: IScaleFormat.ScaleToString(double)
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Convert the absolute scale to a string using the current IScaleFormat attributes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ScaleToString(double Scale)
+    parameters:
+    - id: Scale
+      type: System.Double
+    return:
+      type: System.String
+    content.vb: Function ScaleToString(Scale As Double) As String
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString*
+  nameWithType.vb: IScaleFormat.ScaleToString(Double)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString(Double)
+  name.vb: ScaleToString(Double)
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale(System.String)
+  id: StringToScale(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: StringToScale(string)
+  nameWithType: IScaleFormat.StringToScale(string)
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Convert the string to an absolute scale using the current IScaleFormat attributes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double StringToScale(string scaleStr)
+    parameters:
+    - id: scaleStr
+      type: System.String
+    return:
+      type: System.Double
+    content.vb: Function StringToScale(scaleStr As String) As Double
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale*
+  nameWithType.vb: IScaleFormat.StringToScale(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale(String)
+  name.vb: StringToScale(String)
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry
+  commentId: M:ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry
+  id: SaveToRegistry
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: SaveToRegistry()
+  nameWithType: IScaleFormat.SaveToRegistry()
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Store the scale format as the system default.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SaveToRegistry()
+    content.vb: Sub SaveToRegistry()
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry
+  commentId: M:ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry
+  id: LoadFromRegistry
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: LoadFromRegistry()
+  nameWithType: IScaleFormat.LoadFromRegistry()
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtain the scale format to the system default.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void LoadFromRegistry()
+    content.vb: Sub LoadFromRegistry()
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+  id: Format
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: IScaleFormat.Format
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Format used to display scale, i.e., 1:20000 or 1 inch equals 5 miles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriScaleFormat Format { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriScaleFormat
+    content.vb: Property Format As esriScaleFormat
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.Format*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+  id: NumberFormat
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: NumberFormat
+  nameWithType: IScaleFormat.NumberFormat
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Format used to display scale value, i.e., 20,000.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INumberFormat NumberFormat { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.INumberFormat
+    content.vb: Property NumberFormat As INumberFormat
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+  id: Separator
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: Separator
+  nameWithType: IScaleFormat.Separator
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Character(s) used to separate '1' from the scale in an absolute scale, i.e., the ':' in 1:20000.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Separator { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Separator As String
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.Separator*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+  id: PageUnitValue
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: PageUnitValue
+  nameWithType: IScaleFormat.PageUnitValue
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The number preceding the page units in a scale, i.e., the '1' in 1 inch = 5 miles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double PageUnitValue { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property PageUnitValue As Double
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+  id: PageUnits
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: PageUnits
+  nameWithType: IScaleFormat.PageUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The page units used to display a scale, i.e., the 'inch' in 1 inch = 5 miles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriUnits PageUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriUnits
+    content.vb: Property PageUnits As esriUnits
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+  id: Equals
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: Equals
+  nameWithType: IScaleFormat.Equals
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The text used for 'equals', i.e., ' = ' in 1 inch = 5 miles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Equals { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Equals As String
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.Equals*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+  id: MapUnits
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: MapUnits
+  nameWithType: IScaleFormat.MapUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: The map units used to display a scale, i.e., the 'miles' in 1 inch = 5 miles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriUnits MapUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriUnits
+    content.vb: Property MapUnits As esriUnits
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+  id: CapitolizeUnits
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: CapitolizeUnits
+  nameWithType: IScaleFormat.CapitolizeUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Capitolize the units in the scale string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CapitolizeUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property CapitolizeUnits As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+  id: AbbreviateUnits
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: AbbreviateUnits
+  nameWithType: IScaleFormat.AbbreviateUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Abbreviate the units in the scale string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool AbbreviateUnits { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property AbbreviateUnits As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+  id: ReverseOrder
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: ReverseOrder
+  nameWithType: IScaleFormat.ReverseOrder
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Reverse the standard order [1:1000] becomes [1000:1] and [1 in = 10 mi] becomes [10 mi = 1 in].
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ReverseOrder { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ReverseOrder As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder*
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat
+  commentId: P:ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat
+  id: CustomFormat
+  parent: ESRI.ArcGIS.esriSystem.IScaleFormat
+  langs:
+  - csharp
+  - vb
+  name: CustomFormat
+  nameWithType: IScaleFormat.CustomFormat
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: "A string defining the scale format. Embed XML tokens where scale values should go, i.e., &lt;SCA a=''Attribute''&gt;. Possible attributes: Scale, Separator, PageUnitValue, PageUnits, EqualsText, MapUnits."
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CustomFormat { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CustomFormat As String
+  overload: ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_CalcMapUnitValue_System_Double_
+  name: CalcMapUnitValue
+  nameWithType: IScaleFormat.CalcMapUnitValue
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CalcMapUnitValue
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_ScaleToString_System_Double_
+  name: ScaleToString
+  nameWithType: IScaleFormat.ScaleToString
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.ScaleToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_StringToScale_System_String_
+  name: StringToScale
+  nameWithType: IScaleFormat.StringToScale
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.StringToScale
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_SaveToRegistry
+  name: SaveToRegistry
+  nameWithType: IScaleFormat.SaveToRegistry
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.SaveToRegistry
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_LoadFromRegistry
+  name: LoadFromRegistry
+  nameWithType: IScaleFormat.LoadFromRegistry
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.LoadFromRegistry
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Format*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_Format
+  name: Format
+  nameWithType: IScaleFormat.Format
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Format
+- uid: ESRI.ArcGIS.esriSystem.esriScaleFormat
+  commentId: T:ESRI.ArcGIS.esriSystem.esriScaleFormat
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriScaleFormat.html
+  name: esriScaleFormat
+  nameWithType: esriScaleFormat
+  fullName: ESRI.ArcGIS.esriSystem.esriScaleFormat
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_NumberFormat
+  name: NumberFormat
+  nameWithType: IScaleFormat.NumberFormat
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.NumberFormat
+- uid: ESRI.ArcGIS.esriSystem.INumberFormat
+  commentId: T:ESRI.ArcGIS.esriSystem.INumberFormat
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.INumberFormat.html
+  name: INumberFormat
+  nameWithType: INumberFormat
+  fullName: ESRI.ArcGIS.esriSystem.INumberFormat
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Separator*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_Separator
+  name: Separator
+  nameWithType: IScaleFormat.Separator
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Separator
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_PageUnitValue
+  name: PageUnitValue
+  nameWithType: IScaleFormat.PageUnitValue
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnitValue
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_PageUnits
+  name: PageUnits
+  nameWithType: IScaleFormat.PageUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.PageUnits
+- uid: ESRI.ArcGIS.esriSystem.esriUnits
+  commentId: T:ESRI.ArcGIS.esriSystem.esriUnits
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriUnits.html
+  name: esriUnits
+  nameWithType: esriUnits
+  fullName: ESRI.ArcGIS.esriSystem.esriUnits
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.Equals*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_Equals
+  name: Equals
+  nameWithType: IScaleFormat.Equals
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.Equals
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_MapUnits
+  name: MapUnits
+  nameWithType: IScaleFormat.MapUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.MapUnits
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_CapitolizeUnits
+  name: CapitolizeUnits
+  nameWithType: IScaleFormat.CapitolizeUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CapitolizeUnits
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_AbbreviateUnits
+  name: AbbreviateUnits
+  nameWithType: IScaleFormat.AbbreviateUnits
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.AbbreviateUnits
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_ReverseOrder
+  name: ReverseOrder
+  nameWithType: IScaleFormat.ReverseOrder
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.ReverseOrder
+- uid: ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IScaleFormat.html#ESRI_ArcGIS_esriSystem_IScaleFormat_CustomFormat
+  name: CustomFormat
+  nameWithType: IScaleFormat.CustomFormat
+  fullName: ESRI.ArcGIS.esriSystem.IScaleFormat.CustomFormat

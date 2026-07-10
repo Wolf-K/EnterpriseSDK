@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  id: IDataChangesEx
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  - ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  - ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  - ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+  langs:
+  - csharp
+  - vb
+  name: IDataChangesEx
+  nameWithType: IDataChangesEx
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information on data changes.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5B0C36B9-2891-4653-8757-97117924FE7A")]
+
+      public interface IDataChangesEx
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5B0C36B9-2891-4653-8757-97117924FE7A")>
+
+      Public Interface IDataChangesEx
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5B0C36B9-2891-4653-8757-97117924FE7A
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  id: Extract(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  parent: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  langs:
+  - csharp
+  - vb
+  name: Extract(string, esriDifferenceType)
+  nameWithType: IDataChangesEx.Extract(string, esriDifferenceType)
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract(string, ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Get changed rows for a specific class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDifferenceCursor Extract(string ClassName, esriDifferenceType DiffType)
+    parameters:
+    - id: ClassName
+      type: System.String
+    - id: DiffType
+      type: ESRI.ArcGIS.Geodatabase.esriDifferenceType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDifferenceCursor
+    content.vb: Function Extract(ClassName As String, DiffType As esriDifferenceType) As IDifferenceCursor
+  overload: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract*
+  nameWithType.vb: IDataChangesEx.Extract(String, esriDifferenceType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract(String, ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  name.vb: Extract(String, esriDifferenceType)
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  id: ExtractEx(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  parent: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  langs:
+  - csharp
+  - vb
+  name: ExtractEx(string, esriDifferenceType)
+  nameWithType: IDataChangesEx.ExtractEx(string, esriDifferenceType)
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx(string, ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Get changed rows for a specific class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDifferenceCursorEx ExtractEx(string ClassName, esriDifferenceType DiffType)
+    parameters:
+    - id: ClassName
+      type: System.String
+    - id: DiffType
+      type: ESRI.ArcGIS.Geodatabase.esriDifferenceType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDifferenceCursorEx
+    content.vb: Function ExtractEx(ClassName As String, DiffType As esriDifferenceType) As IDifferenceCursorEx
+  overload: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx*
+  nameWithType.vb: IDataChangesEx.ExtractEx(String, esriDifferenceType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx(String, ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  name.vb: ExtractEx(String, esriDifferenceType)
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+  id: ModifiedClasses
+  parent: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  langs:
+  - csharp
+  - vb
+  name: ModifiedClasses
+  nameWithType: IDataChangesEx.ModifiedClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The list of tables with edits.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumBSTR ModifiedClasses { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: ReadOnly Property ModifiedClasses As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses*
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  id: ChangedIDs(System.String,ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  parent: ESRI.ArcGIS.Geodatabase.IDataChangesEx
+  langs:
+  - csharp
+  - vb
+  name: ChangedIDs[string, esriDifferenceType]
+  nameWithType: IDataChangesEx.ChangedIDs[string, esriDifferenceType]
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs[string, ESRI.ArcGIS.Geodatabase.esriDifferenceType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The IDs of rows that changed during the edit session.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFIDSet ChangedIDs[string ClassName, esriDifferenceType DiffType] { get; }
+    parameters:
+    - id: ClassName
+      type: System.String
+    - id: DiffType
+      type: ESRI.ArcGIS.Geodatabase.esriDifferenceType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFIDSet
+    content.vb: ReadOnly Property ChangedIDs(ClassName As String, DiffType As esriDifferenceType) As IFIDSet
+  overload: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs*
+  nameWithType.vb: IDataChangesEx.ChangedIDs(String, esriDifferenceType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs(String, ESRI.ArcGIS.Geodatabase.esriDifferenceType)
+  name.vb: ChangedIDs(String, esriDifferenceType)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataChangesEx.html#ESRI_ArcGIS_Geodatabase_IDataChangesEx_Extract_System_String_ESRI_ArcGIS_Geodatabase_esriDifferenceType_
+  name: Extract
+  nameWithType: IDataChangesEx.Extract
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.Extract
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.esriDifferenceType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDifferenceType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDifferenceType.html
+  name: esriDifferenceType
+  nameWithType: esriDifferenceType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDifferenceType
+- uid: ESRI.ArcGIS.Geodatabase.IDifferenceCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDifferenceCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDifferenceCursor.html
+  name: IDifferenceCursor
+  nameWithType: IDifferenceCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IDifferenceCursor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataChangesEx.html#ESRI_ArcGIS_Geodatabase_IDataChangesEx_ExtractEx_System_String_ESRI_ArcGIS_Geodatabase_esriDifferenceType_
+  name: ExtractEx
+  nameWithType: IDataChangesEx.ExtractEx
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ExtractEx
+- uid: ESRI.ArcGIS.Geodatabase.IDifferenceCursorEx
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDifferenceCursorEx
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDifferenceCursorEx.html
+  name: IDifferenceCursorEx
+  nameWithType: IDifferenceCursorEx
+  fullName: ESRI.ArcGIS.Geodatabase.IDifferenceCursorEx
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataChangesEx.html#ESRI_ArcGIS_Geodatabase_IDataChangesEx_ModifiedClasses
+  name: ModifiedClasses
+  nameWithType: IDataChangesEx.ModifiedClasses
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ModifiedClasses
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataChangesEx.html#ESRI_ArcGIS_Geodatabase_IDataChangesEx_ChangedIDs_System_String_ESRI_ArcGIS_Geodatabase_esriDifferenceType_
+  name: ChangedIDs
+  nameWithType: IDataChangesEx.ChangedIDs
+  fullName: ESRI.ArcGIS.Geodatabase.IDataChangesEx.ChangedIDs
+- uid: ESRI.ArcGIS.Geodatabase.IFIDSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFIDSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFIDSet.html
+  name: IFIDSet
+  nameWithType: IFIDSet
+  fullName: ESRI.ArcGIS.Geodatabase.IFIDSet

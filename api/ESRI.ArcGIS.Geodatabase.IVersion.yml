@@ -1,0 +1,710 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IVersion
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersion
+  id: IVersion
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IVersion.Access
+  - ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  - ESRI.ArcGIS.Geodatabase.IVersion.CreateChild(System.String,ESRI.ArcGIS.Geodatabase.IVersion)
+  - ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  - ESRI.ArcGIS.Geodatabase.IVersion.Delete
+  - ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren
+  - ESRI.ArcGIS.Geodatabase.IVersion.Description
+  - ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor(ESRI.ArcGIS.Geodatabase.IVersion)
+  - ESRI.ArcGIS.Geodatabase.IVersion.HasParent
+  - ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+  - ESRI.ArcGIS.Geodatabase.IVersion.Owner
+  - ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion
+  - ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+  - ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+  - ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+  langs:
+  - csharp
+  - vb
+  name: IVersion
+  nameWithType: IVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members for managing a version.
+  example: []
+  syntax:
+    content: >-
+      [Guid("1A945841-B381-11D1-9CE6-0000F8780619")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IVersion
+    content.vb: >-
+      <Guid("1A945841-B381-11D1-9CE6-0000F8780619")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IVersion
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1A945841-B381-11D1-9CE6-0000F8780619
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.HasParent
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.HasParent
+  id: HasParent
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: HasParent()
+  nameWithType: IVersion.HasParent()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.HasParent()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: True if this version have a parent version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasParent()
+    return:
+      type: System.Boolean
+    content.vb: Function HasParent() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.HasParent*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Delete
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.Delete
+  id: Delete
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: IVersion.Delete()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Delete()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Permanently deletes the version from the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Delete()
+    content.vb: Sub Delete()
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.Delete*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion
+  id: RefreshVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: RefreshVersion()
+  nameWithType: IVersion.RefreshVersion()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Refreshes the version with the corresponding database state.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RefreshVersion()
+    content.vb: Sub RefreshVersion()
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion(System.String)
+  id: CreateVersion(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: CreateVersion(string)
+  nameWithType: IVersion.CreateVersion(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a new version equivalent to this version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion CreateVersion(string newName)
+    parameters:
+    - id: newName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: Function CreateVersion(newName As String) As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion*
+  nameWithType.vb: IVersion.CreateVersion(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion(String)
+  name.vb: CreateVersion(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor(ESRI.ArcGIS.Geodatabase.IVersion)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor(ESRI.ArcGIS.Geodatabase.IVersion)
+  id: GetCommonAncestor(ESRI.ArcGIS.Geodatabase.IVersion)
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: GetCommonAncestor(IVersion)
+  nameWithType: IVersion.GetCommonAncestor(IVersion)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor(ESRI.ArcGIS.Geodatabase.IVersion)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IVersion GetCommonAncestor(IVersion otherVersion)
+    parameters:
+    - id: otherVersion
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: Function GetCommonAncestor(otherVersion As IVersion) As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild(System.String,ESRI.ArcGIS.Geodatabase.IVersion)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.CreateChild(System.String,ESRI.ArcGIS.Geodatabase.IVersion)
+  id: CreateChild(System.String,ESRI.ArcGIS.Geodatabase.IVersion)
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: CreateChild(string, IVersion)
+  nameWithType: IVersion.CreateChild(string, IVersion)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild(string, ESRI.ArcGIS.Geodatabase.IVersion)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IVersion CreateChild(string Name, IVersion initialStateVersion)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: initialStateVersion
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: Function CreateChild(Name As String, initialStateVersion As IVersion) As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild*
+  nameWithType.vb: IVersion.CreateChild(String, IVersion)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild(String, ESRI.ArcGIS.Geodatabase.IVersion)
+  name.vb: CreateChild(String, IVersion)
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren
+  id: DeleteWithChildren
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: DeleteWithChildren()
+  nameWithType: IVersion.DeleteWithChildren()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Permanently deletes the version and all it's children from the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteWithChildren()
+    content.vb: Sub DeleteWithChildren()
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  id: CreateVersionEx(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: CreateVersionEx(string, string, esriVersionAccess)
+  nameWithType: IVersion.CreateVersionEx(string, string, esriVersionAccess)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx(string, string, ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: ''
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion CreateVersionEx(string VersionName, string Description, esriVersionAccess Access)
+    parameters:
+    - id: VersionName
+      type: System.String
+    - id: Description
+      type: System.String
+    - id: Access
+      type: ESRI.ArcGIS.Geodatabase.esriVersionAccess
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: Function CreateVersionEx(VersionName As String, Description As String, Access As esriVersionAccess) As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx*
+  nameWithType.vb: IVersion.CreateVersionEx(String, String, esriVersionAccess)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx(String, String, ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  name.vb: CreateVersionEx(String, String, esriVersionAccess)
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  id: AlterVersion(System.String,System.String,ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: AlterVersion(string, string, esriVersionAccess)
+  nameWithType: IVersion.AlterVersion(string, string, esriVersionAccess)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion(string, string, ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: ''
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterVersion(string VersionName, string Description, esriVersionAccess Access)
+    parameters:
+    - id: VersionName
+      type: System.String
+    - id: Description
+      type: System.String
+    - id: Access
+      type: ESRI.ArcGIS.Geodatabase.esriVersionAccess
+    content.vb: Sub AlterVersion(VersionName As String, Description As String, Access As esriVersionAccess)
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion*
+  nameWithType.vb: IVersion.AlterVersion(String, String, esriVersionAccess)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion(String, String, ESRI.ArcGIS.Geodatabase.esriVersionAccess)
+  name.vb: AlterVersion(String, String, esriVersionAccess)
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+  id: VersionLocks
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: VersionLocks
+  nameWithType: IVersion.VersionLocks
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This version's locks.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumLockInfo VersionLocks { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumLockInfo
+    content.vb: ReadOnly Property VersionLocks As IEnumLockInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+  id: VersionInfo
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: VersionInfo
+  nameWithType: IVersion.VersionInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: This version's information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersionInfo VersionInfo { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersionInfo
+    content.vb: ReadOnly Property VersionInfo As IVersionInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+  id: VersionName
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: VersionName
+  nameWithType: IVersion.VersionName
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string VersionName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property VersionName As String
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.VersionName*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Description
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.Description
+  id: Description
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IVersion.Description
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Description
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version's description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Description As String
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.Description*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Access
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.Access
+  id: Access
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: Access
+  nameWithType: IVersion.Access
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Access
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The version's access permission.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriVersionAccess Access { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriVersionAccess
+    content.vb: Property Access As esriVersionAccess
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.Access*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+  id: IsRedefined
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: IsRedefined
+  nameWithType: IVersion.IsRedefined
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Determines whether the state of the version corresponding to this version object has been redefined in the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsRedefined { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsRedefined As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined*
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Owner
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersion.Owner
+  id: Owner
+  parent: ESRI.ArcGIS.Geodatabase.IVersion
+  langs:
+  - csharp
+  - vb
+  name: Owner
+  nameWithType: IVersion.Owner
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Owner
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: ''
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Owner { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Owner As String
+  overload: ESRI.ArcGIS.Geodatabase.IVersion.Owner*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.HasParent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.HasParent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_HasParent
+  name: HasParent
+  nameWithType: IVersion.HasParent
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.HasParent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Delete*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.Delete
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_Delete
+  name: Delete
+  nameWithType: IVersion.Delete
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Delete
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_RefreshVersion
+  name: RefreshVersion
+  nameWithType: IVersion.RefreshVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.RefreshVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_CreateVersion_System_String_
+  name: CreateVersion
+  nameWithType: IVersion.CreateVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IVersion
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersion
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html
+  name: IVersion
+  nameWithType: IVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_GetCommonAncestor_ESRI_ArcGIS_Geodatabase_IVersion_
+  name: GetCommonAncestor
+  nameWithType: IVersion.GetCommonAncestor
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.GetCommonAncestor
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.CreateChild
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_CreateChild_System_String_ESRI_ArcGIS_Geodatabase_IVersion_
+  name: CreateChild
+  nameWithType: IVersion.CreateChild
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateChild
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_DeleteWithChildren
+  name: DeleteWithChildren
+  nameWithType: IVersion.DeleteWithChildren
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.DeleteWithChildren
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_CreateVersionEx_System_String_System_String_ESRI_ArcGIS_Geodatabase_esriVersionAccess_
+  name: CreateVersionEx
+  nameWithType: IVersion.CreateVersionEx
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.CreateVersionEx
+- uid: ESRI.ArcGIS.Geodatabase.esriVersionAccess
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriVersionAccess
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriVersionAccess.html
+  name: esriVersionAccess
+  nameWithType: esriVersionAccess
+  fullName: ESRI.ArcGIS.Geodatabase.esriVersionAccess
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_AlterVersion_System_String_System_String_ESRI_ArcGIS_Geodatabase_esriVersionAccess_
+  name: AlterVersion
+  nameWithType: IVersion.AlterVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.AlterVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_VersionLocks
+  name: VersionLocks
+  nameWithType: IVersion.VersionLocks
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionLocks
+- uid: ESRI.ArcGIS.Geodatabase.IEnumLockInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumLockInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumLockInfo.html
+  name: IEnumLockInfo
+  nameWithType: IEnumLockInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumLockInfo
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_VersionInfo
+  name: VersionInfo
+  nameWithType: IVersion.VersionInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionInfo
+- uid: ESRI.ArcGIS.Geodatabase.IVersionInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersionInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionInfo.html
+  name: IVersionInfo
+  nameWithType: IVersionInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionInfo
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.VersionName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_VersionName
+  name: VersionName
+  nameWithType: IVersion.VersionName
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.VersionName
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Description*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.Description
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_Description
+  name: Description
+  nameWithType: IVersion.Description
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Description
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Access*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.Access
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_Access
+  name: Access
+  nameWithType: IVersion.Access
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Access
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_IsRedefined
+  name: IsRedefined
+  nameWithType: IVersion.IsRedefined
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.IsRedefined
+- uid: ESRI.ArcGIS.Geodatabase.IVersion.Owner*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersion.Owner
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html#ESRI_ArcGIS_Geodatabase_IVersion_Owner
+  name: Owner
+  nameWithType: IVersion.Owner
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion.Owner

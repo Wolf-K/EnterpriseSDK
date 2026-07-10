@@ -1,0 +1,861 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  id: ISARXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters(System.String,ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty(System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty(System.String,System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel(System.IntPtr@,System.Boolean)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  langs:
+  - csharp
+  - vb
+  name: ISARXform
+  nameWithType: ISARXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a SAR transform.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F523D2B0-0CB2-4973-8E7B-768562BD0131")]
+
+      public interface ISARXform : IGeodataXform
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F523D2B0-0CB2-4973-8E7B-768562BD0131")>
+
+      Public Interface ISARXform Inherits IGeodataXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.SARXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.SICDXformClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F523D2B0-0CB2-4973-8E7B-768562BD0131
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  id: Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: Transform(esriTransformDirection, int, ref WKSPoint)
+  nameWithType: ISARXform.Transform(esriTransformDirection, int, ref WKSPoint)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref ESRI.ArcGIS.esriSystem.WKSPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Transform(esriTransformDirection Direction, int npoints, ref WKSPoint points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: npoints
+      type: System.Int32
+    - id: points
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    content.vb: Sub Transform(Direction As esriTransformDirection, npoints As Integer, points As WKSPoint)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform*
+  nameWithType.vb: ISARXform.Transform(esriTransformDirection, Integer, WKSPoint)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, ESRI.ArcGIS.esriSystem.WKSPoint)
+  name.vb: Transform(esriTransformDirection, Integer, WKSPoint)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  nameWithType: ISARXform.TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double, ref double, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformCellsize(esriTransformDirection Direction, ref double dx, ref double dy, IEnvelope AreaOfInterest)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: AreaOfInterest
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformCellsize(Direction As esriTransformDirection, dx As Double, dy As Double, AreaOfInterest As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize*
+  nameWithType.vb: ISARXform.TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, Double, Double, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: TransformExtent(esriTransformDirection, IEnvelope)
+  nameWithType: ISARXform.TransformExtent(esriTransformDirection, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformExtent(esriTransformDirection Direction, IEnvelope Extent)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformExtent(Direction As esriTransformDirection, Extent As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  id: TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: TransformPoints(esriTransformDirection, IPointCollection)
+  nameWithType: ISARXform.TransformPoints(esriTransformDirection, IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformPoints(esriTransformDirection Direction, IPointCollection points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: points
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub TransformPoints(Direction As esriTransformDirection, points As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters(System.String,ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters(System.String,ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  id: ExtractRequiredSensorModelParameters(System.String,ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: ExtractRequiredSensorModelParameters(string, IRasterDataset)
+  nameWithType: ISARXform.ExtractRequiredSensorModelParameters(string, IRasterDataset)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters(string, ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void ExtractRequiredSensorModelParameters(string requestedSM, IRasterDataset pRadarSupportData)
+    parameters:
+    - id: requestedSM
+      type: System.String
+    - id: pRadarSupportData
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Sub ExtractRequiredSensorModelParameters(requestedSM As String, pRadarSupportData As IRasterDataset)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters*
+  nameWithType.vb: ISARXform.ExtractRequiredSensorModelParameters(String, IRasterDataset)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters(String, ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  name.vb: ExtractRequiredSensorModelParameters(String, IRasterDataset)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty(System.String)
+  id: GetSensorModelProperty(System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: GetSensorModelProperty(string)
+  nameWithType: ISARXform.GetSensorModelProperty(string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets a property value of the sensor model currently being used by this ISARXform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetSensorModelProperty(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function GetSensorModelProperty(propertyName As String) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty*
+  nameWithType.vb: ISARXform.GetSensorModelProperty(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty(String)
+  name.vb: GetSensorModelProperty(String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  id: InitSensorModel(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: InitSensorModel(IRasterDataset)
+  nameWithType: ISARXform.InitSensorModel(IRasterDataset)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void InitSensorModel(IRasterDataset pRadarSupportData)
+    parameters:
+    - id: pRadarSupportData
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Sub InitSensorModel(pRadarSupportData As IRasterDataset)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty(System.String,System.String)
+  id: PutSensorModelProperty(System.String,System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: PutSensorModelProperty(string, string)
+  nameWithType: ISARXform.PutSensorModelProperty(string, string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets a property value of the sensor model.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutSensorModelProperty(string propertyKey, string propertyValue)
+    parameters:
+    - id: propertyKey
+      type: System.String
+    - id: propertyValue
+      type: System.String
+    content.vb: Sub PutSensorModelProperty(propertyKey As String, propertyValue As String)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty*
+  nameWithType.vb: ISARXform.PutSensorModelProperty(String, String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty(String, String)
+  name.vb: PutSensorModelProperty(String, String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel(System.IntPtr@,System.Boolean)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel(System.IntPtr@,System.Boolean)
+  id: SetSensorModel(System.IntPtr@,System.Boolean)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: SetSensorModel(ref IntPtr, bool)
+  nameWithType: ISARXform.SetSensorModel(ref IntPtr, bool)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel(ref System.IntPtr, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void SetSensorModel(ref IntPtr aSARSensorModel, bool aTakeOwnershipOfSM)
+    parameters:
+    - id: aSARSensorModel
+      type: System.IntPtr
+    - id: aTakeOwnershipOfSM
+      type: System.Boolean
+    content.vb: Sub SetSensorModel(aSARSensorModel As IntPtr, aTakeOwnershipOfSM As Boolean)
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel*
+  nameWithType.vb: ISARXform.SetSensorModel(IntPtr, Boolean)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel(System.IntPtr, Boolean)
+  name.vb: SetSensorModel(IntPtr, Boolean)
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: ISARXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+  id: Domains
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: Domains
+  nameWithType: ISARXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IGeometryCollection Domains { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometryCollection
+    content.vb: ReadOnly Property Domains As IGeometryCollection
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+  id: IsIdentity
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: ISARXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool IsIdentity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsIdentity As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+  id: IterPrecision
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: IterPrecision
+  nameWithType: ISARXform.IterPrecision
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Precision value to be used for iterative processes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double IterPrecision { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property IterPrecision As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+  id: RadarDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: RadarDataset
+  nameWithType: ISARXform.RadarDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The Radar Dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterDataset RadarDataset { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Property RadarDataset As IRasterDataset
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+  id: SARFilename
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: SARFilename
+  nameWithType: ISARXform.SARFilename
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the filename used for the SAR Xform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SARFilename { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SARFilename As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName
+  id: SensorModelName
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISARXform
+  langs:
+  - csharp
+  - vb
+  name: SensorModelName
+  nameWithType: ISARXform.SensorModelName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the sensor model name used for the SAR Xform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SensorModelName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property SensorModelName As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_Transform_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__
+  name: Transform
+  nameWithType: ISARXform.Transform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Transform
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_TransformCellsize_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double__System_Double__ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformCellsize
+  nameWithType: ISARXform.TransformCellsize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformCellsize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_TransformExtent_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformExtent
+  nameWithType: ISARXform.TransformExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformExtent
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_TransformPoints_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IPointCollection_
+  name: TransformPoints
+  nameWithType: ISARXform.TransformPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.TransformPoints
+- uid: ESRI.ArcGIS.Geometry.IPointCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IPointCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointCollection.html
+  name: IPointCollection
+  nameWithType: IPointCollection
+  fullName: ESRI.ArcGIS.Geometry.IPointCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_ExtractRequiredSensorModelParameters_System_String_ESRI_ArcGIS_Geodatabase_IRasterDataset_
+  name: ExtractRequiredSensorModelParameters
+  nameWithType: ISARXform.ExtractRequiredSensorModelParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.ExtractRequiredSensorModelParameters
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_GetSensorModelProperty_System_String_
+  name: GetSensorModelProperty
+  nameWithType: ISARXform.GetSensorModelProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.GetSensorModelProperty
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_InitSensorModel_ESRI_ArcGIS_Geodatabase_IRasterDataset_
+  name: InitSensorModel
+  nameWithType: ISARXform.InitSensorModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.InitSensorModel
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_PutSensorModelProperty_System_String_System_String_
+  name: PutSensorModelProperty
+  nameWithType: ISARXform.PutSensorModelProperty
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.PutSensorModelProperty
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_SetSensorModel_System_IntPtr__System_Boolean_
+  name: SetSensorModel
+  nameWithType: ISARXform.SetSensorModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SetSensorModel
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_SpatialReference
+  name: SpatialReference
+  nameWithType: ISARXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_Domains
+  name: Domains
+  nameWithType: ISARXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.Domains
+- uid: ESRI.ArcGIS.Geometry.IGeometryCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometryCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryCollection.html
+  name: IGeometryCollection
+  nameWithType: IGeometryCollection
+  fullName: ESRI.ArcGIS.Geometry.IGeometryCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_IsIdentity
+  name: IsIdentity
+  nameWithType: ISARXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IsIdentity
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_IterPrecision
+  name: IterPrecision
+  nameWithType: ISARXform.IterPrecision
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.IterPrecision
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_RadarDataset
+  name: RadarDataset
+  nameWithType: ISARXform.RadarDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.RadarDataset
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_SARFilename
+  name: SARFilename
+  nameWithType: ISARXform.SARFilename
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SARFilename
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISARXform.html#ESRI_ArcGIS_DatasourcesRaster_ISARXform_SensorModelName
+  name: SensorModelName
+  nameWithType: ISARXform.SensorModelName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISARXform.SensorModelName

@@ -1,0 +1,272 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  id: IMetadataSynchronizer
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+  - ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+  - ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet,System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IMetadataSynchronizer
+  nameWithType: IMetadataSynchronizer
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control what happens when synchronization occurs.
+  example: []
+  syntax:
+    content: >-
+      [Guid("6A07CA46-9575-4CFC-A0D4-F2C8F9D30569")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IMetadataSynchronizer
+    content.vb: >-
+      <Guid("6A07CA46-9575-4CFC-A0D4-F2C8F9D30569")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IMetadataSynchronizer
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FGDCSynchronizerClass
+  - ESRI.ArcGIS.Geodatabase.MetadataSynchronizerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6A07CA46-9575-4CFC-A0D4-F2C8F9D30569
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet,System.String,System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet,System.String,System.Object)
+  id: Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet,System.String,System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  langs:
+  - csharp
+  - vb
+  name: Update(IXmlPropertySet, string, object)
+  nameWithType: IMetadataSynchronizer.Update(IXmlPropertySet, string, object)
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet, string, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Update(IXmlPropertySet PropertySet, string itemDesc, object Value)
+    parameters:
+    - id: PropertySet
+      type: ESRI.ArcGIS.Geodatabase.IXmlPropertySet
+    - id: itemDesc
+      type: System.String
+    - id: Value
+      type: System.Object
+    content.vb: Sub Update(PropertySet As IXmlPropertySet, itemDesc As String, Value As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update*
+  nameWithType.vb: IMetadataSynchronizer.Update(IXmlPropertySet, String, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update(ESRI.ArcGIS.Geodatabase.IXmlPropertySet, String, Object)
+  name.vb: Update(IXmlPropertySet, String, Object)
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMetadataSynchronizer.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the metadata synchronizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name*
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+  id: ClassID
+  parent: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer
+  langs:
+  - csharp
+  - vb
+  name: ClassID
+  nameWithType: IMetadataSynchronizer.ClassID
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The class ID of the metadata synchronizer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: UID ClassID { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: ReadOnly Property ClassID As UID
+  overload: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.html#ESRI_ArcGIS_Geodatabase_IMetadataSynchronizer_Update_ESRI_ArcGIS_Geodatabase_IXmlPropertySet_System_String_System_Object_
+  name: Update
+  nameWithType: IMetadataSynchronizer.Update
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Update
+- uid: ESRI.ArcGIS.Geodatabase.IXmlPropertySet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IXmlPropertySet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IXmlPropertySet.html
+  name: IXmlPropertySet
+  nameWithType: IXmlPropertySet
+  fullName: ESRI.ArcGIS.Geodatabase.IXmlPropertySet
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.html#ESRI_ArcGIS_Geodatabase_IMetadataSynchronizer_Name
+  name: Name
+  nameWithType: IMetadataSynchronizer.Name
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.Name
+- uid: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.html#ESRI_ArcGIS_Geodatabase_IMetadataSynchronizer_ClassID
+  name: ClassID
+  nameWithType: IMetadataSynchronizer.ClassID
+  fullName: ESRI.ArcGIS.Geodatabase.IMetadataSynchronizer.ClassID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

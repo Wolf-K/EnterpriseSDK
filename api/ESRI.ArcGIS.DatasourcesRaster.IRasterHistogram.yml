@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  id: IRasterHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin(System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+  langs:
+  - csharp
+  - vb
+  name: IRasterHistogram
+  nameWithType: IRasterHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster histogram.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("7ACA3D0B-0629-11D2-8D24-0000F8780535")]
+
+      public interface IRasterHistogram
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("7ACA3D0B-0629-11D2-8D24-0000F8780535")>
+
+      Public Interface IRasterHistogram
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterHistogramClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7ACA3D0B-0629-11D2-8D24-0000F8780535
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin(System.Double)
+  id: Bin(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  langs:
+  - csharp
+  - vb
+  name: Bin(double)
+  nameWithType: IRasterHistogram.Bin(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Translates pixel values to integer Bin index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Bin(double pixval)
+    parameters:
+    - id: pixval
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function Bin(pixval As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin*
+  nameWithType.vb: IRasterHistogram.Bin(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin(Double)
+  name.vb: Bin(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+  id: Counts
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  langs:
+  - csharp
+  - vb
+  name: Counts
+  nameWithType: IRasterHistogram.Counts
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Count array in doubles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object Counts { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Property Counts As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+  id: BinFunction
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram
+  langs:
+  - csharp
+  - vb
+  name: BinFunction
+  nameWithType: IRasterHistogram.BinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The Bin function that maps pixel value into histogram index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IBinFunction BinFunction { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+    content.vb: ReadOnly Property BinFunction As IBinFunction
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IRasterHistogram_Bin_System_Double_
+  name: Bin
+  nameWithType: IRasterHistogram.Bin
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Bin
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IRasterHistogram_Counts
+  name: Counts
+  nameWithType: IRasterHistogram.Counts
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.Counts
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.html#ESRI_ArcGIS_DatasourcesRaster_IRasterHistogram_BinFunction
+  name: BinFunction
+  nameWithType: IRasterHistogram.BinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterHistogram.BinFunction
+- uid: ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IBinFunction
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IBinFunction.html
+  name: IBinFunction
+  nameWithType: IBinFunction
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IBinFunction

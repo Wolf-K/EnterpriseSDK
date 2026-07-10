@@ -1,0 +1,454 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IShields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IShields
+  id: IShields
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IShields.AddShield(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+  - ESRI.ArcGIS.Geodatabase.IShields.DeleteShield(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+  - ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+  - ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IShields.ShieldType(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+  - ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+  langs:
+  - csharp
+  - vb
+  name: IShields
+  nameWithType: IShields
+  fullName: ESRI.ArcGIS.Geodatabase.IShields
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to a container for refining directions with shields.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("9E82750B-BDDC-40A1-9A63-FF699FFC55E1")]
+
+      public interface IShields
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("9E82750B-BDDC-40A1-9A63-FF699FFC55E1")>
+
+      Public Interface IShields
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9E82750B-BDDC-40A1-9A63-FF699FFC55E1
+- uid: ESRI.ArcGIS.Geodatabase.IShields.AddShield(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IShields.AddShield(System.String,System.String)
+  id: AddShield(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: AddShield(string, string)
+  nameWithType: IShields.AddShield(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.AddShield(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Adds a shield of the given type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddShield(string Type, string Description)
+    parameters:
+    - id: Type
+      type: System.String
+    - id: Description
+      type: System.String
+    content.vb: Sub AddShield(Type As String, Description As String)
+  overload: ESRI.ArcGIS.Geodatabase.IShields.AddShield*
+  nameWithType.vb: IShields.AddShield(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IShields.AddShield(String, String)
+  name.vb: AddShield(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IShields.DeleteShield(System.Int32)
+  id: DeleteShield(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: DeleteShield(int)
+  nameWithType: IShields.DeleteShield(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes a shield by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteShield(int Index)
+    parameters:
+    - id: Index
+      type: System.Int32
+    content.vb: Sub DeleteShield(Index As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield*
+  nameWithType.vb: IShields.DeleteShield(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield(Integer)
+  name.vb: DeleteShield(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+  id: TypeFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: TypeFieldName
+  nameWithType: IShields.TypeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name whose values contain the street type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string TypeFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TypeFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+  id: NumberFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: NumberFieldName
+  nameWithType: IShields.NumberFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name whose values contain the house number.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string NumberFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property NumberFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+  id: CombinedFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: CombinedFieldName
+  nameWithType: IShields.CombinedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name whose values contain the whole address description.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CombinedFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property CombinedFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName*
+- uid: ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+  id: UseCombinedField
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: UseCombinedField
+  nameWithType: IShields.UseCombinedField
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the combined field should be used for directions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool UseCombinedField { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property UseCombinedField As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField*
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+  id: ShieldCount
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: ShieldCount
+  nameWithType: IShields.ShieldCount
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of shields.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ShieldCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ShieldCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IShields.ShieldCount*
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldType(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.ShieldType(System.Int32)
+  id: ShieldType(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: ShieldType[int]
+  nameWithType: IShields.ShieldType[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldType[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The shield type by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ShieldType[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ShieldType(Index As Integer) As String
+  overload: ESRI.ArcGIS.Geodatabase.IShields.ShieldType*
+  nameWithType.vb: IShields.ShieldType(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IShields.ShieldType(Integer)
+  name.vb: ShieldType(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription(System.Int32)
+  id: ShieldDescription(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IShields
+  langs:
+  - csharp
+  - vb
+  name: ShieldDescription[int]
+  nameWithType: IShields.ShieldDescription[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The shield description by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ShieldDescription[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ShieldDescription(Index As Integer) As String
+  overload: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription*
+  nameWithType.vb: IShields.ShieldDescription(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription(Integer)
+  name.vb: ShieldDescription(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IShields.AddShield*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.AddShield
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_AddShield_System_String_System_String_
+  name: AddShield
+  nameWithType: IShields.AddShield
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.AddShield
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.DeleteShield
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_DeleteShield_System_Int32_
+  name: DeleteShield
+  nameWithType: IShields.DeleteShield
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.DeleteShield
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_TypeFieldName
+  name: TypeFieldName
+  nameWithType: IShields.TypeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.TypeFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_NumberFieldName
+  name: NumberFieldName
+  nameWithType: IShields.NumberFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.NumberFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_CombinedFieldName
+  name: CombinedFieldName
+  nameWithType: IShields.CombinedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.CombinedFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_UseCombinedField
+  name: UseCombinedField
+  nameWithType: IShields.UseCombinedField
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.UseCombinedField
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_ShieldCount
+  name: ShieldCount
+  nameWithType: IShields.ShieldCount
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldCount
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.ShieldType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_ShieldType_System_Int32_
+  name: ShieldType
+  nameWithType: IShields.ShieldType
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldType
+- uid: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html#ESRI_ArcGIS_Geodatabase_IShields_ShieldDescription_System_Int32_
+  name: ShieldDescription
+  nameWithType: IShields.ShieldDescription
+  fullName: ESRI.ArcGIS.Geodatabase.IShields.ShieldDescription

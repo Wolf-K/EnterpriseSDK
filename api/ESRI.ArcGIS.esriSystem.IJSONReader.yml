@@ -1,0 +1,994 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONReader
+  id: IJSONReader
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+  - ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)
+  - ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(System.String)
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsNull
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject
+  - ESRI.ArcGIS.esriSystem.IJSONReader.IsString
+  - ESRI.ArcGIS.esriSystem.IJSONReader.Read
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom(ESRI.ArcGIS.esriSystem.IStream)
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(System.String)
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong
+  - ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString
+  - ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds
+  - ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds
+  - ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+  langs:
+  - csharp
+  - vb
+  name: IJSONReader
+  nameWithType: IJSONReader
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to Sequential JSON Reader.
+  example: []
+  syntax:
+    content: >-
+      [Guid("48105A80-E0DC-4D69-BB61-3DF74CAFA52C")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IJSONReader
+    content.vb: >-
+      <Guid("48105A80-E0DC-4D69-BB61-3DF74CAFA52C")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IJSONReader
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.JSONReaderClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 48105A80-E0DC-4D69-BB61-3DF74CAFA52C
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom(ESRI.ArcGIS.esriSystem.IStream)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom(ESRI.ArcGIS.esriSystem.IStream)
+  id: ReadFrom(ESRI.ArcGIS.esriSystem.IStream)
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadFrom(IStream)
+  nameWithType: IJSONReader.ReadFrom(IStream)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom(ESRI.ArcGIS.esriSystem.IStream)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void ReadFrom(IStream inputStream)
+    parameters:
+    - id: inputStream
+      type: ESRI.ArcGIS.esriSystem.IStream
+    content.vb: Sub ReadFrom(inputStream As IStream)
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(System.String)
+  id: ReadFromString(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadFromString(string)
+  nameWithType: IJSONReader.ReadFromString(string)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Specifies input as string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ReadFromString(string Text)
+    parameters:
+    - id: Text
+      type: System.String
+    content.vb: Sub ReadFromString(Text As String)
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString*
+  nameWithType.vb: IJSONReader.ReadFromString(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString(String)
+  name.vb: ReadFromString(String)
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.Read
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.Read
+  id: Read
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: IJSONReader.Read()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.Read()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Reads next JSON token.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Read()
+    content.vb: Sub Read()
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.Read*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject
+  id: IsStartOfObject
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsStartOfObject()
+  nameWithType: IJSONReader.IsStartOfObject()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is '{'.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStartOfObject()
+    return:
+      type: System.Boolean
+    content.vb: Function IsStartOfObject() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject
+  id: IsEndOfObject
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsEndOfObject()
+  nameWithType: IJSONReader.IsEndOfObject()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is '}'.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsEndOfObject()
+    return:
+      type: System.Boolean
+    content.vb: Function IsEndOfObject() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray
+  id: IsStartOfArray
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsStartOfArray()
+  nameWithType: IJSONReader.IsStartOfArray()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is '['.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStartOfArray()
+    return:
+      type: System.Boolean
+    content.vb: Function IsStartOfArray() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray
+  id: IsEndOfArray
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsEndOfArray()
+  nameWithType: IJSONReader.IsEndOfArray()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is ']'.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsEndOfArray()
+    return:
+      type: System.Boolean
+    content.vb: Function IsEndOfArray() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsString
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsString
+  id: IsString
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsString()
+  nameWithType: IJSONReader.IsString()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsString()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is a property value or array value of type string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsString()
+    return:
+      type: System.Boolean
+    content.vb: Function IsString() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsString*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber
+  id: IsNumber
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsNumber()
+  nameWithType: IJSONReader.IsNumber()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is a property value or array value of numeric type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsNumber()
+    return:
+      type: System.Boolean
+    content.vb: Function IsNumber() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean
+  id: IsBoolean
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsBoolean()
+  nameWithType: IJSONReader.IsBoolean()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is a property value or array value of boolean type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsBoolean()
+    return:
+      type: System.Boolean
+    content.vb: Function IsBoolean() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsNull
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.IsNull
+  id: IsNull
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: IsNull()
+  nameWithType: IJSONReader.IsNull()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsNull()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates true if current token is a property value or array value and equals to null.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsNull()
+    return:
+      type: System.Boolean
+    content.vb: Function IsNull() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.IsNull*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue
+  id: ReadValue
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValue()
+  nameWithType: IJSONReader.ReadValue()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains array or property value as Variant. Advances to the next token.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object ReadValue()
+    return:
+      type: System.Object
+    content.vb: Function ReadValue() As Object
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName
+  id: ReadPropertyName
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadPropertyName()
+  nameWithType: IJSONReader.ReadPropertyName()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains property name. Advances to the next token.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ReadPropertyName()
+    return:
+      type: System.String
+    content.vb: Function ReadPropertyName() As String
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString
+  id: ReadValueAsString
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValueAsString()
+  nameWithType: IJSONReader.ReadValueAsString()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains property or array value as string. Advances to the next token. If property value cannot be coerced to string, returns E_FAIL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ReadValueAsString()
+    return:
+      type: System.String
+    content.vb: Function ReadValueAsString() As String
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong
+  id: ReadValueAsLong
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValueAsLong()
+  nameWithType: IJSONReader.ReadValueAsLong()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains property or array value as number. Advances to the next token. If property value cannot be coerced to long, returns E_FAIL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ReadValueAsLong()
+    return:
+      type: System.Int32
+    content.vb: Function ReadValueAsLong() As Integer
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble
+  id: ReadValueAsDouble
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValueAsDouble()
+  nameWithType: IJSONReader.ReadValueAsDouble()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains property or array value as number. Advances to the next token. If property value cannot be coerced to double, returns E_FAIL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ReadValueAsDouble()
+    return:
+      type: System.Double
+    content.vb: Function ReadValueAsDouble() As Double
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean
+  id: ReadValueAsBoolean
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValueAsBoolean()
+  nameWithType: IJSONReader.ReadValueAsBoolean()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains array or property value as boolean. Advances to the next token. If property value cannot be coerced to boolean, returns E_FAIL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ReadValueAsBoolean()
+    return:
+      type: System.Boolean
+    content.vb: Function ReadValueAsBoolean() As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate
+  id: ReadValueAsDate
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: ReadValueAsDate()
+  nameWithType: IJSONReader.ReadValueAsDate()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains property or array value as date. Advances to the next token. If property value cannot be coerced to datetime, returns E_FAIL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: DateTime ReadValueAsDate()
+    return:
+      type: System.DateTime
+    content.vb: Function ReadValueAsDate() As Date
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(System.String)
+  id: FindProperty(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: FindProperty(string)
+  nameWithType: IJSONReader.FindProperty(string)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Reads current object until property name matches or object ends. Case is ignored.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool FindProperty(string propname)
+    parameters:
+    - id: propname
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function FindProperty(propname As String) As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty*
+  nameWithType.vb: IJSONReader.FindProperty(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty(String)
+  name.vb: FindProperty(String)
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)
+  id: FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: FindProperties(IStringArray)
+  nameWithType: IJSONReader.FindProperties(IStringArray)
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties(ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: int FindProperties(IStringArray propnames)
+    parameters:
+    - id: propnames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    return:
+      type: System.Int32
+    content.vb: Function FindProperties(propnames As IStringArray) As Integer
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds
+  id: SkipUntilObjectEnds
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: SkipUntilObjectEnds()
+  nameWithType: IJSONReader.SkipUntilObjectEnds()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Skips the rest of the current object, including closing bracket.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SkipUntilObjectEnds()
+    content.vb: Sub SkipUntilObjectEnds()
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds
+  commentId: M:ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds
+  id: SkipUntilArrayEnds
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: SkipUntilArrayEnds()
+  nameWithType: IJSONReader.SkipUntilArrayEnds()
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Skips the rest of the current object, including closing bracket.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SkipUntilArrayEnds()
+    content.vb: Sub SkipUntilArrayEnds()
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+  commentId: P:ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+  id: Stream
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: IJSONReader.Stream
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains underlying stream.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStream Stream { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStream
+    content.vb: ReadOnly Property Stream As IStream
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.Stream*
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+  commentId: P:ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+  id: CurrentTokenType
+  parent: ESRI.ArcGIS.esriSystem.IJSONReader
+  langs:
+  - csharp
+  - vb
+  name: CurrentTokenType
+  nameWithType: IJSONReader.CurrentTokenType
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains type of current token.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: JSONTokenType CurrentTokenType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.JSONTokenType
+    content.vb: ReadOnly Property CurrentTokenType As JSONTokenType
+  overload: ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadFrom_ESRI_ArcGIS_esriSystem_IStream_
+  name: ReadFrom
+  nameWithType: IJSONReader.ReadFrom
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFrom
+- uid: ESRI.ArcGIS.esriSystem.IStream
+  commentId: T:ESRI.ArcGIS.esriSystem.IStream
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStream.html
+  name: IStream
+  nameWithType: IStream
+  fullName: ESRI.ArcGIS.esriSystem.IStream
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadFromString_System_String_
+  name: ReadFromString
+  nameWithType: IJSONReader.ReadFromString
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadFromString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.Read*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.Read
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_Read
+  name: Read
+  nameWithType: IJSONReader.Read
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.Read
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfObject
+  name: IsStartOfObject
+  nameWithType: IJSONReader.IsStartOfObject
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfObject
+  name: IsEndOfObject
+  nameWithType: IJSONReader.IsEndOfObject
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfObject
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsStartOfArray
+  name: IsStartOfArray
+  nameWithType: IJSONReader.IsStartOfArray
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsStartOfArray
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsEndOfArray
+  name: IsEndOfArray
+  nameWithType: IJSONReader.IsEndOfArray
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsEndOfArray
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsString*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsString
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsString
+  name: IsString
+  nameWithType: IJSONReader.IsString
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsString
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsNumber
+  name: IsNumber
+  nameWithType: IJSONReader.IsNumber
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsNumber
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsBoolean
+  name: IsBoolean
+  nameWithType: IJSONReader.IsBoolean
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsBoolean
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.IsNull*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.IsNull
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_IsNull
+  name: IsNull
+  nameWithType: IJSONReader.IsNull
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.IsNull
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValue
+  name: ReadValue
+  nameWithType: IJSONReader.ReadValue
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadPropertyName
+  name: ReadPropertyName
+  nameWithType: IJSONReader.ReadPropertyName
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadPropertyName
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsString
+  name: ReadValueAsString
+  nameWithType: IJSONReader.ReadValueAsString
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsString
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsLong
+  name: ReadValueAsLong
+  nameWithType: IJSONReader.ReadValueAsLong
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsLong
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDouble
+  name: ReadValueAsDouble
+  nameWithType: IJSONReader.ReadValueAsDouble
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDouble
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsBoolean
+  name: ReadValueAsBoolean
+  nameWithType: IJSONReader.ReadValueAsBoolean
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsBoolean
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_ReadValueAsDate
+  name: ReadValueAsDate
+  nameWithType: IJSONReader.ReadValueAsDate
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.ReadValueAsDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_FindProperty_System_String_
+  name: FindProperty
+  nameWithType: IJSONReader.FindProperty
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperty
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_FindProperties_ESRI_ArcGIS_esriSystem_IStringArray_
+  name: FindProperties
+  nameWithType: IJSONReader.FindProperties
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.FindProperties
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilObjectEnds
+  name: SkipUntilObjectEnds
+  nameWithType: IJSONReader.SkipUntilObjectEnds
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilObjectEnds
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_SkipUntilArrayEnds
+  name: SkipUntilArrayEnds
+  nameWithType: IJSONReader.SkipUntilArrayEnds
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.SkipUntilArrayEnds
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.Stream*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_Stream
+  name: Stream
+  nameWithType: IJSONReader.Stream
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.Stream
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html#ESRI_ArcGIS_esriSystem_IJSONReader_CurrentTokenType
+  name: CurrentTokenType
+  nameWithType: IJSONReader.CurrentTokenType
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader.CurrentTokenType
+- uid: ESRI.ArcGIS.esriSystem.JSONTokenType
+  commentId: T:ESRI.ArcGIS.esriSystem.JSONTokenType
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.JSONTokenType.html
+  name: JSONTokenType
+  nameWithType: JSONTokenType
+  fullName: ESRI.ArcGIS.esriSystem.JSONTokenType

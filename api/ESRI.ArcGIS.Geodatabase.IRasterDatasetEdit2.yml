@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  id: IRasterDatasetEdit2
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable(ESRI.ArcGIS.Geodatabase.ITable)
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap(ESRI.ArcGIS.Geodatabase.IRasterColormap)
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase(ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic(ESRI.ArcGIS.Geodatabase.IRaster,System.Double)
+  - ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster,System.Int32,System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IRasterDatasetEdit2
+  nameWithType: IRasterDatasetEdit2
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control editing of a RasterDataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("24217915-7F69-4317-B0E0-908400E578C4")]
+
+      public interface IRasterDatasetEdit2 : IRasterDatasetEdit
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("24217915-7F69-4317-B0E0-908400E578C4")>
+
+      Public Interface IRasterDatasetEdit2 Inherits IRasterDatasetEdit
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 24217915-7F69-4317-B0E0-908400E578C4
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic(ESRI.ArcGIS.Geodatabase.IRaster,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic(ESRI.ArcGIS.Geodatabase.IRaster,System.Double)
+  id: Mosaic(ESRI.ArcGIS.Geodatabase.IRaster,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: Mosaic(IRaster, double)
+  nameWithType: IRasterDatasetEdit2.Mosaic(IRaster, double)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic(ESRI.ArcGIS.Geodatabase.IRaster, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Mosaic(IRaster Raster, double tolerance)
+    parameters:
+    - id: Raster
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    - id: tolerance
+      type: System.Double
+    content.vb: Sub Mosaic(Raster As IRaster, tolerance As Double)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic*
+  nameWithType.vb: IRasterDatasetEdit2.Mosaic(IRaster, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic(ESRI.ArcGIS.Geodatabase.IRaster, Double)
+  name.vb: Mosaic(IRaster, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster,System.Int32,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster,System.Int32,System.Double)
+  id: MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster,System.Int32,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: MosaicBands(IRaster, int, double)
+  nameWithType: IRasterDatasetEdit2.MosaicBands(IRaster, int, double)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster, int, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void MosaicBands(IRaster Raster, int Start, double tolerance)
+    parameters:
+    - id: Raster
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    - id: Start
+      type: System.Int32
+    - id: tolerance
+      type: System.Double
+    content.vb: Sub MosaicBands(Raster As IRaster, Start As Integer, tolerance As Double)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands*
+  nameWithType.vb: IRasterDatasetEdit2.MosaicBands(IRaster, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands(ESRI.ArcGIS.Geodatabase.IRaster, Integer, Double)
+  name.vb: MosaicBands(IRaster, Integer, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase(ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase(ESRI.ArcGIS.Geometry.IEnvelope)
+  id: Erase(ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: Erase(IEnvelope)
+  nameWithType: IRasterDatasetEdit2.Erase(IEnvelope)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase(ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Erase(IEnvelope Extent)
+    parameters:
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub [Erase](Extent As IEnvelope)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats(System.Int32)
+  id: ComputeStats(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: ComputeStats(int)
+  nameWithType: IRasterDatasetEdit2.ComputeStats(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ComputeStats(int PyramidLevel)
+    parameters:
+    - id: PyramidLevel
+      type: System.Int32
+    content.vb: Sub ComputeStats(PyramidLevel As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats*
+  nameWithType.vb: IRasterDatasetEdit2.ComputeStats(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats(Integer)
+  name.vb: ComputeStats(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats
+  id: DeleteStats
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: DeleteStats()
+  nameWithType: IRasterDatasetEdit2.DeleteStats()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteStats()
+    content.vb: Sub DeleteStats()
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap(ESRI.ArcGIS.Geodatabase.IRasterColormap)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap(ESRI.ArcGIS.Geodatabase.IRasterColormap)
+  id: AlterColormap(ESRI.ArcGIS.Geodatabase.IRasterColormap)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: AlterColormap(IRasterColormap)
+  nameWithType: IRasterDatasetEdit2.AlterColormap(IRasterColormap)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap(ESRI.ArcGIS.Geodatabase.IRasterColormap)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AlterColormap(IRasterColormap Colormap)
+    parameters:
+    - id: Colormap
+      type: ESRI.ArcGIS.Geodatabase.IRasterColormap
+    content.vb: Sub AlterColormap(Colormap As IRasterColormap)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap
+  id: DeleteColormap
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: DeleteColormap()
+  nameWithType: IRasterDatasetEdit2.DeleteColormap()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteColormap()
+    content.vb: Sub DeleteColormap()
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand
+  id: AppendNewBand
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: AppendNewBand()
+  nameWithType: IRasterDatasetEdit2.AppendNewBand()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AppendNewBand()
+    content.vb: Sub AppendNewBand()
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable(ESRI.ArcGIS.Geodatabase.ITable)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable(ESRI.ArcGIS.Geodatabase.ITable)
+  id: AlterAttributeTable(ESRI.ArcGIS.Geodatabase.ITable)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: AlterAttributeTable(ITable)
+  nameWithType: IRasterDatasetEdit2.AlterAttributeTable(ITable)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable(ESRI.ArcGIS.Geodatabase.ITable)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AlterAttributeTable(ITable newTable)
+    parameters:
+    - id: newTable
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Sub AlterAttributeTable(newTable As ITable)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable
+  id: DeleteAttributeTable
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: DeleteAttributeTable()
+  nameWithType: IRasterDatasetEdit2.DeleteAttributeTable()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deletes the raster attribute table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteAttributeTable()
+    content.vb: Sub DeleteAttributeTable()
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable
+  id: BuildAttributeTable
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: BuildAttributeTable()
+  nameWithType: IRasterDatasetEdit2.BuildAttributeTable()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Builds the raster attribute table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void BuildAttributeTable()
+    content.vb: Sub BuildAttributeTable()
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+  id: CanAlterAttributeTable
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2
+  langs:
+  - csharp
+  - vb
+  name: CanAlterAttributeTable
+  nameWithType: IRasterDatasetEdit2.CanAlterAttributeTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the raster attribute table can be altered.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanAlterAttributeTable { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanAlterAttributeTable As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_Mosaic_ESRI_ArcGIS_Geodatabase_IRaster_System_Double_
+  name: Mosaic
+  nameWithType: IRasterDatasetEdit2.Mosaic
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Mosaic
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_MosaicBands_ESRI_ArcGIS_Geodatabase_IRaster_System_Int32_System_Double_
+  name: MosaicBands
+  nameWithType: IRasterDatasetEdit2.MosaicBands
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.MosaicBands
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_Erase_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: Erase
+  nameWithType: IRasterDatasetEdit2.Erase
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.Erase
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_ComputeStats_System_Int32_
+  name: ComputeStats
+  nameWithType: IRasterDatasetEdit2.ComputeStats
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.ComputeStats
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_DeleteStats
+  name: DeleteStats
+  nameWithType: IRasterDatasetEdit2.DeleteStats
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteStats
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_AlterColormap_ESRI_ArcGIS_Geodatabase_IRasterColormap_
+  name: AlterColormap
+  nameWithType: IRasterDatasetEdit2.AlterColormap
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterColormap
+- uid: ESRI.ArcGIS.Geodatabase.IRasterColormap
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterColormap
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterColormap.html
+  name: IRasterColormap
+  nameWithType: IRasterColormap
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterColormap
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_DeleteColormap
+  name: DeleteColormap
+  nameWithType: IRasterDatasetEdit2.DeleteColormap
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteColormap
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_AppendNewBand
+  name: AppendNewBand
+  nameWithType: IRasterDatasetEdit2.AppendNewBand
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AppendNewBand
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_AlterAttributeTable_ESRI_ArcGIS_Geodatabase_ITable_
+  name: AlterAttributeTable
+  nameWithType: IRasterDatasetEdit2.AlterAttributeTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.AlterAttributeTable
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_DeleteAttributeTable
+  name: DeleteAttributeTable
+  nameWithType: IRasterDatasetEdit2.DeleteAttributeTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.DeleteAttributeTable
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_BuildAttributeTable
+  name: BuildAttributeTable
+  nameWithType: IRasterDatasetEdit2.BuildAttributeTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.BuildAttributeTable
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.html#ESRI_ArcGIS_Geodatabase_IRasterDatasetEdit2_CanAlterAttributeTable
+  name: CanAlterAttributeTable
+  nameWithType: IRasterDatasetEdit2.CanAlterAttributeTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDatasetEdit2.CanAlterAttributeTable
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

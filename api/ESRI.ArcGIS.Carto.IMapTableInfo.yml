@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo
+  commentId: T:ESRI.ArcGIS.Carto.IMapTableInfo
+  id: IMapTableInfo
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+  - ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+  - ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+  - ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+  - ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype
+  - ESRI.ArcGIS.Carto.IMapTableInfo.ID
+  - ESRI.ArcGIS.Carto.IMapTableInfo.Name
+  - ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+  - ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+  langs:
+  - csharp
+  - vb
+  name: IMapTableInfo
+  nameWithType: IMapTableInfo
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to the Table Info.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("08AB1BE0-D464-4882-A721-D72FBB36903A")]
+
+      public interface IMapTableInfo
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("08AB1BE0-D464-4882-A721-D72FBB36903A")>
+
+      Public Interface IMapTableInfo
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.MapLayerInfoClass
+  - ESRI.ArcGIS.Carto.StandaloneTableInfoClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 08AB1BE0-D464-4882-A721-D72FBB36903A
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.ID
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.ID
+  id: ID
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: IMapTableInfo.ID
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.ID
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The table ID. This is a unique ID among layers and tables, and is used to identify the table in a number of methods.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ID As Integer
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.ID*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.Name
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.Name
+  id: Name
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMapTableInfo.Name
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Descriptive name of the table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.Name*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: IMapTableInfo.Fields
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Array of attribute fields contained in the table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.Fields*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+  id: RelateInfos
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: RelateInfos
+  nameWithType: IMapTableInfo.RelateInfos
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Array of relates associated to the table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRelateInfos RelateInfos { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IRelateInfos
+    content.vb: ReadOnly Property RelateInfos As IRelateInfos
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+  id: HasAttachments
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: HasAttachments
+  nameWithType: IMapTableInfo.HasAttachments
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Indicates if the layer has attachments.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasAttachments { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasAttachments As Boolean
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+  id: HTMLPopupType
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: HTMLPopupType
+  nameWithType: IMapTableInfo.HTMLPopupType
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Indicates if the layer has HTML popups enabled.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriServerHTMLPopupType HTMLPopupType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.esriServerHTMLPopupType
+    content.vb: ReadOnly Property HTMLPopupType As esriServerHTMLPopupType
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+  id: DisplayField
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: DisplayField
+  nameWithType: IMapTableInfo.DisplayField
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Primary display field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string DisplayField { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property DisplayField As String
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+  id: OIDFieldName
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: OIDFieldName
+  nameWithType: IMapTableInfo.OIDFieldName
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The name of the OID Field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string OIDFieldName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property OIDFieldName As String
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName*
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype
+  commentId: P:ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype
+  id: HasSubtype
+  parent: ESRI.ArcGIS.Carto.IMapTableInfo
+  langs:
+  - csharp
+  - vb
+  name: HasSubtype
+  nameWithType: IMapTableInfo.HasSubtype
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Indicates if the layer has Subtype.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasSubtype { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasSubtype As Boolean
+  overload: ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.ID*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.ID
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_ID
+  name: ID
+  nameWithType: IMapTableInfo.ID
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.ID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.Name*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_Name
+  name: Name
+  nameWithType: IMapTableInfo.Name
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.Fields*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_Fields
+  name: Fields
+  nameWithType: IMapTableInfo.Fields
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_RelateInfos
+  name: RelateInfos
+  nameWithType: IMapTableInfo.RelateInfos
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.RelateInfos
+- uid: ESRI.ArcGIS.Carto.IRelateInfos
+  commentId: T:ESRI.ArcGIS.Carto.IRelateInfos
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IRelateInfos.html
+  name: IRelateInfos
+  nameWithType: IRelateInfos
+  fullName: ESRI.ArcGIS.Carto.IRelateInfos
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_HasAttachments
+  name: HasAttachments
+  nameWithType: IMapTableInfo.HasAttachments
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HasAttachments
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_HTMLPopupType
+  name: HTMLPopupType
+  nameWithType: IMapTableInfo.HTMLPopupType
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HTMLPopupType
+- uid: ESRI.ArcGIS.Carto.esriServerHTMLPopupType
+  commentId: T:ESRI.ArcGIS.Carto.esriServerHTMLPopupType
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.esriServerHTMLPopupType.html
+  name: esriServerHTMLPopupType
+  nameWithType: esriServerHTMLPopupType
+  fullName: ESRI.ArcGIS.Carto.esriServerHTMLPopupType
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_DisplayField
+  name: DisplayField
+  nameWithType: IMapTableInfo.DisplayField
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.DisplayField
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_OIDFieldName
+  name: OIDFieldName
+  nameWithType: IMapTableInfo.OIDFieldName
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.OIDFieldName
+- uid: ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapTableInfo.html#ESRI_ArcGIS_Carto_IMapTableInfo_HasSubtype
+  name: HasSubtype
+  nameWithType: IMapTableInfo.HasSubtype
+  fullName: ESRI.ArcGIS.Carto.IMapTableInfo.HasSubtype

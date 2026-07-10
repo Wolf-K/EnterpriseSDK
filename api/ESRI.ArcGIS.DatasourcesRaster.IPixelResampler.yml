@@ -1,0 +1,406 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  id: IPixelResampler
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample(System.Int32,System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.IPixelBlock,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+  langs:
+  - csharp
+  - vb
+  name: IPixelResampler
+  nameWithType: IPixelResampler
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a pixel resampler.
+  example: []
+  syntax:
+    content: >-
+      [Guid("25C98A24-1331-49A0-BCF2-4F5155E1E016")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IPixelResampler
+    content.vb: >-
+      <Guid("25C98A24-1331-49A0-BCF2-4F5155E1E016")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IPixelResampler
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RGB32PixelResamplerClass
+  - ESRI.ArcGIS.DatasourcesRaster.SimplePixelResamplerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 25C98A24-1331-49A0-BCF2-4F5155E1E016
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample(System.Int32,System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.IPixelBlock,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample(System.Int32,System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.IPixelBlock,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Resample(System.Int32,System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.IPixelBlock,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  langs:
+  - csharp
+  - vb
+  name: Resample(int, int, int, int, ref WKSPoint, double, double, double, double, IPixelBlock, IPixelBlock)
+  nameWithType: IPixelResampler.Resample(int, int, int, int, ref WKSPoint, double, double, double, double, IPixelBlock, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample(int, int, int, int, ref ESRI.ArcGIS.esriSystem.WKSPoint, double, double, double, double, ESRI.ArcGIS.Geodatabase.IPixelBlock, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Resample(int iCol, int iRow, int nCols, int nRows, ref WKSPoint points, double ulx, double uly, double Dx, double Dy, IPixelBlock pSrcPixelBlock, IPixelBlock pDstPixelBlock)
+    parameters:
+    - id: iCol
+      type: System.Int32
+    - id: iRow
+      type: System.Int32
+    - id: nCols
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    - id: points
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    - id: ulx
+      type: System.Double
+    - id: uly
+      type: System.Double
+    - id: Dx
+      type: System.Double
+    - id: Dy
+      type: System.Double
+    - id: pSrcPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    - id: pDstPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub Resample(iCol As Integer, iRow As Integer, nCols As Integer, nRows As Integer, points As WKSPoint, ulx As Double, uly As Double, Dx As Double, Dy As Double, pSrcPixelBlock As IPixelBlock, pDstPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample*
+  nameWithType.vb: IPixelResampler.Resample(Integer, Integer, Integer, Integer, WKSPoint, Double, Double, Double, Double, IPixelBlock, IPixelBlock)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample(Integer, Integer, Integer, Integer, ESRI.ArcGIS.esriSystem.WKSPoint, Double, Double, Double, Double, ESRI.ArcGIS.Geodatabase.IPixelBlock, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  name.vb: Resample(Integer, Integer, Integer, Integer, WKSPoint, Double, Double, Double, Double, IPixelBlock, IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+  id: SupportLinearScaling
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  langs:
+  - csharp
+  - vb
+  name: SupportLinearScaling
+  nameWithType: IPixelResampler.SupportLinearScaling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if this resampler can accept simplified point array for simple linear scaling.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportLinearScaling { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SupportLinearScaling As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+  id: LinearScaling
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  langs:
+  - csharp
+  - vb
+  name: LinearScaling
+  nameWithType: IPixelResampler.LinearScaling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if only linear scaling is necessary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool LinearScaling { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property LinearScaling As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+  id: WindowSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  langs:
+  - csharp
+  - vb
+  name: WindowSize
+  nameWithType: IPixelResampler.WindowSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The resampling window size in terms of number of source pixels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int WindowSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property WindowSize As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling
+  id: DownSampling
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler
+  langs:
+  - csharp
+  - vb
+  name: DownSampling
+  nameWithType: IPixelResampler.DownSampling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if this is a down sampling only type of resampler.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool DownSampling { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property DownSampling As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.html#ESRI_ArcGIS_DatasourcesRaster_IPixelResampler_Resample_System_Int32_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__System_Double_System_Double_System_Double_System_Double_ESRI_ArcGIS_Geodatabase_IPixelBlock_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Resample
+  nameWithType: IPixelResampler.Resample
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.Resample
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.html#ESRI_ArcGIS_DatasourcesRaster_IPixelResampler_SupportLinearScaling
+  name: SupportLinearScaling
+  nameWithType: IPixelResampler.SupportLinearScaling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.SupportLinearScaling
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.html#ESRI_ArcGIS_DatasourcesRaster_IPixelResampler_LinearScaling
+  name: LinearScaling
+  nameWithType: IPixelResampler.LinearScaling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.LinearScaling
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.html#ESRI_ArcGIS_DatasourcesRaster_IPixelResampler_WindowSize
+  name: WindowSize
+  nameWithType: IPixelResampler.WindowSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.WindowSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.html#ESRI_ArcGIS_DatasourcesRaster_IPixelResampler_DownSampling
+  name: DownSampling
+  nameWithType: IPixelResampler.DownSampling
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelResampler.DownSampling

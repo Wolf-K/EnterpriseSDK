@@ -1,0 +1,503 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute
+  commentId: T:ESRI.ArcGIS.Geometry.IVertexAttribute
+  id: IVertexAttribute
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,ESRI.ArcGIS.Geometry.esriExtrapolationEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes(ESRI.ArcGIS.Geometry.ICurve)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  - ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  langs:
+  - csharp
+  - vb
+  name: IVertexAttribute
+  nameWithType: IVertexAttribute
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Identifies geometries that can have attributes on their vertices.
+  example: []
+  syntax:
+    content: >-
+      [Guid("AB2A8C25-D660-11D2-9F2A-00C04F6BDF0D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IVertexAttribute
+    content.vb: >-
+      <Guid("AB2A8C25-D660-11D2-9F2A-00C04F6BDF0D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IVertexAttribute
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AB2A8C25-D660-11D2-9F2A-00C04F6BDF0D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  id: MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: MultiplyVertexAttributes(esriGeometryAttributes, double)
+  nameWithType: IVertexAttribute.MultiplyVertexAttributes(esriGeometryAttributes, double)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Scale all vertex attribute values of this type by the specified factor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void MultiplyVertexAttributes(esriGeometryAttributes attributeType, double factor)
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    - id: factor
+      type: System.Double
+    content.vb: Sub MultiplyVertexAttributes(attributeType As esriGeometryAttributes, factor As Double)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes*
+  nameWithType.vb: IVertexAttribute.MultiplyVertexAttributes(esriGeometryAttributes, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, Double)
+  name.vb: MultiplyVertexAttributes(esriGeometryAttributes, Double)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  id: OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: OffsetVertexAttributes(esriGeometryAttributes, double)
+  nameWithType: IVertexAttribute.OffsetVertexAttributes(esriGeometryAttributes, double)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Offset all vertex attribute values of this type by the specified factor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OffsetVertexAttributes(esriGeometryAttributes attributeType, double Offset)
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    - id: Offset
+      type: System.Double
+    content.vb: Sub OffsetVertexAttributes(attributeType As esriGeometryAttributes, Offset As Double)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes*
+  nameWithType.vb: IVertexAttribute.OffsetVertexAttributes(esriGeometryAttributes, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, Double)
+  name.vb: OffsetVertexAttributes(esriGeometryAttributes, Double)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: InterpolateVertexAttributesBetween(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: InterpolateVertexAttributesBetween(int, int, int, int, int)
+  nameWithType: IVertexAttribute.InterpolateVertexAttributesBetween(int, int, int, int, int)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween(int, int, int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Generate vertex attribute values by linear interpolation for all vertices in the range [start+1, end-1]. (Sets point IDs to 0 rather than interpolating).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void InterpolateVertexAttributesBetween(int interpolatedAttributes, int startPart, int startPoint, int endPart, int endPoint)
+    parameters:
+    - id: interpolatedAttributes
+      type: System.Int32
+    - id: startPart
+      type: System.Int32
+    - id: startPoint
+      type: System.Int32
+    - id: endPart
+      type: System.Int32
+    - id: endPoint
+      type: System.Int32
+    content.vb: Sub InterpolateVertexAttributesBetween(interpolatedAttributes As Integer, startPart As Integer, startPoint As Integer, endPart As Integer, endPoint As Integer)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween*
+  nameWithType.vb: IVertexAttribute.InterpolateVertexAttributesBetween(Integer, Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween(Integer, Integer, Integer, Integer, Integer)
+  name.vb: InterpolateVertexAttributesBetween(Integer, Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,ESRI.ArcGIS.Geometry.esriExtrapolationEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,ESRI.ArcGIS.Geometry.esriExtrapolationEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  id: ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes,ESRI.ArcGIS.Geometry.esriExtrapolationEnum,System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: ExtrapolateVertexAttributes(esriGeometryAttributes, esriExtrapolationEnum, int, int, int, int)
+  nameWithType: IVertexAttribute.ExtrapolateVertexAttributes(esriGeometryAttributes, esriExtrapolationEnum, int, int, int, int)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, ESRI.ArcGIS.Geometry.esriExtrapolationEnum, int, int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Extrapolates the attribute values at the begining of the geometry up to the fromIndex based on the attribute value interval between the fromIndex and the toIndex.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ExtrapolateVertexAttributes(esriGeometryAttributes attributeType, esriExtrapolationEnum extrapolationStyle, int startPart, int startPoint, int endPart, int endPoint)
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    - id: extrapolationStyle
+      type: ESRI.ArcGIS.Geometry.esriExtrapolationEnum
+    - id: startPart
+      type: System.Int32
+    - id: startPoint
+      type: System.Int32
+    - id: endPart
+      type: System.Int32
+    - id: endPoint
+      type: System.Int32
+    content.vb: Sub ExtrapolateVertexAttributes(attributeType As esriGeometryAttributes, extrapolationStyle As esriExtrapolationEnum, startPart As Integer, startPoint As Integer, endPart As Integer, endPoint As Integer)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes*
+  nameWithType.vb: IVertexAttribute.ExtrapolateVertexAttributes(esriGeometryAttributes, esriExtrapolationEnum, Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes, ESRI.ArcGIS.Geometry.esriExtrapolationEnum, Integer, Integer, Integer, Integer)
+  name.vb: ExtrapolateVertexAttributes(esriGeometryAttributes, esriExtrapolationEnum, Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  id: CalculateNonSimpleVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: CalculateNonSimpleVertexAttributes(esriGeometryAttributes)
+  nameWithType: IVertexAttribute.CalculateNonSimpleVertexAttributes(esriGeometryAttributes)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Extrapolates/interpolates the non-simple vertex attribute values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CalculateNonSimpleVertexAttributes(esriGeometryAttributes attributeType)
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    content.vb: Sub CalculateNonSimpleVertexAttributes(attributeType As esriGeometryAttributes)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes*
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes(ESRI.ArcGIS.Geometry.ICurve)
+  commentId: M:ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes(ESRI.ArcGIS.Geometry.ICurve)
+  id: TransferAttributes(ESRI.ArcGIS.Geometry.ICurve)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: TransferAttributes(ICurve)
+  nameWithType: IVertexAttribute.TransferAttributes(ICurve)
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes(ESRI.ArcGIS.Geometry.ICurve)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransferAttributes(ICurve srcCurve)
+    parameters:
+    - id: srcCurve
+      type: ESRI.ArcGIS.Geometry.ICurve
+    content.vb: Sub TransferAttributes(srcCurve As ICurve)
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes*
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  commentId: P:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  id: VertexAttributeSimple(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: VertexAttributeSimple[esriGeometryAttributes]
+  nameWithType: IVertexAttribute.VertexAttributeSimple[esriGeometryAttributes]
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple[ESRI.ArcGIS.Geometry.esriGeometryAttributes]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if there are no 'empty' vertex attribute values of this type for this object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool VertexAttributeSimple[esriGeometryAttributes attributeType] { get; }
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property VertexAttributeSimple(attributeType As esriGeometryAttributes) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple*
+  nameWithType.vb: IVertexAttribute.VertexAttributeSimple(esriGeometryAttributes)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  name.vb: VertexAttributeSimple(esriGeometryAttributes)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  commentId: P:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  id: VertexAttributeMin(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: VertexAttributeMin[esriGeometryAttributes]
+  nameWithType: IVertexAttribute.VertexAttributeMin[esriGeometryAttributes]
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin[ESRI.ArcGIS.Geometry.esriGeometryAttributes]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The minimum vertex attribute value of this type for all vertices in this object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double VertexAttributeMin[esriGeometryAttributes attributeType] { get; }
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property VertexAttributeMin(attributeType As esriGeometryAttributes) As Double
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin*
+  nameWithType.vb: IVertexAttribute.VertexAttributeMin(esriGeometryAttributes)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  name.vb: VertexAttributeMin(esriGeometryAttributes)
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  commentId: P:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  id: VertexAttributeMax(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  parent: ESRI.ArcGIS.Geometry.IVertexAttribute
+  langs:
+  - csharp
+  - vb
+  name: VertexAttributeMax[esriGeometryAttributes]
+  nameWithType: IVertexAttribute.VertexAttributeMax[esriGeometryAttributes]
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax[ESRI.ArcGIS.Geometry.esriGeometryAttributes]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The maximum vertex attribute value of this type for all vertices in this object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double VertexAttributeMax[esriGeometryAttributes attributeType] { get; }
+    parameters:
+    - id: attributeType
+      type: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property VertexAttributeMax(attributeType As esriGeometryAttributes) As Double
+  overload: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax*
+  nameWithType.vb: IVertexAttribute.VertexAttributeMax(esriGeometryAttributes)
+  fullName.vb: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax(ESRI.ArcGIS.Geometry.esriGeometryAttributes)
+  name.vb: VertexAttributeMax(esriGeometryAttributes)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_MultiplyVertexAttributes_ESRI_ArcGIS_Geometry_esriGeometryAttributes_System_Double_
+  name: MultiplyVertexAttributes
+  nameWithType: IVertexAttribute.MultiplyVertexAttributes
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.MultiplyVertexAttributes
+- uid: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryAttributes
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryAttributes.html
+  name: esriGeometryAttributes
+  nameWithType: esriGeometryAttributes
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryAttributes
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_OffsetVertexAttributes_ESRI_ArcGIS_Geometry_esriGeometryAttributes_System_Double_
+  name: OffsetVertexAttributes
+  nameWithType: IVertexAttribute.OffsetVertexAttributes
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.OffsetVertexAttributes
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_InterpolateVertexAttributesBetween_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: InterpolateVertexAttributesBetween
+  nameWithType: IVertexAttribute.InterpolateVertexAttributesBetween
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.InterpolateVertexAttributesBetween
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_ExtrapolateVertexAttributes_ESRI_ArcGIS_Geometry_esriGeometryAttributes_ESRI_ArcGIS_Geometry_esriExtrapolationEnum_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: ExtrapolateVertexAttributes
+  nameWithType: IVertexAttribute.ExtrapolateVertexAttributes
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.ExtrapolateVertexAttributes
+- uid: ESRI.ArcGIS.Geometry.esriExtrapolationEnum
+  commentId: T:ESRI.ArcGIS.Geometry.esriExtrapolationEnum
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriExtrapolationEnum.html
+  name: esriExtrapolationEnum
+  nameWithType: esriExtrapolationEnum
+  fullName: ESRI.ArcGIS.Geometry.esriExtrapolationEnum
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_CalculateNonSimpleVertexAttributes_ESRI_ArcGIS_Geometry_esriGeometryAttributes_
+  name: CalculateNonSimpleVertexAttributes
+  nameWithType: IVertexAttribute.CalculateNonSimpleVertexAttributes
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.CalculateNonSimpleVertexAttributes
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_TransferAttributes_ESRI_ArcGIS_Geometry_ICurve_
+  name: TransferAttributes
+  nameWithType: IVertexAttribute.TransferAttributes
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.TransferAttributes
+- uid: ESRI.ArcGIS.Geometry.ICurve
+  commentId: T:ESRI.ArcGIS.Geometry.ICurve
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ICurve.html
+  name: ICurve
+  nameWithType: ICurve
+  fullName: ESRI.ArcGIS.Geometry.ICurve
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_VertexAttributeSimple_ESRI_ArcGIS_Geometry_esriGeometryAttributes_
+  name: VertexAttributeSimple
+  nameWithType: IVertexAttribute.VertexAttributeSimple
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeSimple
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_VertexAttributeMin_ESRI_ArcGIS_Geometry_esriGeometryAttributes_
+  name: VertexAttributeMin
+  nameWithType: IVertexAttribute.VertexAttributeMin
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMin
+- uid: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IVertexAttribute.html#ESRI_ArcGIS_Geometry_IVertexAttribute_VertexAttributeMax_ESRI_ArcGIS_Geometry_esriGeometryAttributes_
+  name: VertexAttributeMax
+  nameWithType: IVertexAttribute.VertexAttributeMax
+  fullName: ESRI.ArcGIS.Geometry.IVertexAttribute.VertexAttributeMax

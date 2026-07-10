@@ -1,0 +1,598 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IGeometry3
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry3
+  id: IGeometry3
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+  - ESRI.ArcGIS.Geometry.IGeometry3.Envelope
+  - ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize
+  - ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude(System.Double)
+  - ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+  - ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+  - ESRI.ArcGIS.Geometry.IGeometry3.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation,System.Boolean,System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope(ESRI.ArcGIS.esriSystem.WKSEnvelope@)
+  - ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty
+  - ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference
+  - ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+  langs:
+  - csharp
+  - vb
+  name: IGeometry3
+  nameWithType: IGeometry3
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides rapid access to a geometry's extent in the x-y plane.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D034F81B-7137-40A6-90EA-D88968C33E60")]
+
+      public interface IGeometry3 : IGeometry2, IGeometry
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D034F81B-7137-40A6-90EA-D88968C33E60")>
+
+      Public Interface IGeometry3 Inherits IGeometry2, IGeometry
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.GeometryBagClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D034F81B-7137-40A6-90EA-D88968C33E60
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty
+  id: SetEmpty
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: SetEmpty()
+  nameWithType: IGeometry3.SetEmpty()
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetEmpty()
+    content.vb: Sub SetEmpty()
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  id: QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: QueryEnvelope(IEnvelope)
+  nameWithType: IGeometry3.QueryEnvelope(IEnvelope)
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryEnvelope(IEnvelope outEnvelope)
+    parameters:
+    - id: outEnvelope
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub QueryEnvelope(outEnvelope As IEnvelope)
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: Project(ISpatialReference)
+  nameWithType: IGeometry3.Project(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Project(ISpatialReference newReferenceSystem)
+    parameters:
+    - id: newReferenceSystem
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub Project(newReferenceSystem As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.Project*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference
+  id: SnapToSpatialReference
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: SnapToSpatialReference()
+  nameWithType: IGeometry3.SnapToSpatialReference()
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SnapToSpatialReference()
+    content.vb: Sub SnapToSpatialReference()
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize
+  id: GeoNormalize
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: GeoNormalize()
+  nameWithType: IGeometry3.GeoNormalize()
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GeoNormalize()
+    content.vb: Sub GeoNormalize()
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude(System.Double)
+  id: GeoNormalizeFromLongitude(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: GeoNormalizeFromLongitude(double)
+  nameWithType: IGeometry3.GeoNormalizeFromLongitude(double)
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GeoNormalizeFromLongitude(double Longitude)
+    parameters:
+    - id: Longitude
+      type: System.Double
+    content.vb: Sub GeoNormalizeFromLongitude(Longitude As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude*
+  nameWithType.vb: IGeometry3.GeoNormalizeFromLongitude(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude(Double)
+  name.vb: GeoNormalizeFromLongitude(Double)
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation,System.Boolean,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation,System.Boolean,System.Double,System.Double)
+  id: ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IGeoTransformation,System.Boolean,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: ProjectEx(ISpatialReference, esriTransformDirection, IGeoTransformation, bool, double, double)
+  nameWithType: IGeometry3.ProjectEx(ISpatialReference, esriTransformDirection, IGeoTransformation, bool, double, double)
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IGeoTransformation, bool, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ProjectEx(ISpatialReference newReferenceSystem, esriTransformDirection Direction, IGeoTransformation GeoTransformation, bool bAngularDensify, double maxSegmentLength, double maxDeviation)
+    parameters:
+    - id: newReferenceSystem
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: GeoTransformation
+      type: ESRI.ArcGIS.Geometry.IGeoTransformation
+    - id: bAngularDensify
+      type: System.Boolean
+    - id: maxSegmentLength
+      type: System.Double
+    - id: maxDeviation
+      type: System.Double
+    content.vb: Sub ProjectEx(newReferenceSystem As ISpatialReference, Direction As esriTransformDirection, GeoTransformation As IGeoTransformation, bAngularDensify As Boolean, maxSegmentLength As Double, maxDeviation As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx*
+  nameWithType.vb: IGeometry3.ProjectEx(ISpatialReference, esriTransformDirection, IGeoTransformation, Boolean, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IGeoTransformation, Boolean, Double, Double)
+  name.vb: ProjectEx(ISpatialReference, esriTransformDirection, IGeoTransformation, Boolean, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope(ESRI.ArcGIS.esriSystem.WKSEnvelope@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope(ESRI.ArcGIS.esriSystem.WKSEnvelope@)
+  id: QueryWKSEnvelope(ESRI.ArcGIS.esriSystem.WKSEnvelope@)
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: QueryWKSEnvelope(out WKSEnvelope)
+  nameWithType: IGeometry3.QueryWKSEnvelope(out WKSEnvelope)
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope(out ESRI.ArcGIS.esriSystem.WKSEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryWKSEnvelope(out WKSEnvelope e)
+    parameters:
+    - id: e
+      type: ESRI.ArcGIS.esriSystem.WKSEnvelope
+    content.vb: Sub QueryWKSEnvelope(e As WKSEnvelope)
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope*
+  nameWithType.vb: IGeometry3.QueryWKSEnvelope(WKSEnvelope)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope(ESRI.ArcGIS.esriSystem.WKSEnvelope)
+  name.vb: QueryWKSEnvelope(WKSEnvelope)
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+  commentId: P:ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+  id: GeometryType
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: GeometryType
+  nameWithType: IGeometry3.GeometryType
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: esriGeometryType GeometryType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    content.vb: ReadOnly Property GeometryType As esriGeometryType
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.GeometryType*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+  commentId: P:ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+  id: Dimension
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: IGeometry3.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: esriGeometryDimension Dimension { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryDimension
+    content.vb: ReadOnly Property Dimension As esriGeometryDimension
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.Dimension*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IGeometry3.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+  commentId: P:ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+  id: IsEmpty
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: IGeometry3.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEmpty As Boolean
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty*
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Envelope
+  commentId: P:ESRI.ArcGIS.Geometry.IGeometry3.Envelope
+  id: Envelope
+  parent: ESRI.ArcGIS.Geometry.IGeometry3
+  langs:
+  - csharp
+  - vb
+  name: Envelope
+  nameWithType: IGeometry3.Envelope
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Envelope
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IEnvelope Envelope { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Envelope As IEnvelope
+  overload: ESRI.ArcGIS.Geometry.IGeometry3.Envelope*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_SetEmpty
+  name: SetEmpty
+  nameWithType: IGeometry3.SetEmpty
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SetEmpty
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_QueryEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: QueryEnvelope
+  nameWithType: IGeometry3.QueryEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.QueryEnvelope
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Project*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.Project
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_Project_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: Project
+  nameWithType: IGeometry3.Project
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Project
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_SnapToSpatialReference
+  name: SnapToSpatialReference
+  nameWithType: IGeometry3.SnapToSpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SnapToSpatialReference
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_GeoNormalize
+  name: GeoNormalize
+  nameWithType: IGeometry3.GeoNormalize
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalize
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_GeoNormalizeFromLongitude_System_Double_
+  name: GeoNormalizeFromLongitude
+  nameWithType: IGeometry3.GeoNormalizeFromLongitude
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeoNormalizeFromLongitude
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_ProjectEx_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IGeoTransformation_System_Boolean_System_Double_System_Double_
+  name: ProjectEx
+  nameWithType: IGeometry3.ProjectEx
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.ProjectEx
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: ESRI.ArcGIS.Geometry.IGeoTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.IGeoTransformation
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeoTransformation.html
+  name: IGeoTransformation
+  nameWithType: IGeoTransformation
+  fullName: ESRI.ArcGIS.Geometry.IGeoTransformation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_QueryWKSEnvelope_ESRI_ArcGIS_esriSystem_WKSEnvelope__
+  name: QueryWKSEnvelope
+  nameWithType: IGeometry3.QueryWKSEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.QueryWKSEnvelope
+- uid: ESRI.ArcGIS.esriSystem.WKSEnvelope
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSEnvelope
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSEnvelope.html
+  name: WKSEnvelope
+  nameWithType: WKSEnvelope
+  fullName: ESRI.ArcGIS.esriSystem.WKSEnvelope
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.GeometryType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_GeometryType
+  name: GeometryType
+  nameWithType: IGeometry3.GeometryType
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.GeometryType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Dimension*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_Dimension
+  name: Dimension
+  nameWithType: IGeometry3.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Dimension
+- uid: ESRI.ArcGIS.Geometry.esriGeometryDimension
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryDimension
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryDimension.html
+  name: esriGeometryDimension
+  nameWithType: esriGeometryDimension
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryDimension
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_SpatialReference
+  name: SpatialReference
+  nameWithType: IGeometry3.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_IsEmpty
+  name: IsEmpty
+  nameWithType: IGeometry3.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.IsEmpty
+- uid: ESRI.ArcGIS.Geometry.IGeometry3.Envelope*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometry3.Envelope
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry3.html#ESRI_ArcGIS_Geometry_IGeometry3_Envelope
+  name: Envelope
+  nameWithType: IGeometry3.Envelope
+  fullName: ESRI.ArcGIS.Geometry.IGeometry3.Envelope

@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServerContext
+  commentId: T:ESRI.ArcGIS.Server.IServerContext
+  id: IServerContext
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServerContext.CreateObject(System.String)
+  - ESRI.ArcGIS.Server.IServerContext.GetObject(System.String)
+  - ESRI.ArcGIS.Server.IServerContext.LoadObject(System.String)
+  - ESRI.ArcGIS.Server.IServerContext.ReleaseContext
+  - ESRI.ArcGIS.Server.IServerContext.Remove(System.String)
+  - ESRI.ArcGIS.Server.IServerContext.RemoveAll
+  - ESRI.ArcGIS.Server.IServerContext.SaveObject(System.Object)
+  - ESRI.ArcGIS.Server.IServerContext.ServerObject
+  - ESRI.ArcGIS.Server.IServerContext.SetObject(System.String,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IServerContext
+  nameWithType: IServerContext
+  fullName: ESRI.ArcGIS.Server.IServerContext
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to members for managing a server context, and the objects running within that server context.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("A87FDD99-6112-410C-B75E-FEFFF5EACE35")]
+
+      public interface IServerContext
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("A87FDD99-6112-410C-B75E-FEFFF5EACE35")>
+
+      Public Interface IServerContext
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A87FDD99-6112-410C-B75E-FEFFF5EACE35
+- uid: ESRI.ArcGIS.Server.IServerContext.CreateObject(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.CreateObject(System.String)
+  id: CreateObject(System.String)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: CreateObject(string)
+  nameWithType: IServerContext.CreateObject(string)
+  fullName: ESRI.ArcGIS.Server.IServerContext.CreateObject(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Create an object in the server context whose type is specified by the CLSID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object CreateObject(string CLSID)
+    parameters:
+    - id: CLSID
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function CreateObject(CLSID As String) As Object
+  overload: ESRI.ArcGIS.Server.IServerContext.CreateObject*
+  nameWithType.vb: IServerContext.CreateObject(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.CreateObject(String)
+  name.vb: CreateObject(String)
+- uid: ESRI.ArcGIS.Server.IServerContext.LoadObject(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.LoadObject(System.String)
+  id: LoadObject(System.String)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: LoadObject(string)
+  nameWithType: IServerContext.LoadObject(string)
+  fullName: ESRI.ArcGIS.Server.IServerContext.LoadObject(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Create an object in the server context from a string that was created by saving an object using SaveObject.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object LoadObject(string str)
+    parameters:
+    - id: str
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function LoadObject(str As String) As Object
+  overload: ESRI.ArcGIS.Server.IServerContext.LoadObject*
+  nameWithType.vb: IServerContext.LoadObject(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.LoadObject(String)
+  name.vb: LoadObject(String)
+- uid: ESRI.ArcGIS.Server.IServerContext.SaveObject(System.Object)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.SaveObject(System.Object)
+  id: SaveObject(System.Object)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: SaveObject(object)
+  nameWithType: IServerContext.SaveObject(object)
+  fullName: ESRI.ArcGIS.Server.IServerContext.SaveObject(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Save an object in the server context to a string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SaveObject(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: Function SaveObject(obj As Object) As String
+  overload: ESRI.ArcGIS.Server.IServerContext.SaveObject*
+  nameWithType.vb: IServerContext.SaveObject(Object)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.SaveObject(Object)
+  name.vb: SaveObject(Object)
+- uid: ESRI.ArcGIS.Server.IServerContext.GetObject(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.GetObject(System.String)
+  id: GetObject(System.String)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: GetObject(string)
+  nameWithType: IServerContext.GetObject(string)
+  fullName: ESRI.ArcGIS.Server.IServerContext.GetObject(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Get a reference to an object in the server context's object dictionary by its Name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetObject(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Function GetObject(Name As String) As Object
+  overload: ESRI.ArcGIS.Server.IServerContext.GetObject*
+  nameWithType.vb: IServerContext.GetObject(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.GetObject(String)
+  name.vb: GetObject(String)
+- uid: ESRI.ArcGIS.Server.IServerContext.SetObject(System.String,System.Object)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.SetObject(System.String,System.Object)
+  id: SetObject(System.String,System.Object)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: SetObject(string, object)
+  nameWithType: IServerContext.SetObject(string, object)
+  fullName: ESRI.ArcGIS.Server.IServerContext.SetObject(string, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Add an object running in the server context to the context's object dictionary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetObject(string Name, object obj)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: obj
+      type: System.Object
+    content.vb: Sub SetObject(Name As String, obj As Object)
+  overload: ESRI.ArcGIS.Server.IServerContext.SetObject*
+  nameWithType.vb: IServerContext.SetObject(String, Object)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.SetObject(String, Object)
+  name.vb: SetObject(String, Object)
+- uid: ESRI.ArcGIS.Server.IServerContext.Remove(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.Remove(System.String)
+  id: Remove(System.String)
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: Remove(string)
+  nameWithType: IServerContext.Remove(string)
+  fullName: ESRI.ArcGIS.Server.IServerContext.Remove(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Remove an object from the server context's object dictionary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Remove(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Sub Remove(Name As String)
+  overload: ESRI.ArcGIS.Server.IServerContext.Remove*
+  nameWithType.vb: IServerContext.Remove(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServerContext.Remove(String)
+  name.vb: Remove(String)
+- uid: ESRI.ArcGIS.Server.IServerContext.RemoveAll
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.RemoveAll
+  id: RemoveAll
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll()
+  nameWithType: IServerContext.RemoveAll()
+  fullName: ESRI.ArcGIS.Server.IServerContext.RemoveAll()
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Remove all objects from the server context's object dictionary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveAll()
+    content.vb: Sub RemoveAll()
+  overload: ESRI.ArcGIS.Server.IServerContext.RemoveAll*
+- uid: ESRI.ArcGIS.Server.IServerContext.ReleaseContext
+  commentId: M:ESRI.ArcGIS.Server.IServerContext.ReleaseContext
+  id: ReleaseContext
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: ReleaseContext()
+  nameWithType: IServerContext.ReleaseContext()
+  fullName: ESRI.ArcGIS.Server.IServerContext.ReleaseContext()
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Release the server context back to the server so it can be used by another client (if pooled), or so it can be destroyed (if non-pooled).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ReleaseContext()
+    content.vb: Sub ReleaseContext()
+  overload: ESRI.ArcGIS.Server.IServerContext.ReleaseContext*
+- uid: ESRI.ArcGIS.Server.IServerContext.ServerObject
+  commentId: P:ESRI.ArcGIS.Server.IServerContext.ServerObject
+  id: ServerObject
+  parent: ESRI.ArcGIS.Server.IServerContext
+  langs:
+  - csharp
+  - vb
+  name: ServerObject
+  nameWithType: IServerContext.ServerObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.ServerObject
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The map or geocode server object running in the server context.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServerObject ServerObject { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServerObject
+    content.vb: ReadOnly Property ServerObject As IServerObject
+  overload: ESRI.ArcGIS.Server.IServerContext.ServerObject*
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServerContext.CreateObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.CreateObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_CreateObject_System_String_
+  name: CreateObject
+  nameWithType: IServerContext.CreateObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.CreateObject
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Server.IServerContext.LoadObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.LoadObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_LoadObject_System_String_
+  name: LoadObject
+  nameWithType: IServerContext.LoadObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.LoadObject
+- uid: ESRI.ArcGIS.Server.IServerContext.SaveObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.SaveObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_SaveObject_System_Object_
+  name: SaveObject
+  nameWithType: IServerContext.SaveObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.SaveObject
+- uid: ESRI.ArcGIS.Server.IServerContext.GetObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.GetObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_GetObject_System_String_
+  name: GetObject
+  nameWithType: IServerContext.GetObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.GetObject
+- uid: ESRI.ArcGIS.Server.IServerContext.SetObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.SetObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_SetObject_System_String_System_Object_
+  name: SetObject
+  nameWithType: IServerContext.SetObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.SetObject
+- uid: ESRI.ArcGIS.Server.IServerContext.Remove*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.Remove
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_Remove_System_String_
+  name: Remove
+  nameWithType: IServerContext.Remove
+  fullName: ESRI.ArcGIS.Server.IServerContext.Remove
+- uid: ESRI.ArcGIS.Server.IServerContext.RemoveAll*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.RemoveAll
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_RemoveAll
+  name: RemoveAll
+  nameWithType: IServerContext.RemoveAll
+  fullName: ESRI.ArcGIS.Server.IServerContext.RemoveAll
+- uid: ESRI.ArcGIS.Server.IServerContext.ReleaseContext*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.ReleaseContext
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_ReleaseContext
+  name: ReleaseContext
+  nameWithType: IServerContext.ReleaseContext
+  fullName: ESRI.ArcGIS.Server.IServerContext.ReleaseContext
+- uid: ESRI.ArcGIS.Server.IServerContext.ServerObject*
+  commentId: Overload:ESRI.ArcGIS.Server.IServerContext.ServerObject
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerContext.html#ESRI_ArcGIS_Server_IServerContext_ServerObject
+  name: ServerObject
+  nameWithType: IServerContext.ServerObject
+  fullName: ESRI.ArcGIS.Server.IServerContext.ServerObject
+- uid: ESRI.ArcGIS.Server.IServerObject
+  commentId: T:ESRI.ArcGIS.Server.IServerObject
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServerObject.html
+  name: IServerObject
+  nameWithType: IServerObject
+  fullName: ESRI.ArcGIS.Server.IServerObject

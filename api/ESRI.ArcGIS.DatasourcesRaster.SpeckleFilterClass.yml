@@ -1,0 +1,1308 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  id: SpeckleFilterClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize(System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SpeckleFilterClass
+  nameWithType: SpeckleFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [Guid("5FD8DD36-A4B1-484B-8EDA-B3888CB7977D")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class SpeckleFilterClass : SpeckleFilter, IPixelFilter, ISpeckleFilter
+    content.vb: >-
+      <Guid("5FD8DD36-A4B1-484B-8EDA-B3888CB7977D")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class SpeckleFilterClass Implements SpeckleFilter, IPixelFilter, ISpeckleFilter
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilter
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5FD8DD36-A4B1-484B-8EDA-B3888CB7977D
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: SpeckleFilterClass()
+  nameWithType: SpeckleFilterClass.SpeckleFilterClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SpeckleFilterClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public SpeckleFilterClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor*
+  nameWithType.vb: SpeckleFilterClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: SpeckleFilterClass.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets dimension of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetSize(ref int Columns, ref int Rows)
+    parameters:
+    - id: Columns
+      type: System.Int32
+    - id: Rows
+      type: System.Int32
+    content.vb: Overridable Sub GetSize(Columns As Integer, Rows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  nameWithType.vb: SpeckleFilterClass.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: SpeckleFilterClass.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets center position of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Overridable Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  nameWithType.vb: SpeckleFilterClass.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: Filter(IPixelBlock)
+  nameWithType: SpeckleFilterClass.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  example: []
+  syntax:
+    content: virtual void Filter(IPixelBlock pBlock)
+    parameters:
+    - id: pBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Overridable Sub Filter(pBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize(System.Int32,System.Int32)
+  id: SetSize(System.Int32,System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: SetSize(int, int)
+  nameWithType: SpeckleFilterClass.SetSize(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Sets the size of the speckle filter kernel.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void SetSize(int nColumns, int nRows)
+    parameters:
+    - id: nColumns
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    content.vb: Overridable Sub SetSize(nColumns As Integer, nRows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(System.Int32,System.Int32)
+  nameWithType.vb: SpeckleFilterClass.SetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize(Integer, Integer)
+  name.vb: SetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize(System.Int32@,System.Int32@)
+  id: ISpeckleFilter_GetSize(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: ISpeckleFilter_GetSize(ref int, ref int)
+  nameWithType: SpeckleFilterClass.ISpeckleFilter_GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the size of the speckle filter kernel.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void ISpeckleFilter_GetSize(ref int nColumns, ref int nRows)
+    parameters:
+    - id: nColumns
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    content.vb: Overridable Sub ISpeckleFilter_GetSize(nColumns As Integer, nRows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(System.Int32@,System.Int32@)
+  nameWithType.vb: SpeckleFilterClass.ISpeckleFilter_GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize(Integer, Integer)
+  name.vb: ISpeckleFilter_GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(System.Int32@,System.Int32@)
+  id: ISpeckleFilter_GetCenterPosition(System.Int32@,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: ISpeckleFilter_GetCenterPosition(ref int, ref int)
+  nameWithType: SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the center position of the speckle filter kernel.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void ISpeckleFilter_GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Overridable Sub ISpeckleFilter_GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  nameWithType.vb: SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition(Integer, Integer)
+  name.vb: ISpeckleFilter_GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+  id: FilterType
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: FilterType
+  nameWithType: SpeckleFilterClass.FilterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The speckle filter type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual esriSpeckleFilterType FilterType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleFilterType
+    content.vb: Overridable Property FilterType As esriSpeckleFilterType
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.FilterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+  id: NoiseModel
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: NoiseModel
+  nameWithType: SpeckleFilterClass.NoiseModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The speckle noise model. This parameter is used only for the Lee filter type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual esriSpeckleNoiseModel NoiseModel { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleNoiseModel
+    content.vb: Overridable Property NoiseModel As esriSpeckleNoiseModel
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseModel
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+  id: NoiseVariance
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: NoiseVariance
+  nameWithType: SpeckleFilterClass.NoiseVariance
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The noise variance. This parameter is used only for Lee filter with Additive or Additive and Multiplicative(both) noise models.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual double NoiseVariance { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Overridable Property NoiseVariance As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseVariance
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+  id: AdditiveNoiseMean
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: AdditiveNoiseMean
+  nameWithType: SpeckleFilterClass.AdditiveNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The mean additive noise. This parameter is used only for Lee filter with Additive and Multiplicative(both) noise models.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual double AdditiveNoiseMean { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Overridable Property AdditiveNoiseMean As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.AdditiveNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+  id: MultiplicativeNoiseMean
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: MultiplicativeNoiseMean
+  nameWithType: SpeckleFilterClass.MultiplicativeNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The mean multiplicative noise. This parameter is used only for Lee filter with Multiplicative or Additive and Multiplicative(both) noise models.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual double MultiplicativeNoiseMean { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Overridable Property MultiplicativeNoiseMean As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.MultiplicativeNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+  id: NLooks
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: NLooks
+  nameWithType: SpeckleFilterClass.NLooks
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The number of looks. This parameter is used only for Lee filter with Multiplicative noise model as well as the Enhanced Lee filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int NLooks { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable Property NLooks As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NLooks
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+  id: DampFactor
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  langs:
+  - csharp
+  - vb
+  name: DampFactor
+  nameWithType: SpeckleFilterClass.DampFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The extent of damping applied. This parameter is used only for Enhanced Lee filter and Frost filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual double DampFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Overridable Property DampFactor As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.DampFactor
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilter.html
+  name: SpeckleFilter
+  nameWithType: SpeckleFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html
+  name: IPixelFilter
+  nameWithType: IPixelFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html
+  name: ISpeckleFilter
+  nameWithType: ISpeckleFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass__ctor
+  name: SpeckleFilterClass
+  nameWithType: SpeckleFilterClass.SpeckleFilterClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SpeckleFilterClass
+  nameWithType.vb: SpeckleFilterClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: SpeckleFilterClass.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize(ref int, ref int)
+  nameWithType: IPixelFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: SpeckleFilterClass.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IPixelFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(ref int, ref int)
+  nameWithType.vb: IPixelFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter
+  nameWithType: SpeckleFilterClass.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.Filter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter(IPixelBlock)
+  nameWithType: IPixelFilter.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+    name: Filter
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    name: IPixelBlock
+    isExternal: true
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_SetSize_System_Int32_System_Int32_
+  name: SetSize
+  nameWithType: SpeckleFilterClass.SetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.SetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_SetSize_System_Int32_System_Int32_
+  name: SetSize(int, int)
+  nameWithType: ISpeckleFilter.SetSize(int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(int, int)
+  nameWithType.vb: ISpeckleFilter.SetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(Integer, Integer)
+  name.vb: SetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(System.Int32,System.Int32)
+    name: SetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_SetSize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.SetSize(System.Int32,System.Int32)
+    name: SetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_SetSize_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_ISpeckleFilter_GetSize_System_Int32__System_Int32__
+  name: ISpeckleFilter_GetSize
+  nameWithType: SpeckleFilterClass.ISpeckleFilter_GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize(ref int, ref int)
+  nameWithType: ISpeckleFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(ref int, ref int)
+  nameWithType.vb: ISpeckleFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetSize(System.Int32@,System.Int32@)
+    name: GetSize
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetSize_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_ISpeckleFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: ISpeckleFilter_GetCenterPosition
+  nameWithType: SpeckleFilterClass.ISpeckleFilter_GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.ISpeckleFilter_GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: ISpeckleFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(ref int, ref int)
+  nameWithType.vb: ISpeckleFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.GetCenterPosition(System.Int32@,System.Int32@)
+    name: GetCenterPosition
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_GetCenterPosition_System_Int32__System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_FilterType
+  name: FilterType
+  nameWithType: SpeckleFilterClass.FilterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.FilterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.FilterType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.FilterType
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_FilterType
+  name: FilterType
+  nameWithType: ISpeckleFilter.FilterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.FilterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleFilterType
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriSpeckleFilterType
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleFilterType.html
+  name: esriSpeckleFilterType
+  nameWithType: esriSpeckleFilterType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleFilterType
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_NoiseModel
+  name: NoiseModel
+  nameWithType: SpeckleFilterClass.NoiseModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseModel
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseModel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseModel
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_NoiseModel
+  name: NoiseModel
+  nameWithType: ISpeckleFilter.NoiseModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseModel
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleNoiseModel
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriSpeckleNoiseModel
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleNoiseModel.html
+  name: esriSpeckleNoiseModel
+  nameWithType: esriSpeckleNoiseModel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriSpeckleNoiseModel
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_NoiseVariance
+  name: NoiseVariance
+  nameWithType: SpeckleFilterClass.NoiseVariance
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NoiseVariance
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseVariance
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseVariance
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_NoiseVariance
+  name: NoiseVariance
+  nameWithType: ISpeckleFilter.NoiseVariance
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NoiseVariance
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_AdditiveNoiseMean
+  name: AdditiveNoiseMean
+  nameWithType: SpeckleFilterClass.AdditiveNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.AdditiveNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.AdditiveNoiseMean
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.AdditiveNoiseMean
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_AdditiveNoiseMean
+  name: AdditiveNoiseMean
+  nameWithType: ISpeckleFilter.AdditiveNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.AdditiveNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_MultiplicativeNoiseMean
+  name: MultiplicativeNoiseMean
+  nameWithType: SpeckleFilterClass.MultiplicativeNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.MultiplicativeNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.MultiplicativeNoiseMean
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.MultiplicativeNoiseMean
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_MultiplicativeNoiseMean
+  name: MultiplicativeNoiseMean
+  nameWithType: ISpeckleFilter.MultiplicativeNoiseMean
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.MultiplicativeNoiseMean
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_NLooks
+  name: NLooks
+  nameWithType: SpeckleFilterClass.NLooks
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.NLooks
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NLooks
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NLooks
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_NLooks
+  name: NLooks
+  nameWithType: ISpeckleFilter.NLooks
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.NLooks
+- uid: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.html#ESRI_ArcGIS_DatasourcesRaster_SpeckleFilterClass_DampFactor
+  name: DampFactor
+  nameWithType: SpeckleFilterClass.DampFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass.DampFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.DampFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.DampFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.html#ESRI_ArcGIS_DatasourcesRaster_ISpeckleFilter_DampFactor
+  name: DampFactor
+  nameWithType: ISpeckleFilter.DampFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISpeckleFilter.DampFactor

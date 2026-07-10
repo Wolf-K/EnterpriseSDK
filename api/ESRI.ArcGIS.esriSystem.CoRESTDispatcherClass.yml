@@ -1,0 +1,855 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  commentId: T:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  id: CoRESTDispatcherClass
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  langs:
+  - csharp
+  - vb
+  name: CoRESTDispatcherClass
+  nameWithType: CoRESTDispatcherClass
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  type: Class
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: >-
+      [Guid("0D52FCD9-6647-432C-B15B-B141AB0A349F")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class CoRESTDispatcherClass : CoRESTDispatcher, IRESTDispatcher, IRESTRequestHandler
+    content.vb: >-
+      <Guid("0D52FCD9-6647-432C-B15B-B141AB0A349F")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class CoRESTDispatcherClass Implements CoRESTDispatcher, IRESTDispatcher, IRESTRequestHandler
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcher
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  - ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0D52FCD9-6647-432C-B15B-B141AB0A349F
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor
+  commentId: M:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  langs:
+  - csharp
+  - vb
+  name: CoRESTDispatcherClass()
+  nameWithType: CoRESTDispatcherClass.CoRESTDispatcherClass()
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.CoRESTDispatcherClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: public CoRESTDispatcherClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor*
+  nameWithType.vb: CoRESTDispatcherClass.New()
+  fullName.vb: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  id: HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  isEii: true
+  parent: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  langs:
+  - csharp
+  - vb
+  name: HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType: CoRESTDispatcherClass.HandleRESTRequest(string, string, string, string, string, string, out string)
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest(string, string, string, string, string, string, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  example: []
+  syntax:
+    content: virtual byte[] HandleRESTRequest(string Capabilities, string resourceName, string operationName, string operationInput, string outputFormat, string requestProperties, out string responseProperties)
+    parameters:
+    - id: Capabilities
+      type: System.String
+    - id: resourceName
+      type: System.String
+    - id: operationName
+      type: System.String
+    - id: operationInput
+      type: System.String
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Overridable Function HandleRESTRequest(Capabilities As String, resourceName As String, operationName As String, operationInput As String, outputFormat As String, requestProperties As String, responseProperties As String) As Byte()
+  overload: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  - ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  nameWithType.vb: CoRESTDispatcherClass.HandleRESTRequest(String, String, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest(String, String, String, String, String, String, String)
+  name.vb: HandleRESTRequest(String, String, String, String, String, String, String)
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema
+  commentId: M:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema
+  id: GetSchema
+  isEii: true
+  parent: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: CoRESTDispatcherClass.GetSchema()
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  example: []
+  syntax:
+    content: virtual string GetSchema()
+    return:
+      type: System.String
+    content.vb: Overridable Function GetSchema() As String
+  overload: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  - ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  commentId: M:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  id: Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  isEii: true
+  parent: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  langs:
+  - csharp
+  - vb
+  name: Init(IRESTResource, IRESTCallback)
+  nameWithType: CoRESTDispatcherClass.Init(IRESTResource, IRESTCallback)
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init(ESRI.ArcGIS.esriSystem.IRESTResource, ESRI.ArcGIS.esriSystem.IRESTCallback)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  example: []
+  syntax:
+    content: virtual void Init(IRESTResource root, IRESTCallback handler)
+    parameters:
+    - id: root
+      type: ESRI.ArcGIS.esriSystem.IRESTResource
+    - id: handler
+      type: ESRI.ArcGIS.esriSystem.IRESTCallback
+    content.vb: Overridable Sub Init(root As IRESTResource, handler As IRESTCallback)
+  overload: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcher
+  commentId: T:ESRI.ArcGIS.esriSystem.CoRESTDispatcher
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.CoRESTDispatcher.html
+  name: CoRESTDispatcher
+  nameWithType: CoRESTDispatcher
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcher
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html
+  name: IRESTDispatcher
+  nameWithType: IRESTDispatcher
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html
+  name: IRESTRequestHandler
+  nameWithType: IRESTRequestHandler
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.html#ESRI_ArcGIS_esriSystem_CoRESTDispatcherClass__ctor
+  name: CoRESTDispatcherClass
+  nameWithType: CoRESTDispatcherClass.CoRESTDispatcherClass
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.CoRESTDispatcherClass
+  nameWithType.vb: CoRESTDispatcherClass.New
+  fullName.vb: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.html#ESRI_ArcGIS_esriSystem_CoRESTDispatcherClass_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  name: HandleRESTRequest
+  nameWithType: CoRESTDispatcherClass.HandleRESTRequest
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.HandleRESTRequest
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  name: HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType: IRESTDispatcher.HandleRESTRequest(string, string, string, string, string, string, out string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType.vb: IRESTDispatcher.HandleRESTRequest(String, String, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(String, String, String, String, String, String, String)
+  name.vb: HandleRESTRequest(String, String, String, String, String, String, String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+    name: HandleRESTRequest
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+    name: HandleRESTRequest
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  parent: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  name: HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType: IRESTRequestHandler.HandleRESTRequest(string, string, string, string, string, string, out string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType.vb: IRESTRequestHandler.HandleRESTRequest(String, String, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(String, String, String, String, String, String, String)
+  name.vb: HandleRESTRequest(String, String, String, String, String, String, String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+    name: HandleRESTRequest
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+    name: HandleRESTRequest
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.html#ESRI_ArcGIS_esriSystem_CoRESTDispatcherClass_GetSchema
+  name: GetSchema
+  nameWithType: CoRESTDispatcherClass.GetSchema
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.GetSchema
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_GetSchema
+  name: GetSchema()
+  nameWithType: IRESTDispatcher.GetSchema()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_GetSchema
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  parent: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_GetSchema
+  name: GetSchema()
+  nameWithType: IRESTRequestHandler.GetSchema()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_GetSchema
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+    name: GetSchema
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_GetSchema
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.html#ESRI_ArcGIS_esriSystem_CoRESTDispatcherClass_Init_ESRI_ArcGIS_esriSystem_IRESTResource_ESRI_ArcGIS_esriSystem_IRESTCallback_
+  name: Init
+  nameWithType: CoRESTDispatcherClass.Init
+  fullName: ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass.Init
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_Init_ESRI_ArcGIS_esriSystem_IRESTResource_ESRI_ArcGIS_esriSystem_IRESTCallback_
+  name: Init(IRESTResource, IRESTCallback)
+  nameWithType: IRESTDispatcher.Init(IRESTResource, IRESTCallback)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource, ESRI.ArcGIS.esriSystem.IRESTCallback)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+    name: Init
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_Init_ESRI_ArcGIS_esriSystem_IRESTResource_ESRI_ArcGIS_esriSystem_IRESTCallback_
+  - name: (
+  - uid: ESRI.ArcGIS.esriSystem.IRESTResource
+    name: IRESTResource
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTResource.html
+  - name: ','
+  - name: " "
+  - uid: ESRI.ArcGIS.esriSystem.IRESTCallback
+    name: IRESTCallback
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTCallback.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+    name: Init
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_Init_ESRI_ArcGIS_esriSystem_IRESTResource_ESRI_ArcGIS_esriSystem_IRESTCallback_
+  - name: (
+  - uid: ESRI.ArcGIS.esriSystem.IRESTResource
+    name: IRESTResource
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTResource.html
+  - name: ','
+  - name: " "
+  - uid: ESRI.ArcGIS.esriSystem.IRESTCallback
+    name: IRESTCallback
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.IRESTCallback.html
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTResource
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html
+  name: IRESTResource
+  nameWithType: IRESTResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource
+- uid: ESRI.ArcGIS.esriSystem.IRESTCallback
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTCallback
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTCallback.html
+  name: IRESTCallback
+  nameWithType: IRESTCallback
+  fullName: ESRI.ArcGIS.esriSystem.IRESTCallback

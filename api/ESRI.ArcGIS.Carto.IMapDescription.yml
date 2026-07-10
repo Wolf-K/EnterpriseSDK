@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IMapDescription
+  commentId: T:ESRI.ArcGIS.Carto.IMapDescription
+  id: IMapDescription
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+  - ESRI.ArcGIS.Carto.IMapDescription.MapArea
+  - ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+  - ESRI.ArcGIS.Carto.IMapDescription.Name
+  - ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+  - ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+  langs:
+  - csharp
+  - vb
+  name: IMapDescription
+  nameWithType: IMapDescription
+  fullName: ESRI.ArcGIS.Carto.IMapDescription
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to the available properties of a map description object.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("4A81AFFE-0883-4062-8536-85AB858A10A5")]
+
+      public interface IMapDescription
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("4A81AFFE-0883-4062-8536-85AB858A10A5")>
+
+      Public Interface IMapDescription
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.MapDescriptionClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4A81AFFE-0883-4062-8536-85AB858A10A5
+- uid: ESRI.ArcGIS.Carto.IMapDescription.Name
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.Name
+  id: Name
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IMapDescription.Name
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The name of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Carto.IMapDescription.Name*
+- uid: ESRI.ArcGIS.Carto.IMapDescription.MapArea
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.MapArea
+  id: MapArea
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: MapArea
+  nameWithType: IMapDescription.MapArea
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.MapArea
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The display area of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMapArea MapArea { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IMapArea
+    content.vb: Property MapArea As IMapArea
+  overload: ESRI.ArcGIS.Carto.IMapDescription.MapArea*
+- uid: ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+  id: LayerDescriptions
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: LayerDescriptions
+  nameWithType: IMapDescription.LayerDescriptions
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: A collection of Layer Description objects, each describing a layer within the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILayerDescriptions LayerDescriptions { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.ILayerDescriptions
+    content.vb: Property LayerDescriptions As ILayerDescriptions
+  overload: ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions*
+- uid: ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+  id: MapRotation
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: MapRotation
+  nameWithType: IMapDescription.MapRotation
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The angle/rotation of the map (data frame) in degrees, measured anti-clockwise.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MapRotation { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MapRotation As Double
+  overload: ESRI.ArcGIS.Carto.IMapDescription.MapRotation*
+- uid: ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IMapDescription.SpatialReference
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The spatial reference of the map (data frame).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Carto.IMapDescription.SpatialReference*
+- uid: ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+  commentId: P:ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+  id: TransparentColor
+  parent: ESRI.ArcGIS.Carto.IMapDescription
+  langs:
+  - csharp
+  - vb
+  name: TransparentColor
+  nameWithType: IMapDescription.TransparentColor
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The color that is transparent (100 %).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IColorDescription TransparentColor { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Carto.IColorDescription
+    content.vb: Property TransparentColor As IColorDescription
+  overload: ESRI.ArcGIS.Carto.IMapDescription.TransparentColor*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IMapDescription.Name*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_Name
+  name: Name
+  nameWithType: IMapDescription.Name
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IMapDescription.MapArea*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.MapArea
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_MapArea
+  name: MapArea
+  nameWithType: IMapDescription.MapArea
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.MapArea
+- uid: ESRI.ArcGIS.Carto.IMapArea
+  commentId: T:ESRI.ArcGIS.Carto.IMapArea
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapArea.html
+  name: IMapArea
+  nameWithType: IMapArea
+  fullName: ESRI.ArcGIS.Carto.IMapArea
+- uid: ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_LayerDescriptions
+  name: LayerDescriptions
+  nameWithType: IMapDescription.LayerDescriptions
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.LayerDescriptions
+- uid: ESRI.ArcGIS.Carto.ILayerDescriptions
+  commentId: T:ESRI.ArcGIS.Carto.ILayerDescriptions
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.ILayerDescriptions.html
+  name: ILayerDescriptions
+  nameWithType: ILayerDescriptions
+  fullName: ESRI.ArcGIS.Carto.ILayerDescriptions
+- uid: ESRI.ArcGIS.Carto.IMapDescription.MapRotation*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_MapRotation
+  name: MapRotation
+  nameWithType: IMapDescription.MapRotation
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.MapRotation
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Carto.IMapDescription.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_SpatialReference
+  name: SpatialReference
+  nameWithType: IMapDescription.SpatialReference
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Carto.IMapDescription.TransparentColor*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMapDescription.html#ESRI_ArcGIS_Carto_IMapDescription_TransparentColor
+  name: TransparentColor
+  nameWithType: IMapDescription.TransparentColor
+  fullName: ESRI.ArcGIS.Carto.IMapDescription.TransparentColor
+- uid: ESRI.ArcGIS.Carto.IColorDescription
+  commentId: T:ESRI.ArcGIS.Carto.IColorDescription
+  parent: ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IColorDescription.html
+  name: IColorDescription
+  nameWithType: IColorDescription
+  fullName: ESRI.ArcGIS.Carto.IColorDescription

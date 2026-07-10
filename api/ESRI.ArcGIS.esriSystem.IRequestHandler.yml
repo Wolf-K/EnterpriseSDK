@@ -1,0 +1,210 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IRequestHandler
+  commentId: T:ESRI.ArcGIS.esriSystem.IRequestHandler
+  id: IRequestHandler
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest(System.Byte[]@)
+  - ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRequestHandler
+  nameWithType: IRequestHandler
+  fullName: ESRI.ArcGIS.esriSystem.IRequestHandler
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that control handing of request messages.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("46A0E2EA-3B64-4A46-BD78-88A1660F35BB")]
+
+      public interface IRequestHandler
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("46A0E2EA-3B64-4A46-BD78-88A1660F35BB")>
+
+      Public Interface IRequestHandler
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.ImageServerClass
+  - ESRI.ArcGIS.Carto.MapServerClass
+  - ESRI.ArcGIS.Geodatabase.GeometryServerClass
+  - ESRI.ArcGIS.Geometry.GeometryServerImplClass
+  - ESRI.Server.SOESupport.SoeSoapImpl
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 46A0E2EA-3B64-4A46-BD78-88A1660F35BB
+- uid: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest(System.Byte[]@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest(System.Byte[]@)
+  id: HandleBinaryRequest(System.Byte[]@)
+  parent: ESRI.ArcGIS.esriSystem.IRequestHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleBinaryRequest(ref byte[])
+  nameWithType: IRequestHandler.HandleBinaryRequest(ref byte[])
+  fullName: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest(ref byte[])
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Handles a binary request.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: byte[] HandleBinaryRequest(ref byte[] request)
+    parameters:
+    - id: request
+      type: System.Byte[]
+    return:
+      type: System.Byte[]
+    content.vb: Function HandleBinaryRequest(request As Byte()) As Byte()
+  overload: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest*
+  nameWithType.vb: IRequestHandler.HandleBinaryRequest(Byte())
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest(Byte())
+  name.vb: HandleBinaryRequest(Byte())
+- uid: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest(System.String,System.String)
+  id: HandleStringRequest(System.String,System.String)
+  parent: ESRI.ArcGIS.esriSystem.IRequestHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleStringRequest(string, string)
+  nameWithType: IRequestHandler.HandleStringRequest(string, string)
+  fullName: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Handles a SOAP string request.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string HandleStringRequest(string Capabilities, string request)
+    parameters:
+    - id: Capabilities
+      type: System.String
+    - id: request
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Function HandleStringRequest(Capabilities As String, request As String) As String
+  overload: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest*
+  nameWithType.vb: IRequestHandler.HandleStringRequest(String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest(String, String)
+  name.vb: HandleStringRequest(String, String)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRequestHandler.html#ESRI_ArcGIS_esriSystem_IRequestHandler_HandleBinaryRequest_System_Byte____
+  name: HandleBinaryRequest
+  nameWithType: IRequestHandler.HandleBinaryRequest
+  fullName: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleBinaryRequest
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRequestHandler.html#ESRI_ArcGIS_esriSystem_IRequestHandler_HandleStringRequest_System_String_System_String_
+  name: HandleStringRequest
+  nameWithType: IRequestHandler.HandleStringRequest
+  fullName: ESRI.ArcGIS.esriSystem.IRequestHandler.HandleStringRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters
+  id: ISelectionParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+  - ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+  langs:
+  - csharp
+  - vb
+  name: ISelectionParameters
+  nameWithType: ISelectionParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control selection parameters.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("95627B93-1275-4714-94A7-A55DF27E70A2")]
+
+      public interface ISelectionParameters
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("95627B93-1275-4714-94A7-A55DF27E70A2")>
+
+      Public Interface ISelectionParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.AnalyzeParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.BuildBoundaryParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.BuildFootprintsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.BuildMultidimensionalInfoParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.BuildSeamlinesParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.CalculateCellSizeRangesParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ComputeDirtyAreaParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ComputePixelAlignmentParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.DefineNoDataParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.DefineOverviewsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.EstimateStatisticsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ExportGeometryParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ExportItemsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.GenerateOverviewsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ImportGeometryParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.MergeItemsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.MosaicDatasetSelectionParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.QueryPathsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.RemoveItemsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.ReplacePathsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.SplitMergedItemsParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.SynchronizeParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 95627B93-1275-4714-94A7-A55DF27E70A2
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+  id: SelectionSet
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters
+  langs:
+  - csharp
+  - vb
+  name: SelectionSet
+  nameWithType: ISelectionParameters.SelectionSet
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The selection set that identifies the collection of catalog items on which to perform the associated operation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet SelectionSet { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Property SelectionSet As ISelectionSet
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+  id: QueryFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters
+  langs:
+  - csharp
+  - vb
+  name: QueryFilter
+  nameWithType: ISelectionParameters.QueryFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The query filter applied on the selection set to identify the collection of catalog items on which to perform the associated operation. If no selection is specified, the query filter is applied on the entire catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IQueryFilter QueryFilter { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    content.vb: Property QueryFilter As IQueryFilter
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISelectionParameters_SelectionSet
+  name: SelectionSet
+  nameWithType: ISelectionParameters.SelectionSet
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.SelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISelectionParameters_QueryFilter
+  name: QueryFilter
+  nameWithType: ISelectionParameters.QueryFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISelectionParameters.QueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter

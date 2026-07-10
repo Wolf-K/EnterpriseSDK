@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRowChanges
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRowChanges
+  id: IRowChanges
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IRowChanges
+  nameWithType: IRowChanges
+  fullName: ESRI.ArcGIS.Geodatabase.IRowChanges
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about changed values and the original value in a row.
+  example: []
+  syntax:
+    content: >-
+      [Guid("022F7462-69FA-11D3-9FD0-00C04F6BDD84")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRowChanges
+    content.vb: >-
+      <Guid("022F7462-69FA-11D3-9FD0-00C04F6BDD84")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRowChanges
+  derivedClasses:
+  - ESRI.ArcGIS.CartoX.MEAnnotationFeatureClass
+  - ESRI.ArcGIS.CartoX.MEDimensionFeatureClass
+  - ESRI.ArcGIS.Geodatabase.FeatureClass_2
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 022F7462-69FA-11D3-9FD0-00C04F6BDD84
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged(System.Int32)
+  id: ValueChanged(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRowChanges
+  langs:
+  - csharp
+  - vb
+  name: ValueChanged[int]
+  nameWithType: IRowChanges.ValueChanged[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether the value of the field at the specified index has changed since the last call to Store on the Row object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ValueChanged[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ValueChanged(Index As Integer) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged*
+  nameWithType.vb: IRowChanges.ValueChanged(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged(Integer)
+  name.vb: ValueChanged(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue(System.Int32)
+  id: OriginalValue(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IRowChanges
+  langs:
+  - csharp
+  - vb
+  name: OriginalValue[int]
+  nameWithType: IRowChanges.OriginalValue[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The value of the field at the specified index immediately after the last call to Store on the Row object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object OriginalValue[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property OriginalValue(Index As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue*
+  nameWithType.vb: IRowChanges.OriginalValue(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue(Integer)
+  name.vb: OriginalValue(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowChanges.html#ESRI_ArcGIS_Geodatabase_IRowChanges_ValueChanged_System_Int32_
+  name: ValueChanged
+  nameWithType: IRowChanges.ValueChanged
+  fullName: ESRI.ArcGIS.Geodatabase.IRowChanges.ValueChanged
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowChanges.html#ESRI_ArcGIS_Geodatabase_IRowChanges_OriginalValue_System_Int32_
+  name: OriginalValue
+  nameWithType: IRowChanges.OriginalValue
+  fullName: ESRI.ArcGIS.Geodatabase.IRowChanges.OriginalValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object

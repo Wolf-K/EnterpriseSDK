@@ -1,0 +1,617 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  commentId: T:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  id: IGeographic2DOffsetTransformation
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters(System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters(System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IGeographic2DOffsetTransformation
+  nameWithType: IGeographic2DOffsetTransformation
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that control the geographic 2D offset transformation.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("1C5A7B93-E68E-11DE-8A39-0800200C9A66")]
+
+      public interface IGeographic2DOffsetTransformation : IGeoTransformation, ITransformation
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("1C5A7B93-E68E-11DE-8A39-0800200C9A66")>
+
+      Public Interface IGeographic2DOffsetTransformation Inherits IGeoTransformation, ITransformation
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.Geographic2DOffsetTransformationClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1C5A7B93-E68E-11DE-8A39-0800200C9A66
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFF(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresFF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformMeasuresFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresFI(esriTransformDirection Direction, int cMeasures, ref double inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Double
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresFI(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Double, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformMeasuresFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresIF(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref double outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Double
+    content.vb: Sub TransformMeasuresIF(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformMeasuresIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformMeasuresII(esriTransformDirection Direction, int cMeasures, ref int inMeasures, ref int outMeasures)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cMeasures
+      type: System.Int32
+    - id: inMeasures
+      type: System.Int32
+    - id: outMeasures
+      type: System.Int32
+    content.vb: Sub TransformMeasuresII(Direction As esriTransformDirection, cMeasures As Integer, inMeasures As Integer, outMeasures As Integer)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformMeasuresII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  id: TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsFF(esriTransformDirection, int, ref double, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFF(esriTransformDirection Direction, int cPoints, ref double inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsFF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Double)
+  name.vb: TransformPointsFF(esriTransformDirection, Integer, Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  id: TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsFI(esriTransformDirection, int, ref double, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref double, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsFI(esriTransformDirection Direction, int cPoints, ref double inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Double
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsFI(Direction As esriTransformDirection, cPoints As Integer, inPoints As Double, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Double, Integer)
+  name.vb: TransformPointsFI(esriTransformDirection, Integer, Double, Integer)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  id: TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsIF(esriTransformDirection, int, ref int, ref double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsIF(esriTransformDirection Direction, int cPoints, ref int inPoints, ref double outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Double
+    content.vb: Sub TransformPointsIF(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Double)
+  name.vb: TransformPointsIF(esriTransformDirection, Integer, Integer, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  id: TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsII(esriTransformDirection, int, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void TransformPointsII(esriTransformDirection Direction, int cPoints, ref int inPoints, ref int outPoints)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: cPoints
+      type: System.Int32
+    - id: inPoints
+      type: System.Int32
+    - id: outPoints
+      type: System.Int32
+    content.vb: Sub TransformPointsII(Direction As esriTransformDirection, cPoints As Integer, inPoints As Integer, outPoints As Integer)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII*
+  nameWithType.vb: IGeographic2DOffsetTransformation.TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, Integer, Integer)
+  name.vb: TransformPointsII(esriTransformDirection, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  id: GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference@,ESRI.ArcGIS.Geometry.ISpatialReference@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  nameWithType: IGeographic2DOffsetTransformation.GetSpatialReferences(out ISpatialReference, out ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences(out ESRI.ArcGIS.Geometry.ISpatialReference, out ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GetSpatialReferences(out ISpatialReference from, out ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub GetSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences*
+  nameWithType.vb: IGeographic2DOffsetTransformation.GetSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  name.vb: GetSpatialReferences(ISpatialReference, ISpatialReference)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutSpatialReferences(ISpatialReference, ISpatialReference)
+  nameWithType: IGeographic2DOffsetTransformation.PutSpatialReferences(ISpatialReference, ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutSpatialReferences(ISpatialReference from, ISpatialReference to)
+    parameters:
+    - id: from
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: to
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub PutSpatialReferences(from As ISpatialReference, [to] As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences*
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters(System.Double,System.Double)
+  id: PutParameters(System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: PutParameters(double, double)
+  nameWithType: IGeographic2DOffsetTransformation.PutParameters(double, double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets latitude and longitude translation values for the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutParameters(double dlon, double dlat)
+    parameters:
+    - id: dlon
+      type: System.Double
+    - id: dlat
+      type: System.Double
+    content.vb: Sub PutParameters(dlon As Double, dlat As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters*
+  nameWithType.vb: IGeographic2DOffsetTransformation.PutParameters(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters(Double, Double)
+  name.vb: PutParameters(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters(System.Double@,System.Double@)
+  id: GetParameters(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: GetParameters(out double, out double)
+  nameWithType: IGeographic2DOffsetTransformation.GetParameters(out double, out double)
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters(out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns latitude and longitude translation values for the transformation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetParameters(out double dlon, out double dlat)
+    parameters:
+    - id: dlon
+      type: System.Double
+    - id: dlat
+      type: System.Double
+    content.vb: Sub GetParameters(dlon As Double, dlat As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters*
+  nameWithType.vb: IGeographic2DOffsetTransformation.GetParameters(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters(Double, Double)
+  name.vb: GetParameters(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+  commentId: P:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+  id: Name
+  parent: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IGeographic2DOffsetTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformMeasuresFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformMeasuresFF
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresFF
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFF
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformMeasuresFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformMeasuresFI
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresFI
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresFI
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformMeasuresIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformMeasuresIF
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresIF
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresIF
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformMeasuresII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformMeasuresII
+  nameWithType: IGeographic2DOffsetTransformation.TransformMeasuresII
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformMeasuresII
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformPointsFF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Double__
+  name: TransformPointsFF
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsFF
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFF
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformPointsFI_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Double__System_Int32__
+  name: TransformPointsFI
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsFI
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsFI
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformPointsIF_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Double__
+  name: TransformPointsIF
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsIF
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsIF
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_TransformPointsII_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_System_Int32__System_Int32__
+  name: TransformPointsII
+  nameWithType: IGeographic2DOffsetTransformation.TransformPointsII
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.TransformPointsII
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_GetSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference__ESRI_ArcGIS_Geometry_ISpatialReference__
+  name: GetSpatialReferences
+  nameWithType: IGeographic2DOffsetTransformation.GetSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_PutSpatialReferences_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: PutSpatialReferences
+  nameWithType: IGeographic2DOffsetTransformation.PutSpatialReferences
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutSpatialReferences
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_PutParameters_System_Double_System_Double_
+  name: PutParameters
+  nameWithType: IGeographic2DOffsetTransformation.PutParameters
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.PutParameters
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_GetParameters_System_Double__System_Double__
+  name: GetParameters
+  nameWithType: IGeographic2DOffsetTransformation.GetParameters
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.GetParameters
+- uid: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.html#ESRI_ArcGIS_Geometry_IGeographic2DOffsetTransformation_Name
+  name: Name
+  nameWithType: IGeographic2DOffsetTransformation.Name
+  fullName: ESRI.ArcGIS.Geometry.IGeographic2DOffsetTransformation.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

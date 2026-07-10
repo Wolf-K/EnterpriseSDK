@@ -1,0 +1,592 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeature
+  id: IFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeature.Class
+  - ESRI.ArcGIS.Geodatabase.IFeature.Delete
+  - ESRI.ArcGIS.Geodatabase.IFeature.Extent
+  - ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+  - ESRI.ArcGIS.Geodatabase.IFeature.Fields
+  - ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+  - ESRI.ArcGIS.Geodatabase.IFeature.OID
+  - ESRI.ArcGIS.Geodatabase.IFeature.Shape
+  - ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+  - ESRI.ArcGIS.Geodatabase.IFeature.Store
+  - ESRI.ArcGIS.Geodatabase.IFeature.Table
+  - ESRI.ArcGIS.Geodatabase.IFeature.Value(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IFeature
+  nameWithType: IFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return and set properties of a feature.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D4803EE9-79F4-11D0-97FC-0080C7F79481")]
+
+      public interface IFeature : IObject, IRow, IRowBuffer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D4803EE9-79F4-11D0-97FC-0080C7F79481")>
+
+      Public Interface IFeature Inherits IObject, IRow, IRowBuffer
+  derivedClasses:
+  - ESRI.ArcGIS.CartoX.MEAnnotationFeatureClass
+  - ESRI.ArcGIS.CartoX.MEDimensionFeatureClass
+  - ESRI.ArcGIS.Geodatabase.FeatureClass_2
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D4803EE9-79F4-11D0-97FC-0080C7F79481
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Store
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeature.Store
+  id: Store
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Store()
+  nameWithType: IFeature.Store()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Store()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Store()
+    content.vb: Sub Store()
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Store*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Delete
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeature.Delete
+  id: Delete
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Delete()
+  nameWithType: IFeature.Delete()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Delete()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Delete()
+    content.vb: Sub Delete()
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Delete*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Value(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Value(System.Int32)
+  id: Value(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Value[int]
+  nameWithType: IFeature.Value[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Value[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object Value[int Index] { get; set; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Property Value(Index As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Value*
+  nameWithType.vb: IFeature.Value(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeature.Value(Integer)
+  name.vb: Value(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: IFeature.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Fields*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+  id: HasOID
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: HasOID
+  nameWithType: IFeature.HasOID
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool HasOID { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasOID As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.HasOID*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.OID
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.OID
+  id: OID
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: OID
+  nameWithType: IFeature.OID
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.OID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long OID { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property OID As Long
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.OID*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Table
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Table
+  id: Table
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: IFeature.Table
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Table
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ITable Table { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: ReadOnly Property Table As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Table*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Class
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Class
+  id: Class
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Class
+  nameWithType: IFeature.Class
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Class
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IObjectClass Class { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IObjectClass
+    content.vb: ReadOnly Property [Class] As IObjectClass
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Class*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+  id: ShapeCopy
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: ShapeCopy
+  nameWithType: IFeature.ShapeCopy
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A cloned copy of the default shape for the feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry ShapeCopy { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: ReadOnly Property ShapeCopy As IGeometry
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Shape
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Shape
+  id: Shape
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Shape
+  nameWithType: IFeature.Shape
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Shape
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A reference to the default shape for the feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry Shape { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Property Shape As IGeometry
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Shape*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Extent
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: IFeature.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The extent of the feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.Extent*
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+  id: FeatureType
+  parent: ESRI.ArcGIS.Geodatabase.IFeature
+  langs:
+  - csharp
+  - vb
+  name: FeatureType
+  nameWithType: IFeature.FeatureType
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The type of the feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriFeatureType FeatureType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriFeatureType
+    content.vb: ReadOnly Property FeatureType As esriFeatureType
+  overload: ESRI.ArcGIS.Geodatabase.IFeature.FeatureType*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Store*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Store
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Store
+  name: Store
+  nameWithType: IFeature.Store
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Store
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Delete*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Delete
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Delete
+  name: Delete
+  nameWithType: IFeature.Delete
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Delete
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Value*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Value
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Value_System_Int32_
+  name: Value
+  nameWithType: IFeature.Value
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Value
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Fields
+  name: Fields
+  nameWithType: IFeature.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.HasOID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_HasOID
+  name: HasOID
+  nameWithType: IFeature.HasOID
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.HasOID
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.OID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.OID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_OID
+  name: OID
+  nameWithType: IFeature.OID
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.OID
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Table*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Table
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Table
+  name: Table
+  nameWithType: IFeature.Table
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Table
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Class*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Class
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Class
+  name: Class
+  nameWithType: IFeature.Class
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Class
+- uid: ESRI.ArcGIS.Geodatabase.IObjectClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IObjectClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IObjectClass.html
+  name: IObjectClass
+  nameWithType: IObjectClass
+  fullName: ESRI.ArcGIS.Geodatabase.IObjectClass
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_ShapeCopy
+  name: ShapeCopy
+  nameWithType: IFeature.ShapeCopy
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.ShapeCopy
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Shape*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Shape
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Shape
+  name: Shape
+  nameWithType: IFeature.Shape
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Shape
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.Extent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_Extent
+  name: Extent
+  nameWithType: IFeature.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geodatabase.IFeature.FeatureType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeature.html#ESRI_ArcGIS_Geodatabase_IFeature_FeatureType
+  name: FeatureType
+  nameWithType: IFeature.FeatureType
+  fullName: ESRI.ArcGIS.Geodatabase.IFeature.FeatureType
+- uid: ESRI.ArcGIS.Geodatabase.esriFeatureType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriFeatureType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriFeatureType.html
+  name: esriFeatureType
+  nameWithType: esriFeatureType
+  fullName: ESRI.ArcGIS.Geodatabase.esriFeatureType

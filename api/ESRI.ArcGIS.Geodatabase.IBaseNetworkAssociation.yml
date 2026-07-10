@@ -1,0 +1,656 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  commentId: T:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  id: IBaseNetworkAssociation
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Int32,System.Guid,System.Int32,System.Int32,System.Guid,System.Int32,System.Double)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation(System.Guid,System.Int32,System.Guid,System.Int32,System.Guid,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations(ESRI.ArcGIS.esriSystem.IStringArray)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Guid)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation(System.Guid)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ILongArray,System.Boolean,ESRI.ArcGIS.esriSystem.IArray@)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Int32,ESRI.ArcGIS.Geometry.ISpatialReference,System.Boolean@,ESRI.ArcGIS.esriSystem.IArray@)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection,ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter,ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter,System.Boolean,System.Int32,ESRI.ArcGIS.esriSystem.IArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  langs:
+  - csharp
+  - vb
+  name: IBaseNetworkAssociation
+  nameWithType: IBaseNetworkAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that specify the properties of a base network association.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("DD3788D4-7622-4EC4-9FFC-5F97673D5405")]
+
+      public interface IBaseNetworkAssociation
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("DD3788D4-7622-4EC4-9FFC-5F97673D5405")>
+
+      Public Interface IBaseNetworkAssociation
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DD3788D4-7622-4EC4-9FFC-5F97673D5405
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Int32,System.Guid,System.Int32,System.Int32,System.Guid,System.Int32,System.Double)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Int32,System.Guid,System.Int32,System.Int32,System.Guid,System.Int32,System.Double)
+  id: AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Int32,System.Guid,System.Int32,System.Int32,System.Guid,System.Int32,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: AddConnectivityAssociation(esriUtilityNetworkAssociationType, int, Guid, int, int, Guid, int, double)
+  nameWithType: IBaseNetworkAssociation.AddConnectivityAssociation(esriUtilityNetworkAssociationType, int, Guid, int, int, Guid, int, double)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType, int, System.Guid, int, int, System.Guid, int, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long AddConnectivityAssociation(esriUtilityNetworkAssociationType AssociationType, int fromNetworkSourceID, Guid fromGlobalID, int FromTerminalID, int toNetworkSourceID, Guid toGlobalID, int ToTerminalID, double PercentAlong)
+    parameters:
+    - id: AssociationType
+      type: ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType
+    - id: fromNetworkSourceID
+      type: System.Int32
+    - id: fromGlobalID
+      type: System.Guid
+    - id: FromTerminalID
+      type: System.Int32
+    - id: toNetworkSourceID
+      type: System.Int32
+    - id: toGlobalID
+      type: System.Guid
+    - id: ToTerminalID
+      type: System.Int32
+    - id: PercentAlong
+      type: System.Double
+    return:
+      type: System.Int64
+    content.vb: Function AddConnectivityAssociation(AssociationType As esriUtilityNetworkAssociationType, fromNetworkSourceID As Integer, fromGlobalID As Guid, FromTerminalID As Integer, toNetworkSourceID As Integer, toGlobalID As Guid, ToTerminalID As Integer, PercentAlong As Double) As Long
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation*
+  nameWithType.vb: IBaseNetworkAssociation.AddConnectivityAssociation(esriUtilityNetworkAssociationType, Integer, Guid, Integer, Integer, Guid, Integer, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType, Integer, System.Guid, Integer, Integer, System.Guid, Integer, Double)
+  name.vb: AddConnectivityAssociation(esriUtilityNetworkAssociationType, Integer, Guid, Integer, Integer, Guid, Integer, Double)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation(System.Guid,System.Int32,System.Guid,System.Int32,System.Guid,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation(System.Guid,System.Int32,System.Guid,System.Int32,System.Guid,System.Boolean)
+  id: AddContainmentAssociation(System.Guid,System.Int32,System.Guid,System.Int32,System.Guid,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: AddContainmentAssociation(Guid, int, Guid, int, Guid, bool)
+  nameWithType: IBaseNetworkAssociation.AddContainmentAssociation(Guid, int, Guid, int, Guid, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation(System.Guid, int, System.Guid, int, System.Guid, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long AddContainmentAssociation(Guid assignGlobalID, int containerSourceID, Guid containerGlobalID, int contentSourceID, Guid contentGlobalID, bool IsContentVisible)
+    parameters:
+    - id: assignGlobalID
+      type: System.Guid
+    - id: containerSourceID
+      type: System.Int32
+    - id: containerGlobalID
+      type: System.Guid
+    - id: contentSourceID
+      type: System.Int32
+    - id: contentGlobalID
+      type: System.Guid
+    - id: IsContentVisible
+      type: System.Boolean
+    return:
+      type: System.Int64
+    content.vb: Function AddContainmentAssociation(assignGlobalID As Guid, containerSourceID As Integer, containerGlobalID As Guid, contentSourceID As Integer, contentGlobalID As Guid, IsContentVisible As Boolean) As Long
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation*
+  nameWithType.vb: IBaseNetworkAssociation.AddContainmentAssociation(Guid, Integer, Guid, Integer, Guid, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation(System.Guid, Integer, System.Guid, Integer, System.Guid, Boolean)
+  name.vb: AddContainmentAssociation(Guid, Integer, Guid, Integer, Guid, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Guid)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Guid)
+  id: DeleteConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType,System.Guid)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: DeleteConnectivityAssociation(esriUtilityNetworkAssociationType, Guid)
+  nameWithType: IBaseNetworkAssociation.DeleteConnectivityAssociation(esriUtilityNetworkAssociationType, Guid)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation(ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType, System.Guid)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteConnectivityAssociation(esriUtilityNetworkAssociationType AssociationType, Guid associationGlobalID)
+    parameters:
+    - id: AssociationType
+      type: ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType
+    - id: associationGlobalID
+      type: System.Guid
+    content.vb: Sub DeleteConnectivityAssociation(AssociationType As esriUtilityNetworkAssociationType, associationGlobalID As Guid)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation*
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation(System.Guid)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation(System.Guid)
+  id: DeleteContainmentAssociation(System.Guid)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: DeleteContainmentAssociation(Guid)
+  nameWithType: IBaseNetworkAssociation.DeleteContainmentAssociation(Guid)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation(System.Guid)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteContainmentAssociation(Guid associationGlobalID)
+    parameters:
+    - id: associationGlobalID
+      type: System.Guid
+    content.vb: Sub DeleteContainmentAssociation(associationGlobalID As Guid)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation*
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations(ESRI.ArcGIS.esriSystem.IStringArray)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations(ESRI.ArcGIS.esriSystem.IStringArray)
+  id: DeleteAssociations(ESRI.ArcGIS.esriSystem.IStringArray)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: DeleteAssociations(IStringArray)
+  nameWithType: IBaseNetworkAssociation.DeleteAssociations(IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations(ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteAssociations(IStringArray GlobalIDs)
+    parameters:
+    - id: GlobalIDs
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub DeleteAssociations(GlobalIDs As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations*
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Int32,ESRI.ArcGIS.Geometry.ISpatialReference,System.Boolean@,ESRI.ArcGIS.esriSystem.IArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Int32,ESRI.ArcGIS.Geometry.ISpatialReference,System.Boolean@,ESRI.ArcGIS.esriSystem.IArray@)
+  id: SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean,System.Boolean,System.Int32,ESRI.ArcGIS.Geometry.ISpatialReference,System.Boolean@,ESRI.ArcGIS.esriSystem.IArray@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: SynthesizeAssociationGeometries(IEnvelope, bool, bool, bool, int, ISpatialReference, out bool, out IArray)
+  nameWithType: IBaseNetworkAssociation.SynthesizeAssociationGeometries(IEnvelope, bool, bool, bool, int, ISpatialReference, out bool, out IArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope, bool, bool, bool, int, ESRI.ArcGIS.Geometry.ISpatialReference, out bool, out ESRI.ArcGIS.esriSystem.IArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void SynthesizeAssociationGeometries(IEnvelope Extent, bool includeConnectivity, bool includeAttachments, bool includeContainment, int maxGeometryCount, ISpatialReference OutputSpatialReference, out bool maxCountExceeded, out IArray Associations)
+    parameters:
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: includeConnectivity
+      type: System.Boolean
+    - id: includeAttachments
+      type: System.Boolean
+    - id: includeContainment
+      type: System.Boolean
+    - id: maxGeometryCount
+      type: System.Int32
+    - id: OutputSpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: maxCountExceeded
+      type: System.Boolean
+    - id: Associations
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Sub SynthesizeAssociationGeometries(Extent As IEnvelope, includeConnectivity As Boolean, includeAttachments As Boolean, includeContainment As Boolean, maxGeometryCount As Integer, OutputSpatialReference As ISpatialReference, maxCountExceeded As Boolean, Associations As IArray)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries*
+  nameWithType.vb: IBaseNetworkAssociation.SynthesizeAssociationGeometries(IEnvelope, Boolean, Boolean, Boolean, Integer, ISpatialReference, Boolean, IArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries(ESRI.ArcGIS.Geometry.IEnvelope, Boolean, Boolean, Boolean, Integer, ESRI.ArcGIS.Geometry.ISpatialReference, Boolean, ESRI.ArcGIS.esriSystem.IArray)
+  name.vb: SynthesizeAssociationGeometries(IEnvelope, Boolean, Boolean, Boolean, Integer, ISpatialReference, Boolean, IArray)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: UpdateAssociation(System.Guid,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: UpdateAssociation(Guid, IPropertySet)
+  nameWithType: IBaseNetworkAssociation.UpdateAssociation(Guid, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation(System.Guid, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void UpdateAssociation(Guid associationGlobalID, IPropertySet attributeValuesPropertySet)
+    parameters:
+    - id: associationGlobalID
+      type: System.Guid
+    - id: attributeValuesPropertySet
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub UpdateAssociation(associationGlobalID As Guid, attributeValuesPropertySet As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation*
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ILongArray,System.Boolean,ESRI.ArcGIS.esriSystem.IArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ILongArray,System.Boolean,ESRI.ArcGIS.esriSystem.IArray@)
+  id: QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.ILongArray,System.Boolean,ESRI.ArcGIS.esriSystem.IArray@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: QueryAssociations(ILongArray, IStringArray, ILongArray, ILongArray, bool, out IArray)
+  nameWithType: IBaseNetworkAssociation.QueryAssociations(ILongArray, IStringArray, ILongArray, ILongArray, bool, out IArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray, bool, out ESRI.ArcGIS.esriSystem.IArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryAssociations(ILongArray sourceIDArray, IStringArray globalIDArray, ILongArray TerminalID, ILongArray associationTypeArray, bool isReturningDeletes, out IArray associationArray)
+    parameters:
+    - id: sourceIDArray
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: globalIDArray
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: TerminalID
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: associationTypeArray
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: isReturningDeletes
+      type: System.Boolean
+    - id: associationArray
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Sub QueryAssociations(sourceIDArray As ILongArray, globalIDArray As IStringArray, TerminalID As ILongArray, associationTypeArray As ILongArray, isReturningDeletes As Boolean, associationArray As IArray)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations*
+  nameWithType.vb: IBaseNetworkAssociation.QueryAssociations(ILongArray, IStringArray, ILongArray, ILongArray, Boolean, IArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations(ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray, Boolean, ESRI.ArcGIS.esriSystem.IArray)
+  name.vb: QueryAssociations(ILongArray, IStringArray, ILongArray, ILongArray, Boolean, IArray)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection,ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter,ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter,System.Boolean,System.Int32,ESRI.ArcGIS.esriSystem.IArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection,ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter,ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter,System.Boolean,System.Int32,ESRI.ArcGIS.esriSystem.IArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType,ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection,ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter,ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter,System.Boolean,System.Int32,ESRI.ArcGIS.esriSystem.IArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation
+  langs:
+  - csharp
+  - vb
+  name: TraverseAssociations(ILongArray, IStringArray, ILongArray, esriAssociationTraversalType, esriAssociationTraversalDirection, esriAssociationDirtyStatusFilter, esriAssociationErrorStatusFilter, bool, int, out IArray, out ILongArray, out IStringArray)
+  nameWithType: IBaseNetworkAssociation.TraverseAssociations(ILongArray, IStringArray, ILongArray, esriAssociationTraversalType, esriAssociationTraversalDirection, esriAssociationDirtyStatusFilter, esriAssociationErrorStatusFilter, bool, int, out IArray, out ILongArray, out IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType, ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection, ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter, ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter, bool, int, out ESRI.ArcGIS.esriSystem.IArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void TraverseAssociations(ILongArray sourceIDArray, IStringArray globalIDArray, ILongArray TerminalID, esriAssociationTraversalType traversalType, esriAssociationTraversalDirection TraversalDirection, esriAssociationDirtyStatusFilter dirtyFilter, esriAssociationErrorStatusFilter errorFilter, bool isStoppingAtFirstSpatial, int maxDepth, out IArray associationArray, out ILongArray outputSourceID, out IStringArray outGlobalIDArray)
+    parameters:
+    - id: sourceIDArray
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: globalIDArray
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: TerminalID
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: traversalType
+      type: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType
+    - id: TraversalDirection
+      type: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection
+    - id: dirtyFilter
+      type: ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter
+    - id: errorFilter
+      type: ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter
+    - id: isStoppingAtFirstSpatial
+      type: System.Boolean
+    - id: maxDepth
+      type: System.Int32
+    - id: associationArray
+      type: ESRI.ArcGIS.esriSystem.IArray
+    - id: outputSourceID
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: outGlobalIDArray
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub TraverseAssociations(sourceIDArray As ILongArray, globalIDArray As IStringArray, TerminalID As ILongArray, traversalType As esriAssociationTraversalType, TraversalDirection As esriAssociationTraversalDirection, dirtyFilter As esriAssociationDirtyStatusFilter, errorFilter As esriAssociationErrorStatusFilter, isStoppingAtFirstSpatial As Boolean, maxDepth As Integer, associationArray As IArray, outputSourceID As ILongArray, outGlobalIDArray As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations*
+  nameWithType.vb: IBaseNetworkAssociation.TraverseAssociations(ILongArray, IStringArray, ILongArray, esriAssociationTraversalType, esriAssociationTraversalDirection, esriAssociationDirtyStatusFilter, esriAssociationErrorStatusFilter, Boolean, Integer, IArray, ILongArray, IStringArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations(ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType, ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection, ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter, ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter, Boolean, Integer, ESRI.ArcGIS.esriSystem.IArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: TraverseAssociations(ILongArray, IStringArray, ILongArray, esriAssociationTraversalType, esriAssociationTraversalDirection, esriAssociationDirtyStatusFilter, esriAssociationErrorStatusFilter, Boolean, Integer, IArray, ILongArray, IStringArray)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_AddConnectivityAssociation_ESRI_ArcGIS_Geodatabase_esriUtilityNetworkAssociationType_System_Int32_System_Guid_System_Int32_System_Int32_System_Guid_System_Int32_System_Double_
+  name: AddConnectivityAssociation
+  nameWithType: IBaseNetworkAssociation.AddConnectivityAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddConnectivityAssociation
+- uid: ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType.html
+  name: esriUtilityNetworkAssociationType
+  nameWithType: esriUtilityNetworkAssociationType
+  fullName: ESRI.ArcGIS.Geodatabase.esriUtilityNetworkAssociationType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_AddContainmentAssociation_System_Guid_System_Int32_System_Guid_System_Int32_System_Guid_System_Boolean_
+  name: AddContainmentAssociation
+  nameWithType: IBaseNetworkAssociation.AddContainmentAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.AddContainmentAssociation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_DeleteConnectivityAssociation_ESRI_ArcGIS_Geodatabase_esriUtilityNetworkAssociationType_System_Guid_
+  name: DeleteConnectivityAssociation
+  nameWithType: IBaseNetworkAssociation.DeleteConnectivityAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteConnectivityAssociation
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_DeleteContainmentAssociation_System_Guid_
+  name: DeleteContainmentAssociation
+  nameWithType: IBaseNetworkAssociation.DeleteContainmentAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteContainmentAssociation
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_DeleteAssociations_ESRI_ArcGIS_esriSystem_IStringArray_
+  name: DeleteAssociations
+  nameWithType: IBaseNetworkAssociation.DeleteAssociations
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.DeleteAssociations
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_SynthesizeAssociationGeometries_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Boolean_System_Boolean_System_Int32_ESRI_ArcGIS_Geometry_ISpatialReference_System_Boolean__ESRI_ArcGIS_esriSystem_IArray__
+  name: SynthesizeAssociationGeometries
+  nameWithType: IBaseNetworkAssociation.SynthesizeAssociationGeometries
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.SynthesizeAssociationGeometries
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_UpdateAssociation_System_Guid_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: UpdateAssociation
+  nameWithType: IBaseNetworkAssociation.UpdateAssociation
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.UpdateAssociation
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_QueryAssociations_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_IStringArray_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_ILongArray_System_Boolean_ESRI_ArcGIS_esriSystem_IArray__
+  name: QueryAssociations
+  nameWithType: IBaseNetworkAssociation.QueryAssociations
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.QueryAssociations
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkAssociation_TraverseAssociations_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_IStringArray_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_Geodatabase_esriAssociationTraversalType_ESRI_ArcGIS_Geodatabase_esriAssociationTraversalDirection_ESRI_ArcGIS_Geodatabase_esriAssociationDirtyStatusFilter_ESRI_ArcGIS_Geodatabase_esriAssociationErrorStatusFilter_System_Boolean_System_Int32_ESRI_ArcGIS_esriSystem_IArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_IStringArray__
+  name: TraverseAssociations
+  nameWithType: IBaseNetworkAssociation.TraverseAssociations
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkAssociation.TraverseAssociations
+- uid: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType.html
+  name: esriAssociationTraversalType
+  nameWithType: esriAssociationTraversalType
+  fullName: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalType
+- uid: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection.html
+  name: esriAssociationTraversalDirection
+  nameWithType: esriAssociationTraversalDirection
+  fullName: ESRI.ArcGIS.Geodatabase.esriAssociationTraversalDirection
+- uid: ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter.html
+  name: esriAssociationDirtyStatusFilter
+  nameWithType: esriAssociationDirtyStatusFilter
+  fullName: ESRI.ArcGIS.Geodatabase.esriAssociationDirtyStatusFilter
+- uid: ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter.html
+  name: esriAssociationErrorStatusFilter
+  nameWithType: esriAssociationErrorStatusFilter
+  fullName: ESRI.ArcGIS.Geodatabase.esriAssociationErrorStatusFilter

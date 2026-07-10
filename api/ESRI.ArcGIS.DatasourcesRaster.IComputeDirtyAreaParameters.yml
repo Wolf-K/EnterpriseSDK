@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters
+  id: IComputeDirtyAreaParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+  - ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+  langs:
+  - csharp
+  - vb
+  name: IComputeDirtyAreaParameters
+  nameWithType: IComputeDirtyAreaParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control how a mosaic dataset's dirty area is computed.
+  example: []
+  syntax:
+    content: >-
+      [Guid("8952C566-4515-4E70-B6AB-4ABAB0C633F1")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IComputeDirtyAreaParameters
+    content.vb: >-
+      <Guid("8952C566-4515-4E70-B6AB-4ABAB0C633F1")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IComputeDirtyAreaParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ComputeDirtyAreaParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8952C566-4515-4E70-B6AB-4ABAB0C633F1
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+  id: TimeStamp
+  parent: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters
+  langs:
+  - csharp
+  - vb
+  name: TimeStamp
+  nameWithType: IComputeDirtyAreaParameters.TimeStamp
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The instance in time used for selecting newer mosaic dataset items that contribute to the dirty area. Use the ITime.QueryOleTime method to convert from other formats for encoding time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: DateTime TimeStamp { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Property TimeStamp As Date
+  overload: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+  id: ComputedDirtyArea
+  parent: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters
+  langs:
+  - csharp
+  - vb
+  name: ComputedDirtyArea
+  nameWithType: IComputeDirtyAreaParameters.ComputedDirtyArea
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The polygon resulting from the dirty area computation. The polygon defines a region encompassing the footprints of all items that have been modified or synchronized since a specified point in time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry ComputedDirtyArea { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Property ComputedDirtyArea As IGeometry
+  overload: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.html#ESRI_ArcGIS_DatasourcesRaster_IComputeDirtyAreaParameters_TimeStamp
+  name: TimeStamp
+  nameWithType: IComputeDirtyAreaParameters.TimeStamp
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.TimeStamp
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.html#ESRI_ArcGIS_DatasourcesRaster_IComputeDirtyAreaParameters_ComputedDirtyArea
+  name: ComputedDirtyArea
+  nameWithType: IComputeDirtyAreaParameters.ComputedDirtyArea
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IComputeDirtyAreaParameters.ComputedDirtyArea
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

@@ -1,0 +1,220 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeoDataset
+  id: IGeoDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+  - ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+  langs:
+  - csharp
+  - vb
+  name: IGeoDataset
+  nameWithType: IGeoDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that provide information about a Geographic Dataset.
+  example: []
+  syntax:
+    content: >-
+      [Guid("34C20004-4D3C-11D0-92D8-00805F7C28B0")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IGeoDataset
+    content.vb: >-
+      <Guid("34C20004-4D3C-11D0-92D8-00805F7C28B0")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IGeoDataset
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesFile.BimModelObjectClass
+  - ESRI.ArcGIS.DatasourcesRaster.FunctionRasterDatasetClass
+  - ESRI.ArcGIS.DatasourcesRaster.MosaicRasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterBandClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterCatalogTableClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  - ESRI.ArcGIS.DatasourcesRaster.SdeRasterCatalogTableClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasDatasetClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasFileClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainClass
+  - ESRI.ArcGIS.Geodatabase.FeatureClassClass
+  - ESRI.ArcGIS.Geodatabase.RasterCatalogClass
+  - ESRI.ArcGIS.Geodatabase.TinClass
+  - ESRI.ArcGIS.Geodatabase.XYEventSourceClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 34C20004-4D3C-11D0-92D8-00805F7C28B0
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IGeoDataset.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The spatial reference of the GeoDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference*
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+  commentId: P:ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDataset
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: IGeoDataset.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The extent of the GeoDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset.html#ESRI_ArcGIS_Geodatabase_IGeoDataset_SpatialReference
+  name: SpatialReference
+  nameWithType: IGeoDataset.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDataset.html#ESRI_ArcGIS_Geodatabase_IGeoDataset_Extent
+  name: Extent
+  nameWithType: IGeoDataset.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDataset.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope

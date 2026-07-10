@@ -1,0 +1,876 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  id: MeanMosaickerClass
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+  langs:
+  - csharp
+  - vb
+  name: MeanMosaickerClass
+  nameWithType: MeanMosaickerClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("8B65A2E0-EFB3-4E14-8B82-7499331B691A")]
+
+      public class MeanMosaickerClass : MeanMosaicker, IMosaicOperator, IMosaicOperator2
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("8B65A2E0-EFB3-4E14-8B82-7499331B691A")>
+
+      Public Class MeanMosaickerClass Implements MeanMosaicker, IMosaicOperator, IMosaicOperator2
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.MeanMosaicker
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8B65A2E0-EFB3-4E14-8B82-7499331B691A
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: MeanMosaickerClass()
+  nameWithType: MeanMosaickerClass.MeanMosaickerClass()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.MeanMosaickerClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: public MeanMosaickerClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor*
+  nameWithType.vb: MeanMosaickerClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init(System.Int32,System.Int32,System.Int32)
+  id: Init(System.Int32,System.Int32,System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: Init(int, int, int)
+  nameWithType: MeanMosaickerClass.Init(int, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Initializes a mosaic operator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Init(int nBands, int nBlockCols, int nBlockRows)
+    parameters:
+    - id: nBands
+      type: System.Int32
+    - id: nBlockCols
+      type: System.Int32
+    - id: nBlockRows
+      type: System.Int32
+    content.vb: Overridable Sub Init(nBands As Integer, nBlockCols As Integer, nBlockRows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(System.Int32,System.Int32,System.Int32)
+  nameWithType.vb: MeanMosaickerClass.Init(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init(Integer, Integer, Integer)
+  name.vb: Init(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  id: Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: Operate(int, int, int, ref int)
+  nameWithType: MeanMosaickerClass.Operate(int, int, int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(int, int, int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Operates on two integer values and returns a new one.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Operate(int x, int y, int v1, ref int v2)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: v1
+      type: System.Int32
+    - id: v2
+      type: System.Int32
+    content.vb: Overridable Sub Operate(x As Integer, y As Integer, v1 As Integer, v2 As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  nameWithType.vb: MeanMosaickerClass.Operate(Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(Integer, Integer, Integer, Integer)
+  name.vb: Operate(Integer, Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  id: Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: Operate(int, int, double, ref double)
+  nameWithType: MeanMosaickerClass.Operate(int, int, double, ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(int, int, double, ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Operates on two floating-point values and returns a new one.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Operate(int x, int y, double v1, ref double v2)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    - id: v1
+      type: System.Double
+    - id: v2
+      type: System.Double
+    content.vb: Overridable Sub Operate(x As Integer, y As Integer, v1 As Double, v2 As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  nameWithType.vb: MeanMosaickerClass.Operate(Integer, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate(Integer, Integer, Double, Double)
+  name.vb: Operate(Integer, Integer, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+  id: Properties
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: MeanMosaickerClass.Properties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Mosaic operator properties.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IPropertySet Properties { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Overridable Property Properties As IPropertySet
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Properties
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+  id: CurrentBand
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass
+  langs:
+  - csharp
+  - vb
+  name: CurrentBand
+  nameWithType: MeanMosaickerClass.CurrentBand
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The current band index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int CurrentBand { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable WriteOnly Property CurrentBand As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand*
+  implements:
+  - ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.CurrentBand
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaicker
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.MeanMosaicker
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaicker.html
+  name: MeanMosaicker
+  nameWithType: MeanMosaicker
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaicker
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html
+  name: IMosaicOperator
+  nameWithType: IMosaicOperator
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.html
+  name: IMosaicOperator2
+  nameWithType: IMosaicOperator2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.html#ESRI_ArcGIS_DatasourcesRaster_MeanMosaickerClass__ctor
+  name: MeanMosaickerClass
+  nameWithType: MeanMosaickerClass.MeanMosaickerClass
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.MeanMosaickerClass
+  nameWithType.vb: MeanMosaickerClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.html#ESRI_ArcGIS_DatasourcesRaster_MeanMosaickerClass_Init_System_Int32_System_Int32_System_Int32_
+  name: Init
+  nameWithType: MeanMosaickerClass.Init
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Init
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Init_System_Int32_System_Int32_System_Int32_
+  name: Init(int, int, int)
+  nameWithType: IMosaicOperator.Init(int, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(int, int, int)
+  nameWithType.vb: IMosaicOperator.Init(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(Integer, Integer, Integer)
+  name.vb: Init(Integer, Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(System.Int32,System.Int32,System.Int32)
+    name: Init
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Init_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Init(System.Int32,System.Int32,System.Int32)
+    name: Init
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Init_System_Int32_System_Int32_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.html#ESRI_ArcGIS_DatasourcesRaster_MeanMosaickerClass_Operate_System_Int32_System_Int32_System_Int32_System_Int32__
+  name: Operate
+  nameWithType: MeanMosaickerClass.Operate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Operate
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Operate_System_Int32_System_Int32_System_Int32_System_Int32__
+  name: Operate(int, int, int, ref int)
+  nameWithType: IMosaicOperator.Operate(int, int, int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(int, int, int, ref int)
+  nameWithType.vb: IMosaicOperator.Operate(Integer, Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(Integer, Integer, Integer, Integer)
+  name.vb: Operate(Integer, Integer, Integer, Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+    name: Operate
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Operate_System_Int32_System_Int32_System_Int32_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Operate(System.Int32,System.Int32,System.Int32,System.Int32@)
+    name: Operate
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Operate_System_Int32_System_Int32_System_Int32_System_Int32__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator2_Operate_System_Int32_System_Int32_System_Double_System_Double__
+  name: Operate(int, int, double, ref double)
+  nameWithType: IMosaicOperator2.Operate(int, int, double, ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(int, int, double, ref double)
+  nameWithType.vb: IMosaicOperator2.Operate(Integer, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(Integer, Integer, Double, Double)
+  name.vb: Operate(Integer, Integer, Double, Double)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+    name: Operate
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator2_Operate_System_Int32_System_Int32_System_Double_System_Double__
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - name: ref
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.Operate(System.Int32,System.Int32,System.Double,System.Double@)
+    name: Operate
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator2.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator2_Operate_System_Int32_System_Int32_System_Double_System_Double__
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.html#ESRI_ArcGIS_DatasourcesRaster_MeanMosaickerClass_Properties
+  name: Properties
+  nameWithType: MeanMosaickerClass.Properties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.Properties
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Properties
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Properties
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_Properties
+  name: Properties
+  nameWithType: IMosaicOperator.Properties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.Properties
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.html#ESRI_ArcGIS_DatasourcesRaster_MeanMosaickerClass_CurrentBand
+  name: CurrentBand
+  nameWithType: MeanMosaickerClass.CurrentBand
+  fullName: ESRI.ArcGIS.DatasourcesRaster.MeanMosaickerClass.CurrentBand
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.CurrentBand
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.CurrentBand
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.html#ESRI_ArcGIS_DatasourcesRaster_IMosaicOperator_CurrentBand
+  name: CurrentBand
+  nameWithType: IMosaicOperator.CurrentBand
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMosaicOperator.CurrentBand

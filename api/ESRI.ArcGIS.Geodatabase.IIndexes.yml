@@ -1,0 +1,283 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes
+  commentId: T:ESRI.ArcGIS.Geodatabase.IIndexes
+  id: IIndexes
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex(System.String,System.Int32@)
+  - ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName(System.String)
+  - ESRI.ArcGIS.Geodatabase.IIndexes.Index(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+  langs:
+  - csharp
+  - vb
+  name: IIndexes
+  nameWithType: IIndexes
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return information about the index collection.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("2063FD03-4CE0-11D1-89DB-006097AFF44E")]
+
+      public interface IIndexes
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("2063FD03-4CE0-11D1-89DB-006097AFF44E")>
+
+      Public Interface IIndexes
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.IndexesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2063FD03-4CE0-11D1-89DB-006097AFF44E
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex(System.String,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex(System.String,System.Int32@)
+  id: FindIndex(System.String,System.Int32@)
+  parent: ESRI.ArcGIS.Geodatabase.IIndexes
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(string, out int)
+  nameWithType: IIndexes.FindIndex(string, out int)
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex(string, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Finds the position of the named index in the indexes collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FindIndex(string Name, out int pos)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: pos
+      type: System.Int32
+    content.vb: Sub FindIndex(Name As String, pos As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex*
+  nameWithType.vb: IIndexes.FindIndex(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex(String, Integer)
+  name.vb: FindIndex(String, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName(System.String)
+  id: FindIndexesByFieldName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IIndexes
+  langs:
+  - csharp
+  - vb
+  name: FindIndexesByFieldName(string)
+  nameWithType: IIndexes.FindIndexesByFieldName(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The set of indexes for a given field name (if any).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumIndex FindIndexesByFieldName(string FieldName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumIndex
+    content.vb: Function FindIndexesByFieldName(FieldName As String) As IEnumIndex
+  overload: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName*
+  nameWithType.vb: IIndexes.FindIndexesByFieldName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName(String)
+  name.vb: FindIndexesByFieldName(String)
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+  id: IndexCount
+  parent: ESRI.ArcGIS.Geodatabase.IIndexes
+  langs:
+  - csharp
+  - vb
+  name: IndexCount
+  nameWithType: IIndexes.IndexCount
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of indexes in the indexes collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int IndexCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property IndexCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount*
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.Index(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IIndexes.Index(System.Int32)
+  id: Index(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IIndexes
+  langs:
+  - csharp
+  - vb
+  name: Index[int]
+  nameWithType: IIndexes.Index[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.Index[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The index at the specified position in the indexes collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IIndex Index[int pos] { get; }
+    parameters:
+    - id: pos
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IIndex
+    content.vb: ReadOnly Property Index(pos As Integer) As IIndex
+  overload: ESRI.ArcGIS.Geodatabase.IIndexes.Index*
+  nameWithType.vb: IIndexes.Index(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IIndexes.Index(Integer)
+  name.vb: Index(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndexes.html#ESRI_ArcGIS_Geodatabase_IIndexes_FindIndex_System_String_System_Int32__
+  name: FindIndex
+  nameWithType: IIndexes.FindIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndex
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndexes.html#ESRI_ArcGIS_Geodatabase_IIndexes_FindIndexesByFieldName_System_String_
+  name: FindIndexesByFieldName
+  nameWithType: IIndexes.FindIndexesByFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.FindIndexesByFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IEnumIndex
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumIndex
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumIndex.html
+  name: IEnumIndex
+  nameWithType: IEnumIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumIndex
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndexes.html#ESRI_ArcGIS_Geodatabase_IIndexes_IndexCount
+  name: IndexCount
+  nameWithType: IIndexes.IndexCount
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.IndexCount
+- uid: ESRI.ArcGIS.Geodatabase.IIndexes.Index*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IIndexes.Index
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndexes.html#ESRI_ArcGIS_Geodatabase_IIndexes_Index_System_Int32_
+  name: Index
+  nameWithType: IIndexes.Index
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexes.Index
+- uid: ESRI.ArcGIS.Geodatabase.IIndex
+  commentId: T:ESRI.ArcGIS.Geodatabase.IIndex
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndex.html
+  name: IIndex
+  nameWithType: IIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IIndex

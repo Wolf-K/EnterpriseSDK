@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  commentId: T:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  id: IDatabaseLockInfo
+  parent: ESRI.ArcGIS.DatasourcesGDB
+  children:
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+  - ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+  langs:
+  - csharp
+  - vb
+  name: IDatabaseLockInfo
+  nameWithType: IDatabaseLockInfo
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: Infomation about database locks.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("58F47253-0F9D-4E59-A573-6A3267D0810C")]
+
+      public interface IDatabaseLockInfo
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("58F47253-0F9D-4E59-A573-6A3267D0810C")>
+
+      Public Interface IDatabaseLockInfo
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 58F47253-0F9D-4E59-A573-6A3267D0810C
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+  id: SessionID
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: SessionID
+  nameWithType: IDatabaseLockInfo.SessionID
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The session that owns the lock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SessionID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SessionID As Integer
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+  id: LockOwner
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: LockOwner
+  nameWithType: IDatabaseLockInfo.LockOwner
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The user that owns the lock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string LockOwner { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property LockOwner As String
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+  id: LockMode
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: LockMode
+  nameWithType: IDatabaseLockInfo.LockMode
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The mode of the lock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSdeLockMode LockMode { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode
+    content.vb: ReadOnly Property LockMode As esriSdeLockMode
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+  id: LockTime
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: LockTime
+  nameWithType: IDatabaseLockInfo.LockTime
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The time when the lock was acquired.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object LockTime { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property LockTime As Object
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+  id: LockType
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: LockType
+  nameWithType: IDatabaseLockInfo.LockType
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The type of lock.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriSdeLockType LockType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType
+    content.vb: ReadOnly Property LockType As esriSdeLockType
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+  id: ObjectID
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: ObjectID
+  nameWithType: IDatabaseLockInfo.ObjectID
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The ID of the locked object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long ObjectID { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property ObjectID As Long
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+  id: ObjectName
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: ObjectName
+  nameWithType: IDatabaseLockInfo.ObjectName
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The name of the locked object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ObjectName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ObjectName As String
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+  id: DatasetType
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: DatasetType
+  nameWithType: IDatabaseLockInfo.DatasetType
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: The type of the locked dataset, if it is a dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriDatasetType DatasetType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetType
+    content.vb: ReadOnly Property DatasetType As esriDatasetType
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType*
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+  commentId: P:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+  id: IsOwnLock
+  parent: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo
+  langs:
+  - csharp
+  - vb
+  name: IsOwnLock
+  nameWithType: IDatabaseLockInfo.IsOwnLock
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesGDB
+  namespace: ESRI.ArcGIS.DatasourcesGDB
+  summary: Is the lock from the current connection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsOwnLock { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsOwnLock As Boolean
+  overload: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock*
+references:
+- uid: ESRI.ArcGIS.DatasourcesGDB
+  commentId: N:ESRI.ArcGIS.DatasourcesGDB
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesGDB
+  nameWithType: ESRI.ArcGIS.DatasourcesGDB
+  fullName: ESRI.ArcGIS.DatasourcesGDB
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesGDB
+    name: DatasourcesGDB
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesGDB.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesGDB
+    name: DatasourcesGDB
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesGDB.html
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_SessionID
+  name: SessionID
+  nameWithType: IDatabaseLockInfo.SessionID
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.SessionID
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_LockOwner
+  name: LockOwner
+  nameWithType: IDatabaseLockInfo.LockOwner
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockOwner
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_LockMode
+  name: LockMode
+  nameWithType: IDatabaseLockInfo.LockMode
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockMode
+- uid: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode
+  commentId: T:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode
+  parent: ESRI.ArcGIS.DatasourcesGDB
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode.html
+  name: esriSdeLockMode
+  nameWithType: esriSdeLockMode
+  fullName: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockMode
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_LockTime
+  name: LockTime
+  nameWithType: IDatabaseLockInfo.LockTime
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockTime
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_LockType
+  name: LockType
+  nameWithType: IDatabaseLockInfo.LockType
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.LockType
+- uid: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType
+  commentId: T:ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType
+  parent: ESRI.ArcGIS.DatasourcesGDB
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType.html
+  name: esriSdeLockType
+  nameWithType: esriSdeLockType
+  fullName: ESRI.ArcGIS.DatasourcesGDB.esriSdeLockType
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_ObjectID
+  name: ObjectID
+  nameWithType: IDatabaseLockInfo.ObjectID
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectID
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_ObjectName
+  name: ObjectName
+  nameWithType: IDatabaseLockInfo.ObjectName
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.ObjectName
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_DatasetType
+  name: DatasetType
+  nameWithType: IDatabaseLockInfo.DatasetType
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.DatasetType
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetType.html
+  name: esriDatasetType
+  nameWithType: esriDatasetType
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetType
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.html#ESRI_ArcGIS_DatasourcesGDB_IDatabaseLockInfo_IsOwnLock
+  name: IsOwnLock
+  nameWithType: IDatabaseLockInfo.IsOwnLock
+  fullName: ESRI.ArcGIS.DatasourcesGDB.IDatabaseLockInfo.IsOwnLock
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

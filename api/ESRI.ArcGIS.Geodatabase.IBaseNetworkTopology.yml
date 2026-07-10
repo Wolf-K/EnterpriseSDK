@@ -1,0 +1,481 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  commentId: T:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  id: IBaseNetworkTopology
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo,System.Double@,System.Int32@)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  - ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets,System.Boolean,System.Boolean,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  langs:
+  - csharp
+  - vb
+  name: IBaseNetworkTopology
+  nameWithType: IBaseNetworkTopology
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that specify the properties of a base network topology.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("7054DC68-1A23-4A3D-92AB-AF90F1C7B426")]
+
+      public interface IBaseNetworkTopology
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("7054DC68-1A23-4A3D-92AB-AF90F1C7B426")>
+
+      Public Interface IBaseNetworkTopology
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7054DC68-1A23-4A3D-92AB-AF90F1C7B426
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  id: ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: ValidateNetworkTopology(IEnvelope, bool, out double, out bool, out int, out bool)
+  nameWithType: IBaseNetworkTopology.ValidateNetworkTopology(IEnvelope, bool, out double, out bool, out int, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope, bool, out double, out bool, out int, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ValidateNetworkTopology(IEnvelope Extent, bool asynchronous, out double TimeStamp, out bool HasErrors, out int dirtyAreasCount, out bool fullUpdate)
+    parameters:
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: asynchronous
+      type: System.Boolean
+    - id: TimeStamp
+      type: System.Double
+    - id: HasErrors
+      type: System.Boolean
+    - id: dirtyAreasCount
+      type: System.Int32
+    - id: fullUpdate
+      type: System.Boolean
+    content.vb: Sub ValidateNetworkTopology(Extent As IEnvelope, asynchronous As Boolean, TimeStamp As Double, HasErrors As Boolean, dirtyAreasCount As Integer, fullUpdate As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology*
+  nameWithType.vb: IBaseNetworkTopology.ValidateNetworkTopology(IEnvelope, Boolean, Double, Boolean, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology(ESRI.ArcGIS.Geometry.IEnvelope, Boolean, Double, Boolean, Integer, Boolean)
+  name.vb: ValidateNetworkTopology(IEnvelope, Boolean, Double, Boolean, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology
+  id: HasValidNetworkTopology
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: HasValidNetworkTopology()
+  nameWithType: IBaseNetworkTopology.HasValidNetworkTopology()
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the network has a valid network topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasValidNetworkTopology()
+    return:
+      type: System.Boolean
+    content.vb: Function HasValidNetworkTopology() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology*
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo,System.Double@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo,System.Double@,System.Int32@)
+  id: NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo,System.Double@,System.Int32@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: NetworkTopologyUpdateInfo(esriIndexUpdateInfo, out double, out int)
+  nameWithType: IBaseNetworkTopology.NetworkTopologyUpdateInfo(esriIndexUpdateInfo, out double, out int)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo, out double, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the network topology update info.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void NetworkTopologyUpdateInfo(esriIndexUpdateInfo indexUpdateInfo, out double time, out int duration)
+    parameters:
+    - id: indexUpdateInfo
+      type: ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo
+    - id: time
+      type: System.Double
+    - id: duration
+      type: System.Int32
+    content.vb: Sub NetworkTopologyUpdateInfo(indexUpdateInfo As esriIndexUpdateInfo, time As Double, duration As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo*
+  nameWithType.vb: IBaseNetworkTopology.NetworkTopologyUpdateInfo(esriIndexUpdateInfo, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo, Double, Integer)
+  name.vb: NetworkTopologyUpdateInfo(esriIndexUpdateInfo, Double, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets,System.Boolean,System.Boolean,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets,System.Boolean,System.Boolean,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  id: ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets,System.Boolean,System.Boolean,System.Boolean,System.Double@,System.Boolean@,System.Int32@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: ValidateNetworkTopologyEx(IEnvelope, IIndexedGUIDSets, bool, bool, bool, out double, out bool, out int, out bool)
+  nameWithType: IBaseNetworkTopology.ValidateNetworkTopologyEx(IEnvelope, IIndexedGUIDSets, bool, bool, bool, out double, out bool, out int, out bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets, bool, bool, bool, out double, out bool, out int, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ValidateNetworkTopologyEx(IEnvelope Extent, IIndexedGUIDSets SelectionSet, bool asynchronous, bool preserveEIDs, bool respectDAs, out double TimeStamp, out bool HasErrors, out int dirtyAreasCount, out bool fullUpdate)
+    parameters:
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: SelectionSet
+      type: ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets
+    - id: asynchronous
+      type: System.Boolean
+    - id: preserveEIDs
+      type: System.Boolean
+    - id: respectDAs
+      type: System.Boolean
+    - id: TimeStamp
+      type: System.Double
+    - id: HasErrors
+      type: System.Boolean
+    - id: dirtyAreasCount
+      type: System.Int32
+    - id: fullUpdate
+      type: System.Boolean
+    content.vb: Sub ValidateNetworkTopologyEx(Extent As IEnvelope, SelectionSet As IIndexedGUIDSets, asynchronous As Boolean, preserveEIDs As Boolean, respectDAs As Boolean, TimeStamp As Double, HasErrors As Boolean, dirtyAreasCount As Integer, fullUpdate As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx*
+  nameWithType.vb: IBaseNetworkTopology.ValidateNetworkTopologyEx(IEnvelope, IIndexedGUIDSets, Boolean, Boolean, Boolean, Double, Boolean, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx(ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets, Boolean, Boolean, Boolean, Double, Boolean, Integer, Boolean)
+  name.vb: ValidateNetworkTopologyEx(IEnvelope, IIndexedGUIDSets, Boolean, Boolean, Boolean, Double, Boolean, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  id: DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: DirtyArea[IPolygon]
+  nameWithType: IBaseNetworkTopology.DirtyArea[IPolygon]
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea[ESRI.ArcGIS.Geometry.IPolygon]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the dirty area polygon of the utility network.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolygon DirtyArea[IPolygon Location] { get; }
+    parameters:
+    - id: Location
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: ReadOnly Property DirtyArea(Location As IPolygon) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea*
+  nameWithType.vb: IBaseNetworkTopology.DirtyArea(IPolygon)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  name.vb: DirtyArea(IPolygon)
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo)
+  id: NetworkTopologyUpdateMoments(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo)
+  parent: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology
+  langs:
+  - csharp
+  - vb
+  name: NetworkTopologyUpdateMoments[esriIndexUpdateInfo]
+  nameWithType: IBaseNetworkTopology.NetworkTopologyUpdateMoments[esriIndexUpdateInfo]
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments[ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the network topology update moments.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDoubleArray NetworkTopologyUpdateMoments[esriIndexUpdateInfo indexUpdateInfo] { get; }
+    parameters:
+    - id: indexUpdateInfo
+      type: ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo
+    return:
+      type: ESRI.ArcGIS.esriSystem.IDoubleArray
+    content.vb: ReadOnly Property NetworkTopologyUpdateMoments(indexUpdateInfo As esriIndexUpdateInfo) As IDoubleArray
+  overload: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments*
+  nameWithType.vb: IBaseNetworkTopology.NetworkTopologyUpdateMoments(esriIndexUpdateInfo)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments(ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo)
+  name.vb: NetworkTopologyUpdateMoments(esriIndexUpdateInfo)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_ValidateNetworkTopology_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Double__System_Boolean__System_Int32__System_Boolean__
+  name: ValidateNetworkTopology
+  nameWithType: IBaseNetworkTopology.ValidateNetworkTopology
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopology
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_HasValidNetworkTopology
+  name: HasValidNetworkTopology
+  nameWithType: IBaseNetworkTopology.HasValidNetworkTopology
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.HasValidNetworkTopology
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_NetworkTopologyUpdateInfo_ESRI_ArcGIS_Geodatabase_esriIndexUpdateInfo_System_Double__System_Int32__
+  name: NetworkTopologyUpdateInfo
+  nameWithType: IBaseNetworkTopology.NetworkTopologyUpdateInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateInfo
+- uid: ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo.html
+  name: esriIndexUpdateInfo
+  nameWithType: esriIndexUpdateInfo
+  fullName: ESRI.ArcGIS.Geodatabase.esriIndexUpdateInfo
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_ValidateNetworkTopologyEx_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geodatabase_IIndexedGUIDSets_System_Boolean_System_Boolean_System_Boolean_System_Double__System_Boolean__System_Int32__System_Boolean__
+  name: ValidateNetworkTopologyEx
+  nameWithType: IBaseNetworkTopology.ValidateNetworkTopologyEx
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.ValidateNetworkTopologyEx
+- uid: ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets
+  commentId: T:ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets.html
+  name: IIndexedGUIDSets
+  nameWithType: IIndexedGUIDSets
+  fullName: ESRI.ArcGIS.Geodatabase.IIndexedGUIDSets
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_DirtyArea_ESRI_ArcGIS_Geometry_IPolygon_
+  name: DirtyArea
+  nameWithType: IBaseNetworkTopology.DirtyArea
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.DirtyArea
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.html#ESRI_ArcGIS_Geodatabase_IBaseNetworkTopology_NetworkTopologyUpdateMoments_ESRI_ArcGIS_Geodatabase_esriIndexUpdateInfo_
+  name: NetworkTopologyUpdateMoments
+  nameWithType: IBaseNetworkTopology.NetworkTopologyUpdateMoments
+  fullName: ESRI.ArcGIS.Geodatabase.IBaseNetworkTopology.NetworkTopologyUpdateMoments
+- uid: ESRI.ArcGIS.esriSystem.IDoubleArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IDoubleArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IDoubleArray.html
+  name: IDoubleArray
+  nameWithType: IDoubleArray
+  fullName: ESRI.ArcGIS.esriSystem.IDoubleArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

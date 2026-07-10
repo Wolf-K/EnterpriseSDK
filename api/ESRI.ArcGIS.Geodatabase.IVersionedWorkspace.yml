@@ -1,0 +1,460 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  id: IVersionedWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions(System.String,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion(System.String)
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+  - ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+  langs:
+  - csharp
+  - vb
+  name: IVersionedWorkspace
+  nameWithType: IVersionedWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that manage versions.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("1B256191-B380-11D1-9CE6-0000F8780619")]
+
+      public interface IVersionedWorkspace
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("1B256191-B380-11D1-9CE6-0000F8780619")>
+
+      Public Interface IVersionedWorkspace
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1B256191-B380-11D1-9CE6-0000F8780619
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion(System.String)
+  id: FindVersion(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: FindVersion(string)
+  nameWithType: IVersionedWorkspace.FindVersion(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Finds a specific version given it's name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion FindVersion(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: Function FindVersion(Name As String) As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion*
+  nameWithType.vb: IVersionedWorkspace.FindVersion(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion(String)
+  name.vb: FindVersion(String)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress
+  commentId: M:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress
+  id: Compress
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Compress()
+  nameWithType: IVersionedWorkspace.Compress()
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Compresses the database by removing states not referenced by a version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Compress()
+    content.vb: Sub Compress()
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+  id: Versions
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Versions
+  nameWithType: IVersionedWorkspace.Versions
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: All versions the user owns and those which are public or protected.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumVersionInfo Versions { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+    content.vb: ReadOnly Property Versions As IEnumVersionInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+  id: DefaultVersion
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: DefaultVersion
+  nameWithType: IVersionedWorkspace.DefaultVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The Default version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IVersion DefaultVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IVersion
+    content.vb: ReadOnly Property DefaultVersion As IVersion
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+  id: RecommendedReconcileOrder
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: RecommendedReconcileOrder
+  nameWithType: IVersionedWorkspace.RecommendedReconcileOrder
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An ordered list of versions that can be used to optimize reconciliation against the default version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumVersionInfo RecommendedReconcileOrder { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+    content.vb: ReadOnly Property RecommendedReconcileOrder As IEnumVersionInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+  id: RecommendedSyncOrder
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: RecommendedSyncOrder
+  nameWithType: IVersionedWorkspace.RecommendedSyncOrder
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An ordered list of replicas that need to be synchronized in order to optimize reconciliation against the default version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumBSTR RecommendedSyncOrder { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: ReadOnly Property RecommendedSyncOrder As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder*
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions(System.String,System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions(System.String,System.Boolean)
+  id: DescendantVersions(System.String,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: DescendantVersions[string, bool]
+  nameWithType: IVersionedWorkspace.DescendantVersions[string, bool]
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions[string, bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A list of descendant versions of a version that can be sorted to optimize reconcile and post.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumVersionInfo DescendantVersions[string Version, bool orderForReconcileAndPost] { get; }
+    parameters:
+    - id: Version
+      type: System.String
+    - id: orderForReconcileAndPost
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+    content.vb: ReadOnly Property DescendantVersions(Version As String, orderForReconcileAndPost As Boolean) As IEnumVersionInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions*
+  nameWithType.vb: IVersionedWorkspace.DescendantVersions(String, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions(String, Boolean)
+  name.vb: DescendantVersions(String, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions
+  commentId: P:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions
+  id: ParentVersions
+  parent: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace
+  langs:
+  - csharp
+  - vb
+  name: ParentVersions
+  nameWithType: IVersionedWorkspace.ParentVersions
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A list of versions that have child versions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumVersionInfo ParentVersions { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+    content.vb: ReadOnly Property ParentVersions As IEnumVersionInfo
+  overload: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_FindVersion_System_String_
+  name: FindVersion
+  nameWithType: IVersionedWorkspace.FindVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.FindVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IVersion
+  commentId: T:ESRI.ArcGIS.Geodatabase.IVersion
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersion.html
+  name: IVersion
+  nameWithType: IVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersion
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_Compress
+  name: Compress
+  nameWithType: IVersionedWorkspace.Compress
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Compress
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_Versions
+  name: Versions
+  nameWithType: IVersionedWorkspace.Versions
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.Versions
+- uid: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo.html
+  name: IEnumVersionInfo
+  nameWithType: IEnumVersionInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumVersionInfo
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_DefaultVersion
+  name: DefaultVersion
+  nameWithType: IVersionedWorkspace.DefaultVersion
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DefaultVersion
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_RecommendedReconcileOrder
+  name: RecommendedReconcileOrder
+  nameWithType: IVersionedWorkspace.RecommendedReconcileOrder
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedReconcileOrder
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_RecommendedSyncOrder
+  name: RecommendedSyncOrder
+  nameWithType: IVersionedWorkspace.RecommendedSyncOrder
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.RecommendedSyncOrder
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_DescendantVersions_System_String_System_Boolean_
+  name: DescendantVersions
+  nameWithType: IVersionedWorkspace.DescendantVersions
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.DescendantVersions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.html#ESRI_ArcGIS_Geodatabase_IVersionedWorkspace_ParentVersions
+  name: ParentVersions
+  nameWithType: IVersionedWorkspace.ParentVersions
+  fullName: ESRI.ArcGIS.Geodatabase.IVersionedWorkspace.ParentVersions

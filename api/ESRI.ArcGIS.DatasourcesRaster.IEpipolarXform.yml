@@ -1,0 +1,858 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  id: IEpipolarXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Object@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus(System.Boolean@)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  - ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+  langs:
+  - csharp
+  - vb
+  name: IEpipolarXform
+  nameWithType: IEpipolarXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control epipolar transformation.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("461761C2-2C6B-4D28-A458-B8B7A5720073")]
+
+      public interface IEpipolarXform : IGeodataXform
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("461761C2-2C6B-4D28-A458-B8B7A5720073")>
+
+      Public Interface IEpipolarXform Inherits IGeodataXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.EpipolarXformClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 461761C2-2C6B-4D28-A458-B8B7A5720073
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  id: Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: Transform(esriTransformDirection, int, ref WKSPoint)
+  nameWithType: IEpipolarXform.Transform(esriTransformDirection, int, ref WKSPoint)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref ESRI.ArcGIS.esriSystem.WKSPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Transform(esriTransformDirection Direction, int npoints, ref WKSPoint points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: npoints
+      type: System.Int32
+    - id: points
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    content.vb: Sub Transform(Direction As esriTransformDirection, npoints As Integer, points As WKSPoint)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform*
+  nameWithType.vb: IEpipolarXform.Transform(esriTransformDirection, Integer, WKSPoint)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, ESRI.ArcGIS.esriSystem.WKSPoint)
+  name.vb: Transform(esriTransformDirection, Integer, WKSPoint)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  nameWithType: IEpipolarXform.TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double, ref double, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformCellsize(esriTransformDirection Direction, ref double dx, ref double dy, IEnvelope AreaOfInterest)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: AreaOfInterest
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformCellsize(Direction As esriTransformDirection, dx As Double, dy As Double, AreaOfInterest As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize*
+  nameWithType.vb: IEpipolarXform.TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, Double, Double, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: TransformExtent(esriTransformDirection, IEnvelope)
+  nameWithType: IEpipolarXform.TransformExtent(esriTransformDirection, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformExtent(esriTransformDirection Direction, IEnvelope Extent)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformExtent(Direction As esriTransformDirection, Extent As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  id: TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: TransformPoints(esriTransformDirection, IPointCollection)
+  nameWithType: IEpipolarXform.TransformPoints(esriTransformDirection, IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformPoints(esriTransformDirection Direction, IPointCollection points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: points
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub TransformPoints(Direction As esriTransformDirection, points As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)
+  id: CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,ESRI.ArcGIS.Geodatabase.IGeodataXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: CreateEpipolarXform(IGeodataXform, IEnvelope, IGeodataXform, IEnvelope, bool)
+  nameWithType: IEpipolarXform.CreateEpipolarXform(IGeodataXform, IEnvelope, IGeodataXform, IEnvelope, bool)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IGeodataXform, ESRI.ArcGIS.Geometry.IEnvelope, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void CreateEpipolarXform(IGeodataXform pPrimaryXform, IEnvelope pPrimaryImageExtent, IGeodataXform pSecondaryXform, IEnvelope pSecondaryImageExtent, bool IsPrimary)
+    parameters:
+    - id: pPrimaryXform
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    - id: pPrimaryImageExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pSecondaryXform
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    - id: pSecondaryImageExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: IsPrimary
+      type: System.Boolean
+    content.vb: Sub CreateEpipolarXform(pPrimaryXform As IGeodataXform, pPrimaryImageExtent As IEnvelope, pSecondaryXform As IGeodataXform, pSecondaryImageExtent As IEnvelope, IsPrimary As Boolean)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform*
+  nameWithType.vb: IEpipolarXform.CreateEpipolarXform(IGeodataXform, IEnvelope, IGeodataXform, IEnvelope, Boolean)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform(ESRI.ArcGIS.Geodatabase.IGeodataXform, ESRI.ArcGIS.Geometry.IEnvelope, ESRI.ArcGIS.Geodatabase.IGeodataXform, ESRI.ArcGIS.Geometry.IEnvelope, Boolean)
+  name.vb: CreateEpipolarXform(IGeodataXform, IEnvelope, IGeodataXform, IEnvelope, Boolean)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Object@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Object@,System.Double@)
+  id: FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform,ESRI.ArcGIS.Geometry.IEnvelope,System.Object@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: FitLocalProjectiveMatrix(IEpipolarXform, IEnvelope, out object, out double)
+  nameWithType: IEpipolarXform.FitLocalProjectiveMatrix(IEpipolarXform, IEnvelope, out object, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform, ESRI.ArcGIS.Geometry.IEnvelope, out object, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void FitLocalProjectiveMatrix(IEpipolarXform pStereoEpiXform, IEnvelope pExtent, out object pMatrix, out double rms)
+    parameters:
+    - id: pStereoEpiXform
+      type: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+    - id: pExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pMatrix
+      type: System.Object
+    - id: rms
+      type: System.Double
+    content.vb: Sub FitLocalProjectiveMatrix(pStereoEpiXform As IEpipolarXform, pExtent As IEnvelope, pMatrix As Object, rms As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix*
+  nameWithType.vb: IEpipolarXform.FitLocalProjectiveMatrix(IEpipolarXform, IEnvelope, Object, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix(ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform, ESRI.ArcGIS.Geometry.IEnvelope, Object, Double)
+  name.vb: FitLocalProjectiveMatrix(IEpipolarXform, IEnvelope, Object, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus(System.Boolean@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus(System.Boolean@)
+  id: QueryFrameMatrixStatus(System.Boolean@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: QueryFrameMatrixStatus(out bool)
+  nameWithType: IEpipolarXform.QueryFrameMatrixStatus(out bool)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus(out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Fit a projective matrix using given extent.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryFrameMatrixStatus(out bool isFrameMatrixReady)
+    parameters:
+    - id: isFrameMatrixReady
+      type: System.Boolean
+    content.vb: Sub QueryFrameMatrixStatus(isFrameMatrixReady As Boolean)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus*
+  nameWithType.vb: IEpipolarXform.QueryFrameMatrixStatus(Boolean)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus(Boolean)
+  name.vb: QueryFrameMatrixStatus(Boolean)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IEpipolarXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+  id: Domains
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: Domains
+  nameWithType: IEpipolarXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IGeometryCollection Domains { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometryCollection
+    content.vb: ReadOnly Property Domains As IGeometryCollection
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+  id: IsIdentity
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: IEpipolarXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool IsIdentity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsIdentity As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+  id: GeodataXform
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: GeodataXform
+  nameWithType: IEpipolarXform.GeodataXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The final epipolar geodataxform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeodataXform GeodataXform { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    content.vb: Property GeodataXform As IGeodataXform
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+  id: AffineXform
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: AffineXform
+  nameWithType: IEpipolarXform.AffineXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The final affine geodataxform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeodataXform AffineXform { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    content.vb: Property AffineXform As IGeodataXform
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+  id: TransformationMatrix
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: TransformationMatrix
+  nameWithType: IEpipolarXform.TransformationMatrix
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The transformation matrix from world to map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object TransformationMatrix { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property TransformationMatrix As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+  id: CenterPoint
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: CenterPoint
+  nameWithType: IEpipolarXform.CenterPoint
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The center point of map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object CenterPoint { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property CenterPoint As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+  id: EpipolarResolution
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: EpipolarResolution
+  nameWithType: IEpipolarXform.EpipolarResolution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The center point of map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double EpipolarResolution { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property EpipolarResolution As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution
+  id: ElevationResolution
+  parent: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  langs:
+  - csharp
+  - vb
+  name: ElevationResolution
+  nameWithType: IEpipolarXform.ElevationResolution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The center point of map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ElevationResolution { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property ElevationResolution As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_Transform_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__
+  name: Transform
+  nameWithType: IEpipolarXform.Transform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Transform
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_TransformCellsize_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double__System_Double__ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformCellsize
+  nameWithType: IEpipolarXform.TransformCellsize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformCellsize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_TransformExtent_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformExtent
+  nameWithType: IEpipolarXform.TransformExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformExtent
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_TransformPoints_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IPointCollection_
+  name: TransformPoints
+  nameWithType: IEpipolarXform.TransformPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformPoints
+- uid: ESRI.ArcGIS.Geometry.IPointCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IPointCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointCollection.html
+  name: IPointCollection
+  nameWithType: IPointCollection
+  fullName: ESRI.ArcGIS.Geometry.IPointCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_CreateEpipolarXform_ESRI_ArcGIS_Geodatabase_IGeodataXform_ESRI_ArcGIS_Geometry_IEnvelope_ESRI_ArcGIS_Geodatabase_IGeodataXform_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_
+  name: CreateEpipolarXform
+  nameWithType: IEpipolarXform.CreateEpipolarXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CreateEpipolarXform
+- uid: ESRI.ArcGIS.Geodatabase.IGeodataXform
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeodataXform
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeodataXform.html
+  name: IGeodataXform
+  nameWithType: IGeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeodataXform
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_FitLocalProjectiveMatrix_ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_ESRI_ArcGIS_Geometry_IEnvelope_System_Object__System_Double__
+  name: FitLocalProjectiveMatrix
+  nameWithType: IEpipolarXform.FitLocalProjectiveMatrix
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.FitLocalProjectiveMatrix
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html
+  name: IEpipolarXform
+  nameWithType: IEpipolarXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_QueryFrameMatrixStatus_System_Boolean__
+  name: QueryFrameMatrixStatus
+  nameWithType: IEpipolarXform.QueryFrameMatrixStatus
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.QueryFrameMatrixStatus
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_SpatialReference
+  name: SpatialReference
+  nameWithType: IEpipolarXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_Domains
+  name: Domains
+  nameWithType: IEpipolarXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.Domains
+- uid: ESRI.ArcGIS.Geometry.IGeometryCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometryCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryCollection.html
+  name: IGeometryCollection
+  nameWithType: IGeometryCollection
+  fullName: ESRI.ArcGIS.Geometry.IGeometryCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_IsIdentity
+  name: IsIdentity
+  nameWithType: IEpipolarXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.IsIdentity
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_GeodataXform
+  name: GeodataXform
+  nameWithType: IEpipolarXform.GeodataXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.GeodataXform
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_AffineXform
+  name: AffineXform
+  nameWithType: IEpipolarXform.AffineXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.AffineXform
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_TransformationMatrix
+  name: TransformationMatrix
+  nameWithType: IEpipolarXform.TransformationMatrix
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.TransformationMatrix
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_CenterPoint
+  name: CenterPoint
+  nameWithType: IEpipolarXform.CenterPoint
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.CenterPoint
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_EpipolarResolution
+  name: EpipolarResolution
+  nameWithType: IEpipolarXform.EpipolarResolution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.EpipolarResolution
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.html#ESRI_ArcGIS_DatasourcesRaster_IEpipolarXform_ElevationResolution
+  name: ElevationResolution
+  nameWithType: IEpipolarXform.ElevationResolution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEpipolarXform.ElevationResolution

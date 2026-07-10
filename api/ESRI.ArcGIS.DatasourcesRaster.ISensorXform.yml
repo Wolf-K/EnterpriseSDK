@@ -1,0 +1,376 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  id: ISensorXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+  - ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+  langs:
+  - csharp
+  - vb
+  name: ISensorXform
+  nameWithType: ISensorXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control sensor specific geodata transform.
+  example: []
+  syntax:
+    content: >-
+      [Guid("4FC73B78-D994-457A-90EE-A6D0015B6548")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISensorXform
+    content.vb: >-
+      <Guid("4FC73B78-D994-457A-90EE-A6D0015B6548")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISensorXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ApproximationXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.CompositeXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.EpipolarXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.Formosat2XformClass
+  - ESRI.ArcGIS.DatasourcesRaster.FrameXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.PushbroomXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.RPCXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.SARXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.SICDXformClass
+  - ESRI.ArcGIS.DatasourcesRaster.SPOT5XformClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 4FC73B78-D994-457A-90EE-A6D0015B6548
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+  id: ConstantZ
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: ConstantZ
+  nameWithType: ISensorXform.ConstantZ
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The constant Z value in meters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ConstantZ { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ConstantZ As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+  id: ZFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: ZFactor
+  nameWithType: ISensorXform.ZFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The conversion factor from DEM Z unit to meters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ZFactor As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+  id: ZOffset
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: ZOffset
+  nameWithType: ISensorXform.ZOffset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The Z offset in meters applied to DEM.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZOffset { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ZOffset As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+  id: DEM
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: DEM
+  nameWithType: ISensorXform.DEM
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The Digital Elevation Model (DEM).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRaster DEM { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    content.vb: Property DEM As IRaster
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+  id: RequireDEM
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: RequireDEM
+  nameWithType: ISensorXform.RequireDEM
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if DEM is required for applying this transform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool RequireDEM { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property RequireDEM As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid
+  id: CorrectGeoid
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISensorXform
+  langs:
+  - csharp
+  - vb
+  name: CorrectGeoid
+  nameWithType: ISensorXform.CorrectGeoid
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if Geoid correction is needed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CorrectGeoid { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property CorrectGeoid As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_ConstantZ
+  name: ConstantZ
+  nameWithType: ISensorXform.ConstantZ
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ConstantZ
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_ZFactor
+  name: ZFactor
+  nameWithType: ISensorXform.ZFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_ZOffset
+  name: ZOffset
+  nameWithType: ISensorXform.ZOffset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.ZOffset
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_DEM
+  name: DEM
+  nameWithType: ISensorXform.DEM
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.DEM
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_RequireDEM
+  name: RequireDEM
+  nameWithType: ISensorXform.RequireDEM
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.RequireDEM
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.html#ESRI_ArcGIS_DatasourcesRaster_ISensorXform_CorrectGeoid
+  name: CorrectGeoid
+  nameWithType: ISensorXform.CorrectGeoid
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISensorXform.CorrectGeoid

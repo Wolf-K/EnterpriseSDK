@@ -1,0 +1,1108 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkQuery
+  id: INetworkQuery
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime(System.Int32,System.DateTime)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime(System.Int32,System.DateTime)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition(System.Int32,System.Int64,System.Double)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment(System.Int32,System.Int64,System.Double,System.Double)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID(System.Int32,System.Int64)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs(System.Int32,ESRI.ArcGIS.esriSystem.ILongLongArray)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge(System.Int64,ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData(System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage,System.DateTime@,System.DateTime@)
+  - ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID(ESRI.ArcGIS.Geodatabase.INetworkElement)
+  langs:
+  - csharp
+  - vb
+  name: INetworkQuery
+  nameWithType: INetworkQuery
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that query the elements of the network dataset.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("73BED6FC-FDA9-45B0-A82D-1B42D52A26D0")]
+
+      public interface INetworkQuery
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("73BED6FC-FDA9-45B0-A82D-1B42D52A26D0")>
+
+      Public Interface INetworkQuery
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 73BED6FC-FDA9-45B0-A82D-1B42D52A26D0
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar
+  id: CreateForwardStar
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: CreateForwardStar()
+  nameWithType: INetworkQuery.CreateForwardStar()
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a NetworkForwardStar object for traversing the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkForwardStar CreateForwardStar()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkForwardStar
+    content.vb: Function CreateForwardStar() As INetworkForwardStar
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies
+  id: CreateForwardStarAdjacencies
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: CreateForwardStarAdjacencies()
+  nameWithType: INetworkQuery.CreateForwardStarAdjacencies()
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a NetworkForwardStarAdjacencies container object for forward star queries.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkForwardStarAdjacencies CreateForwardStarAdjacencies()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkForwardStarAdjacencies
+    content.vb: Function CreateForwardStarAdjacencies() As INetworkForwardStarAdjacencies
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  id: CreateNetworkElement(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: CreateNetworkElement(esriNetworkElementType)
+  nameWithType: INetworkQuery.CreateNetworkElement(esriNetworkElementType)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates an uninitialized network element of the specified type for use in network dataset queries.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INetworkElement CreateNetworkElement(esriNetworkElementType ElementType)
+    parameters:
+    - id: ElementType
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.INetworkElement
+    content.vb: Function CreateNetworkElement(ElementType As esriNetworkElementType) As INetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge(System.Int64,ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge(System.Int64,ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  id: QueryEdge(System.Int64,ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryEdge(long, esriNetworkEdgeDirection, INetworkEdge)
+  nameWithType: INetworkQuery.QueryEdge(long, esriNetworkEdgeDirection, INetworkEdge)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge(long, ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection, ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryEdge(long EID, esriNetworkEdgeDirection Direction, INetworkEdge Edge)
+    parameters:
+    - id: EID
+      type: System.Int64
+    - id: Direction
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+    - id: Edge
+      type: ESRI.ArcGIS.Geodatabase.INetworkEdge
+    content.vb: Sub QueryEdge(EID As Long, Direction As esriNetworkEdgeDirection, Edge As INetworkEdge)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge*
+  nameWithType.vb: INetworkQuery.QueryEdge(Long, esriNetworkEdgeDirection, INetworkEdge)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge(Long, ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection, ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  name.vb: QueryEdge(Long, esriNetworkEdgeDirection, INetworkEdge)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  id: QueryJunction(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryJunction(long, INetworkJunction)
+  nameWithType: INetworkQuery.QueryJunction(long, INetworkJunction)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction(long, ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryJunction(long EID, INetworkJunction Junction)
+    parameters:
+    - id: EID
+      type: System.Int64
+    - id: Junction
+      type: ESRI.ArcGIS.Geodatabase.INetworkJunction
+    content.vb: Sub QueryJunction(EID As Long, Junction As INetworkJunction)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction*
+  nameWithType.vb: INetworkQuery.QueryJunction(Long, INetworkJunction)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction(Long, ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  name.vb: QueryJunction(Long, INetworkJunction)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  id: QueryTurn(System.Int64,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: QueryTurn(long, INetworkTurn)
+  nameWithType: INetworkQuery.QueryTurn(long, INetworkTurn)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn(long, ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryTurn(long EID, INetworkTurn Turn)
+    parameters:
+    - id: EID
+      type: System.Int64
+    - id: Turn
+      type: ESRI.ArcGIS.Geodatabase.INetworkTurn
+    content.vb: Sub QueryTurn(EID As Long, Turn As INetworkTurn)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn*
+  nameWithType.vb: INetworkQuery.QueryTurn(Long, INetworkTurn)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn(Long, ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  name.vb: QueryTurn(Long, INetworkTurn)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache
+  id: ClearIDCache
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ClearIDCache()
+  nameWithType: INetworkQuery.ClearIDCache()
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Empties the contents of the index used for finding network elements by source.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ClearIDCache()
+    content.vb: Sub ClearIDCache()
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache(System.Int32)
+  id: PopulateIDCache(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: PopulateIDCache(int)
+  nameWithType: INetworkQuery.PopulateIDCache(int)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Initializes the index used for quickly finding network elements for the given source ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PopulateIDCache(int SourceID)
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    content.vb: Sub PopulateIDCache(SourceID As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache*
+  nameWithType.vb: INetworkQuery.PopulateIDCache(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache(Integer)
+  name.vb: PopulateIDCache(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime(System.Int32,System.DateTime)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime(System.Int32,System.DateTime)
+  id: ConvertLocalTimeToUTCTime(System.Int32,System.DateTime)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ConvertLocalTimeToUTCTime(int, DateTime)
+  nameWithType: INetworkQuery.ConvertLocalTimeToUTCTime(int, DateTime)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime(int, System.DateTime)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Converts local time for the given time zone to UTC time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: DateTime ConvertLocalTimeToUTCTime(int localTimeZoneID, DateTime localTime)
+    parameters:
+    - id: localTimeZoneID
+      type: System.Int32
+    - id: localTime
+      type: System.DateTime
+    return:
+      type: System.DateTime
+    content.vb: Function ConvertLocalTimeToUTCTime(localTimeZoneID As Integer, localTime As Date) As Date
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime*
+  nameWithType.vb: INetworkQuery.ConvertLocalTimeToUTCTime(Integer, Date)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime(Integer, Date)
+  name.vb: ConvertLocalTimeToUTCTime(Integer, Date)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime(System.Int32,System.DateTime)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime(System.Int32,System.DateTime)
+  id: ConvertUTCTimeToLocalTime(System.Int32,System.DateTime)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ConvertUTCTimeToLocalTime(int, DateTime)
+  nameWithType: INetworkQuery.ConvertUTCTimeToLocalTime(int, DateTime)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime(int, System.DateTime)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Converts UTC time to local time for the given time zone.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: DateTime ConvertUTCTimeToLocalTime(int localTimeZoneID, DateTime utcTime)
+    parameters:
+    - id: localTimeZoneID
+      type: System.Int32
+    - id: utcTime
+      type: System.DateTime
+    return:
+      type: System.DateTime
+    content.vb: Function ConvertUTCTimeToLocalTime(localTimeZoneID As Integer, utcTime As Date) As Date
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime*
+  nameWithType.vb: INetworkQuery.ConvertUTCTimeToLocalTime(Integer, Date)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime(Integer, Date)
+  name.vb: ConvertUTCTimeToLocalTime(Integer, Date)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData(System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage,System.DateTime@,System.DateTime@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData(System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage,System.DateTime@,System.DateTime@)
+  id: RefreshDynamicTrafficData(System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage,System.DateTime@,System.DateTime@)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: RefreshDynamicTrafficData(DateTime, esriNetworkTimeUsage, out DateTime, out DateTime)
+  nameWithType: INetworkQuery.RefreshDynamicTrafficData(DateTime, esriNetworkTimeUsage, out DateTime, out DateTime)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData(System.DateTime, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage, out System.DateTime, out System.DateTime)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Refreshes the current dynamic traffic data referenced by the network dataset based on the specified time and usage.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RefreshDynamicTrafficData(DateTime utcTime, esriNetworkTimeUsage utcTimeUsage, out DateTime pDynamicTrafficUTCStartTime, out DateTime pDynamicTrafficUTCEndTime)
+    parameters:
+    - id: utcTime
+      type: System.DateTime
+    - id: utcTimeUsage
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+    - id: pDynamicTrafficUTCStartTime
+      type: System.DateTime
+    - id: pDynamicTrafficUTCEndTime
+      type: System.DateTime
+    content.vb: Sub RefreshDynamicTrafficData(utcTime As Date, utcTimeUsage As esriNetworkTimeUsage, pDynamicTrafficUTCStartTime As Date, pDynamicTrafficUTCEndTime As Date)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData*
+  nameWithType.vb: INetworkQuery.RefreshDynamicTrafficData(Date, esriNetworkTimeUsage, Date, Date)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData(Date, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage, Date, Date)
+  name.vb: RefreshDynamicTrafficData(Date, esriNetworkTimeUsage, Date, Date)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  id: MaxEID(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: MaxEID[esriNetworkElementType]
+  nameWithType: INetworkQuery.MaxEID[esriNetworkElementType]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID[ESRI.ArcGIS.Geodatabase.esriNetworkElementType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Highest element ID in the network dataset for the given element type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long MaxEID[esriNetworkElementType ElementType] { get; }
+    parameters:
+    - id: ElementType
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property MaxEID(ElementType As esriNetworkElementType) As Long
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID*
+  nameWithType.vb: INetworkQuery.MaxEID(esriNetworkElementType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  name.vb: MaxEID(esriNetworkElementType)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+  id: MaxValence
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: MaxValence
+  nameWithType: INetworkQuery.MaxValence
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Maximum number of edge elements connected to any single junction element.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaxValence { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxValence As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  id: ElementCount(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ElementCount[esriNetworkElementType]
+  nameWithType: INetworkQuery.ElementCount[esriNetworkElementType]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount[ESRI.ArcGIS.Geodatabase.esriNetworkElementType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Number of network elements of the given type in the network dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ElementCount[esriNetworkElementType ElementType] { get; }
+    parameters:
+    - id: ElementType
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ElementCount(ElementType As esriNetworkElementType) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount*
+  nameWithType.vb: INetworkQuery.ElementCount(esriNetworkElementType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  name.vb: ElementCount(esriNetworkElementType)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+  id: ComplexTurnCount
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ComplexTurnCount
+  nameWithType: INetworkQuery.ComplexTurnCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Number of turn elements in the network dataset having more than two edge elements participating.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ComplexTurnCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ComplexTurnCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID(System.Int32,System.Int64)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID(System.Int32,System.Int64)
+  id: ElementsByOID(System.Int32,System.Int64)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ElementsByOID[int, long]
+  nameWithType: INetworkQuery.ElementsByOID[int, long]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID[int, long]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Elements in the network dataset corresponding to the given source object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement ElementsByOID[int SourceID, long OID] { get; }
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: OID
+      type: System.Int64
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property ElementsByOID(SourceID As Integer, OID As Long) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID*
+  nameWithType.vb: INetworkQuery.ElementsByOID(Integer, Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID(Integer, Long)
+  name.vb: ElementsByOID(Integer, Long)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition(System.Int32,System.Int64,System.Double)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition(System.Int32,System.Int64,System.Double)
+  id: EdgesByPosition(System.Int32,System.Int64,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: EdgesByPosition[int, long, double]
+  nameWithType: INetworkQuery.EdgesByPosition[int, long, double]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition[int, long, double]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Edge elements in the network dataset with a from and to position that includes the given position for the given source object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement EdgesByPosition[int SourceID, long OID, double Position] { get; }
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: OID
+      type: System.Int64
+    - id: Position
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property EdgesByPosition(SourceID As Integer, OID As Long, Position As Double) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition*
+  nameWithType.vb: INetworkQuery.EdgesByPosition(Integer, Long, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition(Integer, Long, Double)
+  name.vb: EdgesByPosition(Integer, Long, Double)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment(System.Int32,System.Int64,System.Double,System.Double)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment(System.Int32,System.Int64,System.Double,System.Double)
+  id: EdgesBySegment(System.Int32,System.Int64,System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: EdgesBySegment[int, long, double, double]
+  nameWithType: INetworkQuery.EdgesBySegment[int, long, double, double]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment[int, long, double, double]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Edge elements in the network dataset with a from and to position included in the given range for the given source object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement EdgesBySegment[int SourceID, long OID, double fromPosition, double toPosition] { get; }
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: OID
+      type: System.Int64
+    - id: fromPosition
+      type: System.Double
+    - id: toPosition
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property EdgesBySegment(SourceID As Integer, OID As Long, fromPosition As Double, toPosition As Double) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment*
+  nameWithType.vb: INetworkQuery.EdgesBySegment(Integer, Long, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment(Integer, Long, Double, Double)
+  name.vb: EdgesBySegment(Integer, Long, Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  id: Elements(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: Elements[esriNetworkElementType]
+  nameWithType: INetworkQuery.Elements[esriNetworkElementType]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements[ESRI.ArcGIS.Geodatabase.esriNetworkElementType]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Enumeration of all elements in the network dataset of the given type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement Elements[esriNetworkElementType ElementType] { get; }
+    parameters:
+    - id: ElementType
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property Elements(ElementType As esriNetworkElementType) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements*
+  nameWithType.vb: INetworkQuery.Elements(esriNetworkElementType)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements(ESRI.ArcGIS.Geodatabase.esriNetworkElementType)
+  name.vb: Elements(esriNetworkElementType)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs(System.Int32,ESRI.ArcGIS.esriSystem.ILongLongArray)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs(System.Int32,ESRI.ArcGIS.esriSystem.ILongLongArray)
+  id: ElementsByOIDs(System.Int32,ESRI.ArcGIS.esriSystem.ILongLongArray)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ElementsByOIDs[int, ILongLongArray]
+  nameWithType: INetworkQuery.ElementsByOIDs[int, ILongLongArray]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs[int, ESRI.ArcGIS.esriSystem.ILongLongArray]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Elements in the network dataset corresponding to the given source objects.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement ElementsByOIDs[int SourceID, ILongLongArray oids] { get; }
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: oids
+      type: ESRI.ArcGIS.esriSystem.ILongLongArray
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property ElementsByOIDs(SourceID As Integer, oids As ILongLongArray) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs*
+  nameWithType.vb: INetworkQuery.ElementsByOIDs(Integer, ILongLongArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs(Integer, ESRI.ArcGIS.esriSystem.ILongLongArray)
+  name.vb: ElementsByOIDs(Integer, ILongLongArray)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource(System.Int32)
+  id: ElementsForSource(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: ElementsForSource[int]
+  nameWithType: INetworkQuery.ElementsForSource[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Enumeration of all elements in the network dataset corresponding to the given source.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNetworkElement ElementsForSource[int SourceID] { get; }
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+    content.vb: ReadOnly Property ElementsForSource(SourceID As Integer) As IEnumNetworkElement
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource*
+  nameWithType.vb: INetworkQuery.ElementsForSource(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource(Integer)
+  name.vb: ElementsForSource(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID(ESRI.ArcGIS.Geodatabase.INetworkElement)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID(ESRI.ArcGIS.Geodatabase.INetworkElement)
+  id: TimeZoneID(ESRI.ArcGIS.Geodatabase.INetworkElement)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkQuery
+  langs:
+  - csharp
+  - vb
+  name: TimeZoneID[INetworkElement]
+  nameWithType: INetworkQuery.TimeZoneID[INetworkElement]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID[ESRI.ArcGIS.Geodatabase.INetworkElement]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The time zone ID for the given network element.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TimeZoneID[INetworkElement networkElement] { get; }
+    parameters:
+    - id: networkElement
+      type: ESRI.ArcGIS.Geodatabase.INetworkElement
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TimeZoneID(networkElement As INetworkElement) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID*
+  nameWithType.vb: INetworkQuery.TimeZoneID(INetworkElement)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID(ESRI.ArcGIS.Geodatabase.INetworkElement)
+  name.vb: TimeZoneID(INetworkElement)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_CreateForwardStar
+  name: CreateForwardStar
+  nameWithType: INetworkQuery.CreateForwardStar
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStar
+- uid: ESRI.ArcGIS.Geodatabase.INetworkForwardStar
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkForwardStar
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkForwardStar.html
+  name: INetworkForwardStar
+  nameWithType: INetworkForwardStar
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkForwardStar
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_CreateForwardStarAdjacencies
+  name: CreateForwardStarAdjacencies
+  nameWithType: INetworkQuery.CreateForwardStarAdjacencies
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateForwardStarAdjacencies
+- uid: ESRI.ArcGIS.Geodatabase.INetworkForwardStarAdjacencies
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkForwardStarAdjacencies
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkForwardStarAdjacencies.html
+  name: INetworkForwardStarAdjacencies
+  nameWithType: INetworkForwardStarAdjacencies
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkForwardStarAdjacencies
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_CreateNetworkElement_ESRI_ArcGIS_Geodatabase_esriNetworkElementType_
+  name: CreateNetworkElement
+  nameWithType: INetworkQuery.CreateNetworkElement
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.CreateNetworkElement
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkElementType.html
+  name: esriNetworkElementType
+  nameWithType: esriNetworkElementType
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+- uid: ESRI.ArcGIS.Geodatabase.INetworkElement
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkElement
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkElement.html
+  name: INetworkElement
+  nameWithType: INetworkElement
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkElement
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_QueryEdge_System_Int64_ESRI_ArcGIS_Geodatabase_esriNetworkEdgeDirection_ESRI_ArcGIS_Geodatabase_INetworkEdge_
+  name: QueryEdge
+  nameWithType: INetworkQuery.QueryEdge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryEdge
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection.html
+  name: esriNetworkEdgeDirection
+  nameWithType: esriNetworkEdgeDirection
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html
+  name: INetworkEdge
+  nameWithType: INetworkEdge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_QueryJunction_System_Int64_ESRI_ArcGIS_Geodatabase_INetworkJunction_
+  name: QueryJunction
+  nameWithType: INetworkQuery.QueryJunction
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryJunction
+- uid: ESRI.ArcGIS.Geodatabase.INetworkJunction
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkJunction
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkJunction.html
+  name: INetworkJunction
+  nameWithType: INetworkJunction
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkJunction
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_QueryTurn_System_Int64_ESRI_ArcGIS_Geodatabase_INetworkTurn_
+  name: QueryTurn
+  nameWithType: INetworkQuery.QueryTurn
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.QueryTurn
+- uid: ESRI.ArcGIS.Geodatabase.INetworkTurn
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkTurn
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkTurn.html
+  name: INetworkTurn
+  nameWithType: INetworkTurn
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkTurn
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ClearIDCache
+  name: ClearIDCache
+  nameWithType: INetworkQuery.ClearIDCache
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ClearIDCache
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_PopulateIDCache_System_Int32_
+  name: PopulateIDCache
+  nameWithType: INetworkQuery.PopulateIDCache
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.PopulateIDCache
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ConvertLocalTimeToUTCTime_System_Int32_System_DateTime_
+  name: ConvertLocalTimeToUTCTime
+  nameWithType: INetworkQuery.ConvertLocalTimeToUTCTime
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertLocalTimeToUTCTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ConvertUTCTimeToLocalTime_System_Int32_System_DateTime_
+  name: ConvertUTCTimeToLocalTime
+  nameWithType: INetworkQuery.ConvertUTCTimeToLocalTime
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ConvertUTCTimeToLocalTime
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_RefreshDynamicTrafficData_System_DateTime_ESRI_ArcGIS_Geodatabase_esriNetworkTimeUsage_System_DateTime__System_DateTime__
+  name: RefreshDynamicTrafficData
+  nameWithType: INetworkQuery.RefreshDynamicTrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.RefreshDynamicTrafficData
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage.html
+  name: esriNetworkTimeUsage
+  nameWithType: esriNetworkTimeUsage
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_MaxEID_ESRI_ArcGIS_Geodatabase_esriNetworkElementType_
+  name: MaxEID
+  nameWithType: INetworkQuery.MaxEID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxEID
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_MaxValence
+  name: MaxValence
+  nameWithType: INetworkQuery.MaxValence
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.MaxValence
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ElementCount_ESRI_ArcGIS_Geodatabase_esriNetworkElementType_
+  name: ElementCount
+  nameWithType: INetworkQuery.ElementCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementCount
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ComplexTurnCount
+  name: ComplexTurnCount
+  nameWithType: INetworkQuery.ComplexTurnCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ComplexTurnCount
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ElementsByOID_System_Int32_System_Int64_
+  name: ElementsByOID
+  nameWithType: INetworkQuery.ElementsByOID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOID
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement.html
+  name: IEnumNetworkElement
+  nameWithType: IEnumNetworkElement
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNetworkElement
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_EdgesByPosition_System_Int32_System_Int64_System_Double_
+  name: EdgesByPosition
+  nameWithType: INetworkQuery.EdgesByPosition
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesByPosition
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_EdgesBySegment_System_Int32_System_Int64_System_Double_System_Double_
+  name: EdgesBySegment
+  nameWithType: INetworkQuery.EdgesBySegment
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.EdgesBySegment
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_Elements_ESRI_ArcGIS_Geodatabase_esriNetworkElementType_
+  name: Elements
+  nameWithType: INetworkQuery.Elements
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.Elements
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ElementsByOIDs_System_Int32_ESRI_ArcGIS_esriSystem_ILongLongArray_
+  name: ElementsByOIDs
+  nameWithType: INetworkQuery.ElementsByOIDs
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsByOIDs
+- uid: ESRI.ArcGIS.esriSystem.ILongLongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongLongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongLongArray.html
+  name: ILongLongArray
+  nameWithType: ILongLongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongLongArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_ElementsForSource_System_Int32_
+  name: ElementsForSource
+  nameWithType: INetworkQuery.ElementsForSource
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.ElementsForSource
+- uid: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkQuery.html#ESRI_ArcGIS_Geodatabase_INetworkQuery_TimeZoneID_ESRI_ArcGIS_Geodatabase_INetworkElement_
+  name: TimeZoneID
+  nameWithType: INetworkQuery.TimeZoneID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkQuery.TimeZoneID

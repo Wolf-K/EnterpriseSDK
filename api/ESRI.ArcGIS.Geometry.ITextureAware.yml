@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ITextureAware
+  commentId: T:ESRI.ArcGIS.Geometry.ITextureAware
+  id: ITextureAware
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ITextureAware.DropTextures
+  - ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+  - ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+  - ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple
+  langs:
+  - csharp
+  - vb
+  name: ITextureAware
+  nameWithType: ITextureAware
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicator interface that identifies geometries that can have persistent texture values attached to coordinates.
+  example: []
+  syntax:
+    content: >-
+      [Guid("E433A193-CEB0-11D3-9F50-00C04F6BDF0D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITextureAware
+    content.vb: >-
+      <Guid("E433A193-CEB0-11D3-9F50-00C04F6BDF0D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITextureAware
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E433A193-CEB0-11D3-9F50-00C04F6BDF0D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.DropTextures
+  commentId: M:ESRI.ArcGIS.Geometry.ITextureAware.DropTextures
+  id: DropTextures
+  parent: ESRI.ArcGIS.Geometry.ITextureAware
+  langs:
+  - csharp
+  - vb
+  name: DropTextures()
+  nameWithType: ITextureAware.DropTextures()
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.DropTextures()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Unsets all texture values without changing awareness. Only works if geometry is aware of textures.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DropTextures()
+    content.vb: Sub DropTextures()
+  overload: ESRI.ArcGIS.Geometry.ITextureAware.DropTextures*
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+  commentId: P:ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+  id: TextureAware
+  parent: ESRI.ArcGIS.Geometry.ITextureAware
+  langs:
+  - csharp
+  - vb
+  name: TextureAware
+  nameWithType: ITextureAware.TextureAware
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if this geometry is aware of textures.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool TextureAware { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property TextureAware As Boolean
+  overload: ESRI.ArcGIS.Geometry.ITextureAware.TextureAware*
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+  commentId: P:ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+  id: TextureDimension
+  parent: ESRI.ArcGIS.Geometry.ITextureAware
+  langs:
+  - csharp
+  - vb
+  name: TextureDimension
+  nameWithType: ITextureAware.TextureDimension
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The dimension of the textures on the geometry.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriGeometryDimension TextureDimension { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryDimension
+    content.vb: Property TextureDimension As esriGeometryDimension
+  overload: ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension*
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple
+  commentId: P:ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple
+  id: TextureSimple
+  parent: ESRI.ArcGIS.Geometry.ITextureAware
+  langs:
+  - csharp
+  - vb
+  name: TextureSimple
+  nameWithType: ITextureAware.TextureSimple
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if all texture values for this geometry are well-defined. Only works if geometry is aware of textures.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool TextureSimple { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property TextureSimple As Boolean
+  overload: ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.DropTextures*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITextureAware.DropTextures
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITextureAware.html#ESRI_ArcGIS_Geometry_ITextureAware_DropTextures
+  name: DropTextures
+  nameWithType: ITextureAware.DropTextures
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.DropTextures
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureAware*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITextureAware.html#ESRI_ArcGIS_Geometry_ITextureAware_TextureAware
+  name: TextureAware
+  nameWithType: ITextureAware.TextureAware
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureAware
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITextureAware.html#ESRI_ArcGIS_Geometry_ITextureAware_TextureDimension
+  name: TextureDimension
+  nameWithType: ITextureAware.TextureDimension
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureDimension
+- uid: ESRI.ArcGIS.Geometry.esriGeometryDimension
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryDimension
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryDimension.html
+  name: esriGeometryDimension
+  nameWithType: esriGeometryDimension
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryDimension
+- uid: ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ITextureAware.html#ESRI_ArcGIS_Geometry_ITextureAware_TextureSimple
+  name: TextureSimple
+  nameWithType: ITextureAware.TextureSimple
+  fullName: ESRI.ArcGIS.Geometry.ITextureAware.TextureSimple

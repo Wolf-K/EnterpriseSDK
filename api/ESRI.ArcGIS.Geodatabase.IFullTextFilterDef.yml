@@ -1,0 +1,259 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  id: IFullTextFilterDef
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm(ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm)
+  - ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+  - ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+  langs:
+  - csharp
+  - vb
+  name: IFullTextFilterDef
+  nameWithType: IFullTextFilterDef
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to FullText filter definition properties.
+  example: []
+  syntax:
+    content: >-
+      [Guid("ED5AF777-C0B9-4C71-96E4-3E845EFD2299")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFullTextFilterDef
+    content.vb: >-
+      <Guid("ED5AF777-C0B9-4C71-96E4-3E845EFD2299")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFullTextFilterDef
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FullTextFilterDefClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ED5AF777-C0B9-4C71-96E4-3E845EFD2299
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm(ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm(ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm)
+  id: AddSearchTerm(ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm)
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  langs:
+  - csharp
+  - vb
+  name: AddSearchTerm(IFullTextSearchTerm)
+  nameWithType: IFullTextFilterDef.AddSearchTerm(IFullTextSearchTerm)
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm(ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AddSearchTerm(IFullTextSearchTerm SearchTerm)
+    parameters:
+    - id: SearchTerm
+      type: ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm
+    content.vb: Sub AddSearchTerm(SearchTerm As IFullTextSearchTerm)
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm*
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+  id: SearchTermCount
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  langs:
+  - csharp
+  - vb
+  name: SearchTermCount
+  nameWithType: IFullTextFilterDef.SearchTermCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The search term count.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SearchTermCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SearchTermCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount*
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm(System.Int32)
+  id: SearchTerm(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  langs:
+  - csharp
+  - vb
+  name: SearchTerm[int]
+  nameWithType: IFullTextFilterDef.SearchTerm[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The search term at the given index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFullTextSearchTerm SearchTerm[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm
+    content.vb: ReadOnly Property SearchTerm(Index As Integer) As IFullTextSearchTerm
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm*
+  nameWithType.vb: IFullTextFilterDef.SearchTerm(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm(Integer)
+  name.vb: SearchTerm(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+  id: FullTextSearchExpression
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef
+  langs:
+  - csharp
+  - vb
+  name: FullTextSearchExpression
+  nameWithType: IFullTextFilterDef.FullTextSearchExpression
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Deserialize the JSON format full text search expression.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string FullTextSearchExpression { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property FullTextSearchExpression As String
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.html#ESRI_ArcGIS_Geodatabase_IFullTextFilterDef_AddSearchTerm_ESRI_ArcGIS_Geodatabase_IFullTextSearchTerm_
+  name: AddSearchTerm
+  nameWithType: IFullTextFilterDef.AddSearchTerm
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.AddSearchTerm
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm.html
+  name: IFullTextSearchTerm
+  nameWithType: IFullTextSearchTerm
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearchTerm
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.html#ESRI_ArcGIS_Geodatabase_IFullTextFilterDef_SearchTermCount
+  name: SearchTermCount
+  nameWithType: IFullTextFilterDef.SearchTermCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTermCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.html#ESRI_ArcGIS_Geodatabase_IFullTextFilterDef_SearchTerm_System_Int32_
+  name: SearchTerm
+  nameWithType: IFullTextFilterDef.SearchTerm
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.SearchTerm
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.html#ESRI_ArcGIS_Geodatabase_IFullTextFilterDef_FullTextSearchExpression
+  name: FullTextSearchExpression
+  nameWithType: IFullTextFilterDef.FullTextSearchExpression
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextFilterDef.FullTextSearchExpression
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

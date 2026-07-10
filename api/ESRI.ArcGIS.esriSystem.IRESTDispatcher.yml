@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  id: IRESTDispatcher
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  - ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  langs:
+  - csharp
+  - vb
+  name: IRESTDispatcher
+  nameWithType: IRESTDispatcher
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: REST dispatcher object.
+  example: []
+  syntax:
+    content: >-
+      [Guid("1538E2DC-8192-412E-A801-2B8655492AAE")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRESTDispatcher : IRESTRequestHandler
+    content.vb: >-
+      <Guid("1538E2DC-8192-412E-A801-2B8655492AAE")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRESTDispatcher Inherits IRESTRequestHandler
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1538E2DC-8192-412E-A801-2B8655492AAE
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  id: HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  langs:
+  - csharp
+  - vb
+  name: HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType: IRESTDispatcher.HandleRESTRequest(string, string, string, string, string, string, out string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(string, string, string, string, string, string, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: byte[] HandleRESTRequest(string Capabilities, string resourceName, string operationName, string operationInput, string outputFormat, string requestProperties, out string responseProperties)
+    parameters:
+    - id: Capabilities
+      type: System.String
+    - id: resourceName
+      type: System.String
+    - id: operationName
+      type: System.String
+    - id: operationInput
+      type: System.String
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Function HandleRESTRequest(Capabilities As String, resourceName As String, operationName As String, operationInput As String, outputFormat As String, requestProperties As String, responseProperties As String) As Byte()
+  overload: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest*
+  nameWithType.vb: IRESTDispatcher.HandleRESTRequest(String, String, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest(String, String, String, String, String, String, String)
+  name.vb: HandleRESTRequest(String, String, String, String, String, String, String)
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  id: GetSchema
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: IRESTDispatcher.GetSchema()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: string GetSchema()
+    return:
+      type: System.String
+    content.vb: Function GetSchema() As String
+  overload: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema*
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  id: Init(ESRI.ArcGIS.esriSystem.IRESTResource,ESRI.ArcGIS.esriSystem.IRESTCallback)
+  parent: ESRI.ArcGIS.esriSystem.IRESTDispatcher
+  langs:
+  - csharp
+  - vb
+  name: Init(IRESTResource, IRESTCallback)
+  nameWithType: IRESTDispatcher.Init(IRESTResource, IRESTCallback)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init(ESRI.ArcGIS.esriSystem.IRESTResource, ESRI.ArcGIS.esriSystem.IRESTCallback)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void Init(IRESTResource root, IRESTCallback handler)
+    parameters:
+    - id: root
+      type: ESRI.ArcGIS.esriSystem.IRESTResource
+    - id: handler
+      type: ESRI.ArcGIS.esriSystem.IRESTCallback
+    content.vb: Sub Init(root As IRESTResource, handler As IRESTCallback)
+  overload: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  name: HandleRESTRequest
+  nameWithType: IRESTDispatcher.HandleRESTRequest
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.HandleRESTRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_GetSchema
+  name: GetSchema
+  nameWithType: IRESTDispatcher.GetSchema
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.GetSchema
+- uid: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTDispatcher.html#ESRI_ArcGIS_esriSystem_IRESTDispatcher_Init_ESRI_ArcGIS_esriSystem_IRESTResource_ESRI_ArcGIS_esriSystem_IRESTCallback_
+  name: Init
+  nameWithType: IRESTDispatcher.Init
+  fullName: ESRI.ArcGIS.esriSystem.IRESTDispatcher.Init
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTResource
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html
+  name: IRESTResource
+  nameWithType: IRESTResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource
+- uid: ESRI.ArcGIS.esriSystem.IRESTCallback
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTCallback
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTCallback.html
+  name: IRESTCallback
+  nameWithType: IRESTCallback
+  fullName: ESRI.ArcGIS.esriSystem.IRESTCallback

@@ -1,0 +1,1498 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  commentId: T:ESRI.ArcGIS.CIM.CIMCompositeCallout
+  id: CIMCompositeCallout
+  parent: ESRI.ArcGIS.CIM
+  children:
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+  - ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+  langs:
+  - csharp
+  - vb
+  name: CIMCompositeCallout
+  nameWithType: CIMCompositeCallout
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  type: Class
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Represents a composite callout. Composite callouts are a filled background along with an optional shadow, which is placed
+
+    behind text. They may also have a leader line (consisting of one or both of a simple line, and filled dart)
+
+    connecting the callout to an anchor point. Composite callouts may have additional surrounding text elements.
+
+    The text representing these parts is specified in the text string using tags. Their relative position properties are
+
+    specified in the CIMCompositeCallout through their corresponding CIMCompositeTextPartPosition elements specified below,
+
+    but these properties can also be overridden with tag attributes.
+  example: []
+  syntax:
+    content: 'public class CIMCompositeCallout : CIMCallout, IJsonSerializable'
+    content.vb: Public Class CIMCompositeCallout Inherits CIMCallout Implements IJsonSerializable
+  inheritance:
+  - System.Object
+  - ESRI.ArcGIS.CIM.CIMObject
+  - ESRI.ArcGIS.CIM.CIMCallout
+  implements:
+  - ArcGIS.Shared.Internal.CIM.IJsonSerializable
+  inheritedMembers:
+  - ESRI.ArcGIS.CIM.CIMCallout.LeaderTolerance
+  - ESRI.ArcGIS.CIM.CIMCallout.LeaderOffset
+  - ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  - ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[],ArcGIS.Core.CIM.JsonSerializationSettings)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  commentId: M:ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  id: FromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: FromJson(string, JsonDeserializationSettings)
+  nameWithType: CIMCompositeCallout.FromJson(string, JsonDeserializationSettings)
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson(string, ArcGIS.Core.CIM.JsonDeserializationSettings)
+  type: Method
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Reconstructs the CIMCompositeCallout with a specified state from a JSON encoding.
+  example: []
+  syntax:
+    content: public static CIMCompositeCallout FromJson(string json, JsonDeserializationSettings settings = null)
+    parameters:
+    - id: json
+      type: System.String
+      description: The JSON string containing the CIMCompositeCallout state.
+    - id: settings
+      type: ArcGIS.Core.CIM.JsonDeserializationSettings
+      description: The JSON deserialization settings.
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeCallout
+    content.vb: Public Shared Function FromJson(json As String, settings As JsonDeserializationSettings = Nothing) As CIMCompositeCallout
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson*
+  nameWithType.vb: CIMCompositeCallout.FromJson(String, JsonDeserializationSettings)
+  fullName.vb: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson(String, ArcGIS.Core.CIM.JsonDeserializationSettings)
+  name.vb: FromJson(String, JsonDeserializationSettings)
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  commentId: M:ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  id: ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: ToJson(JsonSerializationSettings)
+  nameWithType: CIMCompositeCallout.ToJson(JsonSerializationSettings)
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  type: Method
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Creates a JSON encoding of the CIMCompositeCallout and its current state.
+  example: []
+  syntax:
+    content: public override string ToJson(JsonSerializationSettings settings = null)
+    parameters:
+    - id: settings
+      type: ArcGIS.Core.CIM.JsonSerializationSettings
+      description: The JSON serialization settings.
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToJson(settings As JsonSerializationSettings = Nothing) As String
+  overridden: ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor
+  commentId: M:ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: CIMCompositeCallout()
+  nameWithType: CIMCompositeCallout.CIMCompositeCallout()
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.CIMCompositeCallout()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  syntax:
+    content: public CIMCompositeCallout()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor*
+  nameWithType.vb: CIMCompositeCallout.New()
+  fullName.vb: ESRI.ArcGIS.CIM.CIMCompositeCallout.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+  id: CornerRadius
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: CornerRadius
+  nameWithType: CIMCompositeCallout.CornerRadius
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the callout corner radius in points.
+
+    0.0 corresponds to a rectangle corner.
+  example: []
+  syntax:
+    content: public double CornerRadius { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property CornerRadius As Double
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+  id: BackgroundSymbol
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: BackgroundSymbol
+  nameWithType: CIMCompositeCallout.BackgroundSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the symbol used to draw the background.
+  example: []
+  syntax:
+    content: public CIMPolygonSymbol BackgroundSymbol { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMPolygonSymbol
+    content.vb: Public Property BackgroundSymbol As CIMPolygonSymbol
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+  id: Margin
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Margin
+  nameWithType: CIMCompositeCallout.Margin
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the text margin defining the space around the text that is accounted for in balloon creation.
+  example: []
+  syntax:
+    content: public CIMTextMargin Margin { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMTextMargin
+    content.vb: Public Property Margin As CIMTextMargin
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+  id: DartWidth
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: DartWidth
+  nameWithType: CIMCompositeCallout.DartWidth
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the dart width.
+  example: []
+  syntax:
+    content: public double DartWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property DartWidth As Double
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+  id: DartSymbol
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: DartSymbol
+  nameWithType: CIMCompositeCallout.DartSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets a symbol used to draw the dart. This is only used if LeaderLinePercentage is less than 100%.
+  example: []
+  syntax:
+    content: public CIMPolygonSymbol DartSymbol { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMPolygonSymbol
+    content.vb: Public Property DartSymbol As CIMPolygonSymbol
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+  id: SnapLeaderToCornersOnly
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: SnapLeaderToCornersOnly
+  nameWithType: CIMCompositeCallout.SnapLeaderToCornersOnly
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets a value indicating whether the leader line should snap only to corners.
+  example: []
+  syntax:
+    content: public bool SnapLeaderToCornersOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SnapLeaderToCornersOnly As Boolean
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+  id: LeaderLinePercentage
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: LeaderLinePercentage
+  nameWithType: CIMCompositeCallout.LeaderLinePercentage
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the percentage of the leader line which is drawn as a line as opposed to a solid dart.
+  example: []
+  syntax:
+    content: public double LeaderLinePercentage { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property LeaderLinePercentage As Double
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+  id: LeaderLineSymbol
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: LeaderLineSymbol
+  nameWithType: CIMCompositeCallout.LeaderLineSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the leader line symbol. This is only used if LeaderLinePercentage is greater than 0%.
+  example: []
+  syntax:
+    content: public CIMLineSymbol LeaderLineSymbol { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMLineSymbol
+    content.vb: Public Property LeaderLineSymbol As CIMLineSymbol
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+  id: ShadowSymbol
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: ShadowSymbol
+  nameWithType: CIMCompositeCallout.ShadowSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the shadow symbol for the callout.
+  example: []
+  syntax:
+    content: public CIMPolygonSymbol ShadowSymbol { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMPolygonSymbol
+    content.vb: Public Property ShadowSymbol As CIMPolygonSymbol
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+  id: ShadowXOffset
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: ShadowXOffset
+  nameWithType: CIMCompositeCallout.ShadowXOffset
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the shadow offset from the callout symbol in the horizontal direction. If X and Y are zero, no shadow is drawn.
+  example: []
+  syntax:
+    content: public double ShadowXOffset { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ShadowXOffset As Double
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+  id: ShadowYOffset
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: ShadowYOffset
+  nameWithType: CIMCompositeCallout.ShadowYOffset
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: Gets or sets the shadow offset from the callout symbol in the vertical direction. If X and Y are zero, no shadow is drawn.
+  example: []
+  syntax:
+    content: public double ShadowYOffset { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property ShadowYOffset As Double
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+  id: Middle
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: CIMCompositeCallout.Middle
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the middle part of the callout text.
+
+    This contains the relative positioning information. Split offset and box will have no
+
+    effect on this text part, since it is required that the middle part is in the center
+
+    of the callout.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Middle { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Middle As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+  id: TopLeft
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: CIMCompositeCallout.TopLeft
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the top left part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition TopLeft { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property TopLeft As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+  id: Top
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: CIMCompositeCallout.Top
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the top part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Top { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Top As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Top*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+  id: TopRight
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: CIMCompositeCallout.TopRight
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the top right part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition TopRight { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property TopRight As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+  id: Right
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: CIMCompositeCallout.Right
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the right part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Right { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Right As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Right*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+  id: Left
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: CIMCompositeCallout.Left
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the left part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Left { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Left As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Left*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+  id: BottomLeft
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: CIMCompositeCallout.BottomLeft
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the bottom left part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition BottomLeft { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property BottomLeft As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+  id: Bottom
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: CIMCompositeCallout.Bottom
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the bottom part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Bottom { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Bottom As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+  id: BottomRight
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: CIMCompositeCallout.BottomRight
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the bottom right part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition BottomRight { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property BottomRight As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight*
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating
+  commentId: P:ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating
+  id: Floating
+  parent: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  langs:
+  - csharp
+  - vb
+  name: Floating
+  nameWithType: CIMCompositeCallout.Floating
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating
+  type: Property
+  assemblies:
+  - ESRI.Server.CIM
+  namespace: ESRI.ArcGIS.CIM
+  summary: >-
+    Gets or sets the text part position properties for the floating part of the callout text.
+
+    This contains the relative positioning information, as well as split offset indicating
+
+    the extent to which the callout part will mask the callout outline, and whether or not the
+
+    part should be boxed in by the overall callout, or not. The floating part is anchored below
+
+    the bottom text part. If there is no bottom text part it is anchored below the middle text part
+
+    plus margins.
+  example: []
+  syntax:
+    content: public CIMCompositeTextPartPosition Floating { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+    content.vb: Public Property Floating As CIMCompositeTextPartPosition
+  overload: ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating*
+references:
+- uid: ESRI.ArcGIS.CIM
+  commentId: N:ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.CIM
+  nameWithType: ESRI.ArcGIS.CIM
+  fullName: ESRI.ArcGIS.CIM
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.CIM
+    name: CIM
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.CIM
+    name: CIM
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.CIM.CIMObject
+  commentId: T:ESRI.ArcGIS.CIM.CIMObject
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMObject.html
+  name: CIMObject
+  nameWithType: CIMObject
+  fullName: ESRI.ArcGIS.CIM.CIMObject
+- uid: ESRI.ArcGIS.CIM.CIMCallout
+  commentId: T:ESRI.ArcGIS.CIM.CIMCallout
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCallout.html
+  name: CIMCallout
+  nameWithType: CIMCallout
+  fullName: ESRI.ArcGIS.CIM.CIMCallout
+- uid: ArcGIS.Shared.Internal.CIM.IJsonSerializable
+  commentId: T:ArcGIS.Shared.Internal.CIM.IJsonSerializable
+  parent: ArcGIS.Shared.Internal.CIM
+  isExternal: true
+  href: ArcGIS.Shared.Internal.CIM.IJsonSerializable.html
+  name: IJsonSerializable
+  nameWithType: IJsonSerializable
+  fullName: ArcGIS.Shared.Internal.CIM.IJsonSerializable
+- uid: ESRI.ArcGIS.CIM.CIMCallout.LeaderTolerance
+  commentId: P:ESRI.ArcGIS.CIM.CIMCallout.LeaderTolerance
+  parent: ESRI.ArcGIS.CIM.CIMCallout
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCallout.html#ESRI_ArcGIS_CIM_CIMCallout_LeaderTolerance
+  name: LeaderTolerance
+  nameWithType: CIMCallout.LeaderTolerance
+  fullName: ESRI.ArcGIS.CIM.CIMCallout.LeaderTolerance
+- uid: ESRI.ArcGIS.CIM.CIMCallout.LeaderOffset
+  commentId: P:ESRI.ArcGIS.CIM.CIMCallout.LeaderOffset
+  parent: ESRI.ArcGIS.CIM.CIMCallout
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCallout.html#ESRI_ArcGIS_CIM_CIMCallout_LeaderOffset
+  name: LeaderOffset
+  nameWithType: CIMCallout.LeaderOffset
+  fullName: ESRI.ArcGIS.CIM.CIMCallout.LeaderOffset
+- uid: ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  commentId: M:ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+  parent: ESRI.ArcGIS.CIM.CIMObject
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ArrayFromJson_System_String_ArcGIS_Core_CIM_JsonDeserializationSettings_
+  name: ArrayFromJson(string, JsonDeserializationSettings)
+  nameWithType: CIMObject.ArrayFromJson(string, JsonDeserializationSettings)
+  fullName: ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(string, ArcGIS.Core.CIM.JsonDeserializationSettings)
+  nameWithType.vb: CIMObject.ArrayFromJson(String, JsonDeserializationSettings)
+  fullName.vb: ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(String, ArcGIS.Core.CIM.JsonDeserializationSettings)
+  name.vb: ArrayFromJson(String, JsonDeserializationSettings)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+    name: ArrayFromJson
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ArrayFromJson_System_String_ArcGIS_Core_CIM_JsonDeserializationSettings_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: ArcGIS.Core.CIM.JsonDeserializationSettings
+    name: JsonDeserializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonDeserializationSettings.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.ArrayFromJson(System.String,ArcGIS.Core.CIM.JsonDeserializationSettings)
+    name: ArrayFromJson
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ArrayFromJson_System_String_ArcGIS_Core_CIM_JsonDeserializationSettings_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: ArcGIS.Core.CIM.JsonDeserializationSettings
+    name: JsonDeserializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonDeserializationSettings.html
+  - name: )
+- uid: ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[],ArcGIS.Core.CIM.JsonSerializationSettings)
+  commentId: M:ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[],ArcGIS.Core.CIM.JsonSerializationSettings)
+  parent: ESRI.ArcGIS.CIM.CIMObject
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_JsonFromArray_ESRI_ArcGIS_CIM_CIMObject___ArcGIS_Core_CIM_JsonSerializationSettings_
+  name: JsonFromArray(CIMObject[], JsonSerializationSettings)
+  nameWithType: CIMObject.JsonFromArray(CIMObject[], JsonSerializationSettings)
+  fullName: ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[], ArcGIS.Core.CIM.JsonSerializationSettings)
+  nameWithType.vb: CIMObject.JsonFromArray(CIMObject(), JsonSerializationSettings)
+  fullName.vb: ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject(), ArcGIS.Core.CIM.JsonSerializationSettings)
+  name.vb: JsonFromArray(CIMObject(), JsonSerializationSettings)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[],ArcGIS.Core.CIM.JsonSerializationSettings)
+    name: JsonFromArray
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_JsonFromArray_ESRI_ArcGIS_CIM_CIMObject___ArcGIS_Core_CIM_JsonSerializationSettings_
+  - name: (
+  - uid: ESRI.ArcGIS.CIM.CIMObject
+    name: CIMObject
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: ArcGIS.Core.CIM.JsonSerializationSettings
+    name: JsonSerializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonSerializationSettings.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.JsonFromArray(ESRI.ArcGIS.CIM.CIMObject[],ArcGIS.Core.CIM.JsonSerializationSettings)
+    name: JsonFromArray
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_JsonFromArray_ESRI_ArcGIS_CIM_CIMObject___ArcGIS_Core_CIM_JsonSerializationSettings_
+  - name: (
+  - uid: ESRI.ArcGIS.CIM.CIMObject
+    name: CIMObject
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: ArcGIS.Core.CIM.JsonSerializationSettings
+    name: JsonSerializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonSerializationSettings.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ArcGIS.Shared.Internal.CIM
+  commentId: N:ArcGIS.Shared.Internal.CIM
+  isExternal: true
+  href: ArcGIS.html
+  name: ArcGIS.Shared.Internal.CIM
+  nameWithType: ArcGIS.Shared.Internal.CIM
+  fullName: ArcGIS.Shared.Internal.CIM
+  spec.csharp:
+  - uid: ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ArcGIS.html
+  - name: .
+  - uid: ArcGIS.Shared
+    name: Shared
+    isExternal: true
+    href: ArcGIS.Shared.html
+  - name: .
+  - uid: ArcGIS.Shared.Internal
+    name: Internal
+    isExternal: true
+    href: ArcGIS.Shared.Internal.html
+  - name: .
+  - uid: ArcGIS.Shared.Internal.CIM
+    name: CIM
+    isExternal: true
+    href: ArcGIS.Shared.Internal.CIM.html
+  spec.vb:
+  - uid: ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ArcGIS.html
+  - name: .
+  - uid: ArcGIS.Shared
+    name: Shared
+    isExternal: true
+    href: ArcGIS.Shared.html
+  - name: .
+  - uid: ArcGIS.Shared.Internal
+    name: Internal
+    isExternal: true
+    href: ArcGIS.Shared.Internal.html
+  - name: .
+  - uid: ArcGIS.Shared.Internal.CIM
+    name: CIM
+    isExternal: true
+    href: ArcGIS.Shared.Internal.CIM.html
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_FromJson_System_String_ArcGIS_Core_CIM_JsonDeserializationSettings_
+  name: FromJson
+  nameWithType: CIMCompositeCallout.FromJson
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.FromJson
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ArcGIS.Core.CIM.JsonDeserializationSettings
+  commentId: T:ArcGIS.Core.CIM.JsonDeserializationSettings
+  parent: ArcGIS.Core.CIM
+  isExternal: true
+  href: ArcGIS.Core.CIM.JsonDeserializationSettings.html
+  name: JsonDeserializationSettings
+  nameWithType: JsonDeserializationSettings
+  fullName: ArcGIS.Core.CIM.JsonDeserializationSettings
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout
+  commentId: T:ESRI.ArcGIS.CIM.CIMCompositeCallout
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html
+  name: CIMCompositeCallout
+  nameWithType: CIMCompositeCallout
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout
+- uid: ArcGIS.Core.CIM
+  commentId: N:ArcGIS.Core.CIM
+  isExternal: true
+  href: ArcGIS.html
+  name: ArcGIS.Core.CIM
+  nameWithType: ArcGIS.Core.CIM
+  fullName: ArcGIS.Core.CIM
+  spec.csharp:
+  - uid: ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ArcGIS.html
+  - name: .
+  - uid: ArcGIS.Core
+    name: Core
+    isExternal: true
+    href: ArcGIS.Core.html
+  - name: .
+  - uid: ArcGIS.Core.CIM
+    name: CIM
+    isExternal: true
+    href: ArcGIS.Core.CIM.html
+  spec.vb:
+  - uid: ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ArcGIS.html
+  - name: .
+  - uid: ArcGIS.Core
+    name: Core
+    isExternal: true
+    href: ArcGIS.Core.html
+  - name: .
+  - uid: ArcGIS.Core.CIM
+    name: CIM
+    isExternal: true
+    href: ArcGIS.Core.CIM.html
+- uid: ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  commentId: M:ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  parent: ESRI.ArcGIS.CIM.CIMObject
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ToJson_ArcGIS_Core_CIM_JsonSerializationSettings_
+  name: ToJson(JsonSerializationSettings)
+  nameWithType: CIMObject.ToJson(JsonSerializationSettings)
+  fullName: ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+    name: ToJson
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ToJson_ArcGIS_Core_CIM_JsonSerializationSettings_
+  - name: (
+  - uid: ArcGIS.Core.CIM.JsonSerializationSettings
+    name: JsonSerializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonSerializationSettings.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.CIM.CIMObject.ToJson(ArcGIS.Core.CIM.JsonSerializationSettings)
+    name: ToJson
+    isExternal: true
+    href: ESRI.ArcGIS.CIM.CIMObject.html#ESRI_ArcGIS_CIM_CIMObject_ToJson_ArcGIS_Core_CIM_JsonSerializationSettings_
+  - name: (
+  - uid: ArcGIS.Core.CIM.JsonSerializationSettings
+    name: JsonSerializationSettings
+    isExternal: true
+    href: ArcGIS.Core.CIM.JsonSerializationSettings.html
+  - name: )
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_ToJson_ArcGIS_Core_CIM_JsonSerializationSettings_
+  name: ToJson
+  nameWithType: CIMCompositeCallout.ToJson
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ToJson
+- uid: ArcGIS.Core.CIM.JsonSerializationSettings
+  commentId: T:ArcGIS.Core.CIM.JsonSerializationSettings
+  parent: ArcGIS.Core.CIM
+  isExternal: true
+  href: ArcGIS.Core.CIM.JsonSerializationSettings.html
+  name: JsonSerializationSettings
+  nameWithType: JsonSerializationSettings
+  fullName: ArcGIS.Core.CIM.JsonSerializationSettings
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout__ctor
+  name: CIMCompositeCallout
+  nameWithType: CIMCompositeCallout.CIMCompositeCallout
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.CIMCompositeCallout
+  nameWithType.vb: CIMCompositeCallout.New
+  fullName.vb: ESRI.ArcGIS.CIM.CIMCompositeCallout.New
+  name.vb: New
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_CornerRadius
+  name: CornerRadius
+  nameWithType: CIMCompositeCallout.CornerRadius
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.CornerRadius
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_BackgroundSymbol
+  name: BackgroundSymbol
+  nameWithType: CIMCompositeCallout.BackgroundSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BackgroundSymbol
+- uid: ESRI.ArcGIS.CIM.CIMPolygonSymbol
+  commentId: T:ESRI.ArcGIS.CIM.CIMPolygonSymbol
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMPolygonSymbol.html
+  name: CIMPolygonSymbol
+  nameWithType: CIMPolygonSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMPolygonSymbol
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Margin
+  name: Margin
+  nameWithType: CIMCompositeCallout.Margin
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Margin
+- uid: ESRI.ArcGIS.CIM.CIMTextMargin
+  commentId: T:ESRI.ArcGIS.CIM.CIMTextMargin
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMTextMargin.html
+  name: CIMTextMargin
+  nameWithType: CIMTextMargin
+  fullName: ESRI.ArcGIS.CIM.CIMTextMargin
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_DartWidth
+  name: DartWidth
+  nameWithType: CIMCompositeCallout.DartWidth
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartWidth
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_DartSymbol
+  name: DartSymbol
+  nameWithType: CIMCompositeCallout.DartSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.DartSymbol
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_SnapLeaderToCornersOnly
+  name: SnapLeaderToCornersOnly
+  nameWithType: CIMCompositeCallout.SnapLeaderToCornersOnly
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.SnapLeaderToCornersOnly
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_LeaderLinePercentage
+  name: LeaderLinePercentage
+  nameWithType: CIMCompositeCallout.LeaderLinePercentage
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLinePercentage
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_LeaderLineSymbol
+  name: LeaderLineSymbol
+  nameWithType: CIMCompositeCallout.LeaderLineSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.LeaderLineSymbol
+- uid: ESRI.ArcGIS.CIM.CIMLineSymbol
+  commentId: T:ESRI.ArcGIS.CIM.CIMLineSymbol
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMLineSymbol.html
+  name: CIMLineSymbol
+  nameWithType: CIMLineSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMLineSymbol
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_ShadowSymbol
+  name: ShadowSymbol
+  nameWithType: CIMCompositeCallout.ShadowSymbol
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowSymbol
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_ShadowXOffset
+  name: ShadowXOffset
+  nameWithType: CIMCompositeCallout.ShadowXOffset
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowXOffset
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_ShadowYOffset
+  name: ShadowYOffset
+  nameWithType: CIMCompositeCallout.ShadowYOffset
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.ShadowYOffset
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Middle
+  name: Middle
+  nameWithType: CIMCompositeCallout.Middle
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Middle
+- uid: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+  commentId: T:ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+  parent: ESRI.ArcGIS.CIM
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition.html
+  name: CIMCompositeTextPartPosition
+  nameWithType: CIMCompositeTextPartPosition
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeTextPartPosition
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_TopLeft
+  name: TopLeft
+  nameWithType: CIMCompositeCallout.TopLeft
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopLeft
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Top*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Top
+  name: Top
+  nameWithType: CIMCompositeCallout.Top
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Top
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_TopRight
+  name: TopRight
+  nameWithType: CIMCompositeCallout.TopRight
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.TopRight
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Right*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Right
+  name: Right
+  nameWithType: CIMCompositeCallout.Right
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Right
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Left*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Left
+  name: Left
+  nameWithType: CIMCompositeCallout.Left
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Left
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_BottomLeft
+  name: BottomLeft
+  nameWithType: CIMCompositeCallout.BottomLeft
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomLeft
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Bottom
+  name: Bottom
+  nameWithType: CIMCompositeCallout.Bottom
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Bottom
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_BottomRight
+  name: BottomRight
+  nameWithType: CIMCompositeCallout.BottomRight
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.BottomRight
+- uid: ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating*
+  commentId: Overload:ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating
+  isExternal: true
+  href: ESRI.ArcGIS.CIM.CIMCompositeCallout.html#ESRI_ArcGIS_CIM_CIMCompositeCallout_Floating
+  name: Floating
+  nameWithType: CIMCompositeCallout.Floating
+  fullName: ESRI.ArcGIS.CIM.CIMCompositeCallout.Floating

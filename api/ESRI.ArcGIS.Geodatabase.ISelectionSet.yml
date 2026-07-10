@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  id: ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Add(System.Int64)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList(System.Int64,System.Int64@)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet,ESRI.ArcGIS.Geodatabase.esriSetOperation,ESRI.ArcGIS.Geodatabase.ISelectionSet@)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList(System.Int64,System.Int64@)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean,ESRI.ArcGIS.Geodatabase.ICursor@)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  - ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+  langs:
+  - csharp
+  - vb
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that manage a set of selected table rows or features.
+  example: []
+  syntax:
+    content: >-
+      [Guid("F7AD47D1-D55E-11D1-8882-0000F877762D")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISelectionSet
+    content.vb: >-
+      <Guid("F7AD47D1-D55E-11D1-8882-0000F877762D")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISelectionSet
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.RelQueryTableSelectionSetClass
+  - ESRI.ArcGIS.Geodatabase.SelectionSetClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F7AD47D1-D55E-11D1-8882-0000F877762D
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent
+  id: MakePermanent
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: MakePermanent()
+  nameWithType: ISelectionSet.MakePermanent()
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Makes the SelectionSet permanent. By default SelectionSets are deleted when released.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void MakePermanent()
+    content.vb: Sub MakePermanent()
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add(System.Int64)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.Add(System.Int64)
+  id: Add(System.Int64)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Add(long)
+  nameWithType: ISelectionSet.Add(long)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add(long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Adds an object id to the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Add(long OID)
+    parameters:
+    - id: OID
+      type: System.Int64
+    content.vb: Sub Add(OID As Long)
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add*
+  nameWithType.vb: ISelectionSet.Add(Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add(Long)
+  name.vb: Add(Long)
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList(System.Int64,System.Int64@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList(System.Int64,System.Int64@)
+  id: AddList(System.Int64,System.Int64@)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: AddList(long, ref long)
+  nameWithType: ISelectionSet.AddList(long, ref long)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList(long, ref long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Adds a list of  object id's to the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddList(long Count, ref long OIDList)
+    parameters:
+    - id: Count
+      type: System.Int64
+    - id: OIDList
+      type: System.Int64
+    content.vb: Sub AddList(Count As Long, OIDList As Long)
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList*
+  nameWithType.vb: ISelectionSet.AddList(Long, Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList(Long, Long)
+  name.vb: AddList(Long, Long)
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet,ESRI.ArcGIS.Geodatabase.esriSetOperation,ESRI.ArcGIS.Geodatabase.ISelectionSet@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet,ESRI.ArcGIS.Geodatabase.esriSetOperation,ESRI.ArcGIS.Geodatabase.ISelectionSet@)
+  id: Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet,ESRI.ArcGIS.Geodatabase.esriSetOperation,ESRI.ArcGIS.Geodatabase.ISelectionSet@)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Combine(ISelectionSet, esriSetOperation, out ISelectionSet)
+  nameWithType: ISelectionSet.Combine(ISelectionSet, esriSetOperation, out ISelectionSet)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet, ESRI.ArcGIS.Geodatabase.esriSetOperation, out ESRI.ArcGIS.Geodatabase.ISelectionSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Combine(ISelectionSet otherSet, esriSetOperation setOp, out ISelectionSet resultSet)
+    parameters:
+    - id: otherSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: setOp
+      type: ESRI.ArcGIS.Geodatabase.esriSetOperation
+    - id: resultSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Sub Combine(otherSet As ISelectionSet, setOp As esriSetOperation, resultSet As ISelectionSet)
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine*
+  nameWithType.vb: ISelectionSet.Combine(ISelectionSet, esriSetOperation, ISelectionSet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine(ESRI.ArcGIS.Geodatabase.ISelectionSet, ESRI.ArcGIS.Geodatabase.esriSetOperation, ESRI.ArcGIS.Geodatabase.ISelectionSet)
+  name.vb: Combine(ISelectionSet, esriSetOperation, ISelectionSet)
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean,ESRI.ArcGIS.Geodatabase.ICursor@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean,ESRI.ArcGIS.Geodatabase.ICursor@)
+  id: Search(ESRI.ArcGIS.Geodatabase.IQueryFilter,System.Boolean,ESRI.ArcGIS.Geodatabase.ICursor@)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Search(IQueryFilter, bool, out ICursor)
+  nameWithType: ISelectionSet.Search(IQueryFilter, bool, out ICursor)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter, bool, out ESRI.ArcGIS.Geodatabase.ICursor)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Search(IQueryFilter QueryFilter, bool Recycling, out ICursor Cursor)
+    parameters:
+    - id: QueryFilter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    - id: Recycling
+      type: System.Boolean
+    - id: Cursor
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: Sub Search(QueryFilter As IQueryFilter, Recycling As Boolean, Cursor As ICursor)
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search*
+  nameWithType.vb: ISelectionSet.Search(IQueryFilter, Boolean, ICursor)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search(ESRI.ArcGIS.Geodatabase.IQueryFilter, Boolean, ESRI.ArcGIS.Geodatabase.ICursor)
+  name.vb: Search(IQueryFilter, Boolean, ICursor)
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  id: Select(ESRI.ArcGIS.Geodatabase.IQueryFilter,ESRI.ArcGIS.Geodatabase.esriSelectionType,ESRI.ArcGIS.Geodatabase.esriSelectionOption,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Select(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  nameWithType: ISelectionSet.Select(IQueryFilter, esriSelectionType, esriSelectionOption, IWorkspace)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Select(ESRI.ArcGIS.Geodatabase.IQueryFilter, ESRI.ArcGIS.Geodatabase.esriSelectionType, ESRI.ArcGIS.Geodatabase.esriSelectionOption, ESRI.ArcGIS.Geodatabase.IWorkspace)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ISelectionSet Select(IQueryFilter QueryFilter, esriSelectionType selType, esriSelectionOption selOption, IWorkspace selectionContainer)
+    parameters:
+    - id: QueryFilter
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    - id: selType
+      type: ESRI.ArcGIS.Geodatabase.esriSelectionType
+    - id: selOption
+      type: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+    - id: selectionContainer
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Function [Select](QueryFilter As IQueryFilter, selType As esriSelectionType, selOption As esriSelectionOption, selectionContainer As IWorkspace) As ISelectionSet
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Select*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh
+  id: Refresh
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: ISelectionSet.Refresh()
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Refreshes the state of a snapshot selection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Refresh()
+    content.vb: Sub Refresh()
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList(System.Int64,System.Int64@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList(System.Int64,System.Int64@)
+  id: RemoveList(System.Int64,System.Int64@)
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: RemoveList(long, ref long)
+  nameWithType: ISelectionSet.RemoveList(long, ref long)
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList(long, ref long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Removes a list of  object id's from the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveList(long Count, ref long OIDList)
+    parameters:
+    - id: Count
+      type: System.Int64
+    - id: OIDList
+      type: System.Int64
+    content.vb: Sub RemoveList(Count As Long, OIDList As Long)
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList*
+  nameWithType.vb: ISelectionSet.RemoveList(Long, Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList(Long, Long)
+  name.vb: RemoveList(Long, Long)
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+  id: FullName
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: FullName
+  nameWithType: ISelectionSet.FullName
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The full name of the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName FullName { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: ReadOnly Property FullName As IName
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+  id: Target
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Target
+  nameWithType: ISelectionSet.Target
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The Table or FeatureClass over which the selection set is defined.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable Target { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: ReadOnly Property Target As ITable
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Target*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+  id: Count
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ISelectionSet.Count
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of  oids in the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long Count { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property Count As Long
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.Count*
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+  id: IDs
+  parent: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  langs:
+  - csharp
+  - vb
+  name: IDs
+  nameWithType: ISelectionSet.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Enumerates the object ids in the selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumIDs IDs { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumIDs
+    content.vb: ReadOnly Property IDs As IEnumIDs
+  overload: ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_MakePermanent
+  name: MakePermanent
+  nameWithType: ISelectionSet.MakePermanent
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.MakePermanent
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Add
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Add_System_Int64_
+  name: Add
+  nameWithType: ISelectionSet.Add
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Add
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_AddList_System_Int64_System_Int64__
+  name: AddList
+  nameWithType: ISelectionSet.AddList
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.AddList
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Combine_ESRI_ArcGIS_Geodatabase_ISelectionSet_ESRI_ArcGIS_Geodatabase_esriSetOperation_ESRI_ArcGIS_Geodatabase_ISelectionSet__
+  name: Combine
+  nameWithType: ISelectionSet.Combine
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Combine
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.esriSetOperation
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSetOperation
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSetOperation.html
+  name: esriSetOperation
+  nameWithType: esriSetOperation
+  fullName: ESRI.ArcGIS.Geodatabase.esriSetOperation
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Search
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Search_ESRI_ArcGIS_Geodatabase_IQueryFilter_System_Boolean_ESRI_ArcGIS_Geodatabase_ICursor__
+  name: Search
+  nameWithType: ISelectionSet.Search
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Search
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Select*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Select
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Select_ESRI_ArcGIS_Geodatabase_IQueryFilter_ESRI_ArcGIS_Geodatabase_esriSelectionType_ESRI_ArcGIS_Geodatabase_esriSelectionOption_ESRI_ArcGIS_Geodatabase_IWorkspace_
+  name: Select
+  nameWithType: ISelectionSet.Select
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Select
+- uid: ESRI.ArcGIS.Geodatabase.esriSelectionType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSelectionType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSelectionType.html
+  name: esriSelectionType
+  nameWithType: esriSelectionType
+  fullName: ESRI.ArcGIS.Geodatabase.esriSelectionType
+- uid: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriSelectionOption
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriSelectionOption.html
+  name: esriSelectionOption
+  nameWithType: esriSelectionOption
+  fullName: ESRI.ArcGIS.Geodatabase.esriSelectionOption
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Refresh
+  name: Refresh
+  nameWithType: ISelectionSet.Refresh
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Refresh
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_RemoveList_System_Int64_System_Int64__
+  name: RemoveList
+  nameWithType: ISelectionSet.RemoveList
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.RemoveList
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_FullName
+  name: FullName
+  nameWithType: ISelectionSet.FullName
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.FullName
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Target*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Target
+  name: Target
+  nameWithType: ISelectionSet.Target
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Target
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.Count*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_Count
+  name: Count
+  nameWithType: ISelectionSet.Count
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.Count
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html#ESRI_ArcGIS_Geodatabase_ISelectionSet_IDs
+  name: IDs
+  nameWithType: ISelectionSet.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet.IDs
+- uid: ESRI.ArcGIS.Geodatabase.IEnumIDs
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumIDs
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumIDs.html
+  name: IEnumIDs
+  nameWithType: IEnumIDs
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumIDs

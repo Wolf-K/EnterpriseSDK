@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink
+  id: IGeometricBufferSourceSink
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext(System.Int32@,ESRI.ArcGIS.Geometry.IGeometry@,System.Double@)
+  - ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext(System.Int32,ESRI.ArcGIS.Geometry.IGeometry)
+  langs:
+  - csharp
+  - vb
+  name: IGeometricBufferSourceSink
+  nameWithType: IGeometricBufferSourceSink
+  fullName: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Client-supplied interface that provides support for buffering a group of geometries by different distances.
+  example: []
+  syntax:
+    content: >-
+      [Guid("D21AAA44-D277-4D18-8EDF-D90DEBCA3F40")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IGeometricBufferSourceSink
+    content.vb: >-
+      <Guid("D21AAA44-D277-4D18-8EDF-D90DEBCA3F40")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IGeometricBufferSourceSink
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D21AAA44-D277-4D18-8EDF-D90DEBCA3F40
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext(System.Int32@,ESRI.ArcGIS.Geometry.IGeometry@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext(System.Int32@,ESRI.ArcGIS.Geometry.IGeometry@,System.Double@)
+  id: ReadNext(System.Int32@,ESRI.ArcGIS.Geometry.IGeometry@,System.Double@)
+  parent: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink
+  langs:
+  - csharp
+  - vb
+  name: ReadNext(out int, out IGeometry, out double)
+  nameWithType: IGeometricBufferSourceSink.ReadNext(out int, out IGeometry, out double)
+  fullName: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext(out int, out ESRI.ArcGIS.Geometry.IGeometry, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Reads the next geometry (along with a client specified geometry id) and distance from the source - or returns a nil geometry when at the end.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ReadNext(out int geomID, out IGeometry nextGeometry, out double pDistance)
+    parameters:
+    - id: geomID
+      type: System.Int32
+    - id: nextGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: pDistance
+      type: System.Double
+    content.vb: Sub ReadNext(geomID As Integer, nextGeometry As IGeometry, pDistance As Double)
+  overload: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext*
+  nameWithType.vb: IGeometricBufferSourceSink.ReadNext(Integer, IGeometry, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext(Integer, ESRI.ArcGIS.Geometry.IGeometry, Double)
+  name.vb: ReadNext(Integer, IGeometry, Double)
+- uid: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext(System.Int32,ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext(System.Int32,ESRI.ArcGIS.Geometry.IGeometry)
+  id: WriteNext(System.Int32,ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink
+  langs:
+  - csharp
+  - vb
+  name: WriteNext(int, IGeometry)
+  nameWithType: IGeometricBufferSourceSink.WriteNext(int, IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext(int, ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void WriteNext(int geomID, IGeometry pBufferedGeometry)
+    parameters:
+    - id: geomID
+      type: System.Int32
+    - id: pBufferedGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub WriteNext(geomID As Integer, pBufferedGeometry As IGeometry)
+  overload: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext*
+  nameWithType.vb: IGeometricBufferSourceSink.WriteNext(Integer, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext(Integer, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: WriteNext(Integer, IGeometry)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.html#ESRI_ArcGIS_Geometry_IGeometricBufferSourceSink_ReadNext_System_Int32__ESRI_ArcGIS_Geometry_IGeometry__System_Double__
+  name: ReadNext
+  nameWithType: IGeometricBufferSourceSink.ReadNext
+  fullName: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.ReadNext
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.html#ESRI_ArcGIS_Geometry_IGeometricBufferSourceSink_WriteNext_System_Int32_ESRI_ArcGIS_Geometry_IGeometry_
+  name: WriteNext
+  nameWithType: IGeometricBufferSourceSink.WriteNext
+  fullName: ESRI.ArcGIS.Geometry.IGeometricBufferSourceSink.WriteNext

@@ -1,0 +1,127 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  id: IWorkspaceHelper
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  langs:
+  - csharp
+  - vb
+  name: IWorkspaceHelper
+  nameWithType: IWorkspaceHelper
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that allow you to get a reference to a Workspace from a Workspace Extension.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("DA10C1BD-09A3-11D4-9FAA-00C04F6BDF0C")]
+
+      public interface IWorkspaceHelper
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("DA10C1BD-09A3-11D4-9FAA-00C04F6BDF0C")>
+
+      Public Interface IWorkspaceHelper
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.WorkspaceHelperClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: DA10C1BD-09A3-11D4-9FAA-00C04F6BDF0C
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  id: Workspace
+  parent: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper
+  langs:
+  - csharp
+  - vb
+  name: Workspace
+  nameWithType: IWorkspaceHelper.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The workspace for this workspace helper.
+  remarks: '&lt;p&gt;A Workspace is a container of spatial and non-spatial datasets such as feature classes, raster datasets, and tables. It provides methods to instantiate existing datasets and to create new datasets. Workspaces are classified into types specified by the &lt;b&gt;&lt;a href="esriWorkspaceType.htm"&gt;esriWorkspaceType&lt;/a&gt;&lt;/b&gt; enumerator: FileSystemWorkspace, LocalDatabaseWorkspace, and RemoteDatabaseWorkspace. Shapefiles and ArcGIS for Desktop Advanced workspaces are examples of FileSystemWorkspace. A personal geodatabase stored in an Access or a File Geodatabase is an example of a LocalDatabaseWorkspace. A geodatabase stored in an RDBMS such as Oracle, DB2, SQL Server, or Informix and accessed via ArcSDE is an example of a RemoteDatabaseWorkspace.&lt;/p&gt;&amp;nbsp;&lt;p&gt;A Workspace hands out a &lt;b&gt;&lt;a href="WorkspaceName.htm"&gt;WorkspaceName&lt;/a&gt;&amp;nbsp;&lt;/b&gt;object as the value of its FullName property. For example, the WorkspaceName for a workspace can be persisted in a map document. An application can call the &lt;b&gt;Open()&lt;/b&gt; method on the workspace name after loading it from persistent storage to connect to and get an object reference to the workspace.&lt;/p&gt;'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IWorkspace Workspace { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: ReadOnly Property Workspace As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.html#ESRI_ArcGIS_Geodatabase_IWorkspaceHelper_Workspace
+  name: Workspace
+  nameWithType: IWorkspaceHelper.Workspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceHelper.Workspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace

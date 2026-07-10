@@ -1,0 +1,406 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  id: IErrorFeatureContainer
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.esriGeometryType,System.Int32,System.Int64,System.Int32,System.Int64)
+  - ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.ITopologyRule,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriGeometryType,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IErrorFeatureContainer
+  nameWithType: IErrorFeatureContainer
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return error features.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("27C444DC-25EE-41FF-A2BD-C69B6343A6C3")]
+
+      public interface IErrorFeatureContainer
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("27C444DC-25EE-41FF-A2BD-C69B6343A6C3")>
+
+      Public Interface IErrorFeatureContainer
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 27C444DC-25EE-41FF-A2BD-C69B6343A6C3
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.esriGeometryType,System.Int32,System.Int64,System.Int32,System.Int64)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.esriGeometryType,System.Int32,System.Int64,System.Int32,System.Int64)
+  id: ErrorFeature(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.esriGeometryType,System.Int32,System.Int64,System.Int32,System.Int64)
+  parent: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  langs:
+  - csharp
+  - vb
+  name: ErrorFeature[ISpatialReference, esriTopologyRuleType, esriGeometryType, int, long, int, long]
+  nameWithType: IErrorFeatureContainer.ErrorFeature[ISpatialReference, esriTopologyRuleType, esriGeometryType, int, long, int, long]
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature[ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.esriTopologyRuleType, ESRI.ArcGIS.Geometry.esriGeometryType, int, long, int, long]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An error feature with that matches the passed in parameters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopologyErrorFeature ErrorFeature[ISpatialReference SpatialReference, esriTopologyRuleType errorType, esriGeometryType GeometryType, int OriginClassID, long OriginOID, int DestinationClassID, long DestinationOID] { get; }
+    parameters:
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: errorType
+      type: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+    - id: GeometryType
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    - id: OriginClassID
+      type: System.Int32
+    - id: OriginOID
+      type: System.Int64
+    - id: DestinationClassID
+      type: System.Int32
+    - id: DestinationOID
+      type: System.Int64
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopologyErrorFeature
+    content.vb: ReadOnly Property ErrorFeature(SpatialReference As ISpatialReference, errorType As esriTopologyRuleType, GeometryType As esriGeometryType, OriginClassID As Integer, OriginOID As Long, DestinationClassID As Integer, DestinationOID As Long) As ITopologyErrorFeature
+  overload: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature*
+  nameWithType.vb: IErrorFeatureContainer.ErrorFeature(ISpatialReference, esriTopologyRuleType, esriGeometryType, Integer, Long, Integer, Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.esriTopologyRuleType, ESRI.ArcGIS.Geometry.esriGeometryType, Integer, Long, Integer, Long)
+  name.vb: ErrorFeature(ISpatialReference, esriTopologyRuleType, esriGeometryType, Integer, Long, Integer, Long)
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.ITopologyRule,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.ITopologyRule,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  id: ErrorFeatures(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.ITopologyRule,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  langs:
+  - csharp
+  - vb
+  name: ErrorFeatures[ISpatialReference, ITopologyRule, IEnvelope, bool, bool]
+  nameWithType: IErrorFeatureContainer.ErrorFeatures[ISpatialReference, ITopologyRule, IEnvelope, bool, bool]
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures[ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.ITopologyRule, ESRI.ArcGIS.Geometry.IEnvelope, bool, bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An enumeration of error features that match the passed in parameters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumTopologyErrorFeature ErrorFeatures[ISpatialReference SpatialReference, ITopologyRule Rule, IEnvelope Extent, bool Errors, bool Exceptions] { get; }
+    parameters:
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: Rule
+      type: ESRI.ArcGIS.Geodatabase.ITopologyRule
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Errors
+      type: System.Boolean
+    - id: Exceptions
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+    content.vb: ReadOnly Property ErrorFeatures(SpatialReference As ISpatialReference, Rule As ITopologyRule, Extent As IEnvelope, Errors As Boolean, Exceptions As Boolean) As IEnumTopologyErrorFeature
+  overload: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures*
+  nameWithType.vb: IErrorFeatureContainer.ErrorFeatures(ISpatialReference, ITopologyRule, IEnvelope, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.ITopologyRule, ESRI.ArcGIS.Geometry.IEnvelope, Boolean, Boolean)
+  name.vb: ErrorFeatures(ISpatialReference, ITopologyRule, IEnvelope, Boolean, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriGeometryType,System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriGeometryType,System.Boolean)
+  id: ErrorFeaturesByGeometryType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geometry.esriGeometryType,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  langs:
+  - csharp
+  - vb
+  name: ErrorFeaturesByGeometryType[ISpatialReference, esriGeometryType, bool]
+  nameWithType: IErrorFeatureContainer.ErrorFeaturesByGeometryType[ISpatialReference, esriGeometryType, bool]
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType[ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.esriGeometryType, bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An enumeration of error features that match the passed in parameters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumTopologyErrorFeature ErrorFeaturesByGeometryType[ISpatialReference SpatialReference, esriGeometryType GeometryType, bool Exceptions] { get; }
+    parameters:
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: GeometryType
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    - id: Exceptions
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+    content.vb: ReadOnly Property ErrorFeaturesByGeometryType(SpatialReference As ISpatialReference, GeometryType As esriGeometryType, Exceptions As Boolean) As IEnumTopologyErrorFeature
+  overload: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType*
+  nameWithType.vb: IErrorFeatureContainer.ErrorFeaturesByGeometryType(ISpatialReference, esriGeometryType, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geometry.esriGeometryType, Boolean)
+  name.vb: ErrorFeaturesByGeometryType(ISpatialReference, esriGeometryType, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  id: ErrorFeaturesByRuleType(ESRI.ArcGIS.Geometry.ISpatialReference,ESRI.ArcGIS.Geodatabase.esriTopologyRuleType,ESRI.ArcGIS.Geometry.IEnvelope,System.Boolean,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer
+  langs:
+  - csharp
+  - vb
+  name: ErrorFeaturesByRuleType[ISpatialReference, esriTopologyRuleType, IEnvelope, bool, bool]
+  nameWithType: IErrorFeatureContainer.ErrorFeaturesByRuleType[ISpatialReference, esriTopologyRuleType, IEnvelope, bool, bool]
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType[ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.esriTopologyRuleType, ESRI.ArcGIS.Geometry.IEnvelope, bool, bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: An enumeration of error features that match the passed in parameters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumTopologyErrorFeature ErrorFeaturesByRuleType[ISpatialReference SpatialReference, esriTopologyRuleType TopologyRuleType, IEnvelope Extent, bool Errors, bool Exceptions] { get; }
+    parameters:
+    - id: SpatialReference
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    - id: TopologyRuleType
+      type: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Errors
+      type: System.Boolean
+    - id: Exceptions
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+    content.vb: ReadOnly Property ErrorFeaturesByRuleType(SpatialReference As ISpatialReference, TopologyRuleType As esriTopologyRuleType, Extent As IEnvelope, Errors As Boolean, Exceptions As Boolean) As IEnumTopologyErrorFeature
+  overload: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType*
+  nameWithType.vb: IErrorFeatureContainer.ErrorFeaturesByRuleType(ISpatialReference, esriTopologyRuleType, IEnvelope, Boolean, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType(ESRI.ArcGIS.Geometry.ISpatialReference, ESRI.ArcGIS.Geodatabase.esriTopologyRuleType, ESRI.ArcGIS.Geometry.IEnvelope, Boolean, Boolean)
+  name.vb: ErrorFeaturesByRuleType(ISpatialReference, esriTopologyRuleType, IEnvelope, Boolean, Boolean)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.html#ESRI_ArcGIS_Geodatabase_IErrorFeatureContainer_ErrorFeature_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geodatabase_esriTopologyRuleType_ESRI_ArcGIS_Geometry_esriGeometryType_System_Int32_System_Int64_System_Int32_System_Int64_
+  name: ErrorFeature
+  nameWithType: IErrorFeatureContainer.ErrorFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeature
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType.html
+  name: esriTopologyRuleType
+  nameWithType: esriTopologyRuleType
+  fullName: ESRI.ArcGIS.Geodatabase.esriTopologyRuleType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyErrorFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyErrorFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyErrorFeature.html
+  name: ITopologyErrorFeature
+  nameWithType: ITopologyErrorFeature
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyErrorFeature
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.html#ESRI_ArcGIS_Geodatabase_IErrorFeatureContainer_ErrorFeatures_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geodatabase_ITopologyRule_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Boolean_
+  name: ErrorFeatures
+  nameWithType: IErrorFeatureContainer.ErrorFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeatures
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyRule
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyRule
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyRule.html
+  name: ITopologyRule
+  nameWithType: ITopologyRule
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyRule
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature.html
+  name: IEnumTopologyErrorFeature
+  nameWithType: IEnumTopologyErrorFeature
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTopologyErrorFeature
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.html#ESRI_ArcGIS_Geodatabase_IErrorFeatureContainer_ErrorFeaturesByGeometryType_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geometry_esriGeometryType_System_Boolean_
+  name: ErrorFeaturesByGeometryType
+  nameWithType: IErrorFeatureContainer.ErrorFeaturesByGeometryType
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByGeometryType
+- uid: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.html#ESRI_ArcGIS_Geodatabase_IErrorFeatureContainer_ErrorFeaturesByRuleType_ESRI_ArcGIS_Geometry_ISpatialReference_ESRI_ArcGIS_Geodatabase_esriTopologyRuleType_ESRI_ArcGIS_Geometry_IEnvelope_System_Boolean_System_Boolean_
+  name: ErrorFeaturesByRuleType
+  nameWithType: IErrorFeatureContainer.ErrorFeaturesByRuleType
+  fullName: ESRI.ArcGIS.Geodatabase.IErrorFeatureContainer.ErrorFeaturesByRuleType

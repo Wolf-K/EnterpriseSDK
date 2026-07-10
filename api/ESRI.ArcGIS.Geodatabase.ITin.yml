@@ -1,0 +1,662 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITin
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITin
+  id: ITin
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+  - ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+  - ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+  - ESRI.ArcGIS.Geodatabase.ITin.Extent
+  - ESRI.ArcGIS.Geodatabase.ITin.Fields
+  - ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+  - ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+  - ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+  - ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+  - ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+  - ESRI.ArcGIS.Geodatabase.ITin.SaveAs(System.String,System.Object@)
+  - ESRI.ArcGIS.Geodatabase.ITin.Version
+  - ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+  langs:
+  - csharp
+  - vb
+  name: ITin
+  nameWithType: ITin
+  fullName: ESRI.ArcGIS.Geodatabase.ITin
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control TINs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("73B80FBB-FF33-11D1-A549-0000F8774F0F")]
+
+      public interface ITin
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("73B80FBB-FF33-11D1-A549-0000F8774F0F")>
+
+      Public Interface ITin
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TinClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 73B80FBB-FF33-11D1-A549-0000F8774F0F
+- uid: ESRI.ArcGIS.Geodatabase.ITin.SaveAs(System.String,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITin.SaveAs(System.String,System.Object@)
+  id: SaveAs(System.String,System.Object@)
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: SaveAs(string, ref object)
+  nameWithType: ITin.SaveAs(string, ref object)
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.SaveAs(string, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Saves the TIN to disk using the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SaveAs(string newName, ref object pOverWrite)
+    parameters:
+    - id: newName
+      type: System.String
+    - id: pOverWrite
+      type: System.Object
+    content.vb: Sub SaveAs(newName As String, pOverWrite As Object)
+  overload: ESRI.ArcGIS.Geodatabase.ITin.SaveAs*
+  nameWithType.vb: ITin.SaveAs(String, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITin.SaveAs(String, Object)
+  name.vb: SaveAs(String, Object)
+- uid: ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+  id: IsEmpty
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: ITin.IsEmpty
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the TIN contains no data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEmpty As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITin.IsEmpty*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+  id: IsDelaunay
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: IsDelaunay
+  nameWithType: ITin.IsDelaunay
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if TIN was constructed using Delaunay triangulation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsDelaunay { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDelaunay As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Extent
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: ITin.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The interpolation zone of the TIN.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.ITin.Extent*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+  id: DataNodeCount
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: DataNodeCount
+  nameWithType: ITin.DataNodeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of data nodes in the TIN.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int DataNodeCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DataNodeCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+  id: DataEdgeCount
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: DataEdgeCount
+  nameWithType: ITin.DataEdgeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of TIN edges that have a data triangle on one side or the other.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int DataEdgeCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DataEdgeCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+  id: DataTriangleCount
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: DataTriangleCount
+  nameWithType: ITin.DataTriangleCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of data triangles in the TIN.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int DataTriangleCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DataTriangleCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+  id: ZFactor
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: ZFactor
+  nameWithType: ITin.ZFactor
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Multiplication factor applied to all z values in a TIN to provide unit-congruency between coordinate components.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property ZFactor As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITin.ZFactor*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Version
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.Version
+  id: Version
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: ITin.Version
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Version
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns the version number of the TIN engine used to build the TIN.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Version { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Version As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITin.Version*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+  id: HasNodeTagValues
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: HasNodeTagValues
+  nameWithType: ITin.HasNodeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the TIN dataset has node tag values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasNodeTagValues { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasNodeTagValues As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+  id: HasEdgeTagValues
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: HasEdgeTagValues
+  nameWithType: ITin.HasEdgeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the TIN dataset has edge tag values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasEdgeTagValues { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasEdgeTagValues As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+  id: HasTriangleTagValues
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: HasTriangleTagValues
+  nameWithType: ITin.HasTriangleTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the TIN dataset has triangle tag values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasTriangleTagValues { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasTriangleTagValues As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues*
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITin.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.ITin
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: ITin.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The collection of attribute items of the TIN.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.ITin.Fields*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITin.SaveAs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.SaveAs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_SaveAs_System_String_System_Object__
+  name: SaveAs
+  nameWithType: ITin.SaveAs
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.SaveAs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITin.IsEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_IsEmpty
+  name: IsEmpty
+  nameWithType: ITin.IsEmpty
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.IsEmpty
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_IsDelaunay
+  name: IsDelaunay
+  nameWithType: ITin.IsDelaunay
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.IsDelaunay
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Extent*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_Extent
+  name: Extent
+  nameWithType: ITin.Extent
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_DataNodeCount
+  name: DataNodeCount
+  nameWithType: ITin.DataNodeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataNodeCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_DataEdgeCount
+  name: DataEdgeCount
+  nameWithType: ITin.DataEdgeCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataEdgeCount
+- uid: ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_DataTriangleCount
+  name: DataTriangleCount
+  nameWithType: ITin.DataTriangleCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.DataTriangleCount
+- uid: ESRI.ArcGIS.Geodatabase.ITin.ZFactor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_ZFactor
+  name: ZFactor
+  nameWithType: ITin.ZFactor
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.ZFactor
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Version*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.Version
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_Version
+  name: Version
+  nameWithType: ITin.Version
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Version
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_HasNodeTagValues
+  name: HasNodeTagValues
+  nameWithType: ITin.HasNodeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasNodeTagValues
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_HasEdgeTagValues
+  name: HasEdgeTagValues
+  nameWithType: ITin.HasEdgeTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasEdgeTagValues
+- uid: ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_HasTriangleTagValues
+  name: HasTriangleTagValues
+  nameWithType: ITin.HasTriangleTagValues
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.HasTriangleTagValues
+- uid: ESRI.ArcGIS.Geodatabase.ITin.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITin.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html#ESRI_ArcGIS_Geodatabase_ITin_Fields
+  name: Fields
+  nameWithType: ITin.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ITin.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

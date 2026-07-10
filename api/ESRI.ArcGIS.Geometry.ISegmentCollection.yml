@@ -1,0 +1,995 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection
+  commentId: T:ESRI.ArcGIS.Geometry.ISegmentCollection
+  id: ISegmentCollection
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment(ESRI.ArcGIS.Geometry.ISegment,System.Object@,System.Object@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments(System.Boolean@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments(ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection(System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments(System.Int32,System.Int32,System.Boolean)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.Segment(System.Int32)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle(ESRI.ArcGIS.Geometry.IPoint,System.Double)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle(ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  - ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes
+  langs:
+  - csharp
+  - vb
+  name: ISegmentCollection
+  nameWithType: ISegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that manipulate the segments of a path, ring, polyline, or polygon.
+  example: []
+  syntax:
+    content: >-
+      [Guid("B3FE6B20-4FC2-11D1-834E-0000F8775BE9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISegmentCollection
+    content.vb: >-
+      <Guid("B3FE6B20-4FC2-11D1-834E-0000F8775BE9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISegmentCollection
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.PathClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  - ESRI.ArcGIS.Geometry.RingClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: B3FE6B20-4FC2-11D1-834E-0000F8775BE9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment(ESRI.ArcGIS.Geometry.ISegment,System.Object@,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment(ESRI.ArcGIS.Geometry.ISegment,System.Object@,System.Object@)
+  id: AddSegment(ESRI.ArcGIS.Geometry.ISegment,System.Object@,System.Object@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: AddSegment(ISegment, ref object, ref object)
+  nameWithType: ISegmentCollection.AddSegment(ISegment, ref object, ref object)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment(ESRI.ArcGIS.Geometry.ISegment, ref object, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void AddSegment(ISegment inSegment, ref object before, ref object after)
+    parameters:
+    - id: inSegment
+      type: ESRI.ArcGIS.Geometry.ISegment
+    - id: before
+      type: System.Object
+    - id: after
+      type: System.Object
+    content.vb: Sub AddSegment(inSegment As ISegment, before As Object, after As Object)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment*
+  nameWithType.vb: ISegmentCollection.AddSegment(ISegment, Object, Object)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment(ESRI.ArcGIS.Geometry.ISegment, Object, Object)
+  name.vb: AddSegment(ISegment, Object, Object)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  id: QuerySegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: QuerySegments(int, int, out ISegment)
+  nameWithType: ISegmentCollection.QuerySegments(int, int, out ISegment)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments(int, int, out ESRI.ArcGIS.Geometry.ISegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns references to some of the input segments. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QuerySegments(int Index, int Count, out ISegment segments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Count
+      type: System.Int32
+    - id: segments
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: Sub QuerySegments(Index As Integer, Count As Integer, segments As ISegment)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments*
+  nameWithType.vb: ISegmentCollection.QuerySegments(Integer, Integer, ISegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments(Integer, Integer, ESRI.ArcGIS.Geometry.ISegment)
+  name.vb: QuerySegments(Integer, Integer, ISegment)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  id: AddSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: AddSegments(int, ref ISegment)
+  nameWithType: ISegmentCollection.AddSegments(int, ref ISegment)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments(int, ref ESRI.ArcGIS.Geometry.ISegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Adds references to segments. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddSegments(int Count, ref ISegment newSegments)
+    parameters:
+    - id: Count
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: Sub AddSegments(Count As Integer, newSegments As ISegment)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments*
+  nameWithType.vb: ISegmentCollection.AddSegments(Integer, ISegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments(Integer, ESRI.ArcGIS.Geometry.ISegment)
+  name.vb: AddSegments(Integer, ISegment)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  id: AddSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: AddSegmentCollection(ISegmentCollection)
+  nameWithType: ISegmentCollection.AddSegmentCollection(ISegmentCollection)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void AddSegmentCollection(ISegmentCollection segments)
+    parameters:
+    - id: segments
+      type: ESRI.ArcGIS.Geometry.ISegmentCollection
+    content.vb: Sub AddSegmentCollection(segments As ISegmentCollection)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  id: InsertSegments(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: InsertSegments(int, int, ref ISegment)
+  nameWithType: ISegmentCollection.InsertSegments(int, int, ref ISegment)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments(int, int, ref ESRI.ArcGIS.Geometry.ISegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Inserts references to the input segments. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void InsertSegments(int Index, int Count, ref ISegment newSegments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Count
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: Sub InsertSegments(Index As Integer, Count As Integer, newSegments As ISegment)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments*
+  nameWithType.vb: ISegmentCollection.InsertSegments(Integer, Integer, ISegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments(Integer, Integer, ESRI.ArcGIS.Geometry.ISegment)
+  name.vb: InsertSegments(Integer, Integer, ISegment)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection(System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection(System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  id: InsertSegmentCollection(System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: InsertSegmentCollection(int, ISegmentCollection)
+  nameWithType: ISegmentCollection.InsertSegmentCollection(int, ISegmentCollection)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection(int, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void InsertSegmentCollection(int Index, ISegmentCollection newSegments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegmentCollection
+    content.vb: Sub InsertSegmentCollection(Index As Integer, newSegments As ISegmentCollection)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection*
+  nameWithType.vb: ISegmentCollection.InsertSegmentCollection(Integer, ISegmentCollection)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection(Integer, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  name.vb: InsertSegmentCollection(Integer, ISegmentCollection)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  id: InsertSegmentCollectionEx(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: InsertSegmentCollectionEx(int, int, int, ISegmentCollection)
+  nameWithType: ISegmentCollection.InsertSegmentCollectionEx(int, int, int, ISegmentCollection)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx(int, int, int, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void InsertSegmentCollectionEx(int Index, int start, int Count, ISegmentCollection newSegments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: start
+      type: System.Int32
+    - id: Count
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegmentCollection
+    content.vb: Sub InsertSegmentCollectionEx(Index As Integer, start As Integer, Count As Integer, newSegments As ISegmentCollection)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx*
+  nameWithType.vb: ISegmentCollection.InsertSegmentCollectionEx(Integer, Integer, Integer, ISegmentCollection)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx(Integer, Integer, Integer, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  name.vb: InsertSegmentCollectionEx(Integer, Integer, Integer, ISegmentCollection)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  id: ReplaceSegments(System.Int32,System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: ReplaceSegments(int, int, int, ref ISegment)
+  nameWithType: ISegmentCollection.ReplaceSegments(int, int, int, ref ISegment)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments(int, int, int, ref ESRI.ArcGIS.Geometry.ISegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Removes and inserts from segments. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ReplaceSegments(int Index, int comingIn, int goingAway, ref ISegment newSegments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: comingIn
+      type: System.Int32
+    - id: goingAway
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: Sub ReplaceSegments(Index As Integer, comingIn As Integer, goingAway As Integer, newSegments As ISegment)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments*
+  nameWithType.vb: ISegmentCollection.ReplaceSegments(Integer, Integer, Integer, ISegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments(Integer, Integer, Integer, ESRI.ArcGIS.Geometry.ISegment)
+  name.vb: ReplaceSegments(Integer, Integer, Integer, ISegment)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  id: ReplaceSegmentCollection(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.ISegmentCollection)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: ReplaceSegmentCollection(int, int, ISegmentCollection)
+  nameWithType: ISegmentCollection.ReplaceSegmentCollection(int, int, ISegmentCollection)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection(int, int, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ReplaceSegmentCollection(int Index, int goingAway, ISegmentCollection newSegments)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: goingAway
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegmentCollection
+    content.vb: Sub ReplaceSegmentCollection(Index As Integer, goingAway As Integer, newSegments As ISegmentCollection)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection*
+  nameWithType.vb: ISegmentCollection.ReplaceSegmentCollection(Integer, Integer, ISegmentCollection)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection(Integer, Integer, ESRI.ArcGIS.Geometry.ISegmentCollection)
+  name.vb: ReplaceSegmentCollection(Integer, Integer, ISegmentCollection)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments(System.Int32,System.Int32,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments(System.Int32,System.Int32,System.Boolean)
+  id: RemoveSegments(System.Int32,System.Int32,System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: RemoveSegments(int, int, bool)
+  nameWithType: ISegmentCollection.RemoveSegments(int, int, bool)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments(int, int, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Removes references to some segments. If closeGap is TRUE, then any remaining internal gap in the path, ring, polyline or polygon is connected with a single line segment.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveSegments(int Index, int Count, bool closeGap)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Count
+      type: System.Int32
+    - id: closeGap
+      type: System.Boolean
+    content.vb: Sub RemoveSegments(Index As Integer, Count As Integer, closeGap As Boolean)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments*
+  nameWithType.vb: ISegmentCollection.RemoveSegments(Integer, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments(Integer, Integer, Boolean)
+  name.vb: RemoveSegments(Integer, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle(ESRI.ArcGIS.Geometry.IPoint,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle(ESRI.ArcGIS.Geometry.IPoint,System.Double)
+  id: SetCircle(ESRI.ArcGIS.Geometry.IPoint,System.Double)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SetCircle(IPoint, double)
+  nameWithType: ISegmentCollection.SetCircle(IPoint, double)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle(ESRI.ArcGIS.Geometry.IPoint, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetCircle(IPoint cp, double circleRadius)
+    parameters:
+    - id: cp
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: circleRadius
+      type: System.Double
+    content.vb: Sub SetCircle(cp As IPoint, circleRadius As Double)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle*
+  nameWithType.vb: ISegmentCollection.SetCircle(IPoint, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle(ESRI.ArcGIS.Geometry.IPoint, Double)
+  name.vb: SetCircle(IPoint, Double)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle(ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle(ESRI.ArcGIS.Geometry.IEnvelope)
+  id: SetRectangle(ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SetRectangle(IEnvelope)
+  nameWithType: ISegmentCollection.SetRectangle(IEnvelope)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle(ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetRectangle(IEnvelope inEnvelope)
+    parameters:
+    - id: inEnvelope
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub SetRectangle(inEnvelope As IEnvelope)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  id: SetSegments(System.Int32,ESRI.ArcGIS.Geometry.ISegment@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SetSegments(int, ref ISegment)
+  nameWithType: ISegmentCollection.SetSegments(int, ref ISegment)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments(int, ref ESRI.ArcGIS.Geometry.ISegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Replaces all segments with references to the input segments. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetSegments(int Count, ref ISegment newSegments)
+    parameters:
+    - id: Count
+      type: System.Int32
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: Sub SetSegments(Count As Integer, newSegments As ISegment)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments*
+  nameWithType.vb: ISegmentCollection.SetSegments(Integer, ISegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments(Integer, ESRI.ArcGIS.Geometry.ISegment)
+  name.vb: SetSegments(Integer, ISegment)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  id: SetSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SetSegmentCollection(ISegmentCollection)
+  nameWithType: ISegmentCollection.SetSegmentCollection(ISegmentCollection)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection(ESRI.ArcGIS.Geometry.ISegmentCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetSegmentCollection(ISegmentCollection newSegments)
+    parameters:
+    - id: newSegments
+      type: ESRI.ArcGIS.Geometry.ISegmentCollection
+    content.vb: Sub SetSegmentCollection(newSegments As ISegmentCollection)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments(System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments(System.Boolean@)
+  id: HasNonLinearSegments(System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: HasNonLinearSegments(ref bool)
+  nameWithType: ISegmentCollection.HasNonLinearSegments(ref bool)
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments(ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if this segment collection contains segments other than lines.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void HasNonLinearSegments(ref bool nonLinearSegments)
+    parameters:
+    - id: nonLinearSegments
+      type: System.Boolean
+    content.vb: Sub HasNonLinearSegments(nonLinearSegments As Boolean)
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments*
+  nameWithType.vb: ISegmentCollection.HasNonLinearSegments(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments(Boolean)
+  name.vb: HasNonLinearSegments(Boolean)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes
+  id: SynchronizeEmptyAttributes
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SynchronizeEmptyAttributes()
+  nameWithType: ISegmentCollection.SynchronizeEmptyAttributes()
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: If, at end point shared by two segments, one segment has an empty value for an attribute and the other has a non-empty value, use the non-empty value for both.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SynchronizeEmptyAttributes()
+    content.vb: Sub SynchronizeEmptyAttributes()
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged
+  commentId: M:ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged
+  id: SegmentsChanged
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SegmentsChanged()
+  nameWithType: ISegmentCollection.SegmentsChanged()
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Informs the segment collection that any cached values that it may be maintaining (envelope, length, etc.) are invalid. Use this method after editing segments directly.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SegmentsChanged()
+    content.vb: Sub SegmentsChanged()
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+  commentId: P:ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+  id: SegmentCount
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: SegmentCount
+  nameWithType: ISegmentCollection.SegmentCount
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of segments.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SegmentCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SegmentCount As Integer
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geometry.ISegmentCollection.Segment(System.Int32)
+  id: Segment(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: Segment[int]
+  nameWithType: ISegmentCollection.Segment[int]
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A  reference to the ith segment.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISegment Segment[int i] { get; }
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.ISegment
+    content.vb: ReadOnly Property Segment(i As Integer) As ISegment
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment*
+  nameWithType.vb: ISegmentCollection.Segment(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment(Integer)
+  name.vb: Segment(Integer)
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+  commentId: P:ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+  id: EnumSegments
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: EnumSegments
+  nameWithType: ISegmentCollection.EnumSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A  new enumerator for this segment collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumSegment EnumSegments { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnumSegment
+    content.vb: ReadOnly Property EnumSegments As IEnumSegment
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+  commentId: P:ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+  id: EnumCurve
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: EnumCurve
+  nameWithType: ISegmentCollection.EnumCurve
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A  new curve enumerator for this segment collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumCurve EnumCurve { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnumCurve
+    content.vb: ReadOnly Property EnumCurve As IEnumCurve
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve*
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments(ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: P:ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments(ESRI.ArcGIS.Geometry.IGeometry)
+  id: IndexedEnumSegments(ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geometry.ISegmentCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexedEnumSegments[IGeometry]
+  nameWithType: ISegmentCollection.IndexedEnumSegments[IGeometry]
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments[ESRI.ArcGIS.Geometry.IGeometry]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A new indexed segment enumerator for this segment collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumSegment IndexedEnumSegments[IGeometry queryGeometry] { get; }
+    parameters:
+    - id: queryGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnumSegment
+    content.vb: ReadOnly Property IndexedEnumSegments(queryGeometry As IGeometry) As IEnumSegment
+  overload: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments*
+  nameWithType.vb: ISegmentCollection.IndexedEnumSegments(IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments(ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: IndexedEnumSegments(IGeometry)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_AddSegment_ESRI_ArcGIS_Geometry_ISegment_System_Object__System_Object__
+  name: AddSegment
+  nameWithType: ISegmentCollection.AddSegment
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegment
+- uid: ESRI.ArcGIS.Geometry.ISegment
+  commentId: T:ESRI.ArcGIS.Geometry.ISegment
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegment.html
+  name: ISegment
+  nameWithType: ISegment
+  fullName: ESRI.ArcGIS.Geometry.ISegment
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_QuerySegments_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_ISegment__
+  name: QuerySegments
+  nameWithType: ISegmentCollection.QuerySegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.QuerySegments
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_AddSegments_System_Int32_ESRI_ArcGIS_Geometry_ISegment__
+  name: AddSegments
+  nameWithType: ISegmentCollection.AddSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegments
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_AddSegmentCollection_ESRI_ArcGIS_Geometry_ISegmentCollection_
+  name: AddSegmentCollection
+  nameWithType: ISegmentCollection.AddSegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.AddSegmentCollection
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection
+  commentId: T:ESRI.ArcGIS.Geometry.ISegmentCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html
+  name: ISegmentCollection
+  nameWithType: ISegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_InsertSegments_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_ISegment__
+  name: InsertSegments
+  nameWithType: ISegmentCollection.InsertSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegments
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_InsertSegmentCollection_System_Int32_ESRI_ArcGIS_Geometry_ISegmentCollection_
+  name: InsertSegmentCollection
+  nameWithType: ISegmentCollection.InsertSegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollection
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_InsertSegmentCollectionEx_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_ISegmentCollection_
+  name: InsertSegmentCollectionEx
+  nameWithType: ISegmentCollection.InsertSegmentCollectionEx
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.InsertSegmentCollectionEx
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_ReplaceSegments_System_Int32_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_ISegment__
+  name: ReplaceSegments
+  nameWithType: ISegmentCollection.ReplaceSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegments
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_ReplaceSegmentCollection_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_ISegmentCollection_
+  name: ReplaceSegmentCollection
+  nameWithType: ISegmentCollection.ReplaceSegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.ReplaceSegmentCollection
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_RemoveSegments_System_Int32_System_Int32_System_Boolean_
+  name: RemoveSegments
+  nameWithType: ISegmentCollection.RemoveSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.RemoveSegments
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SetCircle_ESRI_ArcGIS_Geometry_IPoint_System_Double_
+  name: SetCircle
+  nameWithType: ISegmentCollection.SetCircle
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetCircle
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SetRectangle_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: SetRectangle
+  nameWithType: ISegmentCollection.SetRectangle
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetRectangle
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SetSegments_System_Int32_ESRI_ArcGIS_Geometry_ISegment__
+  name: SetSegments
+  nameWithType: ISegmentCollection.SetSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegments
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SetSegmentCollection_ESRI_ArcGIS_Geometry_ISegmentCollection_
+  name: SetSegmentCollection
+  nameWithType: ISegmentCollection.SetSegmentCollection
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SetSegmentCollection
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_HasNonLinearSegments_System_Boolean__
+  name: HasNonLinearSegments
+  nameWithType: ISegmentCollection.HasNonLinearSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.HasNonLinearSegments
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SynchronizeEmptyAttributes
+  name: SynchronizeEmptyAttributes
+  nameWithType: ISegmentCollection.SynchronizeEmptyAttributes
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SynchronizeEmptyAttributes
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SegmentsChanged
+  name: SegmentsChanged
+  nameWithType: ISegmentCollection.SegmentsChanged
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentsChanged
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_SegmentCount
+  name: SegmentCount
+  nameWithType: ISegmentCollection.SegmentCount
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.SegmentCount
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.Segment
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_Segment_System_Int32_
+  name: Segment
+  nameWithType: ISegmentCollection.Segment
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.Segment
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_EnumSegments
+  name: EnumSegments
+  nameWithType: ISegmentCollection.EnumSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumSegments
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumSegment
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html
+  name: IEnumSegment
+  nameWithType: IEnumSegment
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_EnumCurve
+  name: EnumCurve
+  nameWithType: ISegmentCollection.EnumCurve
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.EnumCurve
+- uid: ESRI.ArcGIS.Geometry.IEnumCurve
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumCurve
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumCurve.html
+  name: IEnumCurve
+  nameWithType: IEnumCurve
+  fullName: ESRI.ArcGIS.Geometry.IEnumCurve
+- uid: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments*
+  commentId: Overload:ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegmentCollection.html#ESRI_ArcGIS_Geometry_ISegmentCollection_IndexedEnumSegments_ESRI_ArcGIS_Geometry_IGeometry_
+  name: IndexedEnumSegments
+  nameWithType: ISegmentCollection.IndexedEnumSegments
+  fullName: ESRI.ArcGIS.Geometry.ISegmentCollection.IndexedEnumSegments
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry

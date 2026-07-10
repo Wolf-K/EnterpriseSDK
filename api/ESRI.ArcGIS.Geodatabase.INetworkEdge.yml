@@ -1,0 +1,1014 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkEdge
+  id: INetworkEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime(System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName(System.String)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue(System.Double,System.Double,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime(System.Double,System.Double,System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject(System.Double)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge,System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection(ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions(ESRI.ArcGIS.Geodatabase.INetworkJunction,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions(System.Double@,System.Double@)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+  - ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+  langs:
+  - csharp
+  - vb
+  name: INetworkEdge
+  nameWithType: INetworkEdge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that specify the properties of this network edge element.
+  example: []
+  syntax:
+    content: >-
+      [Guid("EADCD556-0857-41D9-9714-03B0DBB16DFB")]
+
+      public interface INetworkEdge : INetworkElement
+    content.vb: >-
+      <Guid("EADCD556-0857-41D9-9714-03B0DBB16DFB")>
+
+      Public Interface INetworkEdge Inherits INetworkElement
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EADCD556-0857-41D9-9714-03B0DBB16DFB
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions(System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions(System.Double@,System.Double@)
+  id: QueryPositions(System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryPositions(out double, out double)
+  nameWithType: INetworkEdge.QueryPositions(out double, out double)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions(out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Queries the positions along the source object at which the from-end and to-end of the network edge element lies.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryPositions(out double fromPosition, out double toPosition)
+    parameters:
+    - id: fromPosition
+      type: System.Double
+    - id: toPosition
+      type: System.Double
+    content.vb: Sub QueryPositions(fromPosition As Double, toPosition As Double)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions*
+  nameWithType.vb: INetworkEdge.QueryPositions(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions(Double, Double)
+  name.vb: QueryPositions(Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  id: QueryTurn(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryTurn(int, INetworkTurn)
+  nameWithType: INetworkEdge.QueryTurn(int, INetworkTurn)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn(int, ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Queries the index'th network turn element in which this network edge element participates.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryTurn(int Index, INetworkTurn Turn)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Turn
+      type: ESRI.ArcGIS.Geodatabase.INetworkTurn
+    content.vb: Sub QueryTurn(Index As Integer, Turn As INetworkTurn)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn*
+  nameWithType.vb: INetworkEdge.QueryTurn(Integer, INetworkTurn)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn(Integer, ESRI.ArcGIS.Geodatabase.INetworkTurn)
+  name.vb: QueryTurn(Integer, INetworkTurn)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection(ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection(ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  id: QueryEdgeInOtherDirection(ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryEdgeInOtherDirection(INetworkEdge)
+  nameWithType: INetworkEdge.QueryEdgeInOtherDirection(INetworkEdge)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection(ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Queries the network edge element corresponding to the reverse traversal of this network edge element.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryEdgeInOtherDirection(INetworkEdge Edge)
+    parameters:
+    - id: Edge
+      type: ESRI.ArcGIS.Geodatabase.INetworkEdge
+    content.vb: Sub QueryEdgeInOtherDirection(Edge As INetworkEdge)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions(ESRI.ArcGIS.Geodatabase.INetworkJunction,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions(ESRI.ArcGIS.Geodatabase.INetworkJunction,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  id: QueryJunctions(ESRI.ArcGIS.Geodatabase.INetworkJunction,ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryJunctions(INetworkJunction, INetworkJunction)
+  nameWithType: INetworkEdge.QueryJunctions(INetworkJunction, INetworkJunction)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions(ESRI.ArcGIS.Geodatabase.INetworkJunction, ESRI.ArcGIS.Geodatabase.INetworkJunction)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Queries the network junction elements adjacent to this network edge element.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryJunctions(INetworkJunction FromJunction, INetworkJunction ToJunction)
+    parameters:
+    - id: FromJunction
+      type: ESRI.ArcGIS.Geodatabase.INetworkJunction
+    - id: ToJunction
+      type: ESRI.ArcGIS.Geodatabase.INetworkJunction
+    content.vb: Sub QueryJunctions(FromJunction As INetworkJunction, ToJunction As INetworkJunction)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge,System.Double@,System.Double@)
+  id: QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryCoveringHyperedge(INetworkEdge, out double, out double)
+  nameWithType: INetworkEdge.QueryCoveringHyperedge(INetworkEdge, out double, out double)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Queries the covering hyperedge of the network edge element and returns its related positions along the covering hyperedge.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryCoveringHyperedge(INetworkEdge Edge, out double fromPosition, out double toPosition)
+    parameters:
+    - id: Edge
+      type: ESRI.ArcGIS.Geodatabase.INetworkEdge
+    - id: fromPosition
+      type: System.Double
+    - id: toPosition
+      type: System.Double
+    content.vb: Sub QueryCoveringHyperedge(Edge As INetworkEdge, fromPosition As Double, toPosition As Double)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge*
+  nameWithType.vb: INetworkEdge.QueryCoveringHyperedge(INetworkEdge, Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge(ESRI.ArcGIS.Geodatabase.INetworkEdge, Double, Double)
+  name.vb: QueryCoveringHyperedge(INetworkEdge, Double, Double)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  id: QueryCoveredEdge(System.Int32,ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: QueryCoveredEdge(int, INetworkEdge)
+  nameWithType: INetworkEdge.QueryCoveredEdge(int, INetworkEdge)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge(int, ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Used to iterate over the edges covered by this edge.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryCoveredEdge(int Index, INetworkEdge Edge)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: Edge
+      type: ESRI.ArcGIS.Geodatabase.INetworkEdge
+    content.vb: Sub QueryCoveredEdge(Index As Integer, Edge As INetworkEdge)
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge*
+  nameWithType.vb: INetworkEdge.QueryCoveredEdge(Integer, INetworkEdge)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge(Integer, ESRI.ArcGIS.Geodatabase.INetworkEdge)
+  name.vb: QueryCoveredEdge(Integer, INetworkEdge)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+  id: EID
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: EID
+  nameWithType: INetworkEdge.EID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long EID { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property EID As Long
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.EID*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+  id: ElementType
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: ElementType
+  nameWithType: INetworkEdge.ElementType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriNetworkElementType ElementType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+    content.vb: ReadOnly Property ElementType As esriNetworkElementType
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+  id: SourceID
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: SourceID
+  nameWithType: INetworkEdge.SourceID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int SourceID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property SourceID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+  id: OID
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: OID
+  nameWithType: INetworkEdge.OID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long OID { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property OID As Long
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.OID*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue(System.Int32)
+  id: AttributeValue(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: AttributeValue[int]
+  nameWithType: INetworkEdge.AttributeValue[int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object AttributeValue[int AttributeID] { get; }
+    parameters:
+    - id: AttributeID
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property AttributeValue(AttributeID As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue*
+  nameWithType.vb: INetworkEdge.AttributeValue(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue(Integer)
+  name.vb: AttributeValue(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName(System.String)
+  id: AttributeValueByName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: AttributeValueByName[string]
+  nameWithType: INetworkEdge.AttributeValueByName[string]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object AttributeValueByName[string AttributeName] { get; }
+    parameters:
+    - id: AttributeName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property AttributeValueByName(AttributeName As String) As Object
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName*
+  nameWithType.vb: INetworkEdge.AttributeValueByName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName(String)
+  name.vb: AttributeValueByName(String)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+  id: Direction
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: Direction
+  nameWithType: INetworkEdge.Direction
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriNetworkEdgeDirection Direction { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+    content.vb: ReadOnly Property Direction As esriNetworkEdgeDirection
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+  id: FromAzimuth
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: FromAzimuth
+  nameWithType: INetworkEdge.FromAzimuth
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: double FromAzimuth { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property FromAzimuth As Double
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+  id: ToAzimuth
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: ToAzimuth
+  nameWithType: INetworkEdge.ToAzimuth
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: double ToAzimuth { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property ToAzimuth As Double
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+  id: TurnParticipationType
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: TurnParticipationType
+  nameWithType: INetworkEdge.TurnParticipationType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: esriNetworkTurnParticipationType TurnParticipationType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkTurnParticipationType
+    content.vb: ReadOnly Property TurnParticipationType As esriNetworkTurnParticipationType
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject(System.Double)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject(System.Double)
+  id: PositionAlongObject(System.Double)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: PositionAlongObject[double]
+  nameWithType: INetworkEdge.PositionAlongObject[double]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject[double]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: double PositionAlongObject[double positionAlongElement] { get; }
+    parameters:
+    - id: positionAlongElement
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property PositionAlongObject(positionAlongElement As Double) As Double
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject*
+  nameWithType.vb: INetworkEdge.PositionAlongObject(Double)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject(Double)
+  name.vb: PositionAlongObject(Double)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+  id: TurnCount
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: TurnCount
+  nameWithType: INetworkEdge.TurnCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int TurnCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TurnCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue(System.Double,System.Double,System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue(System.Double,System.Double,System.Int32)
+  id: PartialEdgeAttributeValue(System.Double,System.Double,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: PartialEdgeAttributeValue[double, double, int]
+  nameWithType: INetworkEdge.PartialEdgeAttributeValue[double, double, int]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue[double, double, int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object PartialEdgeAttributeValue[double fromPosition, double toPosition, int AttributeID] { get; }
+    parameters:
+    - id: fromPosition
+      type: System.Double
+    - id: toPosition
+      type: System.Double
+    - id: AttributeID
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property PartialEdgeAttributeValue(fromPosition As Double, toPosition As Double, AttributeID As Integer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue*
+  nameWithType.vb: INetworkEdge.PartialEdgeAttributeValue(Double, Double, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue(Double, Double, Integer)
+  name.vb: PartialEdgeAttributeValue(Double, Double, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime(System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime(System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  id: AttributeValueAtTime(System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: AttributeValueAtTime[int, DateTime, esriNetworkTimeUsage]
+  nameWithType: INetworkEdge.AttributeValueAtTime[int, DateTime, esriNetworkTimeUsage]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime[int, System.DateTime, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object AttributeValueAtTime[int AttributeID, DateTime localTime, esriNetworkTimeUsage timeUsage] { get; }
+    parameters:
+    - id: AttributeID
+      type: System.Int32
+    - id: localTime
+      type: System.DateTime
+    - id: timeUsage
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property AttributeValueAtTime(AttributeID As Integer, localTime As Date, timeUsage As esriNetworkTimeUsage) As Object
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime*
+  nameWithType.vb: INetworkEdge.AttributeValueAtTime(Integer, Date, esriNetworkTimeUsage)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime(Integer, Date, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  name.vb: AttributeValueAtTime(Integer, Date, esriNetworkTimeUsage)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime(System.Double,System.Double,System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime(System.Double,System.Double,System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  id: PartialEdgeAttributeValueAtTime(System.Double,System.Double,System.Int32,System.DateTime,ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: PartialEdgeAttributeValueAtTime[double, double, int, DateTime, esriNetworkTimeUsage]
+  nameWithType: INetworkEdge.PartialEdgeAttributeValueAtTime[double, double, int, DateTime, esriNetworkTimeUsage]
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime[double, double, int, System.DateTime, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object PartialEdgeAttributeValueAtTime[double fromPosition, double toPosition, int AttributeID, DateTime localTime, esriNetworkTimeUsage timeUsage] { get; }
+    parameters:
+    - id: fromPosition
+      type: System.Double
+    - id: toPosition
+      type: System.Double
+    - id: AttributeID
+      type: System.Int32
+    - id: localTime
+      type: System.DateTime
+    - id: timeUsage
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+    return:
+      type: System.Object
+    content.vb: ReadOnly Property PartialEdgeAttributeValueAtTime(fromPosition As Double, toPosition As Double, AttributeID As Integer, localTime As Date, timeUsage As esriNetworkTimeUsage) As Object
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime*
+  nameWithType.vb: INetworkEdge.PartialEdgeAttributeValueAtTime(Double, Double, Integer, Date, esriNetworkTimeUsage)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime(Double, Double, Integer, Date, ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage)
+  name.vb: PartialEdgeAttributeValueAtTime(Double, Double, Integer, Date, esriNetworkTimeUsage)
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+  id: IsHyperedge
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: IsHyperedge
+  nameWithType: INetworkEdge.IsHyperedge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsHyperedge { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsHyperedge As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+  id: HasCoveringHyperedge
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: HasCoveringHyperedge
+  nameWithType: INetworkEdge.HasCoveringHyperedge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool HasCoveringHyperedge { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasCoveringHyperedge As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge*
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount
+  id: CoveredEdgeCount
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  langs:
+  - csharp
+  - vb
+  name: CoveredEdgeCount
+  nameWithType: INetworkEdge.CoveredEdgeCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: int CoveredEdgeCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property CoveredEdgeCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryPositions_System_Double__System_Double__
+  name: QueryPositions
+  nameWithType: INetworkEdge.QueryPositions
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryPositions
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryTurn_System_Int32_ESRI_ArcGIS_Geodatabase_INetworkTurn_
+  name: QueryTurn
+  nameWithType: INetworkEdge.QueryTurn
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryTurn
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.INetworkTurn
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkTurn
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkTurn.html
+  name: INetworkTurn
+  nameWithType: INetworkTurn
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkTurn
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryEdgeInOtherDirection_ESRI_ArcGIS_Geodatabase_INetworkEdge_
+  name: QueryEdgeInOtherDirection
+  nameWithType: INetworkEdge.QueryEdgeInOtherDirection
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryEdgeInOtherDirection
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html
+  name: INetworkEdge
+  nameWithType: INetworkEdge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryJunctions_ESRI_ArcGIS_Geodatabase_INetworkJunction_ESRI_ArcGIS_Geodatabase_INetworkJunction_
+  name: QueryJunctions
+  nameWithType: INetworkEdge.QueryJunctions
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryJunctions
+- uid: ESRI.ArcGIS.Geodatabase.INetworkJunction
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkJunction
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkJunction.html
+  name: INetworkJunction
+  nameWithType: INetworkJunction
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkJunction
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryCoveringHyperedge_ESRI_ArcGIS_Geodatabase_INetworkEdge_System_Double__System_Double__
+  name: QueryCoveringHyperedge
+  nameWithType: INetworkEdge.QueryCoveringHyperedge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveringHyperedge
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_QueryCoveredEdge_System_Int32_ESRI_ArcGIS_Geodatabase_INetworkEdge_
+  name: QueryCoveredEdge
+  nameWithType: INetworkEdge.QueryCoveredEdge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.QueryCoveredEdge
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.EID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_EID
+  name: EID
+  nameWithType: INetworkEdge.EID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.EID
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_ElementType
+  name: ElementType
+  nameWithType: INetworkEdge.ElementType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.ElementType
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkElementType.html
+  name: esriNetworkElementType
+  nameWithType: esriNetworkElementType
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkElementType
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_SourceID
+  name: SourceID
+  nameWithType: INetworkEdge.SourceID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.SourceID
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.OID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_OID
+  name: OID
+  nameWithType: INetworkEdge.OID
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.OID
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_AttributeValue_System_Int32_
+  name: AttributeValue
+  nameWithType: INetworkEdge.AttributeValue
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_AttributeValueByName_System_String_
+  name: AttributeValueByName
+  nameWithType: INetworkEdge.AttributeValueByName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueByName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_Direction
+  name: Direction
+  nameWithType: INetworkEdge.Direction
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.Direction
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection.html
+  name: esriNetworkEdgeDirection
+  nameWithType: esriNetworkEdgeDirection
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkEdgeDirection
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_FromAzimuth
+  name: FromAzimuth
+  nameWithType: INetworkEdge.FromAzimuth
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.FromAzimuth
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_ToAzimuth
+  name: ToAzimuth
+  nameWithType: INetworkEdge.ToAzimuth
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.ToAzimuth
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_TurnParticipationType
+  name: TurnParticipationType
+  nameWithType: INetworkEdge.TurnParticipationType
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnParticipationType
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkTurnParticipationType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkTurnParticipationType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkTurnParticipationType.html
+  name: esriNetworkTurnParticipationType
+  nameWithType: esriNetworkTurnParticipationType
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkTurnParticipationType
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_PositionAlongObject_System_Double_
+  name: PositionAlongObject
+  nameWithType: INetworkEdge.PositionAlongObject
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PositionAlongObject
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_TurnCount
+  name: TurnCount
+  nameWithType: INetworkEdge.TurnCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.TurnCount
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_PartialEdgeAttributeValue_System_Double_System_Double_System_Int32_
+  name: PartialEdgeAttributeValue
+  nameWithType: INetworkEdge.PartialEdgeAttributeValue
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValue
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_AttributeValueAtTime_System_Int32_System_DateTime_ESRI_ArcGIS_Geodatabase_esriNetworkTimeUsage_
+  name: AttributeValueAtTime
+  nameWithType: INetworkEdge.AttributeValueAtTime
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.AttributeValueAtTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage.html
+  name: esriNetworkTimeUsage
+  nameWithType: esriNetworkTimeUsage
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkTimeUsage
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_PartialEdgeAttributeValueAtTime_System_Double_System_Double_System_Int32_System_DateTime_ESRI_ArcGIS_Geodatabase_esriNetworkTimeUsage_
+  name: PartialEdgeAttributeValueAtTime
+  nameWithType: INetworkEdge.PartialEdgeAttributeValueAtTime
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.PartialEdgeAttributeValueAtTime
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_IsHyperedge
+  name: IsHyperedge
+  nameWithType: INetworkEdge.IsHyperedge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.IsHyperedge
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_HasCoveringHyperedge
+  name: HasCoveringHyperedge
+  nameWithType: INetworkEdge.HasCoveringHyperedge
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.HasCoveringHyperedge
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEdge.html#ESRI_ArcGIS_Geodatabase_INetworkEdge_CoveredEdgeCount
+  name: CoveredEdgeCount
+  nameWithType: INetworkEdge.CoveredEdgeCount
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEdge.CoveredEdgeCount

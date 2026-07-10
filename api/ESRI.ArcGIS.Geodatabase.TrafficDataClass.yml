@@ -1,0 +1,1290 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  id: TrafficDataClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+  - ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+  langs:
+  - csharp
+  - vb
+  name: TrafficDataClass
+  nameWithType: TrafficDataClass
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [Guid("E7A1CD66-C6EF-440B-91CA-D6B8DB9C01F9")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class TrafficDataClass : TrafficData, ITrafficData, IHistoricalTrafficData, IDynamicTrafficData
+    content.vb: >-
+      <Guid("E7A1CD66-C6EF-440B-91CA-D6B8DB9C01F9")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class TrafficDataClass Implements TrafficData, ITrafficData, IHistoricalTrafficData, IDynamicTrafficData
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.TrafficData
+  - ESRI.ArcGIS.Geodatabase.ITrafficData
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  - ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E7A1CD66-C6EF-440B-91CA-D6B8DB9C01F9
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor
+  commentId: M:ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: TrafficDataClass()
+  nameWithType: TrafficDataClass.TrafficDataClass()
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficDataClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: public TrafficDataClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor*
+  nameWithType.vb: TrafficDataClass.New()
+  fullName.vb: ESRI.ArcGIS.Geodatabase.TrafficDataClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+  id: TimeInterval
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: TimeInterval
+  nameWithType: TrafficDataClass.TimeInterval
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The time interval of the traffic data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual double TimeInterval { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Overridable ReadOnly Property TimeInterval As Double
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITrafficData.TimeInterval
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+  id: TimeIntervalUnits
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: TimeIntervalUnits
+  nameWithType: TrafficDataClass.TimeIntervalUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The units of the time interval of the traffic data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual esriTimeUnits TimeIntervalUnits { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriTimeUnits
+    content.vb: Overridable ReadOnly Property TimeIntervalUnits As esriTimeUnits
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITrafficData.TimeIntervalUnits
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+  id: LengthAttributeName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: LengthAttributeName
+  nameWithType: TrafficDataClass.LengthAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for the length attribute.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string LengthAttributeName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property LengthAttributeName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.ITrafficData.LengthAttributeName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+  id: ProfilesTableName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: ProfilesTableName
+  nameWithType: TrafficDataClass.ProfilesTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the table containing profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string ProfilesTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property ProfilesTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+  id: TimeSliceDurationInMinutes
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: TimeSliceDurationInMinutes
+  nameWithType: TrafficDataClass.TimeSliceDurationInMinutes
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The duration of time slice in minutes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int TimeSliceDurationInMinutes { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable Property TimeSliceDurationInMinutes As Integer
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+  id: FirstTimeSliceStartTime
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: FirstTimeSliceStartTime
+  nameWithType: TrafficDataClass.FirstTimeSliceStartTime
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The start time of valid period of a day for traffic data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual DateTime FirstTimeSliceStartTime { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Overridable Property FirstTimeSliceStartTime As Date
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+  id: FirstTimeSliceFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: FirstTimeSliceFieldName
+  nameWithType: TrafficDataClass.FirstTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name of the first time slice of the given period in the profile table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string FirstTimeSliceFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property FirstTimeSliceFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+  id: LastTimeSliceFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: LastTimeSliceFieldName
+  nameWithType: TrafficDataClass.LastTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name of the last time slice of the given period in the profile table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string LastTimeSliceFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property LastTimeSliceFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+  id: JoinTableName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableName
+  nameWithType: TrafficDataClass.JoinTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the join table between edges and profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string JoinTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property JoinTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  id: JoinTableBaseTravelTimeFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseTravelTimeFieldName
+  nameWithType: TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for base travel time in the join table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string JoinTableBaseTravelTimeFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property JoinTableBaseTravelTimeFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+  id: JoinTableBaseTravelTimeUnits
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseTravelTimeUnits
+  nameWithType: TrafficDataClass.JoinTableBaseTravelTimeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Base travel time units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual esriNetworkAttributeUnits JoinTableBaseTravelTimeUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    content.vb: Overridable Property JoinTableBaseTravelTimeUnits As esriNetworkAttributeUnits
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+  id: JoinTableProfileIDFieldNames
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableProfileIDFieldNames
+  nameWithType: TrafficDataClass.JoinTableProfileIDFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field names of the historic join table pointing to speed profiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IStringArray JoinTableProfileIDFieldNames { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Overridable Property JoinTableProfileIDFieldNames As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+  id: JoinTableBaseSpeedFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseSpeedFieldName
+  nameWithType: TrafficDataClass.JoinTableBaseSpeedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for base speed in the join table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string JoinTableBaseSpeedFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property JoinTableBaseSpeedFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+  id: JoinTableBaseSpeedUnits
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: JoinTableBaseSpeedUnits
+  nameWithType: TrafficDataClass.JoinTableBaseSpeedUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Base speed units.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual esriNetworkAttributeUnits JoinTableBaseSpeedUnits { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+    content.vb: Overridable Property JoinTableBaseSpeedUnits As esriNetworkAttributeUnits
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+  id: DynamicTrafficTableName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: DynamicTrafficTableName
+  nameWithType: TrafficDataClass.DynamicTrafficTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the dynamic traffic table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string DynamicTrafficTableName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property DynamicTrafficTableName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+  id: DynamicTrafficTMCFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: DynamicTrafficTMCFieldName
+  nameWithType: TrafficDataClass.DynamicTrafficTMCFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The field name for the dynamic traffic TMCs in the dynamic traffic.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string DynamicTrafficTMCFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property DynamicTrafficTMCFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTMCFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+  commentId: P:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+  id: TrafficFeedLocation
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.TrafficDataClass
+  langs:
+  - csharp
+  - vb
+  name: TrafficFeedLocation
+  nameWithType: TrafficDataClass.TrafficFeedLocation
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The traffic feed location.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual ITrafficFeedLocation TrafficFeedLocation { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITrafficFeedLocation
+    content.vb: Overridable Property TrafficFeedLocation As ITrafficFeedLocation
+  overload: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.TrafficFeedLocation
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.TrafficData
+  commentId: T:ESRI.ArcGIS.Geodatabase.TrafficData
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficData.html
+  name: TrafficData
+  nameWithType: TrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficData
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficData
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITrafficData
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficData.html
+  name: ITrafficData
+  nameWithType: ITrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficData
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  commentId: T:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html
+  name: IHistoricalTrafficData
+  nameWithType: IHistoricalTrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+- uid: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.html
+  name: IDynamicTrafficData
+  nameWithType: IDynamicTrafficData
+  fullName: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass__ctor
+  name: TrafficDataClass
+  nameWithType: TrafficDataClass.TrafficDataClass
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficDataClass
+  nameWithType.vb: TrafficDataClass.New
+  fullName.vb: ESRI.ArcGIS.Geodatabase.TrafficDataClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_TimeInterval
+  name: TimeInterval
+  nameWithType: TrafficDataClass.TimeInterval
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeInterval
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficData.TimeInterval
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITrafficData.TimeInterval
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficData.html#ESRI_ArcGIS_Geodatabase_ITrafficData_TimeInterval
+  name: TimeInterval
+  nameWithType: ITrafficData.TimeInterval
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficData.TimeInterval
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_TimeIntervalUnits
+  name: TimeIntervalUnits
+  nameWithType: TrafficDataClass.TimeIntervalUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeIntervalUnits
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficData.TimeIntervalUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITrafficData.TimeIntervalUnits
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficData.html#ESRI_ArcGIS_Geodatabase_ITrafficData_TimeIntervalUnits
+  name: TimeIntervalUnits
+  nameWithType: ITrafficData.TimeIntervalUnits
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficData.TimeIntervalUnits
+- uid: ESRI.ArcGIS.esriSystem.esriTimeUnits
+  commentId: T:ESRI.ArcGIS.esriSystem.esriTimeUnits
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriTimeUnits.html
+  name: esriTimeUnits
+  nameWithType: esriTimeUnits
+  fullName: ESRI.ArcGIS.esriSystem.esriTimeUnits
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_LengthAttributeName
+  name: LengthAttributeName
+  nameWithType: TrafficDataClass.LengthAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LengthAttributeName
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficData.LengthAttributeName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITrafficData.LengthAttributeName
+  parent: ESRI.ArcGIS.Geodatabase.ITrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficData.html#ESRI_ArcGIS_Geodatabase_ITrafficData_LengthAttributeName
+  name: LengthAttributeName
+  nameWithType: ITrafficData.LengthAttributeName
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficData.LengthAttributeName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_ProfilesTableName
+  name: ProfilesTableName
+  nameWithType: TrafficDataClass.ProfilesTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.ProfilesTableName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_ProfilesTableName
+  name: ProfilesTableName
+  nameWithType: IHistoricalTrafficData.ProfilesTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.ProfilesTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_TimeSliceDurationInMinutes
+  name: TimeSliceDurationInMinutes
+  nameWithType: TrafficDataClass.TimeSliceDurationInMinutes
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TimeSliceDurationInMinutes
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_TimeSliceDurationInMinutes
+  name: TimeSliceDurationInMinutes
+  nameWithType: IHistoricalTrafficData.TimeSliceDurationInMinutes
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.TimeSliceDurationInMinutes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_FirstTimeSliceStartTime
+  name: FirstTimeSliceStartTime
+  nameWithType: TrafficDataClass.FirstTimeSliceStartTime
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceStartTime
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_FirstTimeSliceStartTime
+  name: FirstTimeSliceStartTime
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceStartTime
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceStartTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_FirstTimeSliceFieldName
+  name: FirstTimeSliceFieldName
+  nameWithType: TrafficDataClass.FirstTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.FirstTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_FirstTimeSliceFieldName
+  name: FirstTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.FirstTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.FirstTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_LastTimeSliceFieldName
+  name: LastTimeSliceFieldName
+  nameWithType: TrafficDataClass.LastTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.LastTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_LastTimeSliceFieldName
+  name: LastTimeSliceFieldName
+  nameWithType: IHistoricalTrafficData.LastTimeSliceFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.LastTimeSliceFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableName
+  name: JoinTableName
+  nameWithType: TrafficDataClass.JoinTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableName
+  name: JoinTableName
+  nameWithType: IHistoricalTrafficData.JoinTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableBaseTravelTimeFieldName
+  name: JoinTableBaseTravelTimeFieldName
+  nameWithType: TrafficDataClass.JoinTableBaseTravelTimeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseTravelTimeFieldName
+  name: JoinTableBaseTravelTimeFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableBaseTravelTimeUnits
+  name: JoinTableBaseTravelTimeUnits
+  nameWithType: TrafficDataClass.JoinTableBaseTravelTimeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseTravelTimeUnits
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseTravelTimeUnits
+  name: JoinTableBaseTravelTimeUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseTravelTimeUnits
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits.html
+  name: esriNetworkAttributeUnits
+  nameWithType: esriNetworkAttributeUnits
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeUnits
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableProfileIDFieldNames
+  name: JoinTableProfileIDFieldNames
+  nameWithType: TrafficDataClass.JoinTableProfileIDFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableProfileIDFieldNames
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableProfileIDFieldNames
+  name: JoinTableProfileIDFieldNames
+  nameWithType: IHistoricalTrafficData.JoinTableProfileIDFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableProfileIDFieldNames
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableBaseSpeedFieldName
+  name: JoinTableBaseSpeedFieldName
+  nameWithType: TrafficDataClass.JoinTableBaseSpeedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseSpeedFieldName
+  name: JoinTableBaseSpeedFieldName
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_JoinTableBaseSpeedUnits
+  name: JoinTableBaseSpeedUnits
+  nameWithType: TrafficDataClass.JoinTableBaseSpeedUnits
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.JoinTableBaseSpeedUnits
+- uid: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  commentId: P:ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  parent: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.html#ESRI_ArcGIS_Geodatabase_IHistoricalTrafficData_JoinTableBaseSpeedUnits
+  name: JoinTableBaseSpeedUnits
+  nameWithType: IHistoricalTrafficData.JoinTableBaseSpeedUnits
+  fullName: ESRI.ArcGIS.Geodatabase.IHistoricalTrafficData.JoinTableBaseSpeedUnits
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_DynamicTrafficTableName
+  name: DynamicTrafficTableName
+  nameWithType: TrafficDataClass.DynamicTrafficTableName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTableName
+- uid: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTableName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTableName
+  parent: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.html#ESRI_ArcGIS_Geodatabase_IDynamicTrafficData_DynamicTrafficTableName
+  name: DynamicTrafficTableName
+  nameWithType: IDynamicTrafficData.DynamicTrafficTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTableName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_DynamicTrafficTMCFieldName
+  name: DynamicTrafficTMCFieldName
+  nameWithType: TrafficDataClass.DynamicTrafficTMCFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.DynamicTrafficTMCFieldName
+- uid: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTMCFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTMCFieldName
+  parent: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.html#ESRI_ArcGIS_Geodatabase_IDynamicTrafficData_DynamicTrafficTMCFieldName
+  name: DynamicTrafficTMCFieldName
+  nameWithType: IDynamicTrafficData.DynamicTrafficTMCFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.DynamicTrafficTMCFieldName
+- uid: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.TrafficDataClass.html#ESRI_ArcGIS_Geodatabase_TrafficDataClass_TrafficFeedLocation
+  name: TrafficFeedLocation
+  nameWithType: TrafficDataClass.TrafficFeedLocation
+  fullName: ESRI.ArcGIS.Geodatabase.TrafficDataClass.TrafficFeedLocation
+- uid: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.TrafficFeedLocation
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.TrafficFeedLocation
+  parent: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.html#ESRI_ArcGIS_Geodatabase_IDynamicTrafficData_TrafficFeedLocation
+  name: TrafficFeedLocation
+  nameWithType: IDynamicTrafficData.TrafficFeedLocation
+  fullName: ESRI.ArcGIS.Geodatabase.IDynamicTrafficData.TrafficFeedLocation
+- uid: ESRI.ArcGIS.Geodatabase.ITrafficFeedLocation
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITrafficFeedLocation
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITrafficFeedLocation.html
+  name: ITrafficFeedLocation
+  nameWithType: ITrafficFeedLocation
+  fullName: ESRI.ArcGIS.Geodatabase.ITrafficFeedLocation

@@ -1,0 +1,706 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITableSort
+  id: ITableSort
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Ascending(System.String)
+  - ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive(System.String)
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+  - ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+  - ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+  - ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Sort(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters(System.String)
+  - ESRI.ArcGIS.Geodatabase.ITableSort.Table
+  langs:
+  - csharp
+  - vb
+  name: ITableSort
+  nameWithType: ITableSort
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that return and modify information to sort a table.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("2D0F935E-32F5-11D2-A06F-0000F8775BF9")]
+
+      public interface ITableSort
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("2D0F935E-32F5-11D2-A06F-0000F8775BF9")>
+
+      Public Interface ITableSort
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.TableSortClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2D0F935E-32F5-11D2-A06F-0000F8775BF9
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Sort(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITableSort.Sort(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: Sort(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Sort(ITrackCancel)
+  nameWithType: ITableSort.Sort(ITrackCancel)
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Sort(ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Sort(ITrackCancel TrackCancel)
+    parameters:
+    - id: TrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub Sort(TrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Sort*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Table
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Table
+  id: Table
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: ITableSort.Table
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Table
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The table as a source of the data to sort on.
+  remarks: >-
+    &lt;P&gt;A &lt;STRONG&gt;Table &lt;/STRONG&gt;object has one or more columns, referred to as fields, and contains an unordered collection of rows. Each row has for each field exactly one value in the data type of the field.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Table &lt;/STRONG&gt;is a &lt;STRONG&gt;Dataset &lt;/STRONG&gt;and properties such as the name of the table, the persistable name object for the table, and the workspace containing the table, may be obtained via the &lt;STRONG&gt;IDataset &lt;/STRONG&gt;interface. In relational terms, a &lt;STRONG&gt;Table &lt;/STRONG&gt;object represents an RDBMS table or view. In objected-oriented terms, a Table object represents an ObjectClass or a RelationshipClass in a geodatabase. A &lt;STRONG&gt;Table &lt;/STRONG&gt;object hands out &lt;STRONG&gt;Row &lt;/STRONG&gt;objects which themselves support application callable methods depending on the type of data stored in the table.&lt;/P&gt;
+
+    &lt;P&gt;The &lt;STRONG&gt;Name &lt;/STRONG&gt;property of a &lt;STRONG&gt;Table&lt;/STRONG&gt;, accessible via the &lt;STRONG&gt;IDataset &lt;/STRONG&gt;interface, returns its fully qualified name. The level of qualification may vary depending on the host DBMS. For example, a table named ‘pipes’, owned by a user named ‘gas’ may be called ‘pipes’ in and Access or File Geodatabase, ‘gas.pipes’ on Oracle and ‘mydb.gas.pipes’ on SQLServer. The &lt;STRONG&gt;ParseTableNamemethod &lt;/STRONG&gt;on the &lt;STRONG&gt;ISqlSyntax &lt;/STRONG&gt;interface supported by the table’s workspace can be used to split the fully qualified name into its components.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable Table { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Property Table As ITable
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Table*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+  id: SelectionSet
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: SelectionSet
+  nameWithType: ITableSort.SelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The selection set as a source of the data to sort on. Cancels Cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet SelectionSet { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: Property SelectionSet As ISelectionSet
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+  id: Cursor
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Cursor
+  nameWithType: ITableSort.Cursor
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The cursor of the data to sort on. Ensure that sorting fields are available. Cancels SelectionSet.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICursor Cursor { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: WriteOnly Property Cursor As ICursor
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Cursor*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+  id: QueryFilter
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: QueryFilter
+  nameWithType: ITableSort.QueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The query filter on table or selection set.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IQueryFilter QueryFilter { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    content.vb: Property QueryFilter As IQueryFilter
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: ITableSort.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Comma list of field names to sort on.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Fields { set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: WriteOnly Property Fields As String
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Fields*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Ascending(System.String)
+  id: Ascending(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Ascending[string]
+  nameWithType: ITableSort.Ascending[string]
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Field sort order.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Ascending[string Field] { set; }
+    parameters:
+    - id: Field
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: WriteOnly Property Ascending(Field As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending*
+  nameWithType.vb: ITableSort.Ascending(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending(String)
+  name.vb: Ascending(String)
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters(System.String)
+  id: SortCharacters(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: SortCharacters[string]
+  nameWithType: ITableSort.SortCharacters[string]
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Number of characters to sort on, for string fields. A null (default) sorts on the whole string.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int SortCharacters[string Field] { set; }
+    parameters:
+    - id: Field
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: WriteOnly Property SortCharacters(Field As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters*
+  nameWithType.vb: ITableSort.SortCharacters(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters(String)
+  name.vb: SortCharacters(String)
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive(System.String)
+  id: CaseSensitive(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: CaseSensitive[string]
+  nameWithType: ITableSort.CaseSensitive[string]
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: 'Character fields case sensitive. Default: False.'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CaseSensitive[string Field] { set; }
+    parameters:
+    - id: Field
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: WriteOnly Property CaseSensitive(Field As String) As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive*
+  nameWithType.vb: ITableSort.CaseSensitive(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive(String)
+  name.vb: CaseSensitive(String)
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+  id: Compare
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Compare
+  nameWithType: ITableSort.Compare
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Compare call back interface. Specify Null (default) for normal behavior.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITableSortCallBack Compare { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITableSortCallBack
+    content.vb: WriteOnly Property Compare As ITableSortCallBack
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Compare*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+  id: IDs
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: IDs
+  nameWithType: ITableSort.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: List of sorted IDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumIDs IDs { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumIDs
+    content.vb: ReadOnly Property IDs As IEnumIDs
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.IDs*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+  id: Rows
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: Rows
+  nameWithType: ITableSort.Rows
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Cursor of sorted rows.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICursor Rows { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: ReadOnly Property Rows As ICursor
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.Rows*
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex(System.Int32)
+  id: IDByIndex(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITableSort
+  langs:
+  - csharp
+  - vb
+  name: IDByIndex[int]
+  nameWithType: ITableSort.IDByIndex[int]
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: A id by its index value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long IDByIndex[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property IDByIndex(Index As Integer) As Long
+  overload: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex*
+  nameWithType.vb: ITableSort.IDByIndex(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex(Integer)
+  name.vb: IDByIndex(Integer)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Sort*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Sort
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Sort_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: Sort
+  nameWithType: ITableSort.Sort
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Sort
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Table*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Table
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Table
+  name: Table
+  nameWithType: ITableSort.Table
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Table
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_SelectionSet
+  name: SelectionSet
+  nameWithType: ITableSort.SelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.SelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Cursor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Cursor
+  name: Cursor
+  nameWithType: ITableSort.Cursor
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Cursor
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_QueryFilter
+  name: QueryFilter
+  nameWithType: ITableSort.QueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.QueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Fields
+  name: Fields
+  nameWithType: ITableSort.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Fields
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Ascending
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Ascending_System_String_
+  name: Ascending
+  nameWithType: ITableSort.Ascending
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Ascending
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_SortCharacters_System_String_
+  name: SortCharacters
+  nameWithType: ITableSort.SortCharacters
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.SortCharacters
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_CaseSensitive_System_String_
+  name: CaseSensitive
+  nameWithType: ITableSort.CaseSensitive
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.CaseSensitive
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Compare*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Compare
+  name: Compare
+  nameWithType: ITableSort.Compare
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Compare
+- uid: ESRI.ArcGIS.Geodatabase.ITableSortCallBack
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITableSortCallBack
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSortCallBack.html
+  name: ITableSortCallBack
+  nameWithType: ITableSortCallBack
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSortCallBack
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.IDs*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_IDs
+  name: IDs
+  nameWithType: ITableSort.IDs
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.IDs
+- uid: ESRI.ArcGIS.Geodatabase.IEnumIDs
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumIDs
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumIDs.html
+  name: IEnumIDs
+  nameWithType: IEnumIDs
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumIDs
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.Rows*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_Rows
+  name: Rows
+  nameWithType: ITableSort.Rows
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.Rows
+- uid: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITableSort.html#ESRI_ArcGIS_Geodatabase_ITableSort_IDByIndex_System_Int32_
+  name: IDByIndex
+  nameWithType: ITableSort.IDByIndex
+  fullName: ESRI.ArcGIS.Geodatabase.ITableSort.IDByIndex
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long

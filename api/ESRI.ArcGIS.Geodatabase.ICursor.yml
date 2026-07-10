@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  id: ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  - ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  - ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  - ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  - ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  - ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  - ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  langs:
+  - csharp
+  - vb
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that hand out enumerated rows, field collections and allows for the updating, deleting and inserting of rows.
+  example: []
+  syntax:
+    content: >-
+      [Guid("D4803EE7-79F4-11D0-97FC-0080C7F79481")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ICursor
+    content.vb: >-
+      <Guid("D4803EE7-79F4-11D0-97FC-0080C7F79481")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ICursor
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.CursorClass
+  - ESRI.ArcGIS.Geodatabase.FeatureCursorClass
+  - ESRI.ArcGIS.Geodatabase.RelQueryCursorClass
+  - ESRI.Server.SOESupport.DisposableCursor
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D4803EE7-79F4-11D0-97FC-0080C7F79481
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.FindField(System.String)
+  id: FindField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: FindField(string)
+  nameWithType: ICursor.FindField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.FindField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The index of the field with the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int FindField(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Function FindField(Name As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.FindField*
+  nameWithType.vb: ICursor.FindField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ICursor.FindField(String)
+  name.vb: FindField(String)
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  id: NextRow
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: NextRow()
+  nameWithType: ICursor.NextRow()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.NextRow()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Advance the position of the cursor by one and return the Row object at that position.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRow NextRow()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Function NextRow() As IRow
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.NextRow*
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  id: UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: UpdateRow(IRow)
+  nameWithType: ICursor.UpdateRow(IRow)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow(ESRI.ArcGIS.Geodatabase.IRow)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void UpdateRow(IRow Row)
+    parameters:
+    - id: Row
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Sub UpdateRow(Row As IRow)
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow*
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  id: DeleteRow
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: DeleteRow()
+  nameWithType: ICursor.DeleteRow()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Delete the existing Row in the database corresponding to the current position of the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DeleteRow()
+    content.vb: Sub DeleteRow()
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow*
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  id: InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: InsertRow(IRowBuffer)
+  nameWithType: ICursor.InsertRow(IRowBuffer)
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow(ESRI.ArcGIS.Geodatabase.IRowBuffer)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: object InsertRow(IRowBuffer buffer)
+    parameters:
+    - id: buffer
+      type: ESRI.ArcGIS.Geodatabase.IRowBuffer
+    return:
+      type: System.Object
+    content.vb: Function InsertRow(buffer As IRowBuffer) As Object
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow*
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  id: Flush
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: Flush()
+  nameWithType: ICursor.Flush()
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Flush()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Flush any outstanding buffered writes to the database.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Flush()
+    content.vb: Sub Flush()
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.Flush*
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.ICursor
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: ICursor.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The Fields Collection for this cursor.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.ICursor.Fields*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.FindField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.FindField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_FindField_System_String_
+  name: FindField
+  nameWithType: ICursor.FindField
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.FindField
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.NextRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_NextRow
+  name: NextRow
+  nameWithType: ICursor.NextRow
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.NextRow
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_UpdateRow_ESRI_ArcGIS_Geodatabase_IRow_
+  name: UpdateRow
+  nameWithType: ICursor.UpdateRow
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.UpdateRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_DeleteRow
+  name: DeleteRow
+  nameWithType: ICursor.DeleteRow
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.DeleteRow
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.InsertRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_InsertRow_ESRI_ArcGIS_Geodatabase_IRowBuffer_
+  name: InsertRow
+  nameWithType: ICursor.InsertRow
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.InsertRow
+- uid: ESRI.ArcGIS.Geodatabase.IRowBuffer
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRowBuffer
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRowBuffer.html
+  name: IRowBuffer
+  nameWithType: IRowBuffer
+  fullName: ESRI.ArcGIS.Geodatabase.IRowBuffer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Flush*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.Flush
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Flush
+  name: Flush
+  nameWithType: ICursor.Flush
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Flush
+- uid: ESRI.ArcGIS.Geodatabase.ICursor.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICursor.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html#ESRI_ArcGIS_Geodatabase_ICursor_Fields
+  name: Fields
+  nameWithType: ICursor.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields

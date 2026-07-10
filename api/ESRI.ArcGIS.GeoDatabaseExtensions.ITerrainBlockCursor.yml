@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  id: ITerrainBlockCursor
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin(ESRI.ArcGIS.Geodatabase.ITin@,ESRI.ArcGIS.Geometry.IEnvelope@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset
+  langs:
+  - csharp
+  - vb
+  name: ITerrainBlockCursor
+  nameWithType: ITerrainBlockCursor
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to TerrainBlockCursor object.
+  example: []
+  syntax:
+    content: >-
+      [Guid("3F4FE9AD-471B-4D67-8F8F-930A23A60305")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITerrainBlockCursor
+    content.vb: >-
+      <Guid("3F4FE9AD-471B-4D67-8F8F-930A23A60305")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITerrainBlockCursor
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainBlockCursorClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3F4FE9AD-471B-4D67-8F8F-930A23A60305
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)
+  id: Next(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  langs:
+  - csharp
+  - vb
+  name: Next(out int, out int, out int, out int, out bool)
+  nameWithType: ITerrainBlockCursor.Next(out int, out int, out int, out int, out bool)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next(out int, out int, out int, out int, out bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Returns next block in the form of rows and columns.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Next(out int pRowBegin, out int pRowEnd, out int pColBegin, out int pColEnd, out bool pbIsEnd)
+    parameters:
+    - id: pRowBegin
+      type: System.Int32
+    - id: pRowEnd
+      type: System.Int32
+    - id: pColBegin
+      type: System.Int32
+    - id: pColEnd
+      type: System.Int32
+    - id: pbIsEnd
+      type: System.Boolean
+    content.vb: Sub [Next](pRowBegin As Integer, pRowEnd As Integer, pColBegin As Integer, pColEnd As Integer, pbIsEnd As Boolean)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next*
+  nameWithType.vb: ITerrainBlockCursor.Next(Integer, Integer, Integer, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next(Integer, Integer, Integer, Integer, Boolean)
+  name.vb: Next(Integer, Integer, Integer, Integer, Boolean)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin(ESRI.ArcGIS.Geodatabase.ITin@,ESRI.ArcGIS.Geometry.IEnvelope@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin(ESRI.ArcGIS.Geodatabase.ITin@,ESRI.ArcGIS.Geometry.IEnvelope@)
+  id: NextAsTin(ESRI.ArcGIS.Geodatabase.ITin@,ESRI.ArcGIS.Geometry.IEnvelope@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  langs:
+  - csharp
+  - vb
+  name: NextAsTin(out ITin, out IEnvelope)
+  nameWithType: ITerrainBlockCursor.NextAsTin(out ITin, out IEnvelope)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin(out ESRI.ArcGIS.Geodatabase.ITin, out ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void NextAsTin(out ITin ppTin, out IEnvelope ppExtent)
+    parameters:
+    - id: ppTin
+      type: ESRI.ArcGIS.Geodatabase.ITin
+    - id: ppExtent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub NextAsTin(ppTin As ITin, ppExtent As IEnvelope)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin*
+  nameWithType.vb: ITerrainBlockCursor.NextAsTin(ITin, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin(ESRI.ArcGIS.Geodatabase.ITin, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: NextAsTin(ITin, IEnvelope)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ITerrainBlockCursor.Reset()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Resets the cursor to point to the first block.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount
+  id: BlockCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor
+  langs:
+  - csharp
+  - vb
+  name: BlockCount
+  nameWithType: ITerrainBlockCursor.BlockCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of blocks in the cursor.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int BlockCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BlockCount As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainBlockCursor_Next_System_Int32__System_Int32__System_Int32__System_Int32__System_Boolean__
+  name: Next
+  nameWithType: ITerrainBlockCursor.Next
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Next
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainBlockCursor_NextAsTin_ESRI_ArcGIS_Geodatabase_ITin__ESRI_ArcGIS_Geometry_IEnvelope__
+  name: NextAsTin
+  nameWithType: ITerrainBlockCursor.NextAsTin
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.NextAsTin
+- uid: ESRI.ArcGIS.Geodatabase.ITin
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITin
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITin.html
+  name: ITin
+  nameWithType: ITin
+  fullName: ESRI.ArcGIS.Geodatabase.ITin
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainBlockCursor_Reset
+  name: Reset
+  nameWithType: ITerrainBlockCursor.Reset
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.Reset
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrainBlockCursor_BlockCount
+  name: BlockCount
+  nameWithType: ITerrainBlockCursor.BlockCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainBlockCursor.BlockCount

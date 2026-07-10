@@ -1,0 +1,661 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IMosaicRule
+  commentId: T:ESRI.ArcGIS.Carto.IMosaicRule
+  id: IMosaicRule
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+  - ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+  - ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+  - ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+  - ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+  - ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+  - ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+  - ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+  - ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+  - ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+  langs:
+  - csharp
+  - vb
+  name: IMosaicRule
+  nameWithType: IMosaicRule
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to members that control a mosaic rule.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("0AE8D2E0-78F8-4A7C-9BC9-B16F42C6FBF9")]
+
+      public interface IMosaicRule
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("0AE8D2E0-78F8-4A7C-9BC9-B16F42C6FBF9")>
+
+      Public Interface IMosaicRule
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.MosaicRuleClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0AE8D2E0-78F8-4A7C-9BC9-B16F42C6FBF9
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+  id: MosaicMethod
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: MosaicMethod
+  nameWithType: IMosaicRule.MosaicMethod
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The mosaic method.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriMosaicMethod MosaicMethod { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.esriMosaicMethod
+    content.vb: Property MosaicMethod As esriMosaicMethod
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+  id: LockRasterID
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: LockRasterID
+  nameWithType: IMosaicRule.LockRasterID
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The lock raster ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string LockRasterID { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property LockRasterID As String
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+  id: Viewpoint
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: Viewpoint
+  nameWithType: IMosaicRule.Viewpoint
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The view point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint Viewpoint { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Property Viewpoint As IPoint
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+  id: OrderByFieldName
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: OrderByFieldName
+  nameWithType: IMosaicRule.OrderByFieldName
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The Order By field on the source catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string OrderByFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OrderByFieldName As String
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+  id: OrderByBaseValue
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: OrderByBaseValue
+  nameWithType: IMosaicRule.OrderByBaseValue
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The Order By base value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object OrderByBaseValue { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Property OrderByBaseValue As Object
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+  id: Ascending
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: Ascending
+  nameWithType: IMosaicRule.Ascending
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Indicates whether the ascending flag of OrderBy.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Ascending { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Ascending As Boolean
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.Ascending*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+  id: MosaicOperatorType
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: MosaicOperatorType
+  nameWithType: IMosaicRule.MosaicOperatorType
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The type of mosaic operator for resolving overlapping pixels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: rstMosaicOperatorType MosaicOperatorType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.rstMosaicOperatorType
+    content.vb: Property MosaicOperatorType As rstMosaicOperatorType
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+  id: WhereClause
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: WhereClause
+  nameWithType: IMosaicRule.WhereClause
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The SQL selection where clause expression.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string WhereClause { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property WhereClause As String
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.WhereClause*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+  id: FIDs
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: FIDs
+  nameWithType: IMosaicRule.FIDs
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The list of (selected) catalog item IDs.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFIDSet FIDs { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFIDSet
+    content.vb: Property FIDs As IFIDSet
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.FIDs*
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+  commentId: P:ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+  id: TimeValue
+  parent: ESRI.ArcGIS.Carto.IMosaicRule
+  langs:
+  - csharp
+  - vb
+  name: TimeValue
+  nameWithType: IMosaicRule.TimeValue
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The request time value.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITimeValue TimeValue { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.ITimeValue
+    content.vb: Property TimeValue As ITimeValue
+  overload: ESRI.ArcGIS.Carto.IMosaicRule.TimeValue*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_MosaicMethod
+  name: MosaicMethod
+  nameWithType: IMosaicRule.MosaicMethod
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.MosaicMethod
+- uid: ESRI.ArcGIS.DatasourcesRaster.esriMosaicMethod
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.esriMosaicMethod
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.esriMosaicMethod.html
+  name: esriMosaicMethod
+  nameWithType: esriMosaicMethod
+  fullName: ESRI.ArcGIS.DatasourcesRaster.esriMosaicMethod
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_LockRasterID
+  name: LockRasterID
+  nameWithType: IMosaicRule.LockRasterID
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.LockRasterID
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_Viewpoint
+  name: Viewpoint
+  nameWithType: IMosaicRule.Viewpoint
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.Viewpoint
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_OrderByFieldName
+  name: OrderByFieldName
+  nameWithType: IMosaicRule.OrderByFieldName
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.OrderByFieldName
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_OrderByBaseValue
+  name: OrderByBaseValue
+  nameWithType: IMosaicRule.OrderByBaseValue
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.OrderByBaseValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.Ascending*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_Ascending
+  name: Ascending
+  nameWithType: IMosaicRule.Ascending
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.Ascending
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_MosaicOperatorType
+  name: MosaicOperatorType
+  nameWithType: IMosaicRule.MosaicOperatorType
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.MosaicOperatorType
+- uid: ESRI.ArcGIS.DatasourcesRaster.rstMosaicOperatorType
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.rstMosaicOperatorType
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.rstMosaicOperatorType.html
+  name: rstMosaicOperatorType
+  nameWithType: rstMosaicOperatorType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.rstMosaicOperatorType
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.WhereClause*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_WhereClause
+  name: WhereClause
+  nameWithType: IMosaicRule.WhereClause
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.WhereClause
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.FIDs*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_FIDs
+  name: FIDs
+  nameWithType: IMosaicRule.FIDs
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.FIDs
+- uid: ESRI.ArcGIS.Geodatabase.IFIDSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFIDSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFIDSet.html
+  name: IFIDSet
+  nameWithType: IFIDSet
+  fullName: ESRI.ArcGIS.Geodatabase.IFIDSet
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Carto.IMosaicRule.TimeValue*
+  commentId: Overload:ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IMosaicRule.html#ESRI_ArcGIS_Carto_IMosaicRule_TimeValue
+  name: TimeValue
+  nameWithType: IMosaicRule.TimeValue
+  fullName: ESRI.ArcGIS.Carto.IMosaicRule.TimeValue
+- uid: ESRI.ArcGIS.esriSystem.ITimeValue
+  commentId: T:ESRI.ArcGIS.esriSystem.ITimeValue
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITimeValue.html
+  name: ITimeValue
+  nameWithType: ITimeValue
+  fullName: ESRI.ArcGIS.esriSystem.ITimeValue
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

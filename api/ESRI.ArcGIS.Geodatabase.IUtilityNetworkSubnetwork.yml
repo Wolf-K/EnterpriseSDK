@@ -1,0 +1,329 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  commentId: T:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  id: IUtilityNetworkSubnetwork
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers(ESRI.ArcGIS.esriSystem.IStringArray)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController(System.Int32,System.Guid,System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController(System.Int32,System.Guid,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUtilityNetworkSubnetwork
+  nameWithType: IUtilityNetworkSubnetwork
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to modifying a utility network subnetwork.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("80E027D0-DCFD-47D4-A95E-71B9FAADFEED")]
+
+      public interface IUtilityNetworkSubnetwork
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("80E027D0-DCFD-47D4-A95E-71B9FAADFEED")>
+
+      Public Interface IUtilityNetworkSubnetwork
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 80E027D0-DCFD-47D4-A95E-71B9FAADFEED
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager
+  id: CreateSubnetworkManager
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  langs:
+  - csharp
+  - vb
+  name: CreateSubnetworkManager()
+  nameWithType: IUtilityNetworkSubnetwork.CreateSubnetworkManager()
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Create Utility Network Subnetwork Manager.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IUNSubnetworkManager CreateSubnetworkManager()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IUNSubnetworkManager
+    content.vb: Function CreateSubnetworkManager() As IUNSubnetworkManager
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager*
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController(System.Int32,System.Guid,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController(System.Int32,System.Guid,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  id: EnableSubnetworkController(System.Int32,System.Guid,System.Int32,System.String,System.String,System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  langs:
+  - csharp
+  - vb
+  name: EnableSubnetworkController(int, Guid, int, string, string, string, string, string)
+  nameWithType: IUtilityNetworkSubnetwork.EnableSubnetworkController(int, Guid, int, string, string, string, string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController(int, System.Guid, int, string, string, string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: long EnableSubnetworkController(int NetworkSourceID, Guid featureGlobalID, int TerminalID, string subnetworkControllerName, string SubnetworkName, string TierName, string Description, string notes)
+    parameters:
+    - id: NetworkSourceID
+      type: System.Int32
+    - id: featureGlobalID
+      type: System.Guid
+    - id: TerminalID
+      type: System.Int32
+    - id: subnetworkControllerName
+      type: System.String
+    - id: SubnetworkName
+      type: System.String
+    - id: TierName
+      type: System.String
+    - id: Description
+      type: System.String
+    - id: notes
+      type: System.String
+    return:
+      type: System.Int64
+    content.vb: Function EnableSubnetworkController(NetworkSourceID As Integer, featureGlobalID As Guid, TerminalID As Integer, subnetworkControllerName As String, SubnetworkName As String, TierName As String, Description As String, notes As String) As Long
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController*
+  nameWithType.vb: IUtilityNetworkSubnetwork.EnableSubnetworkController(Integer, Guid, Integer, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController(Integer, System.Guid, Integer, String, String, String, String, String)
+  name.vb: EnableSubnetworkController(Integer, Guid, Integer, String, String, String, String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController(System.Int32,System.Guid,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController(System.Int32,System.Guid,System.Int32)
+  id: DisableSubnetworkController(System.Int32,System.Guid,System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  langs:
+  - csharp
+  - vb
+  name: DisableSubnetworkController(int, Guid, int)
+  nameWithType: IUtilityNetworkSubnetwork.DisableSubnetworkController(int, Guid, int)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController(int, System.Guid, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DisableSubnetworkController(int SourceID, Guid featureGlobalID, int TerminalID)
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: featureGlobalID
+      type: System.Guid
+    - id: TerminalID
+      type: System.Int32
+    content.vb: Sub DisableSubnetworkController(SourceID As Integer, featureGlobalID As Guid, TerminalID As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController*
+  nameWithType.vb: IUtilityNetworkSubnetwork.DisableSubnetworkController(Integer, Guid, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController(Integer, System.Guid, Integer)
+  name.vb: DisableSubnetworkController(Integer, Guid, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers(ESRI.ArcGIS.esriSystem.IStringArray)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers(ESRI.ArcGIS.esriSystem.IStringArray)
+  id: DeleteSubnetworkControllers(ESRI.ArcGIS.esriSystem.IStringArray)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork
+  langs:
+  - csharp
+  - vb
+  name: DeleteSubnetworkControllers(IStringArray)
+  nameWithType: IUtilityNetworkSubnetwork.DeleteSubnetworkControllers(IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers(ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void DeleteSubnetworkControllers(IStringArray GlobalIDs)
+    parameters:
+    - id: GlobalIDs
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub DeleteSubnetworkControllers(GlobalIDs As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkSubnetwork_CreateSubnetworkManager
+  name: CreateSubnetworkManager
+  nameWithType: IUtilityNetworkSubnetwork.CreateSubnetworkManager
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.CreateSubnetworkManager
+- uid: ESRI.ArcGIS.Geodatabase.IUNSubnetworkManager
+  commentId: T:ESRI.ArcGIS.Geodatabase.IUNSubnetworkManager
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUNSubnetworkManager.html
+  name: IUNSubnetworkManager
+  nameWithType: IUNSubnetworkManager
+  fullName: ESRI.ArcGIS.Geodatabase.IUNSubnetworkManager
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkSubnetwork_EnableSubnetworkController_System_Int32_System_Guid_System_Int32_System_String_System_String_System_String_System_String_System_String_
+  name: EnableSubnetworkController
+  nameWithType: IUtilityNetworkSubnetwork.EnableSubnetworkController
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.EnableSubnetworkController
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkSubnetwork_DisableSubnetworkController_System_Int32_System_Guid_System_Int32_
+  name: DisableSubnetworkController
+  nameWithType: IUtilityNetworkSubnetwork.DisableSubnetworkController
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DisableSubnetworkController
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkSubnetwork_DeleteSubnetworkControllers_ESRI_ArcGIS_esriSystem_IStringArray_
+  name: DeleteSubnetworkControllers
+  nameWithType: IUtilityNetworkSubnetwork.DeleteSubnetworkControllers
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkSubnetwork.DeleteSubnetworkControllers
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

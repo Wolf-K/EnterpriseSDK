@@ -1,0 +1,411 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  commentId: T:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  id: IUtilityNetworkEquipmentIdentifiers
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine(System.Int32,ESRI.ArcGIS.Geodatabase.IGUIDSet,System.Guid@,ESRI.ArcGIS.Geodatabase.IGUIDSet@)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(System.Int32,System.Guid,System.Int16,System.Int16)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID(System.Int32,System.Guid)
+  - ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(System.Int32,System.Guid,System.Int16)
+  langs:
+  - csharp
+  - vb
+  name: IUtilityNetworkEquipmentIdentifiers
+  nameWithType: IUtilityNetworkEquipmentIdentifiers
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Manages equipment identifiers in a telecom domain network.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("A609E41F-E347-48F5-B3AD-12F4A9B4E46E")]
+
+      public interface IUtilityNetworkEquipmentIdentifiers
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("A609E41F-E347-48F5-B3AD-12F4A9B4E46E")>
+
+      Public Interface IUtilityNetworkEquipmentIdentifiers
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A609E41F-E347-48F5-B3AD-12F4A9B4E46E
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  id: QueryUnitIdentifiable(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: QueryUnitIdentifiable(int, Guid, out ILongArray, out ILongArray, out ILongArray, out IStringArray, out ILongArray, out ILongArray)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(int, Guid, out ILongArray, out ILongArray, out ILongArray, out IStringArray, out ILongArray, out ILongArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(int, System.Guid, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.ILongArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryUnitIdentifiable(int unitContainerSourceId, Guid unitContainerGlobalId, out ILongArray gapStartUnitIds, out ILongArray gapEndUnitIds, out ILongArray outSourceIds, out IStringArray outUnitIdentiferGlobalIds, out ILongArray outFirstUnit, out ILongArray outLastUnit)
+    parameters:
+    - id: unitContainerSourceId
+      type: System.Int32
+    - id: unitContainerGlobalId
+      type: System.Guid
+    - id: gapStartUnitIds
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: gapEndUnitIds
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: outSourceIds
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: outUnitIdentiferGlobalIds
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: outFirstUnit
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: outLastUnit
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    content.vb: Sub QueryUnitIdentifiable(unitContainerSourceId As Integer, unitContainerGlobalId As Guid, gapStartUnitIds As ILongArray, gapEndUnitIds As ILongArray, outSourceIds As ILongArray, outUnitIdentiferGlobalIds As IStringArray, outFirstUnit As ILongArray, outLastUnit As ILongArray)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(Integer, Guid, ILongArray, ILongArray, ILongArray, IStringArray, ILongArray, ILongArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable(Integer, System.Guid, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray)
+  name.vb: QueryUnitIdentifiable(Integer, Guid, ILongArray, ILongArray, ILongArray, IStringArray, ILongArray, ILongArray)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(System.Int32,System.Guid,System.Int16,System.Int16)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(System.Int32,System.Guid,System.Int16,System.Int16)
+  id: ReserveUnitID(System.Int32,System.Guid,System.Int16,System.Int16)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: ReserveUnitID(int, Guid, short, short)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(int, Guid, short, short)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(int, System.Guid, short, short)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ReserveUnitID(int unitContainerSourceId, Guid unitContainerGlobalId, short reservationFirstUnit, short reservationLastUnits)
+    parameters:
+    - id: unitContainerSourceId
+      type: System.Int32
+    - id: unitContainerGlobalId
+      type: System.Guid
+    - id: reservationFirstUnit
+      type: System.Int16
+    - id: reservationLastUnits
+      type: System.Int16
+    content.vb: Sub ReserveUnitID(unitContainerSourceId As Integer, unitContainerGlobalId As Guid, reservationFirstUnit As Short, reservationLastUnits As Short)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(Integer, Guid, Short, Short)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID(Integer, System.Guid, Short, Short)
+  name.vb: ReserveUnitID(Integer, Guid, Short, Short)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(System.Int32,System.Guid,System.Int16)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(System.Int32,System.Guid,System.Int16)
+  id: ResizeUnitID(System.Int32,System.Guid,System.Int16)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: ResizeUnitID(int, Guid, short)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(int, Guid, short)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(int, System.Guid, short)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ResizeUnitID(int objectSourceId, Guid objectGlobalId, short resizedLastUnits)
+    parameters:
+    - id: objectSourceId
+      type: System.Int32
+    - id: objectGlobalId
+      type: System.Guid
+    - id: resizedLastUnits
+      type: System.Int16
+    content.vb: Sub ResizeUnitID(objectSourceId As Integer, objectGlobalId As Guid, resizedLastUnits As Short)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(Integer, Guid, Short)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID(Integer, System.Guid, Short)
+  name.vb: ResizeUnitID(Integer, Guid, Short)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID(System.Int32,System.Guid)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID(System.Int32,System.Guid)
+  id: ResetUnitID(System.Int32,System.Guid)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: ResetUnitID(int, Guid)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ResetUnitID(int, Guid)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID(int, System.Guid)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ResetUnitID(int unitContainerSourceId, Guid unitContainerGlobalId)
+    parameters:
+    - id: unitContainerSourceId
+      type: System.Int32
+    - id: unitContainerGlobalId
+      type: System.Guid
+    content.vb: Sub ResetUnitID(unitContainerSourceId As Integer, unitContainerGlobalId As Guid)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.ResetUnitID(Integer, Guid)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID(Integer, System.Guid)
+  name.vb: ResetUnitID(Integer, Guid)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: Divide(System.Int32,System.Guid,ESRI.ArcGIS.esriSystem.ILongArray,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: Divide(int, Guid, ILongArray, out IStringArray, out IStringArray)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.Divide(int, Guid, ILongArray, out IStringArray, out IStringArray)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide(int, System.Guid, ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Divide(int SourceID, Guid GlobalID, ILongArray numUnitsToDivide, out IStringArray dividedGlobalIDs, out IStringArray connectedEdgeGlobalIDs)
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: GlobalID
+      type: System.Guid
+    - id: numUnitsToDivide
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: dividedGlobalIDs
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: connectedEdgeGlobalIDs
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub Divide(SourceID As Integer, GlobalID As Guid, numUnitsToDivide As ILongArray, dividedGlobalIDs As IStringArray, connectedEdgeGlobalIDs As IStringArray)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.Divide(Integer, Guid, ILongArray, IStringArray, IStringArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide(Integer, System.Guid, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: Divide(Integer, Guid, ILongArray, IStringArray, IStringArray)
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine(System.Int32,ESRI.ArcGIS.Geodatabase.IGUIDSet,System.Guid@,ESRI.ArcGIS.Geodatabase.IGUIDSet@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine(System.Int32,ESRI.ArcGIS.Geodatabase.IGUIDSet,System.Guid@,ESRI.ArcGIS.Geodatabase.IGUIDSet@)
+  id: Combine(System.Int32,ESRI.ArcGIS.Geodatabase.IGUIDSet,System.Guid@,ESRI.ArcGIS.Geodatabase.IGUIDSet@)
+  parent: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers
+  langs:
+  - csharp
+  - vb
+  name: Combine(int, IGUIDSet, out Guid, out IGUIDSet)
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.Combine(int, IGUIDSet, out Guid, out IGUIDSet)
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine(int, ESRI.ArcGIS.Geodatabase.IGUIDSet, out System.Guid, out ESRI.ArcGIS.Geodatabase.IGUIDSet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Combine(int SourceID, IGUIDSet GlobalIDs, out Guid combinedGlobalID, out IGUIDSet deletedGlobalIDs)
+    parameters:
+    - id: SourceID
+      type: System.Int32
+    - id: GlobalIDs
+      type: ESRI.ArcGIS.Geodatabase.IGUIDSet
+    - id: combinedGlobalID
+      type: System.Guid
+    - id: deletedGlobalIDs
+      type: ESRI.ArcGIS.Geodatabase.IGUIDSet
+    content.vb: Sub Combine(SourceID As Integer, GlobalIDs As IGUIDSet, combinedGlobalID As Guid, deletedGlobalIDs As IGUIDSet)
+  overload: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine*
+  nameWithType.vb: IUtilityNetworkEquipmentIdentifiers.Combine(Integer, IGUIDSet, Guid, IGUIDSet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine(Integer, ESRI.ArcGIS.Geodatabase.IGUIDSet, System.Guid, ESRI.ArcGIS.Geodatabase.IGUIDSet)
+  name.vb: Combine(Integer, IGUIDSet, Guid, IGUIDSet)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_QueryUnitIdentifiable_System_Int32_System_Guid_ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_ILongArray__
+  name: QueryUnitIdentifiable
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.QueryUnitIdentifiable
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Guid
+  commentId: T:System.Guid
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.guid
+  name: Guid
+  nameWithType: Guid
+  fullName: System.Guid
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_ReserveUnitID_System_Int32_System_Guid_System_Int16_System_Int16_
+  name: ReserveUnitID
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ReserveUnitID
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ReserveUnitID
+- uid: System.Int16
+  commentId: T:System.Int16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int16
+  name: short
+  nameWithType: short
+  fullName: short
+  nameWithType.vb: Short
+  fullName.vb: Short
+  name.vb: Short
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_ResizeUnitID_System_Int32_System_Guid_System_Int16_
+  name: ResizeUnitID
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ResizeUnitID
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResizeUnitID
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_ResetUnitID_System_Int32_System_Guid_
+  name: ResetUnitID
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.ResetUnitID
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.ResetUnitID
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_Divide_System_Int32_System_Guid_ESRI_ArcGIS_esriSystem_ILongArray_ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IStringArray__
+  name: Divide
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.Divide
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Divide
+- uid: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.html#ESRI_ArcGIS_Geodatabase_IUtilityNetworkEquipmentIdentifiers_Combine_System_Int32_ESRI_ArcGIS_Geodatabase_IGUIDSet_System_Guid__ESRI_ArcGIS_Geodatabase_IGUIDSet__
+  name: Combine
+  nameWithType: IUtilityNetworkEquipmentIdentifiers.Combine
+  fullName: ESRI.ArcGIS.Geodatabase.IUtilityNetworkEquipmentIdentifiers.Combine
+- uid: ESRI.ArcGIS.Geodatabase.IGUIDSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGUIDSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGUIDSet.html
+  name: IGUIDSet
+  nameWithType: IGUIDSet
+  fullName: ESRI.ArcGIS.Geodatabase.IGUIDSet

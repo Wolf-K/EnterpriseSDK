@@ -1,0 +1,387 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  commentId: T:ESRI.ArcGIS.Geometry.IConstructClothoid2
+  id: IConstructClothoid2
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  - ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  - ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  - ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  langs:
+  - csharp
+  - vb
+  name: IConstructClothoid2
+  nameWithType: IConstructClothoid2
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Methods for constructing clothoid spirals, that use true tangent instead of finite difference.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("464A4DE0-A96F-4DE7-B2DC-E35C0EF74F72")]
+
+      public interface IConstructClothoid2
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("464A4DE0-A96F-4DE7-B2DC-E35C0EF74F72")>
+
+      Public Interface IConstructClothoid2
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 464A4DE0-A96F-4DE7-B2DC-E35C0EF74F72
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  id: ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  langs:
+  - csharp
+  - vb
+  name: ConstructClothoidByLength2(IPoint, ref WKSPoint, bool, double, double, double, esriCurveDensifyMethod, double)
+  nameWithType: IConstructClothoid2.ConstructClothoidByLength2(IPoint, ref WKSPoint, bool, double, double, double, esriCurveDensifyMethod, double)
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint, ref ESRI.ArcGIS.esriSystem.WKSPoint, bool, double, double, double, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IPolyline ConstructClothoidByLength2(IPoint pFrom, ref WKSPoint pTangentVector, bool bCurveRight, double fromCurvature, double toCurvature, double curveLength, esriCurveDensifyMethod __MIDL__IConstructClothoid20000, double densifyParameter)
+    parameters:
+    - id: pFrom
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pTangentVector
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    - id: bCurveRight
+      type: System.Boolean
+    - id: fromCurvature
+      type: System.Double
+    - id: toCurvature
+      type: System.Double
+    - id: curveLength
+      type: System.Double
+    - id: __MIDL__IConstructClothoid20000
+      type: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+    - id: densifyParameter
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    content.vb: Function ConstructClothoidByLength2(pFrom As IPoint, pTangentVector As WKSPoint, bCurveRight As Boolean, fromCurvature As Double, toCurvature As Double, curveLength As Double, __MIDL__IConstructClothoid20000 As esriCurveDensifyMethod, densifyParameter As Double) As IPolyline
+  overload: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2*
+  nameWithType.vb: IConstructClothoid2.ConstructClothoidByLength2(IPoint, WKSPoint, Boolean, Double, Double, Double, esriCurveDensifyMethod, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.esriSystem.WKSPoint, Boolean, Double, Double, Double, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, Double)
+  name.vb: ConstructClothoidByLength2(IPoint, WKSPoint, Boolean, Double, Double, Double, esriCurveDensifyMethod, Double)
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  id: ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geometry.esriCurveDensifyMethod,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  langs:
+  - csharp
+  - vb
+  name: ConstructClothoidByAngle2(IPoint, ref WKSPoint, bool, double, double, double, esriCurveDensifyMethod, double)
+  nameWithType: IConstructClothoid2.ConstructClothoidByAngle2(IPoint, ref WKSPoint, bool, double, double, double, esriCurveDensifyMethod, double)
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint, ref ESRI.ArcGIS.esriSystem.WKSPoint, bool, double, double, double, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IPolyline ConstructClothoidByAngle2(IPoint pFrom, ref WKSPoint pTangentVector, bool bCurveRight, double fromCurvature, double toCurvature, double deflectionAngle, esriCurveDensifyMethod __MIDL__IConstructClothoid20001, double densifyParameter)
+    parameters:
+    - id: pFrom
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pTangentVector
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    - id: bCurveRight
+      type: System.Boolean
+    - id: fromCurvature
+      type: System.Double
+    - id: toCurvature
+      type: System.Double
+    - id: deflectionAngle
+      type: System.Double
+    - id: __MIDL__IConstructClothoid20001
+      type: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+    - id: densifyParameter
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    content.vb: Function ConstructClothoidByAngle2(pFrom As IPoint, pTangentVector As WKSPoint, bCurveRight As Boolean, fromCurvature As Double, toCurvature As Double, deflectionAngle As Double, __MIDL__IConstructClothoid20001 As esriCurveDensifyMethod, densifyParameter As Double) As IPolyline
+  overload: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2*
+  nameWithType.vb: IConstructClothoid2.ConstructClothoidByAngle2(IPoint, WKSPoint, Boolean, Double, Double, Double, esriCurveDensifyMethod, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.esriSystem.WKSPoint, Boolean, Double, Double, Double, ESRI.ArcGIS.Geometry.esriCurveDensifyMethod, Double)
+  name.vb: ConstructClothoidByAngle2(IPoint, WKSPoint, Boolean, Double, Double, Double, esriCurveDensifyMethod, Double)
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  id: ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  parent: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  langs:
+  - csharp
+  - vb
+  name: ConstructSplitClothoidByLength2(IPoint, IPoint, ref WKSPoint, bool, double, double, double, out double, out double, out double, out ILine)
+  nameWithType: IConstructClothoid2.ConstructSplitClothoidByLength2(IPoint, IPoint, ref WKSPoint, bool, double, double, double, out double, out double, out double, out ILine)
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ref ESRI.ArcGIS.esriSystem.WKSPoint, bool, double, double, double, out double, out double, out double, out ESRI.ArcGIS.Geometry.ILine)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructSplitClothoidByLength2(IPoint pSplitQuery, IPoint pFrom, ref WKSPoint pTangentVector, bool bCurveRight, double fromCurvature, double toCurvature, double curveLength, out double pSplitCurvature, out double pSplitLength, out double pSplitAngle, out ILine ppSplitTangent)
+    parameters:
+    - id: pSplitQuery
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pFrom
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pTangentVector
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    - id: bCurveRight
+      type: System.Boolean
+    - id: fromCurvature
+      type: System.Double
+    - id: toCurvature
+      type: System.Double
+    - id: curveLength
+      type: System.Double
+    - id: pSplitCurvature
+      type: System.Double
+    - id: pSplitLength
+      type: System.Double
+    - id: pSplitAngle
+      type: System.Double
+    - id: ppSplitTangent
+      type: ESRI.ArcGIS.Geometry.ILine
+    content.vb: Sub ConstructSplitClothoidByLength2(pSplitQuery As IPoint, pFrom As IPoint, pTangentVector As WKSPoint, bCurveRight As Boolean, fromCurvature As Double, toCurvature As Double, curveLength As Double, pSplitCurvature As Double, pSplitLength As Double, pSplitAngle As Double, ppSplitTangent As ILine)
+  overload: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2*
+  nameWithType.vb: IConstructClothoid2.ConstructSplitClothoidByLength2(IPoint, IPoint, WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ILine)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.esriSystem.WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ESRI.ArcGIS.Geometry.ILine)
+  name.vb: ConstructSplitClothoidByLength2(IPoint, IPoint, WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ILine)
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  commentId: M:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  id: ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.esriSystem.WKSPoint@,System.Boolean,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.ILine@)
+  parent: ESRI.ArcGIS.Geometry.IConstructClothoid2
+  langs:
+  - csharp
+  - vb
+  name: ConstructSplitClothoidByAngle2(IPoint, IPoint, ref WKSPoint, bool, double, double, double, out double, out double, out double, out ILine)
+  nameWithType: IConstructClothoid2.ConstructSplitClothoidByAngle2(IPoint, IPoint, ref WKSPoint, bool, double, double, double, out double, out double, out double, out ILine)
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ref ESRI.ArcGIS.esriSystem.WKSPoint, bool, double, double, double, out double, out double, out double, out ESRI.ArcGIS.Geometry.ILine)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void ConstructSplitClothoidByAngle2(IPoint pSplitQuery, IPoint pFrom, ref WKSPoint pTangentVector, bool bCurveRight, double fromCurvature, double toCurvature, double deflectionAngle, out double pSplitCurvature, out double pSplitLength, out double pSplitAngle, out ILine ppSplitTangent)
+    parameters:
+    - id: pSplitQuery
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pFrom
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pTangentVector
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    - id: bCurveRight
+      type: System.Boolean
+    - id: fromCurvature
+      type: System.Double
+    - id: toCurvature
+      type: System.Double
+    - id: deflectionAngle
+      type: System.Double
+    - id: pSplitCurvature
+      type: System.Double
+    - id: pSplitLength
+      type: System.Double
+    - id: pSplitAngle
+      type: System.Double
+    - id: ppSplitTangent
+      type: ESRI.ArcGIS.Geometry.ILine
+    content.vb: Sub ConstructSplitClothoidByAngle2(pSplitQuery As IPoint, pFrom As IPoint, pTangentVector As WKSPoint, bCurveRight As Boolean, fromCurvature As Double, toCurvature As Double, deflectionAngle As Double, pSplitCurvature As Double, pSplitLength As Double, pSplitAngle As Double, ppSplitTangent As ILine)
+  overload: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2*
+  nameWithType.vb: IConstructClothoid2.ConstructSplitClothoidByAngle2(IPoint, IPoint, WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ILine)
+  fullName.vb: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2(ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.esriSystem.WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ESRI.ArcGIS.Geometry.ILine)
+  name.vb: ConstructSplitClothoidByAngle2(IPoint, IPoint, WKSPoint, Boolean, Double, Double, Double, Double, Double, Double, ILine)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructClothoid2.html#ESRI_ArcGIS_Geometry_IConstructClothoid2_ConstructClothoidByLength2_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_esriSystem_WKSPoint__System_Boolean_System_Double_System_Double_System_Double_ESRI_ArcGIS_Geometry_esriCurveDensifyMethod_System_Double_
+  name: ConstructClothoidByLength2
+  nameWithType: IConstructClothoid2.ConstructClothoidByLength2
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByLength2
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+  commentId: T:ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod.html
+  name: esriCurveDensifyMethod
+  nameWithType: esriCurveDensifyMethod
+  fullName: ESRI.ArcGIS.Geometry.esriCurveDensifyMethod
+- uid: ESRI.ArcGIS.Geometry.IPolyline
+  commentId: T:ESRI.ArcGIS.Geometry.IPolyline
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolyline.html
+  name: IPolyline
+  nameWithType: IPolyline
+  fullName: ESRI.ArcGIS.Geometry.IPolyline
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructClothoid2.html#ESRI_ArcGIS_Geometry_IConstructClothoid2_ConstructClothoidByAngle2_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_esriSystem_WKSPoint__System_Boolean_System_Double_System_Double_System_Double_ESRI_ArcGIS_Geometry_esriCurveDensifyMethod_System_Double_
+  name: ConstructClothoidByAngle2
+  nameWithType: IConstructClothoid2.ConstructClothoidByAngle2
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructClothoidByAngle2
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructClothoid2.html#ESRI_ArcGIS_Geometry_IConstructClothoid2_ConstructSplitClothoidByLength2_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_esriSystem_WKSPoint__System_Boolean_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__ESRI_ArcGIS_Geometry_ILine__
+  name: ConstructSplitClothoidByLength2
+  nameWithType: IConstructClothoid2.ConstructSplitClothoidByLength2
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByLength2
+- uid: ESRI.ArcGIS.Geometry.ILine
+  commentId: T:ESRI.ArcGIS.Geometry.ILine
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ILine.html
+  name: ILine
+  nameWithType: ILine
+  fullName: ESRI.ArcGIS.Geometry.ILine
+- uid: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IConstructClothoid2.html#ESRI_ArcGIS_Geometry_IConstructClothoid2_ConstructSplitClothoidByAngle2_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_esriSystem_WKSPoint__System_Boolean_System_Double_System_Double_System_Double_System_Double__System_Double__System_Double__ESRI_ArcGIS_Geometry_ILine__
+  name: ConstructSplitClothoidByAngle2
+  nameWithType: IConstructClothoid2.ConstructSplitClothoidByAngle2
+  fullName: ESRI.ArcGIS.Geometry.IConstructClothoid2.ConstructSplitClothoidByAngle2

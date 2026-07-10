@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  id: IRelQueryTable
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+  - ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+  - ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+  langs:
+  - csharp
+  - vb
+  name: IRelQueryTable
+  nameWithType: IRelQueryTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that define the Tables and the RelationshipClass used in a join.
+  example: []
+  syntax:
+    content: >-
+      [Guid("E9075692-7072-11D3-A11E-0000F8775BF9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRelQueryTable
+    content.vb: >-
+      <Guid("E9075692-7072-11D3-A11E-0000F8775BF9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRelQueryTable
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.RelQueryTableClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E9075692-7072-11D3-A11E-0000F8775BF9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+  id: SourceTable
+  parent: ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  langs:
+  - csharp
+  - vb
+  name: SourceTable
+  nameWithType: IRelQueryTable.SourceTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields that appear on the left side of the join belong to the source table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable SourceTable { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: ReadOnly Property SourceTable As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable*
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+  id: DestinationTable
+  parent: ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  langs:
+  - csharp
+  - vb
+  name: DestinationTable
+  nameWithType: IRelQueryTable.DestinationTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields that appear on the right side of the join belong to the destination table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable DestinationTable { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: ReadOnly Property DestinationTable As ITable
+  overload: ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable*
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+  id: RelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase.IRelQueryTable
+  langs:
+  - csharp
+  - vb
+  name: RelationshipClass
+  nameWithType: IRelQueryTable.RelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Relationship class used in the table join.
+  remarks: '&lt;P&gt;You can create a relationship class with either &lt;STRONG&gt;IRelationshipClassContainer &lt;/STRONG&gt;or &lt;STRONG&gt;IFeatureWorkspace&lt;/STRONG&gt;. &lt;STRONG&gt;RelationshipClass &lt;/STRONG&gt;objects implement &lt;STRONG&gt;IDataset &lt;/STRONG&gt;(useful for getting the name or the workspace), but note that they do not implement &lt;STRONG&gt;IClass &lt;/STRONG&gt;(unless they are attributed). This is because a non-attributed relationship class does not have any fields of its own.&lt;/P&gt;'
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRelationshipClass RelationshipClass { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+    content.vb: ReadOnly Property RelationshipClass As IRelationshipClass
+  overload: ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelQueryTable.html#ESRI_ArcGIS_Geodatabase_IRelQueryTable_SourceTable
+  name: SourceTable
+  nameWithType: IRelQueryTable.SourceTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.SourceTable
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelQueryTable.html#ESRI_ArcGIS_Geodatabase_IRelQueryTable_DestinationTable
+  name: DestinationTable
+  nameWithType: IRelQueryTable.DestinationTable
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.DestinationTable
+- uid: ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelQueryTable.html#ESRI_ArcGIS_Geodatabase_IRelQueryTable_RelationshipClass
+  name: RelationshipClass
+  nameWithType: IRelQueryTable.RelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelQueryTable.RelationshipClass
+- uid: ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRelationshipClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRelationshipClass.html
+  name: IRelationshipClass
+  nameWithType: IRelationshipClass
+  fullName: ESRI.ArcGIS.Geodatabase.IRelationshipClass

@@ -1,0 +1,455 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyNode
+  id: ITopologyNode
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges(System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry(ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+  langs:
+  - csharp
+  - vb
+  name: ITopologyNode
+  nameWithType: ITopologyNode
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to information on a topological node within a topology graph.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("D04B7154-4989-11D5-9FE9-00C04F6BDD7F")]
+
+      public interface ITopologyNode : ITopologyElement
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("D04B7154-4989-11D5-9FE9-00C04F6BDD7F")>
+
+      Public Interface ITopologyNode Inherits ITopologyElement
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: D04B7154-4989-11D5-9FE9-00C04F6BDD7F
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry(ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry(ESRI.ArcGIS.Geometry.IGeometry)
+  id: QueryGeometry(ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: QueryGeometry(IGeometry)
+  nameWithType: ITopologyNode.QueryGeometry(IGeometry)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry(ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryGeometry(IGeometry Geometry)
+    parameters:
+    - id: Geometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub QueryGeometry(Geometry As IGeometry)
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+  id: Geometry
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: Geometry
+  nameWithType: ITopologyNode.Geometry
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IGeometry Geometry { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: ReadOnly Property Geometry As IGeometry
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+  id: IsSelected
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: IsSelected
+  nameWithType: ITopologyNode.IsSelected
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsSelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSelected As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+  id: IsDeleted
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: IsDeleted
+  nameWithType: ITopologyNode.IsDeleted
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool IsDeleted { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDeleted As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+  id: Parents
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: Parents
+  nameWithType: ITopologyNode.Parents
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IEnumTopologyParent Parents { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumTopologyParent
+    content.vb: ReadOnly Property Parents As IEnumTopologyParent
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+  id: Visited
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: Visited
+  nameWithType: ITopologyNode.Visited
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: bool Visited { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Visited As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges(System.Boolean)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges(System.Boolean)
+  id: Edges(System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: Edges[bool]
+  nameWithType: ITopologyNode.Edges[bool]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges[bool]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The set of topological edges incident on this node.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumNodeEdge Edges[bool clockwise] { get; }
+    parameters:
+    - id: clockwise
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+    content.vb: ReadOnly Property Edges(clockwise As Boolean) As IEnumNodeEdge
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges*
+  nameWithType.vb: ITopologyNode.Edges(Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges(Boolean)
+  name.vb: Edges(Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+  id: Degree
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: Degree
+  nameWithType: ITopologyNode.Degree
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of edges entering and leaving this node. Closed edges are counted twice.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Degree { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Degree As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown
+  id: IsDegreeKnown
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyNode
+  langs:
+  - csharp
+  - vb
+  name: IsDegreeKnown
+  nameWithType: ITopologyNode.IsDegreeKnown
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the degree of this node is known. Nodes constructed from edges that are partially outside the build extent have unknown degrees.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsDegreeKnown { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDegreeKnown As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_QueryGeometry_ESRI_ArcGIS_Geometry_IGeometry_
+  name: QueryGeometry
+  nameWithType: ITopologyNode.QueryGeometry
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.QueryGeometry
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_Geometry
+  name: Geometry
+  nameWithType: ITopologyNode.Geometry
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Geometry
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_IsSelected
+  name: IsSelected
+  nameWithType: ITopologyNode.IsSelected
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsSelected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_IsDeleted
+  name: IsDeleted
+  nameWithType: ITopologyNode.IsDeleted
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDeleted
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_Parents
+  name: Parents
+  nameWithType: ITopologyNode.Parents
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Parents
+- uid: ESRI.ArcGIS.Geodatabase.IEnumTopologyParent
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumTopologyParent
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumTopologyParent.html
+  name: IEnumTopologyParent
+  nameWithType: IEnumTopologyParent
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumTopologyParent
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_Visited
+  name: Visited
+  nameWithType: ITopologyNode.Visited
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Visited
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_Edges_System_Boolean_
+  name: Edges
+  nameWithType: ITopologyNode.Edges
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Edges
+- uid: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge.html
+  name: IEnumNodeEdge
+  nameWithType: IEnumNodeEdge
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumNodeEdge
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_Degree
+  name: Degree
+  nameWithType: ITopologyNode.Degree
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.Degree
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyNode.html#ESRI_ArcGIS_Geodatabase_ITopologyNode_IsDegreeKnown
+  name: IsDegreeKnown
+  nameWithType: ITopologyNode.IsDegreeKnown
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyNode.IsDegreeKnown

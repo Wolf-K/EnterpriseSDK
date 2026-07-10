@@ -1,0 +1,603 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  id: IItemTemplate2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset(System.String,System.String,System.String)
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement(System.Boolean)
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+  - ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+  langs:
+  - csharp
+  - vb
+  name: IItemTemplate2
+  nameWithType: IItemTemplate2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control an item template.
+  example: []
+  syntax:
+    content: >-
+      [Guid("63215C2B-86B2-4B41-84FB-50283CAD0A7A")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IItemTemplate2 : IItemTemplate
+    content.vb: >-
+      <Guid("63215C2B-86B2-4B41-84FB-50283CAD0A7A")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IItemTemplate2 Inherits IItemTemplate
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ItemTemplateClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 63215C2B-86B2-4B41-84FB-50283CAD0A7A
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement(System.Boolean)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement(System.Boolean)
+  id: EnableEnhancement(System.Boolean)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: EnableEnhancement(bool)
+  nameWithType: IItemTemplate2.EnableEnhancement(bool)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement(bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Enable or disable functions that enhance a dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void EnableEnhancement(bool bEnableEnhancement)
+    parameters:
+    - id: bEnableEnhancement
+      type: System.Boolean
+    content.vb: Sub EnableEnhancement(bEnableEnhancement As Boolean)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement*
+  nameWithType.vb: IItemTemplate2.EnableEnhancement(Boolean)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement(Boolean)
+  name.vb: EnableEnhancement(Boolean)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset(System.String,System.String,System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset(System.String,System.String,System.String)
+  id: AddAncillaryDataset(System.String,System.String,System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: AddAncillaryDataset(string, string, string)
+  nameWithType: IItemTemplate2.AddAncillaryDataset(string, string, string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset(string, string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Adds additional outgoing tags for non-primary datasets that can be built using this item template. This method also accepts an optional name of a template function that resides within the primary raster function template associated within this item template wh
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddAncillaryDataset(string sOutputDatasetTag, string sFunctionTemplateName, string sPrimaryChainConnectorVariable)
+    parameters:
+    - id: sOutputDatasetTag
+      type: System.String
+    - id: sFunctionTemplateName
+      type: System.String
+    - id: sPrimaryChainConnectorVariable
+      type: System.String
+    content.vb: Sub AddAncillaryDataset(sOutputDatasetTag As String, sFunctionTemplateName As String, sPrimaryChainConnectorVariable As String)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset*
+  nameWithType.vb: IItemTemplate2.AddAncillaryDataset(String, String, String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset(String, String, String)
+  name.vb: AddAncillaryDataset(String, String, String)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: GetAncillaryDatasets(ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: GetAncillaryDatasets(out IStringArray, out IStringArray, out IStringArray)
+  nameWithType: IItemTemplate2.GetAncillaryDatasets(out IStringArray, out IStringArray, out IStringArray)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets(out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetAncillaryDatasets(out IStringArray ppOutputDatasetTags, out IStringArray ppFunctionTemplateNames, out IStringArray ppPrimaryChainConnectorVariables)
+    parameters:
+    - id: ppOutputDatasetTags
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: ppFunctionTemplateNames
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: ppPrimaryChainConnectorVariables
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub GetAncillaryDatasets(ppOutputDatasetTags As IStringArray, ppFunctionTemplateNames As IStringArray, ppPrimaryChainConnectorVariables As IStringArray)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets*
+  nameWithType.vb: IItemTemplate2.GetAncillaryDatasets(IStringArray, IStringArray, IStringArray)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets(ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: GetAncillaryDatasets(IStringArray, IStringArray, IStringArray)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+  id: Name
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IItemTemplate2.Name
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+  id: Enabled
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: Enabled
+  nameWithType: IItemTemplate2.Enabled
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool Enabled { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Enabled As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+  id: RasterFunctionTemplate
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: RasterFunctionTemplate
+  nameWithType: IItemTemplate2.RasterFunctionTemplate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IRasterFunctionTemplate RasterFunctionTemplate { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterFunctionTemplate
+    content.vb: Property RasterFunctionTemplate As IRasterFunctionTemplate
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+  id: OutputDatasetTag
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: OutputDatasetTag
+  nameWithType: IItemTemplate2.OutputDatasetTag
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string OutputDatasetTag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OutputDatasetTag As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+  id: PrimaryInputDatasetTag
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: PrimaryInputDatasetTag
+  nameWithType: IItemTemplate2.PrimaryInputDatasetTag
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: string PrimaryInputDatasetTag { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property PrimaryInputDatasetTag As String
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+  id: IntersectFootprints
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: IntersectFootprints
+  nameWithType: IItemTemplate2.IntersectFootprints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool IntersectFootprints { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IntersectFootprints As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+  id: SupportsEnhancement
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: SupportsEnhancement
+  nameWithType: IItemTemplate2.SupportsEnhancement
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the item template contains functions that enhance a dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsEnhancement { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SupportsEnhancement As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+  id: IsEnhancementEnabled
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: IsEnhancementEnabled
+  nameWithType: IItemTemplate2.IsEnhancementEnabled
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the item template will enhance datasets.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsEnhancementEnabled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEnhancementEnabled As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+  id: IsSensorTemplate
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: IsSensorTemplate
+  nameWithType: IItemTemplate2.IsSensorTemplate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the item template can be used to build sensor data sources (as opposed to regular raster data sources).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsSensorTemplate { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsSensorTemplate As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+  id: GeoTransformationHelper
+  parent: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2
+  langs:
+  - csharp
+  - vb
+  name: GeoTransformationHelper
+  nameWithType: IItemTemplate2.GeoTransformationHelper
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The geographic tranformation helper object, set by the calling application, that enables the item template to install geotransformation method in to the system's GeoTransformationOperationSet.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeoTransformationHelper GeoTransformationHelper { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IGeoTransformationHelper
+    content.vb: Property GeoTransformationHelper As IGeoTransformationHelper
+  overload: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_EnableEnhancement_System_Boolean_
+  name: EnableEnhancement
+  nameWithType: IItemTemplate2.EnableEnhancement
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.EnableEnhancement
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_AddAncillaryDataset_System_String_System_String_System_String_
+  name: AddAncillaryDataset
+  nameWithType: IItemTemplate2.AddAncillaryDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.AddAncillaryDataset
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_GetAncillaryDatasets_ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IStringArray__
+  name: GetAncillaryDatasets
+  nameWithType: IItemTemplate2.GetAncillaryDatasets
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GetAncillaryDatasets
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_Name
+  name: Name
+  nameWithType: IItemTemplate2.Name
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Name
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_Enabled
+  name: Enabled
+  nameWithType: IItemTemplate2.Enabled
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.Enabled
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_RasterFunctionTemplate
+  name: RasterFunctionTemplate
+  nameWithType: IItemTemplate2.RasterFunctionTemplate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.RasterFunctionTemplate
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunctionTemplate
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterFunctionTemplate
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunctionTemplate.html
+  name: IRasterFunctionTemplate
+  nameWithType: IRasterFunctionTemplate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunctionTemplate
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_OutputDatasetTag
+  name: OutputDatasetTag
+  nameWithType: IItemTemplate2.OutputDatasetTag
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.OutputDatasetTag
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_PrimaryInputDatasetTag
+  name: PrimaryInputDatasetTag
+  nameWithType: IItemTemplate2.PrimaryInputDatasetTag
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.PrimaryInputDatasetTag
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_IntersectFootprints
+  name: IntersectFootprints
+  nameWithType: IItemTemplate2.IntersectFootprints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IntersectFootprints
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_SupportsEnhancement
+  name: SupportsEnhancement
+  nameWithType: IItemTemplate2.SupportsEnhancement
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.SupportsEnhancement
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_IsEnhancementEnabled
+  name: IsEnhancementEnabled
+  nameWithType: IItemTemplate2.IsEnhancementEnabled
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsEnhancementEnabled
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_IsSensorTemplate
+  name: IsSensorTemplate
+  nameWithType: IItemTemplate2.IsSensorTemplate
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.IsSensorTemplate
+- uid: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.html#ESRI_ArcGIS_DatasourcesRaster_IItemTemplate2_GeoTransformationHelper
+  name: GeoTransformationHelper
+  nameWithType: IItemTemplate2.GeoTransformationHelper
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IItemTemplate2.GeoTransformationHelper
+- uid: ESRI.ArcGIS.DatasourcesRaster.IGeoTransformationHelper
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IGeoTransformationHelper
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IGeoTransformationHelper.html
+  name: IGeoTransformationHelper
+  nameWithType: IGeoTransformationHelper
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IGeoTransformationHelper

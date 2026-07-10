@@ -1,0 +1,800 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  id: IRaster2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx(ESRI.ArcGIS.Geodatabase.IPnt)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel(System.Double,System.Double,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap(System.Int32,System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn(System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IRaster2
+  nameWithType: IRaster2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("0D668D08-92C1-4999-9A77-490790821969")]
+
+      public interface IRaster2
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("0D668D08-92C1-4999-9A77-490790821969")>
+
+      Public Interface IRaster2
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0D668D08-92C1-4999-9A77-490790821969
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx(ESRI.ArcGIS.Geodatabase.IPnt)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx(ESRI.ArcGIS.Geodatabase.IPnt)
+  id: CreateCursorEx(ESRI.ArcGIS.Geodatabase.IPnt)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: CreateCursorEx(IPnt)
+  nameWithType: IRaster2.CreateCursorEx(IPnt)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx(ESRI.ArcGIS.Geodatabase.IPnt)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IRasterCursor CreateCursorEx(IPnt pBlockSize)
+    parameters:
+    - id: pBlockSize
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterCursor
+    content.vb: Function CreateCursorEx(pBlockSize As IPnt) As IRasterCursor
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel(System.Double,System.Double,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel(System.Double,System.Double,System.Int32@,System.Int32@)
+  id: MapToPixel(System.Double,System.Double,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: MapToPixel(double, double, out int, out int)
+  nameWithType: IRaster2.MapToPixel(double, double, out int, out int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel(double, double, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Converts a location (x, y) in map space into pixel space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void MapToPixel(double x, double y, out int pColumn, out int pRow)
+    parameters:
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: pColumn
+      type: System.Int32
+    - id: pRow
+      type: System.Int32
+    content.vb: Sub MapToPixel(x As Double, y As Double, pColumn As Integer, pRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel*
+  nameWithType.vb: IRaster2.MapToPixel(Double, Double, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel(Double, Double, Integer, Integer)
+  name.vb: MapToPixel(Double, Double, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap(System.Int32,System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap(System.Int32,System.Int32,System.Double@,System.Double@)
+  id: PixelToMap(System.Int32,System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: PixelToMap(int, int, out double, out double)
+  nameWithType: IRaster2.PixelToMap(int, int, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap(int, int, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Converts a location (column, row) in pixel space into map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PixelToMap(int iColumn, int iRow, out double pX, out double pY)
+    parameters:
+    - id: iColumn
+      type: System.Int32
+    - id: iRow
+      type: System.Int32
+    - id: pX
+      type: System.Double
+    - id: pY
+      type: System.Double
+    content.vb: Sub PixelToMap(iColumn As Integer, iRow As Integer, pX As Double, pY As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap*
+  nameWithType.vb: IRaster2.PixelToMap(Integer, Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap(Integer, Integer, Double, Double)
+  name.vb: PixelToMap(Integer, Integer, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn(System.Double)
+  id: ToPixelColumn(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: ToPixelColumn(double)
+  nameWithType: IRaster2.ToPixelColumn(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Maps a x coordinate in map space to the pixel column.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ToPixelColumn(double x)
+    parameters:
+    - id: x
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function ToPixelColumn(x As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn*
+  nameWithType.vb: IRaster2.ToPixelColumn(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn(Double)
+  name.vb: ToPixelColumn(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow(System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow(System.Double)
+  id: ToPixelRow(System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: ToPixelRow(double)
+  nameWithType: IRaster2.ToPixelRow(double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Maps a y coordinate in map space to the pixel row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ToPixelRow(double y)
+    parameters:
+    - id: y
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function ToPixelRow(y As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow*
+  nameWithType.vb: IRaster2.ToPixelRow(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow(Double)
+  name.vb: ToPixelRow(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX(System.Int32)
+  id: ToMapX(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: ToMapX(int)
+  nameWithType: IRaster2.ToMapX(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Maps a pixel column to the x coordinate in map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ToMapX(int iColumn)
+    parameters:
+    - id: iColumn
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Function ToMapX(iColumn As Integer) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX*
+  nameWithType.vb: IRaster2.ToMapX(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX(Integer)
+  name.vb: ToMapX(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY(System.Int32)
+  id: ToMapY(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: ToMapY(int)
+  nameWithType: IRaster2.ToMapY(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Maps a pixel row to the y coordinate in map space.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ToMapY(int iRow)
+    parameters:
+    - id: iRow
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Function ToMapY(iRow As Integer) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY*
+  nameWithType.vb: IRaster2.ToMapY(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY(Integer)
+  name.vb: ToMapY(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue(System.Int32,System.Int32,System.Int32)
+  id: GetPixelValue(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: GetPixelValue(int, int, int)
+  nameWithType: IRaster2.GetPixelValue(int, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets the pixel value for a given band at a given column and row.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetPixelValue(int iBand, int iColumn, int iRow)
+    parameters:
+    - id: iBand
+      type: System.Int32
+    - id: iColumn
+      type: System.Int32
+    - id: iRow
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Function GetPixelValue(iBand As Integer, iColumn As Integer, iRow As Integer) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue*
+  nameWithType.vb: IRaster2.GetPixelValue(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue(Integer, Integer, Integer)
+  name.vb: GetPixelValue(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+  id: GeodataXform
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: GeodataXform
+  nameWithType: IRaster2.GeodataXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The geodata transform.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeodataXform GeodataXform { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeodataXform
+    content.vb: Property GeodataXform As IGeodataXform
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+  id: GeoTransformations
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: GeoTransformations
+  nameWithType: IRaster2.GeoTransformations
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The set of geographic transformations to be applied.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeoTransformationOperationSet GeoTransformations { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeoTransformationOperationSet
+    content.vb: Property GeoTransformations As IGeoTransformationOperationSet
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+  id: AttributeTable
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: AttributeTable
+  nameWithType: IRaster2.AttributeTable
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The raster value attribute table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITable AttributeTable { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Property AttributeTable As ITable
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+  id: Colormap
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: Colormap
+  nameWithType: IRaster2.Colormap
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The colormap.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterColormap Colormap { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterColormap
+    content.vb: Property Colormap As IRasterColormap
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+  id: RasterDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: RasterDataset
+  nameWithType: IRaster2.RasterDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The parent raster dataset.
+  remarks: >-
+    &lt;P&gt;The &lt;STRONG&gt;RasterDataset&lt;/STRONG&gt; object represents a dataset on disk or in a database. It is composed of one or more persistent raster bands. The dataset provides access only to operations that apply to the entire dataset, with the &lt;STRONG&gt;RasterBand&lt;/STRONG&gt; providing access to operations that occur on individual bands.&lt;/P&gt;
+
+    &lt;P&gt;The RasterDataset object performs basic dataset management functions, such as copy, rename, and delete. It can also instantiat RasterBand and &lt;STRONG&gt;Raster&lt;/STRONG&gt; objects representing other aspects of the data. It can be used to examine dataset properties including different format, extent, spatial reference, and number of bands.&lt;/P&gt;
+
+    &lt;P&gt;The spatial reference of the raster raster dataset can be changed through interface &lt;STRONG&gt;IGeoDatasetSchemaEdit&lt;/STRONG&gt;, but it does not project the dataset, only changes the coordinate system associated with the dataset.&lt;BR&gt;The pyramid of the raster dataset can be built or rebuilt to improve display performance for large raster datasets.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterDataset RasterDataset { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: ReadOnly Property RasterDataset As IRasterDataset
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+  id: RasterXformer
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRaster2
+  langs:
+  - csharp
+  - vb
+  name: RasterXformer
+  nameWithType: IRaster2.RasterXformer
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The raster transformer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterXformer RasterXformer { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterXformer
+    content.vb: ReadOnly Property RasterXformer As IRasterXformer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_CreateCursorEx_ESRI_ArcGIS_Geodatabase_IPnt_
+  name: CreateCursorEx
+  nameWithType: IRaster2.CreateCursorEx
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.CreateCursorEx
+- uid: ESRI.ArcGIS.Geodatabase.IPnt
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPnt
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPnt.html
+  name: IPnt
+  nameWithType: IPnt
+  fullName: ESRI.ArcGIS.Geodatabase.IPnt
+- uid: ESRI.ArcGIS.Geodatabase.IRasterCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterCursor.html
+  name: IRasterCursor
+  nameWithType: IRasterCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterCursor
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_MapToPixel_System_Double_System_Double_System_Int32__System_Int32__
+  name: MapToPixel
+  nameWithType: IRaster2.MapToPixel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.MapToPixel
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_PixelToMap_System_Int32_System_Int32_System_Double__System_Double__
+  name: PixelToMap
+  nameWithType: IRaster2.PixelToMap
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.PixelToMap
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_ToPixelColumn_System_Double_
+  name: ToPixelColumn
+  nameWithType: IRaster2.ToPixelColumn
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelColumn
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_ToPixelRow_System_Double_
+  name: ToPixelRow
+  nameWithType: IRaster2.ToPixelRow
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToPixelRow
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_ToMapX_System_Int32_
+  name: ToMapX
+  nameWithType: IRaster2.ToMapX
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapX
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_ToMapY_System_Int32_
+  name: ToMapY
+  nameWithType: IRaster2.ToMapY
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.ToMapY
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_GetPixelValue_System_Int32_System_Int32_System_Int32_
+  name: GetPixelValue
+  nameWithType: IRaster2.GetPixelValue
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GetPixelValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_GeodataXform
+  name: GeodataXform
+  nameWithType: IRaster2.GeodataXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeodataXform
+- uid: ESRI.ArcGIS.Geodatabase.IGeodataXform
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeodataXform
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeodataXform.html
+  name: IGeodataXform
+  nameWithType: IGeodataXform
+  fullName: ESRI.ArcGIS.Geodatabase.IGeodataXform
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_GeoTransformations
+  name: GeoTransformations
+  nameWithType: IRaster2.GeoTransformations
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.GeoTransformations
+- uid: ESRI.ArcGIS.Geometry.IGeoTransformationOperationSet
+  commentId: T:ESRI.ArcGIS.Geometry.IGeoTransformationOperationSet
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeoTransformationOperationSet.html
+  name: IGeoTransformationOperationSet
+  nameWithType: IGeoTransformationOperationSet
+  fullName: ESRI.ArcGIS.Geometry.IGeoTransformationOperationSet
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_AttributeTable
+  name: AttributeTable
+  nameWithType: IRaster2.AttributeTable
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.AttributeTable
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_Colormap
+  name: Colormap
+  nameWithType: IRaster2.Colormap
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.Colormap
+- uid: ESRI.ArcGIS.Geodatabase.IRasterColormap
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterColormap
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterColormap.html
+  name: IRasterColormap
+  nameWithType: IRasterColormap
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterColormap
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_RasterDataset
+  name: RasterDataset
+  nameWithType: IRaster2.RasterDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IRaster2_RasterXformer
+  name: RasterXformer
+  nameWithType: IRaster2.RasterXformer
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRaster2.RasterXformer
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterXformer
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterXformer
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterXformer.html
+  name: IRasterXformer
+  nameWithType: IRasterXformer
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterXformer

@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFieldInfo
+  id: IFieldInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString(System.Object)
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+  - ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+  langs:
+  - csharp
+  - vb
+  name: IFieldInfo
+  nameWithType: IFieldInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to properties that give extended information on the field.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("A2BAAE2C-969B-11D2-AE77-080009EC732A")]
+
+      public interface IFieldInfo
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("A2BAAE2C-969B-11D2-AE77-080009EC732A")>
+
+      Public Interface IFieldInfo
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A2BAAE2C-969B-11D2-AE77-080009EC732A
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+  id: Visible
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: IFieldInfo.Visible
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the field is visible.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Visible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Visible As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+  id: Alias
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: Alias
+  nameWithType: IFieldInfo.Alias
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The alias for the field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Alias { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property [Alias] As String
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+  id: NumberFormat
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: NumberFormat
+  nameWithType: IFieldInfo.NumberFormat
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number format for the field (invalid if non-numeric field).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: INumberFormat NumberFormat { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.INumberFormat
+    content.vb: Property NumberFormat As INumberFormat
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString(System.Object)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString(System.Object)
+  id: AsString(System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: AsString[object]
+  nameWithType: IFieldInfo.AsString[object]
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString[object]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The string representation of a given value based on the current field information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string AsString[object Value] { get; }
+    parameters:
+    - id: Value
+      type: System.Object
+    return:
+      type: System.String
+    content.vb: ReadOnly Property AsString(Value As Object) As String
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString*
+  nameWithType.vb: IFieldInfo.AsString(Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString(Object)
+  name.vb: AsString(Object)
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+  id: ValueAsRatio
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: ValueAsRatio
+  nameWithType: IFieldInfo.ValueAsRatio
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the field value should be the ratio of itself.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ValueAsRatio { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ValueAsRatio As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+  id: Highlight
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: Highlight
+  nameWithType: IFieldInfo.Highlight
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates how the field should be presented.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Highlight { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Highlight As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly
+  id: Readonly
+  parent: ESRI.ArcGIS.Geodatabase.IFieldInfo
+  langs:
+  - csharp
+  - vb
+  name: Readonly
+  nameWithType: IFieldInfo.Readonly
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates how the field should be presented.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool Readonly { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property [Readonly] As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_Visible
+  name: Visible
+  nameWithType: IFieldInfo.Visible
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Visible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_Alias
+  name: Alias
+  nameWithType: IFieldInfo.Alias
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Alias
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_NumberFormat
+  name: NumberFormat
+  nameWithType: IFieldInfo.NumberFormat
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.NumberFormat
+- uid: ESRI.ArcGIS.esriSystem.INumberFormat
+  commentId: T:ESRI.ArcGIS.esriSystem.INumberFormat
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.INumberFormat.html
+  name: INumberFormat
+  nameWithType: INumberFormat
+  fullName: ESRI.ArcGIS.esriSystem.INumberFormat
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_AsString_System_Object_
+  name: AsString
+  nameWithType: IFieldInfo.AsString
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.AsString
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_ValueAsRatio
+  name: ValueAsRatio
+  nameWithType: IFieldInfo.ValueAsRatio
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.ValueAsRatio
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_Highlight
+  name: Highlight
+  nameWithType: IFieldInfo.Highlight
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Highlight
+- uid: ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldInfo.html#ESRI_ArcGIS_Geodatabase_IFieldInfo_Readonly
+  name: Readonly
+  nameWithType: IFieldInfo.Readonly
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldInfo.Readonly

@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryDescription
+  id: IQueryDescription
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+  - ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+  langs:
+  - csharp
+  - vb
+  name: IQueryDescription
+  nameWithType: IQueryDescription
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Query information
+  example: []
+  syntax:
+    content: >-
+      [Guid("2E060684-E14C-44D3-858A-442AB6A0A863")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IQueryDescription
+    content.vb: >-
+      <Guid("2E060684-E14C-44D3-858A-442AB6A0A863")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IQueryDescription
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 2E060684-E14C-44D3-858A-442AB6A0A863
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+  id: Srid
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: Srid
+  nameWithType: IQueryDescription.Srid
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Srid of the resultset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Srid { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Srid As String
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IQueryDescription.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+  id: OIDFields
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: OIDFields
+  nameWithType: IQueryDescription.OIDFields
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Unique key field(s).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string OIDFields { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property OIDFields As String
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+  id: GeometryType
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: GeometryType
+  nameWithType: IQueryDescription.GeometryType
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Geometry type on the spatial column if present.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriGeometryType GeometryType { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    content.vb: Property GeometryType As esriGeometryType
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+  id: ShapeColumnName
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: ShapeColumnName
+  nameWithType: IQueryDescription.ShapeColumnName
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Geometry column if present.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ShapeColumnName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ShapeColumnName As String
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+  id: OIDColumnName
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: OIDColumnName
+  nameWithType: IQueryDescription.OIDColumnName
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name of OID field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string OIDColumnName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property OIDColumnName As String
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+  id: Fields
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: Fields
+  nameWithType: IQueryDescription.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The resultset fields.
+  remarks: >-
+    &lt;P&gt;Each table in a database has an ordered collection of fields, there is always at least one field in a table. The ordered collection behaves like a list, so it is possible to access individual fields by a numbered position (or index) in the list.&lt;/P&gt;
+
+    &lt;P&gt;A &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection can also exist independently of a table, for example when creating an index on a table you will need to define which fields take part in the index. There are many interfaces which either require or return a &lt;STRONG&gt;Fields &lt;/STRONG&gt;collection; these include &lt;STRONG&gt;IClass &lt;/STRONG&gt;(therefore also &lt;STRONG&gt;IObjectClass &lt;/STRONG&gt;and &lt;STRONG&gt;IFeatureClass&lt;/STRONG&gt;), &lt;STRONG&gt;ICursor&lt;/STRONG&gt;, &lt;STRONG&gt;IIndex&lt;/STRONG&gt;, &lt;STRONG&gt;IFeatureClassDraw&lt;/STRONG&gt;, &lt;STRONG&gt;IRowBuffer&lt;/STRONG&gt;, &lt;STRONG&gt;ISimpleDataConverter&lt;/STRONG&gt;, &lt;STRONG&gt;ITableSort &lt;/STRONG&gt;and &lt;STRONG&gt;IValidate&lt;/STRONG&gt;.&lt;/P&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields Fields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: ReadOnly Property Fields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+  id: Query
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: IQueryDescription.Query
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Query statemaent.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Query { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Query As String
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.Query*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+  id: IsOIDMappedColumn
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: IsOIDMappedColumn
+  nameWithType: IQueryDescription.IsOIDMappedColumn
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if a virtual OID column is required.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsOIDMappedColumn { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsOIDMappedColumn As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn*
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery
+  commentId: P:ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery
+  id: IsSpatialQuery
+  parent: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  langs:
+  - csharp
+  - vb
+  name: IsSpatialQuery
+  nameWithType: IQueryDescription.IsSpatialQuery
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the query resultset is spatial.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsSpatialQuery { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsSpatialQuery As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_Srid
+  name: Srid
+  nameWithType: IQueryDescription.Srid
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Srid
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_SpatialReference
+  name: SpatialReference
+  nameWithType: IQueryDescription.SpatialReference
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_OIDFields
+  name: OIDFields
+  nameWithType: IQueryDescription.OIDFields
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDFields
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_GeometryType
+  name: GeometryType
+  nameWithType: IQueryDescription.GeometryType
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.GeometryType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_ShapeColumnName
+  name: ShapeColumnName
+  nameWithType: IQueryDescription.ShapeColumnName
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.ShapeColumnName
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_OIDColumnName
+  name: OIDColumnName
+  nameWithType: IQueryDescription.OIDColumnName
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.OIDColumnName
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_Fields
+  name: Fields
+  nameWithType: IQueryDescription.Fields
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Fields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.Query*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_Query
+  name: Query
+  nameWithType: IQueryDescription.Query
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.Query
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_IsOIDMappedColumn
+  name: IsOIDMappedColumn
+  nameWithType: IQueryDescription.IsOIDMappedColumn
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsOIDMappedColumn
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html#ESRI_ArcGIS_Geodatabase_IQueryDescription_IsSpatialQuery
+  name: IsSpatialQuery
+  nameWithType: IQueryDescription.IsSpatialQuery
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription.IsSpatialQuery

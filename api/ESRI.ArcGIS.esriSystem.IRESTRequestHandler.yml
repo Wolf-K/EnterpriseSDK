@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  id: IRESTRequestHandler
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  - ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  langs:
+  - csharp
+  - vb
+  name: IRESTRequestHandler
+  nameWithType: IRESTRequestHandler
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to REST request for SO or SOE.
+  example: []
+  syntax:
+    content: >-
+      [Guid("9D66A418-D54A-48ED-88BD-043A25FA9C83")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRESTRequestHandler
+    content.vb: >-
+      <Guid("9D66A418-D54A-48ED-88BD-043A25FA9C83")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRESTRequestHandler
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.ImageServerClass
+  - ESRI.ArcGIS.Carto.MapServerClass
+  - ESRI.ArcGIS.esriSystem.CoRESTDispatcherClass
+  - ESRI.Server.SOESupport.SoeRestImpl
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 9D66A418-D54A-48ED-88BD-043A25FA9C83
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  id: HandleRESTRequest(System.String,System.String,System.String,System.String,System.String,System.String,System.String@)
+  parent: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  langs:
+  - csharp
+  - vb
+  name: HandleRESTRequest(string, string, string, string, string, string, out string)
+  nameWithType: IRESTRequestHandler.HandleRESTRequest(string, string, string, string, string, string, out string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(string, string, string, string, string, string, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Handles REST request for SO or SOE.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: byte[] HandleRESTRequest(string Capabilities, string resourceName, string operationName, string operationInput, string outputFormat, string requestProperties, out string responseProperties)
+    parameters:
+    - id: Capabilities
+      type: System.String
+    - id: resourceName
+      type: System.String
+    - id: operationName
+      type: System.String
+    - id: operationInput
+      type: System.String
+    - id: outputFormat
+      type: System.String
+    - id: requestProperties
+      type: System.String
+    - id: responseProperties
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Function HandleRESTRequest(Capabilities As String, resourceName As String, operationName As String, operationInput As String, outputFormat As String, requestProperties As String, responseProperties As String) As Byte()
+  overload: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest*
+  nameWithType.vb: IRESTRequestHandler.HandleRESTRequest(String, String, String, String, String, String, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest(String, String, String, String, String, String, String)
+  name.vb: HandleRESTRequest(String, String, String, String, String, String, String)
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  id: GetSchema
+  parent: ESRI.ArcGIS.esriSystem.IRESTRequestHandler
+  langs:
+  - csharp
+  - vb
+  name: GetSchema()
+  nameWithType: IRESTRequestHandler.GetSchema()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Obtains REST request schema.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetSchema()
+    return:
+      type: System.String
+    content.vb: Function GetSchema() As String
+  overload: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_HandleRESTRequest_System_String_System_String_System_String_System_String_System_String_System_String_System_String__
+  name: HandleRESTRequest
+  nameWithType: IRESTRequestHandler.HandleRESTRequest
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.HandleRESTRequest
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.html#ESRI_ArcGIS_esriSystem_IRESTRequestHandler_GetSchema
+  name: GetSchema
+  nameWithType: IRESTRequestHandler.GetSchema
+  fullName: ESRI.ArcGIS.esriSystem.IRESTRequestHandler.GetSchema

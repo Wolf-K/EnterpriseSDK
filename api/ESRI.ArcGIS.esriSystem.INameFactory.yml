@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.INameFactory
+  commentId: T:ESRI.ArcGIS.esriSystem.INameFactory
+  id: INameFactory
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.INameFactory.Create(System.String)
+  - ESRI.ArcGIS.esriSystem.INameFactory.PackageNames(ESRI.ArcGIS.esriSystem.IEnumName)
+  - ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames(System.Object@)
+  langs:
+  - csharp
+  - vb
+  name: INameFactory
+  nameWithType: INameFactory
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that work with the Name factory.
+  example: []
+  syntax:
+    content: >-
+      [Guid("51AD0A33-C607-11D2-9F23-00C04F6BC69E")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface INameFactory
+    content.vb: >-
+      <Guid("51AD0A33-C607-11D2-9F23-00C04F6BC69E")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface INameFactory
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.NameFactoryClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 51AD0A33-C607-11D2-9F23-00C04F6BC69E
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.Create(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.INameFactory.Create(System.String)
+  id: Create(System.String)
+  parent: ESRI.ArcGIS.esriSystem.INameFactory
+  langs:
+  - csharp
+  - vb
+  name: Create(string)
+  nameWithType: INameFactory.Create(string)
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.Create(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Finds the correct name-string parser for the given name string, and uses it to create a new Name object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName Create(string NameString)
+    parameters:
+    - id: NameString
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: Function Create(NameString As String) As IName
+  overload: ESRI.ArcGIS.esriSystem.INameFactory.Create*
+  nameWithType.vb: INameFactory.Create(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.INameFactory.Create(String)
+  name.vb: Create(String)
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.PackageNames(ESRI.ArcGIS.esriSystem.IEnumName)
+  commentId: M:ESRI.ArcGIS.esriSystem.INameFactory.PackageNames(ESRI.ArcGIS.esriSystem.IEnumName)
+  id: PackageNames(ESRI.ArcGIS.esriSystem.IEnumName)
+  parent: ESRI.ArcGIS.esriSystem.INameFactory
+  langs:
+  - csharp
+  - vb
+  name: PackageNames(IEnumName)
+  nameWithType: INameFactory.PackageNames(IEnumName)
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.PackageNames(ESRI.ArcGIS.esriSystem.IEnumName)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: object PackageNames(IEnumName names)
+    parameters:
+    - id: names
+      type: ESRI.ArcGIS.esriSystem.IEnumName
+    return:
+      type: System.Object
+    content.vb: Function PackageNames(names As IEnumName) As Object
+  overload: ESRI.ArcGIS.esriSystem.INameFactory.PackageNames*
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames(System.Object@)
+  commentId: M:ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames(System.Object@)
+  id: UnpackageNames(System.Object@)
+  parent: ESRI.ArcGIS.esriSystem.INameFactory
+  langs:
+  - csharp
+  - vb
+  name: UnpackageNames(ref object)
+  nameWithType: INameFactory.UnpackageNames(ref object)
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames(ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Unpackages the given VARIANT into a set of Name objects (typically for responding to a drop operation).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumName UnpackageNames(ref object bytesArray)
+    parameters:
+    - id: bytesArray
+      type: System.Object
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumName
+    content.vb: Function UnpackageNames(bytesArray As Object) As IEnumName
+  overload: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames*
+  nameWithType.vb: INameFactory.UnpackageNames(Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames(Object)
+  name.vb: UnpackageNames(Object)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.Create*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.INameFactory.Create
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.INameFactory.html#ESRI_ArcGIS_esriSystem_INameFactory_Create_System_String_
+  name: Create
+  nameWithType: INameFactory.Create
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.Create
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.PackageNames*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.INameFactory.PackageNames
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.INameFactory.html#ESRI_ArcGIS_esriSystem_INameFactory_PackageNames_ESRI_ArcGIS_esriSystem_IEnumName_
+  name: PackageNames
+  nameWithType: INameFactory.PackageNames
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.PackageNames
+- uid: ESRI.ArcGIS.esriSystem.IEnumName
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumName.html
+  name: IEnumName
+  nameWithType: IEnumName
+  fullName: ESRI.ArcGIS.esriSystem.IEnumName
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.INameFactory.html#ESRI_ArcGIS_esriSystem_INameFactory_UnpackageNames_System_Object__
+  name: UnpackageNames
+  nameWithType: INameFactory.UnpackageNames
+  fullName: ESRI.ArcGIS.esriSystem.INameFactory.UnpackageNames

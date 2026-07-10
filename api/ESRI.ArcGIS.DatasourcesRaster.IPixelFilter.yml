@@ -1,0 +1,268 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  id: IPixelFilter
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IPixelFilter
+  nameWithType: IPixelFilter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a pixel filter.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("90E3DE9D-4FFF-4575-B833-3AD29A57EECA")]
+
+      public interface IPixelFilter
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("90E3DE9D-4FFF-4575-B833-3AD29A57EECA")>
+
+      Public Interface IPixelFilter
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.BackgroundFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.ClipFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.ColormapFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.FocalMeanFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.FocalStatisticsFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  - ESRI.ArcGIS.DatasourcesRaster.LutFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.MultibandFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.NoDataFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.PansharpeningFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.PixelFilterCollectionClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterConvolutionFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RemapFilterClass
+  - ESRI.ArcGIS.DatasourcesRaster.SpeckleFilterClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 90E3DE9D-4FFF-4575-B833-3AD29A57EECA
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(System.Int32@,System.Int32@)
+  id: GetSize(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  langs:
+  - csharp
+  - vb
+  name: GetSize(ref int, ref int)
+  nameWithType: IPixelFilter.GetSize(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets dimension of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetSize(ref int Columns, ref int Rows)
+    parameters:
+    - id: Columns
+      type: System.Int32
+    - id: Rows
+      type: System.Int32
+    content.vb: Sub GetSize(Columns As Integer, Rows As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize*
+  nameWithType.vb: IPixelFilter.GetSize(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize(Integer, Integer)
+  name.vb: GetSize(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(System.Int32@,System.Int32@)
+  id: GetCenterPosition(System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  langs:
+  - csharp
+  - vb
+  name: GetCenterPosition(ref int, ref int)
+  nameWithType: IPixelFilter.GetCenterPosition(ref int, ref int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Gets center position of the filter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void GetCenterPosition(ref int atColumn, ref int atRow)
+    parameters:
+    - id: atColumn
+      type: System.Int32
+    - id: atRow
+      type: System.Int32
+    content.vb: Sub GetCenterPosition(atColumn As Integer, atRow As Integer)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition*
+  nameWithType.vb: IPixelFilter.GetCenterPosition(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition(Integer, Integer)
+  name.vb: GetCenterPosition(Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter
+  langs:
+  - csharp
+  - vb
+  name: Filter(IPixelBlock)
+  nameWithType: IPixelFilter.Filter(IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter(ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Filter(IPixelBlock pBlock)
+    parameters:
+    - id: pBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub Filter(pBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetSize_System_Int32__System_Int32__
+  name: GetSize
+  nameWithType: IPixelFilter.GetSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_GetCenterPosition_System_Int32__System_Int32__
+  name: GetCenterPosition
+  nameWithType: IPixelFilter.GetCenterPosition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.GetCenterPosition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.html#ESRI_ArcGIS_DatasourcesRaster_IPixelFilter_Filter_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Filter
+  nameWithType: IPixelFilter.Filter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelFilter.Filter
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

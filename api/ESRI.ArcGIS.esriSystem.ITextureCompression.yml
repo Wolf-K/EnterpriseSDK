@@ -1,0 +1,339 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression
+  commentId: T:ESRI.ArcGIS.esriSystem.ITextureCompression
+  id: ITextureCompression
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+  - ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Byte@,System.Int32@,System.IntPtr)
+  - ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+  - ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData(System.Byte@)
+  - ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte@,System.Byte@)
+  langs:
+  - csharp
+  - vb
+  name: ITextureCompression
+  nameWithType: ITextureCompression
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to compress and uncompress texture data.
+  example: []
+  syntax:
+    content: >-
+      [Guid("B5F3860A-FCE1-4E71-8F12-BC5C6BB0F280")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITextureCompression
+    content.vb: >-
+      <Guid("B5F3860A-FCE1-4E71-8F12-BC5C6BB0F280")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITextureCompression
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: B5F3860A-FCE1-4E71-8F12-BC5C6BB0F280
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Byte@,System.Int32@,System.IntPtr)
+  commentId: M:ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Byte@,System.Int32@,System.IntPtr)
+  id: CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Byte@,System.Int32@,System.IntPtr)
+  parent: ESRI.ArcGIS.esriSystem.ITextureCompression
+  langs:
+  - csharp
+  - vb
+  name: CompressTexture(esriTextureCompressionType, int, int, int, ref byte, out int, IntPtr)
+  nameWithType: ITextureCompression.CompressTexture(esriTextureCompressionType, int, int, int, ref byte, out int, IntPtr)
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType, int, int, int, ref byte, out int, System.IntPtr)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void CompressTexture(esriTextureCompressionType type, int Width, int height, int channels, ref byte pInData, out int pByteCount, IntPtr ppOutBuff)
+    parameters:
+    - id: type
+      type: ESRI.ArcGIS.esriSystem.esriTextureCompressionType
+    - id: Width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: channels
+      type: System.Int32
+    - id: pInData
+      type: System.Byte
+    - id: pByteCount
+      type: System.Int32
+    - id: ppOutBuff
+      type: System.IntPtr
+    content.vb: Sub CompressTexture(type As esriTextureCompressionType, Width As Integer, height As Integer, channels As Integer, pInData As Byte, pByteCount As Integer, ppOutBuff As IntPtr)
+  overload: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture*
+  nameWithType.vb: ITextureCompression.CompressTexture(esriTextureCompressionType, Integer, Integer, Integer, Byte, Integer, IntPtr)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType, Integer, Integer, Integer, Byte, Integer, System.IntPtr)
+  name.vb: CompressTexture(esriTextureCompressionType, Integer, Integer, Integer, Byte, Integer, IntPtr)
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte@,System.Byte@)
+  id: UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType,System.Int32,System.Int32,System.Int32,System.Int32,System.Byte@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.ITextureCompression
+  langs:
+  - csharp
+  - vb
+  name: UnCompressTexture(esriTextureCompressionType, int, int, int, int, ref byte, out byte)
+  nameWithType: ITextureCompression.UnCompressTexture(esriTextureCompressionType, int, int, int, int, ref byte, out byte)
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType, int, int, int, int, ref byte, out byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: UnCompress the current the input buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UnCompressTexture(esriTextureCompressionType type, int Width, int height, int channels, int Size, ref byte pInData, out byte pOutBuff)
+    parameters:
+    - id: type
+      type: ESRI.ArcGIS.esriSystem.esriTextureCompressionType
+    - id: Width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    - id: channels
+      type: System.Int32
+    - id: Size
+      type: System.Int32
+    - id: pInData
+      type: System.Byte
+    - id: pOutBuff
+      type: System.Byte
+    content.vb: Sub UnCompressTexture(type As esriTextureCompressionType, Width As Integer, height As Integer, channels As Integer, Size As Integer, pInData As Byte, pOutBuff As Byte)
+  overload: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture*
+  nameWithType.vb: ITextureCompression.UnCompressTexture(esriTextureCompressionType, Integer, Integer, Integer, Integer, Byte, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture(ESRI.ArcGIS.esriSystem.esriTextureCompressionType, Integer, Integer, Integer, Integer, Byte, Byte)
+  name.vb: UnCompressTexture(esriTextureCompressionType, Integer, Integer, Integer, Integer, Byte, Byte)
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData(System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData(System.Byte@)
+  id: FreeCompressData(System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.ITextureCompression
+  langs:
+  - csharp
+  - vb
+  name: FreeCompressData(ref byte)
+  nameWithType: ITextureCompression.FreeCompressData(ref byte)
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData(ref byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Free the Compression buffer created in Compress texture.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FreeCompressData(ref byte pInData)
+    parameters:
+    - id: pInData
+      type: System.Byte
+    content.vb: Sub FreeCompressData(pInData As Byte)
+  overload: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData*
+  nameWithType.vb: ITextureCompression.FreeCompressData(Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData(Byte)
+  name.vb: FreeCompressData(Byte)
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+  commentId: P:ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+  id: CompressionQuality
+  parent: ESRI.ArcGIS.esriSystem.ITextureCompression
+  langs:
+  - csharp
+  - vb
+  name: CompressionQuality
+  nameWithType: ITextureCompression.CompressionQuality
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Compression quality of texture data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int CompressionQuality { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property CompressionQuality As Integer
+  overload: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality*
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+  commentId: P:ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+  id: BSQ
+  parent: ESRI.ArcGIS.esriSystem.ITextureCompression
+  langs:
+  - csharp
+  - vb
+  name: BSQ
+  nameWithType: ITextureCompression.BSQ
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates output should be packed in BSQ pixel interleave format.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool BSQ { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property BSQ As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITextureCompression.html#ESRI_ArcGIS_esriSystem_ITextureCompression_CompressTexture_ESRI_ArcGIS_esriSystem_esriTextureCompressionType_System_Int32_System_Int32_System_Int32_System_Byte__System_Int32__System_IntPtr_
+  name: CompressTexture
+  nameWithType: ITextureCompression.CompressTexture
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressTexture
+- uid: ESRI.ArcGIS.esriSystem.esriTextureCompressionType
+  commentId: T:ESRI.ArcGIS.esriSystem.esriTextureCompressionType
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriTextureCompressionType.html
+  name: esriTextureCompressionType
+  nameWithType: esriTextureCompressionType
+  fullName: ESRI.ArcGIS.esriSystem.esriTextureCompressionType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: IntPtr
+  nameWithType: IntPtr
+  fullName: System.IntPtr
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITextureCompression.html#ESRI_ArcGIS_esriSystem_ITextureCompression_UnCompressTexture_ESRI_ArcGIS_esriSystem_esriTextureCompressionType_System_Int32_System_Int32_System_Int32_System_Int32_System_Byte__System_Byte__
+  name: UnCompressTexture
+  nameWithType: ITextureCompression.UnCompressTexture
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.UnCompressTexture
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITextureCompression.html#ESRI_ArcGIS_esriSystem_ITextureCompression_FreeCompressData_System_Byte__
+  name: FreeCompressData
+  nameWithType: ITextureCompression.FreeCompressData
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.FreeCompressData
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITextureCompression.html#ESRI_ArcGIS_esriSystem_ITextureCompression_CompressionQuality
+  name: CompressionQuality
+  nameWithType: ITextureCompression.CompressionQuality
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.CompressionQuality
+- uid: ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITextureCompression.html#ESRI_ArcGIS_esriSystem_ITextureCompression_BSQ
+  name: BSQ
+  nameWithType: ITextureCompression.BSQ
+  fullName: ESRI.ArcGIS.esriSystem.ITextureCompression.BSQ
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

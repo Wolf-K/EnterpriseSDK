@@ -1,0 +1,273 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  id: IFeatureConnect
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName(System.String)
+  - ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+  - ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IFeatureConnect
+  nameWithType: IFeatureConnect
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that expose connector points and connection points.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("A175835A-C4FA-11D1-AEA9-0000F80372B4")]
+
+      public interface IFeatureConnect
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("A175835A-C4FA-11D1-AEA9-0000F80372B4")>
+
+      Public Interface IFeatureConnect
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: A175835A-C4FA-11D1-AEA9-0000F80372B4
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+  id: ConnectionPointCount
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  langs:
+  - csharp
+  - vb
+  name: ConnectionPointCount
+  nameWithType: IFeatureConnect.ConnectionPointCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of connection points associated with the Feature.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ConnectionPointCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ConnectionPointCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint(System.Int32)
+  id: ConnectionPoint(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  langs:
+  - csharp
+  - vb
+  name: ConnectionPoint[int]
+  nameWithType: IFeatureConnect.ConnectionPoint[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified connection point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureElement ConnectionPoint[int connectionPointIndex] { get; }
+    parameters:
+    - id: connectionPointIndex
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureElement
+    content.vb: ReadOnly Property ConnectionPoint(connectionPointIndex As Integer) As IFeatureElement
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint*
+  nameWithType.vb: IFeatureConnect.ConnectionPoint(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint(Integer)
+  name.vb: ConnectionPoint(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName(System.Int32)
+  id: ConnectionPointName(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  langs:
+  - csharp
+  - vb
+  name: ConnectionPointName[int]
+  nameWithType: IFeatureConnect.ConnectionPointName[int]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the specified connection point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ConnectionPointName[int connectionPointIndex] { get; }
+    parameters:
+    - id: connectionPointIndex
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: ReadOnly Property ConnectionPointName(connectionPointIndex As Integer) As String
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName*
+  nameWithType.vb: IFeatureConnect.ConnectionPointName(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName(Integer)
+  name.vb: ConnectionPointName(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName(System.String)
+  id: ConnectionPointByName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureConnect
+  langs:
+  - csharp
+  - vb
+  name: ConnectionPointByName[string]
+  nameWithType: IFeatureConnect.ConnectionPointByName[string]
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The specified named connection point.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureElement ConnectionPointByName[string ConnectionPointName] { get; }
+    parameters:
+    - id: ConnectionPointName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureElement
+    content.vb: ReadOnly Property ConnectionPointByName(ConnectionPointName As String) As IFeatureElement
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName*
+  nameWithType.vb: IFeatureConnect.ConnectionPointByName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName(String)
+  name.vb: ConnectionPointByName(String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureConnect.html#ESRI_ArcGIS_Geodatabase_IFeatureConnect_ConnectionPointCount
+  name: ConnectionPointCount
+  nameWithType: IFeatureConnect.ConnectionPointCount
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureConnect.html#ESRI_ArcGIS_Geodatabase_IFeatureConnect_ConnectionPoint_System_Int32_
+  name: ConnectionPoint
+  nameWithType: IFeatureConnect.ConnectionPoint
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPoint
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureElement
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureElement
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureElement.html
+  name: IFeatureElement
+  nameWithType: IFeatureElement
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureElement
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureConnect.html#ESRI_ArcGIS_Geodatabase_IFeatureConnect_ConnectionPointName_System_Int32_
+  name: ConnectionPointName
+  nameWithType: IFeatureConnect.ConnectionPointName
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureConnect.html#ESRI_ArcGIS_Geodatabase_IFeatureConnect_ConnectionPointByName_System_String_
+  name: ConnectionPointByName
+  nameWithType: IFeatureConnect.ConnectionPointByName
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureConnect.ConnectionPointByName

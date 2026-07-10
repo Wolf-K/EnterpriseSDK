@@ -1,0 +1,981 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  id: LicensedDataExtensionClass
+  parent: ESRI.ArcGIS.DatasourcesFile
+  children:
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile(System.String)
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo(System.Int32)
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile(System.String)
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense(System.Int32)
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup(System.Object@)
+  langs:
+  - csharp
+  - vb
+  name: LicensedDataExtensionClass
+  nameWithType: LicensedDataExtensionClass
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  type: Class
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  syntax:
+    content: >-
+      [Guid("39BC41A4-B140-4F7B-B1C9-ACCD507EE339")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class LicensedDataExtensionClass : LicensedDataExtension, IAutoExtension, IExtension, IDataLicenseManager
+    content.vb: >-
+      <Guid("39BC41A4-B140-4F7B-B1C9-ACCD507EE339")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class LicensedDataExtensionClass Implements LicensedDataExtension, IAutoExtension, IExtension, IDataLicenseManager
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.LicensedDataExtension
+  - ESRI.ArcGIS.esriSystem.IAutoExtension
+  - ESRI.ArcGIS.esriSystem.IExtension
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 39BC41A4-B140-4F7B-B1C9-ACCD507EE339
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: LicensedDataExtensionClass()
+  nameWithType: LicensedDataExtensionClass.LicensedDataExtensionClass()
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.LicensedDataExtensionClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  syntax:
+    content: public LicensedDataExtensionClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor*
+  nameWithType.vb: LicensedDataExtensionClass.New()
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup(System.Object@)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup(System.Object@)
+  id: Startup(System.Object@)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: Startup(ref object)
+  nameWithType: LicensedDataExtensionClass.Startup(ref object)
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup(ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Starts up the extension with the given initialization data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Startup(ref object initializationData)
+    parameters:
+    - id: initializationData
+      type: System.Object
+    content.vb: Overridable Sub Startup(initializationData As Object)
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IExtension.Startup(System.Object@)
+  nameWithType.vb: LicensedDataExtensionClass.Startup(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup(Object)
+  name.vb: Startup(Object)
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown
+  id: Shutdown
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: LicensedDataExtensionClass.Shutdown()
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Shuts down the extension.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void Shutdown()
+    content.vb: Overridable Sub Shutdown()
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IExtension.Shutdown
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo(System.Int32)
+  id: GetLicenseInfo(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: GetLicenseInfo(int)
+  nameWithType: LicensedDataExtensionClass.GetLicenseInfo(int)
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Returns license information by index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IDataLicenseInfo GetLicenseInfo(int nIdx)
+    parameters:
+    - id: nIdx
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo
+    content.vb: Overridable Function GetLicenseInfo(nIdx As Integer) As IDataLicenseInfo
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(System.Int32)
+  nameWithType.vb: LicensedDataExtensionClass.GetLicenseInfo(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo(Integer)
+  name.vb: GetLicenseInfo(Integer)
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile(System.String)
+  id: AddLicenseFromFile(System.String)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: AddLicenseFromFile(string)
+  nameWithType: LicensedDataExtensionClass.AddLicenseFromFile(string)
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Adds license information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void AddLicenseFromFile(string bstrLicenseFileName)
+    parameters:
+    - id: bstrLicenseFileName
+      type: System.String
+    content.vb: Overridable Sub AddLicenseFromFile(bstrLicenseFileName As String)
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(System.String)
+  nameWithType.vb: LicensedDataExtensionClass.AddLicenseFromFile(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile(String)
+  name.vb: AddLicenseFromFile(String)
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense(System.Int32)
+  id: RemoveLicense(System.Int32)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: RemoveLicense(int)
+  nameWithType: LicensedDataExtensionClass.RemoveLicense(int)
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Removes license information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual void RemoveLicense(int nIdx)
+    parameters:
+    - id: nIdx
+      type: System.Int32
+    content.vb: Overridable Sub RemoveLicense(nIdx As Integer)
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(System.Int32)
+  nameWithType.vb: LicensedDataExtensionClass.RemoveLicense(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense(Integer)
+  name.vb: RemoveLicense(Integer)
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile(System.String)
+  id: GetLicenseInfoFromFile(System.String)
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: GetLicenseInfoFromFile(string)
+  nameWithType: LicensedDataExtensionClass.GetLicenseInfoFromFile(string)
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Returns license information by file name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IDataLicenseInfo GetLicenseInfoFromFile(string bstrLicenseFileName)
+    parameters:
+    - id: bstrLicenseFileName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo
+    content.vb: Overridable Function GetLicenseInfoFromFile(bstrLicenseFileName As String) As IDataLicenseInfo
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(System.String)
+  nameWithType.vb: LicensedDataExtensionClass.GetLicenseInfoFromFile(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile(String)
+  name.vb: GetLicenseInfoFromFile(String)
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+  commentId: P:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+  id: Name
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: LicensedDataExtensionClass.Name
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: The name of the extension.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name*
+  implements:
+  - ESRI.ArcGIS.esriSystem.IExtension.Name
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+  commentId: P:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+  id: Count
+  isEii: true
+  parent: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: LicensedDataExtensionClass.Count
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesFile
+  namespace: ESRI.ArcGIS.DatasourcesFile
+  summary: Number of license information.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Overridable ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count*
+  implements:
+  - ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.Count
+references:
+- uid: ESRI.ArcGIS.DatasourcesFile
+  commentId: N:ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesFile
+  nameWithType: ESRI.ArcGIS.DatasourcesFile
+  fullName: ESRI.ArcGIS.DatasourcesFile
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesFile
+    name: DatasourcesFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesFile
+    name: DatasourcesFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtension
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtension
+  parent: ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtension.html
+  name: LicensedDataExtension
+  nameWithType: LicensedDataExtension
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtension
+- uid: ESRI.ArcGIS.esriSystem.IAutoExtension
+  commentId: T:ESRI.ArcGIS.esriSystem.IAutoExtension
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IAutoExtension.html
+  name: IAutoExtension
+  nameWithType: IAutoExtension
+  fullName: ESRI.ArcGIS.esriSystem.IAutoExtension
+- uid: ESRI.ArcGIS.esriSystem.IExtension
+  commentId: T:ESRI.ArcGIS.esriSystem.IExtension
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IExtension.html
+  name: IExtension
+  nameWithType: IExtension
+  fullName: ESRI.ArcGIS.esriSystem.IExtension
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  parent: ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html
+  name: IDataLicenseManager
+  nameWithType: IDataLicenseManager
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass__ctor
+  name: LicensedDataExtensionClass
+  nameWithType: LicensedDataExtensionClass.LicensedDataExtensionClass
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.LicensedDataExtensionClass
+  nameWithType.vb: LicensedDataExtensionClass.New
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_Startup_System_Object__
+  name: Startup
+  nameWithType: LicensedDataExtensionClass.Startup
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Startup
+- uid: ESRI.ArcGIS.esriSystem.IExtension.Startup(System.Object@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtension.Startup(System.Object@)
+  parent: ESRI.ArcGIS.esriSystem.IExtension
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: Startup(ref object)
+  nameWithType: IExtension.Startup(ref object)
+  fullName: ESRI.ArcGIS.esriSystem.IExtension.Startup(ref object)
+  nameWithType.vb: IExtension.Startup(Object)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IExtension.Startup(Object)
+  name.vb: Startup(Object)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IExtension.Startup(System.Object@)
+    name: Startup
+    isExternal: true
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IExtension.Startup(System.Object@)
+    name: Startup
+    isExternal: true
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_Shutdown
+  name: Shutdown
+  nameWithType: LicensedDataExtensionClass.Shutdown
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Shutdown
+- uid: ESRI.ArcGIS.esriSystem.IExtension.Shutdown
+  commentId: M:ESRI.ArcGIS.esriSystem.IExtension.Shutdown
+  parent: ESRI.ArcGIS.esriSystem.IExtension
+  isExternal: true
+  name: Shutdown()
+  nameWithType: IExtension.Shutdown()
+  fullName: ESRI.ArcGIS.esriSystem.IExtension.Shutdown()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.IExtension.Shutdown
+    name: Shutdown
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.IExtension.Shutdown
+    name: Shutdown
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_GetLicenseInfo_System_Int32_
+  name: GetLicenseInfo
+  nameWithType: LicensedDataExtensionClass.GetLicenseInfo
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfo
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfo_System_Int32_
+  name: GetLicenseInfo(int)
+  nameWithType: IDataLicenseManager.GetLicenseInfo(int)
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(int)
+  nameWithType.vb: IDataLicenseManager.GetLicenseInfo(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(Integer)
+  name.vb: GetLicenseInfo(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(System.Int32)
+    name: GetLicenseInfo
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfo_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfo(System.Int32)
+    name: GetLicenseInfo
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfo_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo
+  commentId: T:ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo
+  parent: ESRI.ArcGIS.DatasourcesFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo.html
+  name: IDataLicenseInfo
+  nameWithType: IDataLicenseInfo
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseInfo
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_AddLicenseFromFile_System_String_
+  name: AddLicenseFromFile
+  nameWithType: LicensedDataExtensionClass.AddLicenseFromFile
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.AddLicenseFromFile
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(System.String)
+  parent: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_AddLicenseFromFile_System_String_
+  name: AddLicenseFromFile(string)
+  nameWithType: IDataLicenseManager.AddLicenseFromFile(string)
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(string)
+  nameWithType.vb: IDataLicenseManager.AddLicenseFromFile(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(String)
+  name.vb: AddLicenseFromFile(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(System.String)
+    name: AddLicenseFromFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_AddLicenseFromFile_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.AddLicenseFromFile(System.String)
+    name: AddLicenseFromFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_AddLicenseFromFile_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_RemoveLicense_System_Int32_
+  name: RemoveLicense
+  nameWithType: LicensedDataExtensionClass.RemoveLicense
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.RemoveLicense
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_RemoveLicense_System_Int32_
+  name: RemoveLicense(int)
+  nameWithType: IDataLicenseManager.RemoveLicense(int)
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(int)
+  nameWithType.vb: IDataLicenseManager.RemoveLicense(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(Integer)
+  name.vb: RemoveLicense(Integer)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(System.Int32)
+    name: RemoveLicense
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_RemoveLicense_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.RemoveLicense(System.Int32)
+    name: RemoveLicense
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_RemoveLicense_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_GetLicenseInfoFromFile_System_String_
+  name: GetLicenseInfoFromFile
+  nameWithType: LicensedDataExtensionClass.GetLicenseInfoFromFile
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.GetLicenseInfoFromFile
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(System.String)
+  parent: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfoFromFile_System_String_
+  name: GetLicenseInfoFromFile(string)
+  nameWithType: IDataLicenseManager.GetLicenseInfoFromFile(string)
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(string)
+  nameWithType.vb: IDataLicenseManager.GetLicenseInfoFromFile(String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(String)
+  name.vb: GetLicenseInfoFromFile(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(System.String)
+    name: GetLicenseInfoFromFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfoFromFile_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.GetLicenseInfoFromFile(System.String)
+    name: GetLicenseInfoFromFile
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_GetLicenseInfoFromFile_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_Name
+  name: Name
+  nameWithType: LicensedDataExtensionClass.Name
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Name
+- uid: ESRI.ArcGIS.esriSystem.IExtension.Name
+  commentId: P:ESRI.ArcGIS.esriSystem.IExtension.Name
+  parent: ESRI.ArcGIS.esriSystem.IExtension
+  isExternal: true
+  name: Name
+  nameWithType: IExtension.Name
+  fullName: ESRI.ArcGIS.esriSystem.IExtension.Name
+- uid: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.html#ESRI_ArcGIS_DatasourcesFile_LicensedDataExtensionClass_Count
+  name: Count
+  nameWithType: LicensedDataExtensionClass.Count
+  fullName: ESRI.ArcGIS.DatasourcesFile.LicensedDataExtensionClass.Count
+- uid: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.Count
+  commentId: P:ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.Count
+  parent: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.html#ESRI_ArcGIS_DatasourcesFile_IDataLicenseManager_Count
+  name: Count
+  nameWithType: IDataLicenseManager.Count
+  fullName: ESRI.ArcGIS.DatasourcesFile.IDataLicenseManager.Count

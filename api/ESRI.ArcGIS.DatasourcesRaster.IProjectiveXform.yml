@@ -1,0 +1,671 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  id: IProjectiveXform
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Object@)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geometry.IPointCollection)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints(ESRI.ArcGIS.Geometry.IPointCollection@,ESRI.ArcGIS.Geometry.IPointCollection@)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  langs:
+  - csharp
+  - vb
+  name: IProjectiveXform
+  nameWithType: IProjectiveXform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a projective transform.
+  example: []
+  syntax:
+    content: >-
+      [Guid("E2FA80D1-EE50-43FA-834F-50D056AAE150")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IProjectiveXform : IGeodataXform
+    content.vb: >-
+      <Guid("E2FA80D1-EE50-43FA-834F-50D056AAE150")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IProjectiveXform Inherits IGeodataXform
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.ProjectiveXformClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E2FA80D1-EE50-43FA-834F-50D056AAE150
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  id: Transform(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Int32,ESRI.ArcGIS.esriSystem.WKSPoint@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: Transform(esriTransformDirection, int, ref WKSPoint)
+  nameWithType: IProjectiveXform.Transform(esriTransformDirection, int, ref WKSPoint)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, int, ref ESRI.ArcGIS.esriSystem.WKSPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Transform(esriTransformDirection Direction, int npoints, ref WKSPoint points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: npoints
+      type: System.Int32
+    - id: points
+      type: ESRI.ArcGIS.esriSystem.WKSPoint
+    content.vb: Sub Transform(Direction As esriTransformDirection, npoints As Integer, points As WKSPoint)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform*
+  nameWithType.vb: IProjectiveXform.Transform(esriTransformDirection, Integer, WKSPoint)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform(ESRI.ArcGIS.Geometry.esriTransformDirection, Integer, ESRI.ArcGIS.esriSystem.WKSPoint)
+  name.vb: Transform(esriTransformDirection, Integer, WKSPoint)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Double@,System.Double@,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  nameWithType: IProjectiveXform.TransformCellsize(esriTransformDirection, ref double, ref double, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, ref double, ref double, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformCellsize(esriTransformDirection Direction, ref double dx, ref double dy, IEnvelope AreaOfInterest)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: dx
+      type: System.Double
+    - id: dy
+      type: System.Double
+    - id: AreaOfInterest
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformCellsize(Direction As esriTransformDirection, dx As Double, dy As Double, AreaOfInterest As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize*
+  nameWithType.vb: IProjectiveXform.TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize(ESRI.ArcGIS.Geometry.esriTransformDirection, Double, Double, ESRI.ArcGIS.Geometry.IEnvelope)
+  name.vb: TransformCellsize(esriTransformDirection, Double, Double, IEnvelope)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  id: TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: TransformExtent(esriTransformDirection, IEnvelope)
+  nameWithType: IProjectiveXform.TransformExtent(esriTransformDirection, IEnvelope)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformExtent(esriTransformDirection Direction, IEnvelope Extent)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: Extent
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub TransformExtent(Direction As esriTransformDirection, Extent As IEnvelope)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  id: TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection,ESRI.ArcGIS.Geometry.IPointCollection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: TransformPoints(esriTransformDirection, IPointCollection)
+  nameWithType: IProjectiveXform.TransformPoints(esriTransformDirection, IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints(ESRI.ArcGIS.Geometry.esriTransformDirection, ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void TransformPoints(esriTransformDirection Direction, IPointCollection points)
+    parameters:
+    - id: Direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: points
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub TransformPoints(Direction As esriTransformDirection, points As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geometry.IPointCollection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geometry.IPointCollection)
+  id: DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPointCollection,ESRI.ArcGIS.Geometry.IPointCollection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: DefineFromControlPoints(IPointCollection, IPointCollection)
+  nameWithType: IProjectiveXform.DefineFromControlPoints(IPointCollection, IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints(ESRI.ArcGIS.Geometry.IPointCollection, ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void DefineFromControlPoints(IPointCollection pSrcPoints, IPointCollection pTarPoints)
+    parameters:
+    - id: pSrcPoints
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    - id: pTarPoints
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub DefineFromControlPoints(pSrcPoints As IPointCollection, pTarPoints As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Object@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Object@)
+  id: DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection,System.Object@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: DefineFromCoefficients(esriTransformDirection, ref object)
+  nameWithType: IProjectiveXform.DefineFromCoefficients(esriTransformDirection, ref object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void DefineFromCoefficients(esriTransformDirection direction, ref object pCoef)
+    parameters:
+    - id: direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    - id: pCoef
+      type: System.Object
+    content.vb: Sub DefineFromCoefficients(direction As esriTransformDirection, pCoef As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients*
+  nameWithType.vb: IProjectiveXform.DefineFromCoefficients(esriTransformDirection, Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection, Object)
+  name.vb: DefineFromCoefficients(esriTransformDirection, Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints(ESRI.ArcGIS.Geometry.IPointCollection@,ESRI.ArcGIS.Geometry.IPointCollection@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints(ESRI.ArcGIS.Geometry.IPointCollection@,ESRI.ArcGIS.Geometry.IPointCollection@)
+  id: GetControlPoints(ESRI.ArcGIS.Geometry.IPointCollection@,ESRI.ArcGIS.Geometry.IPointCollection@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: GetControlPoints(out IPointCollection, out IPointCollection)
+  nameWithType: IProjectiveXform.GetControlPoints(out IPointCollection, out IPointCollection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints(out ESRI.ArcGIS.Geometry.IPointCollection, out ESRI.ArcGIS.Geometry.IPointCollection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetControlPoints(out IPointCollection ppSrcPoints, out IPointCollection ppTarPoints)
+    parameters:
+    - id: ppSrcPoints
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    - id: ppTarPoints
+      type: ESRI.ArcGIS.Geometry.IPointCollection
+    content.vb: Sub GetControlPoints(ppSrcPoints As IPointCollection, ppTarPoints As IPointCollection)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints*
+  nameWithType.vb: IProjectiveXform.GetControlPoints(IPointCollection, IPointCollection)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints(ESRI.ArcGIS.Geometry.IPointCollection, ESRI.ArcGIS.Geometry.IPointCollection)
+  name.vb: GetControlPoints(IPointCollection, IPointCollection)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  id: GetCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: GetCoefficients(esriTransformDirection)
+  nameWithType: IProjectiveXform.GetCoefficients(esriTransformDirection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: object GetCoefficients(esriTransformDirection direction)
+    parameters:
+    - id: direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    return:
+      type: System.Object
+    content.vb: Function GetCoefficients(direction As esriTransformDirection) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  id: GetSystemResidual(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: GetSystemResidual(esriTransformDirection)
+  nameWithType: IProjectiveXform.GetSystemResidual(esriTransformDirection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: object GetSystemResidual(esriTransformDirection direction)
+    parameters:
+    - id: direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    return:
+      type: System.Object
+    content.vb: Function GetSystemResidual(direction As esriTransformDirection) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  id: GetSystemRMS(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: GetSystemRMS(esriTransformDirection)
+  nameWithType: IProjectiveXform.GetSystemRMS(esriTransformDirection)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS(ESRI.ArcGIS.Geometry.esriTransformDirection)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: double GetSystemRMS(esriTransformDirection direction)
+    parameters:
+    - id: direction
+      type: ESRI.ArcGIS.Geometry.esriTransformDirection
+    return:
+      type: System.Double
+    content.vb: Function GetSystemRMS(direction As esriTransformDirection) As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IProjectiveXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+  id: Domains
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: Domains
+  nameWithType: IProjectiveXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IGeometryCollection Domains { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometryCollection
+    content.vb: ReadOnly Property Domains As IGeometryCollection
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+  id: IsIdentity
+  parent: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform
+  langs:
+  - csharp
+  - vb
+  name: IsIdentity
+  nameWithType: IProjectiveXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: bool IsIdentity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsIdentity As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_Transform_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Int32_ESRI_ArcGIS_esriSystem_WKSPoint__
+  name: Transform
+  nameWithType: IProjectiveXform.Transform
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Transform
+- uid: ESRI.ArcGIS.Geometry.esriTransformDirection
+  commentId: T:ESRI.ArcGIS.Geometry.esriTransformDirection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriTransformDirection.html
+  name: esriTransformDirection
+  nameWithType: esriTransformDirection
+  fullName: ESRI.ArcGIS.Geometry.esriTransformDirection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPoint
+  commentId: T:ESRI.ArcGIS.esriSystem.WKSPoint
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.WKSPoint.html
+  name: WKSPoint
+  nameWithType: WKSPoint
+  fullName: ESRI.ArcGIS.esriSystem.WKSPoint
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_TransformCellsize_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Double__System_Double__ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformCellsize
+  nameWithType: IProjectiveXform.TransformCellsize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformCellsize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_TransformExtent_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: TransformExtent
+  nameWithType: IProjectiveXform.TransformExtent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformExtent
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_TransformPoints_ESRI_ArcGIS_Geometry_esriTransformDirection_ESRI_ArcGIS_Geometry_IPointCollection_
+  name: TransformPoints
+  nameWithType: IProjectiveXform.TransformPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.TransformPoints
+- uid: ESRI.ArcGIS.Geometry.IPointCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IPointCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPointCollection.html
+  name: IPointCollection
+  nameWithType: IPointCollection
+  fullName: ESRI.ArcGIS.Geometry.IPointCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_DefineFromControlPoints_ESRI_ArcGIS_Geometry_IPointCollection_ESRI_ArcGIS_Geometry_IPointCollection_
+  name: DefineFromControlPoints
+  nameWithType: IProjectiveXform.DefineFromControlPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromControlPoints
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_DefineFromCoefficients_ESRI_ArcGIS_Geometry_esriTransformDirection_System_Object__
+  name: DefineFromCoefficients
+  nameWithType: IProjectiveXform.DefineFromCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.DefineFromCoefficients
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_GetControlPoints_ESRI_ArcGIS_Geometry_IPointCollection__ESRI_ArcGIS_Geometry_IPointCollection__
+  name: GetControlPoints
+  nameWithType: IProjectiveXform.GetControlPoints
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetControlPoints
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_GetCoefficients_ESRI_ArcGIS_Geometry_esriTransformDirection_
+  name: GetCoefficients
+  nameWithType: IProjectiveXform.GetCoefficients
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetCoefficients
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_GetSystemResidual_ESRI_ArcGIS_Geometry_esriTransformDirection_
+  name: GetSystemResidual
+  nameWithType: IProjectiveXform.GetSystemResidual
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemResidual
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_GetSystemRMS_ESRI_ArcGIS_Geometry_esriTransformDirection_
+  name: GetSystemRMS
+  nameWithType: IProjectiveXform.GetSystemRMS
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.GetSystemRMS
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_SpatialReference
+  name: SpatialReference
+  nameWithType: IProjectiveXform.SpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_Domains
+  name: Domains
+  nameWithType: IProjectiveXform.Domains
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.Domains
+- uid: ESRI.ArcGIS.Geometry.IGeometryCollection
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometryCollection
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryCollection.html
+  name: IGeometryCollection
+  nameWithType: IGeometryCollection
+  fullName: ESRI.ArcGIS.Geometry.IGeometryCollection
+- uid: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.html#ESRI_ArcGIS_DatasourcesRaster_IProjectiveXform_IsIdentity
+  name: IsIdentity
+  nameWithType: IProjectiveXform.IsIdentity
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IProjectiveXform.IsIdentity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

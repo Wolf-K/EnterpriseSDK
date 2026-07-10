@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  id: IFullTextSearch
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+  - ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+  - ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+  - ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression
+  langs:
+  - csharp
+  - vb
+  name: IFullTextSearch
+  nameWithType: IFullTextSearch
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Helper for creating full text search queries.
+  example: []
+  syntax:
+    content: >-
+      [Guid("62FB0C61-D148-4A31-BEBA-546C0900394F")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IFullTextSearch
+    content.vb: >-
+      <Guid("62FB0C61-D148-4A31-BEBA-546C0900394F")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IFullTextSearch
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 62FB0C61-D148-4A31-BEBA-546C0900394F
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+  id: HasFullTextIndex
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  langs:
+  - csharp
+  - vb
+  name: HasFullTextIndex
+  nameWithType: IFullTextSearch.HasFullTextIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Check whether the table supports full text search.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasFullTextIndex { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasFullTextIndex As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex*
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+  id: FullTextEligibleFields
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  langs:
+  - csharp
+  - vb
+  name: FullTextEligibleFields
+  nameWithType: IFullTextSearch.FullTextEligibleFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Which columns can be part of a full-text index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray FullTextEligibleFields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: ReadOnly Property FullTextEligibleFields As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields*
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+  id: FullTextSearchableFields
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  langs:
+  - csharp
+  - vb
+  name: FullTextSearchableFields
+  nameWithType: IFullTextSearch.FullTextSearchableFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Which columns are full-text indexed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray FullTextSearchableFields { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: ReadOnly Property FullTextSearchableFields As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields*
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression
+  id: SupportsSQLExpression
+  parent: ESRI.ArcGIS.Geodatabase.IFullTextSearch
+  langs:
+  - csharp
+  - vb
+  name: SupportsSQLExpression
+  nameWithType: IFullTextSearch.SupportsSQLExpression
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Check whether the table supports a SQL expression as a search term.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsSQLExpression { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property SupportsSQLExpression As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextSearch.html#ESRI_ArcGIS_Geodatabase_IFullTextSearch_HasFullTextIndex
+  name: HasFullTextIndex
+  nameWithType: IFullTextSearch.HasFullTextIndex
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.HasFullTextIndex
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextSearch.html#ESRI_ArcGIS_Geodatabase_IFullTextSearch_FullTextEligibleFields
+  name: FullTextEligibleFields
+  nameWithType: IFullTextSearch.FullTextEligibleFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextEligibleFields
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextSearch.html#ESRI_ArcGIS_Geodatabase_IFullTextSearch_FullTextSearchableFields
+  name: FullTextSearchableFields
+  nameWithType: IFullTextSearch.FullTextSearchableFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.FullTextSearchableFields
+- uid: ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFullTextSearch.html#ESRI_ArcGIS_Geodatabase_IFullTextSearch_SupportsSQLExpression
+  name: SupportsSQLExpression
+  nameWithType: IFullTextSearch.SupportsSQLExpression
+  fullName: ESRI.ArcGIS.Geodatabase.IFullTextSearch.SupportsSQLExpression

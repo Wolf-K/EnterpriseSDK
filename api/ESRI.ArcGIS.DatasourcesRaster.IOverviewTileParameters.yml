@@ -1,0 +1,525 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  id: IOverviewTileParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+  - ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+  langs:
+  - csharp
+  - vb
+  name: IOverviewTileParameters
+  nameWithType: IOverviewTileParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control overview tile parameters.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5A70D2D7-2810-4A5B-8791-5DB54AEC9BCF")]
+
+      public interface IOverviewTileParameters
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5A70D2D7-2810-4A5B-8791-5DB54AEC9BCF")>
+
+      Public Interface IOverviewTileParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.DefineOverviewsParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5A70D2D7-2810-4A5B-8791-5DB54AEC9BCF
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+  id: AoiGeometry
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: AoiGeometry
+  nameWithType: IOverviewTileParameters.AoiGeometry
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The polygon within which overview tiles are created.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry AoiGeometry { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Property AoiGeometry As IGeometry
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+  id: Origin
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: Origin
+  nameWithType: IOverviewTileParameters.Origin
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The origin of the grid containing overview tiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPoint Origin { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Property Origin As IPoint
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+  id: CellSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: CellSize
+  nameWithType: IOverviewTileParameters.CellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The cell size of the first level of overview tiles in the units of the coordinate system of the catalog. If this property is not specified, the default value is computed automatically.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double CellSize { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property CellSize As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+  id: TileCols
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: TileCols
+  nameWithType: IOverviewTileParameters.TileCols
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The recommended number of pixel columns in each overview tiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TileCols { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property TileCols As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+  id: TileRows
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: TileRows
+  nameWithType: IOverviewTileParameters.TileRows
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The recommended number of pixel rows in each overview tiles.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TileRows { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property TileRows As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+  id: Levels
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: Levels
+  nameWithType: IOverviewTileParameters.Levels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The number of levels of overview tiles created.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Levels { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Levels As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+  id: OverviewFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: OverviewFactor
+  nameWithType: IOverviewTileParameters.OverviewFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The factor by which two neighboring overview levels differ.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int OverviewFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property OverviewFactor As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  id: MaximumSizeOfTopmostOverview
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: MaximumSizeOfTopmostOverview
+  nameWithType: IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The recommended maximum size (in pixels) on any dimension for the lowest resolution overview item. A higher value for this property results in fewer levels of overviews. The operation continues to define a new level as long as the number of pixels of the overv
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaximumSizeOfTopmostOverview { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaximumSizeOfTopmostOverview As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+  id: WorkspaceName
+  parent: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters
+  langs:
+  - csharp
+  - vb
+  name: WorkspaceName
+  nameWithType: IOverviewTileParameters.WorkspaceName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The workspace name where overview raster datasets are generated and stored.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IWorkspaceName WorkspaceName { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+    content.vb: Property WorkspaceName As IWorkspaceName
+  overload: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_AoiGeometry
+  name: AoiGeometry
+  nameWithType: IOverviewTileParameters.AoiGeometry
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.AoiGeometry
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_Origin
+  name: Origin
+  nameWithType: IOverviewTileParameters.Origin
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Origin
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_CellSize
+  name: CellSize
+  nameWithType: IOverviewTileParameters.CellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.CellSize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_TileCols
+  name: TileCols
+  nameWithType: IOverviewTileParameters.TileCols
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileCols
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_TileRows
+  name: TileRows
+  nameWithType: IOverviewTileParameters.TileRows
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.TileRows
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_Levels
+  name: Levels
+  nameWithType: IOverviewTileParameters.Levels
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.Levels
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_OverviewFactor
+  name: OverviewFactor
+  nameWithType: IOverviewTileParameters.OverviewFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.OverviewFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_MaximumSizeOfTopmostOverview
+  name: MaximumSizeOfTopmostOverview
+  nameWithType: IOverviewTileParameters.MaximumSizeOfTopmostOverview
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.MaximumSizeOfTopmostOverview
+- uid: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.html#ESRI_ArcGIS_DatasourcesRaster_IOverviewTileParameters_WorkspaceName
+  name: WorkspaceName
+  nameWithType: IOverviewTileParameters.WorkspaceName
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IOverviewTileParameters.WorkspaceName
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspaceName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspaceName.html
+  name: IWorkspaceName
+  nameWithType: IWorkspaceName
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspaceName
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

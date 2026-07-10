@@ -1,0 +1,306 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IConflictClass
+  id: IConflictClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+  - ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+  - ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow(System.Int64)
+  - ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+  - ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates
+  langs:
+  - csharp
+  - vb
+  name: IConflictClass
+  nameWithType: IConflictClass
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the conflict class.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("AB22306B-8A2F-11D2-AAE3-00C04FA37585")]
+
+      public interface IConflictClass
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("AB22306B-8A2F-11D2-AAE3-00C04FA37585")>
+
+      Public Interface IConflictClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AB22306B-8A2F-11D2-AAE3-00C04FA37585
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow(System.Int64)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow(System.Int64)
+  id: RestoreRow(System.Int64)
+  parent: ESRI.ArcGIS.Geodatabase.IConflictClass
+  langs:
+  - csharp
+  - vb
+  name: RestoreRow(long)
+  nameWithType: IConflictClass.RestoreRow(long)
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow(long)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Restores the row from either the reconcile version or the prereconcile version.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRow RestoreRow(long rowID)
+    parameters:
+    - id: rowID
+      type: System.Int64
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRow
+    content.vb: Function RestoreRow(rowID As Long) As IRow
+  overload: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow*
+  nameWithType.vb: IConflictClass.RestoreRow(Long)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow(Long)
+  name.vb: RestoreRow(Long)
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+  commentId: P:ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+  id: HasConflicts
+  parent: ESRI.ArcGIS.Geodatabase.IConflictClass
+  langs:
+  - csharp
+  - vb
+  name: HasConflicts
+  nameWithType: IConflictClass.HasConflicts
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if the conflict class contains conflicts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool HasConflicts { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HasConflicts As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts*
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+  commentId: P:ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+  id: UpdateDeletes
+  parent: ESRI.ArcGIS.Geodatabase.IConflictClass
+  langs:
+  - csharp
+  - vb
+  name: UpdateDeletes
+  nameWithType: IConflictClass.UpdateDeletes
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The selection set of all the objects which are update/delete conflicts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet UpdateDeletes { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: ReadOnly Property UpdateDeletes As ISelectionSet
+  overload: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes*
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+  commentId: P:ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+  id: DeleteUpdates
+  parent: ESRI.ArcGIS.Geodatabase.IConflictClass
+  langs:
+  - csharp
+  - vb
+  name: DeleteUpdates
+  nameWithType: IConflictClass.DeleteUpdates
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The selection set of all the objects which are delete/update conflicts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet DeleteUpdates { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: ReadOnly Property DeleteUpdates As ISelectionSet
+  overload: ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates*
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates
+  commentId: P:ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates
+  id: UpdateUpdates
+  parent: ESRI.ArcGIS.Geodatabase.IConflictClass
+  langs:
+  - csharp
+  - vb
+  name: UpdateUpdates
+  nameWithType: IConflictClass.UpdateUpdates
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The selection set of all the objects which are update/update conflicts.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISelectionSet UpdateUpdates { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    content.vb: ReadOnly Property UpdateUpdates As ISelectionSet
+  overload: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IConflictClass.html#ESRI_ArcGIS_Geodatabase_IConflictClass_RestoreRow_System_Int64_
+  name: RestoreRow
+  nameWithType: IConflictClass.RestoreRow
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.RestoreRow
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.IRow
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRow
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRow.html
+  name: IRow
+  nameWithType: IRow
+  fullName: ESRI.ArcGIS.Geodatabase.IRow
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IConflictClass.html#ESRI_ArcGIS_Geodatabase_IConflictClass_HasConflicts
+  name: HasConflicts
+  nameWithType: IConflictClass.HasConflicts
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.HasConflicts
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IConflictClass.html#ESRI_ArcGIS_Geodatabase_IConflictClass_UpdateDeletes
+  name: UpdateDeletes
+  nameWithType: IConflictClass.UpdateDeletes
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateDeletes
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IConflictClass.html#ESRI_ArcGIS_Geodatabase_IConflictClass_DeleteUpdates
+  name: DeleteUpdates
+  nameWithType: IConflictClass.DeleteUpdates
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.DeleteUpdates
+- uid: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IConflictClass.html#ESRI_ArcGIS_Geodatabase_IConflictClass_UpdateUpdates
+  name: UpdateUpdates
+  nameWithType: IConflictClass.UpdateUpdates
+  fullName: ESRI.ArcGIS.Geodatabase.IConflictClass.UpdateUpdates

@@ -1,0 +1,300 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  id: ICollectionTableVersionChanges
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add(ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ITable)
+  - ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count
+  - ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next(ESRI.ArcGIS.Geodatabase.ITable@,ESRI.ArcGIS.Geodatabase.ITable@,System.Object@)
+  - ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll
+  - ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray(System.Int32,System.Object)
+  langs:
+  - csharp
+  - vb
+  name: ICollectionTableVersionChanges
+  nameWithType: ICollectionTableVersionChanges
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members to modify the list of tables that have been changed.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("E1E2702E-8B9E-4322-A332-CAAE8770D657")]
+
+      public interface ICollectionTableVersionChanges
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("E1E2702E-8B9E-4322-A332-CAAE8770D657")>
+
+      Public Interface ICollectionTableVersionChanges
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.EnumTableVersionChangesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E1E2702E-8B9E-4322-A332-CAAE8770D657
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add(ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ITable)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add(ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ITable)
+  id: Add(ESRI.ArcGIS.Geodatabase.ITable,ESRI.ArcGIS.Geodatabase.ITable)
+  parent: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  langs:
+  - csharp
+  - vb
+  name: Add(ITable, ITable)
+  nameWithType: ICollectionTableVersionChanges.Add(ITable, ITable)
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add(ESRI.ArcGIS.Geodatabase.ITable, ESRI.ArcGIS.Geodatabase.ITable)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Add(ITable oldTable, ITable newTable)
+    parameters:
+    - id: oldTable
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    - id: newTable
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Sub Add(oldTable As ITable, newTable As ITable)
+  overload: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add*
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next(ESRI.ArcGIS.Geodatabase.ITable@,ESRI.ArcGIS.Geodatabase.ITable@,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next(ESRI.ArcGIS.Geodatabase.ITable@,ESRI.ArcGIS.Geodatabase.ITable@,System.Object@)
+  id: Next(ESRI.ArcGIS.Geodatabase.ITable@,ESRI.ArcGIS.Geodatabase.ITable@,System.Object@)
+  parent: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  langs:
+  - csharp
+  - vb
+  name: Next(out ITable, out ITable, out object)
+  nameWithType: ICollectionTableVersionChanges.Next(out ITable, out ITable, out object)
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next(out ESRI.ArcGIS.Geodatabase.ITable, out ESRI.ArcGIS.Geodatabase.ITable, out object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Retrieves the next table and array of connections whose version has been changed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Next(out ITable oldTable, out ITable newTable, out object pConnections)
+    parameters:
+    - id: oldTable
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    - id: newTable
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    - id: pConnections
+      type: System.Object
+    content.vb: Sub [Next](oldTable As ITable, newTable As ITable, pConnections As Object)
+  overload: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next*
+  nameWithType.vb: ICollectionTableVersionChanges.Next(ITable, ITable, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next(ESRI.ArcGIS.Geodatabase.ITable, ESRI.ArcGIS.Geodatabase.ITable, Object)
+  name.vb: Next(ITable, ITable, Object)
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray(System.Int32,System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray(System.Int32,System.Object)
+  id: SetConnectionArray(System.Int32,System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  langs:
+  - csharp
+  - vb
+  name: SetConnectionArray(int, object)
+  nameWithType: ICollectionTableVersionChanges.SetConnectionArray(int, object)
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray(int, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Arrays of connections that have been changed
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetConnectionArray(int Index, object pConnectionArray)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pConnectionArray
+      type: System.Object
+    content.vb: Sub SetConnectionArray(Index As Integer, pConnectionArray As Object)
+  overload: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray*
+  nameWithType.vb: ICollectionTableVersionChanges.SetConnectionArray(Integer, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray(Integer, Object)
+  name.vb: SetConnectionArray(Integer, Object)
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll
+  commentId: M:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll
+  id: RemoveAll
+  parent: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  langs:
+  - csharp
+  - vb
+  name: RemoveAll()
+  nameWithType: ICollectionTableVersionChanges.RemoveAll()
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Remove all stored tables.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RemoveAll()
+    content.vb: Sub RemoveAll()
+  overload: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll*
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count
+  commentId: P:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count
+  id: Count
+  parent: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: ICollectionTableVersionChanges.Count
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Count of tables whose version has been changed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Count As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.html#ESRI_ArcGIS_Geodatabase_ICollectionTableVersionChanges_Add_ESRI_ArcGIS_Geodatabase_ITable_ESRI_ArcGIS_Geodatabase_ITable_
+  name: Add
+  nameWithType: ICollectionTableVersionChanges.Add
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Add
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.html#ESRI_ArcGIS_Geodatabase_ICollectionTableVersionChanges_Next_ESRI_ArcGIS_Geodatabase_ITable__ESRI_ArcGIS_Geodatabase_ITable__System_Object__
+  name: Next
+  nameWithType: ICollectionTableVersionChanges.Next
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Next
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.html#ESRI_ArcGIS_Geodatabase_ICollectionTableVersionChanges_SetConnectionArray_System_Int32_System_Object_
+  name: SetConnectionArray
+  nameWithType: ICollectionTableVersionChanges.SetConnectionArray
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.SetConnectionArray
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.html#ESRI_ArcGIS_Geodatabase_ICollectionTableVersionChanges_RemoveAll
+  name: RemoveAll
+  nameWithType: ICollectionTableVersionChanges.RemoveAll
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.RemoveAll
+- uid: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.html#ESRI_ArcGIS_Geodatabase_ICollectionTableVersionChanges_Count
+  name: Count
+  nameWithType: ICollectionTableVersionChanges.Count
+  fullName: ESRI.ArcGIS.Geodatabase.ICollectionTableVersionChanges.Count

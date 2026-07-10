@@ -1,0 +1,563 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  id: ILasPointCloud
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope,System.Double@,System.Double@,System.Double@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IGeometry,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,ESRI.ArcGIS.Geodatabase.IRasterDataset,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo(System.Int32,System.Double,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  langs:
+  - csharp
+  - vb
+  name: ILasPointCloud
+  nameWithType: ILasPointCloud
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to points.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("1928009D-9153-4EC0-A75C-4C24008D28D5")]
+
+      public interface ILasPointCloud
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("1928009D-9153-4EC0-A75C-4C24008D28D5")>
+
+      Public Interface ILasPointCloud
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 1928009D-9153-4EC0-A75C-4C24008D28D5
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  id: EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: EstimatePointCount(IGeometry)
+  nameWithType: ILasPointCloud.EstimatePointCount(IGeometry)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount(ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: double EstimatePointCount(IGeometry pAOI)
+    parameters:
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    return:
+      type: System.Double
+    content.vb: Function EstimatePointCount(pAOI As IGeometry) As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope,System.Double@,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope,System.Double@,System.Double@,System.Double@)
+  id: EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope,System.Double@,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: EstimatePointSpacing(IEnvelope, out double, out double, out double)
+  nameWithType: ILasPointCloud.EstimatePointSpacing(IEnvelope, out double, out double, out double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope, out double, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void EstimatePointSpacing(IEnvelope pAOI, out double pMinSpacing, out double pMaxSpacing, out double pMeanSpacing)
+    parameters:
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: pMinSpacing
+      type: System.Double
+    - id: pMaxSpacing
+      type: System.Double
+    - id: pMeanSpacing
+      type: System.Double
+    content.vb: Sub EstimatePointSpacing(pAOI As IEnvelope, pMinSpacing As Double, pMaxSpacing As Double, pMeanSpacing As Double)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing*
+  nameWithType.vb: ILasPointCloud.EstimatePointSpacing(IEnvelope, Double, Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing(ESRI.ArcGIS.Geometry.IEnvelope, Double, Double, Double)
+  name.vb: EstimatePointSpacing(IEnvelope, Double, Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  id: GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: GetLasPoints(ITrackCancel, ILasPointFilter, double, double)
+  nameWithType: ILasPointCloud.GetLasPoints(ITrackCancel, ILasPointFilter, double, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IEnumLasPoint GetLasPoints(ITrackCancel pTrackCancel, ILasPointFilter pFilter, double thinningFactor, double ZFactor)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pFilter
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+    - id: thinningFactor
+      type: System.Double
+    - id: ZFactor
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint
+    content.vb: Function GetLasPoints(pTrackCancel As ITrackCancel, pFilter As ILasPointFilter, thinningFactor As Double, ZFactor As Double) As IEnumLasPoint
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints*
+  nameWithType.vb: ILasPointCloud.GetLasPoints(ITrackCancel, ILasPointFilter, Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter, Double, Double)
+  name.vb: GetLasPoints(ITrackCancel, ILasPointFilter, Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  id: GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,System.Double,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: GetLasPointsByBudget(ITrackCancel, ILasPointFilter, double, double)
+  nameWithType: ILasPointCloud.GetLasPointsByBudget(ITrackCancel, ILasPointFilter, double, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter, double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IEnumLasPoint GetLasPointsByBudget(ITrackCancel pTrackCancel, ILasPointFilter pFilter, double maxPointCount, double ZFactor)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pFilter
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+    - id: maxPointCount
+      type: System.Double
+    - id: ZFactor
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint
+    content.vb: Function GetLasPointsByBudget(pTrackCancel As ITrackCancel, pFilter As ILasPointFilter, maxPointCount As Double, ZFactor As Double) As IEnumLasPoint
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget*
+  nameWithType.vb: ILasPointCloud.GetLasPointsByBudget(ITrackCancel, ILasPointFilter, Double, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter, Double, Double)
+  name.vb: GetLasPointsByBudget(ITrackCancel, ILasPointFilter, Double, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IGeometry,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IGeometry,System.Double)
+  id: GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.Geometry.IGeometry,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: GetLasPointInfo(ITrackCancel, IGeometry, double)
+  nameWithType: ILasPointCloud.GetLasPointInfo(ITrackCancel, IGeometry, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.Geometry.IGeometry, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IArray GetLasPointInfo(ITrackCancel pTrackCancel, IGeometry pLocation, double PointID)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pLocation
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: PointID
+      type: System.Double
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Function GetLasPointInfo(pTrackCancel As ITrackCancel, pLocation As IGeometry, PointID As Double) As IArray
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo*
+  nameWithType.vb: ILasPointCloud.GetLasPointInfo(ITrackCancel, IGeometry, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.Geometry.IGeometry, Double)
+  name.vb: GetLasPointInfo(ITrackCancel, IGeometry, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo(System.Int32,System.Double,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo(System.Int32,System.Double,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  id: QueryLasPointInfo(System.Int32,System.Double,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: QueryLasPointInfo(int, double, ILasPointInfo)
+  nameWithType: ILasPointCloud.QueryLasPointInfo(int, double, ILasPointInfo)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo(int, double, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void QueryLasPointInfo(int FileIndex, double PointID, ILasPointInfo pInfo)
+    parameters:
+    - id: FileIndex
+      type: System.Int32
+    - id: PointID
+      type: System.Double
+    - id: pInfo
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo
+    content.vb: Sub QueryLasPointInfo(FileIndex As Integer, PointID As Double, pInfo As ILasPointInfo)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo*
+  nameWithType.vb: ILasPointCloud.QueryLasPointInfo(Integer, Double, ILasPointInfo)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo(Integer, Double, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo)
+  name.vb: QueryLasPointInfo(Integer, Double, ILasPointInfo)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,ESRI.ArcGIS.Geodatabase.IRasterDataset,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,ESRI.ArcGIS.Geodatabase.IRasterDataset,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  id: LasPointStatsAsRaster(ESRI.ArcGIS.esriSystem.ITrackCancel,ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter,ESRI.ArcGIS.Geodatabase.IRasterDataset,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType,ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud
+  langs:
+  - csharp
+  - vb
+  name: LasPointStatsAsRaster(ITrackCancel, ILasPointFilter, IRasterDataset, esriLasPointStatsType, esriLasAttributeType)
+  nameWithType: ILasPointCloud.LasPointStatsAsRaster(ITrackCancel, ILasPointFilter, IRasterDataset, esriLasPointStatsType, esriLasAttributeType)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster(ESRI.ArcGIS.esriSystem.ITrackCancel, ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter, ESRI.ArcGIS.Geodatabase.IRasterDataset, ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType, ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void LasPointStatsAsRaster(ITrackCancel pTrackCancel, ILasPointFilter pFilter, IRasterDataset pDataset, esriLasPointStatsType Type, esriLasAttributeType Attribute)
+    parameters:
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    - id: pFilter
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+    - id: pDataset
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    - id: Type
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType
+    - id: Attribute
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+    content.vb: Sub LasPointStatsAsRaster(pTrackCancel As ITrackCancel, pFilter As ILasPointFilter, pDataset As IRasterDataset, Type As esriLasPointStatsType, Attribute As esriLasAttributeType)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_EstimatePointCount_ESRI_ArcGIS_Geometry_IGeometry_
+  name: EstimatePointCount
+  nameWithType: ILasPointCloud.EstimatePointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointCount
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_EstimatePointSpacing_ESRI_ArcGIS_Geometry_IEnvelope_System_Double__System_Double__System_Double__
+  name: EstimatePointSpacing
+  nameWithType: ILasPointCloud.EstimatePointSpacing
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.EstimatePointSpacing
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_GetLasPoints_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointFilter_System_Double_System_Double_
+  name: GetLasPoints
+  nameWithType: ILasPointCloud.GetLasPoints
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPoints
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter.html
+  name: ILasPointFilter
+  nameWithType: ILasPointFilter
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointFilter
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint.html
+  name: IEnumLasPoint
+  nameWithType: IEnumLasPoint
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumLasPoint
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_GetLasPointsByBudget_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointFilter_System_Double_System_Double_
+  name: GetLasPointsByBudget
+  nameWithType: ILasPointCloud.GetLasPointsByBudget
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointsByBudget
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_GetLasPointInfo_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_Geometry_IGeometry_System_Double_
+  name: GetLasPointInfo
+  nameWithType: ILasPointCloud.GetLasPointInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.GetLasPointInfo
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_QueryLasPointInfo_System_Int32_System_Double_ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointInfo_
+  name: QueryLasPointInfo
+  nameWithType: ILasPointCloud.QueryLasPointInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.QueryLasPointInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo.html
+  name: ILasPointInfo
+  nameWithType: ILasPointInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointInfo
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointCloud_LasPointStatsAsRaster_ESRI_ArcGIS_esriSystem_ITrackCancel_ESRI_ArcGIS_GeoDatabaseExtensions_ILasPointFilter_ESRI_ArcGIS_Geodatabase_IRasterDataset_ESRI_ArcGIS_GeoDatabaseExtensions_esriLasPointStatsType_ESRI_ArcGIS_GeoDatabaseExtensions_esriLasAttributeType_
+  name: LasPointStatsAsRaster
+  nameWithType: ILasPointCloud.LasPointStatsAsRaster
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasPointCloud.LasPointStatsAsRaster
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType.html
+  name: esriLasPointStatsType
+  nameWithType: esriLasPointStatsType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasPointStatsType
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType.html
+  name: esriLasAttributeType
+  nameWithType: esriLasAttributeType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

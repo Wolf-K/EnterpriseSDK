@@ -1,0 +1,416 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  id: ISqlWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription,System.String@)
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns(System.String,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription(System.String)
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  - ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ISqlWorkspace
+  nameWithType: ISqlWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Query layer workspace interface
+  example: []
+  syntax:
+    content: >-
+      [Guid("EED692F3-04E5-42D8-A232-4AAD0085E471")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISqlWorkspace
+    content.vb: >-
+      <Guid("EED692F3-04E5-42D8-A232-4AAD0085E471")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISqlWorkspace
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesGDB.SqlWorkspaceClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EED692F3-04E5-42D8-A232-4AAD0085E471
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription(System.String)
+  id: GetQueryDescription(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: GetQueryDescription(string)
+  nameWithType: ISqlWorkspace.GetQueryDescription(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Get query properties including spatial based on the first record of the query.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IQueryDescription GetQueryDescription(string Query)
+    parameters:
+    - id: Query
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryDescription
+    content.vb: Function GetQueryDescription(Query As String) As IQueryDescription
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription*
+  nameWithType.vb: ISqlWorkspace.GetQueryDescription(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription(String)
+  name.vb: GetQueryDescription(String)
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  id: OpenQueryClass(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenQueryClass(string, IQueryDescription)
+  nameWithType: ISqlWorkspace.OpenQueryClass(string, IQueryDescription)
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass(string, ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: ITable OpenQueryClass(string Name, IQueryDescription QueryDescription)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: QueryDescription
+      type: ESRI.ArcGIS.Geodatabase.IQueryDescription
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITable
+    content.vb: Function OpenQueryClass(Name As String, QueryDescription As IQueryDescription) As ITable
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass*
+  nameWithType.vb: ISqlWorkspace.OpenQueryClass(String, IQueryDescription)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass(String, ESRI.ArcGIS.Geodatabase.IQueryDescription)
+  name.vb: OpenQueryClass(String, IQueryDescription)
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor(System.String)
+  id: OpenQueryCursor(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: OpenQueryCursor(string)
+  nameWithType: ISqlWorkspace.OpenQueryCursor(string)
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns a cursor based on a query.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ICursor OpenQueryCursor(string Query)
+    parameters:
+    - id: Query
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ICursor
+    content.vb: Function OpenQueryCursor(Query As String) As ICursor
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor*
+  nameWithType.vb: ISqlWorkspace.OpenQueryCursor(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor(String)
+  name.vb: OpenQueryCursor(String)
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables
+  id: GetTables
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: GetTables()
+  nameWithType: ISqlWorkspace.GetTables()
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns names of all the table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray GetTables()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Function GetTables() As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables*
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns(System.String,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns(System.String,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  id: GetColumns(System.String,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IStringArray@,ESRI.ArcGIS.esriSystem.IVariantArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: GetColumns(string, out IStringArray, out IStringArray, out IVariantArray, out ILongArray, out ILongArray, out ILongArray)
+  nameWithType: ISqlWorkspace.GetColumns(string, out IStringArray, out IStringArray, out IVariantArray, out ILongArray, out ILongArray, out ILongArray)
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns(string, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.esriSystem.IVariantArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.ILongArray, out ESRI.ArcGIS.esriSystem.ILongArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void GetColumns(string TableName, out IStringArray columnName, out IStringArray columnType, out IVariantArray IsNullable, out ILongArray Size, out ILongArray Precision, out ILongArray Scale)
+    parameters:
+    - id: TableName
+      type: System.String
+    - id: columnName
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: columnType
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: IsNullable
+      type: ESRI.ArcGIS.esriSystem.IVariantArray
+    - id: Size
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: Precision
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    - id: Scale
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    content.vb: Sub GetColumns(TableName As String, columnName As IStringArray, columnType As IStringArray, IsNullable As IVariantArray, Size As ILongArray, Precision As ILongArray, Scale As ILongArray)
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns*
+  nameWithType.vb: ISqlWorkspace.GetColumns(String, IStringArray, IStringArray, IVariantArray, ILongArray, ILongArray, ILongArray)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns(String, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.esriSystem.IVariantArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray, ESRI.ArcGIS.esriSystem.ILongArray)
+  name.vb: GetColumns(String, IStringArray, IStringArray, IVariantArray, ILongArray, ILongArray, ILongArray)
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription,System.String@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription,System.String@)
+  id: CheckDatasetName(System.String,ESRI.ArcGIS.Geodatabase.IQueryDescription,System.String@)
+  parent: ESRI.ArcGIS.Geodatabase.ISqlWorkspace
+  langs:
+  - csharp
+  - vb
+  name: CheckDatasetName(string, IQueryDescription, out string)
+  nameWithType: ISqlWorkspace.CheckDatasetName(string, IQueryDescription, out string)
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName(string, ESRI.ArcGIS.Geodatabase.IQueryDescription, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void CheckDatasetName(string Name, IQueryDescription QueryDescription, out string newName)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: QueryDescription
+      type: ESRI.ArcGIS.Geodatabase.IQueryDescription
+    - id: newName
+      type: System.String
+    content.vb: Sub CheckDatasetName(Name As String, QueryDescription As IQueryDescription, newName As String)
+  overload: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName*
+  nameWithType.vb: ISqlWorkspace.CheckDatasetName(String, IQueryDescription, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName(String, ESRI.ArcGIS.Geodatabase.IQueryDescription, String)
+  name.vb: CheckDatasetName(String, IQueryDescription, String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_GetQueryDescription_System_String_
+  name: GetQueryDescription
+  nameWithType: ISqlWorkspace.GetQueryDescription
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetQueryDescription
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IQueryDescription
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryDescription
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryDescription.html
+  name: IQueryDescription
+  nameWithType: IQueryDescription
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryDescription
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_OpenQueryClass_System_String_ESRI_ArcGIS_Geodatabase_IQueryDescription_
+  name: OpenQueryClass
+  nameWithType: ISqlWorkspace.OpenQueryClass
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryClass
+- uid: ESRI.ArcGIS.Geodatabase.ITable
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITable
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITable.html
+  name: ITable
+  nameWithType: ITable
+  fullName: ESRI.ArcGIS.Geodatabase.ITable
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_OpenQueryCursor_System_String_
+  name: OpenQueryCursor
+  nameWithType: ISqlWorkspace.OpenQueryCursor
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.OpenQueryCursor
+- uid: ESRI.ArcGIS.Geodatabase.ICursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.ICursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ICursor.html
+  name: ICursor
+  nameWithType: ICursor
+  fullName: ESRI.ArcGIS.Geodatabase.ICursor
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_GetTables
+  name: GetTables
+  nameWithType: ISqlWorkspace.GetTables
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetTables
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_GetColumns_System_String_ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IStringArray__ESRI_ArcGIS_esriSystem_IVariantArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_ILongArray__ESRI_ArcGIS_esriSystem_ILongArray__
+  name: GetColumns
+  nameWithType: ISqlWorkspace.GetColumns
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.GetColumns
+- uid: ESRI.ArcGIS.esriSystem.IVariantArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IVariantArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IVariantArray.html
+  name: IVariantArray
+  nameWithType: IVariantArray
+  fullName: ESRI.ArcGIS.esriSystem.IVariantArray
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.html#ESRI_ArcGIS_Geodatabase_ISqlWorkspace_CheckDatasetName_System_String_ESRI_ArcGIS_Geodatabase_IQueryDescription_System_String__
+  name: CheckDatasetName
+  nameWithType: ISqlWorkspace.CheckDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlWorkspace.CheckDatasetName

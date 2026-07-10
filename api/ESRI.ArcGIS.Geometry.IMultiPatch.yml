@@ -1,0 +1,815 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch
+  commentId: T:ESRI.ArcGIS.Geometry.IMultiPatch
+  id: IMultiPatch
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount(System.Int32)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+  - ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+  - ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing(ESRI.ArcGIS.Geometry.IRing)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount(ESRI.ArcGIS.Geometry.IRing)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize
+  - ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude(System.Double)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+  - ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType(ESRI.ArcGIS.Geometry.IRing,System.Boolean@)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint
+  - ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+  - ESRI.ArcGIS.Geometry.IMultiPatch.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType(ESRI.ArcGIS.Geometry.IRing,ESRI.ArcGIS.Geometry.esriMultiPatchRingType)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  - ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty
+  - ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference
+  - ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+  - ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+  langs:
+  - csharp
+  - vb
+  name: IMultiPatch
+  nameWithType: IMultiPatch
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that identify a MultiPatch and permit controlled access to its parts.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F3C041C8-AE4D-11D2-9C93-00C04FB17838")]
+
+      public interface IMultiPatch : IGeometry
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F3C041C8-AE4D-11D2-9C93-00C04FB17838")>
+
+      Public Interface IMultiPatch Inherits IGeometry
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F3C041C8-AE4D-11D2-9C93-00C04FB17838
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty
+  id: SetEmpty
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: SetEmpty()
+  nameWithType: IMultiPatch.SetEmpty()
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetEmpty()
+    content.vb: Sub SetEmpty()
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  id: QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: QueryEnvelope(IEnvelope)
+  nameWithType: IMultiPatch.QueryEnvelope(IEnvelope)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope(ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryEnvelope(IEnvelope outEnvelope)
+    parameters:
+    - id: outEnvelope
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Sub QueryEnvelope(outEnvelope As IEnvelope)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  id: Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: Project(ISpatialReference)
+  nameWithType: IMultiPatch.Project(ISpatialReference)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Project(ESRI.ArcGIS.Geometry.ISpatialReference)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Project(ISpatialReference newReferenceSystem)
+    parameters:
+    - id: newReferenceSystem
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Sub Project(newReferenceSystem As ISpatialReference)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.Project*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference
+  id: SnapToSpatialReference
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: SnapToSpatialReference()
+  nameWithType: IMultiPatch.SnapToSpatialReference()
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SnapToSpatialReference()
+    content.vb: Sub SnapToSpatialReference()
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize
+  id: GeoNormalize
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: GeoNormalize()
+  nameWithType: IMultiPatch.GeoNormalize()
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GeoNormalize()
+    content.vb: Sub GeoNormalize()
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude(System.Double)
+  id: GeoNormalizeFromLongitude(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: GeoNormalizeFromLongitude(double)
+  nameWithType: IMultiPatch.GeoNormalizeFromLongitude(double)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void GeoNormalizeFromLongitude(double Longitude)
+    parameters:
+    - id: Longitude
+      type: System.Double
+    content.vb: Sub GeoNormalizeFromLongitude(Longitude As Double)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude*
+  nameWithType.vb: IMultiPatch.GeoNormalizeFromLongitude(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude(Double)
+  name.vb: GeoNormalizeFromLongitude(Double)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing(ESRI.ArcGIS.Geometry.IRing)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing(ESRI.ArcGIS.Geometry.IRing)
+  id: FindBeginningRing(ESRI.ArcGIS.Geometry.IRing)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: FindBeginningRing(IRing)
+  nameWithType: IMultiPatch.FindBeginningRing(IRing)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing(ESRI.ArcGIS.Geometry.IRing)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IRing FindBeginningRing(IRing followingRing)
+    parameters:
+    - id: followingRing
+      type: ESRI.ArcGIS.Geometry.IRing
+    return:
+      type: ESRI.ArcGIS.Geometry.IRing
+    content.vb: Function FindBeginningRing(followingRing As IRing) As IRing
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  id: QueryBeginningRings(System.Int32,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: QueryBeginningRings(int, int, out IRing)
+  nameWithType: IMultiPatch.QueryBeginningRings(int, int, out IRing)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings(int, int, out ESRI.ArcGIS.Geometry.IRing)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Populates an array with references to all beginning rings of the specified types. This method is intended for internal use only.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryBeginningRings(int ringTypesDesired, int numBeginningRingsRequested, out IRing beginningRings)
+    parameters:
+    - id: ringTypesDesired
+      type: System.Int32
+    - id: numBeginningRingsRequested
+      type: System.Int32
+    - id: beginningRings
+      type: ESRI.ArcGIS.Geometry.IRing
+    content.vb: Sub QueryBeginningRings(ringTypesDesired As Integer, numBeginningRingsRequested As Integer, beginningRings As IRing)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings*
+  nameWithType.vb: IMultiPatch.QueryBeginningRings(Integer, Integer, IRing)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings(Integer, Integer, ESRI.ArcGIS.Geometry.IRing)
+  name.vb: QueryBeginningRings(Integer, Integer, IRing)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  id: QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing,System.Int32,ESRI.ArcGIS.Geometry.IRing@)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: QueryFollowingRings(IRing, int, out IRing)
+  nameWithType: IMultiPatch.QueryFollowingRings(IRing, int, out IRing)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing, int, out ESRI.ArcGIS.Geometry.IRing)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryFollowingRings(IRing beginningRing, int numFollowingRingsRequested, out IRing followingRings)
+    parameters:
+    - id: beginningRing
+      type: ESRI.ArcGIS.Geometry.IRing
+    - id: numFollowingRingsRequested
+      type: System.Int32
+    - id: followingRings
+      type: ESRI.ArcGIS.Geometry.IRing
+    content.vb: Sub QueryFollowingRings(beginningRing As IRing, numFollowingRingsRequested As Integer, followingRings As IRing)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings*
+  nameWithType.vb: IMultiPatch.QueryFollowingRings(IRing, Integer, IRing)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings(ESRI.ArcGIS.Geometry.IRing, Integer, ESRI.ArcGIS.Geometry.IRing)
+  name.vb: QueryFollowingRings(IRing, Integer, IRing)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType(ESRI.ArcGIS.Geometry.IRing,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType(ESRI.ArcGIS.Geometry.IRing,System.Boolean@)
+  id: GetRingType(ESRI.ArcGIS.Geometry.IRing,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: GetRingType(IRing, ref bool)
+  nameWithType: IMultiPatch.GetRingType(IRing, ref bool)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType(ESRI.ArcGIS.Geometry.IRing, ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: esriMultiPatchRingType GetRingType(IRing queryRing, ref bool isBeginningRing)
+    parameters:
+    - id: queryRing
+      type: ESRI.ArcGIS.Geometry.IRing
+    - id: isBeginningRing
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geometry.esriMultiPatchRingType
+    content.vb: Function GetRingType(queryRing As IRing, isBeginningRing As Boolean) As esriMultiPatchRingType
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType*
+  nameWithType.vb: IMultiPatch.GetRingType(IRing, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType(ESRI.ArcGIS.Geometry.IRing, Boolean)
+  name.vb: GetRingType(IRing, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType(ESRI.ArcGIS.Geometry.IRing,ESRI.ArcGIS.Geometry.esriMultiPatchRingType)
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType(ESRI.ArcGIS.Geometry.IRing,ESRI.ArcGIS.Geometry.esriMultiPatchRingType)
+  id: PutRingType(ESRI.ArcGIS.Geometry.IRing,ESRI.ArcGIS.Geometry.esriMultiPatchRingType)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: PutRingType(IRing, esriMultiPatchRingType)
+  nameWithType: IMultiPatch.PutRingType(IRing, esriMultiPatchRingType)
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType(ESRI.ArcGIS.Geometry.IRing, ESRI.ArcGIS.Geometry.esriMultiPatchRingType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutRingType(IRing queryRing, esriMultiPatchRingType ringType)
+    parameters:
+    - id: queryRing
+      type: ESRI.ArcGIS.Geometry.IRing
+    - id: ringType
+      type: ESRI.ArcGIS.Geometry.esriMultiPatchRingType
+    content.vb: Sub PutRingType(queryRing As IRing, ringType As esriMultiPatchRingType)
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint
+  commentId: M:ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint
+  id: InvalXYFootprint
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: InvalXYFootprint()
+  nameWithType: IMultiPatch.InvalXYFootprint()
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Notifies the multipatch that its cached footprint has been modified by an outside agent. The footprint will be recalculated the next time it is requested.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void InvalXYFootprint()
+    content.vb: Sub InvalXYFootprint()
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+  id: GeometryType
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: GeometryType
+  nameWithType: IMultiPatch.GeometryType
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: esriGeometryType GeometryType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    content.vb: ReadOnly Property GeometryType As esriGeometryType
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+  id: Dimension
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: Dimension
+  nameWithType: IMultiPatch.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: esriGeometryDimension Dimension { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.esriGeometryDimension
+    content.vb: ReadOnly Property Dimension As esriGeometryDimension
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.Dimension*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: IMultiPatch.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: ISpatialReference SpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+  id: IsEmpty
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: IsEmpty
+  nameWithType: IMultiPatch.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool IsEmpty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsEmpty As Boolean
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+  id: Envelope
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: Envelope
+  nameWithType: IMultiPatch.Envelope
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IEnvelope Envelope { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Envelope As IEnvelope
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.Envelope*
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount(System.Int32)
+  id: BeginningRingCount(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: BeginningRingCount[int]
+  nameWithType: IMultiPatch.BeginningRingCount[int]
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of beginning rings, counting only those of the desired types.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int BeginningRingCount[int ringTypesDesired] { get; }
+    parameters:
+    - id: ringTypesDesired
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BeginningRingCount(ringTypesDesired As Integer) As Integer
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount*
+  nameWithType.vb: IMultiPatch.BeginningRingCount(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount(Integer)
+  name.vb: BeginningRingCount(Integer)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount(ESRI.ArcGIS.Geometry.IRing)
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount(ESRI.ArcGIS.Geometry.IRing)
+  id: FollowingRingCount(ESRI.ArcGIS.Geometry.IRing)
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: FollowingRingCount[IRing]
+  nameWithType: IMultiPatch.FollowingRingCount[IRing]
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount[ESRI.ArcGIS.Geometry.IRing]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of following rings in the ring group that starts with the specified beginning ring.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int FollowingRingCount[IRing beginningRing] { get; }
+    parameters:
+    - id: beginningRing
+      type: ESRI.ArcGIS.Geometry.IRing
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property FollowingRingCount(beginningRing As IRing) As Integer
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount*
+  nameWithType.vb: IMultiPatch.FollowingRingCount(IRing)
+  fullName.vb: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount(ESRI.ArcGIS.Geometry.IRing)
+  name.vb: FollowingRingCount(IRing)
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+  commentId: P:ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+  id: XYFootprint
+  parent: ESRI.ArcGIS.Geometry.IMultiPatch
+  langs:
+  - csharp
+  - vb
+  name: XYFootprint
+  nameWithType: IMultiPatch.XYFootprint
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: A reference to a cached copy of the multipatch's footprint in the x-y plane. If the footprint is modified, InvalXYFootprint should be called.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry XYFootprint { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: ReadOnly Property XYFootprint As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_SetEmpty
+  name: SetEmpty
+  nameWithType: IMultiPatch.SetEmpty
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SetEmpty
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_QueryEnvelope_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: QueryEnvelope
+  nameWithType: IMultiPatch.QueryEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryEnvelope
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Project*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.Project
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_Project_ESRI_ArcGIS_Geometry_ISpatialReference_
+  name: Project
+  nameWithType: IMultiPatch.Project
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Project
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_SnapToSpatialReference
+  name: SnapToSpatialReference
+  nameWithType: IMultiPatch.SnapToSpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SnapToSpatialReference
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_GeoNormalize
+  name: GeoNormalize
+  nameWithType: IMultiPatch.GeoNormalize
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalize
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_GeoNormalizeFromLongitude_System_Double_
+  name: GeoNormalizeFromLongitude
+  nameWithType: IMultiPatch.GeoNormalizeFromLongitude
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeoNormalizeFromLongitude
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_FindBeginningRing_ESRI_ArcGIS_Geometry_IRing_
+  name: FindBeginningRing
+  nameWithType: IMultiPatch.FindBeginningRing
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.FindBeginningRing
+- uid: ESRI.ArcGIS.Geometry.IRing
+  commentId: T:ESRI.ArcGIS.Geometry.IRing
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRing.html
+  name: IRing
+  nameWithType: IRing
+  fullName: ESRI.ArcGIS.Geometry.IRing
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_QueryBeginningRings_System_Int32_System_Int32_ESRI_ArcGIS_Geometry_IRing__
+  name: QueryBeginningRings
+  nameWithType: IMultiPatch.QueryBeginningRings
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryBeginningRings
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_QueryFollowingRings_ESRI_ArcGIS_Geometry_IRing_System_Int32_ESRI_ArcGIS_Geometry_IRing__
+  name: QueryFollowingRings
+  nameWithType: IMultiPatch.QueryFollowingRings
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.QueryFollowingRings
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_GetRingType_ESRI_ArcGIS_Geometry_IRing_System_Boolean__
+  name: GetRingType
+  nameWithType: IMultiPatch.GetRingType
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GetRingType
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.esriMultiPatchRingType
+  commentId: T:ESRI.ArcGIS.Geometry.esriMultiPatchRingType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriMultiPatchRingType.html
+  name: esriMultiPatchRingType
+  nameWithType: esriMultiPatchRingType
+  fullName: ESRI.ArcGIS.Geometry.esriMultiPatchRingType
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_PutRingType_ESRI_ArcGIS_Geometry_IRing_ESRI_ArcGIS_Geometry_esriMultiPatchRingType_
+  name: PutRingType
+  nameWithType: IMultiPatch.PutRingType
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.PutRingType
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_InvalXYFootprint
+  name: InvalXYFootprint
+  nameWithType: IMultiPatch.InvalXYFootprint
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.InvalXYFootprint
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_GeometryType
+  name: GeometryType
+  nameWithType: IMultiPatch.GeometryType
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.GeometryType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Dimension*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_Dimension
+  name: Dimension
+  nameWithType: IMultiPatch.Dimension
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Dimension
+- uid: ESRI.ArcGIS.Geometry.esriGeometryDimension
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryDimension
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryDimension.html
+  name: esriGeometryDimension
+  nameWithType: esriGeometryDimension
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryDimension
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_SpatialReference
+  name: SpatialReference
+  nameWithType: IMultiPatch.SpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_IsEmpty
+  name: IsEmpty
+  nameWithType: IMultiPatch.IsEmpty
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.IsEmpty
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.Envelope*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_Envelope
+  name: Envelope
+  nameWithType: IMultiPatch.Envelope
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.Envelope
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_BeginningRingCount_System_Int32_
+  name: BeginningRingCount
+  nameWithType: IMultiPatch.BeginningRingCount
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.BeginningRingCount
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_FollowingRingCount_ESRI_ArcGIS_Geometry_IRing_
+  name: FollowingRingCount
+  nameWithType: IMultiPatch.FollowingRingCount
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.FollowingRingCount
+- uid: ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMultiPatch.html#ESRI_ArcGIS_Geometry_IMultiPatch_XYFootprint
+  name: XYFootprint
+  nameWithType: IMultiPatch.XYFootprint
+  fullName: ESRI.ArcGIS.Geometry.IMultiPatch.XYFootprint
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry

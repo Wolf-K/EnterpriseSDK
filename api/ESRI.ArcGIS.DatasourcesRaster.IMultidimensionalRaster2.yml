@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  id: IMultidimensionalRaster2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+  langs:
+  - csharp
+  - vb
+  name: IMultidimensionalRaster2
+  nameWithType: IMultidimensionalRaster2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a multidimensional raster.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("C733AA49-C849-40FC-9054-9E6D0BB02CB0")]
+
+      public interface IMultidimensionalRaster2 : IMultidimensionalRaster
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("C733AA49-C849-40FC-9054-9E6D0BB02CB0")>
+
+      Public Interface IMultidimensionalRaster2 Inherits IMultidimensionalRaster
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C733AA49-C849-40FC-9054-9E6D0BB02CB0
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters
+  id: CreateRasters
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: CreateRasters()
+  nameWithType: IMultidimensionalRaster2.CreateRasters()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Creates an array of rasters from a multidimensional raster.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IArray CreateRasters()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Function CreateRasters() As IArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock(System.Int32,System.Int32,System.Int32)
+  id: CreatePixelBlock(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: CreatePixelBlock(int, int, int)
+  nameWithType: IMultidimensionalRaster2.CreatePixelBlock(int, int, int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Create a multidimensional pixel block.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPixelBlock CreatePixelBlock(int nCols, int nRows, int nSlices)
+    parameters:
+    - id: nCols
+      type: System.Int32
+    - id: nRows
+      type: System.Int32
+    - id: nSlices
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Function CreatePixelBlock(nCols As Integer, nRows As Integer, nSlices As Integer) As IPixelBlock
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock*
+  nameWithType.vb: IMultidimensionalRaster2.CreatePixelBlock(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock(Integer, Integer, Integer)
+  name.vb: CreatePixelBlock(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+  id: MultidimensionalDefinition
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: MultidimensionalDefinition
+  nameWithType: IMultidimensionalRaster2.MultidimensionalDefinition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IMultidimensionalDefinition MultidimensionalDefinition { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition
+    content.vb: Property MultidimensionalDefinition As IMultidimensionalDefinition
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+  id: MultidimensionalInfo
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: MultidimensionalInfo
+  nameWithType: IMultidimensionalRaster2.MultidimensionalInfo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The multidimensional object describing the mosaic dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMultidimensionalInfo MultidimensionalInfo { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IMultidimensionalInfo
+    content.vb: ReadOnly Property MultidimensionalInfo As IMultidimensionalInfo
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+  id: Rasters
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: Rasters
+  nameWithType: IMultidimensionalRaster2.Rasters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: All dimension rasters.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumRaster Rasters { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IEnumRaster
+    content.vb: ReadOnly Property Rasters As IEnumRaster
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+  id: RasterCount
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: RasterCount
+  nameWithType: IMultidimensionalRaster2.RasterCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The number of rasters (slices).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int RasterCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property RasterCount As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+  id: Layout
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: Layout
+  nameWithType: IMultidimensionalRaster2.Layout
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The multidimensional raster layout.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Layout { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Layout As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  id: IgnoreMultidimensionalRules
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: IgnoreMultidimensionalRules
+  nameWithType: IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether the raster is subject to multidimensional algebra rules.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IgnoreMultidimensionalRules { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IgnoreMultidimensionalRules As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+  id: IsMultidimensional
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: IsMultidimensional
+  nameWithType: IMultidimensionalRaster2.IsMultidimensional
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether this raster is multidimensional.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsMultidimensional { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsMultidimensional As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+  id: Variables
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: Variables
+  nameWithType: IMultidimensionalRaster2.Variables
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The variable names.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray Variables { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: ReadOnly Property Variables As IStringArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice(System.Int32)
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice(System.Int32)
+  id: Slice(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2
+  langs:
+  - csharp
+  - vb
+  name: Slice[int]
+  nameWithType: IMultidimensionalRaster2.Slice[int]
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The slice at a given slice number (index).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IMultidimensionalDefinition Slice[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition
+    content.vb: ReadOnly Property Slice(Index As Integer) As IMultidimensionalDefinition
+  overload: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice*
+  nameWithType.vb: IMultidimensionalRaster2.Slice(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice(Integer)
+  name.vb: Slice(Integer)
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_CreateRasters
+  name: CreateRasters
+  nameWithType: IMultidimensionalRaster2.CreateRasters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreateRasters
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_CreatePixelBlock_System_Int32_System_Int32_System_Int32_
+  name: CreatePixelBlock
+  nameWithType: IMultidimensionalRaster2.CreatePixelBlock
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.CreatePixelBlock
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_MultidimensionalDefinition
+  name: MultidimensionalDefinition
+  nameWithType: IMultidimensionalRaster2.MultidimensionalDefinition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalDefinition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition.html
+  name: IMultidimensionalDefinition
+  nameWithType: IMultidimensionalDefinition
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalDefinition
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_MultidimensionalInfo
+  name: MultidimensionalInfo
+  nameWithType: IMultidimensionalRaster2.MultidimensionalInfo
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.MultidimensionalInfo
+- uid: ESRI.ArcGIS.Geodatabase.IMultidimensionalInfo
+  commentId: T:ESRI.ArcGIS.Geodatabase.IMultidimensionalInfo
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IMultidimensionalInfo.html
+  name: IMultidimensionalInfo
+  nameWithType: IMultidimensionalInfo
+  fullName: ESRI.ArcGIS.Geodatabase.IMultidimensionalInfo
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_Rasters
+  name: Rasters
+  nameWithType: IMultidimensionalRaster2.Rasters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Rasters
+- uid: ESRI.ArcGIS.DatasourcesRaster.IEnumRaster
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IEnumRaster
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IEnumRaster.html
+  name: IEnumRaster
+  nameWithType: IEnumRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IEnumRaster
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_RasterCount
+  name: RasterCount
+  nameWithType: IMultidimensionalRaster2.RasterCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.RasterCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_Layout
+  name: Layout
+  nameWithType: IMultidimensionalRaster2.Layout
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Layout
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_IgnoreMultidimensionalRules
+  name: IgnoreMultidimensionalRules
+  nameWithType: IMultidimensionalRaster2.IgnoreMultidimensionalRules
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IgnoreMultidimensionalRules
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_IsMultidimensional
+  name: IsMultidimensional
+  nameWithType: IMultidimensionalRaster2.IsMultidimensional
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.IsMultidimensional
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_Variables
+  name: Variables
+  nameWithType: IMultidimensionalRaster2.Variables
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Variables
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.html#ESRI_ArcGIS_DatasourcesRaster_IMultidimensionalRaster2_Slice_System_Int32_
+  name: Slice
+  nameWithType: IMultidimensionalRaster2.Slice
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IMultidimensionalRaster2.Slice

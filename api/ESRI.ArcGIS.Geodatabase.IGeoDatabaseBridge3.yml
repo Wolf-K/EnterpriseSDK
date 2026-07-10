@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  id: IGeoDatabaseBridge3
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32[]@,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int64[]@,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint@,ESRI.ArcGIS.Geometry.IPolyline@,ESRI.ArcGIS.Geometry.IPolyline@,System.Boolean@,System.Boolean,System.Boolean,System.Object@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle,System.Double,System.Double,System.Int32@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterizationType,System.Object,System.Object@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  - ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  langs:
+  - csharp
+  - vb
+  name: IGeoDatabaseBridge3
+  nameWithType: IGeoDatabaseBridge3
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to methods usable in all supported languages.
+  example: []
+  syntax:
+    content: >-
+      [Guid("0C4B0C90-791C-40C0-8E79-5EFC556B8EE2")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IGeoDatabaseBridge3 : IGeoDatabaseBridge2, IGeoDatabaseBridge
+    content.vb: >-
+      <Guid("0C4B0C90-791C-40C0-8E79-5EFC556B8EE2")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IGeoDatabaseBridge3 Inherits IGeoDatabaseBridge2, IGeoDatabaseBridge
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.GeoDatabaseHelperClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0C4B0C90-791C-40C0-8E79-5EFC556B8EE2
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32[]@,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32[]@,System.Boolean)
+  id: GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int32[]@,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: GetFeatures(IFeatureClass, ref int[], bool)
+  nameWithType: IGeoDatabaseBridge3.GetFeatures(IFeatureClass, ref int[], bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass, ref int[], bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureCursor GetFeatures(IFeatureClass pFeatureClass, ref int[] fids, bool Recycling)
+    parameters:
+    - id: pFeatureClass
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: fids
+      type: System.Int32[]
+    - id: Recycling
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    content.vb: Function GetFeatures(pFeatureClass As IFeatureClass, fids As Integer(), Recycling As Boolean) As IFeatureCursor
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures*
+  nameWithType.vb: IGeoDatabaseBridge3.GetFeatures(IFeatureClass, Integer(), Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures(ESRI.ArcGIS.Geodatabase.IFeatureClass, Integer(), Boolean)
+  name.vb: GetFeatures(IFeatureClass, Integer(), Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  id: AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: AddList(ISelectionSet, ref int[])
+  nameWithType: IGeoDatabaseBridge3.AddList(ISelectionSet, ref int[])
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet, ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AddList(ISelectionSet SelectionSet, ref int[] OIDList)
+    parameters:
+    - id: SelectionSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: OIDList
+      type: System.Int32[]
+    content.vb: Sub AddList(SelectionSet As ISelectionSet, OIDList As Integer())
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList*
+  nameWithType.vb: IGeoDatabaseBridge3.AddList(ISelectionSet, Integer())
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList(ESRI.ArcGIS.Geodatabase.ISelectionSet, Integer())
+  name.vb: AddList(ISelectionSet, Integer())
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  id: RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int32[]@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: RemoveList(ISelectionSet, ref int[])
+  nameWithType: IGeoDatabaseBridge3.RemoveList(ISelectionSet, ref int[])
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet, ref int[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void RemoveList(ISelectionSet SelectionSet, ref int[] OIDList)
+    parameters:
+    - id: SelectionSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: OIDList
+      type: System.Int32[]
+    content.vb: Sub RemoveList(SelectionSet As ISelectionSet, OIDList As Integer())
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList*
+  nameWithType.vb: IGeoDatabaseBridge3.RemoveList(ISelectionSet, Integer())
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList(ESRI.ArcGIS.Geodatabase.ISelectionSet, Integer())
+  name.vb: RemoveList(ISelectionSet, Integer())
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle,System.Double,System.Double,System.Int32@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle,System.Double,System.Double,System.Int32@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  id: QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle,System.Double,System.Double,System.Int32@,ESRI.ArcGIS.esriSystem.WKSPointZ[]@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: QueryElevationBand(ITinTriangle, double, double, out int, ref WKSPointZ[])
+  nameWithType: IGeoDatabaseBridge3.QueryElevationBand(ITinTriangle, double, double, out int, ref WKSPointZ[])
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle, double, double, out int, ref ESRI.ArcGIS.esriSystem.WKSPointZ[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryElevationBand(ITinTriangle pTinTriangle, double zLowerBound, double zUpperBound, out int pCount, ref WKSPointZ[] pRegion)
+    parameters:
+    - id: pTinTriangle
+      type: ESRI.ArcGIS.Geodatabase.ITinTriangle
+    - id: zLowerBound
+      type: System.Double
+    - id: zUpperBound
+      type: System.Double
+    - id: pCount
+      type: System.Int32
+    - id: pRegion
+      type: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+    content.vb: Sub QueryElevationBand(pTinTriangle As ITinTriangle, zLowerBound As Double, zUpperBound As Double, pCount As Integer, pRegion As WKSPointZ())
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand*
+  nameWithType.vb: IGeoDatabaseBridge3.QueryElevationBand(ITinTriangle, Double, Double, Integer, WKSPointZ())
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand(ESRI.ArcGIS.Geodatabase.ITinTriangle, Double, Double, Integer, ESRI.ArcGIS.esriSystem.WKSPointZ())
+  name.vb: QueryElevationBand(ITinTriangle, Double, Double, Integer, WKSPointZ())
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterizationType,System.Object,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterizationType,System.Object,System.Object@)
+  id: QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface,System.Double,System.Double,System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterizationType,System.Object,System.Object@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: QueryPixelBlock(ISurface, double, double, double, double, esriRasterizationType, object, ref object)
+  nameWithType: IGeoDatabaseBridge3.QueryPixelBlock(ISurface, double, double, double, double, esriRasterizationType, object, ref object)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface, double, double, double, double, ESRI.ArcGIS.Geodatabase.esriRasterizationType, object, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryPixelBlock(ISurface pSurface, double xOrigin, double yOrigin, double xPixelSize, double yPixelSize, esriRasterizationType Type, object valueForNoData, ref object block)
+    parameters:
+    - id: pSurface
+      type: ESRI.ArcGIS.Geodatabase.ISurface
+    - id: xOrigin
+      type: System.Double
+    - id: yOrigin
+      type: System.Double
+    - id: xPixelSize
+      type: System.Double
+    - id: yPixelSize
+      type: System.Double
+    - id: Type
+      type: ESRI.ArcGIS.Geodatabase.esriRasterizationType
+    - id: valueForNoData
+      type: System.Object
+    - id: block
+      type: System.Object
+    content.vb: Sub QueryPixelBlock(pSurface As ISurface, xOrigin As Double, yOrigin As Double, xPixelSize As Double, yPixelSize As Double, Type As esriRasterizationType, valueForNoData As Object, block As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock*
+  nameWithType.vb: IGeoDatabaseBridge3.QueryPixelBlock(ISurface, Double, Double, Double, Double, esriRasterizationType, Object, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock(ESRI.ArcGIS.Geodatabase.ISurface, Double, Double, Double, Double, ESRI.ArcGIS.Geodatabase.esriRasterizationType, Object, Object)
+  name.vb: QueryPixelBlock(ISurface, Double, Double, Double, Double, esriRasterizationType, Object, Object)
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint@,ESRI.ArcGIS.Geometry.IPolyline@,ESRI.ArcGIS.Geometry.IPolyline@,System.Boolean@,System.Boolean,System.Boolean,System.Object@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint@,ESRI.ArcGIS.Geometry.IPolyline@,ESRI.ArcGIS.Geometry.IPolyline@,System.Boolean@,System.Boolean,System.Boolean,System.Object@)
+  id: GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint,ESRI.ArcGIS.Geometry.IPoint@,ESRI.ArcGIS.Geometry.IPolyline@,ESRI.ArcGIS.Geometry.IPolyline@,System.Boolean@,System.Boolean,System.Boolean,System.Object@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: GetLineOfSight(ISurface, IPoint, IPoint, out IPoint, out IPolyline, out IPolyline, out bool, bool, bool, ref object)
+  nameWithType: IGeoDatabaseBridge3.GetLineOfSight(ISurface, IPoint, IPoint, out IPoint, out IPolyline, out IPolyline, out bool, bool, bool, ref object)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, out ESRI.ArcGIS.Geometry.IPoint, out ESRI.ArcGIS.Geometry.IPolyline, out ESRI.ArcGIS.Geometry.IPolyline, out bool, bool, bool, ref object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void GetLineOfSight(ISurface pSurface, IPoint pObserver, IPoint pTarget, out IPoint ppObstruction, out IPolyline ppVisibleLines, out IPolyline ppInvisibleLines, out bool pbIsVisible, bool bApplyCurvature, bool bApplyRefraction, ref object pRefractionFactor)
+    parameters:
+    - id: pSurface
+      type: ESRI.ArcGIS.Geodatabase.ISurface
+    - id: pObserver
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: pTarget
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: ppObstruction
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: ppVisibleLines
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    - id: ppInvisibleLines
+      type: ESRI.ArcGIS.Geometry.IPolyline
+    - id: pbIsVisible
+      type: System.Boolean
+    - id: bApplyCurvature
+      type: System.Boolean
+    - id: bApplyRefraction
+      type: System.Boolean
+    - id: pRefractionFactor
+      type: System.Object
+    content.vb: Sub GetLineOfSight(pSurface As ISurface, pObserver As IPoint, pTarget As IPoint, ppObstruction As IPoint, ppVisibleLines As IPolyline, ppInvisibleLines As IPolyline, pbIsVisible As Boolean, bApplyCurvature As Boolean, bApplyRefraction As Boolean, pRefractionFactor As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight*
+  nameWithType.vb: IGeoDatabaseBridge3.GetLineOfSight(ISurface, IPoint, IPoint, IPoint, IPolyline, IPolyline, Boolean, Boolean, Boolean, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight(ESRI.ArcGIS.Geodatabase.ISurface, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPoint, ESRI.ArcGIS.Geometry.IPolyline, ESRI.ArcGIS.Geometry.IPolyline, Boolean, Boolean, Boolean, Object)
+  name.vb: GetLineOfSight(ISurface, IPoint, IPoint, IPoint, IPolyline, IPolyline, Boolean, Boolean, Boolean, Object)
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int64[]@,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int64[]@,System.Boolean)
+  id: GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass,System.Int64[]@,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: GetFeatures64(IFeatureClass, ref long[], bool)
+  nameWithType: IGeoDatabaseBridge3.GetFeatures64(IFeatureClass, ref long[], bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass, ref long[], bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IFeatureCursor GetFeatures64(IFeatureClass pFeatureClass, ref long[] fids, bool Recycling)
+    parameters:
+    - id: pFeatureClass
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: fids
+      type: System.Int64[]
+    - id: Recycling
+      type: System.Boolean
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    content.vb: Function GetFeatures64(pFeatureClass As IFeatureClass, fids As Long(), Recycling As Boolean) As IFeatureCursor
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64*
+  nameWithType.vb: IGeoDatabaseBridge3.GetFeatures64(IFeatureClass, Long(), Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64(ESRI.ArcGIS.Geodatabase.IFeatureClass, Long(), Boolean)
+  name.vb: GetFeatures64(IFeatureClass, Long(), Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  id: AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: AddList64(ISelectionSet, ref long[])
+  nameWithType: IGeoDatabaseBridge3.AddList64(ISelectionSet, ref long[])
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet, ref long[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AddList64(ISelectionSet SelectionSet, ref long[] OIDList)
+    parameters:
+    - id: SelectionSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: OIDList
+      type: System.Int64[]
+    content.vb: Sub AddList64(SelectionSet As ISelectionSet, OIDList As Long())
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64*
+  nameWithType.vb: IGeoDatabaseBridge3.AddList64(ISelectionSet, Long())
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64(ESRI.ArcGIS.Geodatabase.ISelectionSet, Long())
+  name.vb: AddList64(ISelectionSet, Long())
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  id: RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet,System.Int64[]@)
+  parent: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3
+  langs:
+  - csharp
+  - vb
+  name: RemoveList64(ISelectionSet, ref long[])
+  nameWithType: IGeoDatabaseBridge3.RemoveList64(ISelectionSet, ref long[])
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet, ref long[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void RemoveList64(ISelectionSet SelectionSet, ref long[] OIDList)
+    parameters:
+    - id: SelectionSet
+      type: ESRI.ArcGIS.Geodatabase.ISelectionSet
+    - id: OIDList
+      type: System.Int64[]
+    content.vb: Sub RemoveList64(SelectionSet As ISelectionSet, OIDList As Long())
+  overload: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64*
+  nameWithType.vb: IGeoDatabaseBridge3.RemoveList64(ISelectionSet, Long())
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64(ESRI.ArcGIS.Geodatabase.ISelectionSet, Long())
+  name.vb: RemoveList64(ISelectionSet, Long())
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_GetFeatures_ESRI_ArcGIS_Geodatabase_IFeatureClass_System_Int32____System_Boolean_
+  name: GetFeatures
+  nameWithType: IGeoDatabaseBridge3.GetFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_AddList_ESRI_ArcGIS_Geodatabase_ISelectionSet_System_Int32____
+  name: AddList
+  nameWithType: IGeoDatabaseBridge3.AddList
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList
+- uid: ESRI.ArcGIS.Geodatabase.ISelectionSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISelectionSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISelectionSet.html
+  name: ISelectionSet
+  nameWithType: ISelectionSet
+  fullName: ESRI.ArcGIS.Geodatabase.ISelectionSet
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_RemoveList_ESRI_ArcGIS_Geodatabase_ISelectionSet_System_Int32____
+  name: RemoveList
+  nameWithType: IGeoDatabaseBridge3.RemoveList
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_QueryElevationBand_ESRI_ArcGIS_Geodatabase_ITinTriangle_System_Double_System_Double_System_Int32__ESRI_ArcGIS_esriSystem_WKSPointZ____
+  name: QueryElevationBand
+  nameWithType: IGeoDatabaseBridge3.QueryElevationBand
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryElevationBand
+- uid: ESRI.ArcGIS.Geodatabase.ITinTriangle
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITinTriangle
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITinTriangle.html
+  name: ITinTriangle
+  nameWithType: ITinTriangle
+  fullName: ESRI.ArcGIS.Geodatabase.ITinTriangle
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+  isExternal: true
+  name: WKSPointZ[]
+  nameWithType: WKSPointZ[]
+  fullName: ESRI.ArcGIS.esriSystem.WKSPointZ[]
+  nameWithType.vb: WKSPointZ()
+  fullName.vb: ESRI.ArcGIS.esriSystem.WKSPointZ()
+  name.vb: WKSPointZ()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.esriSystem.WKSPointZ
+    name: WKSPointZ
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ESRI.ArcGIS.esriSystem.WKSPointZ
+    name: WKSPointZ
+    isExternal: true
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_QueryPixelBlock_ESRI_ArcGIS_Geodatabase_ISurface_System_Double_System_Double_System_Double_System_Double_ESRI_ArcGIS_Geodatabase_esriRasterizationType_System_Object_System_Object__
+  name: QueryPixelBlock
+  nameWithType: IGeoDatabaseBridge3.QueryPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.QueryPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase.ISurface
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISurface
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISurface.html
+  name: ISurface
+  nameWithType: ISurface
+  fullName: ESRI.ArcGIS.Geodatabase.ISurface
+- uid: ESRI.ArcGIS.Geodatabase.esriRasterizationType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriRasterizationType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriRasterizationType.html
+  name: esriRasterizationType
+  nameWithType: esriRasterizationType
+  fullName: ESRI.ArcGIS.Geodatabase.esriRasterizationType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_GetLineOfSight_ESRI_ArcGIS_Geodatabase_ISurface_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_Geometry_IPoint_ESRI_ArcGIS_Geometry_IPoint__ESRI_ArcGIS_Geometry_IPolyline__ESRI_ArcGIS_Geometry_IPolyline__System_Boolean__System_Boolean_System_Boolean_System_Object__
+  name: GetLineOfSight
+  nameWithType: IGeoDatabaseBridge3.GetLineOfSight
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetLineOfSight
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: ESRI.ArcGIS.Geometry.IPolyline
+  commentId: T:ESRI.ArcGIS.Geometry.IPolyline
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolyline.html
+  name: IPolyline
+  nameWithType: IPolyline
+  fullName: ESRI.ArcGIS.Geometry.IPolyline
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_GetFeatures64_ESRI_ArcGIS_Geodatabase_IFeatureClass_System_Int64____System_Boolean_
+  name: GetFeatures64
+  nameWithType: IGeoDatabaseBridge3.GetFeatures64
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.GetFeatures64
+- uid: System.Int64[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long[]
+  nameWithType: long[]
+  fullName: long[]
+  nameWithType.vb: Long()
+  fullName.vb: Long()
+  name.vb: Long()
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_AddList64_ESRI_ArcGIS_Geodatabase_ISelectionSet_System_Int64____
+  name: AddList64
+  nameWithType: IGeoDatabaseBridge3.AddList64
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.AddList64
+- uid: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.html#ESRI_ArcGIS_Geodatabase_IGeoDatabaseBridge3_RemoveList64_ESRI_ArcGIS_Geodatabase_ISelectionSet_System_Int64____
+  name: RemoveList64
+  nameWithType: IGeoDatabaseBridge3.RemoveList64
+  fullName: ESRI.ArcGIS.Geodatabase.IGeoDatabaseBridge3.RemoveList64

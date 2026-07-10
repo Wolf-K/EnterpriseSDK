@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  id: IEnumWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone(ESRI.ArcGIS.Geodatabase.IEnumWorkspace@)
+  - ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next(System.Int32,ESRI.ArcGIS.Geodatabase.IWorkspace@,System.Int32@)
+  - ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset
+  - ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IEnumWorkspace
+  nameWithType: IEnumWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that enumerate workspaces.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("8D39A5FF-BDC8-11D0-87F8-080009EC732A")]
+
+      public interface IEnumWorkspace
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("8D39A5FF-BDC8-11D0-87F8-080009EC732A")>
+
+      Public Interface IEnumWorkspace
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8D39A5FF-BDC8-11D0-87F8-080009EC732A
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next(System.Int32,ESRI.ArcGIS.Geodatabase.IWorkspace@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next(System.Int32,ESRI.ArcGIS.Geodatabase.IWorkspace@,System.Int32@)
+  id: Next(System.Int32,ESRI.ArcGIS.Geodatabase.IWorkspace@,System.Int32@)
+  parent: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Next(int, out IWorkspace, out int)
+  nameWithType: IEnumWorkspace.Next(int, out IWorkspace, out int)
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next(int, out ESRI.ArcGIS.Geodatabase.IWorkspace, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Retrieves the next Workspace in the enumeration sequence.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Next(int numRequested, out IWorkspace workspaces, out int numFetched)
+    parameters:
+    - id: numRequested
+      type: System.Int32
+    - id: workspaces
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    - id: numFetched
+      type: System.Int32
+    content.vb: Sub [Next](numRequested As Integer, workspaces As IWorkspace, numFetched As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next*
+  nameWithType.vb: IEnumWorkspace.Next(Integer, IWorkspace, Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next(Integer, ESRI.ArcGIS.Geodatabase.IWorkspace, Integer)
+  name.vb: Next(Integer, IWorkspace, Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Skip(int)
+  nameWithType: IEnumWorkspace.Skip(int)
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Skips the next Workspace in the enumeration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Skip(int numToSkip)
+    parameters:
+    - id: numToSkip
+      type: System.Int32
+    content.vb: Sub Skip(numToSkip As Integer)
+  overload: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip*
+  nameWithType.vb: IEnumWorkspace.Skip(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip(Integer)
+  name.vb: Skip(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IEnumWorkspace.Reset()
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Resets the enumeration sequence to the beginning.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset*
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone(ESRI.ArcGIS.Geodatabase.IEnumWorkspace@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone(ESRI.ArcGIS.Geodatabase.IEnumWorkspace@)
+  id: Clone(ESRI.ArcGIS.Geodatabase.IEnumWorkspace@)
+  parent: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  langs:
+  - csharp
+  - vb
+  name: Clone(out IEnumWorkspace)
+  nameWithType: IEnumWorkspace.Clone(out IEnumWorkspace)
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone(out ESRI.ArcGIS.Geodatabase.IEnumWorkspace)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a clone of the current enumeration.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Clone(out IEnumWorkspace workspaces)
+    parameters:
+    - id: workspaces
+      type: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+    content.vb: Sub Clone(workspaces As IEnumWorkspace)
+  overload: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone*
+  nameWithType.vb: IEnumWorkspace.Clone(IEnumWorkspace)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone(ESRI.ArcGIS.Geodatabase.IEnumWorkspace)
+  name.vb: Clone(IEnumWorkspace)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.html#ESRI_ArcGIS_Geodatabase_IEnumWorkspace_Next_System_Int32_ESRI_ArcGIS_Geodatabase_IWorkspace__System_Int32__
+  name: Next
+  nameWithType: IEnumWorkspace.Next
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Next
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.html#ESRI_ArcGIS_Geodatabase_IEnumWorkspace_Skip_System_Int32_
+  name: Skip
+  nameWithType: IEnumWorkspace.Skip
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Skip
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.html#ESRI_ArcGIS_Geodatabase_IEnumWorkspace_Reset
+  name: Reset
+  nameWithType: IEnumWorkspace.Reset
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Reset
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.html#ESRI_ArcGIS_Geodatabase_IEnumWorkspace_Clone_ESRI_ArcGIS_Geodatabase_IEnumWorkspace__
+  name: Clone
+  nameWithType: IEnumWorkspace.Clone
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.Clone
+- uid: ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumWorkspace.html
+  name: IEnumWorkspace
+  nameWithType: IEnumWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumWorkspace

@@ -1,0 +1,552 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  id: IRasterFunction2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache(System.Object)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@,ESRI.ArcGIS.Geometry.IGeometry@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.esriSystem.IStringArray@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost(System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache
+  langs:
+  - csharp
+  - vb
+  name: IRasterFunction2
+  nameWithType: IRasterFunction2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a raster function.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("CB7476D9-8621-4A5E-A693-ADBA10F25308")]
+
+      public interface IRasterFunction2
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("CB7476D9-8621-4A5E-A693-ADBA10F25308")>
+
+      Public Interface IRasterFunction2
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.CachedRasterFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.GeometricFunctionClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterInfoFunctionClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasDatasetToRasterFunctionClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasToRasterFunctionClass
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainToRasterFunctionClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: CB7476D9-8621-4A5E-A693-ADBA10F25308
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint(System.Int32)
+  id: ComputeFootprint(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: ComputeFootprint(int)
+  nameWithType: IRasterFunction2.ComputeFootprint(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Computes the footprint.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometry ComputeFootprint(int MaximumVertices)
+    parameters:
+    - id: MaximumVertices
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function ComputeFootprint(MaximumVertices As Integer) As IGeometry
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint*
+  nameWithType.vb: IRasterFunction2.ComputeFootprint(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint(Integer)
+  name.vb: ComputeFootprint(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache
+  id: RefreshCache
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: RefreshCache()
+  nameWithType: IRasterFunction2.RefreshCache()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Refresh raster cache.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RefreshCache()
+    content.vb: Sub RefreshCache()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache(System.Object)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache(System.Object)
+  id: ClearCache(System.Object)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: ClearCache(object)
+  nameWithType: IRasterFunction2.ClearCache(object)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Clear the cache.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ClearCache(object pArguments)
+    parameters:
+    - id: pArguments
+      type: System.Object
+    content.vb: Sub ClearCache(pArguments As Object)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache*
+  nameWithType.vb: IRasterFunction2.ClearCache(Object)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache(Object)
+  name.vb: ClearCache(Object)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.esriSystem.IStringArray@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.esriSystem.IStringArray@)
+  id: GetFiles(ESRI.ArcGIS.Geometry.IGeometry,ESRI.ArcGIS.esriSystem.IStringArray@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: GetFiles(IGeometry, ref IStringArray)
+  nameWithType: IRasterFunction2.GetFiles(IGeometry, ref IStringArray)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles(ESRI.ArcGIS.Geometry.IGeometry, ref ESRI.ArcGIS.esriSystem.IStringArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetFiles(IGeometry pGeometry, ref IStringArray ppFiles)
+    parameters:
+    - id: pGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: ppFiles
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Sub GetFiles(pGeometry As IGeometry, ppFiles As IStringArray)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles*
+  nameWithType.vb: IRasterFunction2.GetFiles(IGeometry, IStringArray)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles(ESRI.ArcGIS.Geometry.IGeometry, ESRI.ArcGIS.esriSystem.IStringArray)
+  name.vb: GetFiles(IGeometry, IStringArray)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost(System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost(System.Double@)
+  id: ProcessingCost(System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: ProcessingCost(ref double)
+  nameWithType: IRasterFunction2.ProcessingCost(ref double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost(ref double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: ''
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ProcessingCost(ref double pProcessingCost)
+    parameters:
+    - id: pProcessingCost
+      type: System.Double
+    content.vb: Sub ProcessingCost(pProcessingCost As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost*
+  nameWithType.vb: IRasterFunction2.ProcessingCost(Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost(Double)
+  name.vb: ProcessingCost(Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@,ESRI.ArcGIS.Geometry.IGeometry@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@,ESRI.ArcGIS.Geometry.IGeometry@)
+  id: ComputeFootprintAndCenter(System.Int32,ESRI.ArcGIS.Geometry.IGeometry@,ESRI.ArcGIS.Geometry.IGeometry@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: ComputeFootprintAndCenter(int, out IGeometry, out IGeometry)
+  nameWithType: IRasterFunction2.ComputeFootprintAndCenter(int, out IGeometry, out IGeometry)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter(int, out ESRI.ArcGIS.Geometry.IGeometry, out ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void ComputeFootprintAndCenter(int MaximumVertices, out IGeometry ppFootprint, out IGeometry ppCenter)
+    parameters:
+    - id: MaximumVertices
+      type: System.Int32
+    - id: ppFootprint
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: ppCenter
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub ComputeFootprintAndCenter(MaximumVertices As Integer, ppFootprint As IGeometry, ppCenter As IGeometry)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter*
+  nameWithType.vb: IRasterFunction2.ComputeFootprintAndCenter(Integer, IGeometry, IGeometry)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter(Integer, ESRI.ArcGIS.Geometry.IGeometry, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: ComputeFootprintAndCenter(Integer, IGeometry, IGeometry)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+  id: IsCacheStale
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: IsCacheStale
+  nameWithType: IRasterFunction2.IsCacheStale
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if the raster cache is stale and needs to be refreshed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsCacheStale { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsCacheStale As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+  id: IsActive
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: IsActive
+  nameWithType: IRasterFunction2.IsActive
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if the function is actively participating in the chain.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsActive { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsActive As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties
+  id: InvalidDatasetProperties
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2
+  langs:
+  - csharp
+  - vb
+  name: InvalidDatasetProperties
+  nameWithType: IRasterFunction2.InvalidDatasetProperties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The properties to be invalidated when a function raster dataset is initialized.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int InvalidDatasetProperties { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property InvalidDatasetProperties As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_ComputeFootprint_System_Int32_
+  name: ComputeFootprint
+  nameWithType: IRasterFunction2.ComputeFootprint
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprint
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_RefreshCache
+  name: RefreshCache
+  nameWithType: IRasterFunction2.RefreshCache
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.RefreshCache
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_ClearCache_System_Object_
+  name: ClearCache
+  nameWithType: IRasterFunction2.ClearCache
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ClearCache
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_GetFiles_ESRI_ArcGIS_Geometry_IGeometry_ESRI_ArcGIS_esriSystem_IStringArray__
+  name: GetFiles
+  nameWithType: IRasterFunction2.GetFiles
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.GetFiles
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_ProcessingCost_System_Double__
+  name: ProcessingCost
+  nameWithType: IRasterFunction2.ProcessingCost
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ProcessingCost
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_ComputeFootprintAndCenter_System_Int32_ESRI_ArcGIS_Geometry_IGeometry__ESRI_ArcGIS_Geometry_IGeometry__
+  name: ComputeFootprintAndCenter
+  nameWithType: IRasterFunction2.ComputeFootprintAndCenter
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.ComputeFootprintAndCenter
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_IsCacheStale
+  name: IsCacheStale
+  nameWithType: IRasterFunction2.IsCacheStale
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsCacheStale
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_IsActive
+  name: IsActive
+  nameWithType: IRasterFunction2.IsActive
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.IsActive
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.html#ESRI_ArcGIS_DatasourcesRaster_IRasterFunction2_InvalidDatasetProperties
+  name: InvalidDatasetProperties
+  nameWithType: IRasterFunction2.InvalidDatasetProperties
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterFunction2.InvalidDatasetProperties

@@ -1,0 +1,211 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IMAware
+  commentId: T:ESRI.ArcGIS.Geometry.IMAware
+  id: IMAware
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IMAware.DropMs
+  - ESRI.ArcGIS.Geometry.IMAware.MAware
+  - ESRI.ArcGIS.Geometry.IMAware.MSimple
+  langs:
+  - csharp
+  - vb
+  name: IMAware
+  nameWithType: IMAware
+  fullName: ESRI.ArcGIS.Geometry.IMAware
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicator interface that identifies geometric objects that can have persistent M values attached to their vertices.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("52C59396-D744-11D2-9F34-00C04F6BDF06")]
+
+      public interface IMAware
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("52C59396-D744-11D2-9F34-00C04F6BDF06")>
+
+      Public Interface IMAware
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  - ESRI.ArcGIS.Geometry.TriangleFanClass
+  - ESRI.ArcGIS.Geometry.TriangleStripClass
+  - ESRI.ArcGIS.Geometry.TrianglesClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 52C59396-D744-11D2-9F34-00C04F6BDF06
+- uid: ESRI.ArcGIS.Geometry.IMAware.DropMs
+  commentId: M:ESRI.ArcGIS.Geometry.IMAware.DropMs
+  id: DropMs
+  parent: ESRI.ArcGIS.Geometry.IMAware
+  langs:
+  - csharp
+  - vb
+  name: DropMs()
+  nameWithType: IMAware.DropMs()
+  fullName: ESRI.ArcGIS.Geometry.IMAware.DropMs()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets all the M values to a non-valid number (NaN).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void DropMs()
+    content.vb: Sub DropMs()
+  overload: ESRI.ArcGIS.Geometry.IMAware.DropMs*
+- uid: ESRI.ArcGIS.Geometry.IMAware.MAware
+  commentId: P:ESRI.ArcGIS.Geometry.IMAware.MAware
+  id: MAware
+  parent: ESRI.ArcGIS.Geometry.IMAware
+  langs:
+  - csharp
+  - vb
+  name: MAware
+  nameWithType: IMAware.MAware
+  fullName: ESRI.ArcGIS.Geometry.IMAware.MAware
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates whether or not the geometry is aware of and capable of handling Ms.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool MAware { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property MAware As Boolean
+  overload: ESRI.ArcGIS.Geometry.IMAware.MAware*
+- uid: ESRI.ArcGIS.Geometry.IMAware.MSimple
+  commentId: P:ESRI.ArcGIS.Geometry.IMAware.MSimple
+  id: MSimple
+  parent: ESRI.ArcGIS.Geometry.IMAware
+  langs:
+  - csharp
+  - vb
+  name: MSimple
+  nameWithType: IMAware.MSimple
+  fullName: ESRI.ArcGIS.Geometry.IMAware.MSimple
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if all the Ms are valid numbers.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool MSimple { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property MSimple As Boolean
+  overload: ESRI.ArcGIS.Geometry.IMAware.MSimple*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IMAware.DropMs*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMAware.DropMs
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMAware.html#ESRI_ArcGIS_Geometry_IMAware_DropMs
+  name: DropMs
+  nameWithType: IMAware.DropMs
+  fullName: ESRI.ArcGIS.Geometry.IMAware.DropMs
+- uid: ESRI.ArcGIS.Geometry.IMAware.MAware*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMAware.MAware
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMAware.html#ESRI_ArcGIS_Geometry_IMAware_MAware
+  name: MAware
+  nameWithType: IMAware.MAware
+  fullName: ESRI.ArcGIS.Geometry.IMAware.MAware
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IMAware.MSimple*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IMAware.MSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IMAware.html#ESRI_ArcGIS_Geometry_IMAware_MSimple
+  name: MSimple
+  nameWithType: IMAware.MSimple
+  fullName: ESRI.ArcGIS.Geometry.IMAware.MSimple

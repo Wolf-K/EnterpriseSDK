@@ -1,0 +1,591 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITopology
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopology
+  id: ITopology
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITopology.AddClass(ESRI.ArcGIS.Geodatabase.IClass,System.Double,System.Int32,System.Int32,System.Boolean)
+  - ESRI.ArcGIS.Geodatabase.ITopology.Cache
+  - ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  - ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+  - ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+  - ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass(ESRI.ArcGIS.Geodatabase.IClass)
+  - ESRI.ArcGIS.Geodatabase.ITopology.State
+  - ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+  - ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology(ESRI.ArcGIS.Geometry.IEnvelope)
+  - ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance
+  langs:
+  - csharp
+  - vb
+  name: ITopology
+  nameWithType: ITopology
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control a topology.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("C08348E2-5AC1-4D88-A2D0-B675317BB6CD")]
+
+      public interface ITopology
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("C08348E2-5AC1-4D88-A2D0-B675317BB6CD")>
+
+      Public Interface ITopology
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C08348E2-5AC1-4D88-A2D0-B675317BB6CD
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology(ESRI.ArcGIS.Geometry.IEnvelope)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology(ESRI.ArcGIS.Geometry.IEnvelope)
+  id: ValidateTopology(ESRI.ArcGIS.Geometry.IEnvelope)
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: ValidateTopology(IEnvelope)
+  nameWithType: ITopology.ValidateTopology(IEnvelope)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology(ESRI.ArcGIS.Geometry.IEnvelope)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IEnvelope ValidateTopology(IEnvelope areaToValidate)
+    parameters:
+    - id: areaToValidate
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: Function ValidateTopology(areaToValidate As IEnvelope) As IEnvelope
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.AddClass(ESRI.ArcGIS.Geodatabase.IClass,System.Double,System.Int32,System.Int32,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopology.AddClass(ESRI.ArcGIS.Geodatabase.IClass,System.Double,System.Int32,System.Int32,System.Boolean)
+  id: AddClass(ESRI.ArcGIS.Geodatabase.IClass,System.Double,System.Int32,System.Int32,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: AddClass(IClass, double, int, int, bool)
+  nameWithType: ITopology.AddClass(IClass, double, int, int, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.AddClass(ESRI.ArcGIS.Geodatabase.IClass, double, int, int, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AddClass(IClass classToAdd, double Weight, int XYRank, int ZRank, bool EventNotificationOnValidate)
+    parameters:
+    - id: classToAdd
+      type: ESRI.ArcGIS.Geodatabase.IClass
+    - id: Weight
+      type: System.Double
+    - id: XYRank
+      type: System.Int32
+    - id: ZRank
+      type: System.Int32
+    - id: EventNotificationOnValidate
+      type: System.Boolean
+    content.vb: Sub AddClass(classToAdd As IClass, Weight As Double, XYRank As Integer, ZRank As Integer, EventNotificationOnValidate As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.AddClass*
+  nameWithType.vb: ITopology.AddClass(IClass, Double, Integer, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopology.AddClass(ESRI.ArcGIS.Geodatabase.IClass, Double, Integer, Integer, Boolean)
+  name.vb: AddClass(IClass, Double, Integer, Integer, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass(ESRI.ArcGIS.Geodatabase.IClass)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass(ESRI.ArcGIS.Geodatabase.IClass)
+  id: RemoveClass(ESRI.ArcGIS.Geodatabase.IClass)
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: RemoveClass(IClass)
+  nameWithType: ITopology.RemoveClass(IClass)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass(ESRI.ArcGIS.Geodatabase.IClass)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void RemoveClass(IClass classToRemove)
+    parameters:
+    - id: classToRemove
+      type: ESRI.ArcGIS.Geodatabase.IClass
+    content.vb: Sub RemoveClass(classToRemove As IClass)
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.State
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.State
+  id: State
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: ITopology.State
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.State
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether the topology is clean or not.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriTopologyState State { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriTopologyState
+    content.vb: ReadOnly Property State As esriTopologyState
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.State*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+  id: ClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: ClusterTolerance
+  nameWithType: ITopology.ClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The cluster tolerance of the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property ClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.Cache
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.Cache
+  id: Cache
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: Cache
+  nameWithType: ITopology.Cache
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.Cache
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The topology graph of the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopologyGraph Cache { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopologyGraph
+    content.vb: ReadOnly Property Cache As ITopologyGraph
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.Cache*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+  id: FeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: FeatureDataset
+  nameWithType: ITopology.FeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The feature dataset that contains the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureDataset FeatureDataset { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: ReadOnly Property FeatureDataset As IFeatureDataset
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+  id: MaximumGeneratedErrorCount
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: MaximumGeneratedErrorCount
+  nameWithType: ITopology.MaximumGeneratedErrorCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The maximum number of errors to generate when validating a topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaximumGeneratedErrorCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaximumGeneratedErrorCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+  id: TopologyID
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: TopologyID
+  nameWithType: ITopology.TopologyID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The ID of the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TopologyID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TopologyID As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.TopologyID*
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  id: DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: DirtyArea[IPolygon]
+  nameWithType: ITopology.DirtyArea[IPolygon]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea[ESRI.ArcGIS.Geometry.IPolygon]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The dirty area polygon of the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IPolygon DirtyArea[IPolygon Location] { get; }
+    parameters:
+    - id: Location
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    return:
+      type: ESRI.ArcGIS.Geometry.IPolygon
+    content.vb: ReadOnly Property DirtyArea(Location As IPolygon) As IPolygon
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea*
+  nameWithType.vb: ITopology.DirtyArea(IPolygon)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea(ESRI.ArcGIS.Geometry.IPolygon)
+  name.vb: DirtyArea(IPolygon)
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance
+  id: ZClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopology
+  langs:
+  - csharp
+  - vb
+  name: ZClusterTolerance
+  nameWithType: ITopology.ZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The z cluster tolerance of the topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double ZClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property ZClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_ValidateTopology_ESRI_ArcGIS_Geometry_IEnvelope_
+  name: ValidateTopology
+  nameWithType: ITopology.ValidateTopology
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ValidateTopology
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.AddClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.AddClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_AddClass_ESRI_ArcGIS_Geodatabase_IClass_System_Double_System_Int32_System_Int32_System_Boolean_
+  name: AddClass
+  nameWithType: ITopology.AddClass
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.AddClass
+- uid: ESRI.ArcGIS.Geodatabase.IClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClass.html
+  name: IClass
+  nameWithType: IClass
+  fullName: ESRI.ArcGIS.Geodatabase.IClass
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_RemoveClass_ESRI_ArcGIS_Geodatabase_IClass_
+  name: RemoveClass
+  nameWithType: ITopology.RemoveClass
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.RemoveClass
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.State*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.State
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_State
+  name: State
+  nameWithType: ITopology.State
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.State
+- uid: ESRI.ArcGIS.Geodatabase.esriTopologyState
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriTopologyState
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriTopologyState.html
+  name: esriTopologyState
+  nameWithType: esriTopologyState
+  fullName: ESRI.ArcGIS.Geodatabase.esriTopologyState
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_ClusterTolerance
+  name: ClusterTolerance
+  nameWithType: ITopology.ClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.Cache*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.Cache
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_Cache
+  name: Cache
+  nameWithType: ITopology.Cache
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.Cache
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyGraph
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyGraph
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyGraph.html
+  name: ITopologyGraph
+  nameWithType: ITopologyGraph
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyGraph
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_FeatureDataset
+  name: FeatureDataset
+  nameWithType: ITopology.FeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.FeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDataset.html
+  name: IFeatureDataset
+  nameWithType: IFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_MaximumGeneratedErrorCount
+  name: MaximumGeneratedErrorCount
+  nameWithType: ITopology.MaximumGeneratedErrorCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.MaximumGeneratedErrorCount
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.TopologyID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_TopologyID
+  name: TopologyID
+  nameWithType: ITopology.TopologyID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.TopologyID
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_DirtyArea_ESRI_ArcGIS_Geometry_IPolygon_
+  name: DirtyArea
+  nameWithType: ITopology.DirtyArea
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.DirtyArea
+- uid: ESRI.ArcGIS.Geometry.IPolygon
+  commentId: T:ESRI.ArcGIS.Geometry.IPolygon
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolygon.html
+  name: IPolygon
+  nameWithType: IPolygon
+  fullName: ESRI.ArcGIS.Geometry.IPolygon
+- uid: ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html#ESRI_ArcGIS_Geodatabase_ITopology_ZClusterTolerance
+  name: ZClusterTolerance
+  nameWithType: ITopology.ZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology.ZClusterTolerance

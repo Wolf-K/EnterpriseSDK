@@ -1,0 +1,487 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  commentId: T:ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  id: IBezierCurveGEN
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint(ESRI.ArcGIS.Geometry.IPoint)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  - ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IBezierCurveGEN
+  nameWithType: IBezierCurveGEN
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: OLE automation compatibility interface for IBezierCurve.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("64DE4FD4-6E85-41EF-8401-8BDE5E7BEAAB")]
+
+      public interface IBezierCurveGEN
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("64DE4FD4-6E85-41EF-8401-8BDE5E7BEAAB")>
+
+      Public Interface IBezierCurveGEN
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.BezierCurveClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 64DE4FD4-6E85-41EF-8401-8BDE5E7BEAAB
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  id: QueryCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryCoords(ref IPoint[])
+  nameWithType: IBezierCurveGEN.QueryCoords(ref IPoint[])
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords(ref ESRI.ArcGIS.Geometry.IPoint[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets the existing elements of an existing safe array to be equal to the four control points of this bezier curve.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void QueryCoords(ref IPoint[] controlPoints)
+    parameters:
+    - id: controlPoints
+      type: ESRI.ArcGIS.Geometry.IPoint[]
+    content.vb: Sub QueryCoords(controlPoints As IPoint())
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords*
+  nameWithType.vb: IBezierCurveGEN.QueryCoords(IPoint())
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords(ESRI.ArcGIS.Geometry.IPoint())
+  name.vb: QueryCoords(IPoint())
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  id: PutCoords(ESRI.ArcGIS.Geometry.IPoint[]@)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: PutCoords(ref IPoint[])
+  nameWithType: IBezierCurveGEN.PutCoords(ref IPoint[])
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords(ref ESRI.ArcGIS.Geometry.IPoint[])
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets this Bezier curve's control points from an array of between 1 to 4 input points.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PutCoords(ref IPoint[] controlPoints)
+    parameters:
+    - id: controlPoints
+      type: ESRI.ArcGIS.Geometry.IPoint[]
+    content.vb: Sub PutCoords(controlPoints As IPoint())
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords*
+  nameWithType.vb: IBezierCurveGEN.PutCoords(IPoint())
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords(ESRI.ArcGIS.Geometry.IPoint())
+  name.vb: PutCoords(IPoint())
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryCoord(int, IPoint)
+  nameWithType: IBezierCurveGEN.QueryCoord(int, IPoint)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord(int, ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryCoord(int Index, IPoint controlPoint)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: controlPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryCoord(Index As Integer, controlPoint As IPoint)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord*
+  nameWithType.vb: IBezierCurveGEN.QueryCoord(Integer, IPoint)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord(Integer, ESRI.ArcGIS.Geometry.IPoint)
+  name.vb: QueryCoord(Integer, IPoint)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  id: PutCoord(System.Int32,ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: PutCoord(int, IPoint)
+  nameWithType: IBezierCurveGEN.PutCoord(int, IPoint)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord(int, ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void PutCoord(int Index, IPoint controlPoint)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: controlPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub PutCoord(Index As Integer, controlPoint As IPoint)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord*
+  nameWithType.vb: IBezierCurveGEN.PutCoord(Integer, IPoint)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord(Integer, ESRI.ArcGIS.Geometry.IPoint)
+  name.vb: PutCoord(Integer, IPoint)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  id: QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryChordLengthTangentAtFrom(IPoint, ref bool)
+  nameWithType: IBezierCurveGEN.QueryChordLengthTangentAtFrom(IPoint, ref bool)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint, ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryChordLengthTangentAtFrom(IPoint tangent, ref bool setByUser)
+    parameters:
+    - id: tangent
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: setByUser
+      type: System.Boolean
+    content.vb: Sub QueryChordLengthTangentAtFrom(tangent As IPoint, setByUser As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom*
+  nameWithType.vb: IBezierCurveGEN.QueryChordLengthTangentAtFrom(IPoint, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint, Boolean)
+  name.vb: QueryChordLengthTangentAtFrom(IPoint, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  id: QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryChordLengthTangentAtTo(IPoint, ref bool)
+  nameWithType: IBezierCurveGEN.QueryChordLengthTangentAtTo(IPoint, ref bool)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint, ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryChordLengthTangentAtTo(IPoint tangent, ref bool setByUser)
+    parameters:
+    - id: tangent
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: setByUser
+      type: System.Boolean
+    content.vb: Sub QueryChordLengthTangentAtTo(tangent As IPoint, setByUser As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo*
+  nameWithType.vb: IBezierCurveGEN.QueryChordLengthTangentAtTo(IPoint, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint, Boolean)
+  name.vb: QueryChordLengthTangentAtTo(IPoint, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  id: SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: SetChordLengthTangentAtFrom(IPoint, bool)
+  nameWithType: IBezierCurveGEN.SetChordLengthTangentAtFrom(IPoint, bool)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetChordLengthTangentAtFrom(IPoint tangent, bool setByUser)
+    parameters:
+    - id: tangent
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: setByUser
+      type: System.Boolean
+    content.vb: Sub SetChordLengthTangentAtFrom(tangent As IPoint, setByUser As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom*
+  nameWithType.vb: IBezierCurveGEN.SetChordLengthTangentAtFrom(IPoint, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom(ESRI.ArcGIS.Geometry.IPoint, Boolean)
+  name.vb: SetChordLengthTangentAtFrom(IPoint, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  id: SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint,System.Boolean)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: SetChordLengthTangentAtTo(IPoint, bool)
+  nameWithType: IBezierCurveGEN.SetChordLengthTangentAtTo(IPoint, bool)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void SetChordLengthTangentAtTo(IPoint tangent, bool setByUser)
+    parameters:
+    - id: tangent
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: setByUser
+      type: System.Boolean
+    content.vb: Sub SetChordLengthTangentAtTo(tangent As IPoint, setByUser As Boolean)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo*
+  nameWithType.vb: IBezierCurveGEN.SetChordLengthTangentAtTo(IPoint, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo(ESRI.ArcGIS.Geometry.IPoint, Boolean)
+  name.vb: SetChordLengthTangentAtTo(IPoint, Boolean)
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint(ESRI.ArcGIS.Geometry.IPoint)
+  commentId: M:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint(ESRI.ArcGIS.Geometry.IPoint)
+  id: QueryInflectionPoint(ESRI.ArcGIS.Geometry.IPoint)
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: QueryInflectionPoint(IPoint)
+  nameWithType: IBezierCurveGEN.QueryInflectionPoint(IPoint)
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint(ESRI.ArcGIS.Geometry.IPoint)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void QueryInflectionPoint(IPoint inflectionPoint)
+    parameters:
+    - id: inflectionPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    content.vb: Sub QueryInflectionPoint(inflectionPoint As IPoint)
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint*
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree
+  commentId: P:ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree
+  id: Degree
+  parent: ESRI.ArcGIS.Geometry.IBezierCurveGEN
+  langs:
+  - csharp
+  - vb
+  name: Degree
+  nameWithType: IBezierCurveGEN.Degree
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The degree of the Bezier curve.  For third degree Beziers, this is always 3.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int Degree { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Degree As Integer
+  overload: ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_QueryCoords_ESRI_ArcGIS_Geometry_IPoint____
+  name: QueryCoords
+  nameWithType: IBezierCurveGEN.QueryCoords
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoords
+- uid: ESRI.ArcGIS.Geometry.IPoint[]
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint[]
+  nameWithType: IPoint[]
+  fullName: ESRI.ArcGIS.Geometry.IPoint[]
+  nameWithType.vb: IPoint()
+  fullName.vb: ESRI.ArcGIS.Geometry.IPoint()
+  name.vb: IPoint()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geometry.IPoint
+    name: IPoint
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.IPoint.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geometry.IPoint
+    name: IPoint
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.IPoint.html
+  - name: (
+  - name: )
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_PutCoords_ESRI_ArcGIS_Geometry_IPoint____
+  name: PutCoords
+  nameWithType: IBezierCurveGEN.PutCoords
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoords
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_QueryCoord_System_Int32_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryCoord
+  nameWithType: IBezierCurveGEN.QueryCoord
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryCoord
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_PutCoord_System_Int32_ESRI_ArcGIS_Geometry_IPoint_
+  name: PutCoord
+  nameWithType: IBezierCurveGEN.PutCoord
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.PutCoord
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_QueryChordLengthTangentAtFrom_ESRI_ArcGIS_Geometry_IPoint_System_Boolean__
+  name: QueryChordLengthTangentAtFrom
+  nameWithType: IBezierCurveGEN.QueryChordLengthTangentAtFrom
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtFrom
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_QueryChordLengthTangentAtTo_ESRI_ArcGIS_Geometry_IPoint_System_Boolean__
+  name: QueryChordLengthTangentAtTo
+  nameWithType: IBezierCurveGEN.QueryChordLengthTangentAtTo
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryChordLengthTangentAtTo
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_SetChordLengthTangentAtFrom_ESRI_ArcGIS_Geometry_IPoint_System_Boolean_
+  name: SetChordLengthTangentAtFrom
+  nameWithType: IBezierCurveGEN.SetChordLengthTangentAtFrom
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtFrom
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_SetChordLengthTangentAtTo_ESRI_ArcGIS_Geometry_IPoint_System_Boolean_
+  name: SetChordLengthTangentAtTo
+  nameWithType: IBezierCurveGEN.SetChordLengthTangentAtTo
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.SetChordLengthTangentAtTo
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_QueryInflectionPoint_ESRI_ArcGIS_Geometry_IPoint_
+  name: QueryInflectionPoint
+  nameWithType: IBezierCurveGEN.QueryInflectionPoint
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.QueryInflectionPoint
+- uid: ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IBezierCurveGEN.html#ESRI_ArcGIS_Geometry_IBezierCurveGEN_Degree
+  name: Degree
+  nameWithType: IBezierCurveGEN.Degree
+  fullName: ESRI.ArcGIS.Geometry.IBezierCurveGEN.Degree

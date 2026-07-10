@@ -1,0 +1,270 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  id: ITemporaryDataset
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary
+  - ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent
+  - ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ITemporaryDataset
+  nameWithType: ITemporaryDataset
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control temporary datasets.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("C9E5B7D0-3758-11D4-A421-0004AC1B1D86")]
+
+      public interface ITemporaryDataset
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("C9E5B7D0-3758-11D4-A421-0004AC1B1D86")>
+
+      Public Interface ITemporaryDataset
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.FunctionRasterDatasetClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C9E5B7D0-3758-11D4-A421-0004AC1B1D86
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary
+  id: IsTemporary
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  langs:
+  - csharp
+  - vb
+  name: IsTemporary()
+  nameWithType: ITemporaryDataset.IsTemporary()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if the dataset is temporary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsTemporary()
+    return:
+      type: System.Boolean
+    content.vb: Function IsTemporary() As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent
+  id: MakePermanent
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  langs:
+  - csharp
+  - vb
+  name: MakePermanent()
+  nameWithType: ITemporaryDataset.MakePermanent()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Persists this temporary dataset permanent.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void MakePermanent()
+    content.vb: Sub MakePermanent()
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  id: MakePermanentAs(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace,System.String)
+  parent: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset
+  langs:
+  - csharp
+  - vb
+  name: MakePermanentAs(string, IWorkspace, string)
+  nameWithType: ITemporaryDataset.MakePermanentAs(string, IWorkspace, string)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs(string, ESRI.ArcGIS.Geodatabase.IWorkspace, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IDataset MakePermanentAs(string new_name, IWorkspace Workspace, string Format)
+    parameters:
+    - id: new_name
+      type: System.String
+    - id: Workspace
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    - id: Format
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    content.vb: Function MakePermanentAs(new_name As String, Workspace As IWorkspace, Format As String) As IDataset
+  overload: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs*
+  nameWithType.vb: ITemporaryDataset.MakePermanentAs(String, IWorkspace, String)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs(String, ESRI.ArcGIS.Geodatabase.IWorkspace, String)
+  name.vb: MakePermanentAs(String, IWorkspace, String)
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.html#ESRI_ArcGIS_DatasourcesRaster_ITemporaryDataset_IsTemporary
+  name: IsTemporary
+  nameWithType: ITemporaryDataset.IsTemporary
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.IsTemporary
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.html#ESRI_ArcGIS_DatasourcesRaster_ITemporaryDataset_MakePermanent
+  name: MakePermanent
+  nameWithType: ITemporaryDataset.MakePermanent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanent
+- uid: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.html#ESRI_ArcGIS_DatasourcesRaster_ITemporaryDataset_MakePermanentAs_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_System_String_
+  name: MakePermanentAs
+  nameWithType: ITemporaryDataset.MakePermanentAs
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ITemporaryDataset.MakePermanentAs
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html

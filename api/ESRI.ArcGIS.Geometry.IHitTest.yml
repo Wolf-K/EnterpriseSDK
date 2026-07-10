@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IHitTest
+  commentId: T:ESRI.ArcGIS.Geometry.IHitTest
+  id: IHitTest
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IHitTest.HitTest(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@,System.Boolean@)
+  langs:
+  - csharp
+  - vb
+  name: IHitTest
+  nameWithType: IHitTest
+  fullName: ESRI.ArcGIS.Geometry.IHitTest
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that locate a part of a geometry closest to a point.
+  example: []
+  syntax:
+    content: >-
+      [Guid("0EB12C6E-18F6-11D1-8337-0000F8775BE9")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IHitTest
+    content.vb: >-
+      <Guid("0EB12C6E-18F6-11D1-8337-0000F8775BE9")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IHitTest
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.EnvelopeClass
+  - ESRI.ArcGIS.Geometry.MultiPatchClass
+  - ESRI.ArcGIS.Geometry.MultipointClass
+  - ESRI.ArcGIS.Geometry.PointClass
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0EB12C6E-18F6-11D1-8337-0000F8775BE9
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IHitTest.HitTest(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@,System.Boolean@)
+  commentId: M:ESRI.ArcGIS.Geometry.IHitTest.HitTest(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@,System.Boolean@)
+  id: HitTest(ESRI.ArcGIS.Geometry.IPoint,System.Double,ESRI.ArcGIS.Geometry.esriGeometryHitPartType,ESRI.ArcGIS.Geometry.IPoint,System.Double@,System.Int32@,System.Int32@,System.Boolean@)
+  parent: ESRI.ArcGIS.Geometry.IHitTest
+  langs:
+  - csharp
+  - vb
+  name: HitTest(IPoint, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int, ref bool)
+  nameWithType: IHitTest.HitTest(IPoint, double, esriGeometryHitPartType, IPoint, ref double, ref int, ref int, ref bool)
+  fullName: ESRI.ArcGIS.Geometry.IHitTest.HitTest(ESRI.ArcGIS.Geometry.IPoint, double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, ref double, ref int, ref int, ref bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: bool HitTest(IPoint QueryPoint, double searchRadius, esriGeometryHitPartType geometryPart, IPoint hitPoint, ref double hitDistance, ref int hitPartIndex, ref int hitSegmentIndex, ref bool bRightSide)
+    parameters:
+    - id: QueryPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: searchRadius
+      type: System.Double
+    - id: geometryPart
+      type: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+    - id: hitPoint
+      type: ESRI.ArcGIS.Geometry.IPoint
+    - id: hitDistance
+      type: System.Double
+    - id: hitPartIndex
+      type: System.Int32
+    - id: hitSegmentIndex
+      type: System.Int32
+    - id: bRightSide
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Function HitTest(QueryPoint As IPoint, searchRadius As Double, geometryPart As esriGeometryHitPartType, hitPoint As IPoint, hitDistance As Double, hitPartIndex As Integer, hitSegmentIndex As Integer, bRightSide As Boolean) As Boolean
+  overload: ESRI.ArcGIS.Geometry.IHitTest.HitTest*
+  nameWithType.vb: IHitTest.HitTest(IPoint, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geometry.IHitTest.HitTest(ESRI.ArcGIS.Geometry.IPoint, Double, ESRI.ArcGIS.Geometry.esriGeometryHitPartType, ESRI.ArcGIS.Geometry.IPoint, Double, Integer, Integer, Boolean)
+  name.vb: HitTest(IPoint, Double, esriGeometryHitPartType, IPoint, Double, Integer, Integer, Boolean)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IHitTest.HitTest*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IHitTest.HitTest
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IHitTest.html#ESRI_ArcGIS_Geometry_IHitTest_HitTest_ESRI_ArcGIS_Geometry_IPoint_System_Double_ESRI_ArcGIS_Geometry_esriGeometryHitPartType_ESRI_ArcGIS_Geometry_IPoint_System_Double__System_Int32__System_Int32__System_Boolean__
+  name: HitTest
+  nameWithType: IHitTest.HitTest
+  fullName: ESRI.ArcGIS.Geometry.IHitTest.HitTest
+- uid: ESRI.ArcGIS.Geometry.IPoint
+  commentId: T:ESRI.ArcGIS.Geometry.IPoint
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPoint.html
+  name: IPoint
+  nameWithType: IPoint
+  fullName: ESRI.ArcGIS.Geometry.IPoint
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryHitPartType.html
+  name: esriGeometryHitPartType
+  nameWithType: esriGeometryHitPartType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryHitPartType
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

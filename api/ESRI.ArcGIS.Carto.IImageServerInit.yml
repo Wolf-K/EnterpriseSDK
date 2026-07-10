@@ -1,0 +1,331 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Carto.IImageServerInit
+  commentId: T:ESRI.ArcGIS.Carto.IImageServerInit
+  id: IImageServerInit
+  parent: ESRI.ArcGIS.Carto
+  children:
+  - ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+  - ESRI.ArcGIS.Carto.IImageServerInit.Initialize(System.String)
+  - ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  - ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IImageServerInit
+  nameWithType: IImageServerInit
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit
+  type: Interface
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Provides access to members that control initialization of an image server.
+  example: []
+  syntax:
+    content: >-
+      [Guid("EE09FED6-6E28-491A-B00B-5B8796F075E1")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IImageServerInit
+    content.vb: >-
+      <Guid("EE09FED6-6E28-491A-B00B-5B8796F075E1")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IImageServerInit
+  derivedClasses:
+  - ESRI.ArcGIS.Carto.ImageServerClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: EE09FED6-6E28-491A-B00B-5B8796F075E1
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.Initialize(System.String)
+  commentId: M:ESRI.ArcGIS.Carto.IImageServerInit.Initialize(System.String)
+  id: Initialize(System.String)
+  parent: ESRI.ArcGIS.Carto.IImageServerInit
+  langs:
+  - csharp
+  - vb
+  name: Initialize(string)
+  nameWithType: IImageServerInit.Initialize(string)
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.Initialize(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Initializes this image server from a fullname to a dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Initialize(string FullName)
+    parameters:
+    - id: FullName
+      type: System.String
+    content.vb: Sub Initialize(FullName As String)
+  overload: ESRI.ArcGIS.Carto.IImageServerInit.Initialize*
+  nameWithType.vb: IImageServerInit.Initialize(String)
+  fullName.vb: ESRI.ArcGIS.Carto.IImageServerInit.Initialize(String)
+  name.vb: Initialize(String)
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  commentId: M:ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  id: InitializeFromDataset(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  parent: ESRI.ArcGIS.Carto.IImageServerInit
+  langs:
+  - csharp
+  - vb
+  name: InitializeFromDataset(IRasterDataset)
+  nameWithType: IImageServerInit.InitializeFromDataset(IRasterDataset)
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset(ESRI.ArcGIS.Geodatabase.IRasterDataset)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  syntax:
+    content: void InitializeFromDataset(IRasterDataset pDataset)
+    parameters:
+    - id: pDataset
+      type: ESRI.ArcGIS.Geodatabase.IRasterDataset
+    content.vb: Sub InitializeFromDataset(pDataset As IRasterDataset)
+  overload: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset*
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL(System.String)
+  commentId: M:ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL(System.String)
+  id: InitializeFromServiceURL(System.String)
+  parent: ESRI.ArcGIS.Carto.IImageServerInit
+  langs:
+  - csharp
+  - vb
+  name: InitializeFromServiceURL(string)
+  nameWithType: IImageServerInit.InitializeFromServiceURL(string)
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: Initializes this image server from an AIS service URL (ImageService://&lt;host&gt;:&lt;port&gt;/&lt;service&gt;).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void InitializeFromServiceURL(string ServiceURL)
+    parameters:
+    - id: ServiceURL
+      type: System.String
+    content.vb: Sub InitializeFromServiceURL(ServiceURL As String)
+  overload: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL*
+  nameWithType.vb: IImageServerInit.InitializeFromServiceURL(String)
+  fullName.vb: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL(String)
+  name.vb: InitializeFromServiceURL(String)
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+  commentId: P:ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+  id: ImageDataSourceName
+  parent: ESRI.ArcGIS.Carto.IImageServerInit
+  langs:
+  - csharp
+  - vb
+  name: ImageDataSourceName
+  nameWithType: IImageServerInit.ImageDataSourceName
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+  type: Property
+  assemblies:
+  - ESRI.Server.Carto
+  namespace: ESRI.ArcGIS.Carto
+  summary: The image server data source name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IName ImageDataSourceName { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IName
+    content.vb: Property ImageDataSourceName As IName
+  overload: ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName*
+references:
+- uid: ESRI.ArcGIS.Carto
+  commentId: N:ESRI.ArcGIS.Carto
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Carto
+  nameWithType: ESRI.ArcGIS.Carto
+  fullName: ESRI.ArcGIS.Carto
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Carto
+    name: Carto
+    isExternal: true
+    href: ESRI.ArcGIS.Carto.html
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.Initialize*
+  commentId: Overload:ESRI.ArcGIS.Carto.IImageServerInit.Initialize
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IImageServerInit.html#ESRI_ArcGIS_Carto_IImageServerInit_Initialize_System_String_
+  name: Initialize
+  nameWithType: IImageServerInit.Initialize
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.Initialize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset*
+  commentId: Overload:ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IImageServerInit.html#ESRI_ArcGIS_Carto_IImageServerInit_InitializeFromDataset_ESRI_ArcGIS_Geodatabase_IRasterDataset_
+  name: InitializeFromDataset
+  nameWithType: IImageServerInit.InitializeFromDataset
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL*
+  commentId: Overload:ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IImageServerInit.html#ESRI_ArcGIS_Carto_IImageServerInit_InitializeFromServiceURL_System_String_
+  name: InitializeFromServiceURL
+  nameWithType: IImageServerInit.InitializeFromServiceURL
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.InitializeFromServiceURL
+- uid: ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName*
+  commentId: Overload:ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+  isExternal: true
+  href: ESRI.ArcGIS.Carto.IImageServerInit.html#ESRI_ArcGIS_Carto_IImageServerInit_ImageDataSourceName
+  name: ImageDataSourceName
+  nameWithType: IImageServerInit.ImageDataSourceName
+  fullName: ESRI.ArcGIS.Carto.IImageServerInit.ImageDataSourceName
+- uid: ESRI.ArcGIS.esriSystem.IName
+  commentId: T:ESRI.ArcGIS.esriSystem.IName
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IName.html
+  name: IName
+  nameWithType: IName
+  fullName: ESRI.ArcGIS.esriSystem.IName
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html

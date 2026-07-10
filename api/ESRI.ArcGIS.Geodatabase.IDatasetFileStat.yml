@@ -1,0 +1,227 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  id: IDatasetFileStat
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+  - ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+  - ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)
+  langs:
+  - csharp
+  - vb
+  name: IDatasetFileStat
+  nameWithType: IDatasetFileStat
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control Dataset file-based statistics.
+  example: []
+  syntax:
+    content: >-
+      [Guid("52D4A757-DF71-47E0-AAB8-EE302EB7ACAB")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IDatasetFileStat
+    content.vb: >-
+      <Guid("52D4A757-DF71-47E0-AAB8-EE302EB7ACAB")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IDatasetFileStat
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 52D4A757-DF71-47E0-AAB8-EE302EB7ACAB
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)
+  id: StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)
+  parent: ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  langs:
+  - csharp
+  - vb
+  name: StatTime[esriDatasetFileStatTimeMode]
+  nameWithType: IDatasetFileStat.StatTime[esriDatasetFileStatTimeMode]
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime[ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Obsolete. Use StatTime64.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int StatTime[esriDatasetFileStatTimeMode dateMode] { get; }
+    parameters:
+    - id: dateMode
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StatTime(dateMode As esriDatasetFileStatTimeMode) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime*
+  nameWithType.vb: IDatasetFileStat.StatTime(esriDatasetFileStatTimeMode)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime(ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode)
+  name.vb: StatTime(esriDatasetFileStatTimeMode)
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+  id: StatSize
+  parent: ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  langs:
+  - csharp
+  - vb
+  name: StatSize
+  nameWithType: IDatasetFileStat.StatSize
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Obsolete. Use StatSize64.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int StatSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property StatSize As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize*
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+  commentId: P:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+  id: StatMode
+  parent: ESRI.ArcGIS.Geodatabase.IDatasetFileStat
+  langs:
+  - csharp
+  - vb
+  name: StatMode
+  nameWithType: IDatasetFileStat.StatMode
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The access mode.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriDatasetFileStatAccessMode StatMode { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatAccessMode
+    content.vb: ReadOnly Property StatMode As esriDatasetFileStatAccessMode
+  overload: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.html#ESRI_ArcGIS_Geodatabase_IDatasetFileStat_StatTime_ESRI_ArcGIS_Geodatabase_esriDatasetFileStatTimeMode_
+  name: StatTime
+  nameWithType: IDatasetFileStat.StatTime
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatTime
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode.html
+  name: esriDatasetFileStatTimeMode
+  nameWithType: esriDatasetFileStatTimeMode
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatTimeMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.html#ESRI_ArcGIS_Geodatabase_IDatasetFileStat_StatSize
+  name: StatSize
+  nameWithType: IDatasetFileStat.StatSize
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatSize
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.html#ESRI_ArcGIS_Geodatabase_IDatasetFileStat_StatMode
+  name: StatMode
+  nameWithType: IDatasetFileStat.StatMode
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetFileStat.StatMode
+- uid: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatAccessMode
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriDatasetFileStatAccessMode
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatAccessMode.html
+  name: esriDatasetFileStatAccessMode
+  nameWithType: esriDatasetFileStatAccessMode
+  fullName: ESRI.ArcGIS.Geodatabase.esriDatasetFileStatAccessMode

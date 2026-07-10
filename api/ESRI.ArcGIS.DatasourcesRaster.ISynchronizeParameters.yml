@@ -1,0 +1,632 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  id: ISynchronizeParameters
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+  - ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+  langs:
+  - csharp
+  - vb
+  name: ISynchronizeParameters
+  nameWithType: ISynchronizeParameters
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control parameters for synchronizing items in a mosaic dataset.
+  example: []
+  syntax:
+    content: >-
+      [Guid("241B22C3-75EF-468B-A4A3-758FD9DA08DF")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISynchronizeParameters
+    content.vb: >-
+      <Guid("241B22C3-75EF-468B-A4A3-758FD9DA08DF")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISynchronizeParameters
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.AddRastersParametersClass
+  - ESRI.ArcGIS.DatasourcesRaster.SynchronizeParametersClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 241B22C3-75EF-468B-A4A3-758FD9DA08DF
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+  id: DefaultSpatialReference
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: DefaultSpatialReference
+  nameWithType: ISynchronizeParameters.DefaultSpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The default spatial reference used by all raster types for those dataset which do not have an associated native spatial reference.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISpatialReference DefaultSpatialReference { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: Property DefaultSpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+  id: SyncOnlyStaleItems
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: SyncOnlyStaleItems
+  nameWithType: ISynchronizeParameters.SyncOnlyStaleItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates if only those items found to be stale are synchronized.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SyncOnlyStaleItems { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SyncOnlyStaleItems As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+  id: RemoveInvalidItems
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: RemoveInvalidItems
+  nameWithType: ISynchronizeParameters.RemoveInvalidItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether items with category set to 'Incomplete' or items that cannot be rebuilt using their corresponding data sources are removed from the mosaic dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool RemoveInvalidItems { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property RemoveInvalidItems As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+  id: MaximumPyramidLevel
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: MaximumPyramidLevel
+  nameWithType: ISynchronizeParameters.MaximumPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The maximum number of pyramid levels to use from the function raster dataset associated with a synchronized item. A value of -1 indicates all available levels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MaximumPyramidLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MaximumPyramidLevel As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+  id: MinimumRows
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: MinimumRows
+  nameWithType: ISynchronizeParameters.MinimumRows
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The minimum number of pixel rows allowed at the top-most pyramid level in the function raster dataset associated with a synchronized item. Higher values in this property indicate fewer pyramid levels. A value of zero indicates an absence of any constraints on
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MinimumRows { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MinimumRows As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+  id: MinimumColumns
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: MinimumColumns
+  nameWithType: ISynchronizeParameters.MinimumColumns
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The minimum number of pixel columnns allowed at the top-most pyramid level in the function raster dataset associated with a synchronized item. Higher values in this property indicate fewer pyramid levels. A value of zero indicates an absence of any constraints
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int MinimumColumns { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property MinimumColumns As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+  id: MaximumHighCellSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: MaximumHighCellSize
+  nameWithType: ISynchronizeParameters.MaximumHighCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The maximum allowed computed value for the high pixel size for the function raster dataset associated with a synchronized item. Lower values in this property indicate fewer pyramid levels. A value of zero indicates an absence of any constraints on the resultin
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MaximumHighCellSize { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property MaximumHighCellSize As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+  id: ComputeStatistics
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: ComputeStatistics
+  nameWithType: ISynchronizeParameters.ComputeStatistics
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether histogram statistics are computed for each raster dataset associated with each selected catalog item.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ComputeStatistics { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ComputeStatistics As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+  id: BuildPyramids
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: BuildPyramids
+  nameWithType: ISynchronizeParameters.BuildPyramids
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether pyramids are built for each raster dataset associated with each selected catalog item.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool BuildPyramids { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property BuildPyramids As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+  id: BuildThumbnail
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: BuildThumbnail
+  nameWithType: ISynchronizeParameters.BuildThumbnail
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether items thumbnails are built and saved.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool BuildThumbnail { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property BuildThumbnail As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+  id: ThumbnailBuilder
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: ThumbnailBuilder
+  nameWithType: ISynchronizeParameters.ThumbnailBuilder
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The thumbnail builder object associated with this operation. If not specified, a default builder is used for generating item thumbnails.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterThumbnailBuilder ThumbnailBuilder { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.DatasourcesRaster.IRasterThumbnailBuilder
+    content.vb: Property ThumbnailBuilder As IRasterThumbnailBuilder
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+  id: DensificationFactor
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: DensificationFactor
+  nameWithType: ISynchronizeParameters.DensificationFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The maximum segment length value as a factor of each incoming dataset fooprint's average dimension. Footprint polygon is densified only if the spatial reference of the footprint geometry differs form the spatial reference of the geometry column of the mosaic c
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double DensificationFactor { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property DensificationFactor As Double
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor*
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility
+  id: ResetVisibility
+  parent: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters
+  langs:
+  - csharp
+  - vb
+  name: ResetVisibility
+  nameWithType: ISynchronizeParameters.ResetVisibility
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Indicates whether each selected item's visibility values (MinPS and MaxPS) are reset to null.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool ResetVisibility { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property ResetVisibility As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_DefaultSpatialReference
+  name: DefaultSpatialReference
+  nameWithType: ISynchronizeParameters.DefaultSpatialReference
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DefaultSpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_SyncOnlyStaleItems
+  name: SyncOnlyStaleItems
+  nameWithType: ISynchronizeParameters.SyncOnlyStaleItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.SyncOnlyStaleItems
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_RemoveInvalidItems
+  name: RemoveInvalidItems
+  nameWithType: ISynchronizeParameters.RemoveInvalidItems
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.RemoveInvalidItems
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_MaximumPyramidLevel
+  name: MaximumPyramidLevel
+  nameWithType: ISynchronizeParameters.MaximumPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumPyramidLevel
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_MinimumRows
+  name: MinimumRows
+  nameWithType: ISynchronizeParameters.MinimumRows
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumRows
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_MinimumColumns
+  name: MinimumColumns
+  nameWithType: ISynchronizeParameters.MinimumColumns
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MinimumColumns
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_MaximumHighCellSize
+  name: MaximumHighCellSize
+  nameWithType: ISynchronizeParameters.MaximumHighCellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.MaximumHighCellSize
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_ComputeStatistics
+  name: ComputeStatistics
+  nameWithType: ISynchronizeParameters.ComputeStatistics
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ComputeStatistics
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_BuildPyramids
+  name: BuildPyramids
+  nameWithType: ISynchronizeParameters.BuildPyramids
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildPyramids
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_BuildThumbnail
+  name: BuildThumbnail
+  nameWithType: ISynchronizeParameters.BuildThumbnail
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.BuildThumbnail
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_ThumbnailBuilder
+  name: ThumbnailBuilder
+  nameWithType: ISynchronizeParameters.ThumbnailBuilder
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ThumbnailBuilder
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterThumbnailBuilder
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterThumbnailBuilder
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterThumbnailBuilder.html
+  name: IRasterThumbnailBuilder
+  nameWithType: IRasterThumbnailBuilder
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterThumbnailBuilder
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_DensificationFactor
+  name: DensificationFactor
+  nameWithType: ISynchronizeParameters.DensificationFactor
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.DensificationFactor
+- uid: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.html#ESRI_ArcGIS_DatasourcesRaster_ISynchronizeParameters_ResetVisibility
+  name: ResetVisibility
+  nameWithType: ISynchronizeParameters.ResetVisibility
+  fullName: ESRI.ArcGIS.DatasourcesRaster.ISynchronizeParameters.ResetVisibility

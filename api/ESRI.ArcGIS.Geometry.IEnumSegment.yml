@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumSegment
+  id: IEnumSegment
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IEnumSegment.Clone(ESRI.ArcGIS.Geometry.IEnumSegment@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart
+  - ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling
+  - ESRI.ArcGIS.Geometry.IEnumSegment.Next(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.NextEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.Previous(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.Reset
+  - ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd
+  - ESRI.ArcGIS.Geometry.IEnumSegment.SetAt(System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IEnumSegment.Skip(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: IEnumSegment
+  nameWithType: IEnumSegment
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that iterate over collections of segments (obtained from the EnumSegments property on the ISegmentCollection interface).
+  example: []
+  syntax:
+    content: >-
+      [Guid("C63FAF0E-1040-11D1-A27D-0000F8775FBF")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IEnumSegment
+    content.vb: >-
+      <Guid("C63FAF0E-1040-11D1-A27D-0000F8775FBF")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IEnumSegment
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C63FAF0E-1040-11D1-A27D-0000F8775FBF
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.NextEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  id: NextEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: NextEx(out esriSegmentInfo)
+  nameWithType: IEnumSegment.NextEx(out esriSegmentInfo)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx(out ESRI.ArcGIS.Geometry.esriSegmentInfo)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Populates a segment info structure with information on the next segment in the collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void NextEx(out esriSegmentInfo outSegment)
+    parameters:
+    - id: outSegment
+      type: ESRI.ArcGIS.Geometry.esriSegmentInfo
+    content.vb: Sub NextEx(outSegment As esriSegmentInfo)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx*
+  nameWithType.vb: IEnumSegment.NextEx(esriSegmentInfo)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx(ESRI.ArcGIS.Geometry.esriSegmentInfo)
+  name.vb: NextEx(esriSegmentInfo)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Next(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.Next(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  id: Next(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: Next(out ISegment, ref int, ref int)
+  nameWithType: IEnumSegment.Next(out ISegment, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Next(out ESRI.ArcGIS.Geometry.ISegment, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the next segment, and its location in the collection. If the location does not have parts (i.e. a path or ring) then the part index will always be zero.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Next(out ISegment outSegment, ref int outPartIndex, ref int SegmentIndex)
+    parameters:
+    - id: outSegment
+      type: ESRI.ArcGIS.Geometry.ISegment
+    - id: outPartIndex
+      type: System.Int32
+    - id: SegmentIndex
+      type: System.Int32
+    content.vb: Sub [Next](outSegment As ISegment, outPartIndex As Integer, SegmentIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.Next*
+  nameWithType.vb: IEnumSegment.Next(ISegment, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.Next(ESRI.ArcGIS.Geometry.ISegment, Integer, Integer)
+  name.vb: Next(ISegment, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Skip(System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.Skip(System.Int32)
+  id: Skip(System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: Skip(int)
+  nameWithType: IEnumSegment.Skip(int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Skip(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Skips forward or backward over a specified number of segments.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Skip(int numSegments)
+    parameters:
+    - id: numSegments
+      type: System.Int32
+    content.vb: Sub Skip(numSegments As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.Skip*
+  nameWithType.vb: IEnumSegment.Skip(Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.Skip(Integer)
+  name.vb: Skip(Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Reset
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: IEnumSegment.Reset()
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Starts from the beginning of the segment collection the next time Next is called.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.Reset*
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Clone(ESRI.ArcGIS.Geometry.IEnumSegment@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.Clone(ESRI.ArcGIS.Geometry.IEnumSegment@)
+  id: Clone(ESRI.ArcGIS.Geometry.IEnumSegment@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: Clone(out IEnumSegment)
+  nameWithType: IEnumSegment.Clone(out IEnumSegment)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Clone(out ESRI.ArcGIS.Geometry.IEnumSegment)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns a copy of this enumerator positioned at the same segment.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Clone(out IEnumSegment outEnumerator)
+    parameters:
+    - id: outEnumerator
+      type: ESRI.ArcGIS.Geometry.IEnumSegment
+    content.vb: Sub Clone(outEnumerator As IEnumSegment)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.Clone*
+  nameWithType.vb: IEnumSegment.Clone(IEnumSegment)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.Clone(ESRI.ArcGIS.Geometry.IEnumSegment)
+  name.vb: Clone(IEnumSegment)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd
+  id: ResetToEnd
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: ResetToEnd()
+  nameWithType: IEnumSegment.ResetToEnd()
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Starts from the end of the path, ring, polyline or polygon the next time Previous is called.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ResetToEnd()
+    content.vb: Sub ResetToEnd()
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd*
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Previous(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.Previous(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  id: Previous(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: Previous(out ISegment, ref int, ref int)
+  nameWithType: IEnumSegment.Previous(out ISegment, ref int, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Previous(out ESRI.ArcGIS.Geometry.ISegment, ref int, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the previous segment in this segment collection.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Previous(out ISegment outSegment, ref int outPartIndex, ref int SegmentIndex)
+    parameters:
+    - id: outSegment
+      type: ESRI.ArcGIS.Geometry.ISegment
+    - id: outPartIndex
+      type: System.Int32
+    - id: SegmentIndex
+      type: System.Int32
+    content.vb: Sub Previous(outSegment As ISegment, outPartIndex As Integer, SegmentIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.Previous*
+  nameWithType.vb: IEnumSegment.Previous(ISegment, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.Previous(ESRI.ArcGIS.Geometry.ISegment, Integer, Integer)
+  name.vb: Previous(ISegment, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt(System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.SetAt(System.Int32,System.Int32)
+  id: SetAt(System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: SetAt(int, int)
+  nameWithType: IEnumSegment.SetAt(int, int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt(int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Resets enumerator to specific location.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetAt(int iPart, int ISegment)
+    parameters:
+    - id: iPart
+      type: System.Int32
+    - id: ISegment
+      type: System.Int32
+    content.vb: Sub SetAt(iPart As Integer, ISegment As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt*
+  nameWithType.vb: IEnumSegment.SetAt(Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt(Integer, Integer)
+  name.vb: SetAt(Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  id: NextInPartEx(ESRI.ArcGIS.Geometry.esriSegmentInfo@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: NextInPartEx(out esriSegmentInfo)
+  nameWithType: IEnumSegment.NextInPartEx(out esriSegmentInfo)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx(out ESRI.ArcGIS.Geometry.esriSegmentInfo)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the next segment info structure in current part, goes back to first segment after last segment in part is encountered.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void NextInPartEx(out esriSegmentInfo outSegment)
+    parameters:
+    - id: outSegment
+      type: ESRI.ArcGIS.Geometry.esriSegmentInfo
+    content.vb: Sub NextInPartEx(outSegment As esriSegmentInfo)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx*
+  nameWithType.vb: IEnumSegment.NextInPartEx(esriSegmentInfo)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx(ESRI.ArcGIS.Geometry.esriSegmentInfo)
+  name.vb: NextInPartEx(esriSegmentInfo)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@)
+  id: NextInPart(ESRI.ArcGIS.Geometry.ISegment@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: NextInPart(out ISegment, ref int)
+  nameWithType: IEnumSegment.NextInPart(out ISegment, ref int)
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart(out ESRI.ArcGIS.Geometry.ISegment, ref int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Returns the next segment in current part, goes back to first segment after last segment in part is encountered.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void NextInPart(out ISegment outSegment, ref int OutSegmentIndex)
+    parameters:
+    - id: outSegment
+      type: ESRI.ArcGIS.Geometry.ISegment
+    - id: OutSegmentIndex
+      type: System.Int32
+    content.vb: Sub NextInPart(outSegment As ISegment, OutSegmentIndex As Integer)
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart*
+  nameWithType.vb: IEnumSegment.NextInPart(ISegment, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart(ESRI.ArcGIS.Geometry.ISegment, Integer)
+  name.vb: NextInPart(ISegment, Integer)
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart
+  commentId: M:ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart
+  id: IsLastInPart
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: IsLastInPart()
+  nameWithType: IEnumSegment.IsLastInPart()
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if the current segment is last in the current part.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsLastInPart()
+    return:
+      type: System.Boolean
+    content.vb: Function IsLastInPart() As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart*
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling
+  commentId: P:ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling
+  id: IsRecycling
+  parent: ESRI.ArcGIS.Geometry.IEnumSegment
+  langs:
+  - csharp
+  - vb
+  name: IsRecycling
+  nameWithType: IEnumSegment.IsRecycling
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Indicates if this enumerator re-uses the same segment each time next is called.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsRecycling { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsRecycling As Boolean
+  overload: ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.NextEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_NextEx_ESRI_ArcGIS_Geometry_esriSegmentInfo__
+  name: NextEx
+  nameWithType: IEnumSegment.NextEx
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextEx
+- uid: ESRI.ArcGIS.Geometry.esriSegmentInfo
+  commentId: T:ESRI.ArcGIS.Geometry.esriSegmentInfo
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriSegmentInfo.html
+  name: esriSegmentInfo
+  nameWithType: esriSegmentInfo
+  fullName: ESRI.ArcGIS.Geometry.esriSegmentInfo
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Next*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.Next
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_Next_ESRI_ArcGIS_Geometry_ISegment__System_Int32__System_Int32__
+  name: Next
+  nameWithType: IEnumSegment.Next
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Next
+- uid: ESRI.ArcGIS.Geometry.ISegment
+  commentId: T:ESRI.ArcGIS.Geometry.ISegment
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISegment.html
+  name: ISegment
+  nameWithType: ISegment
+  fullName: ESRI.ArcGIS.Geometry.ISegment
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Skip*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.Skip
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_Skip_System_Int32_
+  name: Skip
+  nameWithType: IEnumSegment.Skip
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Skip
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_Reset
+  name: Reset
+  nameWithType: IEnumSegment.Reset
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Reset
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Clone*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.Clone
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_Clone_ESRI_ArcGIS_Geometry_IEnumSegment__
+  name: Clone
+  nameWithType: IEnumSegment.Clone
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Clone
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumSegment
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html
+  name: IEnumSegment
+  nameWithType: IEnumSegment
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_ResetToEnd
+  name: ResetToEnd
+  nameWithType: IEnumSegment.ResetToEnd
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.ResetToEnd
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.Previous*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.Previous
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_Previous_ESRI_ArcGIS_Geometry_ISegment__System_Int32__System_Int32__
+  name: Previous
+  nameWithType: IEnumSegment.Previous
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.Previous
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.SetAt
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_SetAt_System_Int32_System_Int32_
+  name: SetAt
+  nameWithType: IEnumSegment.SetAt
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.SetAt
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_NextInPartEx_ESRI_ArcGIS_Geometry_esriSegmentInfo__
+  name: NextInPartEx
+  nameWithType: IEnumSegment.NextInPartEx
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPartEx
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_NextInPart_ESRI_ArcGIS_Geometry_ISegment__System_Int32__
+  name: NextInPart
+  nameWithType: IEnumSegment.NextInPart
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.NextInPart
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_IsLastInPart
+  name: IsLastInPart
+  nameWithType: IEnumSegment.IsLastInPart
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.IsLastInPart
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumSegment.html#ESRI_ArcGIS_Geometry_IEnumSegment_IsRecycling
+  name: IsRecycling
+  nameWithType: IEnumSegment.IsRecycling
+  fullName: ESRI.ArcGIS.Geometry.IEnumSegment.IsRecycling

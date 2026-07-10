@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterDataset
+  id: IRasterDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats(System.Object)
+  - ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+  langs:
+  - csharp
+  - vb
+  name: IRasterDataset
+  nameWithType: IRasterDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control a raster dataset.
+  example: []
+  syntax:
+    content: >-
+      [Guid("7ACA3D01-0629-11D2-8D24-0000F8780535")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRasterDataset
+    content.vb: >-
+      <Guid("7ACA3D01-0629-11D2-8D24-0000F8780535")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRasterDataset
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.FunctionRasterDatasetClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterBandClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterDatasetClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7ACA3D01-0629-11D2-8D24-0000F8780535
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster
+  id: CreateDefaultRaster
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: CreateDefaultRaster()
+  nameWithType: IRasterDataset.CreateDefaultRaster()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a raster object with the default properties for this dataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRaster CreateDefaultRaster()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRaster
+    content.vb: Function CreateDefaultRaster() As IRaster
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy
+  id: CanCopy
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: CanCopy()
+  nameWithType: IRasterDataset.CanCopy()
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Returns true if this dataset can be copied.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanCopy()
+    return:
+      type: System.Boolean
+    content.vb: Function CanCopy() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  id: Copy(System.String,ESRI.ArcGIS.Geodatabase.IWorkspace)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: Copy(string, IWorkspace)
+  nameWithType: IRasterDataset.Copy(string, IWorkspace)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy(string, ESRI.ArcGIS.Geodatabase.IWorkspace)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IDataset Copy(string copyName, IWorkspace copyWorkspace)
+    parameters:
+    - id: copyName
+      type: System.String
+    - id: copyWorkspace
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDataset
+    content.vb: Function Copy(copyName As String, copyWorkspace As IWorkspace) As IDataset
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy*
+  nameWithType.vb: IRasterDataset.Copy(String, IWorkspace)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy(String, ESRI.ArcGIS.Geodatabase.IWorkspace)
+  name.vb: Copy(String, IWorkspace)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile(System.String)
+  id: OpenFromFile(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: OpenFromFile(string)
+  nameWithType: IRasterDataset.OpenFromFile(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Attaches dataset to a particular file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void OpenFromFile(string Path)
+    parameters:
+    - id: Path
+      type: System.String
+    content.vb: Sub OpenFromFile(Path As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile*
+  nameWithType.vb: IRasterDataset.OpenFromFile(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile(String)
+  name.vb: OpenFromFile(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats(System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats(System.Object)
+  id: PrecalculateStats(System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: PrecalculateStats(object)
+  nameWithType: IRasterDataset.PrecalculateStats(object)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats(object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Calculates statistics and histograms for specified bands.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void PrecalculateStats(object index_list)
+    parameters:
+    - id: index_list
+      type: System.Object
+    content.vb: Sub PrecalculateStats(index_list As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats*
+  nameWithType.vb: IRasterDataset.PrecalculateStats(Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats(Object)
+  name.vb: PrecalculateStats(Object)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile(System.String)
+  id: BasicOpenFromFile(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: BasicOpenFromFile(string)
+  nameWithType: IRasterDataset.BasicOpenFromFile(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Opens the dataset from file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void BasicOpenFromFile(string Path)
+    parameters:
+    - id: Path
+      type: System.String
+    content.vb: Sub BasicOpenFromFile(Path As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile*
+  nameWithType.vb: IRasterDataset.BasicOpenFromFile(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile(String)
+  name.vb: BasicOpenFromFile(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+  id: Format
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: Format
+  nameWithType: IRasterDataset.Format
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The format of this RasterRataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Format { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Format As String
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.Format*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+  id: SensorType
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: SensorType
+  nameWithType: IRasterDataset.SensorType
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The sensor type used for this RasterDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string SensorType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property SensorType As String
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+  id: CompressionType
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: CompressionType
+  nameWithType: IRasterDataset.CompressionType
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The compression technique applied to this RasterDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CompressionType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CompressionType As String
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType*
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName
+  id: CompleteName
+  parent: ESRI.ArcGIS.Geodatabase.IRasterDataset
+  langs:
+  - csharp
+  - vb
+  name: CompleteName
+  nameWithType: IRasterDataset.CompleteName
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The full path of the RasterDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string CompleteName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property CompleteName As String
+  overload: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_CreateDefaultRaster
+  name: CreateDefaultRaster
+  nameWithType: IRasterDataset.CreateDefaultRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CreateDefaultRaster
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_CanCopy
+  name: CanCopy
+  nameWithType: IRasterDataset.CanCopy
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CanCopy
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_Copy_System_String_ESRI_ArcGIS_Geodatabase_IWorkspace_
+  name: Copy
+  nameWithType: IRasterDataset.Copy
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.Copy
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDataset.html
+  name: IDataset
+  nameWithType: IDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_OpenFromFile_System_String_
+  name: OpenFromFile
+  nameWithType: IRasterDataset.OpenFromFile
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.OpenFromFile
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_PrecalculateStats_System_Object_
+  name: PrecalculateStats
+  nameWithType: IRasterDataset.PrecalculateStats
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.PrecalculateStats
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_BasicOpenFromFile_System_String_
+  name: BasicOpenFromFile
+  nameWithType: IRasterDataset.BasicOpenFromFile
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.BasicOpenFromFile
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.Format*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_Format
+  name: Format
+  nameWithType: IRasterDataset.Format
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.Format
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_SensorType
+  name: SensorType
+  nameWithType: IRasterDataset.SensorType
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.SensorType
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_CompressionType
+  name: CompressionType
+  nameWithType: IRasterDataset.CompressionType
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompressionType
+- uid: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterDataset.html#ESRI_ArcGIS_Geodatabase_IRasterDataset_CompleteName
+  name: CompleteName
+  nameWithType: IRasterDataset.CompleteName
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterDataset.CompleteName

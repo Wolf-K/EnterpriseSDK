@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFieldChecker
+  id: IFieldChecker
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate(ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField(System.Int32,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName(System.String,System.String@)
+  - ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+  langs:
+  - csharp
+  - vb
+  name: IFieldChecker
+  nameWithType: IFieldChecker
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control the Field Checker.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("7370629B-3E8F-11D2-AAE0-00C04FA33C20")]
+
+      public interface IFieldChecker
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("7370629B-3E8F-11D2-AAE0-00C04FA33C20")>
+
+      Public Interface IFieldChecker
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FieldCheckerClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 7370629B-3E8F-11D2-AAE0-00C04FA33C20
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate(ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate(ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  id: Validate(ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: Validate(IFields, out IEnumFieldError, out IFields)
+  nameWithType: IFieldChecker.Validate(IFields, out IEnumFieldError, out IFields)
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate(ESRI.ArcGIS.Geodatabase.IFields, out ESRI.ArcGIS.Geodatabase.IEnumFieldError, out ESRI.ArcGIS.Geodatabase.IFields)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Validate(IFields inputField, out IEnumFieldError error, out IFields fixedFields)
+    parameters:
+    - id: inputField
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: error
+      type: ESRI.ArcGIS.Geodatabase.IEnumFieldError
+    - id: fixedFields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Sub Validate(inputField As IFields, [error] As IEnumFieldError, fixedFields As IFields)
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate*
+  nameWithType.vb: IFieldChecker.Validate(IFields, IEnumFieldError, IFields)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate(ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.Geodatabase.IEnumFieldError, ESRI.ArcGIS.Geodatabase.IFields)
+  name.vb: Validate(IFields, IEnumFieldError, IFields)
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName(System.String,System.String@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName(System.String,System.String@)
+  id: ValidateTableName(System.String,System.String@)
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: ValidateTableName(string, out string)
+  nameWithType: IFieldChecker.ValidateTableName(string, out string)
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName(string, out string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Checks the validity of a table name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ValidateTableName(string TableName, out string fixedName)
+    parameters:
+    - id: TableName
+      type: System.String
+    - id: fixedName
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Function ValidateTableName(TableName As String, fixedName As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName*
+  nameWithType.vb: IFieldChecker.ValidateTableName(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName(String, String)
+  name.vb: ValidateTableName(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField(System.Int32,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField(System.Int32,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  id: ValidateField(System.Int32,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.Geodatabase.IEnumFieldError@,ESRI.ArcGIS.Geodatabase.IFields@)
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: ValidateField(int, IFields, out IEnumFieldError, out IFields)
+  nameWithType: IFieldChecker.ValidateField(int, IFields, out IEnumFieldError, out IFields)
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField(int, ESRI.ArcGIS.Geodatabase.IFields, out ESRI.ArcGIS.Geodatabase.IEnumFieldError, out ESRI.ArcGIS.Geodatabase.IFields)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ValidateField(int FieldIndex, IFields inputFields, out IEnumFieldError error, out IFields fixedFields)
+    parameters:
+    - id: FieldIndex
+      type: System.Int32
+    - id: inputFields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: error
+      type: ESRI.ArcGIS.Geodatabase.IEnumFieldError
+    - id: fixedFields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: Sub ValidateField(FieldIndex As Integer, inputFields As IFields, [error] As IEnumFieldError, fixedFields As IFields)
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField*
+  nameWithType.vb: IFieldChecker.ValidateField(Integer, IFields, IEnumFieldError, IFields)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField(Integer, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.Geodatabase.IEnumFieldError, ESRI.ArcGIS.Geodatabase.IFields)
+  name.vb: ValidateField(Integer, IFields, IEnumFieldError, IFields)
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+  id: ValidateWorkspace
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: ValidateWorkspace
+  nameWithType: IFieldChecker.ValidateWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Workspace of the fieldchecker.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IWorkspace ValidateWorkspace { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Property ValidateWorkspace As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+  id: InputWorkspace
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: InputWorkspace
+  nameWithType: IFieldChecker.InputWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Input workspace of the fieldchecker.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IWorkspace InputWorkspace { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IWorkspace
+    content.vb: Property InputWorkspace As IWorkspace
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace*
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+  id: ValidateDictionary
+  parent: ESRI.ArcGIS.Geodatabase.IFieldChecker
+  langs:
+  - csharp
+  - vb
+  name: ValidateDictionary
+  nameWithType: IFieldChecker.ValidateDictionary
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fieldchecker dictionary.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISqlKeywordDictionary ValidateDictionary { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ISqlKeywordDictionary
+    content.vb: Property ValidateDictionary As ISqlKeywordDictionary
+  overload: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_Validate_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_Geodatabase_IEnumFieldError__ESRI_ArcGIS_Geodatabase_IFields__
+  name: Validate
+  nameWithType: IFieldChecker.Validate
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.Validate
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.IEnumFieldError
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumFieldError
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumFieldError.html
+  name: IEnumFieldError
+  nameWithType: IEnumFieldError
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumFieldError
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_ValidateTableName_System_String_System_String__
+  name: ValidateTableName
+  nameWithType: IFieldChecker.ValidateTableName
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateTableName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_ValidateField_System_Int32_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_Geodatabase_IEnumFieldError__ESRI_ArcGIS_Geodatabase_IFields__
+  name: ValidateField
+  nameWithType: IFieldChecker.ValidateField
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateField
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_ValidateWorkspace
+  name: ValidateWorkspace
+  nameWithType: IFieldChecker.ValidateWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IWorkspace
+  commentId: T:ESRI.ArcGIS.Geodatabase.IWorkspace
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IWorkspace.html
+  name: IWorkspace
+  nameWithType: IWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_InputWorkspace
+  name: InputWorkspace
+  nameWithType: IFieldChecker.InputWorkspace
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.InputWorkspace
+- uid: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFieldChecker.html#ESRI_ArcGIS_Geodatabase_IFieldChecker_ValidateDictionary
+  name: ValidateDictionary
+  nameWithType: IFieldChecker.ValidateDictionary
+  fullName: ESRI.ArcGIS.Geodatabase.IFieldChecker.ValidateDictionary
+- uid: ESRI.ArcGIS.Geodatabase.ISqlKeywordDictionary
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISqlKeywordDictionary
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISqlKeywordDictionary.html
+  name: ISqlKeywordDictionary
+  nameWithType: ISqlKeywordDictionary
+  fullName: ESRI.ArcGIS.Geodatabase.ISqlKeywordDictionary

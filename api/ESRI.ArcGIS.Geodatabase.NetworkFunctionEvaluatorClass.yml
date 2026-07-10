@@ -1,0 +1,1059 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  id: NetworkFunctionEvaluatorClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe(System.String)
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+  langs:
+  - csharp
+  - vb
+  name: NetworkFunctionEvaluatorClass
+  nameWithType: NetworkFunctionEvaluatorClass
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [ClassInterface(ClassInterfaceType.None)]
+
+      [Guid("92B433F5-556E-4A39-B674-D02213634CC4")]
+
+      public class NetworkFunctionEvaluatorClass : NetworkFunctionEvaluator, INetworkEvaluator, INetworkFunctionEvaluator, IGPDescribe
+    content.vb: >-
+      <ClassInterface(ClassInterfaceType.None)>
+
+      <Guid("92B433F5-556E-4A39-B674-D02213634CC4")>
+
+      Public Class NetworkFunctionEvaluatorClass Implements NetworkFunctionEvaluator, INetworkEvaluator, INetworkFunctionEvaluator, IGPDescribe
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluator
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  - ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  - ESRI.ArcGIS.Geodatabase.IGPDescribe
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 92B433F5-556E-4A39-B674-D02213634CC4
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor
+  commentId: M:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: NetworkFunctionEvaluatorClass()
+  nameWithType: NetworkFunctionEvaluatorClass.NetworkFunctionEvaluatorClass()
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.NetworkFunctionEvaluatorClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: public NetworkFunctionEvaluatorClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor*
+  nameWithType.vb: NetworkFunctionEvaluatorClass.New()
+  fullName.vb: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware
+  commentId: M:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware
+  id: IsTimeAware
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: IsTimeAware()
+  nameWithType: NetworkFunctionEvaluatorClass.IsTimeAware()
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this evaluator supports time aware queries
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual bool IsTimeAware()
+    return:
+      type: System.Boolean
+    content.vb: Overridable Function IsTimeAware() As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  id: GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: GetOperators(esriNetworkAttributeDataType)
+  nameWithType: NetworkFunctionEvaluatorClass.GetOperators(esriNetworkAttributeDataType)
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Get the list of supported binary operator names.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IEnumBSTR GetOperators(esriNetworkAttributeDataType returnDataType)
+    parameters:
+    - id: returnDataType
+      type: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumBSTR
+    content.vb: Overridable Function GetOperators(returnDataType As esriNetworkAttributeDataType) As IEnumBSTR
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe(System.String)
+  id: Describe(System.String)
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: Describe(string)
+  nameWithType: NetworkFunctionEvaluatorClass.Describe(string)
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The description of the named object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual object Describe(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Overridable Function Describe(Name As String) As Object
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(System.String)
+  nameWithType.vb: NetworkFunctionEvaluatorClass.Describe(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe(String)
+  name.vb: Describe(String)
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+  id: Name
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: NetworkFunctionEvaluatorClass.Name
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Unique name of this network evaluator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Name
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+  id: Data
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: NetworkFunctionEvaluatorClass.Data
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The data used by this network evaluator for custom properties.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IPropertySet Data { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Overridable Property Data As IPropertySet
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Data
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+  id: DisplayName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: NetworkFunctionEvaluatorClass.DisplayName
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Name displayed in the user interface for this network evaluator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string DisplayName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable ReadOnly Property DisplayName As String
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.DisplayName
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+  id: CacheAttribute
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: CacheAttribute
+  nameWithType: NetworkFunctionEvaluatorClass.CacheAttribute
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates if this evaluator's values should be computed and stored when the network is built or computed at run time and never stored.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual bool CacheAttribute { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Overridable ReadOnly Property CacheAttribute As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.CacheAttribute
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+  id: RequiredFieldNames
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: RequiredFieldNames
+  nameWithType: NetworkFunctionEvaluatorClass.RequiredFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Required fields of this network evaluator.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IStringArray RequiredFieldNames { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Overridable ReadOnly Property RequiredFieldNames As IStringArray
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkEvaluator.RequiredFieldNames
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+  id: FirstArgument
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: FirstArgument
+  nameWithType: NetworkFunctionEvaluatorClass.FirstArgument
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The attribute name or constant value representing the first argument of the function.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual object FirstArgument { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Overridable Property FirstArgument As Object
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.FirstArgument
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+  id: Operator
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: Operator
+  nameWithType: NetworkFunctionEvaluatorClass.Operator
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The operator used in the function.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string Operator { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property [Operator] As String
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.Operator
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+  id: SecondArgument
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass
+  langs:
+  - csharp
+  - vb
+  name: SecondArgument
+  nameWithType: NetworkFunctionEvaluatorClass.SecondArgument
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The parameter name or constant value representing the second argument of the function.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual object SecondArgument { get; set; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Overridable Property SecondArgument As Object
+  overload: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.SecondArgument
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluator
+  commentId: T:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluator
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluator.html
+  name: NetworkFunctionEvaluator
+  nameWithType: NetworkFunctionEvaluator
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluator
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html
+  name: INetworkEvaluator
+  nameWithType: INetworkEvaluator
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+- uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html
+  name: INetworkFunctionEvaluator
+  nameWithType: INetworkFunctionEvaluator
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+- uid: ESRI.ArcGIS.Geodatabase.IGPDescribe
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGPDescribe
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGPDescribe.html
+  name: IGPDescribe
+  nameWithType: IGPDescribe
+  fullName: ESRI.ArcGIS.Geodatabase.IGPDescribe
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass__ctor
+  name: NetworkFunctionEvaluatorClass
+  nameWithType: NetworkFunctionEvaluatorClass.NetworkFunctionEvaluatorClass
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.NetworkFunctionEvaluatorClass
+  nameWithType.vb: NetworkFunctionEvaluatorClass.New
+  fullName.vb: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_IsTimeAware
+  name: IsTimeAware
+  nameWithType: NetworkFunctionEvaluatorClass.IsTimeAware
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.IsTimeAware
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_IsTimeAware
+  name: IsTimeAware()
+  nameWithType: INetworkEvaluator.IsTimeAware()
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware()
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware
+    name: IsTimeAware
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_IsTimeAware
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.IsTimeAware
+    name: IsTimeAware
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_IsTimeAware
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_GetOperators_ESRI_ArcGIS_Geodatabase_esriNetworkAttributeDataType_
+  name: GetOperators
+  nameWithType: NetworkFunctionEvaluatorClass.GetOperators
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.GetOperators
+- uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  commentId: M:ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  parent: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_GetOperators_ESRI_ArcGIS_Geodatabase_esriNetworkAttributeDataType_
+  name: GetOperators(esriNetworkAttributeDataType)
+  nameWithType: INetworkFunctionEvaluator.GetOperators(esriNetworkAttributeDataType)
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+    name: GetOperators
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_GetOperators_ESRI_ArcGIS_Geodatabase_esriNetworkAttributeDataType_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+    name: esriNetworkAttributeDataType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType.html
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.GetOperators(ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType)
+    name: GetOperators
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_GetOperators_ESRI_ArcGIS_Geodatabase_esriNetworkAttributeDataType_
+  - name: (
+  - uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+    name: esriNetworkAttributeDataType
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType.html
+  - name: )
+- uid: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType.html
+  name: esriNetworkAttributeDataType
+  nameWithType: esriNetworkAttributeDataType
+  fullName: ESRI.ArcGIS.Geodatabase.esriNetworkAttributeDataType
+- uid: ESRI.ArcGIS.esriSystem.IEnumBSTR
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumBSTR
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumBSTR.html
+  name: IEnumBSTR
+  nameWithType: IEnumBSTR
+  fullName: ESRI.ArcGIS.esriSystem.IEnumBSTR
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_Describe_System_String_
+  name: Describe
+  nameWithType: NetworkFunctionEvaluatorClass.Describe
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Describe
+- uid: ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IGPDescribe
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGPDescribe.html#ESRI_ArcGIS_Geodatabase_IGPDescribe_Describe_System_String_
+  name: Describe(string)
+  nameWithType: IGPDescribe.Describe(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(string)
+  nameWithType.vb: IGPDescribe.Describe(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(String)
+  name.vb: Describe(String)
+  spec.csharp:
+  - uid: ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(System.String)
+    name: Describe
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IGPDescribe.html#ESRI_ArcGIS_Geodatabase_IGPDescribe_Describe_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: ESRI.ArcGIS.Geodatabase.IGPDescribe.Describe(System.String)
+    name: Describe
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.IGPDescribe.html#ESRI_ArcGIS_Geodatabase_IGPDescribe_Describe_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_Name
+  name: Name
+  nameWithType: NetworkFunctionEvaluatorClass.Name
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Name
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Name
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Name
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_Name
+  name: Name
+  nameWithType: INetworkEvaluator.Name
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Name
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_Data
+  name: Data
+  nameWithType: NetworkFunctionEvaluatorClass.Data
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Data
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Data
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Data
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_Data
+  name: Data
+  nameWithType: INetworkEvaluator.Data
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.Data
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_DisplayName
+  name: DisplayName
+  nameWithType: NetworkFunctionEvaluatorClass.DisplayName
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.DisplayName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.DisplayName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.DisplayName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_DisplayName
+  name: DisplayName
+  nameWithType: INetworkEvaluator.DisplayName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.DisplayName
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_CacheAttribute
+  name: CacheAttribute
+  nameWithType: NetworkFunctionEvaluatorClass.CacheAttribute
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.CacheAttribute
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.CacheAttribute
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.CacheAttribute
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_CacheAttribute
+  name: CacheAttribute
+  nameWithType: INetworkEvaluator.CacheAttribute
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.CacheAttribute
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_RequiredFieldNames
+  name: RequiredFieldNames
+  nameWithType: NetworkFunctionEvaluatorClass.RequiredFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.RequiredFieldNames
+- uid: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.RequiredFieldNames
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkEvaluator.RequiredFieldNames
+  parent: ESRI.ArcGIS.Geodatabase.INetworkEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkEvaluator_RequiredFieldNames
+  name: RequiredFieldNames
+  nameWithType: INetworkEvaluator.RequiredFieldNames
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkEvaluator.RequiredFieldNames
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_FirstArgument
+  name: FirstArgument
+  nameWithType: NetworkFunctionEvaluatorClass.FirstArgument
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.FirstArgument
+- uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.FirstArgument
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.FirstArgument
+  parent: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_FirstArgument
+  name: FirstArgument
+  nameWithType: INetworkFunctionEvaluator.FirstArgument
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.FirstArgument
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_Operator
+  name: Operator
+  nameWithType: NetworkFunctionEvaluatorClass.Operator
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.Operator
+- uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.Operator
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.Operator
+  parent: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_Operator
+  name: Operator
+  nameWithType: INetworkFunctionEvaluator.Operator
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.Operator
+- uid: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.html#ESRI_ArcGIS_Geodatabase_NetworkFunctionEvaluatorClass_SecondArgument
+  name: SecondArgument
+  nameWithType: NetworkFunctionEvaluatorClass.SecondArgument
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkFunctionEvaluatorClass.SecondArgument
+- uid: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.SecondArgument
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.SecondArgument
+  parent: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.html#ESRI_ArcGIS_Geodatabase_INetworkFunctionEvaluator_SecondArgument
+  name: SecondArgument
+  nameWithType: INetworkFunctionEvaluator.SecondArgument
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkFunctionEvaluator.SecondArgument

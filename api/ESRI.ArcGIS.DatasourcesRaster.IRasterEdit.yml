@@ -1,0 +1,282 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  id: IRasterEdit
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh
+  - ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  langs:
+  - csharp
+  - vb
+  name: IRasterEdit
+  nameWithType: IRasterEdit
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control pixel block level editing operations.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("32656121-4DF9-45F3-BDD1-507D481E9B49")]
+
+      public interface IRasterEdit
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("32656121-4DF9-45F3-BDD1-507D481E9B49")>
+
+      Public Interface IRasterEdit
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 32656121-4DF9-45F3-BDD1-507D481E9B49
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit
+  id: CanEdit
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  langs:
+  - csharp
+  - vb
+  name: CanEdit()
+  nameWithType: IRasterEdit.CanEdit()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Checks if this Raster can be edited.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanEdit()
+    return:
+      type: System.Boolean
+    content.vb: Function CanEdit() As Boolean
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Write(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  langs:
+  - csharp
+  - vb
+  name: Write(IPnt, IPixelBlock)
+  nameWithType: IRasterEdit.Write(IPnt, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write(ESRI.ArcGIS.Geodatabase.IPnt, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Write(IPnt pTlc, IPixelBlock pPixelBlock)
+    parameters:
+    - id: pTlc
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    - id: pPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub Write(pTlc As IPnt, pPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Erase(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  langs:
+  - csharp
+  - vb
+  name: Erase(IPnt, IPixelBlock)
+  nameWithType: IRasterEdit.Erase(IPnt, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase(ESRI.ArcGIS.Geodatabase.IPnt, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Erase(IPnt pTlc, IPixelBlock pPixelBlock)
+    parameters:
+    - id: pTlc
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    - id: pPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub [Erase](pTlc As IPnt, pPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh
+  id: Refresh
+  parent: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit
+  langs:
+  - csharp
+  - vb
+  name: Refresh()
+  nameWithType: IRasterEdit.Refresh()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Refreshes the associated RasterDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Refresh()
+    content.vb: Sub Refresh()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.html#ESRI_ArcGIS_DatasourcesRaster_IRasterEdit_CanEdit
+  name: CanEdit
+  nameWithType: IRasterEdit.CanEdit
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.CanEdit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.html#ESRI_ArcGIS_DatasourcesRaster_IRasterEdit_Write_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Write
+  nameWithType: IRasterEdit.Write
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Write
+- uid: ESRI.ArcGIS.Geodatabase.IPnt
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPnt
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPnt.html
+  name: IPnt
+  nameWithType: IPnt
+  fullName: ESRI.ArcGIS.Geodatabase.IPnt
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.html#ESRI_ArcGIS_DatasourcesRaster_IRasterEdit_Erase_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Erase
+  nameWithType: IRasterEdit.Erase
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Erase
+- uid: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.html#ESRI_ArcGIS_DatasourcesRaster_IRasterEdit_Refresh
+  name: Refresh
+  nameWithType: IRasterEdit.Refresh
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IRasterEdit.Refresh

@@ -1,0 +1,244 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  commentId: T:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  id: IESRISpatialReferenceGENEx
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  - ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(System.Boolean,System.Boolean,System.String@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(System.String,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IESRISpatialReferenceGENEx
+  nameWithType: IESRISpatialReferenceGENEx
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that generate well known string representations for spatial reference objects.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("05A455F2-1E1E-482E-B69E-4B31D1B1F5D1")]
+
+      public interface IESRISpatialReferenceGENEx
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("05A455F2-1E1E-482E-B69E-4B31D1B1F5D1")>
+
+      Public Interface IESRISpatialReferenceGENEx
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeographicCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.ProjectedCoordinateSystemClass
+  - ESRI.ArcGIS.Geometry.VerticalCoordinateSystemClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 05A455F2-1E1E-482E-B69E-4B31D1B1F5D1
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(System.String,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(System.String,System.Int32@)
+  id: ImportFromESRISpatialReference(System.String,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  langs:
+  - csharp
+  - vb
+  name: ImportFromESRISpatialReference(string, out int)
+  nameWithType: IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(string, out int)
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(string, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Defines this spatial reference component from the specified ESRISpatialReference buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ImportFromESRISpatialReference(string str, out int cBytesRead)
+    parameters:
+    - id: str
+      type: System.String
+    - id: cBytesRead
+      type: System.Int32
+    content.vb: Sub ImportFromESRISpatialReference(str As String, cBytesRead As Integer)
+  overload: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference*
+  nameWithType.vb: IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference(String, Integer)
+  name.vb: ImportFromESRISpatialReference(String, Integer)
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(System.Boolean,System.Boolean,System.String@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(System.Boolean,System.Boolean,System.String@,System.Int32@)
+  id: ExportToESRISpatialReferenceEx(System.Boolean,System.Boolean,System.String@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  langs:
+  - csharp
+  - vb
+  name: ExportToESRISpatialReferenceEx(bool, bool, out string, out int)
+  nameWithType: IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(bool, bool, out string, out int)
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(bool, bool, out string, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Exports this spatial reference component to a buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ExportToESRISpatialReferenceEx(bool authority, bool wkt2, out string str, out int cBytesWrote)
+    parameters:
+    - id: authority
+      type: System.Boolean
+    - id: wkt2
+      type: System.Boolean
+    - id: str
+      type: System.String
+    - id: cBytesWrote
+      type: System.Int32
+    content.vb: Sub ExportToESRISpatialReferenceEx(authority As Boolean, wkt2 As Boolean, str As String, cBytesWrote As Integer)
+  overload: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx*
+  nameWithType.vb: IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(Boolean, Boolean, String, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx(Boolean, Boolean, String, Integer)
+  name.vb: ExportToESRISpatialReferenceEx(Boolean, Boolean, String, Integer)
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  commentId: P:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  id: ESRISpatialReferenceSize
+  parent: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx
+  langs:
+  - csharp
+  - vb
+  name: ESRISpatialReferenceSize
+  nameWithType: IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of bytes required to hold the persistant representation of this spatial reference component.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ESRISpatialReferenceSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ESRISpatialReferenceSize As Integer
+  overload: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.html#ESRI_ArcGIS_Geometry_IESRISpatialReferenceGENEx_ImportFromESRISpatialReference_System_String_System_Int32__
+  name: ImportFromESRISpatialReference
+  nameWithType: IESRISpatialReferenceGENEx.ImportFromESRISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ImportFromESRISpatialReference
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.html#ESRI_ArcGIS_Geometry_IESRISpatialReferenceGENEx_ExportToESRISpatialReferenceEx_System_Boolean_System_Boolean_System_String__System_Int32__
+  name: ExportToESRISpatialReferenceEx
+  nameWithType: IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ExportToESRISpatialReferenceEx
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.html#ESRI_ArcGIS_Geometry_IESRISpatialReferenceGENEx_ESRISpatialReferenceSize
+  name: ESRISpatialReferenceSize
+  nameWithType: IESRISpatialReferenceGENEx.ESRISpatialReferenceSize
+  fullName: ESRI.ArcGIS.Geometry.IESRISpatialReferenceGENEx.ESRISpatialReferenceSize

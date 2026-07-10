@@ -1,0 +1,392 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometryFactory
+  id: IGeometryFactory
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType,ESRI.ArcGIS.Geometry.IGeometry@)
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType,ESRI.ArcGIS.Geometry.IGeometry@)
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator(ESRI.ArcGIS.Geometry.IEnumGeometry)
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  - ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant(System.Object,ESRI.ArcGIS.Geometry.IGeometry@,System.Int32@)
+  langs:
+  - csharp
+  - vb
+  name: IGeometryFactory
+  nameWithType: IGeometryFactory
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that create geometries from different inputs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F71F8C16-EF07-11D0-8327-0000F8775BE9")]
+
+      public interface IGeometryFactory
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F71F8C16-EF07-11D0-8327-0000F8775BE9")>
+
+      Public Interface IGeometryFactory
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.GeometryEnvironmentClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F71F8C16-EF07-11D0-8327-0000F8775BE9
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  id: CreateGeometry(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeometry(ref int, ref byte, out IGeometry)
+  nameWithType: IGeometryFactory.CreateGeometry(ref int, ref byte, out IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry(ref int, ref byte, out ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Create a point, polyline, polygon, or multipoint from the specified shapefile format buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateGeometry(ref int byteCountInOut, ref byte geometryInfo, out IGeometry outGeometry)
+    parameters:
+    - id: byteCountInOut
+      type: System.Int32
+    - id: geometryInfo
+      type: System.Byte
+    - id: outGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub CreateGeometry(byteCountInOut As Integer, geometryInfo As Byte, outGeometry As IGeometry)
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry*
+  nameWithType.vb: IGeometryFactory.CreateGeometry(Integer, Byte, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry(Integer, Byte, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: CreateGeometry(Integer, Byte, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  id: CreateGeometryFromWkb(System.Int32@,System.Byte@,ESRI.ArcGIS.Geometry.IGeometry@)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeometryFromWkb(ref int, ref byte, out IGeometry)
+  nameWithType: IGeometryFactory.CreateGeometryFromWkb(ref int, ref byte, out IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb(ref int, ref byte, out ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Create a point, polyline, polygon, or multipoint from the specified OGIS WKB format buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateGeometryFromWkb(ref int byteCountInOut, ref byte geometryInfo, out IGeometry outGeometry)
+    parameters:
+    - id: byteCountInOut
+      type: System.Int32
+    - id: geometryInfo
+      type: System.Byte
+    - id: outGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub CreateGeometryFromWkb(byteCountInOut As Integer, geometryInfo As Byte, outGeometry As IGeometry)
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb*
+  nameWithType.vb: IGeometryFactory.CreateGeometryFromWkb(Integer, Byte, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb(Integer, Byte, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: CreateGeometryFromWkb(Integer, Byte, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType,ESRI.ArcGIS.Geometry.IGeometry@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType,ESRI.ArcGIS.Geometry.IGeometry@)
+  id: CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType,ESRI.ArcGIS.Geometry.IGeometry@)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateEmptyGeometryByESRIType(esriShapeType, out IGeometry)
+  nameWithType: IGeometryFactory.CreateEmptyGeometryByESRIType(esriShapeType, out IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType, out ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Create an empty geometry of the specified Esri shape file type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateEmptyGeometryByESRIType(esriShapeType shapeType, out IGeometry outGeometry)
+    parameters:
+    - id: shapeType
+      type: ESRI.ArcGIS.Geometry.esriShapeType
+    - id: outGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub CreateEmptyGeometryByESRIType(shapeType As esriShapeType, outGeometry As IGeometry)
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType*
+  nameWithType.vb: IGeometryFactory.CreateEmptyGeometryByESRIType(esriShapeType, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType(ESRI.ArcGIS.Geometry.esriShapeType, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: CreateEmptyGeometryByESRIType(esriShapeType, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType,ESRI.ArcGIS.Geometry.IGeometry@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType,ESRI.ArcGIS.Geometry.IGeometry@)
+  id: CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType,ESRI.ArcGIS.Geometry.IGeometry@)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateEmptyGeometryByType(esriGeometryType, out IGeometry)
+  nameWithType: IGeometryFactory.CreateEmptyGeometryByType(esriGeometryType, out IGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType, out ESRI.ArcGIS.Geometry.IGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Creates an empty geometry of the specified ArcObjects geometry type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateEmptyGeometryByType(esriGeometryType GeometryType, out IGeometry outGeometry)
+    parameters:
+    - id: GeometryType
+      type: ESRI.ArcGIS.Geometry.esriGeometryType
+    - id: outGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Sub CreateEmptyGeometryByType(GeometryType As esriGeometryType, outGeometry As IGeometry)
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType*
+  nameWithType.vb: IGeometryFactory.CreateEmptyGeometryByType(esriGeometryType, IGeometry)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType(ESRI.ArcGIS.Geometry.esriGeometryType, ESRI.ArcGIS.Geometry.IGeometry)
+  name.vb: CreateEmptyGeometryByType(esriGeometryType, IGeometry)
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant(System.Object,ESRI.ArcGIS.Geometry.IGeometry@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant(System.Object,ESRI.ArcGIS.Geometry.IGeometry@,System.Int32@)
+  id: CreateGeometryFromWkbVariant(System.Object,ESRI.ArcGIS.Geometry.IGeometry@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeometryFromWkbVariant(object, out IGeometry, out int)
+  nameWithType: IGeometryFactory.CreateGeometryFromWkbVariant(object, out IGeometry, out int)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant(object, out ESRI.ArcGIS.Geometry.IGeometry, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Create a point, polyline, polygon, or multipoint from the specified OGIS WKB format buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CreateGeometryFromWkbVariant(object wkb, out IGeometry outGeometry, out int numBytesRead)
+    parameters:
+    - id: wkb
+      type: System.Object
+    - id: outGeometry
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    - id: numBytesRead
+      type: System.Int32
+    content.vb: Sub CreateGeometryFromWkbVariant(wkb As Object, outGeometry As IGeometry, numBytesRead As Integer)
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant*
+  nameWithType.vb: IGeometryFactory.CreateGeometryFromWkbVariant(Object, IGeometry, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant(Object, ESRI.ArcGIS.Geometry.IGeometry, Integer)
+  name.vb: CreateGeometryFromWkbVariant(Object, IGeometry, Integer)
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator(ESRI.ArcGIS.Geometry.IEnumGeometry)
+  commentId: M:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator(ESRI.ArcGIS.Geometry.IEnumGeometry)
+  id: CreateGeometryFromEnumerator(ESRI.ArcGIS.Geometry.IEnumGeometry)
+  parent: ESRI.ArcGIS.Geometry.IGeometryFactory
+  langs:
+  - csharp
+  - vb
+  name: CreateGeometryFromEnumerator(IEnumGeometry)
+  nameWithType: IGeometryFactory.CreateGeometryFromEnumerator(IEnumGeometry)
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator(ESRI.ArcGIS.Geometry.IEnumGeometry)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: IGeometry CreateGeometryFromEnumerator(IEnumGeometry geometries)
+    parameters:
+    - id: geometries
+      type: ESRI.ArcGIS.Geometry.IEnumGeometry
+    return:
+      type: ESRI.ArcGIS.Geometry.IGeometry
+    content.vb: Function CreateGeometryFromEnumerator(geometries As IEnumGeometry) As IGeometry
+  overload: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateGeometry_System_Int32__System_Byte__ESRI_ArcGIS_Geometry_IGeometry__
+  name: CreateGeometry
+  nameWithType: IGeometryFactory.CreateGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometry
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: ESRI.ArcGIS.Geometry.IGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometry.html
+  name: IGeometry
+  nameWithType: IGeometry
+  fullName: ESRI.ArcGIS.Geometry.IGeometry
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateGeometryFromWkb_System_Int32__System_Byte__ESRI_ArcGIS_Geometry_IGeometry__
+  name: CreateGeometryFromWkb
+  nameWithType: IGeometryFactory.CreateGeometryFromWkb
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkb
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateEmptyGeometryByESRIType_ESRI_ArcGIS_Geometry_esriShapeType_ESRI_ArcGIS_Geometry_IGeometry__
+  name: CreateEmptyGeometryByESRIType
+  nameWithType: IGeometryFactory.CreateEmptyGeometryByESRIType
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByESRIType
+- uid: ESRI.ArcGIS.Geometry.esriShapeType
+  commentId: T:ESRI.ArcGIS.Geometry.esriShapeType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriShapeType.html
+  name: esriShapeType
+  nameWithType: esriShapeType
+  fullName: ESRI.ArcGIS.Geometry.esriShapeType
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateEmptyGeometryByType_ESRI_ArcGIS_Geometry_esriGeometryType_ESRI_ArcGIS_Geometry_IGeometry__
+  name: CreateEmptyGeometryByType
+  nameWithType: IGeometryFactory.CreateEmptyGeometryByType
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateEmptyGeometryByType
+- uid: ESRI.ArcGIS.Geometry.esriGeometryType
+  commentId: T:ESRI.ArcGIS.Geometry.esriGeometryType
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriGeometryType.html
+  name: esriGeometryType
+  nameWithType: esriGeometryType
+  fullName: ESRI.ArcGIS.Geometry.esriGeometryType
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateGeometryFromWkbVariant_System_Object_ESRI_ArcGIS_Geometry_IGeometry__System_Int32__
+  name: CreateGeometryFromWkbVariant
+  nameWithType: IGeometryFactory.CreateGeometryFromWkbVariant
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromWkbVariant
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IGeometryFactory.html#ESRI_ArcGIS_Geometry_IGeometryFactory_CreateGeometryFromEnumerator_ESRI_ArcGIS_Geometry_IEnumGeometry_
+  name: CreateGeometryFromEnumerator
+  nameWithType: IGeometryFactory.CreateGeometryFromEnumerator
+  fullName: ESRI.ArcGIS.Geometry.IGeometryFactory.CreateGeometryFromEnumerator
+- uid: ESRI.ArcGIS.Geometry.IEnumGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IEnumGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnumGeometry.html
+  name: IEnumGeometry
+  nameWithType: IEnumGeometry
+  fullName: ESRI.ArcGIS.Geometry.IEnumGeometry

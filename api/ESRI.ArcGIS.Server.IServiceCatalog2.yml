@@ -1,0 +1,347 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2
+  commentId: T:ESRI.ArcGIS.Server.IServiceCatalog2
+  id: IServiceCatalog2
+  parent: ESRI.ArcGIS.Server
+  children:
+  - ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders(System.String)
+  - ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+  - ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+  - ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+  - ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IServiceCatalog2
+  nameWithType: IServiceCatalog2
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2
+  type: Interface
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Provides access to properties of an ArcGIS Server web service catalog.
+  example: []
+  syntax:
+    content: >-
+      [Guid("46C52546-7C26-477F-BDC1-B1C254625F81")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IServiceCatalog2 : IServiceCatalog
+    content.vb: >-
+      <Guid("46C52546-7C26-477F-BDC1-B1C254625F81")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IServiceCatalog2 Inherits IServiceCatalog
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 46C52546-7C26-477F-BDC1-B1C254625F81
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders(System.String)
+  commentId: M:ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders(System.String)
+  id: GetFolders(System.String)
+  parent: ESRI.ArcGIS.Server.IServiceCatalog2
+  langs:
+  - csharp
+  - vb
+  name: GetFolders(string)
+  nameWithType: IServiceCatalog2.GetFolders(string)
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: Gets an IStringArray of service folder names.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IStringArray GetFolders(string folderName)
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    content.vb: Function GetFolders(folderName As String) As IStringArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders*
+  nameWithType.vb: IServiceCatalog2.GetFolders(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders(String)
+  name.vb: GetFolders(String)
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+  id: ServiceDescriptions
+  parent: ESRI.ArcGIS.Server.IServiceCatalog2
+  langs:
+  - csharp
+  - vb
+  name: ServiceDescriptions
+  nameWithType: IServiceCatalog2.ServiceDescriptions
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  syntax:
+    content: IServiceDescriptionArray ServiceDescriptions { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.IServiceDescriptionArray
+    content.vb: ReadOnly Property ServiceDescriptions As IServiceDescriptionArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+  id: MessageVersion
+  parent: ESRI.ArcGIS.Server.IServiceCatalog2
+  langs:
+  - csharp
+  - vb
+  name: MessageVersion
+  nameWithType: IServiceCatalog2.MessageVersion
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The message version this server version supports.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriArcGISVersion MessageVersion { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+    content.vb: ReadOnly Property MessageVersion As esriArcGISVersion
+  overload: ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+  id: MessageFormats
+  parent: ESRI.ArcGIS.Server.IServiceCatalog2
+  langs:
+  - csharp
+  - vb
+  name: MessageFormats
+  nameWithType: IServiceCatalog2.MessageFormats
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: The message formats supported by the web services in the catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: esriServiceCatalogMessageFormat MessageFormats { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+    content.vb: ReadOnly Property MessageFormats As esriServiceCatalogMessageFormat
+  overload: ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats*
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx(System.String)
+  commentId: P:ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx(System.String)
+  id: ServiceDescriptionsEx(System.String)
+  parent: ESRI.ArcGIS.Server.IServiceCatalog2
+  langs:
+  - csharp
+  - vb
+  name: ServiceDescriptionsEx[string]
+  nameWithType: IServiceCatalog2.ServiceDescriptionsEx[string]
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Server
+  namespace: ESRI.ArcGIS.Server
+  summary: An array of the web service descriptions in the web service catalog.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IServiceDescriptionArray ServiceDescriptionsEx[string folderName] { get; }
+    parameters:
+    - id: folderName
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Server.IServiceDescriptionArray
+    content.vb: ReadOnly Property ServiceDescriptionsEx(folderName As String) As IServiceDescriptionArray
+  overload: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx*
+  nameWithType.vb: IServiceCatalog2.ServiceDescriptionsEx(String)
+  fullName.vb: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx(String)
+  name.vb: ServiceDescriptionsEx(String)
+references:
+- uid: ESRI.ArcGIS.Server
+  commentId: N:ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Server
+  nameWithType: ESRI.ArcGIS.Server
+  fullName: ESRI.ArcGIS.Server
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Server
+    name: Server
+    isExternal: true
+    href: ESRI.ArcGIS.Server.html
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog2.html#ESRI_ArcGIS_Server_IServiceCatalog2_GetFolders_System_String_
+  name: GetFolders
+  nameWithType: IServiceCatalog2.GetFolders
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.GetFolders
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog2.html#ESRI_ArcGIS_Server_IServiceCatalog2_ServiceDescriptions
+  name: ServiceDescriptions
+  nameWithType: IServiceCatalog2.ServiceDescriptions
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptions
+- uid: ESRI.ArcGIS.Server.IServiceDescriptionArray
+  commentId: T:ESRI.ArcGIS.Server.IServiceDescriptionArray
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceDescriptionArray.html
+  name: IServiceDescriptionArray
+  nameWithType: IServiceDescriptionArray
+  fullName: ESRI.ArcGIS.Server.IServiceDescriptionArray
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog2.html#ESRI_ArcGIS_Server_IServiceCatalog2_MessageVersion
+  name: MessageVersion
+  nameWithType: IServiceCatalog2.MessageVersion
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.MessageVersion
+- uid: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+  commentId: T:ESRI.ArcGIS.esriSystem.esriArcGISVersion
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriArcGISVersion.html
+  name: esriArcGISVersion
+  nameWithType: esriArcGISVersion
+  fullName: ESRI.ArcGIS.esriSystem.esriArcGISVersion
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog2.html#ESRI_ArcGIS_Server_IServiceCatalog2_MessageFormats
+  name: MessageFormats
+  nameWithType: IServiceCatalog2.MessageFormats
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.MessageFormats
+- uid: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+  commentId: T:ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+  parent: ESRI.ArcGIS.Server
+  isExternal: true
+  href: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat.html
+  name: esriServiceCatalogMessageFormat
+  nameWithType: esriServiceCatalogMessageFormat
+  fullName: ESRI.ArcGIS.Server.esriServiceCatalogMessageFormat
+- uid: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx*
+  commentId: Overload:ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx
+  isExternal: true
+  href: ESRI.ArcGIS.Server.IServiceCatalog2.html#ESRI_ArcGIS_Server_IServiceCatalog2_ServiceDescriptionsEx_System_String_
+  name: ServiceDescriptionsEx
+  nameWithType: IServiceCatalog2.ServiceDescriptionsEx
+  fullName: ESRI.ArcGIS.Server.IServiceCatalog2.ServiceDescriptionsEx

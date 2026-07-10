@@ -1,0 +1,256 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker
+  commentId: T:ESRI.ArcGIS.esriSystem.IJobTracker
+  id: IJobTracker
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+  - ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+  - ESRI.ArcGIS.esriSystem.IJobTracker.Message(System.String)
+  - ESRI.ArcGIS.esriSystem.IJobTracker.set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IJobTracker
+  nameWithType: IJobTracker
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to members that track and control execution of jobs.
+  example: []
+  syntax:
+    content: >-
+      [Guid("E95E6C90-0029-47E6-B0EA-5C6AA6642968")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IJobTracker
+    content.vb: >-
+      <Guid("E95E6C90-0029-47E6-B0EA-5C6AA6642968")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IJobTracker
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E95E6C90-0029-47E6-B0EA-5C6AA6642968
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType,System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IJobTracker.set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType,System.String)
+  id: set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType,System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJobTracker
+  langs:
+  - csharp
+  - vb
+  name: set_Message(esriJobMessageType, string)
+  nameWithType: IJobTracker.set_Message(esriJobMessageType, string)
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void set_Message(esriJobMessageType type, string A_2)
+    parameters:
+    - id: type
+      type: ESRI.ArcGIS.esriSystem.esriJobMessageType
+    - id: A_2
+      type: System.String
+    content.vb: Sub set_Message(type As esriJobMessageType, A_2 As String)
+  overload: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message*
+  nameWithType.vb: IJobTracker.set_Message(esriJobMessageType, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message(ESRI.ArcGIS.esriSystem.esriJobMessageType, String)
+  name.vb: set_Message(esriJobMessageType, String)
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+  commentId: P:ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+  id: CanContinue
+  parent: ESRI.ArcGIS.esriSystem.IJobTracker
+  langs:
+  - csharp
+  - vb
+  name: CanContinue
+  nameWithType: IJobTracker.CanContinue
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Indicates whether job execution can be continued.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool CanContinue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property CanContinue As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue*
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+  commentId: P:ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+  id: IsStopped
+  parent: ESRI.ArcGIS.esriSystem.IJobTracker
+  langs:
+  - csharp
+  - vb
+  name: IsStopped
+  nameWithType: IJobTracker.IsStopped
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Must be called by job processor after it stopped job execution.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStopped { set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: WriteOnly Property IsStopped As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped*
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.Message(System.String)
+  commentId: P:ESRI.ArcGIS.esriSystem.IJobTracker.Message(System.String)
+  id: Message(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IJobTracker
+  langs:
+  - csharp
+  - vb
+  name: Message[string]
+  nameWithType: IJobTracker.Message[string]
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.Message[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: string Message[string type] { set; }
+    parameters:
+    - id: type
+      type: System.String
+    return:
+      type: System.String
+    content.vb: WriteOnly Property Message(type As String) As String
+  overload: ESRI.ArcGIS.esriSystem.IJobTracker.Message*
+  nameWithType.vb: IJobTracker.Message(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IJobTracker.Message(String)
+  name.vb: Message(String)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobTracker.set_Message
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobTracker.html#ESRI_ArcGIS_esriSystem_IJobTracker_set_Message_ESRI_ArcGIS_esriSystem_esriJobMessageType_System_String_
+  name: set_Message
+  nameWithType: IJobTracker.set_Message
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.set_Message
+- uid: ESRI.ArcGIS.esriSystem.esriJobMessageType
+  commentId: T:ESRI.ArcGIS.esriSystem.esriJobMessageType
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.esriJobMessageType.html
+  name: esriJobMessageType
+  nameWithType: esriJobMessageType
+  fullName: ESRI.ArcGIS.esriSystem.esriJobMessageType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobTracker.html#ESRI_ArcGIS_esriSystem_IJobTracker_CanContinue
+  name: CanContinue
+  nameWithType: IJobTracker.CanContinue
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.CanContinue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobTracker.html#ESRI_ArcGIS_esriSystem_IJobTracker_IsStopped
+  name: IsStopped
+  nameWithType: IJobTracker.IsStopped
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.IsStopped
+- uid: ESRI.ArcGIS.esriSystem.IJobTracker.Message*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IJobTracker.Message
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJobTracker.html#ESRI_ArcGIS_esriSystem_IJobTracker_Message_System_String_
+  name: Message
+  nameWithType: IJobTracker.Message
+  fullName: ESRI.ArcGIS.esriSystem.IJobTracker.Message

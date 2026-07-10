@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  commentId: T:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  id: IClassSchemaEdit
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName(System.String)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue(System.String,System.Object)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName(System.String)
+  - ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IClassSchemaEdit
+  nameWithType: IClassSchemaEdit
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to member to modify an object class schema.
+  example: []
+  syntax:
+    content: >-
+      [Guid("64654191-E2E8-11D2-8A56-000000000000")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IClassSchemaEdit
+    content.vb: >-
+      <Guid("64654191-E2E8-11D2-8A56-000000000000")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IClassSchemaEdit
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.FeatureClassClass
+  - ESRI.ArcGIS.Geodatabase.ObjectClassClass
+  - ESRI.ArcGIS.Geodatabase.RasterCatalogClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 64654191-E2E8-11D2-8A56-000000000000
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass(System.String,System.String)
+  id: RegisterAsObjectClass(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: RegisterAsObjectClass(string, string)
+  nameWithType: IClassSchemaEdit.RegisterAsObjectClass(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Registers this class with the database, assigning it a class id and creating an object id column.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int RegisterAsObjectClass(string suggestedOIDFieldName, string ConfigKeyword)
+    parameters:
+    - id: suggestedOIDFieldName
+      type: System.String
+    - id: ConfigKeyword
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Function RegisterAsObjectClass(suggestedOIDFieldName As String, ConfigKeyword As String) As Integer
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass*
+  nameWithType.vb: IClassSchemaEdit.RegisterAsObjectClass(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass(String, String)
+  name.vb: RegisterAsObjectClass(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)
+  id: AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterInstanceCLSID(UID)
+  nameWithType: IClassSchemaEdit.AlterInstanceCLSID(UID)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID(ESRI.ArcGIS.esriSystem.UID)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AlterInstanceCLSID(UID InstanceCLSID)
+    parameters:
+    - id: InstanceCLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    content.vb: Sub AlterInstanceCLSID(InstanceCLSID As UID)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID*
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)
+  id: AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID,ESRI.ArcGIS.esriSystem.IPropertySet)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterClassExtensionCLSID(UID, IPropertySet)
+  nameWithType: IClassSchemaEdit.AlterClassExtensionCLSID(UID, IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID(ESRI.ArcGIS.esriSystem.UID, ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AlterClassExtensionCLSID(UID ClassExtensionCLSID, IPropertySet classExtensionProperties)
+    parameters:
+    - id: ClassExtensionCLSID
+      type: ESRI.ArcGIS.esriSystem.UID
+    - id: classExtensionProperties
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub AlterClassExtensionCLSID(ClassExtensionCLSID As UID, classExtensionProperties As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID*
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName(System.String)
+  id: AlterAliasName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterAliasName(string)
+  nameWithType: IClassSchemaEdit.AlterAliasName(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The alias name of the object class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterAliasName(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Sub AlterAliasName(Name As String)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName*
+  nameWithType.vb: IClassSchemaEdit.AlterAliasName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName(String)
+  name.vb: AlterAliasName(String)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName(System.String,System.String)
+  id: AlterFieldAliasName(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterFieldAliasName(string, string)
+  nameWithType: IClassSchemaEdit.AlterFieldAliasName(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The alias name of the object class field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterFieldAliasName(string FieldName, string AliasName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    - id: AliasName
+      type: System.String
+    content.vb: Sub AlterFieldAliasName(FieldName As String, AliasName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName*
+  nameWithType.vb: IClassSchemaEdit.AlterFieldAliasName(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName(String, String)
+  name.vb: AlterFieldAliasName(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName(System.String)
+  id: AlterModelName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterModelName(string)
+  nameWithType: IClassSchemaEdit.AlterModelName(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The model name of the object class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterModelName(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    content.vb: Sub AlterModelName(Name As String)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName*
+  nameWithType.vb: IClassSchemaEdit.AlterModelName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName(String)
+  name.vb: AlterModelName(String)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName(System.String,System.String)
+  id: AlterFieldModelName(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterFieldModelName(string, string)
+  nameWithType: IClassSchemaEdit.AlterFieldModelName(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The model name of the object class field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterFieldModelName(string FieldName, string ModelName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    - id: ModelName
+      type: System.String
+    content.vb: Sub AlterFieldModelName(FieldName As String, ModelName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName*
+  nameWithType.vb: IClassSchemaEdit.AlterFieldModelName(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName(String, String)
+  name.vb: AlterFieldModelName(String, String)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)
+  id: AlterDomain(System.String,ESRI.ArcGIS.Geodatabase.IDomain)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterDomain(string, IDomain)
+  nameWithType: IClassSchemaEdit.AlterDomain(string, IDomain)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain(string, ESRI.ArcGIS.Geodatabase.IDomain)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void AlterDomain(string FieldName, IDomain Domain)
+    parameters:
+    - id: FieldName
+      type: System.String
+    - id: Domain
+      type: ESRI.ArcGIS.Geodatabase.IDomain
+    content.vb: Sub AlterDomain(FieldName As String, Domain As IDomain)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain*
+  nameWithType.vb: IClassSchemaEdit.AlterDomain(String, IDomain)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain(String, ESRI.ArcGIS.Geodatabase.IDomain)
+  name.vb: AlterDomain(String, IDomain)
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue(System.String,System.Object)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue(System.String,System.Object)
+  id: AlterDefaultValue(System.String,System.Object)
+  parent: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit
+  langs:
+  - csharp
+  - vb
+  name: AlterDefaultValue(string, object)
+  nameWithType: IClassSchemaEdit.AlterDefaultValue(string, object)
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue(string, object)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The default value of the object class field.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AlterDefaultValue(string FieldName, object Value)
+    parameters:
+    - id: FieldName
+      type: System.String
+    - id: Value
+      type: System.Object
+    content.vb: Sub AlterDefaultValue(FieldName As String, Value As Object)
+  overload: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue*
+  nameWithType.vb: IClassSchemaEdit.AlterDefaultValue(String, Object)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue(String, Object)
+  name.vb: AlterDefaultValue(String, Object)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_RegisterAsObjectClass_System_String_System_String_
+  name: RegisterAsObjectClass
+  nameWithType: IClassSchemaEdit.RegisterAsObjectClass
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.RegisterAsObjectClass
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterInstanceCLSID_ESRI_ArcGIS_esriSystem_UID_
+  name: AlterInstanceCLSID
+  nameWithType: IClassSchemaEdit.AlterInstanceCLSID
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterInstanceCLSID
+- uid: ESRI.ArcGIS.esriSystem.UID
+  commentId: T:ESRI.ArcGIS.esriSystem.UID
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.UID.html
+  name: UID
+  nameWithType: UID
+  fullName: ESRI.ArcGIS.esriSystem.UID
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterClassExtensionCLSID_ESRI_ArcGIS_esriSystem_UID_ESRI_ArcGIS_esriSystem_IPropertySet_
+  name: AlterClassExtensionCLSID
+  nameWithType: IClassSchemaEdit.AlterClassExtensionCLSID
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterClassExtensionCLSID
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterAliasName_System_String_
+  name: AlterAliasName
+  nameWithType: IClassSchemaEdit.AlterAliasName
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterAliasName
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterFieldAliasName_System_String_System_String_
+  name: AlterFieldAliasName
+  nameWithType: IClassSchemaEdit.AlterFieldAliasName
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldAliasName
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterModelName_System_String_
+  name: AlterModelName
+  nameWithType: IClassSchemaEdit.AlterModelName
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterModelName
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterFieldModelName_System_String_System_String_
+  name: AlterFieldModelName
+  nameWithType: IClassSchemaEdit.AlterFieldModelName
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterFieldModelName
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterDomain_System_String_ESRI_ArcGIS_Geodatabase_IDomain_
+  name: AlterDomain
+  nameWithType: IClassSchemaEdit.AlterDomain
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDomain
+- uid: ESRI.ArcGIS.Geodatabase.IDomain
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDomain
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDomain.html
+  name: IDomain
+  nameWithType: IDomain
+  fullName: ESRI.ArcGIS.Geodatabase.IDomain
+- uid: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.html#ESRI_ArcGIS_Geodatabase_IClassSchemaEdit_AlterDefaultValue_System_String_System_Object_
+  name: AlterDefaultValue
+  nameWithType: IClassSchemaEdit.AlterDefaultValue
+  fullName: ESRI.ArcGIS.Geodatabase.IClassSchemaEdit.AlterDefaultValue
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object

@@ -1,0 +1,247 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRaster
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRaster
+  id: IRaster
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor
+  - ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)
+  - ESRI.ArcGIS.Geodatabase.IRaster.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+  langs:
+  - csharp
+  - vb
+  name: IRaster
+  nameWithType: IRaster
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that control an in-memory raster.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("AEEC7D31-1533-11D2-8D25-0000F8780535")]
+
+      public interface IRaster
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("AEEC7D31-1533-11D2-8D25-0000F8780535")>
+
+      Public Interface IRaster
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.MosaicRasterClass
+  - ESRI.ArcGIS.DatasourcesRaster.RasterClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: AEEC7D31-1533-11D2-8D25-0000F8780535
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRaster.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.Geodatabase.IRaster
+  langs:
+  - csharp
+  - vb
+  name: Read(IPnt, IPixelBlock)
+  nameWithType: IRaster.Read(IPnt, IPixelBlock)
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.Read(ESRI.ArcGIS.Geodatabase.IPnt, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void Read(IPnt tlc, IPixelBlock block)
+    parameters:
+    - id: tlc
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    - id: block
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub Read(tlc As IPnt, block As IPixelBlock)
+  overload: ESRI.ArcGIS.Geodatabase.IRaster.Read*
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)
+  id: CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)
+  parent: ESRI.ArcGIS.Geodatabase.IRaster
+  langs:
+  - csharp
+  - vb
+  name: CreatePixelBlock(IPnt)
+  nameWithType: IRaster.CreatePixelBlock(IPnt)
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock(ESRI.ArcGIS.Geodatabase.IPnt)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: IPixelBlock CreatePixelBlock(IPnt Size)
+    parameters:
+    - id: Size
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Function CreatePixelBlock(Size As IPnt) As IPixelBlock
+  overload: ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock*
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor
+  id: CreateCursor
+  parent: ESRI.ArcGIS.Geodatabase.IRaster
+  langs:
+  - csharp
+  - vb
+  name: CreateCursor()
+  nameWithType: IRaster.CreateCursor()
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Allocates a Raster Cursor for fast raster scanning.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRasterCursor CreateCursor()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IRasterCursor
+    content.vb: Function CreateCursor() As IRasterCursor
+  overload: ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor*
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+  commentId: P:ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+  id: ResampleMethod
+  parent: ESRI.ArcGIS.Geodatabase.IRaster
+  langs:
+  - csharp
+  - vb
+  name: ResampleMethod
+  nameWithType: IRaster.ResampleMethod
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Interpolation method used when reading pixels.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: rstResamplingTypes ResampleMethod { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.rstResamplingTypes
+    content.vb: Property ResampleMethod As rstResamplingTypes
+  overload: ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.Read*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRaster.Read
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html#ESRI_ArcGIS_Geodatabase_IRaster_Read_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Read
+  nameWithType: IRaster.Read
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.Read
+- uid: ESRI.ArcGIS.Geodatabase.IPnt
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPnt
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPnt.html
+  name: IPnt
+  nameWithType: IPnt
+  fullName: ESRI.ArcGIS.Geodatabase.IPnt
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html#ESRI_ArcGIS_Geodatabase_IRaster_CreatePixelBlock_ESRI_ArcGIS_Geodatabase_IPnt_
+  name: CreatePixelBlock
+  nameWithType: IRaster.CreatePixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.CreatePixelBlock
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html#ESRI_ArcGIS_Geodatabase_IRaster_CreateCursor
+  name: CreateCursor
+  nameWithType: IRaster.CreateCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.CreateCursor
+- uid: ESRI.ArcGIS.Geodatabase.IRasterCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRasterCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRasterCursor.html
+  name: IRasterCursor
+  nameWithType: IRasterCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IRasterCursor
+- uid: ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRaster.html#ESRI_ArcGIS_Geodatabase_IRaster_ResampleMethod
+  name: ResampleMethod
+  nameWithType: IRaster.ResampleMethod
+  fullName: ESRI.ArcGIS.Geodatabase.IRaster.ResampleMethod
+- uid: ESRI.ArcGIS.Geodatabase.rstResamplingTypes
+  commentId: T:ESRI.ArcGIS.Geodatabase.rstResamplingTypes
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.rstResamplingTypes.html
+  name: rstResamplingTypes
+  nameWithType: rstResamplingTypes
+  fullName: ESRI.ArcGIS.Geodatabase.rstResamplingTypes

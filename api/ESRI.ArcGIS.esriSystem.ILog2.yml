@@ -1,0 +1,254 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.ILog2
+  commentId: T:ESRI.ArcGIS.esriSystem.ILog2
+  id: ILog2
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.ILog2.AddMessage(System.Int32,System.Int32,System.String)
+  - ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx(System.Int32,System.String,System.Int32,System.Double,System.String)
+  - ESRI.ArcGIS.esriSystem.ILog2.WillLog(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ILog2
+  nameWithType: ILog2
+  fullName: ESRI.ArcGIS.esriSystem.ILog2
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to methods for accessing a log.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("44F1FE1D-CCC4-4A5F-977A-233C25A45625")]
+
+      public interface ILog2 : ILog
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("44F1FE1D-CCC4-4A5F-977A-233C25A45625")>
+
+      Public Interface ILog2 Inherits ILog
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 44F1FE1D-CCC4-4A5F-977A-233C25A45625
+- uid: ESRI.ArcGIS.esriSystem.ILog2.AddMessage(System.Int32,System.Int32,System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.ILog2.AddMessage(System.Int32,System.Int32,System.String)
+  id: AddMessage(System.Int32,System.Int32,System.String)
+  parent: ESRI.ArcGIS.esriSystem.ILog2
+  langs:
+  - csharp
+  - vb
+  name: AddMessage(int, int, string)
+  nameWithType: ILog2.AddMessage(int, int, string)
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.AddMessage(int, int, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void AddMessage(int msgType, int msgCode, string msg)
+    parameters:
+    - id: msgType
+      type: System.Int32
+    - id: msgCode
+      type: System.Int32
+    - id: msg
+      type: System.String
+    content.vb: Sub AddMessage(msgType As Integer, msgCode As Integer, msg As String)
+  overload: ESRI.ArcGIS.esriSystem.ILog2.AddMessage*
+  nameWithType.vb: ILog2.AddMessage(Integer, Integer, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ILog2.AddMessage(Integer, Integer, String)
+  name.vb: AddMessage(Integer, Integer, String)
+- uid: ESRI.ArcGIS.esriSystem.ILog2.WillLog(System.Int32)
+  commentId: M:ESRI.ArcGIS.esriSystem.ILog2.WillLog(System.Int32)
+  id: WillLog(System.Int32)
+  parent: ESRI.ArcGIS.esriSystem.ILog2
+  langs:
+  - csharp
+  - vb
+  name: WillLog(int)
+  nameWithType: ILog2.WillLog(int)
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.WillLog(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: True if the message type is allowed to be written into the log file.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool WillLog(int msgType)
+    parameters:
+    - id: msgType
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Function WillLog(msgType As Integer) As Boolean
+  overload: ESRI.ArcGIS.esriSystem.ILog2.WillLog*
+  nameWithType.vb: ILog2.WillLog(Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ILog2.WillLog(Integer)
+  name.vb: WillLog(Integer)
+- uid: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx(System.Int32,System.String,System.Int32,System.Double,System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx(System.Int32,System.String,System.Int32,System.Double,System.String)
+  id: AddMessageEx(System.Int32,System.String,System.Int32,System.Double,System.String)
+  parent: ESRI.ArcGIS.esriSystem.ILog2
+  langs:
+  - csharp
+  - vb
+  name: AddMessageEx(int, string, int, double, string)
+  nameWithType: ILog2.AddMessageEx(int, string, int, double, string)
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx(int, string, int, double, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Adds a message to the log.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void AddMessageEx(int msgType, string MethodName, int msgCode, double elapsed, string msg)
+    parameters:
+    - id: msgType
+      type: System.Int32
+    - id: MethodName
+      type: System.String
+    - id: msgCode
+      type: System.Int32
+    - id: elapsed
+      type: System.Double
+    - id: msg
+      type: System.String
+    content.vb: Sub AddMessageEx(msgType As Integer, MethodName As String, msgCode As Integer, elapsed As Double, msg As String)
+  overload: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx*
+  nameWithType.vb: ILog2.AddMessageEx(Integer, String, Integer, Double, String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx(Integer, String, Integer, Double, String)
+  name.vb: AddMessageEx(Integer, String, Integer, Double, String)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.ILog2.AddMessage*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILog2.AddMessage
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILog2.html#ESRI_ArcGIS_esriSystem_ILog2_AddMessage_System_Int32_System_Int32_System_String_
+  name: AddMessage
+  nameWithType: ILog2.AddMessage
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.AddMessage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.ILog2.WillLog*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILog2.WillLog
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILog2.html#ESRI_ArcGIS_esriSystem_ILog2_WillLog_System_Int32_
+  name: WillLog
+  nameWithType: ILog2.WillLog
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.WillLog
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILog2.html#ESRI_ArcGIS_esriSystem_ILog2_AddMessageEx_System_Int32_System_String_System_Int32_System_Double_System_String_
+  name: AddMessageEx
+  nameWithType: ILog2.AddMessageEx
+  fullName: ESRI.ArcGIS.esriSystem.ILog2.AddMessageEx
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

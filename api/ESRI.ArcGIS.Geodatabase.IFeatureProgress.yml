@@ -1,0 +1,365 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  id: IFeatureProgress
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+  langs:
+  - csharp
+  - vb
+  name: IFeatureProgress
+  nameWithType: IFeatureProgress
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members used to handle events from converting featureclass/table.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("29D3B6DD-3917-11D2-AADF-00C04FA33C20")]
+
+      public interface IFeatureProgress
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("29D3B6DD-3917-11D2-AADF-00C04FA33C20")>
+
+      Public Interface IFeatureProgress
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.IFeatureProgress_SinkHelper
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 29D3B6DD-3917-11D2-AADF-00C04FA33C20
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step
+  commentId: M:ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step
+  id: Step
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: Step()
+  nameWithType: IFeatureProgress.Step()
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Step the progressor interval.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Step()
+    content.vb: Sub [Step]()
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+  id: FeatureClassName
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: FeatureClassName
+  nameWithType: IFeatureProgress.FeatureClassName
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Input feature class name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string FeatureClassName { set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: WriteOnly Property FeatureClassName As String
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+  id: MinFeatures
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: MinFeatures
+  nameWithType: IFeatureProgress.MinFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Minimum number of features/rows in the input objectclass.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long MinFeatures { set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: WriteOnly Property MinFeatures As Long
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+  id: MaxFeatures
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: MaxFeatures
+  nameWithType: IFeatureProgress.MaxFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Maximum number of features/rows in the input object class.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long MaxFeatures { set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: WriteOnly Property MaxFeatures As Long
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+  id: Position
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: Position
+  nameWithType: IFeatureProgress.Position
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Current feature/row that currently converted by the converter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long Position { set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: WriteOnly Property Position As Long
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+  id: StepValue
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: StepValue
+  nameWithType: IFeatureProgress.StepValue
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Current position of conversion.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: long StepValue { set; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: WriteOnly Property StepValue As Long
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue*
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+  commentId: P:ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+  id: IsCancelled
+  parent: ESRI.ArcGIS.Geodatabase.IFeatureProgress
+  langs:
+  - csharp
+  - vb
+  name: IsCancelled
+  nameWithType: IFeatureProgress.IsCancelled
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Indicates whether the cancel button is pressed.  The data conversion will be cancelled if the user press the cancel button.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsCancelled { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsCancelled As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_Step
+  name: Step
+  nameWithType: IFeatureProgress.Step
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Step
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_FeatureClassName
+  name: FeatureClassName
+  nameWithType: IFeatureProgress.FeatureClassName
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.FeatureClassName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_MinFeatures
+  name: MinFeatures
+  nameWithType: IFeatureProgress.MinFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MinFeatures
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_MaxFeatures
+  name: MaxFeatures
+  nameWithType: IFeatureProgress.MaxFeatures
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.MaxFeatures
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_Position
+  name: Position
+  nameWithType: IFeatureProgress.Position
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.Position
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_StepValue
+  name: StepValue
+  nameWithType: IFeatureProgress.StepValue
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.StepValue
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureProgress.html#ESRI_ArcGIS_Geodatabase_IFeatureProgress_IsCancelled
+  name: IsCancelled
+  nameWithType: IFeatureProgress.IsCancelled
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureProgress.IsCancelled
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

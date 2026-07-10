@@ -1,0 +1,548 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  commentId: T:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  id: IJSONConverterGdb
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.esriSystem.IJSONObject)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes,System.Int32,System.String,ESRI.ArcGIS.Geodatabase.IFields,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  - ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter,ESRI.ArcGIS.Geometry.IJSONConverterGeometry,ESRI.ArcGIS.esriSystem.IPropertySet,System.String,ESRI.ArcGIS.Geodatabase.IRecordSet,ESRI.ArcGIS.Geodatabase.IGeometryResultOptions,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IJSONConverterGdb
+  nameWithType: IJSONConverterGdb
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides high-level deserialization methods for JSON.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("F28D230E-0F29-4022-B84F-E7E955A9A873")]
+
+      public interface IJSONConverterGdb
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("F28D230E-0F29-4022-B84F-E7E955A9A873")>
+
+      Public Interface IJSONConverterGdb
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.JSONConverterGdbClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: F28D230E-0F29-4022-B84F-E7E955A9A873
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  id: ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: ReadRecordSet(IJSONReader, IFields, IPropertySet, out IRecordSet, out IPropertySet)
+  nameWithType: IJSONConverterGdb.ReadRecordSet(IJSONReader, IFields, IPropertySet, out IRecordSet, out IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.IPropertySet, out ESRI.ArcGIS.Geodatabase.IRecordSet, out ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ReadRecordSet(IJSONReader pReader, IFields pDefaultSchema, IPropertySet pConversionProps, out IRecordSet ppRecordset, out IPropertySet ppOriginalToNewFieldMap)
+    parameters:
+    - id: pReader
+      type: ESRI.ArcGIS.esriSystem.IJSONReader
+    - id: pDefaultSchema
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: pConversionProps
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: ppRecordset
+      type: ESRI.ArcGIS.Geodatabase.IRecordSet
+    - id: ppOriginalToNewFieldMap
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ReadRecordSet(pReader As IJSONReader, pDefaultSchema As IFields, pConversionProps As IPropertySet, ppRecordset As IRecordSet, ppOriginalToNewFieldMap As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet*
+  nameWithType.vb: IJSONConverterGdb.ReadRecordSet(IJSONReader, IFields, IPropertySet, IRecordSet, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet(ESRI.ArcGIS.esriSystem.IJSONReader, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.IPropertySet, ESRI.ArcGIS.Geodatabase.IRecordSet, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ReadRecordSet(IJSONReader, IFields, IPropertySet, IRecordSet, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  id: ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject,ESRI.ArcGIS.Geodatabase.IFields,ESRI.ArcGIS.esriSystem.IPropertySet,ESRI.ArcGIS.Geodatabase.IRecordSet@,ESRI.ArcGIS.esriSystem.IPropertySet@)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: ToRecordSet(IJSONObject, IFields, IPropertySet, out IRecordSet, out IPropertySet)
+  nameWithType: IJSONConverterGdb.ToRecordSet(IJSONObject, IFields, IPropertySet, out IRecordSet, out IPropertySet)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.IPropertySet, out ESRI.ArcGIS.Geodatabase.IRecordSet, out ESRI.ArcGIS.esriSystem.IPropertySet)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void ToRecordSet(IJSONObject pObj, IFields pDefaultSchema, IPropertySet pConversionProps, out IRecordSet ppRecordset, out IPropertySet ppOriginalToNewFieldMap)
+    parameters:
+    - id: pObj
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    - id: pDefaultSchema
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: pConversionProps
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: ppRecordset
+      type: ESRI.ArcGIS.Geodatabase.IRecordSet
+    - id: ppOriginalToNewFieldMap
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    content.vb: Sub ToRecordSet(pObj As IJSONObject, pDefaultSchema As IFields, pConversionProps As IPropertySet, ppRecordset As IRecordSet, ppOriginalToNewFieldMap As IPropertySet)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet*
+  nameWithType.vb: IJSONConverterGdb.ToRecordSet(IJSONObject, IFields, IPropertySet, IRecordSet, IPropertySet)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet(ESRI.ArcGIS.esriSystem.IJSONObject, ESRI.ArcGIS.Geodatabase.IFields, ESRI.ArcGIS.esriSystem.IPropertySet, ESRI.ArcGIS.Geodatabase.IRecordSet, ESRI.ArcGIS.esriSystem.IPropertySet)
+  name.vb: ToRecordSet(IJSONObject, IFields, IPropertySet, IRecordSet, IPropertySet)
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter,ESRI.ArcGIS.Geometry.IJSONConverterGeometry,ESRI.ArcGIS.esriSystem.IPropertySet,System.String,ESRI.ArcGIS.Geodatabase.IRecordSet,ESRI.ArcGIS.Geodatabase.IGeometryResultOptions,System.Boolean)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter,ESRI.ArcGIS.Geometry.IJSONConverterGeometry,ESRI.ArcGIS.esriSystem.IPropertySet,System.String,ESRI.ArcGIS.Geodatabase.IRecordSet,ESRI.ArcGIS.Geodatabase.IGeometryResultOptions,System.Boolean)
+  id: WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter,ESRI.ArcGIS.Geometry.IJSONConverterGeometry,ESRI.ArcGIS.esriSystem.IPropertySet,System.String,ESRI.ArcGIS.Geodatabase.IRecordSet,ESRI.ArcGIS.Geodatabase.IGeometryResultOptions,System.Boolean)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: WriteRecordSet(IJSONWriter, IJSONConverterGeometry, IPropertySet, string, IRecordSet, IGeometryResultOptions, bool)
+  nameWithType: IJSONConverterGdb.WriteRecordSet(IJSONWriter, IJSONConverterGeometry, IPropertySet, string, IRecordSet, IGeometryResultOptions, bool)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter, ESRI.ArcGIS.Geometry.IJSONConverterGeometry, ESRI.ArcGIS.esriSystem.IPropertySet, string, ESRI.ArcGIS.Geodatabase.IRecordSet, ESRI.ArcGIS.Geodatabase.IGeometryResultOptions, bool)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void WriteRecordSet(IJSONWriter pWriter, IJSONConverterGeometry pGeomConv, IPropertySet pProps, string propname, IRecordSet pRecordset, IGeometryResultOptions pGeomOpt, bool bWriteEndOfObj)
+    parameters:
+    - id: pWriter
+      type: ESRI.ArcGIS.esriSystem.IJSONWriter
+    - id: pGeomConv
+      type: ESRI.ArcGIS.Geometry.IJSONConverterGeometry
+    - id: pProps
+      type: ESRI.ArcGIS.esriSystem.IPropertySet
+    - id: propname
+      type: System.String
+    - id: pRecordset
+      type: ESRI.ArcGIS.Geodatabase.IRecordSet
+    - id: pGeomOpt
+      type: ESRI.ArcGIS.Geodatabase.IGeometryResultOptions
+    - id: bWriteEndOfObj
+      type: System.Boolean
+    content.vb: Sub WriteRecordSet(pWriter As IJSONWriter, pGeomConv As IJSONConverterGeometry, pProps As IPropertySet, propname As String, pRecordset As IRecordSet, pGeomOpt As IGeometryResultOptions, bWriteEndOfObj As Boolean)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet*
+  nameWithType.vb: IJSONConverterGdb.WriteRecordSet(IJSONWriter, IJSONConverterGeometry, IPropertySet, String, IRecordSet, IGeometryResultOptions, Boolean)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet(ESRI.ArcGIS.esriSystem.IJSONWriter, ESRI.ArcGIS.Geometry.IJSONConverterGeometry, ESRI.ArcGIS.esriSystem.IPropertySet, String, ESRI.ArcGIS.Geodatabase.IRecordSet, ESRI.ArcGIS.Geodatabase.IGeometryResultOptions, Boolean)
+  name.vb: WriteRecordSet(IJSONWriter, IJSONConverterGeometry, IPropertySet, String, IRecordSet, IGeometryResultOptions, Boolean)
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.esriSystem.IJSONObject)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.esriSystem.IJSONObject)
+  id: QueryJSONDomain(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.esriSystem.IJSONObject)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: QueryJSONDomain(IDomain, IJSONObject)
+  nameWithType: IJSONConverterGdb.QueryJSONDomain(IDomain, IJSONObject)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain(ESRI.ArcGIS.Geodatabase.IDomain, ESRI.ArcGIS.esriSystem.IJSONObject)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryJSONDomain(IDomain pDomain, IJSONObject pDomainJO)
+    parameters:
+    - id: pDomain
+      type: ESRI.ArcGIS.Geodatabase.IDomain
+    - id: pDomainJO
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    content.vb: Sub QueryJSONDomain(pDomain As IDomain, pDomainJO As IJSONObject)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain*
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  id: QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: QueryJSONDomain2(IDomain, bool, IJSONObject)
+  nameWithType: IJSONConverterGdb.QueryJSONDomain2(IDomain, bool, IJSONObject)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain, bool, ESRI.ArcGIS.esriSystem.IJSONObject)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryJSONDomain2(IDomain Domain, bool returnDomainNames, IJSONObject domainJO)
+    parameters:
+    - id: Domain
+      type: ESRI.ArcGIS.Geodatabase.IDomain
+    - id: returnDomainNames
+      type: System.Boolean
+    - id: domainJO
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    content.vb: Sub QueryJSONDomain2(Domain As IDomain, returnDomainNames As Boolean, domainJO As IJSONObject)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2*
+  nameWithType.vb: IJSONConverterGdb.QueryJSONDomain2(IDomain, Boolean, IJSONObject)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2(ESRI.ArcGIS.Geodatabase.IDomain, Boolean, ESRI.ArcGIS.esriSystem.IJSONObject)
+  name.vb: QueryJSONDomain2(IDomain, Boolean, IJSONObject)
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  id: QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain,ESRI.ArcGIS.Geodatabase.IDomain,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: QueryJSONDomain3(IDomain, IDomain, bool, IJSONObject)
+  nameWithType: IJSONConverterGdb.QueryJSONDomain3(IDomain, IDomain, bool, IJSONObject)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain, ESRI.ArcGIS.Geodatabase.IDomain, bool, ESRI.ArcGIS.esriSystem.IJSONObject)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QueryJSONDomain3(IDomain typeDomain, IDomain fieldDomain, bool returnDomainNames, IJSONObject domainJO)
+    parameters:
+    - id: typeDomain
+      type: ESRI.ArcGIS.Geodatabase.IDomain
+    - id: fieldDomain
+      type: ESRI.ArcGIS.Geodatabase.IDomain
+    - id: returnDomainNames
+      type: System.Boolean
+    - id: domainJO
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    content.vb: Sub QueryJSONDomain3(typeDomain As IDomain, fieldDomain As IDomain, returnDomainNames As Boolean, domainJO As IJSONObject)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3*
+  nameWithType.vb: IJSONConverterGdb.QueryJSONDomain3(IDomain, IDomain, Boolean, IJSONObject)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3(ESRI.ArcGIS.Geodatabase.IDomain, ESRI.ArcGIS.Geodatabase.IDomain, Boolean, ESRI.ArcGIS.esriSystem.IJSONObject)
+  name.vb: QueryJSONDomain3(IDomain, IDomain, Boolean, IJSONObject)
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes,System.Int32,System.String,ESRI.ArcGIS.Geodatabase.IFields,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes,System.Int32,System.String,ESRI.ArcGIS.Geodatabase.IFields,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  id: QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes,System.Int32,System.String,ESRI.ArcGIS.Geodatabase.IFields,System.Boolean,ESRI.ArcGIS.esriSystem.IJSONObject)
+  parent: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb
+  langs:
+  - csharp
+  - vb
+  name: QuerySubtype(ISubtypes, int, string, IFields, bool, IJSONObject)
+  nameWithType: IJSONConverterGdb.QuerySubtype(ISubtypes, int, string, IFields, bool, IJSONObject)
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes, int, string, ESRI.ArcGIS.Geodatabase.IFields, bool, ESRI.ArcGIS.esriSystem.IJSONObject)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: void QuerySubtype(ISubtypes Subtypes, int SubtypeCode, string SubtypeName, IFields Fields, bool returnDomainNames, IJSONObject subtypeJO)
+    parameters:
+    - id: Subtypes
+      type: ESRI.ArcGIS.Geodatabase.ISubtypes
+    - id: SubtypeCode
+      type: System.Int32
+    - id: SubtypeName
+      type: System.String
+    - id: Fields
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    - id: returnDomainNames
+      type: System.Boolean
+    - id: subtypeJO
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    content.vb: Sub QuerySubtype(Subtypes As ISubtypes, SubtypeCode As Integer, SubtypeName As String, Fields As IFields, returnDomainNames As Boolean, subtypeJO As IJSONObject)
+  overload: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype*
+  nameWithType.vb: IJSONConverterGdb.QuerySubtype(ISubtypes, Integer, String, IFields, Boolean, IJSONObject)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype(ESRI.ArcGIS.Geodatabase.ISubtypes, Integer, String, ESRI.ArcGIS.Geodatabase.IFields, Boolean, ESRI.ArcGIS.esriSystem.IJSONObject)
+  name.vb: QuerySubtype(ISubtypes, Integer, String, IFields, Boolean, IJSONObject)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_ReadRecordSet_ESRI_ArcGIS_esriSystem_IJSONReader_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_esriSystem_IPropertySet_ESRI_ArcGIS_Geodatabase_IRecordSet__ESRI_ArcGIS_esriSystem_IPropertySet__
+  name: ReadRecordSet
+  nameWithType: IJSONConverterGdb.ReadRecordSet
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ReadRecordSet
+- uid: ESRI.ArcGIS.esriSystem.IJSONReader
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONReader
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONReader.html
+  name: IJSONReader
+  nameWithType: IJSONReader
+  fullName: ESRI.ArcGIS.esriSystem.IJSONReader
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.esriSystem.IPropertySet
+  commentId: T:ESRI.ArcGIS.esriSystem.IPropertySet
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IPropertySet.html
+  name: IPropertySet
+  nameWithType: IPropertySet
+  fullName: ESRI.ArcGIS.esriSystem.IPropertySet
+- uid: ESRI.ArcGIS.Geodatabase.IRecordSet
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRecordSet
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRecordSet.html
+  name: IRecordSet
+  nameWithType: IRecordSet
+  fullName: ESRI.ArcGIS.Geodatabase.IRecordSet
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_ToRecordSet_ESRI_ArcGIS_esriSystem_IJSONObject_ESRI_ArcGIS_Geodatabase_IFields_ESRI_ArcGIS_esriSystem_IPropertySet_ESRI_ArcGIS_Geodatabase_IRecordSet__ESRI_ArcGIS_esriSystem_IPropertySet__
+  name: ToRecordSet
+  nameWithType: IJSONConverterGdb.ToRecordSet
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.ToRecordSet
+- uid: ESRI.ArcGIS.esriSystem.IJSONObject
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONObject
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONObject.html
+  name: IJSONObject
+  nameWithType: IJSONObject
+  fullName: ESRI.ArcGIS.esriSystem.IJSONObject
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_WriteRecordSet_ESRI_ArcGIS_esriSystem_IJSONWriter_ESRI_ArcGIS_Geometry_IJSONConverterGeometry_ESRI_ArcGIS_esriSystem_IPropertySet_System_String_ESRI_ArcGIS_Geodatabase_IRecordSet_ESRI_ArcGIS_Geodatabase_IGeometryResultOptions_System_Boolean_
+  name: WriteRecordSet
+  nameWithType: IJSONConverterGdb.WriteRecordSet
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.WriteRecordSet
+- uid: ESRI.ArcGIS.esriSystem.IJSONWriter
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONWriter
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONWriter.html
+  name: IJSONWriter
+  nameWithType: IJSONWriter
+  fullName: ESRI.ArcGIS.esriSystem.IJSONWriter
+- uid: ESRI.ArcGIS.Geometry.IJSONConverterGeometry
+  commentId: T:ESRI.ArcGIS.Geometry.IJSONConverterGeometry
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IJSONConverterGeometry.html
+  name: IJSONConverterGeometry
+  nameWithType: IJSONConverterGeometry
+  fullName: ESRI.ArcGIS.Geometry.IJSONConverterGeometry
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryResultOptions
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeometryResultOptions
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryResultOptions.html
+  name: IGeometryResultOptions
+  nameWithType: IGeometryResultOptions
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryResultOptions
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_QueryJSONDomain_ESRI_ArcGIS_Geodatabase_IDomain_ESRI_ArcGIS_esriSystem_IJSONObject_
+  name: QueryJSONDomain
+  nameWithType: IJSONConverterGdb.QueryJSONDomain
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain
+- uid: ESRI.ArcGIS.Geodatabase.IDomain
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDomain
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDomain.html
+  name: IDomain
+  nameWithType: IDomain
+  fullName: ESRI.ArcGIS.Geodatabase.IDomain
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_QueryJSONDomain2_ESRI_ArcGIS_Geodatabase_IDomain_System_Boolean_ESRI_ArcGIS_esriSystem_IJSONObject_
+  name: QueryJSONDomain2
+  nameWithType: IJSONConverterGdb.QueryJSONDomain2
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain2
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_QueryJSONDomain3_ESRI_ArcGIS_Geodatabase_IDomain_ESRI_ArcGIS_Geodatabase_IDomain_System_Boolean_ESRI_ArcGIS_esriSystem_IJSONObject_
+  name: QueryJSONDomain3
+  nameWithType: IJSONConverterGdb.QueryJSONDomain3
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QueryJSONDomain3
+- uid: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.html#ESRI_ArcGIS_Geodatabase_IJSONConverterGdb_QuerySubtype_ESRI_ArcGIS_Geodatabase_ISubtypes_System_Int32_System_String_ESRI_ArcGIS_Geodatabase_IFields_System_Boolean_ESRI_ArcGIS_esriSystem_IJSONObject_
+  name: QuerySubtype
+  nameWithType: IJSONConverterGdb.QuerySubtype
+  fullName: ESRI.ArcGIS.Geodatabase.IJSONConverterGdb.QuerySubtype
+- uid: ESRI.ArcGIS.Geodatabase.ISubtypes
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISubtypes
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISubtypes.html
+  name: ISubtypes
+  nameWithType: ISubtypes
+  fullName: ESRI.ArcGIS.Geodatabase.ISubtypes
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

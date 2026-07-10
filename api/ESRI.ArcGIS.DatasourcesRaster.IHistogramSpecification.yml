@@ -1,0 +1,299 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  id: IHistogramSpecification
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  - ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  langs:
+  - csharp
+  - vb
+  name: IHistogramSpecification
+  nameWithType: IHistogramSpecification
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control histogram specification.
+  example: []
+  syntax:
+    content: >-
+      [Guid("978BBC66-4461-44BC-A068-0572A7F2D828")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IHistogramSpecification
+    content.vb: >-
+      <Guid("978BBC66-4461-44BC-A068-0572A7F2D828")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IHistogramSpecification
+  derivedClasses:
+  - ESRI.ArcGIS.DatasourcesRaster.HistogramSpecificationClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 978BBC66-4461-44BC-A068-0572A7F2D828
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  id: Update
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: IHistogramSpecification.Update()
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update()
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Recalculates the look-up that maps input values -- having a distribution described by the input histograms -- to output values that have a distribution described by the target histograms.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Update()
+    content.vb: Sub Update()
+  overload: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(System.Int32)
+  id: GetLookup(System.Int32)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  langs:
+  - csharp
+  - vb
+  name: GetLookup(int)
+  nameWithType: IHistogramSpecification.GetLookup(int)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Returns the look-up array for the requested band for remapping pixel values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: object GetLookup(int iBand)
+    parameters:
+    - id: iBand
+      type: System.Int32
+    return:
+      type: System.Object
+    content.vb: Function GetLookup(iBand As Integer) As Object
+  overload: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup*
+  nameWithType.vb: IHistogramSpecification.GetLookup(Integer)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup(Integer)
+  name.vb: GetLookup(Integer)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  id: InputHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  langs:
+  - csharp
+  - vb
+  name: InputHistogram
+  nameWithType: IHistogramSpecification.InputHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The collection of histograms that describe the distribution of input values.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IArray InputHistogram { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Property InputHistogram As IArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  id: TargetHistogram
+  parent: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification
+  langs:
+  - csharp
+  - vb
+  name: TargetHistogram
+  nameWithType: IHistogramSpecification.TargetHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: The collection of target histograms that describe the desired distribution of output values. These are the histograms to which each input histogram is matched.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IArray TargetHistogram { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Property TargetHistogram As IArray
+  overload: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_Update
+  name: Update
+  nameWithType: IHistogramSpecification.Update
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.Update
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_GetLookup_System_Int32_
+  name: GetLookup
+  nameWithType: IHistogramSpecification.GetLookup
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.GetLookup
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_InputHistogram
+  name: InputHistogram
+  nameWithType: IHistogramSpecification.InputHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.InputHistogram
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.html#ESRI_ArcGIS_DatasourcesRaster_IHistogramSpecification_TargetHistogram
+  name: TargetHistogram
+  nameWithType: IHistogramSpecification.TargetHistogram
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IHistogramSpecification.TargetHistogram

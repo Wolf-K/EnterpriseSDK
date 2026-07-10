@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression
+  commentId: T:ESRI.ArcGIS.esriSystem.IZlibCompression
+  id: IZlibCompression
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize(System.Int32)
+  - ESRI.ArcGIS.esriSystem.IZlibCompression.Compress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  langs:
+  - csharp
+  - vb
+  name: IZlibCompression
+  nameWithType: IZlibCompression
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Provides access to compress and uncompress texture data.
+  example: []
+  syntax:
+    content: >-
+      [Guid("FEE4D81C-25D9-4389-A20C-16821EC90719")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IZlibCompression
+    content.vb: >-
+      <Guid("FEE4D81C-25D9-4389-A20C-16821EC90719")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IZlibCompression
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: FEE4D81C-25D9-4389-A20C-16821EC90719
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IZlibCompression.Compress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  id: Compress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.IZlibCompression
+  langs:
+  - csharp
+  - vb
+  name: Compress(int, ref byte, ref int, ref byte)
+  nameWithType: IZlibCompression.Compress(int, ref byte, ref int, ref byte)
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress(int, ref byte, ref int, ref byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Compress the current the input buffer. Uses best compression.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Compress(int inSize, ref byte pInBuff, ref int pOutSize, ref byte pOutBuff)
+    parameters:
+    - id: inSize
+      type: System.Int32
+    - id: pInBuff
+      type: System.Byte
+    - id: pOutSize
+      type: System.Int32
+    - id: pOutBuff
+      type: System.Byte
+    content.vb: Sub Compress(inSize As Integer, pInBuff As Byte, pOutSize As Integer, pOutBuff As Byte)
+  overload: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress*
+  nameWithType.vb: IZlibCompression.Compress(Integer, Byte, Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress(Integer, Byte, Integer, Byte)
+  name.vb: Compress(Integer, Byte, Integer, Byte)
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  id: CompressByLevel(System.Int32,System.Byte@,System.Int32,System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.IZlibCompression
+  langs:
+  - csharp
+  - vb
+  name: CompressByLevel(int, ref byte, int, ref int, ref byte)
+  nameWithType: IZlibCompression.CompressByLevel(int, ref byte, int, ref int, ref byte)
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel(int, ref byte, int, ref int, ref byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Compress the current the input buffer by level.  If level less than 0, use default, if greater than best use best.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void CompressByLevel(int inSize, ref byte pInBuff, int level, ref int pOutSize, ref byte pOutBuff)
+    parameters:
+    - id: inSize
+      type: System.Int32
+    - id: pInBuff
+      type: System.Byte
+    - id: level
+      type: System.Int32
+    - id: pOutSize
+      type: System.Int32
+    - id: pOutBuff
+      type: System.Byte
+    content.vb: Sub CompressByLevel(inSize As Integer, pInBuff As Byte, level As Integer, pOutSize As Integer, pOutBuff As Byte)
+  overload: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel*
+  nameWithType.vb: IZlibCompression.CompressByLevel(Integer, Byte, Integer, Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel(Integer, Byte, Integer, Integer, Byte)
+  name.vb: CompressByLevel(Integer, Byte, Integer, Integer, Byte)
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  id: UnCompress(System.Int32,System.Byte@,System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.esriSystem.IZlibCompression
+  langs:
+  - csharp
+  - vb
+  name: UnCompress(int, ref byte, ref int, ref byte)
+  nameWithType: IZlibCompression.UnCompress(int, ref byte, ref int, ref byte)
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress(int, ref byte, ref int, ref byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: UnCompress the current the input buffer.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void UnCompress(int inSize, ref byte pInBuff, ref int pOutSize, ref byte pOutBuff)
+    parameters:
+    - id: inSize
+      type: System.Int32
+    - id: pInBuff
+      type: System.Byte
+    - id: pOutSize
+      type: System.Int32
+    - id: pOutBuff
+      type: System.Byte
+    content.vb: Sub UnCompress(inSize As Integer, pInBuff As Byte, pOutSize As Integer, pOutBuff As Byte)
+  overload: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress*
+  nameWithType.vb: IZlibCompression.UnCompress(Integer, Byte, Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress(Integer, Byte, Integer, Byte)
+  name.vb: UnCompress(Integer, Byte, Integer, Byte)
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize(System.Int32)
+  commentId: P:ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize(System.Int32)
+  id: BufferSize(System.Int32)
+  parent: ESRI.ArcGIS.esriSystem.IZlibCompression
+  langs:
+  - csharp
+  - vb
+  name: BufferSize[int]
+  nameWithType: IZlibCompression.BufferSize[int]
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Estimated buffer size of compress/uncompress texture data.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int BufferSize[int Size] { get; }
+    parameters:
+    - id: Size
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BufferSize(Size As Integer) As Integer
+  overload: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize*
+  nameWithType.vb: IZlibCompression.BufferSize(Integer)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize(Integer)
+  name.vb: BufferSize(Integer)
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IZlibCompression.Compress
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IZlibCompression.html#ESRI_ArcGIS_esriSystem_IZlibCompression_Compress_System_Int32_System_Byte__System_Int32__System_Byte__
+  name: Compress
+  nameWithType: IZlibCompression.Compress
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.Compress
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IZlibCompression.html#ESRI_ArcGIS_esriSystem_IZlibCompression_CompressByLevel_System_Int32_System_Byte__System_Int32_System_Int32__System_Byte__
+  name: CompressByLevel
+  nameWithType: IZlibCompression.CompressByLevel
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.CompressByLevel
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IZlibCompression.html#ESRI_ArcGIS_esriSystem_IZlibCompression_UnCompress_System_Int32_System_Byte__System_Int32__System_Byte__
+  name: UnCompress
+  nameWithType: IZlibCompression.UnCompress
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.UnCompress
+- uid: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IZlibCompression.html#ESRI_ArcGIS_esriSystem_IZlibCompression_BufferSize_System_Int32_
+  name: BufferSize
+  nameWithType: IZlibCompression.BufferSize
+  fullName: ESRI.ArcGIS.esriSystem.IZlibCompression.BufferSize

@@ -1,0 +1,717 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  id: NetworkSourceDirectionsClass
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+  langs:
+  - csharp
+  - vb
+  name: NetworkSourceDirectionsClass
+  nameWithType: NetworkSourceDirectionsClass
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  type: Class
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: >-
+      [Guid("29E5825C-6BCD-4063-A6DA-F943E8B262BD")]
+
+      [ClassInterface(ClassInterfaceType.None)]
+
+      public class NetworkSourceDirectionsClass : NetworkSourceDirections, INetworkSourceDirections
+    content.vb: >-
+      <Guid("29E5825C-6BCD-4063-A6DA-F943E8B262BD")>
+
+      <ClassInterface(ClassInterfaceType.None)>
+
+      Public Class NetworkSourceDirectionsClass Implements NetworkSourceDirections, INetworkSourceDirections
+  inheritance:
+  - System.Object
+  implements:
+  - ESRI.ArcGIS.Geodatabase.NetworkSourceDirections
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 29E5825C-6BCD-4063-A6DA-F943E8B262BD
+  - type: System.Runtime.InteropServices.ClassInterfaceAttribute
+    ctor: System.Runtime.InteropServices.ClassInterfaceAttribute.#ctor(System.Runtime.InteropServices.ClassInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ClassInterfaceType
+      value: 0
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor
+  commentId: M:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor
+  id: '#ctor'
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: NetworkSourceDirectionsClass()
+  nameWithType: NetworkSourceDirectionsClass.NetworkSourceDirectionsClass()
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.NetworkSourceDirectionsClass()
+  type: Constructor
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  syntax:
+    content: public NetworkSourceDirectionsClass()
+    content.vb: Public Sub New()
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor*
+  nameWithType.vb: NetworkSourceDirectionsClass.New()
+  fullName.vb: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.New()
+  name.vb: New()
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+  id: Shields
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: Shields
+  nameWithType: NetworkSourceDirectionsClass.Shields
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The directions shields settings for this source.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IShields Shields { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IShields
+    content.vb: Overridable Property Shields As IShields
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.Shields
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+  id: AdminAreaFieldName
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: AdminAreaFieldName
+  nameWithType: NetworkSourceDirectionsClass.AdminAreaFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The name of the field containing the administrative area information for generating directions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual string AdminAreaFieldName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Overridable Property AdminAreaFieldName As String
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.AdminAreaFieldName
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+  id: FeatureNameFields
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: FeatureNameFields
+  nameWithType: NetworkSourceDirectionsClass.FeatureNameFields
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The fields containing the names used in reporting directions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray FeatureNameFields { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property FeatureNameFields As IArray
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FeatureNameFields
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+  id: FieldMappings
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: FieldMappings
+  nameWithType: NetworkSourceDirectionsClass.FieldMappings
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The collection of directions field mapping.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray FieldMappings { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property FieldMappings As IArray
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FieldMappings
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+  id: LandmarkEventSources
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: LandmarkEventSources
+  nameWithType: NetworkSourceDirectionsClass.LandmarkEventSources
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The collection of DirectionsLandmarkSource items used to generate event bypass instructions.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray LandmarkEventSources { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property LandmarkEventSources As IArray
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkEventSources
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+  commentId: P:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+  id: LandmarkManeuverSources
+  isEii: true
+  parent: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass
+  langs:
+  - csharp
+  - vb
+  name: LandmarkManeuverSources
+  nameWithType: NetworkSourceDirectionsClass.LandmarkManeuverSources
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The collection of DirectionsLandmarkSource items used to improve maneuver guidance.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: virtual IArray LandmarkManeuverSources { get; set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.esriSystem.IArray
+    content.vb: Overridable Property LandmarkManeuverSources As IArray
+  overload: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources*
+  implements:
+  - ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkManeuverSources
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirections
+  commentId: T:ESRI.ArcGIS.Geodatabase.NetworkSourceDirections
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirections.html
+  name: NetworkSourceDirections
+  nameWithType: NetworkSourceDirections
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirections
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  commentId: T:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html
+  name: INetworkSourceDirections
+  nameWithType: INetworkSourceDirections
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.#ctor
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass__ctor
+  name: NetworkSourceDirectionsClass
+  nameWithType: NetworkSourceDirectionsClass.NetworkSourceDirectionsClass
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.NetworkSourceDirectionsClass
+  nameWithType.vb: NetworkSourceDirectionsClass.New
+  fullName.vb: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.New
+  name.vb: New
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_Shields
+  name: Shields
+  nameWithType: NetworkSourceDirectionsClass.Shields
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.Shields
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.Shields
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.Shields
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_Shields
+  name: Shields
+  nameWithType: INetworkSourceDirections.Shields
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.Shields
+- uid: ESRI.ArcGIS.Geodatabase.IShields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IShields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IShields.html
+  name: IShields
+  nameWithType: IShields
+  fullName: ESRI.ArcGIS.Geodatabase.IShields
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_AdminAreaFieldName
+  name: AdminAreaFieldName
+  nameWithType: NetworkSourceDirectionsClass.AdminAreaFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.AdminAreaFieldName
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.AdminAreaFieldName
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.AdminAreaFieldName
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_AdminAreaFieldName
+  name: AdminAreaFieldName
+  nameWithType: INetworkSourceDirections.AdminAreaFieldName
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.AdminAreaFieldName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_FeatureNameFields
+  name: FeatureNameFields
+  nameWithType: NetworkSourceDirectionsClass.FeatureNameFields
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FeatureNameFields
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FeatureNameFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FeatureNameFields
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_FeatureNameFields
+  name: FeatureNameFields
+  nameWithType: INetworkSourceDirections.FeatureNameFields
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FeatureNameFields
+- uid: ESRI.ArcGIS.esriSystem.IArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IArray.html
+  name: IArray
+  nameWithType: IArray
+  fullName: ESRI.ArcGIS.esriSystem.IArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_FieldMappings
+  name: FieldMappings
+  nameWithType: NetworkSourceDirectionsClass.FieldMappings
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.FieldMappings
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FieldMappings
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FieldMappings
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_FieldMappings
+  name: FieldMappings
+  nameWithType: INetworkSourceDirections.FieldMappings
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.FieldMappings
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_LandmarkEventSources
+  name: LandmarkEventSources
+  nameWithType: NetworkSourceDirectionsClass.LandmarkEventSources
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkEventSources
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkEventSources
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkEventSources
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_LandmarkEventSources
+  name: LandmarkEventSources
+  nameWithType: INetworkSourceDirections.LandmarkEventSources
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkEventSources
+- uid: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.html#ESRI_ArcGIS_Geodatabase_NetworkSourceDirectionsClass_LandmarkManeuverSources
+  name: LandmarkManeuverSources
+  nameWithType: NetworkSourceDirectionsClass.LandmarkManeuverSources
+  fullName: ESRI.ArcGIS.Geodatabase.NetworkSourceDirectionsClass.LandmarkManeuverSources
+- uid: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkManeuverSources
+  commentId: P:ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkManeuverSources
+  parent: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.html#ESRI_ArcGIS_Geodatabase_INetworkSourceDirections_LandmarkManeuverSources
+  name: LandmarkManeuverSources
+  nameWithType: INetworkSourceDirections.LandmarkManeuverSources
+  fullName: ESRI.ArcGIS.Geodatabase.INetworkSourceDirections.LandmarkManeuverSources

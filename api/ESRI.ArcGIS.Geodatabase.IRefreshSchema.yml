@@ -1,0 +1,317 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  commentId: T:ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  id: IRefreshSchema
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField(System.String)
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset(System.String,System.String)
+  - ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRefreshSchema
+  nameWithType: IRefreshSchema
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: ''
+  example: []
+  syntax:
+    content: >-
+      [Guid("3250C70B-F6EF-45DA-B46D-9C2BECD7D9D3")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRefreshSchema
+    content.vb: >-
+      <Guid("3250C70B-F6EF-45DA-B46D-9C2BECD7D9D3")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRefreshSchema
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3250C70B-F6EF-45DA-B46D-9C2BECD7D9D3
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema(System.String)
+  id: RefreshSchema(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: RefreshSchema(string)
+  nameWithType: IRefreshSchema.RefreshSchema(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Tell the dataset that it needs to refresh its schema. The new dataset name can be empty if the dataset was not renamed.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RefreshSchema(string newDatasetName)
+    parameters:
+    - id: newDatasetName
+      type: System.String
+    content.vb: Sub RefreshSchema(newDatasetName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema*
+  nameWithType.vb: IRefreshSchema.RefreshSchema(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema(String)
+  name.vb: RefreshSchema(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField(System.String)
+  id: FireOnAddField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: FireOnAddField(string)
+  nameWithType: IRefreshSchema.FireOnAddField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fire the IObjectClassSchemaEvents::OnAddField event.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FireOnAddField(string FieldName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    content.vb: Sub FireOnAddField(FieldName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField*
+  nameWithType.vb: IRefreshSchema.FireOnAddField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField(String)
+  name.vb: FireOnAddField(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField(System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField(System.String)
+  id: FireOnDeleteField(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: FireOnDeleteField(string)
+  nameWithType: IRefreshSchema.FireOnDeleteField(string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fire the IObjectClassSchemaEvents::OnDeleteField event.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FireOnDeleteField(string FieldName)
+    parameters:
+    - id: FieldName
+      type: System.String
+    content.vb: Sub FireOnDeleteField(FieldName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField*
+  nameWithType.vb: IRefreshSchema.FireOnDeleteField(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField(String)
+  name.vb: FireOnDeleteField(String)
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged
+  id: FireOnBehaviorChanged
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: FireOnBehaviorChanged()
+  nameWithType: IRefreshSchema.FireOnBehaviorChanged()
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fire the IObjectClassSchemaEvents::OnBehaviorChanged event.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FireOnBehaviorChanged()
+    content.vb: Sub FireOnBehaviorChanged()
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged*
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset
+  id: FireOnModifyDataset
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: FireOnModifyDataset()
+  nameWithType: IRefreshSchema.FireOnModifyDataset()
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fire the IWorkspaceEvents2::OnModifyDataset event.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FireOnModifyDataset()
+    content.vb: Sub FireOnModifyDataset()
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset*
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset(System.String,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset(System.String,System.String)
+  id: FireOnRenameDataset(System.String,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.IRefreshSchema
+  langs:
+  - csharp
+  - vb
+  name: FireOnRenameDataset(string, string)
+  nameWithType: IRefreshSchema.FireOnRenameDataset(string, string)
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset(string, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Fire the IWorkspaceEvents::OnRenameDataset event.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FireOnRenameDataset(string oldName, string newName)
+    parameters:
+    - id: oldName
+      type: System.String
+    - id: newName
+      type: System.String
+    content.vb: Sub FireOnRenameDataset(oldName As String, newName As String)
+  overload: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset*
+  nameWithType.vb: IRefreshSchema.FireOnRenameDataset(String, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset(String, String)
+  name.vb: FireOnRenameDataset(String, String)
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_RefreshSchema_System_String_
+  name: RefreshSchema
+  nameWithType: IRefreshSchema.RefreshSchema
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.RefreshSchema
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_FireOnAddField_System_String_
+  name: FireOnAddField
+  nameWithType: IRefreshSchema.FireOnAddField
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnAddField
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_FireOnDeleteField_System_String_
+  name: FireOnDeleteField
+  nameWithType: IRefreshSchema.FireOnDeleteField
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnDeleteField
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_FireOnBehaviorChanged
+  name: FireOnBehaviorChanged
+  nameWithType: IRefreshSchema.FireOnBehaviorChanged
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnBehaviorChanged
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_FireOnModifyDataset
+  name: FireOnModifyDataset
+  nameWithType: IRefreshSchema.FireOnModifyDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnModifyDataset
+- uid: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IRefreshSchema.html#ESRI_ArcGIS_Geodatabase_IRefreshSchema_FireOnRenameDataset_System_String_System_String_
+  name: FireOnRenameDataset
+  nameWithType: IRefreshSchema.FireOnRenameDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IRefreshSchema.FireOnRenameDataset

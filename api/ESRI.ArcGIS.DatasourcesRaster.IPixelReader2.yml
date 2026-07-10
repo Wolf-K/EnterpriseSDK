@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  commentId: T:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  id: IPixelReader2
+  parent: ESRI.ArcGIS.DatasourcesRaster
+  children:
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution(System.Int32,System.Double@,System.Double@)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap(System.Double,System.Double)
+  - ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2(System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  langs:
+  - csharp
+  - vb
+  name: IPixelReader2
+  nameWithType: IPixelReader2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  type: Interface
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  summary: Provides access to members that control a pixel reader.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("E0F724C5-5ABE-4A4D-8916-702CDA40EAA8")]
+
+      public interface IPixelReader2 : IPixelReader
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("E0F724C5-5ABE-4A4D-8916-702CDA40EAA8")>
+
+      Public Interface IPixelReader2 Inherits IPixelReader
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: E0F724C5-5ABE-4A4D-8916-702CDA40EAA8
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  id: Read(ESRI.ArcGIS.Geodatabase.IPnt,ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: Read(IPnt, IPixelBlock)
+  nameWithType: IPixelReader2.Read(IPnt, IPixelBlock)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read(ESRI.ArcGIS.Geodatabase.IPnt, ESRI.ArcGIS.Geodatabase.IPixelBlock)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void Read(IPnt tlc, IPixelBlock pPixelBlock)
+    parameters:
+    - id: tlc
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    - id: pPixelBlock
+      type: ESRI.ArcGIS.Geodatabase.IPixelBlock
+    content.vb: Sub Read(tlc As IPnt, pPixelBlock As IPixelBlock)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap(System.Double,System.Double)
+  id: Snap(System.Double,System.Double)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: Snap(double, double)
+  nameWithType: IPixelReader2.Snap(double, double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int Snap(double Dx, double Dy)
+    parameters:
+    - id: Dx
+      type: System.Double
+    - id: Dy
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Function Snap(Dx As Double, Dy As Double) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap*
+  nameWithType.vb: IPixelReader2.Snap(Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap(Double, Double)
+  name.vb: Snap(Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution(System.Int32,System.Double@,System.Double@)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution(System.Int32,System.Double@,System.Double@)
+  id: GetResolution(System.Int32,System.Double@,System.Double@)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: GetResolution(int, out double, out double)
+  nameWithType: IPixelReader2.GetResolution(int, out double, out double)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution(int, out double, out double)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: void GetResolution(int Level, out double pXResolution, out double pYResolution)
+    parameters:
+    - id: Level
+      type: System.Int32
+    - id: pXResolution
+      type: System.Double
+    - id: pYResolution
+      type: System.Double
+    content.vb: Sub GetResolution(Level As Integer, pXResolution As Double, pYResolution As Double)
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution*
+  nameWithType.vb: IPixelReader2.GetResolution(Integer, Double, Double)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution(Integer, Double, Double)
+  name.vb: GetResolution(Integer, Double, Double)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2(System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  commentId: M:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2(System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  id: Snap2(System.Double,System.Double,ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: Snap2(double, double, esriRasterResamplingHint)
+  nameWithType: IPixelReader2.Snap2(double, double, esriRasterResamplingHint)
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2(double, double, ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  type: Method
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int Snap2(double Dx, double Dy, esriRasterResamplingHint hint)
+    parameters:
+    - id: Dx
+      type: System.Double
+    - id: Dy
+      type: System.Double
+    - id: hint
+      type: ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint
+    return:
+      type: System.Int32
+    content.vb: Function Snap2(Dx As Double, Dy As Double, hint As esriRasterResamplingHint) As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2*
+  nameWithType.vb: IPixelReader2.Snap2(Double, Double, esriRasterResamplingHint)
+  fullName.vb: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2(Double, Double, ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint)
+  name.vb: Snap2(Double, Double, esriRasterResamplingHint)
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+  id: PixelType
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: PixelType
+  nameWithType: IPixelReader2.PixelType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: rstPixelType PixelType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.rstPixelType
+    content.vb: ReadOnly Property PixelType As rstPixelType
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+  id: BandCount
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: BandCount
+  nameWithType: IPixelReader2.BandCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int BandCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property BandCount As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: IPixelReader2.Extent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+  id: CellSize
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: CellSize
+  nameWithType: IPixelReader2.CellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: IPnt CellSize { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IPnt
+    content.vb: ReadOnly Property CellSize As IPnt
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+  id: MaximumPyramidLevel
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: MaximumPyramidLevel
+  nameWithType: IPixelReader2.MaximumPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int MaximumPyramidLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaximumPyramidLevel As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+  id: FirstPyramidLevel
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: FirstPyramidLevel
+  nameWithType: IPixelReader2.FirstPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int FirstPyramidLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property FirstPyramidLevel As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel*
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel
+  commentId: P:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel
+  id: PyramidLevel
+  parent: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2
+  langs:
+  - csharp
+  - vb
+  name: PyramidLevel
+  nameWithType: IPixelReader2.PyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel
+  type: Property
+  assemblies:
+  - ESRI.Server.DatasourcesRaster
+  namespace: ESRI.ArcGIS.DatasourcesRaster
+  syntax:
+    content: int PyramidLevel { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PyramidLevel As Integer
+  overload: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel*
+references:
+- uid: ESRI.ArcGIS.DatasourcesRaster
+  commentId: N:ESRI.ArcGIS.DatasourcesRaster
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.DatasourcesRaster
+  nameWithType: ESRI.ArcGIS.DatasourcesRaster
+  fullName: ESRI.ArcGIS.DatasourcesRaster
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.DatasourcesRaster
+    name: DatasourcesRaster
+    isExternal: true
+    href: ESRI.ArcGIS.DatasourcesRaster.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_Read_ESRI_ArcGIS_Geodatabase_IPnt_ESRI_ArcGIS_Geodatabase_IPixelBlock_
+  name: Read
+  nameWithType: IPixelReader2.Read
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Read
+- uid: ESRI.ArcGIS.Geodatabase.IPnt
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPnt
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPnt.html
+  name: IPnt
+  nameWithType: IPnt
+  fullName: ESRI.ArcGIS.Geodatabase.IPnt
+- uid: ESRI.ArcGIS.Geodatabase.IPixelBlock
+  commentId: T:ESRI.ArcGIS.Geodatabase.IPixelBlock
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IPixelBlock.html
+  name: IPixelBlock
+  nameWithType: IPixelBlock
+  fullName: ESRI.ArcGIS.Geodatabase.IPixelBlock
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_Snap_System_Double_System_Double_
+  name: Snap
+  nameWithType: IPixelReader2.Snap
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_GetResolution_System_Int32_System_Double__System_Double__
+  name: GetResolution
+  nameWithType: IPixelReader2.GetResolution
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.GetResolution
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_Snap2_System_Double_System_Double_ESRI_ArcGIS_Geodatabase_esriRasterResamplingHint_
+  name: Snap2
+  nameWithType: IPixelReader2.Snap2
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Snap2
+- uid: ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint
+  commentId: T:ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint.html
+  name: esriRasterResamplingHint
+  nameWithType: esriRasterResamplingHint
+  fullName: ESRI.ArcGIS.Geodatabase.esriRasterResamplingHint
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_PixelType
+  name: PixelType
+  nameWithType: IPixelReader2.PixelType
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PixelType
+- uid: ESRI.ArcGIS.Geodatabase.rstPixelType
+  commentId: T:ESRI.ArcGIS.Geodatabase.rstPixelType
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.rstPixelType.html
+  name: rstPixelType
+  nameWithType: rstPixelType
+  fullName: ESRI.ArcGIS.Geodatabase.rstPixelType
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_BandCount
+  name: BandCount
+  nameWithType: IPixelReader2.BandCount
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.BandCount
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_Extent
+  name: Extent
+  nameWithType: IPixelReader2.Extent
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.Extent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_CellSize
+  name: CellSize
+  nameWithType: IPixelReader2.CellSize
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.CellSize
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_MaximumPyramidLevel
+  name: MaximumPyramidLevel
+  nameWithType: IPixelReader2.MaximumPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.MaximumPyramidLevel
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_FirstPyramidLevel
+  name: FirstPyramidLevel
+  nameWithType: IPixelReader2.FirstPyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.FirstPyramidLevel
+- uid: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.html#ESRI_ArcGIS_DatasourcesRaster_IPixelReader2_PyramidLevel
+  name: PyramidLevel
+  nameWithType: IPixelReader2.PyramidLevel
+  fullName: ESRI.ArcGIS.DatasourcesRaster.IPixelReader2.PyramidLevel

@@ -1,0 +1,494 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  id: ILasStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+  langs:
+  - csharp
+  - vb
+  name: ILasStatistics
+  nameWithType: ILasStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members of LasFile.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("23AFC48E-4EFB-479F-9164-959E70E01918")]
+
+      public interface ILasStatistics
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("23AFC48E-4EFB-479F-9164-959E70E01918")>
+
+      Public Interface ILasStatistics
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.LasStatisticsClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 23AFC48E-4EFB-479F-9164-959E70E01918
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  id: GetAttributeStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetAttributeStatistics(esriLasAttributeType)
+  nameWithType: ILasStatistics.GetAttributeStatistics(esriLasAttributeType)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get statistics of the specified LAS attribute.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ISimpleStatistics GetAttributeStatistics(esriLasAttributeType Attribute)
+    parameters:
+    - id: Attribute
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ISimpleStatistics
+    content.vb: Function GetAttributeStatistics(Attribute As esriLasAttributeType) As ISimpleStatistics
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns
+  id: GetUniqueReturns
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetUniqueReturns()
+  nameWithType: ILasStatistics.GetUniqueReturns()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get unique returns (as esriTerrainLasReturnType).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILongArray GetUniqueReturns()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    content.vb: Function GetUniqueReturns() As ILongArray
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes
+  id: GetUniqueClassCodes
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetUniqueClassCodes()
+  nameWithType: ILasStatistics.GetUniqueClassCodes()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get unique class codes.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILongArray GetUniqueClassCodes()
+    return:
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    content.vb: Function GetUniqueClassCodes() As ILongArray
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType)
+  id: GetReturnStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetReturnStatistics(esriTerrainLasReturnType)
+  nameWithType: ILasStatistics.GetReturnStatistics(esriTerrainLasReturnType)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics(ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get statistics associated with the specified return type.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILasReturnStatistics GetReturnStatistics(esriTerrainLasReturnType Type)
+    parameters:
+    - id: Type
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasReturnStatistics
+    content.vb: Function GetReturnStatistics(Type As esriTerrainLasReturnType) As ILasReturnStatistics
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics(System.Int32)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics(System.Int32)
+  id: GetClassCodeStatistics(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: GetClassCodeStatistics(int)
+  nameWithType: ILasStatistics.GetClassCodeStatistics(int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics(int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Get statistics associated with the specified class code.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ILasClassCodeStatistics GetClassCodeStatistics(int ClassCode)
+    parameters:
+    - id: ClassCode
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+    content.vb: Function GetClassCodeStatistics(ClassCode As Integer) As ILasClassCodeStatistics
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics*
+  nameWithType.vb: ILasStatistics.GetClassCodeStatistics(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics(Integer)
+  name.vb: GetClassCodeStatistics(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+  id: WithheldPointCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: WithheldPointCount
+  nameWithType: ILasStatistics.WithheldPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The number of withheld points.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double WithheldPointCount { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property WithheldPointCount As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+  id: WithheldExtent
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics
+  langs:
+  - csharp
+  - vb
+  name: WithheldExtent
+  nameWithType: ILasStatistics.WithheldExtent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: The XYZ extent of withheld points.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnvelope WithheldExtent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property WithheldExtent As IEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_GetAttributeStatistics_ESRI_ArcGIS_GeoDatabaseExtensions_esriLasAttributeType_
+  name: GetAttributeStatistics
+  nameWithType: ILasStatistics.GetAttributeStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetAttributeStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType.html
+  name: esriLasAttributeType
+  nameWithType: esriLasAttributeType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.esriLasAttributeType
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ISimpleStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ISimpleStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ISimpleStatistics.html
+  name: ISimpleStatistics
+  nameWithType: ISimpleStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ISimpleStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_GetUniqueReturns
+  name: GetUniqueReturns
+  nameWithType: ILasStatistics.GetUniqueReturns
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueReturns
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_GetUniqueClassCodes
+  name: GetUniqueClassCodes
+  nameWithType: ILasStatistics.GetUniqueClassCodes
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetUniqueClassCodes
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_GetReturnStatistics_ESRI_ArcGIS_GeoDatabaseExtensions_esriTerrainLasReturnType_
+  name: GetReturnStatistics
+  nameWithType: ILasStatistics.GetReturnStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetReturnStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType.html
+  name: esriTerrainLasReturnType
+  nameWithType: esriTerrainLasReturnType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainLasReturnType
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasReturnStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasReturnStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasReturnStatistics.html
+  name: ILasReturnStatistics
+  nameWithType: ILasReturnStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasReturnStatistics
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_GetClassCodeStatistics_System_Int32_
+  name: GetClassCodeStatistics
+  nameWithType: ILasStatistics.GetClassCodeStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.GetClassCodeStatistics
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics.html
+  name: ILasClassCodeStatistics
+  nameWithType: ILasClassCodeStatistics
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasClassCodeStatistics
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_WithheldPointCount
+  name: WithheldPointCount
+  nameWithType: ILasStatistics.WithheldPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldPointCount
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.html#ESRI_ArcGIS_GeoDatabaseExtensions_ILasStatistics_WithheldExtent
+  name: WithheldExtent
+  nameWithType: ILasStatistics.WithheldExtent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ILasStatistics.WithheldExtent
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html

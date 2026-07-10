@@ -1,0 +1,225 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IWkb
+  commentId: T:ESRI.ArcGIS.Geometry.IWkb
+  id: IWkb
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IWkb.ExportToWkb(System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb(System.Int32@,System.Byte@)
+  - ESRI.ArcGIS.Geometry.IWkb.WkbSize
+  langs:
+  - csharp
+  - vb
+  name: IWkb
+  nameWithType: IWkb
+  fullName: ESRI.ArcGIS.Geometry.IWkb
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Reads/Writes the OGIS OLE/COM simple features Well Known Binary Format, v1.1, little-endian (NDR).
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("8D9097EE-2F7C-11D1-833B-0000F8775BE9")]
+
+      public interface IWkb
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("8D9097EE-2F7C-11D1-833B-0000F8775BE9")>
+
+      Public Interface IWkb
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 8D9097EE-2F7C-11D1-833B-0000F8775BE9
+- uid: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb(System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.Geometry.IWkb.ExportToWkb(System.Int32@,System.Byte@)
+  id: ExportToWkb(System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.Geometry.IWkb
+  langs:
+  - csharp
+  - vb
+  name: ExportToWkb(ref int, out byte)
+  nameWithType: IWkb.ExportToWkb(ref int, out byte)
+  fullName: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb(ref int, out byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Exports this object to a OGIS OLE/COM WKB binary buffer (v1.1, NDR).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ExportToWkb(ref int byteCountInOut, out byte byteBuffer)
+    parameters:
+    - id: byteCountInOut
+      type: System.Int32
+    - id: byteBuffer
+      type: System.Byte
+    content.vb: Sub ExportToWkb(byteCountInOut As Integer, byteBuffer As Byte)
+  overload: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb*
+  nameWithType.vb: IWkb.ExportToWkb(Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb(Integer, Byte)
+  name.vb: ExportToWkb(Integer, Byte)
+- uid: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb(System.Int32@,System.Byte@)
+  commentId: M:ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb(System.Int32@,System.Byte@)
+  id: ImportFromWkb(System.Int32@,System.Byte@)
+  parent: ESRI.ArcGIS.Geometry.IWkb
+  langs:
+  - csharp
+  - vb
+  name: ImportFromWkb(ref int, ref byte)
+  nameWithType: IWkb.ImportFromWkb(ref int, ref byte)
+  fullName: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb(ref int, ref byte)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Imports this object from a OGIS OLE/COM WKB binary buffer (v1.1, NDR).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void ImportFromWkb(ref int byteCountInOut, ref byte byteBuffer)
+    parameters:
+    - id: byteCountInOut
+      type: System.Int32
+    - id: byteBuffer
+      type: System.Byte
+    content.vb: Sub ImportFromWkb(byteCountInOut As Integer, byteBuffer As Byte)
+  overload: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb*
+  nameWithType.vb: IWkb.ImportFromWkb(Integer, Byte)
+  fullName.vb: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb(Integer, Byte)
+  name.vb: ImportFromWkb(Integer, Byte)
+- uid: ESRI.ArcGIS.Geometry.IWkb.WkbSize
+  commentId: P:ESRI.ArcGIS.Geometry.IWkb.WkbSize
+  id: WkbSize
+  parent: ESRI.ArcGIS.Geometry.IWkb
+  langs:
+  - csharp
+  - vb
+  name: WkbSize
+  nameWithType: IWkb.WkbSize
+  fullName: ESRI.ArcGIS.Geometry.IWkb.WkbSize
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of bytes required to hold the exported version of this object.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int WkbSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property WkbSize As Integer
+  overload: ESRI.ArcGIS.Geometry.IWkb.WkbSize*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IWkb.ExportToWkb
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IWkb.html#ESRI_ArcGIS_Geometry_IWkb_ExportToWkb_System_Int32__System_Byte__
+  name: ExportToWkb
+  nameWithType: IWkb.ExportToWkb
+  fullName: ESRI.ArcGIS.Geometry.IWkb.ExportToWkb
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IWkb.html#ESRI_ArcGIS_Geometry_IWkb_ImportFromWkb_System_Int32__System_Byte__
+  name: ImportFromWkb
+  nameWithType: IWkb.ImportFromWkb
+  fullName: ESRI.ArcGIS.Geometry.IWkb.ImportFromWkb
+- uid: ESRI.ArcGIS.Geometry.IWkb.WkbSize*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IWkb.WkbSize
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IWkb.html#ESRI_ArcGIS_Geometry_IWkb_WkbSize
+  name: WkbSize
+  nameWithType: IWkb.WkbSize
+  fullName: ESRI.ArcGIS.Geometry.IWkb.WkbSize

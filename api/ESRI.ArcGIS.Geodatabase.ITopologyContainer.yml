@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  id: ITopologyContainer
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology(System.String,System.Double,System.Int32,System.String)
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx(System.String,System.Double,System.Double,System.Int32,System.String)
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID(System.Int32)
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName(System.String)
+  - ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+  langs:
+  - csharp
+  - vb
+  name: ITopologyContainer
+  nameWithType: ITopologyContainer
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members that create, add, and hand out topologies.
+  example: []
+  syntax:
+    content: >-
+      [Guid("C2A33A05-ADAB-4FC9-938C-CB0E14476686")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ITopologyContainer
+    content.vb: >-
+      <Guid("C2A33A05-ADAB-4FC9-938C-CB0E14476686")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ITopologyContainer
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: C2A33A05-ADAB-4FC9-938C-CB0E14476686
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology(System.String,System.Double,System.Int32,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology(System.String,System.Double,System.Int32,System.String)
+  id: CreateTopology(System.String,System.Double,System.Int32,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: CreateTopology(string, double, int, string)
+  nameWithType: ITopologyContainer.CreateTopology(string, double, int, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology(string, double, int, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a new topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopology CreateTopology(string Name, double ClusterTolerance, int maxGeneratedErrorCount, string ConfigurationKeyword)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: ClusterTolerance
+      type: System.Double
+    - id: maxGeneratedErrorCount
+      type: System.Int32
+    - id: ConfigurationKeyword
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopology
+    content.vb: Function CreateTopology(Name As String, ClusterTolerance As Double, maxGeneratedErrorCount As Integer, ConfigurationKeyword As String) As ITopology
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology*
+  nameWithType.vb: ITopologyContainer.CreateTopology(String, Double, Integer, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology(String, Double, Integer, String)
+  name.vb: CreateTopology(String, Double, Integer, String)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx(System.String,System.Double,System.Double,System.Int32,System.String)
+  commentId: M:ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx(System.String,System.Double,System.Double,System.Int32,System.String)
+  id: CreateTopologyEx(System.String,System.Double,System.Double,System.Int32,System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: CreateTopologyEx(string, double, double, int, string)
+  nameWithType: ITopologyContainer.CreateTopologyEx(string, double, double, int, string)
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx(string, double, double, int, string)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Creates a new topology.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopology CreateTopologyEx(string Name, double ClusterTolerance, double ZClusterTolerance, int maxGeneratedErrorCount, string ConfigurationKeyword)
+    parameters:
+    - id: Name
+      type: System.String
+    - id: ClusterTolerance
+      type: System.Double
+    - id: ZClusterTolerance
+      type: System.Double
+    - id: maxGeneratedErrorCount
+      type: System.Int32
+    - id: ConfigurationKeyword
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopology
+    content.vb: Function CreateTopologyEx(Name As String, ClusterTolerance As Double, ZClusterTolerance As Double, maxGeneratedErrorCount As Integer, ConfigurationKeyword As String) As ITopology
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx*
+  nameWithType.vb: ITopologyContainer.CreateTopologyEx(String, Double, Double, Integer, String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx(String, Double, Double, Integer, String)
+  name.vb: CreateTopologyEx(String, Double, Double, Integer, String)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology(System.Int32)
+  id: Topology(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: Topology[int]
+  nameWithType: ITopologyContainer.Topology[int]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The topology at the specified index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopology Topology[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopology
+    content.vb: ReadOnly Property Topology(Index As Integer) As ITopology
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology*
+  nameWithType.vb: ITopologyContainer.Topology(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology(Integer)
+  name.vb: Topology(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName(System.String)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName(System.String)
+  id: TopologyByName(System.String)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: TopologyByName[string]
+  nameWithType: ITopologyContainer.TopologyByName[string]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName[string]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The topology with the specified name.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopology TopologyByName[string Name] { get; }
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopology
+    content.vb: ReadOnly Property TopologyByName(Name As String) As ITopology
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName*
+  nameWithType.vb: ITopologyContainer.TopologyByName(String)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName(String)
+  name.vb: TopologyByName(String)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID(System.Int32)
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID(System.Int32)
+  id: TopologyByID(System.Int32)
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: TopologyByID[int]
+  nameWithType: ITopologyContainer.TopologyByID[int]
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The topology with the specified ID.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: ITopology TopologyByID[int ID] { get; }
+    parameters:
+    - id: ID
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.Geodatabase.ITopology
+    content.vb: ReadOnly Property TopologyByID(ID As Integer) As ITopology
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID*
+  nameWithType.vb: ITopologyContainer.TopologyByID(Integer)
+  fullName.vb: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID(Integer)
+  name.vb: TopologyByID(Integer)
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+  id: TopologyCount
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: TopologyCount
+  nameWithType: ITopologyContainer.TopologyCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The number of topologies in the container.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int TopologyCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property TopologyCount As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+  id: DefaultClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: DefaultClusterTolerance
+  nameWithType: ITopologyContainer.DefaultClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The default cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double DefaultClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property DefaultClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+  id: MinimumClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: MinimumClusterTolerance
+  nameWithType: ITopologyContainer.MinimumClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The minimal cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MinimumClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MinimumClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+  id: MaximumClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: MaximumClusterTolerance
+  nameWithType: ITopologyContainer.MaximumClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The maximal cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MaximumClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MaximumClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+  id: DefaultZClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: DefaultZClusterTolerance
+  nameWithType: ITopologyContainer.DefaultZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The default z cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double DefaultZClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property DefaultZClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+  id: MinimumZClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: MinimumZClusterTolerance
+  nameWithType: ITopologyContainer.MinimumZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The minimal z cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MinimumZClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MinimumZClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance*
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance
+  commentId: P:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance
+  id: MaximumZClusterTolerance
+  parent: ESRI.ArcGIS.Geodatabase.ITopologyContainer
+  langs:
+  - csharp
+  - vb
+  name: MaximumZClusterTolerance
+  nameWithType: ITopologyContainer.MaximumZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The maximal z cluster tolerance as per the topology engine.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: double MaximumZClusterTolerance { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property MaximumZClusterTolerance As Double
+  overload: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_CreateTopology_System_String_System_Double_System_Int32_System_String_
+  name: CreateTopology
+  nameWithType: ITopologyContainer.CreateTopology
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopology
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ITopology
+  commentId: T:ESRI.ArcGIS.Geodatabase.ITopology
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopology.html
+  name: ITopology
+  nameWithType: ITopology
+  fullName: ESRI.ArcGIS.Geodatabase.ITopology
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_CreateTopologyEx_System_String_System_Double_System_Double_System_Int32_System_String_
+  name: CreateTopologyEx
+  nameWithType: ITopologyContainer.CreateTopologyEx
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.CreateTopologyEx
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_Topology_System_Int32_
+  name: Topology
+  nameWithType: ITopologyContainer.Topology
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.Topology
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_TopologyByName_System_String_
+  name: TopologyByName
+  nameWithType: ITopologyContainer.TopologyByName
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByName
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_TopologyByID_System_Int32_
+  name: TopologyByID
+  nameWithType: ITopologyContainer.TopologyByID
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyByID
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_TopologyCount
+  name: TopologyCount
+  nameWithType: ITopologyContainer.TopologyCount
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.TopologyCount
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_DefaultClusterTolerance
+  name: DefaultClusterTolerance
+  nameWithType: ITopologyContainer.DefaultClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_MinimumClusterTolerance
+  name: MinimumClusterTolerance
+  nameWithType: ITopologyContainer.MinimumClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_MaximumClusterTolerance
+  name: MaximumClusterTolerance
+  nameWithType: ITopologyContainer.MaximumClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_DefaultZClusterTolerance
+  name: DefaultZClusterTolerance
+  nameWithType: ITopologyContainer.DefaultZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.DefaultZClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_MinimumZClusterTolerance
+  name: MinimumZClusterTolerance
+  nameWithType: ITopologyContainer.MinimumZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MinimumZClusterTolerance
+- uid: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ITopologyContainer.html#ESRI_ArcGIS_Geodatabase_ITopologyContainer_MaximumZClusterTolerance
+  name: MaximumZClusterTolerance
+  nameWithType: ITopologyContainer.MaximumZClusterTolerance
+  fullName: ESRI.ArcGIS.Geodatabase.ITopologyContainer.MaximumZClusterTolerance

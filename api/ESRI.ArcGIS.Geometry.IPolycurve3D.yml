@@ -1,0 +1,218 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D
+  commentId: T:ESRI.ArcGIS.Geometry.IPolycurve3D
+  id: IPolycurve3D
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D(System.Double,System.Double)
+  - ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D(System.Double)
+  - ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D(System.Double)
+  langs:
+  - csharp
+  - vb
+  name: IPolycurve3D
+  nameWithType: IPolycurve3D
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that define operations common to polycurves with Zs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("6774DF52-07A6-4509-9523-50B4C485BB52")]
+
+      public interface IPolycurve3D
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("6774DF52-07A6-4509-9523-50B4C485BB52")>
+
+      Public Interface IPolycurve3D
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.PolygonClass
+  - ESRI.ArcGIS.Geometry.PolylineClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 6774DF52-07A6-4509-9523-50B4C485BB52
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D(System.Double,System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D(System.Double,System.Double)
+  id: Densify3D(System.Double,System.Double)
+  parent: ESRI.ArcGIS.Geometry.IPolycurve3D
+  langs:
+  - csharp
+  - vb
+  name: Densify3D(double, double)
+  nameWithType: IPolycurve3D.Densify3D(double, double)
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D(double, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Converts this Polycurve into a piecewise linear approximation of itself.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Densify3D(double maxSegmentLength, double maxDeviation)
+    parameters:
+    - id: maxSegmentLength
+      type: System.Double
+    - id: maxDeviation
+      type: System.Double
+    content.vb: Sub Densify3D(maxSegmentLength As Double, maxDeviation As Double)
+  overload: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D*
+  nameWithType.vb: IPolycurve3D.Densify3D(Double, Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D(Double, Double)
+  name.vb: Densify3D(Double, Double)
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D(System.Double)
+  id: Generalize3D(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IPolycurve3D
+  langs:
+  - csharp
+  - vb
+  name: Generalize3D(double)
+  nameWithType: IPolycurve3D.Generalize3D(double)
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Generalizes this polycurve using the Douglas-Peucker algorithm.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Generalize3D(double maxAllowableOffset)
+    parameters:
+    - id: maxAllowableOffset
+      type: System.Double
+    content.vb: Sub Generalize3D(maxAllowableOffset As Double)
+  overload: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D*
+  nameWithType.vb: IPolycurve3D.Generalize3D(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D(Double)
+  name.vb: Generalize3D(Double)
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D(System.Double)
+  commentId: M:ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D(System.Double)
+  id: Weed3D(System.Double)
+  parent: ESRI.ArcGIS.Geometry.IPolycurve3D
+  langs:
+  - csharp
+  - vb
+  name: Weed3D(double)
+  nameWithType: IPolycurve3D.Weed3D(double)
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D(double)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Generalizes using a small tolerance based upon either the system units of the geometry's spatial reference, or the geometry's bounding box.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Weed3D(double maxAllowableOffsetFactor)
+    parameters:
+    - id: maxAllowableOffsetFactor
+      type: System.Double
+    content.vb: Sub Weed3D(maxAllowableOffsetFactor As Double)
+  overload: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D*
+  nameWithType.vb: IPolycurve3D.Weed3D(Double)
+  fullName.vb: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D(Double)
+  name.vb: Weed3D(Double)
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurve3D.html#ESRI_ArcGIS_Geometry_IPolycurve3D_Densify3D_System_Double_System_Double_
+  name: Densify3D
+  nameWithType: IPolycurve3D.Densify3D
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Densify3D
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurve3D.html#ESRI_ArcGIS_Geometry_IPolycurve3D_Generalize3D_System_Double_
+  name: Generalize3D
+  nameWithType: IPolycurve3D.Generalize3D
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Generalize3D
+- uid: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IPolycurve3D.html#ESRI_ArcGIS_Geometry_IPolycurve3D_Weed3D_System_Double_
+  name: Weed3D
+  nameWithType: IPolycurve3D.Weed3D
+  fullName: ESRI.ArcGIS.Geometry.IPolycurve3D.Weed3D

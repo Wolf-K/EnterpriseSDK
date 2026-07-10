@@ -1,0 +1,459 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geometry.IRelationResult
+  commentId: T:ESRI.ArcGIS.Geometry.IRelationResult
+  id: IRelationResult
+  parent: ESRI.ArcGIS.Geometry
+  children:
+  - ESRI.ArcGIS.Geometry.IRelationResult.Add(ESRI.ArcGIS.Geometry.IRelationResult)
+  - ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations
+  - ESRI.ArcGIS.Geometry.IRelationResult.Intersect(ESRI.ArcGIS.Geometry.IRelationResult)
+  - ESRI.ArcGIS.Geometry.IRelationResult.RelationElement(System.Int32,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount
+  - ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement(System.Int32,System.Int32,System.Int32)
+  - ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements(System.Int32,ESRI.ArcGIS.Geometry.esriRelationPair@)
+  - ESRI.ArcGIS.Geometry.IRelationResult.SortLeft
+  - ESRI.ArcGIS.Geometry.IRelationResult.SortRight
+  - ESRI.ArcGIS.Geometry.IRelationResult.Subtract(ESRI.ArcGIS.Geometry.IRelationResult)
+  langs:
+  - csharp
+  - vb
+  name: IRelationResult
+  nameWithType: IRelationResult
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Provides access to members that meet the specific relation between two sets of geometries.  Not currently implemented for geometries containing elliptic arcs.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("3FF13D39-EA3B-42CB-98F6-0F73A1C89B89")]
+
+      public interface IRelationResult
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("3FF13D39-EA3B-42CB-98F6-0F73A1C89B89")>
+
+      Public Interface IRelationResult
+  derivedClasses:
+  - ESRI.ArcGIS.Geometry.RelationResultClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 3FF13D39-EA3B-42CB-98F6-0F73A1C89B89
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement(System.Int32,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.RelationElement(System.Int32,System.Int32@,System.Int32@)
+  id: RelationElement(System.Int32,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: RelationElement(int, out int, out int)
+  nameWithType: IRelationResult.RelationElement(int, out int, out int)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement(int, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The ith element of the relation. The indexes refer to elements of the left and right operand geometry bags.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void RelationElement(int i, out int left, out int right)
+    parameters:
+    - id: i
+      type: System.Int32
+    - id: left
+      type: System.Int32
+    - id: right
+      type: System.Int32
+    content.vb: Sub RelationElement(i As Integer, left As Integer, right As Integer)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement*
+  nameWithType.vb: IRelationResult.RelationElement(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement(Integer, Integer, Integer)
+  name.vb: RelationElement(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement(System.Int32,System.Int32,System.Int32)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement(System.Int32,System.Int32,System.Int32)
+  id: SetRelationElement(System.Int32,System.Int32,System.Int32)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: SetRelationElement(int, int, int)
+  nameWithType: IRelationResult.SetRelationElement(int, int, int)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement(int, int, int)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The ith element of the relation. The indexes refer to elements of the left and right operand geometry bags.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetRelationElement(int i, int left, int right)
+    parameters:
+    - id: i
+      type: System.Int32
+    - id: left
+      type: System.Int32
+    - id: right
+      type: System.Int32
+    content.vb: Sub SetRelationElement(i As Integer, left As Integer, right As Integer)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement*
+  nameWithType.vb: IRelationResult.SetRelationElement(Integer, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement(Integer, Integer, Integer)
+  name.vb: SetRelationElement(Integer, Integer, Integer)
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements(System.Int32,ESRI.ArcGIS.Geometry.esriRelationPair@)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements(System.Int32,ESRI.ArcGIS.Geometry.esriRelationPair@)
+  id: SetRelationElements(System.Int32,ESRI.ArcGIS.Geometry.esriRelationPair@)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: SetRelationElements(int, ref esriRelationPair)
+  nameWithType: IRelationResult.SetRelationElements(int, ref esriRelationPair)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements(int, ref ESRI.ArcGIS.Geometry.esriRelationPair)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sets RelationResult with an array of relations.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SetRelationElements(int cPairs, ref esriRelationPair Pairs)
+    parameters:
+    - id: cPairs
+      type: System.Int32
+    - id: Pairs
+      type: ESRI.ArcGIS.Geometry.esriRelationPair
+    content.vb: Sub SetRelationElements(cPairs As Integer, Pairs As esriRelationPair)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements*
+  nameWithType.vb: IRelationResult.SetRelationElements(Integer, esriRelationPair)
+  fullName.vb: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements(Integer, ESRI.ArcGIS.Geometry.esriRelationPair)
+  name.vb: SetRelationElements(Integer, esriRelationPair)
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SortRight
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.SortRight
+  id: SortRight
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: SortRight()
+  nameWithType: IRelationResult.SortRight()
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SortRight()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sort the set according to the right index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SortRight()
+    content.vb: Sub SortRight()
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.SortRight*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SortLeft
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.SortLeft
+  id: SortLeft
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: SortLeft()
+  nameWithType: IRelationResult.SortLeft()
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SortLeft()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Sort the set according to the left index.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void SortLeft()
+    content.vb: Sub SortLeft()
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.SortLeft*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations
+  id: FlipRelations
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: FlipRelations()
+  nameWithType: IRelationResult.FlipRelations()
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: Flips the left and right indexes of all the elements of the relation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void FlipRelations()
+    content.vb: Sub FlipRelations()
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Subtract(ESRI.ArcGIS.Geometry.IRelationResult)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.Subtract(ESRI.ArcGIS.Geometry.IRelationResult)
+  id: Subtract(ESRI.ArcGIS.Geometry.IRelationResult)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: Subtract(IRelationResult)
+  nameWithType: IRelationResult.Subtract(IRelationResult)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Subtract(ESRI.ArcGIS.Geometry.IRelationResult)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Subtract(IRelationResult pRelations)
+    parameters:
+    - id: pRelations
+      type: ESRI.ArcGIS.Geometry.IRelationResult
+    content.vb: Sub Subtract(pRelations As IRelationResult)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.Subtract*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Intersect(ESRI.ArcGIS.Geometry.IRelationResult)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.Intersect(ESRI.ArcGIS.Geometry.IRelationResult)
+  id: Intersect(ESRI.ArcGIS.Geometry.IRelationResult)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: Intersect(IRelationResult)
+  nameWithType: IRelationResult.Intersect(IRelationResult)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Intersect(ESRI.ArcGIS.Geometry.IRelationResult)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Intersect(IRelationResult pRelations)
+    parameters:
+    - id: pRelations
+      type: ESRI.ArcGIS.Geometry.IRelationResult
+    content.vb: Sub Intersect(pRelations As IRelationResult)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.Intersect*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Add(ESRI.ArcGIS.Geometry.IRelationResult)
+  commentId: M:ESRI.ArcGIS.Geometry.IRelationResult.Add(ESRI.ArcGIS.Geometry.IRelationResult)
+  id: Add(ESRI.ArcGIS.Geometry.IRelationResult)
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: Add(IRelationResult)
+  nameWithType: IRelationResult.Add(IRelationResult)
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Add(ESRI.ArcGIS.Geometry.IRelationResult)
+  type: Method
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  syntax:
+    content: void Add(IRelationResult pRelations)
+    parameters:
+    - id: pRelations
+      type: ESRI.ArcGIS.Geometry.IRelationResult
+    content.vb: Sub Add(pRelations As IRelationResult)
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.Add*
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount
+  commentId: P:ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount
+  id: RelationElementCount
+  parent: ESRI.ArcGIS.Geometry.IRelationResult
+  langs:
+  - csharp
+  - vb
+  name: RelationElementCount
+  nameWithType: IRelationResult.RelationElementCount
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount
+  type: Property
+  assemblies:
+  - ESRI.Server.Geometry
+  namespace: ESRI.ArcGIS.Geometry
+  summary: The number of pairs of geometries in the relation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int RelationElementCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property RelationElementCount As Integer
+  overload: ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount*
+references:
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.RelationElement
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_RelationElement_System_Int32_System_Int32__System_Int32__
+  name: RelationElement
+  nameWithType: IRelationResult.RelationElement
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.RelationElement
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_SetRelationElement_System_Int32_System_Int32_System_Int32_
+  name: SetRelationElement
+  nameWithType: IRelationResult.SetRelationElement
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElement
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_SetRelationElements_System_Int32_ESRI_ArcGIS_Geometry_esriRelationPair__
+  name: SetRelationElements
+  nameWithType: IRelationResult.SetRelationElements
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SetRelationElements
+- uid: ESRI.ArcGIS.Geometry.esriRelationPair
+  commentId: T:ESRI.ArcGIS.Geometry.esriRelationPair
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.esriRelationPair.html
+  name: esriRelationPair
+  nameWithType: esriRelationPair
+  fullName: ESRI.ArcGIS.Geometry.esriRelationPair
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SortRight*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.SortRight
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_SortRight
+  name: SortRight
+  nameWithType: IRelationResult.SortRight
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SortRight
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.SortLeft*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.SortLeft
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_SortLeft
+  name: SortLeft
+  nameWithType: IRelationResult.SortLeft
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.SortLeft
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_FlipRelations
+  name: FlipRelations
+  nameWithType: IRelationResult.FlipRelations
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.FlipRelations
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Subtract*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.Subtract
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_Subtract_ESRI_ArcGIS_Geometry_IRelationResult_
+  name: Subtract
+  nameWithType: IRelationResult.Subtract
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Subtract
+- uid: ESRI.ArcGIS.Geometry.IRelationResult
+  commentId: T:ESRI.ArcGIS.Geometry.IRelationResult
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html
+  name: IRelationResult
+  nameWithType: IRelationResult
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Intersect*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.Intersect
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_Intersect_ESRI_ArcGIS_Geometry_IRelationResult_
+  name: Intersect
+  nameWithType: IRelationResult.Intersect
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Intersect
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.Add*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.Add
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_Add_ESRI_ArcGIS_Geometry_IRelationResult_
+  name: Add
+  nameWithType: IRelationResult.Add
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.Add
+- uid: ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount*
+  commentId: Overload:ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IRelationResult.html#ESRI_ArcGIS_Geometry_IRelationResult_RelationElementCount
+  name: RelationElementCount
+  nameWithType: IRelationResult.RelationElementCount
+  fullName: ESRI.ArcGIS.Geometry.IRelationResult.RelationElementCount

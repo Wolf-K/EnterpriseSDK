@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  commentId: T:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  id: ISimpleDataConverter
+  parent: ESRI.ArcGIS.Geodatabase
+  children:
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle
+  - ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset
+  langs:
+  - csharp
+  - vb
+  name: ISimpleDataConverter
+  nameWithType: ISimpleDataConverter
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  type: Interface
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Provides access to members used for data conversions.
+  example: []
+  syntax:
+    content: >-
+      [Guid("0446469D-FAFA-11D1-AAB1-00C04FA33C20")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface ISimpleDataConverter
+    content.vb: >-
+      <Guid("0446469D-FAFA-11D1-AAB1-00C04FA33C20")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface ISimpleDataConverter
+  derivedClasses:
+  - ESRI.ArcGIS.Geodatabase.SimpleDataConverterClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 0446469D-FAFA-11D1-AAB1-00C04FA33C20
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert
+  id: Convert
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: Convert()
+  nameWithType: ISimpleDataConverter.Convert()
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Convert the input FeatureClass to another FeatureClass in the output FeatureDataset.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumInvalidObject Convert()
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IEnumInvalidObject
+    content.vb: Function Convert() As IEnumInvalidObject
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset
+  commentId: M:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset
+  id: Reset
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: ISimpleDataConverter.Reset()
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset()
+  type: Method
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: Reset all the properties associated with the simple data converter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: void Reset()
+    content.vb: Sub Reset()
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+  id: IsFeatureTypeSimple
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: IsFeatureTypeSimple
+  nameWithType: ISimpleDataConverter.IsFeatureTypeSimple
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The property to preserve the inputFeatureType in the output.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsFeatureTypeSimple { set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: WriteOnly Property IsFeatureTypeSimple As Boolean
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+  id: InputDatasetName
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: InputDatasetName
+  nameWithType: ISimpleDataConverter.InputDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The input DatasetName, FeatureClass or table.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDatasetName InputDatasetName { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDatasetName
+    content.vb: WriteOnly Property InputDatasetName As IDatasetName
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+  id: InputQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: InputQueryFilter
+  nameWithType: ISimpleDataConverter.InputQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The input QueryFilter.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IQueryFilter InputQueryFilter { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IQueryFilter
+    content.vb: WriteOnly Property InputQueryFilter As IQueryFilter
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+  id: OutputGeometryDef
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: OutputGeometryDef
+  nameWithType: ISimpleDataConverter.OutputGeometryDef
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The GeometryDef (optional) for the output FeatureDatasetName.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IGeometryDef OutputGeometryDef { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IGeometryDef
+    content.vb: WriteOnly Property OutputGeometryDef As IGeometryDef
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+  id: OutputFields
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: OutputFields
+  nameWithType: ISimpleDataConverter.OutputFields
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The output fields for the input FeatureClass.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFields OutputFields { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFields
+    content.vb: WriteOnly Property OutputFields As IFields
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+  id: OutputFeatureDatasetName
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: OutputFeatureDatasetName
+  nameWithType: ISimpleDataConverter.OutputFeatureDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The output FeatureDatasetName.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IFeatureDatasetName OutputFeatureDatasetName { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDatasetName
+    content.vb: WriteOnly Property OutputFeatureDatasetName As IFeatureDatasetName
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+  id: OutputDatasetName
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: OutputDatasetName
+  nameWithType: ISimpleDataConverter.OutputDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The output object class Name (optional).
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IDatasetName OutputDatasetName { set; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IDatasetName
+    content.vb: WriteOnly Property OutputDatasetName As IDatasetName
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+  id: ConfigurationKeyword
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: ConfigurationKeyword
+  nameWithType: ISimpleDataConverter.ConfigurationKeyword
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The configuration keyword for the new FeatureClass.
+  remarks: >-
+    &lt;p&gt;Configuration keywords can be of two types:&lt;/p&gt;
+
+    &lt;ul&gt;
+
+    &lt;li&gt;esriConfigurationKeywordGeneral, which references storage
+
+    parameters for creating feature classes and tables&lt;/li&gt;
+
+    &lt;li&gt;esriConfigurationKeywordNetwork, which references storage
+
+    parameters for creating geometric networks or network datasets&lt;/li&gt;
+
+    &lt;li&gt;esriConfigurationKeywordTopology, which references storage
+
+    parameters for creating topologies&lt;/li&gt;
+
+    &lt;/ul&gt;
+
+    &lt;p&gt;An enumeration of &lt;strong&gt;ConfigurationKeyword&lt;/strong&gt; objects
+
+    for an ArcSDE or File geodatabase workspace is returned by the
+
+    &lt;strong&gt;IWorkspaceConfiguration&lt;/strong&gt; interface.&lt;/p&gt;
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string ConfigurationKeyword { set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: WriteOnly Property ConfigurationKeyword As String
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+  id: FlushInterval
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: FlushInterval
+  nameWithType: ISimpleDataConverter.FlushInterval
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The flushing interval for sde FeatureClass.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int FlushInterval { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: WriteOnly Property FlushInterval As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval*
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle
+  commentId: P:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle
+  id: ParentWindowHandle
+  parent: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter
+  langs:
+  - csharp
+  - vb
+  name: ParentWindowHandle
+  nameWithType: ISimpleDataConverter.ParentWindowHandle
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle
+  type: Property
+  assemblies:
+  - ESRI.Server.Geodatabase
+  namespace: ESRI.ArcGIS.Geodatabase
+  summary: The parent hWnd.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: int ParentWindowHandle { set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: WriteOnly Property ParentWindowHandle As Integer
+  overload: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle*
+references:
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_Convert
+  name: Convert
+  nameWithType: ISimpleDataConverter.Convert
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Convert
+- uid: ESRI.ArcGIS.Geodatabase.IEnumInvalidObject
+  commentId: T:ESRI.ArcGIS.Geodatabase.IEnumInvalidObject
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IEnumInvalidObject.html
+  name: IEnumInvalidObject
+  nameWithType: IEnumInvalidObject
+  fullName: ESRI.ArcGIS.Geodatabase.IEnumInvalidObject
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_Reset
+  name: Reset
+  nameWithType: ISimpleDataConverter.Reset
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.Reset
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_IsFeatureTypeSimple
+  name: IsFeatureTypeSimple
+  nameWithType: ISimpleDataConverter.IsFeatureTypeSimple
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.IsFeatureTypeSimple
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_InputDatasetName
+  name: InputDatasetName
+  nameWithType: ISimpleDataConverter.InputDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.IDatasetName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IDatasetName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IDatasetName.html
+  name: IDatasetName
+  nameWithType: IDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.IDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_InputQueryFilter
+  name: InputQueryFilter
+  nameWithType: ISimpleDataConverter.InputQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.InputQueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.IQueryFilter
+  commentId: T:ESRI.ArcGIS.Geodatabase.IQueryFilter
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IQueryFilter.html
+  name: IQueryFilter
+  nameWithType: IQueryFilter
+  fullName: ESRI.ArcGIS.Geodatabase.IQueryFilter
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_OutputGeometryDef
+  name: OutputGeometryDef
+  nameWithType: ISimpleDataConverter.OutputGeometryDef
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputGeometryDef
+- uid: ESRI.ArcGIS.Geodatabase.IGeometryDef
+  commentId: T:ESRI.ArcGIS.Geodatabase.IGeometryDef
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IGeometryDef.html
+  name: IGeometryDef
+  nameWithType: IGeometryDef
+  fullName: ESRI.ArcGIS.Geodatabase.IGeometryDef
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_OutputFields
+  name: OutputFields
+  nameWithType: ISimpleDataConverter.OutputFields
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFields
+- uid: ESRI.ArcGIS.Geodatabase.IFields
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFields
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFields.html
+  name: IFields
+  nameWithType: IFields
+  fullName: ESRI.ArcGIS.Geodatabase.IFields
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_OutputFeatureDatasetName
+  name: OutputFeatureDatasetName
+  nameWithType: ISimpleDataConverter.OutputFeatureDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputFeatureDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDatasetName
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDatasetName
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDatasetName.html
+  name: IFeatureDatasetName
+  nameWithType: IFeatureDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_OutputDatasetName
+  name: OutputDatasetName
+  nameWithType: ISimpleDataConverter.OutputDatasetName
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.OutputDatasetName
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_ConfigurationKeyword
+  name: ConfigurationKeyword
+  nameWithType: ISimpleDataConverter.ConfigurationKeyword
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ConfigurationKeyword
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_FlushInterval
+  name: FlushInterval
+  nameWithType: ISimpleDataConverter.FlushInterval
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.FlushInterval
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle*
+  commentId: Overload:ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.html#ESRI_ArcGIS_Geodatabase_ISimpleDataConverter_ParentWindowHandle
+  name: ParentWindowHandle
+  nameWithType: ISimpleDataConverter.ParentWindowHandle
+  fullName: ESRI.ArcGIS.Geodatabase.ISimpleDataConverter.ParentWindowHandle

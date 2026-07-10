@@ -1,0 +1,602 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTResource
+  id: IRESTResource
+  parent: ESRI.ArcGIS.esriSystem
+  children:
+  - ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation(ESRI.ArcGIS.esriSystem.IRESTOperation)
+  - ESRI.ArcGIS.esriSystem.IRESTResource.AddResource(ESRI.ArcGIS.esriSystem.IRESTResource)
+  - ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation(System.String)
+  - ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource(System.String)
+  - ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations
+  - ESRI.ArcGIS.esriSystem.IRESTResource.GetResources
+  - ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+  - ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+  - ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+  - ESRI.ArcGIS.esriSystem.IRESTResource.Name
+  - ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability
+  - ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+  - ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject
+  langs:
+  - csharp
+  - vb
+  name: IRESTResource
+  nameWithType: IRESTResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource
+  type: Interface
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: REST resource metadata object.
+  example: []
+  syntax:
+    content: >-
+      [Guid("B5561EA3-2950-4E21-9E4F-B1003B2A1BAF")]
+
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      public interface IRESTResource
+    content.vb: >-
+      <Guid("B5561EA3-2950-4E21-9E4F-B1003B2A1BAF")>
+
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      Public Interface IRESTResource
+  derivedClasses:
+  - ESRI.ArcGIS.esriSystem.CoRESTResourceClass
+  attributes:
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: B5561EA3-2950-4E21-9E4F-B1003B2A1BAF
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject
+  id: ToJSONObject
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: ToJSONObject()
+  nameWithType: IRESTResource.ToJSONObject()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Converts resource object to JSON representation.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IJSONObject ToJSONObject()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IJSONObject
+    content.vb: Function ToJSONObject() As IJSONObject
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.AddResource(ESRI.ArcGIS.esriSystem.IRESTResource)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.AddResource(ESRI.ArcGIS.esriSystem.IRESTResource)
+  id: AddResource(ESRI.ArcGIS.esriSystem.IRESTResource)
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: AddResource(IRESTResource)
+  nameWithType: IRESTResource.AddResource(IRESTResource)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.AddResource(ESRI.ArcGIS.esriSystem.IRESTResource)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void AddResource(IRESTResource r)
+    parameters:
+    - id: r
+      type: ESRI.ArcGIS.esriSystem.IRESTResource
+    content.vb: Sub AddResource(r As IRESTResource)
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.AddResource*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation(ESRI.ArcGIS.esriSystem.IRESTOperation)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation(ESRI.ArcGIS.esriSystem.IRESTOperation)
+  id: AddOperation(ESRI.ArcGIS.esriSystem.IRESTOperation)
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: AddOperation(IRESTOperation)
+  nameWithType: IRESTResource.AddOperation(IRESTOperation)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation(ESRI.ArcGIS.esriSystem.IRESTOperation)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  syntax:
+    content: void AddOperation(IRESTOperation o)
+    parameters:
+    - id: o
+      type: ESRI.ArcGIS.esriSystem.IRESTOperation
+    content.vb: Sub AddOperation(o As IRESTOperation)
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource(System.String)
+  id: FindChildResource(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: FindChildResource(string)
+  nameWithType: IRESTResource.FindChildResource(string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Finds child resource, non-recursive.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRESTResource FindChildResource(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IRESTResource
+    content.vb: Function FindChildResource(Name As String) As IRESTResource
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource*
+  nameWithType.vb: IRESTResource.FindChildResource(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource(String)
+  name.vb: FindChildResource(String)
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation(System.String)
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation(System.String)
+  id: FindChildOperation(System.String)
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: FindChildOperation(string)
+  nameWithType: IRESTResource.FindChildOperation(string)
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation(string)
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Finds child operation, non-recursive.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IRESTOperation FindChildOperation(string Name)
+    parameters:
+    - id: Name
+      type: System.String
+    return:
+      type: ESRI.ArcGIS.esriSystem.IRESTOperation
+    content.vb: Function FindChildOperation(Name As String) As IRESTOperation
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation*
+  nameWithType.vb: IRESTResource.FindChildOperation(String)
+  fullName.vb: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation(String)
+  name.vb: FindChildOperation(String)
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.GetResources
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.GetResources
+  id: GetResources
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: GetResources()
+  nameWithType: IRESTResource.GetResources()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.GetResources()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Returns enumerator for immediate child resources.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumRESTResource GetResources()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumRESTResource
+    content.vb: Function GetResources() As IEnumRESTResource
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.GetResources*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations
+  commentId: M:ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations
+  id: GetOperations
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: GetOperations()
+  nameWithType: IRESTResource.GetOperations()
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations()
+  type: Method
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Returns enumerator for operations.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: IEnumRESTOperation GetOperations()
+    return:
+      type: ESRI.ArcGIS.esriSystem.IEnumRESTOperation
+    content.vb: Function GetOperations() As IEnumRESTOperation
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.Name
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.Name
+  id: Name
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: IRESTResource.Name
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Resource name. Used in IRESTRequestHandler's schema generation and url parsing.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Name As String
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.Name*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+  id: IsCollection
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: IsCollection
+  nameWithType: IRESTResource.IsCollection
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Specifies collection resource.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsCollection { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsCollection As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+  id: IsDefaultCollection
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: IsDefaultCollection
+  nameWithType: IRESTResource.IsDefaultCollection
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Specifies 'default' collection resource that can be accessed without explicitly using its name in the URL.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsDefaultCollection { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsDefaultCollection As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+  id: IsStatic
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: IsStatic
+  nameWithType: IRESTResource.IsStatic
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: This flag marks resources that do not change over time.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool IsStatic { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsStatic As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+  id: SupportsETag
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: SupportsETag
+  nameWithType: IRESTResource.SupportsETag
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: This flag is only for a root level resource. If this flag is true, IRRH implementation supports ETag.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: bool SupportsETag { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property SupportsETag As Boolean
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag*
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability
+  commentId: P:ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability
+  id: RequiredCapability
+  parent: ESRI.ArcGIS.esriSystem.IRESTResource
+  langs:
+  - csharp
+  - vb
+  name: RequiredCapability
+  nameWithType: IRESTResource.RequiredCapability
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability
+  type: Property
+  assemblies:
+  - ESRI.Server.System
+  namespace: ESRI.ArcGIS.esriSystem
+  summary: Required capability for the resource.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string RequiredCapability { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property RequiredCapability As String
+  overload: ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability*
+references:
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_ToJSONObject
+  name: ToJSONObject
+  nameWithType: IRESTResource.ToJSONObject
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.ToJSONObject
+- uid: ESRI.ArcGIS.esriSystem.IJSONObject
+  commentId: T:ESRI.ArcGIS.esriSystem.IJSONObject
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IJSONObject.html
+  name: IJSONObject
+  nameWithType: IJSONObject
+  fullName: ESRI.ArcGIS.esriSystem.IJSONObject
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.AddResource*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.AddResource
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_AddResource_ESRI_ArcGIS_esriSystem_IRESTResource_
+  name: AddResource
+  nameWithType: IRESTResource.AddResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.AddResource
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTResource
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html
+  name: IRESTResource
+  nameWithType: IRESTResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_AddOperation_ESRI_ArcGIS_esriSystem_IRESTOperation_
+  name: AddOperation
+  nameWithType: IRESTResource.AddOperation
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.AddOperation
+- uid: ESRI.ArcGIS.esriSystem.IRESTOperation
+  commentId: T:ESRI.ArcGIS.esriSystem.IRESTOperation
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTOperation.html
+  name: IRESTOperation
+  nameWithType: IRESTOperation
+  fullName: ESRI.ArcGIS.esriSystem.IRESTOperation
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_FindChildResource_System_String_
+  name: FindChildResource
+  nameWithType: IRESTResource.FindChildResource
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildResource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_FindChildOperation_System_String_
+  name: FindChildOperation
+  nameWithType: IRESTResource.FindChildOperation
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.FindChildOperation
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.GetResources*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.GetResources
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_GetResources
+  name: GetResources
+  nameWithType: IRESTResource.GetResources
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.GetResources
+- uid: ESRI.ArcGIS.esriSystem.IEnumRESTResource
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumRESTResource
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumRESTResource.html
+  name: IEnumRESTResource
+  nameWithType: IEnumRESTResource
+  fullName: ESRI.ArcGIS.esriSystem.IEnumRESTResource
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_GetOperations
+  name: GetOperations
+  nameWithType: IRESTResource.GetOperations
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.GetOperations
+- uid: ESRI.ArcGIS.esriSystem.IEnumRESTOperation
+  commentId: T:ESRI.ArcGIS.esriSystem.IEnumRESTOperation
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IEnumRESTOperation.html
+  name: IEnumRESTOperation
+  nameWithType: IEnumRESTOperation
+  fullName: ESRI.ArcGIS.esriSystem.IEnumRESTOperation
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.Name*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.Name
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_Name
+  name: Name
+  nameWithType: IRESTResource.Name
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.Name
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_IsCollection
+  name: IsCollection
+  nameWithType: IRESTResource.IsCollection
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsCollection
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_IsDefaultCollection
+  name: IsDefaultCollection
+  nameWithType: IRESTResource.IsDefaultCollection
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsDefaultCollection
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_IsStatic
+  name: IsStatic
+  nameWithType: IRESTResource.IsStatic
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.IsStatic
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_SupportsETag
+  name: SupportsETag
+  nameWithType: IRESTResource.SupportsETag
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.SupportsETag
+- uid: ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability*
+  commentId: Overload:ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IRESTResource.html#ESRI_ArcGIS_esriSystem_IRESTResource_RequiredCapability
+  name: RequiredCapability
+  nameWithType: IRESTResource.RequiredCapability
+  fullName: ESRI.ArcGIS.esriSystem.IRESTResource.RequiredCapability

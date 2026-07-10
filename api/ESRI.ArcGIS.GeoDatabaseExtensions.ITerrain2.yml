@@ -1,0 +1,1079 @@
+### YamlMime:ManagedReference
+items:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  id: ITerrain2
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  children:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel(System.Int32)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.Geodatabase.IFeatureCursor@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+  - ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+  langs:
+  - csharp
+  - vb
+  name: ITerrain2
+  nameWithType: ITerrain2
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  type: Interface
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Provides access to members used to acquire information about a Terrain and to retrieve DynamicSurface objects from which raster and TIN surfaces are made.
+  example: []
+  syntax:
+    content: >-
+      [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+
+      [Guid("5D6D7322-D2D5-4C16-A52D-0B1199EFA98D")]
+
+      public interface ITerrain2 : ITerrain
+    content.vb: >-
+      <InterfaceType(ComInterfaceType.InterfaceIsIUnknown)>
+
+      <Guid("5D6D7322-D2D5-4C16-A52D-0B1199EFA98D")>
+
+      Public Interface ITerrain2 Inherits ITerrain
+  derivedClasses:
+  - ESRI.ArcGIS.GeoDatabaseExtensions.TerrainClass
+  attributes:
+  - type: System.Runtime.InteropServices.InterfaceTypeAttribute
+    ctor: System.Runtime.InteropServices.InterfaceTypeAttribute.#ctor(System.Runtime.InteropServices.ComInterfaceType)
+    arguments:
+    - type: System.Runtime.InteropServices.ComInterfaceType
+      value: 1
+  - type: System.Runtime.InteropServices.GuidAttribute
+    ctor: System.Runtime.InteropServices.GuidAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: 5D6D7322-D2D5-4C16-A52D-0B1199EFA98D
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)
+  id: QueryTileInfo(System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Double@,System.Double@,System.Double@,System.Int32@,System.Int32@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: QueryTileInfo(out int, out int, out int, out int, out double, out double, out double, out int, out int)
+  nameWithType: ITerrain2.QueryTileInfo(out int, out int, out int, out int, out double, out double, out double, out int, out int)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo(out int, out int, out int, out int, out double, out double, out double, out int, out int)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void QueryTileInfo(out int pRowBegin, out int pRowEnd, out int pColBegin, out int pColEnd, out double pXMin, out double pYMin, out double pTileSize, out int pRowCountDomain, out int pColCountDomain)
+    parameters:
+    - id: pRowBegin
+      type: System.Int32
+    - id: pRowEnd
+      type: System.Int32
+    - id: pColBegin
+      type: System.Int32
+    - id: pColEnd
+      type: System.Int32
+    - id: pXMin
+      type: System.Double
+    - id: pYMin
+      type: System.Double
+    - id: pTileSize
+      type: System.Double
+    - id: pRowCountDomain
+      type: System.Int32
+    - id: pColCountDomain
+      type: System.Int32
+    content.vb: Sub QueryTileInfo(pRowBegin As Integer, pRowEnd As Integer, pColBegin As Integer, pColEnd As Integer, pXMin As Double, pYMin As Double, pTileSize As Double, pRowCountDomain As Integer, pColCountDomain As Integer)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo*
+  nameWithType.vb: ITerrain2.QueryTileInfo(Integer, Integer, Integer, Integer, Double, Double, Double, Integer, Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo(Integer, Integer, Integer, Integer, Double, Double, Double, Integer, Integer)
+  name.vb: QueryTileInfo(Integer, Integer, Integer, Integer, Double, Double, Double, Integer, Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles
+  id: GetDirtyTiles
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: GetDirtyTiles()
+  nameWithType: ITerrain2.GetDirtyTiles()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IEnumEnvelope GetDirtyTiles()
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope
+    content.vb: Function GetDirtyTiles() As IEnumEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  id: GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope,System.Double)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: GetPointCount(IEnvelope, double)
+  nameWithType: ITerrain2.GetPointCount(IEnvelope, double)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope, double)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: double GetPointCount(IEnvelope pAOI, double Resolution)
+    parameters:
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Resolution
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: Function GetPointCount(pAOI As IEnvelope, Resolution As Double) As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount*
+  nameWithType.vb: ITerrain2.GetPointCount(IEnvelope, Double)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount(ESRI.ArcGIS.Geometry.IEnvelope, Double)
+  name.vb: GetPointCount(IEnvelope, Double)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface
+  id: CreateDynamicSurface
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: CreateDynamicSurface()
+  nameWithType: ITerrain2.CreateDynamicSurface()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IDynamicSurface CreateDynamicSurface()
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface
+    content.vb: Function CreateDynamicSurface() As IDynamicSurface
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  id: ExtractFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geodatabase.IFeatureClass,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.ITrackCancel)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: ExtractFromEmbeddedDataSource(int, IFeatureClass, IEnvelope, double, ITrackCancel)
+  nameWithType: ITerrain2.ExtractFromEmbeddedDataSource(int, IFeatureClass, IEnvelope, double, ITrackCancel)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource(int, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.Geometry.IEnvelope, double, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void ExtractFromEmbeddedDataSource(int Index, IFeatureClass pFeatureClass, IEnvelope pAOI, double Resolution, ITrackCancel pTrackCancel)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pFeatureClass
+      type: ESRI.ArcGIS.Geodatabase.IFeatureClass
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Resolution
+      type: System.Double
+    - id: pTrackCancel
+      type: ESRI.ArcGIS.esriSystem.ITrackCancel
+    content.vb: Sub ExtractFromEmbeddedDataSource(Index As Integer, pFeatureClass As IFeatureClass, pAOI As IEnvelope, Resolution As Double, pTrackCancel As ITrackCancel)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource*
+  nameWithType.vb: ITerrain2.ExtractFromEmbeddedDataSource(Integer, IFeatureClass, IEnvelope, Double, ITrackCancel)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource(Integer, ESRI.ArcGIS.Geodatabase.IFeatureClass, ESRI.ArcGIS.Geometry.IEnvelope, Double, ESRI.ArcGIS.esriSystem.ITrackCancel)
+  name.vb: ExtractFromEmbeddedDataSource(Integer, IFeatureClass, IEnvelope, Double, ITrackCancel)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName
+  id: GetEmbeddedDataSourceShapeFieldName
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: GetEmbeddedDataSourceShapeFieldName()
+  nameWithType: ITerrain2.GetEmbeddedDataSourceShapeFieldName()
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName()
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  summary: Returns the 'Shape' field name of the embedded data sources.
+  example:
+  - >-
+    <codeTitle>Sample Snippet</codeTitle>
+
+    <pre><code class="lang-csharp"></code></pre>
+  syntax:
+    content: string GetEmbeddedDataSourceShapeFieldName()
+    return:
+      type: System.String
+    content.vb: Function GetEmbeddedDataSourceShapeFieldName() As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.Geodatabase.IFeatureCursor@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  commentId: M:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.Geodatabase.IFeatureCursor@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  id: SearchFromEmbeddedDataSource(System.Int32,ESRI.ArcGIS.Geometry.IEnvelope,System.Double,ESRI.ArcGIS.esriSystem.IStringArray,ESRI.ArcGIS.Geodatabase.IFeatureCursor@,ESRI.ArcGIS.esriSystem.ILongArray@)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: SearchFromEmbeddedDataSource(int, IEnvelope, double, IStringArray, out IFeatureCursor, out ILongArray)
+  nameWithType: ITerrain2.SearchFromEmbeddedDataSource(int, IEnvelope, double, IStringArray, out IFeatureCursor, out ILongArray)
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource(int, ESRI.ArcGIS.Geometry.IEnvelope, double, ESRI.ArcGIS.esriSystem.IStringArray, out ESRI.ArcGIS.Geodatabase.IFeatureCursor, out ESRI.ArcGIS.esriSystem.ILongArray)
+  type: Method
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: void SearchFromEmbeddedDataSource(int Index, IEnvelope pAOI, double Resolution, IStringArray pSubFields, out IFeatureCursor ppCursor, out ILongArray ppFieldIndices)
+    parameters:
+    - id: Index
+      type: System.Int32
+    - id: pAOI
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    - id: Resolution
+      type: System.Double
+    - id: pSubFields
+      type: ESRI.ArcGIS.esriSystem.IStringArray
+    - id: ppCursor
+      type: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+    - id: ppFieldIndices
+      type: ESRI.ArcGIS.esriSystem.ILongArray
+    content.vb: Sub SearchFromEmbeddedDataSource(Index As Integer, pAOI As IEnvelope, Resolution As Double, pSubFields As IStringArray, ppCursor As IFeatureCursor, ppFieldIndices As ILongArray)
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource*
+  nameWithType.vb: ITerrain2.SearchFromEmbeddedDataSource(Integer, IEnvelope, Double, IStringArray, IFeatureCursor, ILongArray)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource(Integer, ESRI.ArcGIS.Geometry.IEnvelope, Double, ESRI.ArcGIS.esriSystem.IStringArray, ESRI.ArcGIS.Geodatabase.IFeatureCursor, ESRI.ArcGIS.esriSystem.ILongArray)
+  name.vb: SearchFromEmbeddedDataSource(Integer, IEnvelope, Double, IStringArray, IFeatureCursor, ILongArray)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+  id: Name
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ITerrain2.Name
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Name As String
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+  id: ID
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: ID
+  nameWithType: ITerrain2.ID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int ID { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property ID As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+  id: Size
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: ITerrain2.Size
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: double Size { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property Size As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+  id: IsValid
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: IsValid
+  nameWithType: ITerrain2.IsValid
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: bool IsValid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsValid As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+  id: IsDirty
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: IsDirty
+  nameWithType: ITerrain2.IsDirty
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: bool IsDirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsDirty As Boolean
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+  id: SpatialReference
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: SpatialReference
+  nameWithType: ITerrain2.SpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ISpatialReference SpatialReference { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.ISpatialReference
+    content.vb: ReadOnly Property SpatialReference As ISpatialReference
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+  id: Extent
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: Extent
+  nameWithType: ITerrain2.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IEnvelope Extent { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geometry.IEnvelope
+    content.vb: ReadOnly Property Extent As IEnvelope
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+  id: FeatureDataset
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: FeatureDataset
+  nameWithType: ITerrain2.FeatureDataset
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: IFeatureDataset FeatureDataset { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+    content.vb: ReadOnly Property FeatureDataset As IFeatureDataset
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+  id: DataSourceCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: DataSourceCount
+  nameWithType: ITerrain2.DataSourceCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int DataSourceCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property DataSourceCount As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource(System.Int32)
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource(System.Int32)
+  id: DataSource(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: DataSource[int]
+  nameWithType: ITerrain2.DataSource[int]
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ITerrainDataSource DataSource[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+    content.vb: ReadOnly Property DataSource(Index As Integer) As ITerrainDataSource
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource*
+  nameWithType.vb: ITerrain2.DataSource(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource(Integer)
+  name.vb: DataSource(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+  id: PyramidLevelCount
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: PyramidLevelCount
+  nameWithType: ITerrain2.PyramidLevelCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int PyramidLevelCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property PyramidLevelCount As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel(System.Int32)
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel(System.Int32)
+  id: PyramidLevel(System.Int32)
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: PyramidLevel[int]
+  nameWithType: ITerrain2.PyramidLevel[int]
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel[int]
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: ITerrainPyramidLevel PyramidLevel[int Index] { get; }
+    parameters:
+    - id: Index
+      type: System.Int32
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+    content.vb: ReadOnly Property PyramidLevel(Index As Integer) As ITerrainPyramidLevel
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel*
+  nameWithType.vb: ITerrain2.PyramidLevel(Integer)
+  fullName.vb: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel(Integer)
+  name.vb: PyramidLevel(Integer)
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+  id: TileSize
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: TileSize
+  nameWithType: ITerrain2.TileSize
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: double TileSize { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: ReadOnly Property TileSize As Double
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+  id: PyramidType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: PyramidType
+  nameWithType: ITerrain2.PyramidType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: esriTerrainPyramidType PyramidType { get; }
+    parameters: []
+    return:
+      type: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType
+    content.vb: ReadOnly Property PyramidType As esriTerrainPyramidType
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+  id: MaxOverviewTerrainPoints
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: MaxOverviewTerrainPoints
+  nameWithType: ITerrain2.MaxOverviewTerrainPoints
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int MaxOverviewTerrainPoints { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxOverviewTerrainPoints As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints*
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
+  commentId: P:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
+  id: MaxPointsPerShape
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2
+  langs:
+  - csharp
+  - vb
+  name: MaxPointsPerShape
+  nameWithType: ITerrain2.MaxPointsPerShape
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
+  type: Property
+  assemblies:
+  - ESRI.Server.GeoDatabaseExtensions
+  namespace: ESRI.ArcGIS.GeoDatabaseExtensions
+  syntax:
+    content: int MaxPointsPerShape { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property MaxPointsPerShape As Integer
+  overload: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape*
+references:
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions
+  commentId: N:ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.GeoDatabaseExtensions
+  nameWithType: ESRI.ArcGIS.GeoDatabaseExtensions
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.GeoDatabaseExtensions
+    name: GeoDatabaseExtensions
+    isExternal: true
+    href: ESRI.ArcGIS.GeoDatabaseExtensions.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_QueryTileInfo_System_Int32__System_Int32__System_Int32__System_Int32__System_Double__System_Double__System_Double__System_Int32__System_Int32__
+  name: QueryTileInfo
+  nameWithType: ITerrain2.QueryTileInfo
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.QueryTileInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_GetDirtyTiles
+  name: GetDirtyTiles
+  nameWithType: ITerrain2.GetDirtyTiles
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetDirtyTiles
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope.html
+  name: IEnumEnvelope
+  nameWithType: IEnumEnvelope
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.IEnumEnvelope
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_GetPointCount_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_
+  name: GetPointCount
+  nameWithType: ITerrain2.GetPointCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetPointCount
+- uid: ESRI.ArcGIS.Geometry.IEnvelope
+  commentId: T:ESRI.ArcGIS.Geometry.IEnvelope
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.IEnvelope.html
+  name: IEnvelope
+  nameWithType: IEnvelope
+  fullName: ESRI.ArcGIS.Geometry.IEnvelope
+- uid: ESRI.ArcGIS.Geometry
+  commentId: N:ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geometry
+  nameWithType: ESRI.ArcGIS.Geometry
+  fullName: ESRI.ArcGIS.Geometry
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geometry
+    name: Geometry
+    isExternal: true
+    href: ESRI.ArcGIS.Geometry.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_CreateDynamicSurface
+  name: CreateDynamicSurface
+  nameWithType: ITerrain2.CreateDynamicSurface
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.CreateDynamicSurface
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface.html
+  name: IDynamicSurface
+  nameWithType: IDynamicSurface
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.IDynamicSurface
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_ExtractFromEmbeddedDataSource_System_Int32_ESRI_ArcGIS_Geodatabase_IFeatureClass_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_ESRI_ArcGIS_esriSystem_ITrackCancel_
+  name: ExtractFromEmbeddedDataSource
+  nameWithType: ITerrain2.ExtractFromEmbeddedDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ExtractFromEmbeddedDataSource
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureClass
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureClass
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureClass.html
+  name: IFeatureClass
+  nameWithType: IFeatureClass
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureClass
+- uid: ESRI.ArcGIS.esriSystem.ITrackCancel
+  commentId: T:ESRI.ArcGIS.esriSystem.ITrackCancel
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ITrackCancel.html
+  name: ITrackCancel
+  nameWithType: ITrackCancel
+  fullName: ESRI.ArcGIS.esriSystem.ITrackCancel
+- uid: ESRI.ArcGIS.Geodatabase
+  commentId: N:ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.Geodatabase
+  nameWithType: ESRI.ArcGIS.Geodatabase
+  fullName: ESRI.ArcGIS.Geodatabase
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.Geodatabase
+    name: Geodatabase
+    isExternal: true
+    href: ESRI.ArcGIS.Geodatabase.html
+- uid: ESRI.ArcGIS.esriSystem
+  commentId: N:ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.html
+  name: ESRI.ArcGIS.esriSystem
+  nameWithType: ESRI.ArcGIS.esriSystem
+  fullName: ESRI.ArcGIS.esriSystem
+  spec.csharp:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+  spec.vb:
+  - uid: ESRI
+    name: ESRI
+    isExternal: true
+    href: ESRI.html
+  - name: .
+  - uid: ESRI.ArcGIS
+    name: ArcGIS
+    isExternal: true
+    href: ESRI.ArcGIS.html
+  - name: .
+  - uid: ESRI.ArcGIS.esriSystem
+    name: esriSystem
+    isExternal: true
+    href: ESRI.ArcGIS.esriSystem.html
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_GetEmbeddedDataSourceShapeFieldName
+  name: GetEmbeddedDataSourceShapeFieldName
+  nameWithType: ITerrain2.GetEmbeddedDataSourceShapeFieldName
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.GetEmbeddedDataSourceShapeFieldName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_SearchFromEmbeddedDataSource_System_Int32_ESRI_ArcGIS_Geometry_IEnvelope_System_Double_ESRI_ArcGIS_esriSystem_IStringArray_ESRI_ArcGIS_Geodatabase_IFeatureCursor__ESRI_ArcGIS_esriSystem_ILongArray__
+  name: SearchFromEmbeddedDataSource
+  nameWithType: ITerrain2.SearchFromEmbeddedDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SearchFromEmbeddedDataSource
+- uid: ESRI.ArcGIS.esriSystem.IStringArray
+  commentId: T:ESRI.ArcGIS.esriSystem.IStringArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.IStringArray.html
+  name: IStringArray
+  nameWithType: IStringArray
+  fullName: ESRI.ArcGIS.esriSystem.IStringArray
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureCursor
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureCursor.html
+  name: IFeatureCursor
+  nameWithType: IFeatureCursor
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureCursor
+- uid: ESRI.ArcGIS.esriSystem.ILongArray
+  commentId: T:ESRI.ArcGIS.esriSystem.ILongArray
+  parent: ESRI.ArcGIS.esriSystem
+  isExternal: true
+  href: ESRI.ArcGIS.esriSystem.ILongArray.html
+  name: ILongArray
+  nameWithType: ILongArray
+  fullName: ESRI.ArcGIS.esriSystem.ILongArray
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_Name
+  name: Name
+  nameWithType: ITerrain2.Name
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Name
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_ID
+  name: ID
+  nameWithType: ITerrain2.ID
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.ID
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_Size
+  name: Size
+  nameWithType: ITerrain2.Size
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Size
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_IsValid
+  name: IsValid
+  nameWithType: ITerrain2.IsValid
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsValid
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_IsDirty
+  name: IsDirty
+  nameWithType: ITerrain2.IsDirty
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.IsDirty
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_SpatialReference
+  name: SpatialReference
+  nameWithType: ITerrain2.SpatialReference
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.SpatialReference
+- uid: ESRI.ArcGIS.Geometry.ISpatialReference
+  commentId: T:ESRI.ArcGIS.Geometry.ISpatialReference
+  parent: ESRI.ArcGIS.Geometry
+  isExternal: true
+  href: ESRI.ArcGIS.Geometry.ISpatialReference.html
+  name: ISpatialReference
+  nameWithType: ISpatialReference
+  fullName: ESRI.ArcGIS.Geometry.ISpatialReference
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_Extent
+  name: Extent
+  nameWithType: ITerrain2.Extent
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.Extent
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_FeatureDataset
+  name: FeatureDataset
+  nameWithType: ITerrain2.FeatureDataset
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.FeatureDataset
+- uid: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  commentId: T:ESRI.ArcGIS.Geodatabase.IFeatureDataset
+  parent: ESRI.ArcGIS.Geodatabase
+  isExternal: true
+  href: ESRI.ArcGIS.Geodatabase.IFeatureDataset.html
+  name: IFeatureDataset
+  nameWithType: IFeatureDataset
+  fullName: ESRI.ArcGIS.Geodatabase.IFeatureDataset
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_DataSourceCount
+  name: DataSourceCount
+  nameWithType: ITerrain2.DataSourceCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSourceCount
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_DataSource_System_Int32_
+  name: DataSource
+  nameWithType: ITerrain2.DataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.DataSource
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource.html
+  name: ITerrainDataSource
+  nameWithType: ITerrainDataSource
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainDataSource
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_PyramidLevelCount
+  name: PyramidLevelCount
+  nameWithType: ITerrain2.PyramidLevelCount
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevelCount
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_PyramidLevel_System_Int32_
+  name: PyramidLevel
+  nameWithType: ITerrain2.PyramidLevel
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidLevel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel.html
+  name: ITerrainPyramidLevel
+  nameWithType: ITerrainPyramidLevel
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrainPyramidLevel
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_TileSize
+  name: TileSize
+  nameWithType: ITerrain2.TileSize
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.TileSize
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_PyramidType
+  name: PyramidType
+  nameWithType: ITerrain2.PyramidType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.PyramidType
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType
+  commentId: T:ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType
+  parent: ESRI.ArcGIS.GeoDatabaseExtensions
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType.html
+  name: esriTerrainPyramidType
+  nameWithType: esriTerrainPyramidType
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.esriTerrainPyramidType
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_MaxOverviewTerrainPoints
+  name: MaxOverviewTerrainPoints
+  nameWithType: ITerrain2.MaxOverviewTerrainPoints
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxOverviewTerrainPoints
+- uid: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape*
+  commentId: Overload:ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
+  isExternal: true
+  href: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.html#ESRI_ArcGIS_GeoDatabaseExtensions_ITerrain2_MaxPointsPerShape
+  name: MaxPointsPerShape
+  nameWithType: ITerrain2.MaxPointsPerShape
+  fullName: ESRI.ArcGIS.GeoDatabaseExtensions.ITerrain2.MaxPointsPerShape
